@@ -203,6 +203,8 @@ def factor_check(story, factors):
         if not words:
             return True                       # factors without keywords (data checks) are not checked
         text = story["clean_title"].lower()
+        if story["kind"] == "social":            # a post's headline is cut short: check the whole post
+            text = (story["clean_title"] + " " + story.get("summary", "")).lower()
         return any(re.search(r"\b" + re.escape(k) + r"(s|es|ed|d)?\b", text) for k in words)
     if story["kind"] in ("official", "data") or fits(story["factor"]):
         return story["factor"], ""
@@ -473,6 +475,11 @@ def run(reports=None, test_mode=False, now=None, learn_first_run=None):
 
     checked, off_topic = [], 0
     for s in stories:
+        words = s["clean_title"].split()
+        if s["kind"] != "social" and (len(words) < 4 or re.search(r"\b(primer|glossary|about us|faq)\b", s["clean_title"].lower())):
+            off_topic += 1                       # e.g. "Investment" - a website section, not a news headline
+            say(f"OFF-TOPIC   {s['clean_title']}  ({s.get('organisation')}) - not a news headline")
+            continue
         fid, why = factor_check(s, factors)
         if fid is None:
             off_topic += 1

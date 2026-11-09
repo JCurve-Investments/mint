@@ -59,8 +59,8 @@
     },
     {
       "name": "Schedule (runs every 30 to 60 minutes)",
-      "status": "doing",
-      "note": "Cloud version built: GitHub Actions runs MINT every 15 minutes for free, PC can be off. Setup on GitHub still to do."
+      "status": "done",
+      "note": "Runs in the cloud on GitHub Actions every 15 minutes (first cloud run 9 Nov 2026, 47 seconds, all agents 0 errors)."
     },
     {
       "name": "Test with 5 past events",
@@ -263,6 +263,16 @@
       "date": "2026-11-09",
       "title": "Built the cloud version (GitHub Actions)",
       "detail": "MINT should not depend on my PC being on. GitHub Actions runs all agents every 15 minutes for free in a public repository, saves MINT's memory back into the repository and publishes a view-only dashboard on GitHub Pages. Keys stay in GitHub Secrets (checked: no key ends up in any uploaded file). Because the repository is public, no subscriber list is stored: everything is posted to the Telegram channel."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "First cloud run worked",
+      "detail": "All agents ran on GitHub with 0 errors: SEC feeds, Fed and jobs calendars, CoinGecko prices, Trump's Truth archive, Binance's Telegram channel and Groq all worked from the cloud. 8 messages were posted to the Telegram channel and MINT saved its memory back to GitHub."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Problem: Bitcoin's bad week was missed",
+      "detail": "The first cloud run kept 0 Bitcoin stories while Bitcoin fell and ETFs saw over $1bn of outflows: every story came from websites not on my approved list. I added well-known specialist outlets (CoinDesk, The Block, Decrypt for crypto; Kitco for gold; MarketWatch and Barron's). Also: 'China extends gold-buying streak' was wrongly dropped (added keywords to G4), and website sections like 'Investment' were treated as news (now ignored)."
     }
   ]
 }
