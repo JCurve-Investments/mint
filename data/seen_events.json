@@ -861,7 +861,7 @@
       "proof_reason": "reliable source: Wall Street Journal",
       "first_seen": "2026-11-09T11:27:28.307598+00:00",
       "earliest_report": "2026-11-09T10:06:46+00:00",
-      "last_updated": "2026-11-09T16:01:32.177854+00:00",
+      "last_updated": "2026-11-09T17:05:44.696936+00:00",
       "words": [
         "6.3",
         "acros",
@@ -879,12 +879,16 @@
         "drain",
         "elliptic",
         "five",
+        "funds",
         "hack",
         "halt",
+        "just",
         "korean",
+        "launder",
         "launderer",
         "liquidity",
         "loot",
+        "made",
         "memecoin",
         "morn",
         "move",
@@ -902,13 +906,16 @@
         "six",
         "suffer",
         "used",
+        "using",
         "vault",
         "wash",
+        "watcherguru",
         "welcome",
         "withdraw",
         "world"
       ],
       "amounts": [
+        6000.0,
         6300.0
       ],
       "old_clues": [],
@@ -978,6 +985,28 @@
           "found_at": "2026-11-09T16:01:32.177854+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Binance Hackers Made Memecoins to Launder Stolen Crypto",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ255QTZlQ3VrTm1FdU1SZ19TZDNVYVB5WVlPWC1tU1k5d0xFdDRrVzUydWQ2YkszdGdxV2txcGVOM09tXzVRRVpSb1JldUstQWN5OWlVNnRlSVQ2ZW5zVS1ENUcxck1hVEg5YkJNNXpnMzJvenNSOWc1TUlzVC00LV9ESWRFd2lNd2xYekt4R0h5ZUlXcVRNT0dTWC1WZWw5VS1TMC1GM3ZIQQ?oc=5",
+          "published": "2026-11-09T16:12:15+00:00",
+          "found_at": "2026-11-09T17:05:44.696936+00:00",
+          "summary": "",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddf0\ud83c\uddf5 North Korean hackers are using memecoins to launder funds stolen from the $6 billion Binance crypto hack. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/15906",
+          "published": "2026-11-09T17:01:13+00:00",
+          "found_at": "2026-11-09T17:05:44.696936+00:00",
+          "summary": "JUST IN: \ud83c\uddf0\ud83c\uddf5 North Korean hackers are using memecoins to launder funds stolen from the $6 billion Binance crypto hack. @WatcherGuru",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -1016,6 +1045,14 @@
         {
           "time": "2026-11-09T16:01:32.177854+00:00",
           "note": "another report from CoinDesk - same event, no new alert"
+        },
+        {
+          "time": "2026-11-09T17:05:44.696936+00:00",
+          "note": "another report from Bloomberg - same event, no new alert"
+        },
+        {
+          "time": "2026-11-09T17:05:44.696936+00:00",
+          "note": "another report from Watcher.Guru (Telegram) - same event, no new alert"
         }
       ],
       "decision": {
@@ -1510,14 +1547,14 @@
     "BTC-20261109": 6
   },
   "last_run": {
-    "run_time": "2026-11-09T17:01:35.214464+00:00",
+    "run_time": "2026-11-09T17:05:44.696936+00:00",
     "test_mode": false,
-    "stories": 22,
-    "off_topic": 13,
+    "stories": 25,
+    "off_topic": 14,
     "repeats": 9,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 2,
     "changes": {
       "confirmed": 0,
       "context": 0,
