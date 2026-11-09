@@ -504,10 +504,10 @@
           "price": 4083.47,
           "move": 0.22,
           "time": "2026-11-09T09:03:38+00:00",
-          "verdict": "none"
+          "verdict": "wrong"
         },
-        "effect": "no_prediction",
-        "effect_reason": "no prediction was made for this event"
+        "effect": "tracking",
+        "effect_reason": "waiting for the 1-day price (after 1 hour: +0.2%)"
       },
       "prediction": {
         "direction": "down",
@@ -596,7 +596,7 @@
           "price": 74093.56,
           "move": -0.17,
           "time": "2026-11-09T11:00:00+00:00",
-          "verdict": "right"
+          "verdict": "wrong"
         },
         "effect": "tracking",
         "effect_reason": "waiting for the 1-day price (after 1 hour: -0.2%)"
@@ -808,6 +808,220 @@
       "telegram": {
         "sent_state": "watch"
       }
+    },
+    {
+      "id": "BTC-20261109-03",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "Binance Heist: \u2018Welcome to Our World,\u2019 CISOs Say",
+      "state": "watch",
+      "state_reason": "only 1 news organisation so far (Wall Street Journal) - waiting for a second",
+      "proof": "one_news",
+      "proof_reason": "only 1 news organisation so far (Wall Street Journal) - waiting for a second",
+      "first_seen": "2026-11-09T12:45:12.168724+00:00",
+      "earliest_report": "2026-11-09T12:10:26+00:00",
+      "last_updated": "2026-11-09T12:45:12.168724+00:00",
+      "words": [
+        "binance",
+        "cisos",
+        "hack",
+        "say",
+        "welcome",
+        "world"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Binance Heist: \u2018Welcome to Our World,\u2019 CISOs Say",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQU0tGaXYteW1VSGVYV19NV0JONDA4cWpWeUM5c0FBWTlpOWxwLTVqcFVFaEh1UTctelZMR1hrR3kwSHZKX3FmMmVYaEIwOFB4STI4V2JKMzNwalJLcGlvVGVOWExVeWNLN190Ny05dlJydTlQWVFjYnQ5dnZDd2xWeXdfVllhZnF6Z1cyaHBZQUVnRFhjREE?oc=5",
+          "published": "2026-11-09T12:10:26+00:00",
+          "found_at": "2026-11-09T12:45:12.168724+00:00",
+          "summary": "",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T12:45:12.168724+00:00",
+          "note": "new event, first report by Wall Street Journal"
+        },
+        {
+          "time": "2026-11-09T12:45:12.168724+00:00",
+          "note": "new -> watch: only 1 news organisation so far (Wall Street Journal) - waiting for a second"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 74315.68,
+        "start_time": "2026-11-09T12:00:00+00:00",
+        "moved_before_mint": 0.57,
+        "delay_hours": 0.6,
+        "effect": "tracking",
+        "effect_reason": "waiting for the 1-day price"
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Previous hacks gave mixed signals \u2013 the 2019 Binance hack saw Bitcoin rise 1.4% the next day, while the 2025 Bybit hack led to a 2.2% drop; larger collapses caused much bigger falls.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "source": "starter library (check the date)",
+            "score": 1.32
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "source": "starter library (check the date)",
+            "score": 0.68
+          },
+          {
+            "id": "START-20220509-B",
+            "date": "2022-05-09",
+            "title": "TerraUSD stablecoin loses its dollar peg as Terra collapses",
+            "d1": -11.05,
+            "d7": -12.32,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20220613-B",
+            "date": "2022-06-13",
+            "title": "Crypto lender Celsius freezes customer withdrawals",
+            "d1": -15.97,
+            "d7": -23.03,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20221108-B",
+            "date": "2022-11-08",
+            "title": "FTX halts customer withdrawals as crisis deepens",
+            "d1": -10.01,
+            "d7": -18.05,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.32,
+          "down": 3.98
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Binance says it was hit by a big hack, with a large amount of Bitcoin taken, which could shake confidence in crypto exchanges.",
+        "what_past_events_show": "Previous hacks gave mixed signals \u2013 the 2019 Binance hack saw Bitcoin rise 1.4% the next day, while the 2025 Bybit hack led to a 2.2% drop; larger collapses caused much bigger falls.",
+        "direction": "down",
+        "why": [
+          "A hack of a major exchange can hurt trust and trigger selling",
+          "A recent similar hack (Bybit) resulted in a price decline"
+        ],
+        "watch_next": "If Binance quickly proves users' funds are safe or reimburses losses, the drop could be limited; if not, panic may grow.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-09T12:45:12.168724+00:00"
+      },
+      "telegram": {
+        "sent_state": "watch"
+      }
+    },
+    {
+      "id": "BTC-20261109-04",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (only 1 news organisation so far (CoinDesk) - waiting for a second)",
+      "proof": "one_news",
+      "proof_reason": "only 1 news organisation so far (CoinDesk) - waiting for a second",
+      "first_seen": "2026-11-09T12:45:12.168724+00:00",
+      "earliest_report": "2026-11-09T12:30:00+00:00",
+      "last_updated": "2026-11-09T12:45:12.168724+00:00",
+      "words": [
+        "bitcoin",
+        "bulls",
+        "can't",
+        "crypto",
+        "daily",
+        "etf",
+        "flows",
+        "rely"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQVNnbl9sRXFYQ1ZoMWZBOUtUeWZ3SHVHU051ck9zcTgxc3VId1pIQ0pWcHQzN3RsNFN5LWI5NG92dXhiTTlIUDFyQk1kU2Z4Um9GOFZwUnhiUTM0NkdwUXVNRVJTZUJLbnNoZkxjVmtha2dLbUVhWmwydEJUZzMzcV95UlhUMWhjdFhGTA?oc=5",
+          "published": "2026-11-09T12:30:00+00:00",
+          "found_at": "2026-11-09T12:45:12.168724+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T12:45:12.168724+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-09T12:45:12.168724+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (only 1 news organisation so far (CoinDesk) - waiting for a second)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 74741.77,
+        "start_time": "2026-11-09T12:43:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.3,
+        "effect": "no_prediction",
+        "effect_reason": "no prediction was made for this event"
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no recorded past events of this exact situation to compare.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Crypto Daily says Bitcoin bulls can\u2019t count on ETF flows, implying that recent fund activity isn\u2019t supporting the price.",
+        "what_past_events_show": "There are no recorded past events of this exact situation to compare.",
+        "direction": "down",
+        "why": [
+          "ETF outflows or weak inflows usually push Bitcoin lower",
+          "The article signals a lack of buying pressure from funds"
+        ],
+        "watch_next": "If official ETF flow data later shows a strong inflow, the price could move higher instead.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T12:45:12.168724+00:00"
+      },
+      "telegram": {
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -815,32 +1029,33 @@
     "GOLD-20261105": 1,
     "GOLD-20261108": 1,
     "GOLD-20261109": 1,
-    "BTC-20261109": 2
+    "BTC-20261109": 4
   },
   "last_run": {
-    "run_time": "2026-11-09T11:27:28.307598+00:00",
+    "run_time": "2026-11-09T12:45:12.168724+00:00",
     "test_mode": false,
-    "stories": 12,
+    "stories": 13,
     "off_topic": 8,
-    "repeats": 1,
-    "new_events": 3,
+    "repeats": 3,
+    "new_events": 2,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
-      "watch": 3
+      "watch": 1
     },
-    "open_events": 4,
+    "open_events": 5,
     "asset_states": {
       "Bitcoin": {
         "state": "Watch",
         "reasons": [
           "Watching: Coinbase gets full U.S. trust charter from federal banking regulator (only 1 news organisation so far (CoinDesk) - waiting for a second)",
-          "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis (only a social media post - waiting for a news or official source)"
+          "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis (only a social media post - waiting for a news or official source)",
+          "Watching: Binance Heist: \u2018Welcome to Our World,\u2019 CISOs Say (only 1 news organisation so far (Wall Street Journal) - waiting for a second)"
         ]
       },
       "Gold": {
@@ -858,7 +1073,8 @@
       "state": "Watch",
       "reasons": [
         "Watching: Coinbase gets full U.S. trust charter from federal banking regulator (only 1 news organisation so far (CoinDesk) - waiting for a second)",
-        "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis (only a social media post - waiting for a news or official source)"
+        "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis (only a social media post - waiting for a news or official source)",
+        "Watching: Binance Heist: \u2018Welcome to Our World,\u2019 CISOs Say (only 1 news organisation so far (Wall Street Journal) - waiting for a second)"
       ]
     },
     "Gold": {
