@@ -69,7 +69,65 @@
           "verdict": "wrong"
         },
         "effect": "wrong",
-        "effect_reason": "predicted down, but +2.0% after 1 day"
+        "effect_reason": "predicted down, but 2 of 8 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "h5": {
+          "price": 3909.68,
+          "move": -0.24,
+          "time": "2026-11-03T11:06:00+00:00",
+          "verdict": "right"
+        },
+        "h10": {
+          "price": 3938.81,
+          "move": 0.5,
+          "time": "2026-11-03T16:06:00+00:00",
+          "verdict": "wrong"
+        },
+        "h36": {
+          "price": 4061.29,
+          "move": 3.62,
+          "time": "2026-11-04T18:06:00+00:00",
+          "verdict": "wrong"
+        },
+        "d2": {
+          "price": 4104.95,
+          "move": 4.74,
+          "time": "2026-11-05T06:06:00+00:00",
+          "verdict": "wrong"
+        },
+        "h84": {
+          "price": 4046.18,
+          "move": 3.24,
+          "time": "2026-11-06T18:06:00+00:00",
+          "verdict": "wrong"
+        },
+        "d5": {
+          "price": 4057.99,
+          "move": 3.54,
+          "time": "2026-11-08T06:06:00+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 4.94,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 152.4,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 8,
+          "right": 2,
+          "wrong": 6,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": -0.46,
+          "peak_hours": 2.9,
+          "faded_hours": 6.9,
+          "against": 5.37,
+          "against_hours": 46.9,
+          "until_hours": 152.4,
+          "text": "Clear impact: Gold fell up to 0.5% (after 3 h). The effect lasted about 7 h, then faded - later it rose up to 5.4% (after 47 h)."
+        }
       },
       "prediction": {
         "direction": "down",
@@ -215,7 +273,65 @@
           "verdict": "right"
         },
         "effect": "right",
-        "effect_reason": "predicted up: +3.2% after 1 day (a clear move is 0.5% or more)"
+        "effect_reason": "predicted up: 8 of 8 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "h5": {
+          "price": 3931.36,
+          "move": 0.54,
+          "time": "2026-11-03T16:57:00+00:00",
+          "verdict": "right"
+        },
+        "h10": {
+          "price": 3931.92,
+          "move": 0.56,
+          "time": "2026-11-03T21:57:00+00:00",
+          "verdict": "right"
+        },
+        "h36": {
+          "price": 4059.51,
+          "move": 3.82,
+          "time": "2026-11-04T23:57:00+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 4123.4,
+          "move": 5.45,
+          "time": "2026-11-05T11:57:00+00:00",
+          "verdict": "right"
+        },
+        "h84": {
+          "price": 4057.87,
+          "move": 3.78,
+          "time": "2026-11-06T23:57:00+00:00",
+          "verdict": "right"
+        },
+        "d5": {
+          "price": 4054.56,
+          "move": 3.69,
+          "time": "2026-11-08T11:57:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": 5.19,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 146.6,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 8,
+          "right": 8,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": 5.61,
+          "peak_hours": 41.0,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.1,
+          "until_hours": 146.6,
+          "text": "Clear impact: Gold rose up to 5.6% (after 41 h). Still in the predicted direction after 6.1 days (+5.2%)."
+        }
       },
       "prediction": {
         "direction": "up",
@@ -309,7 +425,44 @@
           "verdict": "none"
         },
         "effect": "no_prediction",
-        "effect_reason": "no prediction was made for this event"
+        "effect_reason": "no prediction was made for this event",
+        "h5": {
+          "price": 4114.59,
+          "move": -0.21,
+          "time": "2026-11-05T17:00:00+00:00",
+          "verdict": "none"
+        },
+        "h10": {
+          "price": 4079.12,
+          "move": -1.07,
+          "time": "2026-11-05T22:00:00+00:00",
+          "verdict": "none"
+        },
+        "h36": {
+          "price": 4057.87,
+          "move": -1.59,
+          "time": "2026-11-07T00:00:00+00:00",
+          "verdict": "none"
+        },
+        "d2": {
+          "price": 4061.45,
+          "move": -1.5,
+          "time": "2026-11-07T12:00:00+00:00",
+          "verdict": "none"
+        },
+        "h84": {
+          "price": 4047.85,
+          "move": -1.83,
+          "time": "2026-11-09T00:00:00+00:00",
+          "verdict": "none"
+        },
+        "now": {
+          "move": -0.25,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 98.5,
+          "verdict": "none"
+        },
+        "impact": null
       },
       "prediction": {
         "direction": "unclear",
@@ -345,10 +498,10 @@
       "factor": "G1",
       "factor_name": "US dollar",
       "title": "America took a giant step back in History with the results of the last Election \u2014 Even the Stock Market, which has been a \u201cROCKETSHIP\u201d under \u201cTRUMP,\u201d took a one",
-      "state": "watch",
-      "state_reason": "only a social media post - waiting for a news or official source",
-      "proof": "social_only",
-      "proof_reason": "only a social media post - waiting for a news or official source",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Donald Trump (Truth Social) (from social media)",
       "first_seen": "2026-11-09T10:42:59.469113+00:00",
       "earliest_report": "2026-11-08T13:49:32+00:00",
       "last_updated": "2026-11-09T10:42:59.469113+00:00",
@@ -393,9 +546,39 @@
         {
           "time": "2026-11-09T10:42:59.469113+00:00",
           "note": "new -> watch: only a social media post - waiting for a news or official source"
+        },
+        {
+          "time": "2026-11-09T15:05:41.922959+00:00",
+          "note": "watch -> confirmed: approved social media account: Donald Trump (Truth Social) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-09T15:05:41.922959+00:00",
+          "note": "confirmed -> alerted: The post is a fresh, high\u2011profile political comment that could affect dollar expectations and thus gold price."
         }
       ],
-      "decision": null,
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-08",
+        "date_evidence": "The post was published on 2026-11-08 13:49 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of gold price volatility",
+        "expected_direction": "down",
+        "direction_reason": "Trump's bullish outlook may boost the dollar, which usually pushes gold lower",
+        "alert_title": "Trump predicts market rebound",
+        "alert_message": "Trump posted that the stock market lost $3\u202ftrillion but will be bigger and stronger, hinting at policy shifts that could strengthen the dollar and pressure gold.",
+        "why_it_matters": [
+          "Political statements can move market sentiment",
+          "Dollar strength typically hurts gold"
+        ],
+        "reason": "The post is a fresh, high\u2011profile political comment that could affect dollar expectations and thus gold price.",
+        "time": "2026-11-09T15:05:41.922959+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nTrump predicts market rebound\n\nTrump posted that the stock market lost $3\u202ftrillion but will be bigger and stronger, hinting at policy shifts that could strengthen the dollar and pressure gold.\n\nMINT's prediction: Gold DOWN - There are no comparable past events in the database yet, so we have no direct evidence of how gold moved the next day after a similar political\u2011social media shock.\n\nGold had already moved +0.8% since the first report.\nSources: Donald Trump (Truth Social)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 09 Nov 15:05 UTC",
+        "telegram_sent_at": "2026-11-09T15:05:41.922959+00:00"
+      },
       "outcome": {
         "start_price": 4052.91,
         "start_time": "2026-11-08T14:00:00+00:00",
@@ -408,12 +591,46 @@
           "verdict": "flat"
         },
         "effect": "wrong",
-        "effect_reason": "predicted down, but +1.4% after 1 day",
+        "effect_reason": "predicted down, but 0 of 1 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "d1": {
           "price": 4109.89,
           "move": 1.41,
           "time": "2026-11-09T13:49:32+00:00",
           "verdict": "wrong"
+        },
+        "h5": {
+          "price": 4053.4,
+          "move": 0.01,
+          "time": "2026-11-08T18:49:32+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 4047.85,
+          "move": -0.12,
+          "time": "2026-11-08T23:49:32+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": 1.48,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 24.7,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 4,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": -0.42,
+          "peak_hours": 8.2,
+          "faded_hours": 11.2,
+          "against": 1.48,
+          "against_hours": 24.7,
+          "until_hours": 24.7,
+          "text": "Clear impact: Gold fell up to 0.4% (after 8 h). The effect lasted about 11 h, then faded - later it rose up to 1.5% (after 25 h)."
         }
       },
       "prediction": {
@@ -441,107 +658,8 @@
         "time": "2026-11-09T10:42:59.469113+00:00"
       },
       "telegram": {
-        "sent_state": "watch",
+        "sent_state": "alerted",
         "result_sent": "2026-11-09T14:33:24.177676+00:00"
-      }
-    },
-    {
-      "id": "GOLD-20261109-01",
-      "asset": "Gold",
-      "factor": "G2",
-      "factor_name": "Interest rates and Fed decisions",
-      "title": "\ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 Crypto market weakens as traders watch U.S. CPI, PPI, jobless claims, and major earnings for Fed clues Read Analysis",
-      "state": "watch",
-      "state_reason": "only a social media post - waiting for a news or official source",
-      "proof": "social_only",
-      "proof_reason": "only a social media post - waiting for a news or official source",
-      "first_seen": "2026-11-09T11:27:28.307598+00:00",
-      "earliest_report": "2026-11-09T08:03:38+00:00",
-      "last_updated": "2026-11-09T11:27:28.307598+00:00",
-      "words": [
-        "analysi",
-        "claim",
-        "clues",
-        "cpi",
-        "crypto",
-        "earning",
-        "fed",
-        "jobles",
-        "major",
-        "market",
-        "ppi",
-        "read",
-        "trader",
-        "u.s",
-        "watch",
-        "weaken"
-      ],
-      "amounts": [],
-      "old_clues": [],
-      "sources": [
-        {
-          "organisation": "Whale Alert (Telegram)",
-          "kind": "social",
-          "site": "whale_alert_io",
-          "title": "\ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 Crypto market weakens as traders watch U.S. CPI, PPI, jobless claims, and major earnings for Fed clues Read Analysis",
-          "link": "https://t.me/whale_alert_io/104699",
-          "published": "2026-11-09T08:03:38+00:00",
-          "found_at": "2026-11-09T11:27:28.307598+00:00",
-          "summary": "\ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 Crypto market weakens as traders watch U.S. CPI, PPI, jobless claims, and major earnings for Fed clues Read Analysis",
-          "factor": "G2"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-09T11:27:28.307598+00:00",
-          "note": "new event, first report by Whale Alert (Telegram)"
-        },
-        {
-          "time": "2026-11-09T11:27:28.307598+00:00",
-          "note": "new -> watch: only a social media post - waiting for a news or official source"
-        }
-      ],
-      "decision": null,
-      "outcome": {
-        "start_price": 4074.63,
-        "start_time": "2026-11-09T08:00:00+00:00",
-        "moved_before_mint": 0.34,
-        "delay_hours": 3.4,
-        "h1": {
-          "price": 4083.47,
-          "move": 0.22,
-          "time": "2026-11-09T09:03:38+00:00",
-          "verdict": "wrong"
-        },
-        "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price (after 1 hour: +0.2%)"
-      },
-      "prediction": {
-        "direction": "down",
-        "by": "AI + past events",
-        "reason": "There are no past events of this exact type to compare with.",
-        "similar": [],
-        "votes": {
-          "up": 0,
-          "down": 0
-        }
-      },
-      "analysis": {
-        "by": "AI (Groq)",
-        "summary": "Traders are watching upcoming US inflation and jobs data for clues about the Fed, and the crypto market is weakening.",
-        "what_past_events_show": "There are no past events of this exact type to compare with.",
-        "direction": "down",
-        "why": [
-          "No new Fed decision, but the data could hint at higher or longer\u2011lasting rates, which hurts gold.",
-          "Gold usually falls when markets expect rates to stay high or rise."
-        ],
-        "watch_next": "If the CPI/PPI numbers or the Fed\u2019s next statement surprise the market, the impact on gold could become larger.",
-        "confidence": "low",
-        "confidence_reason": "no similar past events yet - based on the factor pattern only",
-        "time": "2026-11-09T11:27:28.307598+00:00"
-      },
-      "telegram": {
-        "sent_state": "watch"
       }
     },
     {
@@ -550,10 +668,10 @@
       "factor": "B1",
       "factor_name": "Bans, crackdowns and lawsuits",
       "title": "Coinbase gets full U.S. trust charter from federal banking regulator",
-      "state": "watch",
-      "state_reason": "only 1 news organisation so far (CoinDesk) - waiting for a second",
-      "proof": "one_news",
-      "proof_reason": "only 1 news organisation so far (CoinDesk) - waiting for a second",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-09T11:27:28.307598+00:00",
       "earliest_report": "2026-11-09T10:00:00+00:00",
       "last_updated": "2026-11-09T11:27:28.307598+00:00",
@@ -591,9 +709,39 @@
         {
           "time": "2026-11-09T11:27:28.307598+00:00",
           "note": "new -> watch: only 1 news organisation so far (CoinDesk) - waiting for a second"
+        },
+        {
+          "time": "2026-11-09T15:05:41.922959+00:00",
+          "note": "watch -> confirmed: reliable source: CoinDesk - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-09T15:05:41.922959+00:00",
+          "note": "confirmed -> alerted: New positive regulatory event for a major exchange, likely to affect Bitcoin price."
         }
       ],
-      "decision": null,
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-09",
+        "date_evidence": "published 2026-11-09",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a rise",
+        "expected_direction": "up",
+        "direction_reason": "positive regulatory approval for a major exchange usually supports Bitcoin",
+        "alert_title": "Coinbase receives US trust charter",
+        "alert_message": "Coinbase got a full U.S. trust charter from a federal banking regulator, which could boost confidence in Bitcoin and its trading platforms.",
+        "why_it_matters": [
+          "Shows regulatory support for crypto",
+          "May increase Bitcoin usage on Coinbase"
+        ],
+        "reason": "New positive regulatory event for a major exchange, likely to affect Bitcoin price.",
+        "time": "2026-11-09T15:05:41.922959+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nCoinbase receives US trust charter\n\nCoinbase got a full U.S. trust charter from a federal banking regulator, which could boost confidence in Bitcoin and its trading platforms.\n\nMINT's prediction: Bitcoin UP - The only close precedent \u2013 a SEC lawsuit against Coinbase \u2013 saw Bitcoin rise about 5.7% the next day, indicating that positive legal outcomes can lift the price.\n\nBitcoin had already moved +0.3% since the first report.\nSources: CoinDesk\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 09 Nov 15:05 UTC",
+        "telegram_sent_at": "2026-11-09T15:05:41.922959+00:00"
+      },
       "outcome": {
         "start_price": 74217.39,
         "start_time": "2026-11-09T10:00:00+00:00",
@@ -603,10 +751,32 @@
           "price": 74093.56,
           "move": -0.17,
           "time": "2026-11-09T11:00:00+00:00",
-          "verdict": "wrong"
+          "verdict": "flat"
         },
         "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price (after 1 hour: -0.2%)"
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "now": {
+          "move": 0.38,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 4.5,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": 0.85,
+          "peak_hours": 3.0,
+          "faded_hours": null,
+          "against": -0.17,
+          "against_hours": 1.0,
+          "until_hours": 4.5,
+          "text": "Clear impact: Bitcoin rose up to 0.8% (after 3 h). Still in the predicted direction after 4 h (+0.4%)."
+        }
       },
       "prediction": {
         "direction": "up",
@@ -670,7 +840,7 @@
         "time": "2026-11-09T11:27:28.307598+00:00"
       },
       "telegram": {
-        "sent_state": "watch"
+        "sent_state": "alerted"
       }
     },
     {
@@ -679,10 +849,10 @@
       "factor": "B2",
       "factor_name": "Exchange collapses and hacks",
       "title": "\ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
-      "state": "watch",
-      "state_reason": "only 1 news organisation so far (Wall Street Journal) - waiting for a second",
-      "proof": "one_news",
-      "proof_reason": "only 1 news organisation so far (Wall Street Journal) - waiting for a second",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Wall Street Journal",
       "first_seen": "2026-11-09T11:27:28.307598+00:00",
       "earliest_report": "2026-11-09T10:06:46+00:00",
       "last_updated": "2026-11-09T14:40:58.458128+00:00",
@@ -767,9 +937,39 @@
         {
           "time": "2026-11-09T14:40:58.458128+00:00",
           "note": "joined with BTC-20261109-03 (same factor, same day and shared key words) - the same story"
+        },
+        {
+          "time": "2026-11-09T15:05:41.922959+00:00",
+          "note": "watch -> confirmed: reliable source: Wall Street Journal - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-09T15:05:41.922959+00:00",
+          "note": "confirmed -> alerted: The event is new, high impact, and historically leads to Bitcoin price drops, so we issue an alert."
         }
       ],
-      "decision": null,
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-09",
+        "date_evidence": "First report published on 2026-11-09 describing the hack",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Exchange hacks usually push Bitcoin lower",
+        "alert_title": "Binance suffers biggest-ever crypto hack",
+        "alert_message": "Binance announced a massive hack that drained funds and halted deposits, though withdrawals stay open. Such exchange attacks have historically pressured Bitcoin lower, creating a risk of price decline.",
+        "why_it_matters": [
+          "Largest hack on a major exchange",
+          "Deposits halted could reduce market liquidity"
+        ],
+        "reason": "The event is new, high impact, and historically leads to Bitcoin price drops, so we issue an alert.",
+        "time": "2026-11-09T15:05:41.922959+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nBinance suffers biggest-ever crypto hack\n\nBinance announced a massive hack that drained funds and halted deposits, though withdrawals stay open. Such exchange attacks have historically pressured Bitcoin lower, creating a risk of price decline.\n\nMINT's prediction: Bitcoin DOWN - Past hacks have moved Bitcoin either slightly up (+1.4% after Binance) or modestly down (-2.2% after Bybit), while larger exchange crises caused big drops.\n\nBitcoin had already moved +0.3% since the first report.\nSources: Wall Street Journal, Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 09 Nov 15:05 UTC",
+        "telegram_sent_at": "2026-11-09T15:05:41.922959+00:00"
+      },
       "outcome": {
         "start_price": 74217.39,
         "start_time": "2026-11-09T10:00:00+00:00",
@@ -779,10 +979,32 @@
           "price": 74093.56,
           "move": -0.17,
           "time": "2026-11-09T11:06:46+00:00",
-          "verdict": "right"
+          "verdict": "flat"
         },
         "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price (after 1 hour: -0.2%)"
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "now": {
+          "move": 0.38,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 4.4,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": -0.17,
+          "peak_hours": 0.9,
+          "faded_hours": 1.9,
+          "against": 0.85,
+          "against_hours": 2.9,
+          "until_hours": 4.4,
+          "text": "Small impact: Bitcoin fell up to 0.2% (after 1 h). The effect lasted about 2 h, then faded - later it rose up to 0.8% (after 3 h)."
+        }
       },
       "prediction": {
         "direction": "down",
@@ -855,7 +1077,7 @@
         "time": "2026-11-09T11:27:28.307598+00:00"
       },
       "telegram": {
-        "sent_state": "watch"
+        "sent_state": "alerted"
       }
     },
     {
@@ -913,12 +1135,34 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.3,
         "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price (after 1 hour: +0.1%)",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
         "h1": {
           "price": 74846.7,
           "move": 0.14,
           "time": "2026-11-09T13:30:00+00:00",
-          "verdict": "wrong"
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.32,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 2.0,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": -0.32,
+          "peak_hours": 2.0,
+          "faded_hours": null,
+          "against": 0.14,
+          "against_hours": 0.5,
+          "until_hours": 2.0,
+          "text": "Small impact: Bitcoin fell up to 0.3% (after 2 h). Still in the predicted direction after 2 h (-0.3%)."
         }
       },
       "prediction": {
@@ -1004,12 +1248,34 @@
         "moved_before_mint": -0.21,
         "delay_hours": 0.8,
         "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price (after 1 hour: -0.2%)",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
         "h1": {
           "price": 74500.87,
           "move": -0.21,
           "time": "2026-11-09T14:43:00+00:00",
-          "verdict": "wrong"
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.21,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 0.8,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": 0.0,
+          "peak_hours": 0.3,
+          "faded_hours": 0.8,
+          "against": -0.21,
+          "against_hours": 0.8,
+          "until_hours": 0.8,
+          "text": "Never moved the predicted way. It fell up to 0.2% (after 1 h)."
         }
       },
       "prediction": {
@@ -1100,7 +1366,29 @@
         "moved_before_mint": -0.21,
         "delay_hours": 0.6,
         "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price"
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "now": {
+          "move": -0.21,
+          "time": "2026-11-09T14:31:50+00:00",
+          "hours": 0.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "impact": {
+          "peak": 0.0,
+          "peak_hours": 0.0,
+          "faded_hours": 0.6,
+          "against": -0.21,
+          "against_hours": 0.6,
+          "until_hours": 0.6,
+          "text": "Never moved the predicted way. It fell up to 0.2% (after 1 h)."
+        }
       },
       "prediction": {
         "direction": "up",
@@ -1139,7 +1427,7 @@
     "BTC-20261109": 6
   },
   "last_run": {
-    "run_time": "2026-11-09T15:01:31.296745+00:00",
+    "run_time": "2026-11-09T15:05:41.922959+00:00",
     "test_mode": false,
     "stories": 17,
     "off_topic": 10,
@@ -1148,27 +1436,26 @@
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 3,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 4,
+    "open_events": 3,
     "asset_states": {
       "Bitcoin": {
         "state": "Watch",
         "reasons": [
-          "Watching: Coinbase gets full U.S. trust charter from federal banking regulator (only 1 news organisation so far (CoinDesk) - waiting for a second)",
-          "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis (only 1 news organisation so far (Wall Street Journal) - waiting for a second)"
+          "Being checked: Coinbase gets full U.S. trust charter from federal banking regulator (reliable source: CoinDesk)",
+          "Being checked: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis (reliable source: Wall Street Journal)"
         ]
       },
       "Gold": {
         "state": "Watch",
         "reasons": [
-          "Watching: America took a giant step back in History with the results of the last Election \u2014 Even the Stock Market, which has been a \u201cROCKETSHIP\u201d under \u201cTRUMP,\u201d took a one (only a social media post - waiting for a news or official source)",
-          "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 Crypto market weakens as traders watch U.S. CPI, PPI, jobless claims, and major earnings for Fed clues Read Analysis (only a social media post - waiting for a news or official source)",
+          "Being checked: America took a giant step back in History with the results of the last Election \u2014 Even the Stock Market, which has been a \u201cROCKETSHIP\u201d under \u201cTRUMP,\u201d took a one (approved social media account: Donald Trump (Truth Social) (from social media))",
           "Tomorrow: US inflation report (CPI). Gold may move."
         ]
       }
@@ -1176,17 +1463,16 @@
   },
   "last_states": {
     "Bitcoin": {
-      "state": "Watch",
+      "state": "Alert",
       "reasons": [
-        "Watching: Coinbase gets full U.S. trust charter from federal banking regulator (only 1 news organisation so far (CoinDesk) - waiting for a second)",
-        "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis (only 1 news organisation so far (Wall Street Journal) - waiting for a second)"
+        "Alert: Coinbase gets full U.S. trust charter from federal banking regulator",
+        "Alert: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis"
       ]
     },
     "Gold": {
-      "state": "Watch",
+      "state": "Alert",
       "reasons": [
-        "Watching: America took a giant step back in History with the results of the last Election \u2014 Even the Stock Market, which has been a \u201cROCKETSHIP\u201d under \u201cTRUMP,\u201d took a one (only a social media post - waiting for a news or official source)",
-        "Watching: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 Crypto market weakens as traders watch U.S. CPI, PPI, jobless claims, and major earnings for Fed clues Read Analysis (only a social media post - waiting for a news or official source)"
+        "Alert: America took a giant step back in History with the results of the last Election \u2014 Even the Stock Market, which has been a \u201cROCKETSHIP\u201d under \u201cTRUMP,\u201d took a one"
       ]
     }
   },
@@ -1220,6 +1506,12 @@
       "title": "Binance Heist: \u2018Welcome to Our World,\u2019 CISOs Say",
       "removed_at": "2026-11-09T14:40:58.458128+00:00",
       "reason": "the same story as BTC-20261109-02 (same factor, same day and shared key words)"
+    },
+    {
+      "id": "GOLD-20261109-01",
+      "title": "Crypto market weakens as traders watch U.S. CPI, PPI, jobless claims, and major earnings for Fed clues",
+      "removed_at": "2026-11-09T15:05:41.922959+00:00",
+      "reason": "re-checked with the newer rules: not about Gold"
     }
   ]
 }
