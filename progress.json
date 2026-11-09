@@ -298,6 +298,31 @@
       "date": "2026-11-09",
       "title": "Telegram messages readable at a glance",
       "detail": "Every Telegram message now starts with two short lines: what it is (🚨 alert, 👀 watch, ℹ️ info, ⌛ not confirmed, 📅 heads-up, ✅/❌ result) and how much it matters (🔴 high / 🟠 medium / 🟡 low impact, 📈 up / 📉 down, confidence bars ▰▰▰). The channel gets a one-time 'How to read MINT messages' key to pin. Telegram tests: 20 of 20."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "History page improved",
+      "detail": "Problems seen in History: an event showed a prediction (Bitcoin down) but its result said 'No prediction' (the Decision agent adds predictions AFTER the Price Tracker judges); old social posts still had emojis and 'Read Analysis'; a crypto post was still listed under gold; nothing showed between the 1-hour and 1-day prices; the legend said 0.1% while results use 1.5%/0.5%; and one old story made the average delay 51 hours. Fixes: results are judged again after the Decision agent; old posts are tidied and re-checked; new 'So far' column (move from the first report until now); 'result in X h' countdown; impact (High/Medium/Low) and confidence bars like in Telegram; accuracy per asset; typical delay uses the median; on the public website the past events library is view-only."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "'Run complete' message",
+      "detail": "When a run finds nothing new, MINT now posts a short note to the Telegram channel ('MINT run complete - nothing new to report', with Bitcoin and Gold status), so I can see it is running. It is sent silently (no notification sound), because at every 5 minutes that could be up to 288 notes a day. Telegram tests: 21 of 21."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Decision: one reliable source is enough",
+      "detail": "I removed the 'second source' rule. The approved list (sources.json) only contains reliable organisations, so if one of them reports an event it is confirmed straight away and goes to the Decision agent. Waiting for a second source only delayed alerts (e.g. the WSJ's Binance hack story waited for hours). Watch now means only one thing: a social media post, which MINT tracks for its impact but which still needs an approved news or official source before an alert, because accounts can be hacked (the SEC's X account in January 2024). Supervisor tests updated: 22 of 22."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Better way to judge predictions: 9 price checks",
+      "detail": "The History page said '33% accuracy' without explaining how success was measured, and one 1-day price decided everything. Now MINT checks the price 9 times after the first report (1 h, 5 h, 10 h, 1 day, 36 h, 2 days, 3.5 days, 5 days, 7 days). A check only counts if the move is bigger than normal wiggle, and the bar grows with time (Bitcoin 0.3% after 1 h up to 4% after 7 days; gold 0.1% up to 1.3%), because prices wiggle more the longer you wait. An event is Right if more clear checks went the predicted way than the other way; the first result comes after 1 day and it is final after 7 days. The History page explains this, shows 'Price checks right' and 'Events judged right' separately, and a new table shows accuracy by time after the event. Telegram sends a result after 1 day and a final result after 7 days with every check (✅/❌/➖), and social media events now say '📱 From social media: <account>'. Tests: Supervisor 24/24, Telegram 21/21."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Impact size and duration; approved social accounts count alone",
+      "detail": "Right/wrong alone hid useful information: e.g. 'WGC lowers outlook' was judged Wrong, but gold DID fall 0.5% for about 7 hours before rising. MINT now measures every event's impact from the hourly prices: how far the price moved the predicted way, when it peaked, and how long the effect lasted before it faded (shown as 📏 on the website and in Telegram results). Also: posts from approved social media accounts (social_accounts.json) now count as an approved source on their own, like approved news websites - every message says '📱 From social media: <account>' so the reader knows. Tests: Supervisor 24/24, Telegram 21/21."
     }
   ]
 }

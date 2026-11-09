@@ -146,3 +146,8 @@ The Decision agent can now use **Groq** or **Gemini** (free tiers), **Ollama** (
 
 - v16: the cloud now runs **every 5 minutes** (GitHub's fastest schedule).
 - v18: Telegram messages start with an "at a glance" line (🔴🟠🟡 impact, 📈/📉 prediction, ▰▰▰ confidence); the channel gets a key to pin once. Tests: Supervisor 22/22, Telegram 20/20.
+- v19: History - "So far" column, result countdown, impact and confidence, results re-judged after the Decision agent, old posts tidied, median delay.
+- v20: silent "run complete - nothing new" note in the Telegram channel after runs with nothing to report. Tests: Supervisor 22/22, Telegram 21/21.
+- v21: **one reliable source is enough** - an approved news organisation or an official source confirms an event on its own. Watch = a social media post only (impact tracked, alert needs an approved source).
+- v22: predictions judged on **9 price checks** (1 h → 7 days) with a "clear move" bar that grows with time; History explains how success is measured and shows accuracy by time; Telegram sends a 1-day and a final 7-day result; social posts say where they came from.
+- v23: 📏 impact size and how long it lasted for every event; approved social media accounts count on their own (labelled "From social media").

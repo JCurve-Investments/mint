@@ -36,7 +36,11 @@ from supervisor import data_folder, load_memory, save_memory, parse_time, hours_
 COINGECKO_IDS = {"Bitcoin": "bitcoin", "Gold": "pax-gold"}
 YAHOO_SYMBOLS = {"Bitcoin": "BTC-USD", "Gold": "GC=F"}
 HISTORY_REFRESH_MINUTES = 50            # download the hourly history at most about once an hour
-CHECKPOINTS = {"h1": 1, "d1": 24, "d7": 168}   # hours after the first report
+# Price checks after the first report (hours). Keys stay short because they are saved in memory.
+CHECKPOINTS = {"h1": 1, "h5": 5, "h10": 10, "d1": 24, "h36": 36, "d2": 48, "h84": 84, "d5": 120, "d7": 168}
+CHECKPOINT_NAMES = {"h1": "1 hour", "h5": "5 hours", "h10": "10 hours", "d1": "1 day", "h36": "36 hours",
+                    "d2": "2 days", "h84": "3.5 days", "d5": "5 days", "d7": "7 days"}
+MIN_CLEAR_MOVE = {"Bitcoin": 0.3, "Gold": 0.1}     # never count a move smaller than this, even after 1 hour
 BIG_MOVE_PERCENT = {"Bitcoin": 1.5, "Gold": 0.5}   # a clear move within 1 day (about half a normal day's move
                                                    # for Bitcoin, about a normal day's move for gold)
 TEST_NOW = datetime(2026, 11, 1, 12, 0, tzinfo=timezone.utc)
@@ -137,36 +141,52 @@ def pct(new, old):
 # ---------------------------------------------------------------------------
 # Outcomes for events
 # ---------------------------------------------------------------------------
-def cell_verdict(move, direction):
-    """For one price check: did it go the predicted way? right / wrong / flat / none (no prediction)."""
+def clear_move(asset, hours):
+    """How big a move must be to count as a CLEAR move after this many hours.
+    Prices wiggle more the longer you wait (roughly with the square root of time), so the bar grows:
+        Bitcoin: 0.3% after 1 h, 0.7% after 5 h, 1.5% after 1 day, 2.1% after 2 days, 4.0% after 7 days
+        Gold:    0.1% after 1 h, 0.2% after 5 h, 0.5% after 1 day, 0.7% after 2 days, 1.3% after 7 days
+    A smaller move is just normal wiggle: it is shown, but not counted as right or wrong."""
+    return round(max(MIN_CLEAR_MOVE[asset], BIG_MOVE_PERCENT[asset] * math.sqrt(hours / 24)), 2)
+
+
+def cell_verdict(move, direction, asset=None, hours=None):
+    """For one price check: right (clear move the predicted way) / wrong (clear move the other way) /
+    flat (too small to count) / none (no prediction)."""
     if move is None or direction not in ("up", "down"):
         return "none"
-    if abs(move) < 0.1:
+    bar = clear_move(asset, hours) if asset and hours else 0.1
+    if abs(move) < bar:
         return "flat"
     return "right" if (move > 0) == (direction == "up") else "wrong"
 
 
 def judge(outcome, asset, direction):
-    """Was the PREDICTION right? Judged on the 1-DAY move after the first report, because that is when news
-    moves prices most; after 7 days other news has mixed in (the 7-day move is still shown, for context).
-       right          after 1 day the price had moved clearly (1.5% Bitcoin, 0.5% gold) the predicted way
-       wrong          it had moved clearly the other way
-       no_clear_move  it had not moved clearly either way (NOT counted in accuracy - nothing to judge)
-       tracking       still waiting for the 1-day price
-       no_prediction  MINT made no prediction for this event"""
-    big = BIG_MOVE_PERCENT[asset]
-    d1 = (outcome.get("d1") or {}).get("move")
+    """Was the PREDICTION right? MINT checks the price 9 times after the first report (1 h, 5 h, 10 h, 1 day,
+    36 h, 2 days, 3.5 days, 5 days, 7 days). Each check is right, wrong or too small to count (see clear_move).
+       right          more checks moved clearly the predicted way than the other way
+       wrong          more checks moved clearly the other way
+       no_clear_move  no clear move yet, or as many right as wrong (NOT counted in accuracy)
+       tracking       the first day is not over yet (shown with the checks so far)
+       no_prediction  MINT made no prediction for this event
+    The result can still change until the 7-day check is in; outcome["final"] says when it is final."""
     if direction not in ("up", "down"):
         return "no_prediction", "no prediction was made for this event"
-    if d1 is None:
-        h1 = (outcome.get("h1") or {}).get("move")
-        early = f" (after 1 hour: {0.0 if abs(h1) < 0.05 else h1:+.1f}%)" if h1 is not None else ""
-        return "tracking", "waiting for the 1-day price" + early
-    if (direction == "up" and d1 >= big) or (direction == "down" and d1 <= -big):
-        return "right", f"predicted {direction}: {d1:+.1f}% after 1 day (a clear move is {big}% or more)"
-    if (direction == "up" and d1 <= -big) or (direction == "down" and d1 >= big):
-        return "wrong", f"predicted {direction}, but {d1:+.1f}% after 1 day"
-    return "no_clear_move", f"predicted {direction}, but only {d1:+.1f}% after 1 day (less than {big}%)"
+    done = [k for k in CHECKPOINTS if outcome.get(k)]
+    right = [k for k in done if outcome[k].get("verdict") == "right"]
+    wrong = [k for k in done if outcome[k].get("verdict") == "wrong"]
+    score = f"{len(right)} of {len(right) + len(wrong)} clear price checks went the predicted way" \
+        if right or wrong else "no clear move in any price check yet"
+    outcome["checks"] = {"done": len(done), "right": len(right), "wrong": len(wrong), "total": len(CHECKPOINTS)}
+    outcome["final"] = bool(outcome.get("d7"))
+    if not outcome.get("d1"):
+        return "tracking", f"first day not over yet - {score} ({len(done)} of {len(CHECKPOINTS)} checks done)"
+    tail = "" if outcome["final"] else f" (so far: {len(done)} of {len(CHECKPOINTS)} checks done)"
+    if len(right) > len(wrong):
+        return "right", f"predicted {direction}: {score}{tail}"
+    if len(wrong) > len(right):
+        return "wrong", f"predicted {direction}, but {score}{tail}"
+    return "no_clear_move", f"predicted {direction}: {score}{tail}"
 
 
 def update_outcomes(memory, histories, now, factors):
@@ -192,19 +212,82 @@ def update_outcomes(memory, histories, now, factors):
             when = start + timedelta(hours=hours)
             if o.get(key) or now < when + timedelta(minutes=10):
                 continue
-            p, _ = price_at(points, when)
+            p, _ = price_at(points, when, tolerance_hours=1)       # within an hour of the checkpoint
             if p is not None:
                 o[key] = {"price": p, "move": pct(p, o["start_price"]), "time": when.isoformat()}
                 added += 1
+        if not o.get("d7") and points:              # the move SO FAR, until the 7-day price is in
+            t_last, p_last = points[-1]
+            o["now"] = {"move": pct(p_last, o["start_price"]),
+                        "time": datetime.fromtimestamp(t_last / 1000, timezone.utc).isoformat(),
+                        "hours": round(hours_between(datetime.fromtimestamp(t_last / 1000, timezone.utc), start), 1)}
+        elif o.get("d7"):
+            o.pop("now", None)
         if not ev.get("prediction"):
             from predict import predict
             ev["prediction"] = {**predict(ev["factor"], ev["title"], ev["asset"]), "by": "factor pattern"}
         direction = ev["prediction"]["direction"]
-        for k in CHECKPOINTS:
+        for k, hours in CHECKPOINTS.items():
             if o.get(k):
-                o[k]["verdict"] = cell_verdict(o[k]["move"], direction)
+                o[k]["verdict"] = cell_verdict(o[k]["move"], direction, ev["asset"], hours)
+        if o.get("now"):
+            o["now"]["verdict"] = cell_verdict(o["now"]["move"], direction, ev["asset"], max(o["now"]["hours"], 1))
         o["effect"], o["effect_reason"] = judge(o, ev["asset"], direction)
+        o["impact"] = describe_impact(points, start, o["start_price"], direction, ev["asset"], now)
     return added
+
+
+def describe_impact(points, start, start_price, direction, asset, now):
+    """How big was the event's effect on the price, and how long did it last?
+    Uses every saved hourly price in the 7 days after the first report.
+      peak       the biggest move the PREDICTED way (and when)
+      faded      when the price went back past the starting price after the peak (the effect was over)
+      against    the biggest move the other way (and when)
+    Returns a dict with a plain-English 'text', or None if there are not enough prices yet."""
+    if direction not in ("up", "down") or not start_price:
+        return None
+    t0 = start.timestamp() * 1000
+    end = min(t0 + 168 * 3600e3, now.timestamp() * 1000)
+    path = [(round((t - t0) / 3600e3, 1), (p - start_price) / start_price * 100) for t, p in points if t0 <= t <= end]
+    if len(path) < 2:
+        return None
+    sign = 1 if direction == "up" else -1
+    peak_h, peak = max(path, key=lambda x: sign * x[1])
+    against_h, against = min(path, key=lambda x: sign * x[1])
+    peak_fav, against_fav = sign * peak, sign * against
+    faded = next((h for h, m in path if h > peak_h and sign * m <= 0), None)
+    last_h, last = path[-1]
+    hrs = lambda h: f"{h:.0f} h" if h < 48 else f"{h / 24:.1f} days"
+    word = "rose" if direction == "up" else "fell"
+    other = "fell" if direction == "up" else "rose"
+    size = lambda m, h: "small" if abs(m) < clear_move(asset, max(h, 1)) else "clear"
+    if peak_fav <= 0:
+        text = f"Never moved the predicted way. It {other} up to {abs(against):.1f}% (after {hrs(against_h)})."
+    else:
+        text = f"{size(peak, peak_h).capitalize()} impact: {asset} {word} up to {abs(peak):.1f}% (after {hrs(peak_h)})."
+        if faded is not None:
+            text += f" The effect lasted about {hrs(faded)}, then faded"
+            text += (f" - later it {other} up to {abs(against):.1f}% (after {hrs(against_h)})." if against_fav < 0 and against_h > faded
+                     else ".")
+        else:
+            text += f" Still in the predicted direction after {hrs(last_h)} ({last:+.1f}%)."
+    return {"peak": round(peak, 2), "peak_hours": peak_h, "faded_hours": faded, "against": round(against, 2),
+            "against_hours": against_h, "until_hours": last_h, "text": text}
+
+
+def rejudge(memory):
+    """Judge every event again with its CURRENT prediction. The Decision agent runs after the Price Tracker and
+    can add a prediction, so without this an event could show a prediction but still say "No prediction"."""
+    for ev in memory["events"]:
+        o, direction = ev.get("outcome") or {}, (ev.get("prediction") or {}).get("direction")
+        if ev["state"] is None or o.get("start_price") is None:
+            continue
+        for k, hours in CHECKPOINTS.items():
+            if o.get(k):
+                o[k]["verdict"] = cell_verdict(o[k]["move"], direction, ev["asset"], hours)
+        if o.get("now"):
+            o["now"]["verdict"] = cell_verdict(o["now"]["move"], direction, ev["asset"], max(o["now"]["hours"], 1))
+        o["effect"], o["effect_reason"] = judge(o, ev["asset"], direction)
 
 
 def run(test_mode=False, now=None):

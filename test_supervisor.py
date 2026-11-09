@@ -1,5 +1,5 @@
 """
-Tests for the Supervisor: 22 situations it must handle correctly.
+Tests for the Supervisor: 24 situations it must handle correctly.
 Every test uses made-up stories and a separate memory folder (data/selftest), so real data is never touched.
 
 Run:  py test_supervisor.py      (or press "Test the Supervisor" in the MINT app)
@@ -76,18 +76,24 @@ summary = quiet_run([btc_report({"B2": [story("Bybit hack: how $1.5bn vanished i
 check("5. New article about an alerted event -> update, no new alert",
       summary["updates_ignored"] == 1 and summary["new_events"] == 0, str(summary))
 
-# 6. The same organisation twice is still only ONE organisation
+# 6. ONE reliable (approved) news organisation is enough - no second source needed
 fresh_memory()
 quiet_run([btc_report({"B1": [
     story("Country Z bans bitcoin mining", "Reuters", "reuters.com", 3, factor="B1"),
     story("Country Z bans bitcoin mining, citing power shortages", "Reuters", "reuters.com", 1, factor="B1")]})], T0)
 e = events()
-check("6. Same organisation twice -> still Watch (needs a 2nd organisation)",
-      len(e) == 1 and e[0]["state"] == "watch", e and e[0]["state"])
+check("6. One approved news organisation alone -> confirmed (no second source needed)",
+      len(e) == 1 and e[0]["state"] == "confirmed", e and e[0]["state"])
 
-# 7. A Watch that never gets a second source expires
-summary = quiet_run([btc_report({})], T0 + timedelta(hours=26))
-check("7. Watch with no second source after 24h -> expired", events()[0]["state"] == "expired", events()[0]["state"])
+# 7. A post from an approved social media account is confirmed on its own (labelled as social media)
+fresh_memory()
+post = {**story("Country Q says it will ban bitcoin trading next month", "Some Account (Telegram)", "someaccount", 1,
+                factor="B1"), "kind": "social", "asset": "Bitcoin"}
+quiet_run([{"scout": "social", "news": [{"id": "B1", "kept": [post]}]}], T0)
+e = events()
+check("7. Approved social media account alone -> confirmed, and marked as social media",
+      e and e[0]["state"] == "confirmed" and e[0]["proof"] == "social" and "social media" in e[0]["proof_reason"],
+      e and f"{e[0]['state']} / {e[0]['proof']}")
 
 # 8. An official source counts on its own
 fresh_memory()
@@ -105,13 +111,11 @@ e = events()
 check("9. 'A year after...' -> flagged for the Decision agent's date check", e and bool(e[0]["old_clues"]),
       e and str(e[0]["old_clues"]))
 
-# 10. First report too old (the Scout found a fresh article, but MINT already knew the event from 30h ago)
+# 10. First report too old: the Scout found an article, but the event was first reported 30h ago
 fresh_memory()
-quiet_run([btc_report({"B2": [story("Exchange Delta hacked for $200m", "Reuters", "reuters.com", 1)]})],
-          T0 - timedelta(hours=30))
-quiet_run([btc_report({})], T0)
-check("10. Event first reported 30h ago (Bitcoin limit 24h) -> old", events()[0]["state"] in ("old", "expired"),
-      events()[0]["state"])
+quiet_run([btc_report({"B2": [story("Exchange Delta hacked for $200m", "Reuters", "reuters.com", 30)]})], T0)
+check("10. Event first reported 30h ago (Bitcoin limit 24h) -> old, no alert",
+      events() and events()[0]["state"] in ("old", "summary"), events() and events()[0]["state"])
 
 # 11. A headline that is not about its factor is dropped (Google returned it, but it is about politics)
 fresh_memory()
@@ -154,14 +158,14 @@ with contextlib.redirect_stdout(io.StringIO()):
 check("15. First run: a proven new event is reported normally (confirmed), not hidden",
       events() and events()[0]["state"] == "confirmed", events() and events()[0]["state"])
 
-# 16. A social media post alone can only start a Watch, even from a famous account
+# 16. A social media post from an approved account goes to the Decision agent without a second source
 fresh_memory()
 post = story("Binance has suspended withdrawals while we investigate a security incident",
              "Binance announcements (Telegram)", "binance_announcements", 1)
 post.update(kind="social", asset="Bitcoin")
 quiet_run([{"scout": "social", "news": [{"id": "B2", "kept": [post]}]}], T0)
-check("16. Social media post alone -> Watch only", events() and events()[0]["state"] == "watch"
-      and events()[0]["proof"] == "social_only", events() and events()[0]["state"])
+check("16. Approved social media post alone -> confirmed (passed to the Decision agent)",
+      events() and events()[0]["state"] == "confirmed", events() and events()[0]["state"])
 
 # 17-20. Predictions come from what happened after similar PAST events (+ the factor pattern)
 import library
@@ -209,6 +213,23 @@ supervisor.save_memory(old_memory, True)
 quiet_run([], T0)
 check("22. Old memory: website section removed, same-day duplicate joined (1 event left)",
       [e["id"] for e in events()] == ["GOLD-OLD-1"], str([e["id"] for e in events()]))
+
+# 23. Judging over 9 price checks: clear moves only, the bar grows with time, majority decides
+import prices
+o = {}
+for k, move in {"h1": -0.5, "h5": -0.2, "h10": -1.2, "d1": -2.0}.items():      # Bitcoin, predicted DOWN
+    o[k] = {"move": move, "verdict": prices.cell_verdict(move, "down", "Bitcoin", prices.CHECKPOINTS[k])}
+effect, why = prices.judge(o, "Bitcoin", "down")
+check("23. Price checks: -0.5% after 1h counts (bar 0.3%), -0.2% after 5h is too small (bar 0.7%); 3 of 3 -> right, not final",
+      [o[k]["verdict"] for k in ("h1", "h5", "h10", "d1")] == ["right", "flat", "right", "right"]
+      and effect == "right" and o["checks"]["right"] == 3 and not o["final"], f"{effect}: {why}")
+o["d2"] = {"move": 3.0, "verdict": prices.cell_verdict(3.0, "down", "Bitcoin", 48)}
+o["d7"] = {"move": 5.0, "verdict": prices.cell_verdict(5.0, "down", "Bitcoin", 168)}
+o["d5"] = {"move": 4.0, "verdict": prices.cell_verdict(4.0, "down", "Bitcoin", 120)}
+o["h84"] = {"move": 3.5, "verdict": prices.cell_verdict(3.5, "down", "Bitcoin", 84)}
+effect, why = prices.judge(o, "Bitcoin", "down")
+check("24. Later checks go the other way (4 wrong vs 3 right) -> wrong, and final after 7 days",
+      effect == "wrong" and o["final"], f"{effect}: {why}")
 
 passed = sum(ok for _, ok in results)
 print(f"\nRESULT: {passed} of {len(results)} tests passed.")

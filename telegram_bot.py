@@ -202,7 +202,7 @@ def check_messages(token):
 # Writing the messages
 # ---------------------------------------------------------------------------
 FOOTER = "Risk information only, not financial advice."
-HEADLINE = {"watch": "WATCH (not proven yet)", "confirmed": "BEING CHECKED", "alerted": "ALERT",
+HEADLINE = {"watch": "WATCH (not confirmed yet)", "confirmed": "BEING CHECKED", "alerted": "ALERT",
             "context": "INFO ONLY (slow factor)", "summary": "OLDER NEWS (weekly summary)", "old": "TOO OLD TO BE NEWS",
             "expired": "NOT CONFIRMED", "rejected": "CHECKED - NO ALERT"}
 
@@ -254,7 +254,7 @@ def view_lines(ev):
     if a.get("summary") and a.get("by", "").startswith("AI"):
         lines.append(f"MINT's view: {a['summary']}")
     if p.get("direction") in ("up", "down"):
-        lines.append(f"Prediction (next day): {ev['asset']} {p['direction'].upper()}"
+        lines.append(f"Predicted effect: {ev['asset']} {p['direction'].upper()}"
                      + (f" - {a['confidence']} confidence ({a.get('confidence_reason', '')})" if a.get("confidence") else ""))
     else:
         lines.append("Prediction: unclear - not enough evidence")
@@ -269,11 +269,20 @@ def view_lines(ev):
     return lines
 
 
+def social_line(ev):
+    """'📱 From social media: ...' when an event comes only from social media posts, else ''."""
+    if ev["sources"] and all(s.get("kind") == "social" for s in ev["sources"]):
+        accounts = sorted({s["organisation"] for s in ev["sources"]})
+        return f"📱 From social media: {', '.join(accounts)} (approved account) - no news report yet"
+    return ""
+
+
 def event_text(ev, update=False):
     orgs = sorted({s["organisation"] for s in ev["sources"]})
     kind = f"{'update' if update else 'event'} · {HEADLINE.get(ev['state'], ev['state'].upper())}"
+    source_line = social_line(ev) or f"Sources: {', '.join(orgs)}"
     lines = glance_lines(ev, kind) + ["", ev["title"], "",
-             f"Sources: {', '.join(orgs)}", f"Status: {CLOSED_WORDS.get(ev['state']) or ev.get('state_reason', '')}"]
+             source_line, f"Status: {CLOSED_WORDS.get(ev['state']) or ev.get('state_reason', '')}"]
     o = ev.get("outcome") or {}
     if o.get("moved_before_mint") is not None:
         lines.append(f"{ev['asset']} had moved {o['moved_before_mint']:+.1f}% between the first report and MINT noticing.")
@@ -282,23 +291,38 @@ def event_text(ev, update=False):
 
 
 CLOSED_WORDS = {
-    "watch": "only one source so far - waiting for a second before any alert",
-    "confirmed": "enough proof - the Decision agent is checking it",
-    "expired": "No second source confirmed it in time, so there is no alert (still tracked).",
+    "watch": "reported, but not by an approved source yet - MINT tracks its impact",
+    "confirmed": "reported by an approved source - the Decision agent is checking it",
+    "expired": "No approved source reported it in time, so there is no alert (still tracked).",
     "context": "Confirmed, but it is a slow factor, so it is info only - no alert.",
     "summary": "Older news (2 to 7 days), so it only goes in the weekly summary - no alert.",
     "old": "Too old to be news - no alert.",
 }
 
 
-def result_text(ev):
+def checks_lines(ev):
+    """All price checks so far, e.g. '✅ 5 hours: -1.2%'."""
+    from prices import CHECKPOINTS, CHECKPOINT_NAMES
+    o, out = ev.get("outcome") or {}, []
+    for k in CHECKPOINTS:
+        if o.get(k):
+            mark = {"right": "✅", "wrong": "❌"}.get(o[k].get("verdict"), "➖")
+            out.append(f"{mark} {CHECKPOINT_NAMES[k]}: {o[k]['move']:+.1f}%")
+    return out
+
+
+def result_text(ev, final=False):
     o, p = ev.get("outcome") or {}, ev.get("prediction") or {}
     verdict = {"right": "RIGHT", "wrong": "WRONG", "no_clear_move": "NO CLEAR MOVE"}[o["effect"]]
-    return (f"{RESULT_ICON[o['effect']]} MINT result · {ASSET_ICON.get(ev['asset'], '')} {ev['asset']} · prediction {verdict}\n"
+    head = "FINAL result (7 days)" if final else "result after 1 day (so far)"
+    return (f"{RESULT_ICON[o['effect']]} MINT {head} · {ASSET_ICON.get(ev['asset'], '')} {ev['asset']} · prediction {verdict}\n"
             f"{ev['title']}\n\n"
             f"Predicted: {ev['asset']} {str(p.get('direction', '?')).upper()}\n"
-            f"After 1 day: {o['d1']['move']:+.1f}%\n{o.get('effect_reason', '')}\n\n"
-            "Every result is added to MINT's past events library, so future predictions learn from it.\n" + FOOTER)
+            + "\n".join(checks_lines(ev)) + f"\n\n{o.get('effect_reason', '')}\n"
+            + (f"📏 {o['impact']['text']}\n" if o.get("impact") else "")
+            + "✅ moved clearly the predicted way · ❌ clearly the other way · ➖ too small to count\n\n"
+            + ("" if final else "MINT keeps checking until 7 days and sends the final result then.\n")
+            + "Every result is added to MINT's past events library, so future predictions learn from it.\n" + FOOTER)
 
 
 def was_on_watch(ev):
@@ -314,7 +338,8 @@ def alert_text(ev):
     if since:
         text = text.replace("\n", f"\n(Update: this was on Watch since {since:%d %b %H:%M} UTC.)\n", 1)
     first, _, rest = text.partition("\n")
-    text = f"🚨 {first}\n{glance_lines(ev, 'alert')[1]}\n\n{rest}"     # add the "at a glance" line
+    social = social_line(ev)
+    text = f"🚨 {first}\n{glance_lines(ev, 'alert')[1]}\n{social + chr(10) if social else ''}\n{rest}"   # "at a glance" line
     extra = view_lines(ev)
     return text.replace(FOOTER, "\n".join(extra) + "\n\n" + FOOTER) if FOOTER in text else text + "\n" + "\n".join(extra)
 
@@ -329,7 +354,7 @@ def log_message(kind, title, people):
     path.write_text(json.dumps(log[-300:], indent=2), encoding="utf-8")
 
 
-def deliver(token, subs, text, asset=None, level="alerts", kind="", title="", channel=""):
+def deliver(token, subs, text, asset=None, level="alerts", kind="", title="", channel="", silent=False):
     """Send one message to every subscriber who wants it, and to the channel (if set). Returns how many got it."""
     people = [c for c, s in subs.items()
               if (asset is None or asset in s.get("assets", []))
@@ -345,7 +370,8 @@ def deliver(token, subs, text, asset=None, level="alerts", kind="", title="", ch
                 subs.pop(chat, None)          # they blocked the bot: remove them
     if channel:
         try:
-            call(token, "sendMessage", {"chat_id": channel, "text": text[:4000], "disable_web_page_preview": True})
+            call(token, "sendMessage", {"chat_id": channel, "text": text[:4000], "disable_web_page_preview": True,
+                                        "disable_notification": silent})
             ok += 1
         except Exception as e:
             print(f"   CHANNEL problem: {e} (is the bot an admin of {channel}?)")
@@ -414,8 +440,16 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
             if fresh(o["d1"].get("time"), 48):
                 n = deliver(token, subs, result_text(ev), ev["asset"], "everything", "result", ev["title"], channel)
                 total += n
-                print(f"   RESULT   -> {n}: {ev['title'][:70]} ({o['effect']})")
+                print(f"   RESULT   -> {n}: {ev['title'][:70]} ({o['effect']}, after 1 day)")
             tg["result_sent"] = now.isoformat()
+        # 4b. FINAL RESULT after all 9 price checks (7 days)
+        if o.get("effect") in ("right", "wrong", "no_clear_move") and o.get("final") and not tg.get("final_sent"):
+            if fresh(o["d7"].get("time"), 48):
+                n = deliver(token, subs, result_text(ev, final=True), ev["asset"], "everything", "final result",
+                            ev["title"], channel)
+                total += n
+                print(f"   FINAL    -> {n}: {ev['title'][:70]} ({o['effect']}, after 7 days)")
+            tg["final_sent"] = now.isoformat()
 
     if not test_mode and token:
         # 5. HEADS-UP before scheduled gold events, once each
@@ -439,6 +473,21 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
             total += n
             print(f"   WEEKLY   -> {n}: summary for {week}")
         state["weekly_done"] = week
+
+    # 7. RUN COMPLETE: if nothing else was posted, a short SILENT note to the channel, so you can see MINT is running
+    if channel and token and not test_mode and total == 0:
+        try:
+            states = asset_states(memory, [], now)
+        except Exception:
+            states = {a: {"state": "?"} for a in ("Bitcoin", "Gold")}
+        icon = {"CALM": "🟢", "WATCH": "👀", "ALERT": "🚨"}
+        watching = sum(1 for e in memory["events"] if e["state"] == "watch")
+        text = (f"✅ MINT run complete · {now:%d %b %H:%M} UTC\nNothing new to report.\n"
+                + " · ".join(f"{icon.get(str(states[a]['state']).upper(), '•')} {a}: {str(states[a]['state']).capitalize()}"
+                             for a in ("Bitcoin", "Gold"))
+                + (f"\n{watching} event(s) on Watch - MINT is tracking their impact." if watching else ""))
+        if deliver(token, {}, text, None, "everything", "run complete", "", channel, silent=True):
+            print("   RUN DONE -> channel (silent): nothing new to report")
 
     save_memory(memory, test_mode)
     save_subscribers(subs)

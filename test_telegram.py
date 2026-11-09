@@ -1,5 +1,5 @@
 """
-Tests for the Telegram bot (20 checks), using a PRETEND Telegram server on this computer (nothing is really sent).
+Tests for the Telegram bot (21 checks), using a PRETEND Telegram server on this computer (nothing is really sent).
 Uses its own temporary folder (data/telegramtest), so real subscribers are never touched.
 
 Run:  py test_telegram.py   (or press "Test the Telegram bot" in the MINT app)
@@ -132,7 +132,7 @@ sent.clear()
 quiet(tb.send_alerts, "T", False, now, [], CH)
 event_msgs = [m for m in sent if "Event GOLD-W" in m["text"]]
 check("13. EVERY new event (here a Watch) goes to 'Everything' people and the channel, with MINT's view",
-      to("Event GOLD-W") == ["333", CH] and "Prediction (next day)" in event_msgs[0]["text"]
+      to("Event GOLD-W") == ["333", CH] and "Predicted effect" in event_msgs[0]["text"]
       and "Similar past events" in event_msgs[0]["text"])
 check("19. Messages start with the 'at a glance' line (impact, direction, confidence), and the channel gets the key once",
       " impact · " in event_msgs[0]["text"].split("\n")[1] and
@@ -140,6 +140,8 @@ check("19. Messages start with the 'at a glance' line (impact, direction, confid
 sent.clear()
 quiet(tb.send_alerts, "T", False, now, [], CH)
 check("20. The key is posted only once", to("How to read MINT messages") == [])
+check("21. A run with nothing new posts a short SILENT 'run complete' note to the channel only",
+      to("MINT run complete") == [CH] and [m for m in sent if "MINT run complete" in m["text"]][0].get("disable_notification") is True)
 mem = supervisor.load_memory(False)
 mem["events"][0].update(state="expired")
 supervisor.save_memory(mem, False)
@@ -171,7 +173,8 @@ sent.clear()
 quiet(tb.send_alerts, "T", False, sunday, [], CH)
 quiet(tb.send_alerts, "T", False, sunday, [], CH)
 check("18. The weekly summary goes to everyone and the channel on Sunday, only once, and is saved",
-      sorted(str(m["chat_id"]) for m in sent) == ["222", "333", CH] and len(weekly.load_all(False)) == 1
+      sorted(str(m["chat_id"]) for m in sent if "run complete" not in m["text"]) == ["222", "333", CH]
+      and len(weekly.load_all(False)) == 1
       and "How good were MINT's predictions" in sent[0]["text"])
 
 print(f"\nRESULT: {sum(results)} of {len(results)} tests passed.")

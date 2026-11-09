@@ -10,9 +10,9 @@ For every story the Scouts kept, the Supervisor answers three questions:
      events by comparing their headlines (shared names, amounts and key words).
 
   2. Is there ENOUGH PROOF?
-       - an official source (SEC, Federal Reserve, World Gold Council...) counts on its own
-       - news websites need 2 DIFFERENT organisations
-       - a social media post (later) can only start a Watch
+       - ONE approved source is enough: an official source (SEC, Federal Reserve, World Gold Council...),
+         one news organisation on the approved list (sources.json), or a post from an approved social
+         media account (social_accounts.json) - posts are always labelled "from social media"
 
   3. Is it NEW?
        - an event MINT has already seen is never alerted twice (a new article = an update)
@@ -21,12 +21,12 @@ For every story the Scouts kept, the Supervisor answers three questions:
          Decision agent checks the real date
 
 Every event gets a state:
-    watch      something might be happening, but there is not enough proof yet
-    confirmed  enough proof - waiting for the Decision agent
+    watch      reported, but not by an approved source (rare now: every source MINT reads is approved)
+    confirmed  reported by a reliable source - waiting for the Decision agent
     alerted    the Decision agent approved it ("stamped") and wrote the alert
     context    proven, but from a moderate factor - shown in the app, no alert
     old        the event is too old to be news
-    expired    "not confirmed": a Watch that never got a second source (kept and tracked, no alert)
+    expired    "not confirmed": a social media post that no approved source reported in time (kept and tracked, no alert)
     rejected   the Decision agent decided it is not a real new event
 
 Then each asset gets a state:  Calm, Watch or Alert.
@@ -331,6 +331,23 @@ def tidy_memory(memory, now, say):
             removed.append({"id": ev["id"], "title": ev["title"], "removed_at": now.isoformat(),
                             "reason": "a website section, not a news headline"})
             say(f"REMOVED     [{ev['id']}] {ev['title']} - a website section, not a news headline")
+    import social_watcher
+    factors = load_json("factors.json")["factors"]
+    for ev in list(memory["events"]):
+        if not all(src["kind"] == "social" for src in ev["sources"]):
+            continue
+        clean = social_watcher.tidy_post(ev["title"])
+        if clean != ev["title"]:
+            ev["title"] = clean                       # "📉 📉 📉 ... Read Analysis" -> the post itself
+            for src in ev["sources"]:
+                src["title"] = social_watcher.tidy_post(src["title"])
+        full = max([social_watcher.tidy_post(src.get("summary") or src["title"]) for src in ev["sources"]] + [clean], key=len)
+        m = social_watcher.match_post(full, factors)          # the whole post, not the shortened title
+        if ev["state"] in ("watch", "expired") and (m is None or m[0] != ev["asset"]):
+            memory["events"].remove(ev)
+            removed.append({"id": ev["id"], "title": ev["title"], "removed_at": now.isoformat(),
+                            "reason": "re-checked with the newer rules: not about " + ev["asset"]})
+            say(f"REMOVED     [{ev['id']}] {ev['title'][:70]} - re-checked: not about {ev['asset']}")
     ordered = sorted(memory["events"], key=lambda e: e["earliest_report"])
     for i, later in enumerate(ordered):
         if later not in memory["events"]:
@@ -354,17 +371,22 @@ def tidy_memory(memory, now, say):
 
 
 def proof_level(ev):
-    """official / two_news / one_news / social_only - and a plain-English explanation."""
+    """official / news / social - and a plain-English explanation.
+    ONE approved source is enough: an official source, a news organisation on the approved list (sources.json),
+    or a post from an approved social media account (social_accounts.json). Posts are marked as social media
+    everywhere (Telegram says "From social media: ..."), because accounts can be hacked or fake - the SEC's own
+    X account was hacked in January 2024 and posted a false Bitcoin ETF approval."""
     kinds = {s["kind"] for s in ev["sources"]}
     news_orgs = sorted({s["organisation"] for s in ev["sources"] if s["kind"] == "news"})
+    social = sorted({s["organisation"] for s in ev["sources"] if s["kind"] == "social"})
     if kinds & {"official", "data"}:
         org = next(s["organisation"] for s in ev["sources"] if s["kind"] in ("official", "data"))
         return "official", f"official source: {org}"
-    if len(news_orgs) >= 2:
-        return "two_news", f"{len(news_orgs)} different news organisations: {', '.join(news_orgs)}"
     if news_orgs:
-        return "one_news", f"only 1 news organisation so far ({news_orgs[0]}) - waiting for a second"
-    return "social_only", "only a social media post - waiting for a news or official source"
+        return "news", f"reliable source: {', '.join(news_orgs)}"
+    if social:
+        return "social", f"approved social media account: {', '.join(social)} (from social media)"
+    return "none", "no approved source"
 
 
 def note(ev, now, text):
@@ -408,7 +430,7 @@ def update_state(ev, factors, now):
     age = hours_between(now, parse_time(ev["earliest_report"]))
     old_state = ev["state"]
 
-    proven = proof in ("official", "two_news")
+    proven = proof in ("official", "news", "social")      # one approved source is enough
     window = ALERT_WINDOW_HOURS[ev["asset"]]
     if age > window and age <= MAX_EVENT_AGE_HOURS[ev["asset"]]:
         ev["state"] = "summary"
@@ -420,7 +442,7 @@ def update_state(ev, factors, now):
     elif not proven and (age > MAX_EVENT_AGE_HOURS[ev["asset"]] or
                          hours_between(now, parse_time(ev["first_seen"])) > WATCH_EXPIRES_HOURS[ev["asset"]]):
         ev["state"] = "expired"
-        ev["state_reason"] = "only one source, and no second source came in time - not confirmed (still tracked, no alert)"
+        ev["state_reason"] = "a social media post that no approved news or official source reported in time - not confirmed (still tracked, no alert)"
     elif factor.get("strength") != "strong":
         ev["state"] = "context"
         ev["state_reason"] = (f"{factor.get('name', ev['factor'])} is a moderate factor - shown for context, "
@@ -428,12 +450,12 @@ def update_state(ev, factors, now):
     elif proven:
         if factor.get("strength") == "strong":
             ev["state"] = "confirmed"
-            ev["state_reason"] = f"enough proof ({why}) - waiting for the Decision agent"
+            ev["state_reason"] = f"{why} - passed to the Decision agent"
             if ev["old_clues"]:
                 ev["state_reason"] += f"; the Decision agent must check the date ({', '.join(ev['old_clues'])})"
         else:
             ev["state"] = "context"
-            ev["state_reason"] = (f"enough proof ({why}), but {factor.get('name', ev['factor'])} is a moderate "
+            ev["state_reason"] = (f"{why}, but {factor.get('name', ev['factor'])} is a moderate "
                                   "factor - shown for context, no alert")
     else:
         ev["state"] = "watch"
@@ -458,7 +480,7 @@ def asset_states(memory, reports, now):
             if ev["state"] == "alerted" and decided and hours_between(now, decided) <= ALERT_STAYS_HOURS[asset]:
                 reasons_alert.append(f"Alert: {ev['title']}")
             elif ev["state"] in ("watch", "confirmed"):
-                reasons_watch.append(f"Watching: {ev['title']} ({ev['proof_reason']})")
+                reasons_watch.append(f"{'Watching' if ev['state'] == 'watch' else 'Being checked'}: {ev['title']} ({ev.get('proof_reason', '')})")
         for report in reports:
             if asset == "Bitcoin" and report.get("scout") == "bitcoin":
                 checks = report.get("data_checks", {})

@@ -461,6 +461,8 @@ def run(test_mode=False, now=None):
         summary["decided"] += 1
 
     memory["last_states"] = asset_states(memory, [], now)
+    import prices
+    prices.rejudge(memory)            # predictions added in this run are used for the results straight away
     save_memory(memory, test_mode)
     print(f"\nBOTTOM LINE: {summary['decided']} decided, {summary['alerts']} alert(s) stamped, "
           f"{summary['rejected']} rejected, {len(summary['errors'])} AI problem(s).")
