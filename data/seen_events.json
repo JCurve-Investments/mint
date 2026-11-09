@@ -407,8 +407,14 @@
           "time": "2026-11-08T14:49:32+00:00",
           "verdict": "flat"
         },
-        "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price (after 1 hour: -0.1%)"
+        "effect": "wrong",
+        "effect_reason": "predicted down, but +1.4% after 1 day",
+        "d1": {
+          "price": 4109.89,
+          "move": 1.41,
+          "time": "2026-11-09T13:49:32+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -435,7 +441,8 @@
         "time": "2026-11-09T10:42:59.469113+00:00"
       },
       "telegram": {
-        "sent_state": "watch"
+        "sent_state": "watch",
+        "result_sent": "2026-11-09T14:33:24.177676+00:00"
       }
     },
     {
@@ -862,7 +869,13 @@
         "moved_before_mint": 0.57,
         "delay_hours": 0.6,
         "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price"
+        "effect_reason": "waiting for the 1-day price (after 1 hour: +0.7%)",
+        "h1": {
+          "price": 74846.7,
+          "move": 0.71,
+          "time": "2026-11-09T13:10:26+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -992,8 +1005,14 @@
         "start_time": "2026-11-09T12:43:50+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.3,
-        "effect": "no_prediction",
-        "effect_reason": "no prediction was made for this event"
+        "effect": "tracking",
+        "effect_reason": "waiting for the 1-day price (after 1 hour: +0.1%)",
+        "h1": {
+          "price": 74846.7,
+          "move": 0.14,
+          "time": "2026-11-09T13:30:00+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -1022,6 +1041,181 @@
       "telegram": {
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261109-05",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "BlackRock Is Doing a Brisk Business in Crypto ETF Conversions. Here\u2019s Why.",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (only 1 news organisation so far (Barron's) - waiting for a second)",
+      "proof": "one_news",
+      "proof_reason": "only 1 news organisation so far (Barron's) - waiting for a second",
+      "first_seen": "2026-11-09T14:33:24.177676+00:00",
+      "earliest_report": "2026-11-09T13:43:00+00:00",
+      "last_updated": "2026-11-09T14:33:24.177676+00:00",
+      "words": [
+        "blackrock",
+        "brisk",
+        "busines",
+        "conversion",
+        "crypto",
+        "doing",
+        "etf",
+        "here"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Barron's",
+          "kind": "news",
+          "site": "barrons.com",
+          "title": "BlackRock Is Doing a Brisk Business in Crypto ETF Conversions. Here\u2019s Why.",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbmZOMWNsbjI2LWxMT2MwSWI3S1ZObU1XX2lqVGRST05XNW5RWXY4YzFFd3JXS0RMa3JYSTFkcnBGdUtra2lZVjRULV96YTZMcEwwNFIxczhURGNPQlIzWkQwMjUzSlp1WGw2UW04Tk5iS3FCSTU0MHFiVXM5MTJQVEVaajBTbnhiTmFmcGtOM0dBY2M?oc=5",
+          "published": "2026-11-09T13:43:00+00:00",
+          "found_at": "2026-11-09T14:33:24.177676+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T14:33:24.177676+00:00",
+          "note": "new event, first report by Barron's"
+        },
+        {
+          "time": "2026-11-09T14:33:24.177676+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (only 1 news organisation so far (Barron's) - waiting for a second)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 74658.6,
+        "start_time": "2026-11-09T14:00:00+00:00",
+        "moved_before_mint": -0.21,
+        "delay_hours": 0.8,
+        "effect": "no_prediction",
+        "effect_reason": "no prediction was made for this event"
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "There are no directly comparable past events yet, so we have no concrete price\u2011movement record to rely on.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "BlackRock is quickly converting assets into Bitcoin ETFs, which could mean more money is flowing into these funds.",
+        "what_past_events_show": "There are no directly comparable past events yet, so we have no concrete price\u2011movement record to rely on.",
+        "direction": "up",
+        "why": [
+          "ETF inflows usually line up with higher Bitcoin prices",
+          "Big\u2011name involvement (BlackRock) tends to boost market confidence"
+        ],
+        "watch_next": "Look for actual ETF flow numbers or a second news source confirming the scale of the conversions.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T14:33:24.177676+00:00"
+      },
+      "telegram": {
+        "sent_state": "context"
+      }
+    },
+    {
+      "id": "BTC-20261109-06",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "JUST IN: $15 trillion BlackRock expects billions of dollars in crypto to move into ETFs over security concerns. @WatcherGuru",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (only a social media post - waiting for a news or official source)",
+      "proof": "social_only",
+      "proof_reason": "only a social media post - waiting for a news or official source",
+      "first_seen": "2026-11-09T14:33:24.177676+00:00",
+      "earliest_report": "2026-11-09T13:57:12+00:00",
+      "last_updated": "2026-11-09T14:33:24.177676+00:00",
+      "words": [
+        "billion",
+        "blackrock",
+        "concern",
+        "crypto",
+        "dollar",
+        "etfs",
+        "expect",
+        "just",
+        "move",
+        "over",
+        "security",
+        "trillion",
+        "watcherguru"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: $15 trillion BlackRock expects billions of dollars in crypto to move into ETFs over security concerns. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/15895",
+          "published": "2026-11-09T13:57:12+00:00",
+          "found_at": "2026-11-09T14:33:24.177676+00:00",
+          "summary": "JUST IN: $15 trillion BlackRock expects billions of dollars in crypto to move into ETFs over security concerns. @WatcherGuru",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T14:33:24.177676+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-09T14:33:24.177676+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (only a social media post - waiting for a news or official source)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 74658.6,
+        "start_time": "2026-11-09T14:00:00+00:00",
+        "moved_before_mint": -0.21,
+        "delay_hours": 0.6,
+        "effect": "no_prediction",
+        "effect_reason": "no prediction was made for this event"
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "There are no past events of this exact kind to compare, so we have no direct price history to rely on.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "BlackRock says billions of dollars could flow into crypto ETFs, which could bring more institutional money into Bitcoin.",
+        "what_past_events_show": "There are no past events of this exact kind to compare, so we have no direct price history to rely on.",
+        "direction": "up",
+        "why": [
+          "ETF inflows usually mean new buying pressure on Bitcoin",
+          "BlackRock\u2019s involvement adds credibility and may attract more investors"
+        ],
+        "watch_next": "If actual ETF flow numbers are released tomorrow and show strong inflows, the impact could be larger; weak or negative flows would lessen it.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T14:33:24.177676+00:00"
+      },
+      "telegram": {
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -1029,24 +1223,24 @@
     "GOLD-20261105": 1,
     "GOLD-20261108": 1,
     "GOLD-20261109": 1,
-    "BTC-20261109": 4
+    "BTC-20261109": 6
   },
   "last_run": {
-    "run_time": "2026-11-09T12:45:12.168724+00:00",
+    "run_time": "2026-11-09T14:33:24.177676+00:00",
     "test_mode": false,
-    "stories": 13,
-    "off_topic": 8,
-    "repeats": 3,
+    "stories": 16,
+    "off_topic": 10,
+    "repeats": 4,
     "new_events": 2,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 1,
+      "context": 2,
       "summary": 0,
       "old": 0,
       "expired": 0,
-      "watch": 1
+      "watch": 0
     },
     "open_events": 5,
     "asset_states": {
