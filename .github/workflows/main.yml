@@ -1,0 +1,52 @@
+# Runs MINT in the cloud every 15 minutes, for free (public repository).
+name: MINT
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mint
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install what MINT needs
+        run: pip install -r requirements.txt
+
+      - name: Run all MINT agents once
+        env:
+          MINT_CLOUD: "1"
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHANNEL: ${{ secrets.TELEGRAM_CHANNEL }}
+          TELEGRAM_CHANNEL_LINK: ${{ secrets.TELEGRAM_CHANNEL_LINK }}
+          GROQ_KEY: ${{ secrets.GROQ_KEY }}
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+        run: python cloud_run.py
+
+      - name: Save MINT's memory back into the repository
+        run: |
+          git config user.name "mint-bot"
+          git config user.email "mint-bot@users.noreply.github.com"
+          git add data docs results
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "MINT run $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase --autostash
+            git push
+          fi
