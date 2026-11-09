@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MINT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%231E2420'/%3E%3Ctext x='20' y='27' text-anchor='middle' font-family='Georgia' font-size='21' fill='%23F5F0E6'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F0E6;--ink:#1E2420;--surface:#FFFCF5;--line:#E3DAC7;--muted:#6A6D63;--soft:#3C423B;--gold:#C9A227;--goldtext:#8A7A3C;
+--green:#2F7D5B;--greenbg:#DCEBDD;--amber:#B7791F;--amberbg:#F6E7C4;--red:#B3412E;--redbg:#F3DAD3;--grey:#E6E2D6;--hover:#FAF4E6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-variant-numeric:tabular-nums}
+a{color:inherit}
+button,input,select{font-family:inherit;font-size:14px}
+button{cursor:pointer}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px 40px}
+.serif{font-family:'Newsreader',Georgia,serif}
+header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand span{font-family:'Newsreader',Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.08em}
+nav{display:flex;flex-wrap:wrap}
+nav button{background:none;border:0;border-bottom:2px solid transparent;margin:0 10px;padding:8px 2px;color:var(--muted);font-weight:500;transition:color .2s,border-color .2s}
+nav button:hover{color:var(--ink)}
+nav button.on{color:var(--ink);border-bottom-color:var(--gold)}
+.topright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:99px;background:var(--ink);color:#FFFCF5;border:1px solid var(--ink);font-weight:500;transition:transform .15s,box-shadow .2s,opacity .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(30,36,32,.16)}
+.btn:disabled{opacity:.5;cursor:default;transform:none;box-shadow:none}
+.btn.light{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn.small{padding:7px 14px;font-size:13px}
+.btn.danger{background:var(--surface);color:var(--red);border-color:#E5C3BA}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.pill{display:inline-block;font-size:12px;font-weight:500;padding:3px 11px;border-radius:99px;white-space:nowrap}
+.p-alert,.p-alerted{background:var(--redbg);color:var(--red)}
+.p-watch,.p-confirmed{background:var(--amberbg);color:var(--amber)}
+.p-calm,.p-context{background:var(--greenbg);color:var(--green)}
+.p-old,.p-expired,.p-rejected,.p-grey,.p-unknown,.p-summary,.p-baseline{background:var(--grey);color:var(--muted)}
+.p-moved{background:var(--greenbg);color:var(--green)}
+.p-tracking{background:var(--amberbg);color:var(--amber)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--goldtext);text-transform:uppercase}
+.muted{color:var(--muted)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex:none}
+.pulse{animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,125,91,.5)}100%{box-shadow:0 0 0 10px rgba(47,125,91,0)}}
+.rise{animation:rise .5s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+body.settled .rise{animation:none}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+h1{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:46px;line-height:1.05;letter-spacing:-.02em;margin:8px 0 8px}
+h2{font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:28px;margin:0}
+.row{display:flex;gap:14px;align-items:flex-start;padding:16px 20px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.clickable{cursor:pointer;transition:background .2s}
+.clickable:hover{background:var(--hover)}
+.grid2{display:flex;flex-wrap:wrap;gap:20px}
+.grid2>*{flex:1 1 440px;min-width:0}
+.seg{display:inline-flex;gap:3px;padding:3px;border-radius:99px;background:var(--bg);border:1px solid var(--line)}
+.seg button{border:0;background:transparent;color:var(--muted);padding:6px 14px;border-radius:99px;font-weight:500;font-size:13px}
+.seg button.on{background:var(--ink);color:#FFFCF5}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;color:var(--muted);font-weight:600;padding:12px 14px;background:var(--hover);text-transform:uppercase}
+td{padding:13px 14px;border-top:1px solid var(--line);vertical-align:top}
+.up{color:var(--green);font-weight:600}.down{color:var(--red);font-weight:600}
+pre{white-space:pre-wrap;font-size:12px;line-height:1.5;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px;max-height:420px;overflow:auto;margin:10px 0 0}
+.banner{margin-top:16px;padding:12px 18px;border-radius:14px;background:var(--amberbg);color:#6B4A0F;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;font-size:14px}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:#FFFCF5;padding:12px 20px;border-radius:99px;font-size:14px;opacity:0;transition:opacity .3s;pointer-events:none;z-index:9}
+.toast.show{opacity:1}
+.switch{position:relative;width:46px;height:26px;border-radius:99px;background:var(--grey);border:0;transition:background .2s;flex:none}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.switch.on{background:var(--green)}.switch.on::after{left:23px}
+.setting{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.setting:last-child{border-bottom:0}
+.setting .txt{flex:1 1 320px}
+.setting .txt b{font-weight:600}
+.setting .txt div{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.5}
+input[type=password],input[type=text],input[type=number],select{padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.empty{padding:28px;text-align:center;color:var(--muted);font-size:14px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips button{padding:7px 15px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-weight:500;font-size:13px}
+.chips button.on{background:var(--ink);border-color:var(--ink);color:#FFFCF5}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.kpi-big{font-family:'Newsreader',Georgia,serif;font-size:34px;line-height:1.1}
+.kpi-label{font-size:13px;font-weight:600;margin-top:6px}
+.kpi-sub{font-size:12px;color:var(--muted);margin-top:2px}
+.htable{width:100%;border-collapse:collapse;font-size:14px}
+.htable th{background:transparent;border-bottom:1px solid var(--line);padding:12px 16px;font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;font-weight:600;text-align:left;white-space:nowrap}
+.htable td{padding:14px 16px;border-top:0;border-bottom:1px solid var(--line);vertical-align:middle}
+.htable tr:last-child td{border-bottom:0}
+.htable .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ev-title{font-weight:600;font-size:14px;line-height:1.35;max-width:420px}
+.ev-meta{font-size:12px;color:var(--muted);margin-top:3px}
+.good{color:var(--green);font-weight:600}.bad{color:var(--red);font-weight:600}
+.arrow{display:inline-flex;width:22px;height:22px;border-radius:50%;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:var(--grey);color:var(--muted)}
+.arrow.up,.arrow.down{background:var(--ink);color:#FFFCF5}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;padding:12px 20px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);background:var(--hover)}
+.sw{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.sw.good{background:var(--green)}.sw.bad{background:var(--red)}.sw.flat{background:#B8B2A0}
+.bar{flex:1;height:6px;border-radius:99px;background:var(--grey);overflow:hidden}.bar div{height:100%;background:var(--green)}
+.weektext{white-space:pre-wrap;font-size:13px;line-height:1.6;margin-top:10px;color:var(--soft)}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kv:last-child{border-bottom:0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:640px){h1{font-size:34px}.wrap{padding:0 16px 32px}nav button{margin:0 6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#" onclick="go('overview');return false">
+    <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#1E2420"/><circle cx="20" cy="20" r="16.2" fill="none" stroke="#C9A227" stroke-width="1.2" stroke-dasharray="2 2.2"/><text x="20" y="27" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-weight="600" font-size="21" fill="#F5F0E6">M</text></svg>
+    <span>MINT</span>
+  </a>
+  <nav id="nav"></nav>
+  <div class="topright" id="topright"></div>
+</header>
+<div id="banner"></div>
+<main id="main"><div class="empty">Loading MINT...</div></main>
+<footer style="padding:30px 0 6px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px;line-height:1.6">
+  <div style="max-width:640px">MINT is a student project (IB MYP Personal Project). It shares risk information, not financial advice. MINT reports what happened after events; it does not predict prices.</div>
+  <div id="credit">Prices: CoinGecko</div>
+</footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+// ---------------------------------------------------------------------------
+// Small helpers
+// ---------------------------------------------------------------------------
+// On the public website (GitHub Pages) the page is VIEW-ONLY: it reads state.json written by the cloud run.
+const STATIC = !["localhost", "127.0.0.1"].includes(location.hostname);
+const TABS = [["overview","Overview"],["events","Events"],["agents","Agents"],["history","History"],["project","Project"],["settings","Settings"]]
+  .filter(([k]) => !(STATIC && k === "settings"));
+const UI = {drawn:{}, tab:"overview", asset:"Bitcoin", range:"7D", hover:null, filter:"all", open:null, out:{}, lastJson:"", testOutput:""};
+let S = null;
+const UI_VERSION = "12";   // must match VERSION in app.py
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = v => v == null ? "–" : "$" + Math.round(v).toLocaleString("en-US");
+const pctTxt = v => v == null ? "–" : Math.abs(v) < 0.05 ? "0.0%" : (v > 0 ? "+" : "") + v.toFixed(1) + "%";
+const pctCls = v => v == null ? "muted" : v >= 0.05 ? "up" : v <= -0.05 ? "down" : "";
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const p2 = n => String(n).padStart(2,"0");
+function when(iso, withTime=true){
+  if(!iso) return "–";
+  const d = new Date(iso);
+  return d.getDate()+" "+MON[d.getMonth()] + (withTime ? " "+p2(d.getHours())+":"+p2(d.getMinutes()) : "");
+}
+function ago(iso){
+  if(!iso) return "never";
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (m < 1) return "just now";
+  if (m < 60) return m + " min ago";
+  if (m < 1440) return Math.round(m/60) + " h ago";
+  return Math.round(m/1440) + " days ago";
+}
+function until(iso){
+  const m = Math.round((new Date(iso) - Date.now()) / 60000);
+  return m <= 0 ? "any moment" : m < 60 ? "in " + m + " min" : "in " + Math.round(m/60) + " h";
+}
+const STATE_WORDS = {watch:"Watch", confirmed:"Checking", alerted:"Alert sent", context:"Info only", old:"Too old",
+  expired:"Not confirmed", rejected:"No alert", summary:"Weekly summary", baseline:"Already in the news"};
+const STATE_HELP = {watch:"Something may be happening, but there is not enough proof yet.",
+  confirmed:"Enough proof. The Decision agent is checking it.", alerted:"Proven and new. An alert was written.",
+  context:"Shown so you know about it, but it comes from a moderate factor (slow, long-term effect on the price), so MINT never sends an alert for it.", old:"The event is too old to be news.",
+  expired:"Only one source reported it, and no second source came in time. It is kept and tracked like every other event, but no alert was sent.", rejected:"The Decision agent decided not to alert.",
+  summary:"Older gold news (2 to 7 days). Part of the weekly summary, never an alert.",
+  baseline:"It was already in the news when MINT first started, so MINT remembers it but does not alert."};
+const statePill = s => `<span class="pill p-${esc(s)}">${esc(STATE_WORDS[s] || s)}</span>`;
+const kindWord = {official:"official source", data:"official data", news:"news", social:"social media"};
+
+function toast(msg){
+  const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 3200);
+}
+async function post(path, body={}){
+  if (STATIC) { toast("This is the view-only website. Changes are made in the GitHub repository."); throw new Error("static"); }
+  const r = await fetch(path, {method:"POST", headers:{"Content-Type":"application/json","X-MINT":"1"}, body:JSON.stringify(body)});
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) { toast(j.error || "Something went wrong"); throw new Error(j.error); }
+  if (j.message) toast(j.message);
+  return j;
+}
+function settleSoon(){ document.body.classList.remove("settled"); clearTimeout(settleSoon.t);
+  settleSoon.t = setTimeout(() => document.body.classList.add("settled"), 700); }   // animate only when a page opens
+function go(tab){ if (STATIC && tab === "settings") tab = "overview"; UI.tab = tab; UI.lastJson = ""; settleSoon(); render(); window.scrollTo({top:0}); }
+
+// ---------------------------------------------------------------------------
+// Loading data from the MINT program
+// ---------------------------------------------------------------------------
+async function load(){
+  try {
+    const r = await fetch(STATIC ? "state.json?t=" + Date.now() : "/api/state", {cache:"no-store"});
+    const txt = await r.text();
+    S = JSON.parse(txt);
+    if (txt !== UI.lastJson) {
+      UI.lastJson = txt;
+      const typing = document.activeElement && ["INPUT","SELECT"].includes(document.activeElement.tagName);
+      if (!typing) render(); else renderTop();
+    }
+  } catch(e) {
+    document.getElementById("banner").innerHTML = STATIC ? `<div class="banner">Could not load MINT's latest data. Try again in a minute.</div>`
+      : `<div class="banner">MINT is not running. Double-click the MINT icon to start it again.</div>`;
+  }
+  setTimeout(load, STATIC ? 60000 : (S && S.running ? 1500 : 4000));
+}
+
+// ---------------------------------------------------------------------------
+// Top bar
+// ---------------------------------------------------------------------------
+function renderTop(){
+  document.getElementById("nav").innerHTML = TABS.map(([k,l]) => `<button class="${UI.tab===k?"on":""}" onclick="go('${k}')">${l}</button>`).join("");
+  let status;
+  if (STATIC) {
+    document.getElementById("topright").innerHTML = `<span class="muted" style="font-size:13px">Updated ${ago(S.last_run)} · runs every 15 min in the cloud</span>`;
+    document.getElementById("banner").innerHTML = "";
+    document.getElementById("credit").textContent = "Prices: CoinGecko";
+    return;
+  }
+  if (S.running) status = `<span style="display:inline-flex;gap:8px;align-items:center;font-size:13px"><span class="dot pulse" style="background:var(--green)"></span>Agents working...</span>`;
+  else if (S.next_run) status = `<span class="muted" style="font-size:13px">Next run ${until(S.next_run)}</span>`;
+  else status = `<span class="muted" style="font-size:13px">Last run ${ago(S.last_run)}</span>`;
+  document.getElementById("topright").innerHTML = status +
+    `<button class="btn" ${S.running?"disabled":""} onclick="runNow(false)">Run now</button>`;
+  document.getElementById("banner").innerHTML = S.test_mode ?
+    `<div class="banner"><span><b>You are looking at TEST data</b> (made-up stories and prices, 1 Nov 2026).</span>
+     <button class="btn small light" onclick="showReal()">Show real data</button></div>` : "";
+  const src = (S.assets.Bitcoin || {}).price_source || "";
+  document.getElementById("credit").textContent = src.includes("CoinGecko") || !src || src==="none yet" ? "Prices: CoinGecko" : "Prices: " + src;
+}
+async function runNow(test){ await post("/api/run", {test}); setTimeout(load, 400); }
+async function showReal(){ await post("/api/view", {test:false}); UI.lastJson=""; load(); }
+
+function render(){
+  if (!S) return;
+  const m = document.getElementById("main");
+  // The page file updates as soon as new files are unzipped, but the MINT program keeps running the
+  // OLD version until it is restarted. Then the page asks for things the old program does not send.
+  if (S.version !== UI_VERSION) {
+    document.getElementById("nav").innerHTML = ""; document.getElementById("topright").innerHTML = "";
+    m.innerHTML = `<section class="card" style="margin-top:30px;padding:30px 32px">
+      <h2>MINT was updated - please restart it</h2>
+      <p style="font-size:15px;line-height:1.6;color:var(--soft);max-width:680px">The new files are in place, but the MINT program running in the background is still the old version.
+      Press <b>Stop MINT</b>, then open MINT again (Desktop icon, or <b>Start MINT.bat</b> in the MINT folder).</p>
+      <button class="btn danger" onclick="post('/api/stop')">Stop MINT</button>
+      <p class="muted" style="font-size:13px;margin-top:14px">If the button does not work: open Task Manager (Ctrl + Shift + Esc), end every task called "Python" or "pythonw", then open MINT again.</p></section>`;
+    return;
+  }
+  renderTop();
+  try {
+    m.innerHTML = ({overview, events, agents, history, project, settings})[UI.tab]();
+  } catch (err) {
+    m.innerHTML = `<div class="card" style="margin-top:30px;padding:26px 28px"><h2>This page could not be shown</h2>
+      <p class="muted" style="font-size:14px">Error: ${esc(err.message)}. Try Stop MINT and opening it again. If it keeps happening, send a screenshot of this.</p>
+      <button class="btn small danger" onclick="post('/api/stop')">Stop MINT</button></div>`;
+    return;
+  }
+  if (UI.tab === "overview") chartHoverDraw();
+}
+
+// ---------------------------------------------------------------------------
+// OVERVIEW
+// ---------------------------------------------------------------------------
+function overview(){
+  const now = new Date();
+  const btc = S.assets.Bitcoin, gold = S.assets.Gold;
+  const latest = S.events.filter(e => !["expired","rejected","old","baseline","summary"].includes(e.state)).slice(0,5);
+  const first = !STATIC && !S.last_run && !S.events.length;
+  return `
+  <section class="rise" style="padding:34px 0 6px;display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between">
+    <div style="flex:1 1 520px">
+      <div class="eyebrow">${now.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"})}</div>
+      <h1>Today in Gold and Bitcoin</h1>
+      <div class="muted" style="font-size:15px">MINT watches trusted sources and warns you about risk. It never tells you what to buy or sell.</div>
+    </div>
+  </section>
+  ${!first && !S.events.some(e => e.state==="alerted" && Date.now()-new Date(e.decision?.time||0) < 7*864e5) ? `<div class="card" style="margin-top:18px;padding:14px 20px;font-size:14px;line-height:1.6;color:var(--soft)">
+    <b>No alerts in the last 7 days - that is normal.</b> An alert needs all of these: a <b>strong</b> factor (bans, hacks, the dollar, the Fed),
+    proof (an official source, or 2 different news organisations), first reported in the last 24 h (Bitcoin) or 48 h (gold), and never seen before.
+    Most news does not pass, which is the point: MINT stays quiet unless something real happens. <b>Watch</b> = something may be happening, not proven yet.
+    <b>Info only</b> = proven, but from a slow factor, so no alert.</div>` : ""}
+  ${first ? `<section class="card" style="margin-top:22px;padding:26px 28px">
+      <h2>Welcome to MINT</h2>
+      <p class="muted" style="font-size:15px;line-height:1.6;max-width:720px">No run yet. Press <b>Run now</b> for a real run (needs internet, about a minute),
+      or try a <b>test run</b> with made-up sample data first. Then go to Settings to turn on automatic runs and add the Desktop icon.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" onclick="runNow(false)">Run now</button><button class="btn light" onclick="runNow(true)">Test run (sample data)</button></div>
+    </section>` : ""}
+  <section class="grid2" style="margin-top:22px">${assetCard("Bitcoin", btc)}${assetCard("Gold", gold)}</section>
+  <section class="card" style="margin-top:20px;padding:24px 26px" id="chartcard">${chartCard()}</section>
+  <section style="display:flex;flex-wrap:wrap;gap:28px;margin-top:34px">
+    <div style="flex:2 1 560px;min-width:0">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px"><h2>Latest events</h2>
+      <a href="#" class="muted" style="font-size:14px" onclick="go('events');return false">All events &rarr;</a></div>
+      <div class="card" style="overflow:hidden">${latest.length ? latest.map(eventRow).join("") : `<div class="empty">No events yet.</div>`}</div>
+    </div>
+    <div style="flex:1 1 300px;min-width:0">
+      <h2 style="margin-bottom:12px">Coming up</h2>
+      <div class="card" style="padding:4px 22px">${upcoming()}</div>
+      <h2 style="margin:26px 0 12px">Data checks</h2>
+      <div class="card" style="padding:4px 22px">${dataChecks()}</div>
+    </div>
+  </section>
+  <section class="card" style="margin-top:34px;padding:34px 34px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px;background:#1E2420;border-color:#1E2420;color:#F5F0E6">
+    <div style="flex:1 1 380px"><h2 style="color:#F5F0E6">Get MINT alerts on Telegram</h2>
+      <div style="color:#C9C4B3;font-size:15px;line-height:1.6;margin-top:6px">Choose Gold, Bitcoin or both. No name, no email, no phone number: open the bot and press Start.
+      ${S.telegram.set_up?` ${S.telegram.subscribers} subscriber(s) so far.`:""}</div></div>
+    ${S.telegram.set_up ? `<a class="btn" style="background:#C9A227;border-color:#C9A227;color:#1E2420;text-decoration:none;font-weight:600" href="https://t.me/${esc((S.telegram.channel||"").startsWith("@") ? S.telegram.channel.slice(1) : S.telegram.username)}" target="_blank" rel="noopener">${(S.telegram.channel||"").startsWith("@") ? "Join "+esc(S.telegram.channel) : "Open @"+esc(S.telegram.username)}</a>`
+      : `<button class="btn" style="background:#C9A227;border-color:#C9A227;color:#1E2420;font-weight:600" onclick="go('settings')">Set up the bot</button>`}
+  </section>`;
+}
+
+function assetCard(asset, a){
+  const pts = a.points || [];
+  const last = pts.length ? pts[pts.length-1] : null;
+  const dayAgo = last ? pts.find(p => p[0] >= last[0] - 864e5) : null;
+  const ch = last && dayAgo ? (last[1]-dayAgo[1])/dayAgo[1]*100 : null;
+  const st = (a.state || "Calm").toLowerCase();
+  const icon = asset === "Gold"
+    ? `<svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#C9A227"/><circle cx="32" cy="32" r="23" fill="none" stroke="#3A2C08" stroke-width="1.4" stroke-dasharray="2 2.6"/><text x="32" y="39" text-anchor="middle" font-family="Newsreader,serif" font-weight="600" font-size="21" fill="#3A2C08">Au</text></svg>`
+    : `<svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1E2420"/><circle cx="32" cy="32" r="23" fill="none" stroke="#C9A227" stroke-width="1.4" stroke-dasharray="2 2.6"/><text x="32" y="41" text-anchor="middle" font-family="Newsreader,serif" font-weight="600" font-size="26" fill="#F5F0E6">B</text></svg>`;
+  return `<div class="card rise" style="padding:24px 26px">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div style="display:flex;align-items:center;gap:12px">${icon}<div class="serif" style="font-size:26px">${asset}</div></div>
+      <span class="pill p-${st}" style="font-size:13px;padding:5px 14px" title="${esc({calm:"Nothing important found.",watch:"Something may be happening. No alert yet.",alert:"A proven, new event. An alert was written.",unknown:"The checks failed, so MINT cannot tell. See Agents."}[st])}">${esc(a.state)}</span>
+    </div>
+    <div style="margin:18px 0 4px"><span class="serif" style="font-size:36px">${money(last && last[1])}</span>
+      <span class="${pctCls(ch)}" style="font-size:14px;margin-left:10px">${pctTxt(ch)}</span><span class="muted" style="font-size:13px"> past 24 h</span></div>
+    <div class="muted" style="font-size:12px">${asset==="Gold" ? "per ounce (PAX Gold price, follows gold)" : "per coin"} · ${esc(a.price_source||"")}</div>
+    <div style="margin-top:14px;border-top:1px solid var(--line);padding-top:10px">
+      ${(a.reasons||[]).slice(0,4).map(r => `<div style="font-size:14px;line-height:1.5;padding:4px 0;color:var(--soft)">${esc(r)}</div>`).join("")}
+    </div>
+  </div>`;
+}
+
+function upcoming(){
+  const up = (S.calendar.upcoming || []);
+  const warns = S.calendar.warnings || [];
+  if (!up.length) return `<div class="empty">No scheduled gold events in the next 7 days.</div>`;
+  return up.map(([d,name,f]) => {
+    const tomorrow = warns.some(w => w.includes(name));
+    return `<div class="kv"><div><div style="font-weight:600">${esc(name)}</div><div class="muted" style="font-size:12px">${esc(f)} · can move gold</div></div>
+      <div style="text-align:right">${when(d+"T12:00:00",false)}${tomorrow?`<div><span class="pill p-watch">Tomorrow</span></div>`:""}</div></div>`;
+  }).join("");
+}
+function dataChecks(){
+  const b3 = S.data_checks.B3, b5 = S.data_checks.B5;
+  if (!b3 && !b5) return `<div class="empty">Not run yet.</div>`;
+  const line = (name, v, txt) => `<div class="kv"><div>${name}<div class="muted" style="font-size:12px">${txt}</div></div>
+     <div>${!v ? "–" : v.error ? `<span class="pill p-grey">error</span>` : v.warning ? `<span class="pill p-watch">Warning</span>` : `<span class="pill p-calm">OK</span>`}</div></div>`;
+  return line("US stock market (B3)", b3, b3 && !b3.error ? `Nasdaq ${pctTxt(b3.change_percent)} on its last day` : "") +
+         line("Interest in Bitcoin (B5)", b5, b5 && !b5.error ? `${b5.ratio}x last week's Wikipedia views` : "");
+}
+
+// ---- the price chart ----
+function chartCard(){
+  const a = S.assets[UI.asset];
+  const all = a.points || [];
+  const span = {"1D":864e5, "7D":7*864e5, "1M":30*864e5}[UI.range];
+  const end = all.length ? all[all.length-1][0] : 0;
+  let pts = all.filter(p => p[0] >= end - span);
+  const segBtn = (key, val, label) => `<button class="${UI[key]===val?"on":""}" onclick="UI.${key}='${val}';UI.hover=null;redrawChart()">${label}</button>`;
+  const head = `<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:flex-start">
+     <div><div class="eyebrow">Price</div><div id="chartread"></div></div>
+     <div style="display:flex;gap:8px;flex-wrap:wrap">
+       <div class="seg">${segBtn("asset","Bitcoin","Bitcoin")}${segBtn("asset","Gold","Gold")}</div>
+       <div class="seg">${segBtn("range","1D","1 day")}${segBtn("range","7D","7 days")}${segBtn("range","1M","1 month")}</div>
+     </div></div>`;
+  if (pts.length < 2) return head + `<div class="empty">No price history yet. It appears after the first run.</div>`;
+  if (pts.length > 400) { const step = Math.ceil(pts.length/400); pts = pts.filter((p,i) => i % step === 0 || i === pts.length-1); }
+  UI.pts = pts;
+  const W=1000,H=300,L=70,R=990,T=16,B=262;
+  const vals = pts.map(p=>p[1]); let lo=Math.min(...vals), hi=Math.max(...vals); const pad=(hi-lo)*.1||1; lo-=pad; hi+=pad;
+  const t0=pts[0][0], t1=pts[pts.length-1][0];
+  const X = t => L + (t-t0)/(t1-t0||1)*(R-L), Y = v => T + (hi-v)/(hi-lo)*(B-T);
+  UI.geo = {X,Y,L,R,W};
+  const line = pts.map((p,i)=>(i?"L":"M")+X(p[0]).toFixed(1)+" "+Y(p[1]).toFixed(1)).join(" ");
+  const color = UI.asset==="Gold" ? "#C9A227" : "#1E2420";
+  let grid="", labels="";
+  for (let k=0;k<4;k++){ const y=T+(B-T)*k/3, v=hi-(hi-lo)*k/3;
+    grid += `M${L} ${y.toFixed(1)} H${R} `; labels += `<text x="${L-8}" y="${(y+4).toFixed(1)}" text-anchor="end" font-size="12" fill="#6A6D63">${money(v)}</text>`; }
+  for (let k=0;k<5;k++){ const t=t0+(t1-t0)*k/4, d=new Date(t);
+    const lab = UI.range==="1D" ? p2(d.getHours())+":"+p2(d.getMinutes()) : d.getDate()+" "+MON[d.getMonth()];
+    labels += `<text x="${X(t).toFixed(1)}" y="288" text-anchor="${k===0?"start":k===4?"end":"middle"}" font-size="12" fill="#6A6D63">${lab}</text>`; }
+  // markers for alerts and watched events inside the visible time
+  const marks = S.events.filter(e => e.asset===UI.asset && ["alerted","confirmed","watch"].includes(e.state))
+    .map(e => ({t:new Date(e.earliest_report).getTime(), e})).filter(m => m.t>=t0 && m.t<=t1);
+  const markSvg = marks.map(m => { const near = pts.reduce((b,p)=>Math.abs(p[0]-m.t)<Math.abs(b[0]-m.t)?p:b);
+    const c = m.e.state==="alerted" ? "#B3412E" : "#B7791F";
+    return `<g style="cursor:pointer" onclick="openEvent('${esc(m.e.id)}')"><title>${esc(m.e.title)} (${esc(STATE_WORDS[m.e.state])})</title>
+      <line x1="${X(m.t).toFixed(1)}" x2="${X(m.t).toFixed(1)}" y1="${T}" y2="${B}" stroke="${c}" stroke-width="1" stroke-dasharray="2 3" opacity=".7"/>
+      <circle cx="${X(m.t).toFixed(1)}" cy="${Y(near[1]).toFixed(1)}" r="6" fill="#FFFCF5" stroke="${c}" stroke-width="2.4"/></g>`; }).join("");
+  setTimeout(() => { UI.drawn[UI.asset+UI.range] = true; }, 1100);
+  return head + `<div style="position:relative;margin-top:12px">
+    <svg id="chart" viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block" onmousemove="chartHover(event)" onmouseleave="UI.hover=null;chartHoverDraw()">
+      <path d="${grid}" stroke="#E3DAC7" fill="none"/>${labels}
+      <path d="${line} L${X(t1).toFixed(1)} ${B} L${L} ${B} Z" fill="${color}" opacity=".08"/>
+      <path d="${line}" pathLength="1" fill="none" stroke="${color}" stroke-width="2.2" stroke-linejoin="round" style="stroke-dasharray:1;stroke-dashoffset:0;${UI.drawn[UI.asset+UI.range]?"":"animation:draw 1s ease"}"/>
+      ${markSvg}<g id="hoverg"></g>
+    </svg></div>
+    <div class="muted" style="font-size:12px;margin-top:4px">Move over the chart to read a price. Circles mark events (red = alert sent, amber = watching); click one to open it.</div>`;
+}
+function redrawChart(){ const c = document.getElementById("chartcard"); if (c) { c.innerHTML = chartCard(); chartHoverDraw(); } }
+function chartHover(ev){
+  const svg = document.getElementById("chart"); const r = svg.getBoundingClientRect();
+  const x = (ev.clientX - r.left) / r.width * UI.geo.W;
+  let best = 0, bd = 1e9;
+  UI.pts.forEach((p,i) => { const d = Math.abs(UI.geo.X(p[0]) - x); if (d < bd) { bd = d; best = i; } });
+  UI.hover = best; chartHoverDraw();
+}
+function chartHoverDraw(){
+  const read = document.getElementById("chartread"); if (!read || !UI.pts) return;
+  const i = UI.hover ?? UI.pts.length-1, p = UI.pts[i], first = UI.pts[0];
+  const ch = (p[1]-first[1])/first[1]*100;
+  read.innerHTML = `<div class="serif" style="font-size:38px;margin-top:4px">${money(p[1])}</div>
+    <div style="font-size:13px"><span class="${pctCls(ch)}">${pctTxt(ch)}</span> <span class="muted">since the start of this view · ${when(new Date(p[0]).toISOString())}</span></div>`;
+  const g = document.getElementById("hoverg"); if (!g) return;
+  if (UI.hover == null) { g.innerHTML = ""; return; }
+  const x = UI.geo.X(p[0]).toFixed(1), y = UI.geo.Y(p[1]).toFixed(1);
+  g.innerHTML = `<line x1="${x}" x2="${x}" y1="16" y2="262" stroke="#1E2420" stroke-dasharray="3 3" opacity=".4"/><circle cx="${x}" cy="${y}" r="5" fill="${UI.asset==="Gold"?"#C9A227":"#1E2420"}" stroke="#FFFCF5" stroke-width="2"/>`;
+}
+
+// ---------------------------------------------------------------------------
+// EVENTS
+// ---------------------------------------------------------------------------
+function eventRow(e){
+  const dot = {alerted:"var(--red)", confirmed:"var(--amber)", watch:"var(--amber)", context:"var(--green)"}[e.state] || "#B8B2A0";
+  const orgs = [...new Set(e.sources.map(s => s.organisation))];
+  return `<div class="row clickable" onclick="openEvent('${esc(e.id)}')">
+    <span class="dot" style="margin-top:6px;background:${dot}"></span>
+    <div style="flex:1;min-width:0"><div style="font-weight:600;font-size:15px">${esc(e.title)}</div>
+    <div class="muted" style="font-size:13px;margin-top:3px">${esc(e.asset)} · ${esc(e.factor)} ${esc(e.factor_name)} · ${orgs.length} source${orgs.length>1?"s":""} · first report ${when(e.earliest_report)}</div></div>
+    ${statePill(e.state)}</div>`;
+}
+function openEvent(id){ UI.open = id; UI.tab = "events"; UI.filter = "all"; UI.lastJson=""; render();
+  setTimeout(() => { const el = document.getElementById("ev-"+id); if (el) el.scrollIntoView({behavior:"smooth", block:"start"}); }, 50); }
+function events(){
+  const f = UI.filter;
+  const list = S.events.filter(e => f==="all" || e.asset===f || (f==="alerts" && e.state==="alerted") ||
+     (f==="watch" && ["watch","confirmed"].includes(e.state)) || (f==="closed" && ["old","expired","rejected","summary","baseline"].includes(e.state)));
+  const chip = (k,l) => `<button class="${f===k?"on":""}" onclick="UI.filter='${k}';render()">${l}</button>`;
+  return `<section style="padding:34px 0 8px" class="rise"><div class="eyebrow">Events</div><h1>What the agents found</h1>
+    <div class="muted" style="font-size:15px;max-width:700px;line-height:1.6">One card per event, not per article: the Supervisor groups stories about the same event.
+    Click a card to see the proof, the decision and what happened to the price.</div></section>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center;margin:18px 0 14px">
+      <div class="chips">${chip("all","All")}${chip("Bitcoin","Bitcoin")}${chip("Gold","Gold")}${chip("alerts","Alerts")}${chip("watch","Watching")}${chip("closed","Closed")}</div>
+      <div class="muted" style="font-size:13px">${list.length} event${list.length===1?"":"s"}</div></div>
+    <div style="display:flex;flex-direction:column;gap:12px">${list.length ? list.map(eventCard).join("") : `<div class="card empty">No events here yet.</div>`}</div>`;
+}
+function eventCard(e){
+  const open = UI.open === e.id, d = e.decision, o = e.outcome || {};
+  const orgs = [...new Set(e.sources.map(s => s.organisation))];
+  let html = `<div class="card" id="ev-${esc(e.id)}" style="overflow:hidden">
+    <div class="clickable" style="padding:20px 24px" onclick="UI.open=${open?"null":`'${esc(e.id)}'`};render()">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px">
+        <span class="pill p-grey">${esc(e.asset)}</span><span class="pill p-grey">${esc(e.factor)} ${esc(e.factor_name)}</span>${statePill(e.state)}
+        <span class="muted" style="margin-left:auto;font-size:13px">first report ${when(e.earliest_report)} · MINT saw it ${when(e.first_seen)}</span></div>
+      <div class="serif" style="font-size:23px;line-height:1.25">${esc(d && d.send_alert ? d.alert_title : e.title)}</div>
+      <div style="font-size:14px;color:var(--soft);margin-top:6px;line-height:1.55">${esc(d && d.send_alert ? d.alert_message : e.state_reason)}</div>
+      <div class="muted" style="font-size:13px;margin-top:8px">${orgs.map(esc).join(", ")}${o.moved_before_mint!=null?` · price had already moved <span class="${vCls(o.moved_before_mint,(e.prediction||{}).direction)}">${pctTxt(o.moved_before_mint)}</span> when MINT noticed`:""}</div>
+      ${e.prediction?`<div style="display:flex;align-items:flex-start;gap:10px;margin-top:10px;font-size:13px">${predCell(e)}<span class="muted" style="line-height:1.5">${esc(e.prediction.reason)}${e.prediction.by==="AI"?" (AI)":""}</span></div>`:""}
+    </div>`;
+  if (open) {
+    html += `<div style="border-top:1px solid var(--line);padding:20px 24px;display:flex;flex-wrap:wrap;gap:24px">
+      <div style="flex:2 1 460px;min-width:0">
+        <div class="eyebrow">Why this state</div>
+        <p style="font-size:14px;line-height:1.6;margin:8px 0 18px"><b>${esc(STATE_WORDS[e.state]||e.state)}:</b> ${esc(STATE_HELP[e.state]||"")}<br><span class="muted">${esc(e.state_reason)}</span></p>
+        ${e.analysis ? `<div class="eyebrow">MINT's view <span style="text-transform:none;letter-spacing:0;font-weight:500;color:var(--muted)">(${esc(e.analysis.by)})</span></div>
+          <div style="font-size:14px;line-height:1.6;margin:8px 0 18px">
+            ${e.analysis.by!=="rules" && e.analysis.summary ? `<div>${esc(e.analysis.summary)}</div>` : ""}
+            ${e.analysis.what_past_events_show ? `<div style="margin-top:6px"><b>Past events:</b> ${esc(e.analysis.what_past_events_show)}</div>` : ""}
+            <div style="margin-top:6px"><b>Confidence:</b> <span class="pill ${e.analysis.confidence==="high"?"p-calm":e.analysis.confidence==="medium"?"p-watch":"p-grey"}">${esc(e.analysis.confidence)}</span> <span class="muted">${esc(e.analysis.confidence_reason||"")}</span></div>
+            ${(e.analysis.why||[]).length ? `<ul style="margin:6px 0 0;padding-left:18px">${e.analysis.why.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>` : ""}
+            ${e.analysis.watch_next ? `<div style="margin-top:6px"><b>Watch next:</b> ${esc(e.analysis.watch_next)}</div>` : ""}
+          </div>` : ""}
+        ${(e.prediction && (e.prediction.similar||[]).length) ? `<div class="eyebrow">Why MINT predicts ${esc(e.asset)} ${esc(e.prediction.direction)}</div>
+          <div style="font-size:13px;color:var(--soft);margin:6px 0 4px;line-height:1.5">What the price did after the most similar past events (1 day later):</div>
+          <table class="htable" style="margin:4px 0 18px"><tbody>${e.prediction.similar.map(x => `<tr><td style="padding:8px 0;width:92px" class="muted">${esc(x.date)}</td>
+            <td style="padding:8px 10px"><div style="font-size:13px">${esc(String(x.title).replace(/^TEST:\s*/,""))}</div><div class="ev-meta">${x.source==="MINT"?"tracked by MINT":esc(x.source)}</div></td>
+            <td class="num" style="padding:8px 0;font-weight:600">${x.d1>0?"↑ ":x.d1<0?"↓ ":""}${pctTxt(x.d1)}</td></tr>`).join("")}</tbody></table>` : ""}
+        <div class="eyebrow">Sources (${e.sources.length})</div>
+        ${e.sources.map(s => `<div style="padding:12px 0;border-bottom:1px solid var(--line)">
+           <div style="font-weight:600;font-size:14px">${s.link?`<a href="${esc(s.link)}" target="_blank" rel="noopener">${esc(s.title)}</a>`:esc(s.title)}</div>
+           <div class="muted" style="font-size:12px;margin-top:3px">${esc(s.organisation)} (${esc(kindWord[s.kind]||s.kind)}) · published ${when(s.published)} · found ${when(s.found_at)}</div>
+           ${s.summary?`<div style="font-size:13px;color:var(--soft);margin-top:4px">${esc(s.summary.slice(0,300))}</div>`:""}</div>`).join("")}
+        ${e.old_clues && e.old_clues.length ? `<p style="font-size:13px;margin-top:12px"><span class="pill p-watch">Date check</span> Headline words suggest an older event: ${esc(e.old_clues.join(", "))}</p>`:""}
+        ${d ? `<div class="eyebrow" style="margin-top:20px">Decision agent (${esc(d.mode)}${d.model?" · "+esc(d.model):""})</div>
+          <div style="font-size:14px;line-height:1.6;margin-top:8px">
+            <div><b>New event?</b> ${d.is_new_event?"Yes":"No"} · <b>Event date:</b> ${esc(d.event_date)} <span class="muted">(${esc(d.date_evidence||"")})</span></div>
+            <div><b>Impact:</b> ${esc(d.impact)}${d.possible_effect?` · <b>Possible effect:</b> ${esc(d.possible_effect)}`:""}</div>
+            <div><b>Reason:</b> ${esc(d.reason)}</div>
+            ${(d.why_it_matters||[]).length?`<ul style="margin:6px 0 0;padding-left:18px">${d.why_it_matters.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>`:""}
+          </div>
+          ${d.telegram_message?`<div class="eyebrow" style="margin-top:18px">Telegram message</div>
+            <div style="white-space:pre-wrap;font-size:13px;line-height:1.55;background:var(--hover);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:8px">${esc(d.telegram_message)}</div><div class="muted" style="font-size:12px;margin-top:4px">${esc(d.telegram_status||"")}</div>`:""}` : ""}
+      </div>
+      <div style="flex:1 1 260px;min-width:0">
+        <div class="eyebrow">What the price did</div>
+        <div style="margin-top:8px">${outcomeBox(e)}</div>
+      </div></div>
+      <div style="border-top:1px solid var(--line);padding:16px 24px 20px">
+        <div class="eyebrow">Timeline</div>
+        <div style="margin-top:6px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));column-gap:24px">${(e.history||[]).map(h => `<div style="font-size:13px;padding:7px 0;border-bottom:1px solid var(--line)"><b>${when(h.time)}</b> <span class="muted">${esc(h.note)}</span></div>`).join("")}</div>
+      </div>`;
+  }
+  return html + `</div>`;
+}
+function outcomeBox(e){
+  const o = e.outcome || {};
+  if (!o.start_price) return `<div class="muted" style="font-size:13px">${esc(o.effect_reason || "Prices are added after the next run.")}</div>`;
+  const dir = (e.prediction||{}).direction;
+  const cell = k => o[k] ? `<span class="${vCls(o[k].move, dir)}">${pctTxt(o[k].move)}</span>` : `<span class="muted">waiting</span>`;
+  return `<div class="kv"><span class="muted">Prediction</span>${predCell(e)}</div>
+    <div class="kv"><span class="muted">At first report</span><span>${money(o.start_price)}</span></div>
+    <div class="kv"><span class="muted">When MINT noticed (${o.delay_hours} h later)</span><span class="${vCls(o.moved_before_mint, dir)}">${pctTxt(o.moved_before_mint)}</span></div>
+    <div class="kv"><span class="muted">After 1 hour</span>${cell("h1")}</div>
+    <div class="kv"><span class="muted">After 1 day</span>${cell("d1")}</div>
+    <div class="kv"><span class="muted">After 7 days</span>${cell("d7")}</div>
+    <div style="margin-top:10px">${resultPill(o.effect)} <span class="muted" style="font-size:12px">${esc(o.effect_reason||"")}</span></div>
+    <div class="muted" style="font-size:11px;margin-top:6px">Green = moved the predicted way, red = the other way.</div>`;
+}
+// colour for a price move: green if it went the way MINT predicted, red if the other way
+const vCls = (move, dir) => move == null || !["up","down"].includes(dir) || Math.abs(move) < 0.1 ? "muted" : ((move > 0) === (dir === "up") ? "good" : "bad");
+
+// ---------------------------------------------------------------------------
+// AGENTS
+// ---------------------------------------------------------------------------
+const AGENT_JOBS = {"Bitcoin Scout":"Searches Google News and reads the SEC feeds. Checks the Nasdaq and Bitcoin's Wikipedia views.",
+  "Gold Scout":"Reads the Fed and US jobs/inflation calendars. Searches gold news once a day.",
+  "Supervisor":"Groups stories into events, checks the proof, remembers what it has seen.",
+  "Price Tracker":"Saves prices and records what the price did after each event.",
+  "Decision agent":"Checks the event date and writes the alert. The only part that can use AI.",
+  "Telegram bot":"Sends stamped alerts to people who signed up, once each. Test runs never send anything.",
+  "Social Watcher":"Reads posts from a few important people and companies (free sources only). A post can only start a Watch."};
+function agents(){
+  const stateWord = {working:"Working", queued:"Queued", waiting:"Waiting", done:"Done", error:"Error"};
+  const stateCls = {working:"p-calm", queued:"p-watch", waiting:"p-grey", done:"p-calm", error:"p-alert"};
+  return `<section style="padding:34px 0 8px" class="rise"><div class="eyebrow">Agents</div><h1>What the agents are doing</h1>
+    <div class="muted" style="font-size:15px">Live. Each run goes Scouts → Supervisor → Price Tracker → Decision agent.</div></section>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:20px">
+    ${S.agents.map(a => `<div class="card" style="padding:20px 24px">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+        <span class="dot ${a.state==="working"?"pulse":""}" style="background:${a.state==="working"?"var(--green)":a.state==="error"?"var(--red)":a.state==="queued"?"var(--amber)":"#B8B2A0"}"></span>
+        <div class="serif" style="font-size:22px;min-width:170px">${esc(a.name)}</div>
+        <div style="flex:1 1 300px;font-size:14px;color:var(--soft)">${esc(a.text)}</div>
+        <span class="pill ${stateCls[a.state]||"p-grey"}">${stateWord[a.state]||esc(a.state)}</span></div>
+      <div class="muted" style="font-size:13px;margin-top:8px;padding-left:21px">${esc(AGENT_JOBS[a.name])}</div>
+      <div style="font-size:13px;margin-top:8px;padding-left:21px"><b>Last result:</b> ${esc(a.last_result || "not run yet")} <span class="muted">${a.last_run?"· "+ago(a.last_run):""}</span>
+        ${a.output?` · <a href="#" onclick="UI.out['${esc(a.name)}']=!UI.out['${esc(a.name)}'];render();return false">${UI.out[a.name]?"Hide":"Show"} full output</a>`:""}</div>
+      ${UI.out[a.name] && a.output ? `<pre>${esc(a.output)}</pre>` : ""}
+    </div>`).join("")}
+    </div>
+    <h2 style="margin:34px 0 12px">Activity log</h2>
+    <div class="card" style="padding:4px 22px">${S.log.length ? S.log.slice().reverse().slice(0,60).map(l => `<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px">
+      <span class="muted" style="width:90px">${when(l.time)}</span><b style="width:120px">${esc(l.agent)}</b><span style="flex:1 1 300px">${esc(l.text)}</span></div>`).join("") : `<div class="empty">Nothing yet. Press Run now.</div>`}</div>
+    <h2 style="margin:34px 0 12px">Past runs</h2>
+    <div class="card" style="overflow:auto">${S.runs.length ? `<table><tr><th>Time</th><th>Why</th><th>Took</th><th>Supervisor</th><th>Decision agent</th></tr>
+      ${S.runs.slice().reverse().map(r => `<tr><td>${when(r.time)}</td><td>${esc(r.reason)}</td><td>${r.seconds}s</td><td>${esc(r.results["Supervisor"]||"")}</td><td>${esc(r.results["Decision agent"]||"")}</td></tr>`).join("")}</table>` : `<div class="empty">No runs yet.</div>`}</div>`;
+}
+
+// ---------------------------------------------------------------------------
+// HISTORY
+// ---------------------------------------------------------------------------
+const RESULT = {right:["Right","p-moved"], wrong:["Wrong","p-alert"], no_clear_move:["No clear move","p-grey"],
+  tracking:["Tracking","p-tracking"], no_prediction:["No prediction","p-grey"], no_price:["No price","p-grey"]};
+const resultPill = r => { const x = RESULT[r]; return x ? `<span class="pill ${x[1]}">${x[0]}</span>` : `<span class="muted">–</span>`; };
+const arrow = d => d==="up" ? "↑" : d==="down" ? "↓" : "–";
+function predCell(e){
+  const p = e.prediction || {};
+  const word = p.direction==="up" ? `${e.asset} up` : p.direction==="down" ? `${e.asset} down` : "Unclear";
+  return `<div title="${esc(p.reason||"")}" style="display:flex;align-items:center;gap:8px;white-space:nowrap">
+    <span class="arrow ${esc(p.direction||"unclear")}">${arrow(p.direction)}</span><span>${esc(word)}</span></div>`;
+}
+function moveCell(o, k){
+  if (!o || !o[k]) return `<td class="num muted">–</td>`;
+  const v = o[k].verdict;
+  return `<td class="num ${v==="right"?"good":v==="wrong"?"bad":"muted"}">${pctTxt(o[k].move)}</td>`;
+}
+function libraryCard(){
+  const L = S.library, f = UI.lib || {asset:"Gold", factor:"G2", date:"", title:""};
+  const factorOpts = S.factors.filter(x => x.asset===f.asset && x.keywords).map(x => `<option value="${x.id}" ${f.factor===x.id?"selected":""}>${esc(x.id)} ${esc(x.name)}</option>`).join("");
+  return `<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin:34px 0 6px"><h2>Past events library</h2>
+      <span class="muted" style="font-size:13px">${L.researched.length} researched · ${L.own} tracked by MINT</span></div>
+    <div class="muted" style="font-size:14px;line-height:1.6;max-width:820px;margin-bottom:12px">Predictions come from what the price did after <b>similar past events</b>, together with the factor's pattern.
+      Add real past events here: MINT downloads the real prices for that date (Yahoo Finance) and works out the move. Events MINT tracks are added automatically once their 1-day price is known.</div>
+    <div class="card">
+      <div class="setting" style="align-items:flex-end">
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;flex:1">
+          <label style="font-size:12px;color:var(--muted)">Date<br><input type="date" id="lib-date" value="${esc(f.date)}" oninput="UI.lib=libForm()"></label>
+          <label style="font-size:12px;color:var(--muted)">Asset<br><select id="lib-asset" onchange="UI.lib={...libForm(),asset:this.value,factor:this.value==='Gold'?'G2':'B1'};render()">
+            <option ${f.asset==="Gold"?"selected":""}>Gold</option><option ${f.asset==="Bitcoin"?"selected":""}>Bitcoin</option></select></label>
+          <label style="font-size:12px;color:var(--muted)">Factor<br><select id="lib-factor" onchange="UI.lib=libForm()">${factorOpts}</select></label>
+          <label style="font-size:12px;color:var(--muted);flex:1 1 280px">What happened (a headline)<br><input type="text" id="lib-title" value="${esc(f.title)}" placeholder="e.g. Fed cuts rates by half a point" style="width:100%" oninput="UI.lib=libForm()"></label>
+        </div>
+        <button class="btn small" onclick="addPast()">Add past event</button></div>
+      ${L.starter_left ? `<div class="setting" style="display:block;background:var(--amberbg)"><b style="font-size:13px">Starter library loading:</b>
+        <span style="font-size:13px"> ${L.starter_left} major past events still to load. MINT downloads their real prices a few at a time, every run. Rows marked "check the date" are part of your research: confirm each date in a news archive.</span></div>` : ""}
+      ${L.researched.length ? `<div style="overflow-x:auto"><table class="htable"><thead><tr><th>Date</th><th>Event</th><th class="num">1 day</th><th class="num">7 days</th><th></th></tr></thead><tbody>
+        ${L.researched.map(x => `<tr><td class="muted" style="white-space:nowrap">${esc(x.date)}</td><td><div class="ev-title">${esc(String(x.title).replace(/^TEST:\s*/,""))}</div><div class="ev-meta">${esc(x.asset)} · ${esc(x.factor)} · ${esc(x.source)}</div></td>
+          <td class="num" style="font-weight:600">${x.d1>0?"↑ ":x.d1<0?"↓ ":""}${pctTxt(x.d1)}</td><td class="num muted">${pctTxt(x.d7)}</td>
+          <td style="text-align:right">${String(x.source).includes("TEST") ? "" : `<button class="btn small light" onclick="post('/api/library/delete',{id:'${esc(x.id)}'}).then(()=>{UI.lastJson='';load()})">Remove</button>`}</td></tr>`).join("")}</tbody></table></div>` : ""}
+      <div class="legend"><span>↑ / ↓ = which way the price actually moved.</span><span>Researched moves: last close before the date → close on the date (1 day) and 7 days later.</span></div>
+    </div>`;
+}
+function libForm(){ return {date:document.getElementById("lib-date").value, asset:document.getElementById("lib-asset").value,
+  factor:document.getElementById("lib-factor").value, title:document.getElementById("lib-title").value}; }
+async function addPast(){ const f = libForm(); UI.lib = f; if (!f.date || !f.title) return toast("Fill in the date and what happened.");
+  toast("Downloading the real prices..."); await post("/api/library/add", f); UI.lib = null; UI.lastJson=""; load(); }
+function history(){
+  const all = S.events;
+  const done = all.filter(e => ["right","wrong"].includes((e.outcome||{}).effect));
+  const flat = all.filter(e => (e.outcome||{}).effect==="no_clear_move").length;
+  const right = done.filter(e => e.outcome.effect==="right").length, wrong = done.filter(e => e.outcome.effect==="wrong").length;
+  const alerts = done.filter(e => e.state==="alerted"), alertsRight = alerts.filter(e => e.outcome.effect==="right").length;
+  const tracking = all.filter(e => (e.outcome||{}).effect==="tracking").length;
+  const delays = all.map(e => (e.outcome||{}).delay_hours).filter(v => v != null);
+  const avgDelay = delays.length ? delays.reduce((a,b)=>a+b,0)/delays.length : null;
+  const hf = UI.hfilter || "all", hr = UI.hresult || "all";
+  const rows = all.filter(e => (hf==="all" || e.asset===hf) && (hr==="all" || (e.outcome||{}).effect===hr));
+  const chip = (key, val, label) => `<button class="${(UI[key]||"all")===val?"on":""}" onclick="UI.${key}='${val}';render()">${label}</button>`;
+  const kpi = (big, label, sub) => `<div class="kpi"><div class="kpi-big">${big}</div><div class="kpi-label">${label}</div><div class="kpi-sub">${sub}</div></div>`;
+  return `<section style="padding:34px 0 6px"><div class="eyebrow">History</div><h1>Did MINT's predictions come true?</h1>
+    <div class="muted" style="font-size:15px;max-width:760px;line-height:1.6">Every event gets a prediction from what its factor has done in the past
+    (or from the AI, when the headline does not say which way). The prediction is judged on the price <b>1 day</b> after the first report,
+    when news moves prices most. The 7-day move is shown for context.</div></section>
+
+  <section class="kpis">
+    ${kpi(done.length ? Math.round(right/done.length*100)+"%" : "–", "Prediction accuracy", done.length ? `${right} right · ${wrong} wrong (when the price clearly moved)` : "Results appear 1 day after each event")}
+    ${kpi(alerts.length ? `${alertsRight} of ${alerts.length}` : "–", "Alerts that came true", "when the price clearly moved")}
+    ${kpi(all.length, "Events tracked", `${tracking} waiting for the 1-day price · ${flat} no clear move`)}
+    ${kpi(avgDelay==null ? "–" : avgDelay.toFixed(1)+" h", "Average delay", "first report to MINT noticing")}
+  </section>
+
+  <section class="card" style="margin-top:22px;overflow:hidden">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)">
+      <div class="chips">${chip("hfilter","all","All assets")}${chip("hfilter","Bitcoin","Bitcoin")}${chip("hfilter","Gold","Gold")}</div>
+      <div class="chips">${chip("hresult","all","All results")}${chip("hresult","right","Right")}${chip("hresult","wrong","Wrong")}${chip("hresult","no_clear_move","No clear move")}${chip("hresult","tracking","Tracking")}</div>
+    </div>
+    <div style="overflow-x:auto">${rows.length ? `<table class="htable"><thead><tr><th>Event</th><th>Prediction</th><th>MINT's decision</th>
+      <th class="num">1 hour</th><th class="num">1 day</th><th class="num">7 days</th><th>Result</th></tr></thead><tbody>
+      ${rows.map(e => { const o = e.outcome || {}; return `<tr class="clickable" onclick="openEvent('${esc(e.id)}')">
+        <td><div class="ev-title">${esc(e.title)}</div><div class="ev-meta">${esc(e.asset)} · ${esc(e.factor)} ${esc(e.factor_name)} · ${when(e.earliest_report)}</div></td>
+        <td>${predCell(e)}</td><td class="muted" style="white-space:nowrap">${esc(STATE_WORDS[e.state]||e.state)}</td>
+        ${moveCell(o,"h1")}${moveCell(o,"d1")}${moveCell(o,"d7")}<td>${resultPill(o.effect)}</td></tr>`; }).join("")}
+      </tbody></table>` : `<div class="empty">No events match.</div>`}</div>
+    <div class="legend"><span><i class="sw good"></i>Moved the way MINT predicted</span><span><i class="sw bad"></i>Moved the other way</span>
+      <span><i class="sw flat"></i>Less than 0.1%, or no prediction</span><span>Judged on the 1-day move. A clear move is 1.5% for Bitcoin, 0.5% for gold; smaller moves are "No clear move" and are not counted in accuracy.</span></div>
+  </section>
+
+  ${libraryCard()}
+  <h2 style="margin:34px 0 12px">Accuracy by factor</h2>
+  <div class="card" style="overflow-x:auto"><table class="htable"><thead><tr><th>Factor</th><th>Past pattern</th><th class="num">Events</th>
+    <th class="num">Right</th><th class="num">Wrong</th><th class="num">No clear move</th><th style="width:220px">Accuracy</th></tr></thead><tbody>
+    ${S.factors.filter(f => f.method !== "data_check" || f.events).map(f => { const acc = f.tracked ? f.right/f.tracked : null; return `<tr>
+      <td><div class="ev-title">${esc(f.id)} ${esc(f.name)}</div><div class="ev-meta">${esc(f.asset)} · ${esc(f.strength)} factor</div></td>
+      <td class="muted">${esc(f.effect)}</td><td class="num">${f.events}</td><td class="num">${f.right}</td><td class="num">${f.wrong}</td><td class="num">${f.flat}</td>
+      <td>${f.tracked < 3 ? `<span class="muted" style="font-size:13px">needs 3+ results (has ${f.tracked})</span>` :
+        `<div style="display:flex;align-items:center;gap:10px"><div class="bar"><div style="width:${Math.round(acc*100)}%"></div></div><span class="num" style="width:40px">${Math.round(acc*100)}%</span></div>`}</td></tr>`; }).join("")}
+  </tbody></table></div>
+
+  <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin:34px 0 12px"><h2>Weekly summaries</h2>
+    <button class="btn small light" onclick="previewWeek()">Preview this week</button></div>
+  <div class="card" style="padding:2px 22px">${UI.weekPreview?`<details open style="padding:14px 0;border-bottom:1px solid var(--line)"><summary style="cursor:pointer;font-weight:600;font-size:14px">Preview (not saved)</summary><div class="weektext">${esc(UI.weekPreview)}</div></details>`:""}
+    ${S.weekly.length ? S.weekly.slice().reverse().map(w => `<details style="padding:14px 0;border-bottom:1px solid var(--line)"><summary style="cursor:pointer;font-weight:600;font-size:14px">${esc(w.text.split("\n")[0])}
+      ${w.stats.finished!=null?`<span class="muted" style="font-weight:400"> · ${w.stats.right} of ${w.stats.finished} predictions right</span>`:""}</summary><div class="weektext">${esc(w.text)}</div></details>`).join("")
+      : `<div class="muted" style="font-size:13px;padding:14px 0">The first summary is made on Sunday (after 17:30 India time) while MINT is running.</div>`}</div>`;
+}
+
+// ---------------------------------------------------------------------------
+// PROJECT (for the supervisor)
+// ---------------------------------------------------------------------------
+function project(){
+  const p = S.progress || {}; const cls = {done:"p-calm", doing:"p-watch", todo:"p-grey"}; const word = {done:"Done", doing:"In progress", todo:"To do"};
+  return `<section style="padding:34px 0 8px" class="rise"><div class="eyebrow">IB MYP Personal Project</div><h1>${esc(p.project || "MINT")}</h1>
+    <div class="muted" style="font-size:15px">Read from progress.json. Edit that file to update this page.</div></section>
+    <div class="grid2" style="margin-top:20px">
+     <div><h2 style="margin-bottom:12px">Progress</h2><div class="card" style="padding:4px 22px">${(p.steps||[]).map(s => `<div class="kv" style="align-items:center"><div><div style="font-weight:600">${esc(s.name)}</div>${s.note?`<div class="muted" style="font-size:12px">${esc(s.note)}</div>`:""}</div><span class="pill ${cls[s.status]||"p-grey"}">${word[s.status]||esc(s.status)}</span></div>`).join("")}</div></div>
+     <div><h2 style="margin-bottom:12px">Problems and fixes</h2><div class="card" style="padding:4px 22px">${(p.log||[]).slice().reverse().map(l => `<div style="padding:12px 0;border-bottom:1px solid var(--line)"><div class="eyebrow" style="font-size:11px">${esc(l.date)}</div><div style="font-weight:600;font-size:14px;margin-top:2px">${esc(l.title)}</div><div class="muted" style="font-size:13px;line-height:1.5;margin-top:2px">${esc(l.detail)}</div></div>`).join("")}</div></div>
+    </div>`;
+}
+
+// ---------------------------------------------------------------------------
+// SETTINGS
+// ---------------------------------------------------------------------------
+function settings(){
+  const s = S.settings;
+  return `<section style="padding:34px 0 8px" class="rise"><div class="eyebrow">Settings</div><h1>How MINT runs</h1></section>
+  <div class="card" style="margin-top:18px">
+    <div class="setting"><div class="txt"><b>Run automatically</b><div>While MINT is open, every agent runs on a timer. <b>Smart</b> runs every 30 minutes, and every 15 minutes while something is on Watch or a gold event is tomorrow (about 50 to 96 runs a day). The computer must be on and awake.
+   ${S.timing?"<br>Now: "+esc(S.timing)+".":""} ${S.next_run?"Next run "+until(S.next_run)+".":""}</div></div>
+      <div style="display:flex;gap:12px;align-items:center"><select onchange="post('/api/settings',{interval_minutes:this.value}).then(load)">
+        <option value="smart" ${s.interval_minutes==="smart"?"selected":""}>Smart (recommended)</option>
+        ${[15,30,60,120,240].map(m => `<option value="${m}" ${s.interval_minutes==m?"selected":""}>every ${m<60?m+" min":m/60+" h"}</option>`).join("")}</select>
+      <button class="switch ${s.auto_run?"on":""}" aria-label="Run automatically" onclick="post('/api/settings',{auto_run:${!s.auto_run}}).then(load)"></button></div></div>
+    <div class="setting"><div class="txt"><b>Gold news search</b><div>The gold calendar is read every run. The gold news search (7-day window) runs less often.</div></div>
+      <select onchange="post('/api/settings',{gold_news_every_hours:this.value}).then(load)">${[6,12,24,72,168].map(h => `<option value="${h}" ${s.gold_news_every_hours==h?"selected":""}>every ${h<24?h+" h":h/24+" day"+(h>24?"s":"")}</option>`).join("")}</select></div>
+    <div class="setting"><div class="txt"><b>Contact email for official websites</b><div>The SEC asks programs to say who they are. Use an email you are happy to share (for example a school or family address). Without it, the SEC feeds may fail with error 403.</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><input type="text" id="email" value="${esc(s.contact_email)}" placeholder="name@example.com" style="width:220px">
+      <button class="btn small" onclick="post('/api/settings',{contact_email:document.getElementById('email').value}).then(()=>{UI.lastJson='';load()})">Save</button></div></div>
+    <div class="setting"><div class="txt"><b>AI for the Decision agent</b><div>${s.ai_ready?`The Decision agent uses <b>${esc((s.providers.find(p=>p.id===s.ai_provider)||{}).name)}</b>.`:"No AI chosen (or no key yet): the Decision agent uses simple rules."}
+      Groq and Gemini are free. Ollama is free and runs on this computer (install it from ollama.com first). Most AI services require the account holder to be 18 or over, so a parent should create the key.</div></div>
+      <select onchange="post('/api/settings',{ai_provider:this.value}).then(()=>{UI.lastJson='';load()})">
+        <option value="none" ${s.ai_provider==="none"?"selected":""}>Rules only (no AI)</option>
+        ${s.providers.map(p => `<option value="${p.id}" ${s.ai_provider===p.id?"selected":""}>${esc(p.name)}</option>`).join("")}</select></div>
+    ${(() => { const p = s.providers.find(p => p.id === s.ai_provider); if (!p) return "";
+      return `<div class="setting"><div class="txt"><b>${esc(p.name.split(" (")[0])} settings</b><div>${p.needs_key ? (p.has_key ? `Key saved (${esc(p.key_hint)}). ` : "Paste the API key from the service's website. ") : "No key needed. "}Model: <b>${esc(p.model)}</b>${p.model!==p.default_model?` (default: ${esc(p.default_model)})`:""}. The key is saved only on this computer (data/settings.json). Never share that file.</div></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">${p.needs_key?`<input type="password" id="key" placeholder="${p.has_key?"Replace key":"Paste API key"}" autocomplete="off" style="width:200px">
+        <button class="btn small" onclick="saveKey('${p.id}')">Save key</button>${p.has_key?`<button class="btn small light" onclick="post('/api/settings',{provider:'${p.id}',ai_key:''}).then(()=>{UI.lastJson='';load()})">Remove</button>`:""}`:""}
+        ${p.has_key || !p.needs_key ? `<button class="btn small light" onclick="toast('Asking the AI...');post('/api/test-ai')">Test AI</button>` : ""}
+        <input type="text" id="model" value="${esc(p.model)}" title="Model name" style="width:190px" onchange="post('/api/settings',{provider:'${p.id}',ai_model:this.value}).then(()=>{UI.lastJson='';load()})"></div></div>`; })()}
+  </div>
+  <h2 style="margin:30px 0 12px">Telegram alerts</h2>
+  <div class="card">${telegramSettings()}</div>
+  <h2 style="margin:30px 0 12px">Social media accounts</h2>
+  <div class="card">
+    ${S.social.accounts.map(a => `<div class="setting"><div class="txt"><b>${esc(a.name)}</b><div>${esc(a.why)}<br>Read through: ${esc(a.via)}
+      ${a.result ? `<br>Last check: ${a.result.error ? `<span style="color:var(--red)">error: ${esc(a.result.error)}</span>` : `${a.result.read} posts read, ${a.result.kept} kept`}` : ""}</div></div>
+      <button class="switch ${a.on?"on":""}" aria-label="Follow ${esc(a.name)}" onclick="post('/api/social',{name:${esc(JSON.stringify(a.name))},on:${!a.on}}).then(()=>{UI.lastJson='';load()})"></button></div>`).join("")}
+    <div class="setting"><div class="txt"><div>Elon Musk and most companies post on X, which no longer has a free way to read posts, so they are not included. To add an account, edit social_accounts.json (RSS feeds, Bluesky profiles or public Telegram channels).</div></div></div>
+  </div>
+  <h2 style="margin:30px 0 12px">Opening MINT</h2>
+  <div class="card">
+    <div class="setting"><div class="txt"><b>MINT icon on the Desktop</b><div>Double-click it to open MINT. If MINT is already running, it just opens this page.</div></div>
+      <button class="btn small" ${S.windows?"":"disabled"} onclick="post('/api/shortcut')">Add to Desktop</button></div>
+    <div class="setting"><div class="txt"><b>Start MINT when the computer starts</b><div>MINT starts quietly in the background, so automatic runs keep going. It does not open a window.</div></div>
+      <button class="switch ${S.startup?"on":""}" ${S.windows?"":"disabled"} aria-label="Start with computer" onclick="post('/api/startup',{on:${!S.startup}}).then(load)"></button></div>
+    <div class="setting"><div class="txt"><b>Stop MINT</b><div>Closes the MINT program. Automatic runs stop until you open it again.</div></div>
+      <button class="btn small danger" onclick="post('/api/stop')">Stop MINT</button></div>
+  </div>
+  <h2 style="margin:30px 0 12px">Check connection</h2>
+  <div class="card">
+    ${S.truststore ? "" : `<div class="setting" style="background:var(--amberbg)"><div class="txt"><b>Certificate fix not installed</b><div>Without it, MINT may show "certificate verify failed" when antivirus or a network filter checks secure connections. It makes MINT check certificates the same way your browser does (it never switches the checks off).</div></div>
+      <button class="btn small" onclick="toast('Installing... (up to a minute)');post('/api/install-cert-fix')">Install the fix</button></div>`}
+    <div class="setting"><div class="txt"><b>Can MINT reach every website it needs?</b><div>Tries each website once (takes up to a minute). If something is blocked on your network, try a different network (for example a phone hotspot) and check again.</div></div>
+      <button class="btn small" onclick="checkConnection()">Check now</button></div>
+    ${UI.conn ? UI.conn.map(r => `<div class="setting" style="padding:12px 22px"><div class="txt"><b>${esc(r.name)}</b><div>${esc(r.detail)}</div></div>
+      <span class="pill ${r.ok?"p-calm":"p-alert"}">${r.ok?"OK":"Blocked"}</span></div>`).join("") : ""}
+  </div>
+  <h2 style="margin:30px 0 12px">Memory</h2>
+  <div class="card">
+    <div class="setting"><div class="txt"><b>Start fresh</b><div>Clears MINT's memory of real events (prices and settings are kept). The next run is a first run: MINT only learns what is already in the news and sends no alerts. Use it once after updating MINT.</div></div>
+      <button class="btn small danger" onclick="if(confirm('Clear MINT\'s memory of real events?'))post('/api/reset-real').then(()=>{UI.lastJson='';load()})">Start fresh</button></div>
+  </div>
+  <h2 style="margin:30px 0 12px">Testing</h2>
+  <div class="card">
+    <div class="setting"><div class="txt"><b>Test run with sample data</b><div>Runs every agent on made-up stories and prices (1 Nov 2026). Test data is kept separate and never mixes with real data.</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn small" ${S.running?"disabled":""} onclick="runNow(true)">Test run</button>
+      ${S.test_mode?`<button class="btn small light" onclick="showReal()">Show real data</button>`:`<button class="btn small light" onclick="post('/api/view',{test:true}).then(()=>{UI.lastJson='';load()})">Show test data</button>`}
+      <button class="btn small light" onclick="post('/api/reset-test').then(load)">Clear test data</button></div></div>
+    <div class="setting"><div class="txt"><b>Test the Supervisor</b><div>Runs 20 situations it must handle (same event from 2 organisations, old event with a new article, off-topic headlines, first run, a social post alone, predictions from past events...).</div></div>
+      <button class="btn small" onclick="runTests('supervisor')">Run the 20 tests</button></div>
+    <div class="setting"><div class="txt"><b>Test the Telegram bot</b><div>Runs 17 checks with a pretend Telegram server (nothing is really sent): sign-ups, choices, alerts, watches, watch updates, heads-ups, the weekly summary, never twice, never in test runs.</div></div>
+      <button class="btn small" onclick="runTests('telegram')">Run the 17 tests</button></div>
+    ${UI.testOutput?`<div style="padding:0 22px 18px"><pre>${esc(UI.testOutput)}</pre></div>`:""}
+  </div>`;
+}
+function telegramSettings(){
+  const t = S.telegram;
+  if (!t.set_up) return `<div class="setting"><div class="txt"><b>Set up the MINT bot (once, about 2 minutes)</b><div>
+      1. In Telegram, open <b>@BotFather</b> and send <b>/newbot</b>.<br>
+      2. Give it a name (e.g. MINT Alerts) and a username ending in "bot" (e.g. mint_alerts_yourname_bot).<br>
+      3. BotFather sends a <b>token</b> (a long code). Paste it here. It is like a password: never share it or put it in your report.</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><input type="password" id="tgtoken" placeholder="Paste the bot token" autocomplete="off" style="width:240px">
+      <button class="btn small" onclick="saveTelegram()">Connect</button></div></div>`;
+  return `<div class="setting"><div class="txt"><b>Connected: <a href="https://t.me/${esc(t.username)}" target="_blank" rel="noopener">@${esc(t.username)}</a></b>
+      <div>${t.subscribers} subscriber(s): ${t.gold} for gold, ${t.bitcoin} for Bitcoin. People sign up by opening the link and pressing Start.
+      ${t.error?`<br><span style="color:var(--red)">Problem: ${esc(t.error)}</span>`:""}</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn small" onclick="post('/api/telegram-test')">Send test message</button>
+      <button class="btn small light" onclick="if(confirm('Disconnect the Telegram bot?'))post('/api/telegram',{token:''}).then(()=>{UI.lastJson='';load()})">Disconnect</button></div></div>
+    <div class="setting"><div class="txt"><b>What gets sent</b><div>
+      <b>"Everything"</b> (the default): <b>every event</b> MINT finds, with MINT's view, prediction, the similar past events and its confidence; an <b>update</b> whenever its status changes;
+      the <b>result</b> 1 day later (was the prediction right?); <b>heads-ups</b> before scheduled gold events; and the <b>weekly summary</b> on Sunday.<br>
+      <b>"Alerts only"</b>: confirmed alerts and the weekly summary.<br>
+      People choose with the buttons in the bot, or /gold /bitcoin /both /alerts /everything /status /stop. Telegram does not let any bot message someone who has not pressed Start - a channel avoids that (below).</div></div></div>
+    <div class="setting"><div class="txt"><b>Telegram channel (recommended)</b><div>Everything is also posted to a channel, so people just tap <b>Join</b> - no Start button, no choices.
+      Set up: in Telegram, New Channel → give it a name and a public link (e.g. t.me/mint_alerts_yourname) → Channel settings → Administrators → add your bot. Then type the link here.
+      ${t.channel?`<br>Posting to <b>${esc(t.channel)}</b>.`:""}</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><input type="text" id="tgchannel" value="${esc(t.channel||"")}" placeholder="@your_channel" style="width:180px">
+      <button class="btn small" onclick="post('/api/telegram-channel',{channel:document.getElementById('tgchannel').value}).then(()=>{UI.lastJson='';load()})">Save</button></div></div>
+    <div class="setting" style="display:block"><b style="font-size:14px">Recent messages</b>
+      ${(t.log||[]).length ? (t.log||[]).slice().reverse().map(m => `<div style="display:flex;gap:12px;font-size:13px;padding:7px 0;border-bottom:1px solid var(--line)"><span class="muted" style="width:90px">${when(m.time)}</span><span class="pill p-grey">${esc(m.kind)}</span><span style="flex:1">${esc(m.title)}</span><span class="muted">${m.to} person(s)</span></div>`).join("") : `<div class="muted" style="font-size:13px;margin-top:6px">None yet.</div>`}</div>`;
+}
+async function saveTelegram(){ const v = document.getElementById("tgtoken").value.trim(); if (!v) return toast("Paste the token first.");
+  toast("Checking the token..."); await post("/api/telegram", {token:v}); UI.lastJson=""; load(); }
+async function saveKey(pid){ const v = document.getElementById("key").value.trim(); if (!v) return toast("Paste a key first.");
+  await post("/api/settings", {provider:pid, ai_key:v}); document.getElementById("key").value=""; UI.lastJson=""; load(); }
+async function checkConnection(){ toast("Checking every website... (up to a minute)"); UI.conn = null; render();
+  const j = await post("/api/check-connection"); UI.conn = j.results; render(); }
+async function previewWeek(){ const j = await post("/api/weekly-preview"); UI.weekPreview = j.output; render(); }
+async function runTests(which){ toast("Running the tests..."); const j = await post("/api/test-" + which); UI.testOutput = j.output; render(); }
+
+settleSoon();
+load();
+</script>
+</body>
+</html>

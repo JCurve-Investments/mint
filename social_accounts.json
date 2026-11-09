@@ -1,0 +1,33 @@
+{
+  "note": "Accounts the Social Watcher follows. Only FREE ways to read them are used. type: 'rss' (any RSS feed, for example a Bluesky profile feed https://bsky.app/profile/<handle>/rss) or 'telegram' (a PUBLIC Telegram channel, read from its public web page https://t.me/s/<channel>). A post can only start a WATCH, never an alert on its own. X (Twitter) is not here because X no longer has a free way to read posts. Set 'on' to false to switch an account off.",
+  "max_age_hours": 24,
+  "accounts": [
+    {
+      "name": "Donald Trump (Truth Social)",
+      "type": "rss",
+      "url": "https://www.trumpstruth.org/feed?limit=40",
+      "via": "trumpstruth.org - a free public archive of his Truth Social posts, run by Defending Democracy Together (not official, may be a few minutes late)",
+      "why": "US president: posts about tariffs, the Fed, interest rates, the dollar and crypto",
+      "on": true,
+      "test_file": "sample_trumpstruth.xml"
+    },
+    {
+      "name": "Binance announcements (Telegram)",
+      "type": "telegram",
+      "channel": "binance_announcements",
+      "via": "Binance's public Telegram channel, read from https://t.me/s/binance_announcements",
+      "why": "The largest crypto exchange: outages, paused withdrawals, security notices",
+      "on": true,
+      "test_file": "sample_telegram.html"
+    },
+    {
+      "name": "Whale Alert (Telegram)",
+      "type": "telegram",
+      "channel": "whale_alert_io",
+      "via": "Whale Alert's public Telegram channel, read from https://t.me/s/whale_alert_io",
+      "why": "Reports very large crypto transfers and hacks quickly. Many posts are routine transfers, so only hack-type posts count.",
+      "on": false,
+      "test_file": null
+    }
+  ]
+}

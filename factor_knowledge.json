@@ -1,0 +1,75 @@
+{
+  "note": "Background knowledge given to the Decision agent for every event, so its analysis is informed by how each factor has worked in the past, not only by the news. General market knowledge written in plain words; MINT's own price numbers come from the past events library, not from here.",
+  "factors": {
+    "B1": {
+      "how_it_works": "Bans, crackdowns and lawsuits change who is allowed to buy, sell or offer Bitcoin. Big actions (a large country banning crypto, a US regulator suing a major exchange) make investors fear less demand and more risk, so some sell.",
+      "typical_reaction": "Usually a fall within hours to a day. Good legal news (a case dropped, a court win, an approval such as the US spot Bitcoin ETFs in January 2024) has usually pushed the price up.",
+      "bigger_when": "The country or company is large (US, China, the biggest exchanges); the action is final (a ban or a guilty plea) rather than a proposal; the market was already nervous.",
+      "smaller_when": "The action was expected or rumoured for weeks; it hits a small country or a small platform; it is only a statement or proposal.",
+      "caveats": "Markets often fall on the first headline and recover within a week if the long-term effect is small. Repeated crackdowns from the same country tend to matter less each time."
+    },
+    "B2": {
+      "how_it_works": "When an exchange is hacked or collapses, people lose money and trust. Holders on other exchanges may rush to withdraw or sell, and forced selling can spread.",
+      "typical_reaction": "Usually a fall. Collapses of very large firms (Terra/Luna in May 2022, FTX in November 2022) caused big, multi-day falls; hacks where the exchange covers the losses usually cause smaller, short falls.",
+      "bigger_when": "The firm is large and customers cannot get their money back; it spreads to other firms (contagion); the market is already falling.",
+      "smaller_when": "The exchange says user funds are safe and pays back losses (for example Bybit in February 2025 covered its $1.5bn hack); the firm is small.",
+      "caveats": "Follow-up articles days later (lawsuits, recovery plans) are not new events. The biggest move usually happens in the first 24 hours."
+    },
+    "B3": {
+      "how_it_works": "Bitcoin often trades like a risky technology stock. When the US stock market (especially the Nasdaq) falls sharply, investors sell risky things together.",
+      "typical_reaction": "On days the Nasdaq falls 2% or more, Bitcoin has often fallen too, sometimes more (for example March 2020 and August 2024 sell-offs).",
+      "bigger_when": "The stock fall is driven by fear or forced selling across all markets.",
+      "smaller_when": "The fall is about one sector unrelated to crypto, or crypto has its own good news.",
+      "caveats": "The link changes over time; in some periods Bitcoin moved on its own."
+    },
+    "B4": {
+      "how_it_works": "Spot Bitcoin ETFs (since January 2024) let big investors buy Bitcoin through normal funds. Money flowing into them means real buying; money flowing out means selling.",
+      "typical_reaction": "Strong inflows have tended to come with rising prices; large outflows with falling prices.",
+      "bigger_when": "Flows are large for several days in a row.",
+      "smaller_when": "One day of flows that reverses the next day.",
+      "caveats": "Flows often FOLLOW the price (people buy after it rises), so they are partly a result, not only a cause."
+    },
+    "B5": {
+      "how_it_works": "A sudden jump in public attention (searches, Wikipedia views) shows excitement or fear is building among ordinary people.",
+      "typical_reaction": "Attention spikes often come near big moves in either direction, and near short-term tops after strong rallies.",
+      "bigger_when": "Attention jumps very suddenly together with big news.",
+      "smaller_when": "Attention rises slowly.",
+      "caveats": "It tells you something is happening, not which way the price will go."
+    },
+    "G1": {
+      "how_it_works": "Gold is priced in US dollars. When the dollar gets stronger, gold costs more for buyers using other currencies, so demand falls; a weaker dollar does the opposite.",
+      "typical_reaction": "Dollar up, gold down; dollar down, gold up - one of the most reliable short-term links for gold.",
+      "bigger_when": "The dollar move is large and comes from a surprise (an election result, a policy announcement).",
+      "smaller_when": "Gold has its own strong driver at the same time (central bank buying, fear in markets).",
+      "caveats": "In panics both the dollar and gold can rise together, because both are seen as safe."
+    },
+    "G2": {
+      "how_it_works": "Gold pays no interest. When interest rates are high or expected to stay high, savings and bonds look better than gold; when rates are cut or expected to fall, gold looks better.",
+      "typical_reaction": "Signals of higher or longer-high rates (hikes, 'no cuts soon') have usually pushed gold down; rate cuts and dovish signals have usually pushed it up. What matters most is the SURPRISE compared with what markets expected.",
+      "bigger_when": "The Fed surprises the market; the Fed changes its guidance for future meetings.",
+      "smaller_when": "The decision was fully expected; the Fed repeats its earlier message.",
+      "caveats": "A 'hawkish cut' (cutting but signalling fewer cuts later, as in December 2024) can push gold down even though rates were cut. 'Traders look to the Fed' headlines carry no new information by themselves."
+    },
+    "G3": {
+      "how_it_works": "Surprising US data (jobs, inflation) changes what markets expect the Fed to do. Strong data or hot inflation means rates may stay high; weak data or cooler inflation means cuts become more likely.",
+      "typical_reaction": "Hot inflation or strong jobs: gold has tended to fall on the day; cool inflation or weak jobs: gold has tended to rise (for example the soft inflation report of November 2022 and the weak jobs report of August 2024).",
+      "bigger_when": "The number is far from what economists expected.",
+      "smaller_when": "The number is close to expectations.",
+      "caveats": "The first reaction can reverse within the day; the 1-day move is the fairest test."
+    },
+    "G4": {
+      "how_it_works": "Central banks (China, India, Poland, Turkey and others) have bought large amounts of gold since 2022 to hold fewer dollars. Their buying is steady demand that supports the price over months.",
+      "typical_reaction": "Reports of strong buying support gold over weeks and months, but rarely move it much in one day; reports of slowing buying or selling can weigh on it.",
+      "bigger_when": "A record or a big surprise (central banks bought over 1,000 tonnes a year in 2022 and 2023, according to the World Gold Council).",
+      "smaller_when": "Monthly figures in line with the trend.",
+      "caveats": "Data comes weeks after the buying happened, so it is slow information. Treat it as background, not as a 1-day signal."
+    },
+    "G5": {
+      "how_it_works": "Gold ETFs and investor demand show whether Western investors are buying or selling gold through funds.",
+      "typical_reaction": "Steady inflows support the price; steady outflows weigh on it.",
+      "bigger_when": "Flows are large for weeks.",
+      "smaller_when": "Flows are small or mixed.",
+      "caveats": "Like Bitcoin ETF flows, gold fund flows often follow the price rather than lead it."
+    }
+  }
+}

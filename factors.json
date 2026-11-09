@@ -1,0 +1,225 @@
+{
+  "note": "MINT's 10 factors. 'method' says how MINT finds each one: breaking_news (Bitcoin Scout, 4 times a day), data_check (Bitcoin Scout reads a number), calendar (Gold Scout reads official dates), weekly_summary (Gold Scout, once a week). 'search' is the news search used (OR means any of these words). 'strength': strong factors can trigger an alert on their own; moderate ones are shown for context. 'expected_move': the direction the price has tended to move after this kind of event (down, up, or either). 'keywords': the Supervisor checks that a headline really is about the factor (it must contain one of these). If it fits another factor better, it is moved there; if it fits none, it is dropped.",
+  "factors": [
+    {
+      "id": "B1",
+      "asset": "Bitcoin",
+      "name": "Bans, crackdowns and lawsuits",
+      "effect": "Price falls",
+      "method": "breaking_news",
+      "search": "bitcoin (ban OR crackdown OR lawsuit OR \"SEC sues\" OR illegal)",
+      "official_feeds": [
+        {
+          "name": "SEC press releases",
+          "url": "https://www.sec.gov/news/pressreleases.rss",
+          "test_file": "sample_sec_press.xml"
+        },
+        {
+          "name": "SEC litigation releases",
+          "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/rss",
+          "test_file": "sample_sec_litigation.xml"
+        },
+        {
+          "name": "SEC trading suspensions",
+          "url": "https://www.sec.gov/enforcement-litigation/trading-suspensions/rss",
+          "test_file": "sample_sec_suspensions.xml"
+        }
+      ],
+      "strength": "strong",
+      "expected_move": "down",
+      "keywords": [
+        "ban",
+        "banned",
+        "crackdown",
+        "lawsuit",
+        "sue",
+        "sued",
+        "charge",
+        "charged",
+        "illegal",
+        "outlaw",
+        "regulator",
+        "sec",
+        "fraud",
+        "court",
+        "enforcement",
+        "prohibit",
+        "restrict",
+        "arrest",
+        "sanction",
+        "probe"
+      ]
+    },
+    {
+      "id": "B2",
+      "asset": "Bitcoin",
+      "name": "Exchange collapses and hacks",
+      "effect": "Price falls",
+      "method": "breaking_news",
+      "search": "crypto exchange (hack OR hacked OR collapse OR \"halts withdrawals\" OR bankruptcy)",
+      "strength": "strong",
+      "expected_move": "down",
+      "keywords": [
+        "hack",
+        "hacked",
+        "hacker",
+        "hackers",
+        "breach",
+        "exploit",
+        "exploited",
+        "stolen",
+        "heist",
+        "theft",
+        "collapse",
+        "collapsed",
+        "bankrupt",
+        "bankruptcy",
+        "insolvent",
+        "insolvency",
+        "halts withdrawals",
+        "withdrawal",
+        "freeze",
+        "frozen",
+        "outage",
+        "drained"
+      ]
+    },
+    {
+      "id": "B3",
+      "asset": "Bitcoin",
+      "name": "US stock market mood",
+      "effect": "Moves with US stocks",
+      "method": "data_check",
+      "check": "Nasdaq daily % change from Yahoo Finance; warn if it falls more than 2%",
+      "strength": "moderate",
+      "expected_move": "either"
+    },
+    {
+      "id": "B4",
+      "asset": "Bitcoin",
+      "name": "ETF flows",
+      "effect": "Inflows up, outflows down",
+      "method": "breaking_news",
+      "search": "bitcoin ETF (outflows OR inflows)",
+      "strength": "moderate",
+      "expected_move": "either",
+      "keywords": [
+        "etf",
+        "etfs",
+        "fund flows",
+        "inflow",
+        "outflow"
+      ]
+    },
+    {
+      "id": "B5",
+      "asset": "Bitcoin",
+      "name": "Investor attention",
+      "effect": "More attention, price up",
+      "method": "data_check",
+      "check": "Weekly views of the Wikipedia 'Bitcoin' page; warn if 1.5x the week before",
+      "strength": "moderate",
+      "expected_move": "either"
+    },
+    {
+      "id": "G1",
+      "asset": "Gold",
+      "name": "US dollar",
+      "effect": "Dollar up, gold down",
+      "method": "weekly_summary",
+      "search": "(\"US dollar\" OR \"dollar index\") gold",
+      "strength": "strong",
+      "expected_move": "either",
+      "keywords": [
+        "dollar",
+        "greenback",
+        "dxy",
+        "currency",
+        "currencies"
+      ]
+    },
+    {
+      "id": "G2",
+      "asset": "Gold",
+      "name": "Interest rates and Fed decisions",
+      "effect": "Rates up, gold down",
+      "method": "calendar_and_weekly",
+      "search": "(\"Federal Reserve\" OR Fed) (\"interest rates\" OR \"rate cut\" OR \"rate hike\") gold",
+      "strength": "strong",
+      "expected_move": "either",
+      "keywords": [
+        "fed",
+        "federal reserve",
+        "rate",
+        "rate cut",
+        "rate hike",
+        "powell",
+        "fomc",
+        "interest rate",
+        "yield",
+        "yields",
+        "monetary policy",
+        "tightening",
+        "easing"
+      ]
+    },
+    {
+      "id": "G3",
+      "asset": "Gold",
+      "name": "Surprise US data (jobs, inflation)",
+      "effect": "Better US data, gold down",
+      "method": "calendar",
+      "check": "Release dates read from the bls.gov schedule",
+      "strength": "moderate",
+      "expected_move": "either",
+      "keywords": [
+        "jobs",
+        "payrolls",
+        "cpi",
+        "inflation",
+        "employment",
+        "unemployment",
+        "gdp",
+        "retail sales",
+        "economic data"
+      ]
+    },
+    {
+      "id": "G4",
+      "asset": "Gold",
+      "name": "Central bank buying",
+      "effect": "Buying pushes gold up",
+      "method": "weekly_summary",
+      "search": "\"central bank\" gold (buying OR purchases OR reserves)",
+      "strength": "moderate",
+      "expected_move": "up",
+      "keywords": [
+        "central bank",
+        "central banks",
+        "reserves",
+        "pboc",
+        "rbi",
+        "official sector"
+      ]
+    },
+    {
+      "id": "G5",
+      "asset": "Gold",
+      "name": "ETF and investor flows",
+      "effect": "Inflows up, outflows down",
+      "method": "weekly_summary",
+      "search": "gold ETF (inflows OR outflows OR holdings)",
+      "strength": "moderate",
+      "expected_move": "either",
+      "keywords": [
+        "etf",
+        "etfs",
+        "holdings",
+        "inflow",
+        "outflow",
+        "demand",
+        "investor demand"
+      ]
+    }
+  ]
+}

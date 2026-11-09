@@ -1,0 +1,21 @@
+{
+  "note": "Approved sources. A Scout keeps a story only if its website is on this list AND the source is marked for that asset. Two stories count as independent only if they come from different organisations. Removed for conflicts of interest: CoinDesk (owned by a crypto company), The Block (2022 FTX loans scandal), Kitco (sells gold).",
+  "sources": [
+    {"domain": "reuters.com",        "organisation": "Reuters",                                 "assets": ["Bitcoin", "Gold"], "type": "news agency"},
+    {"domain": "apnews.com",         "organisation": "Associated Press",                        "assets": ["Bitcoin", "Gold"], "type": "news agency"},
+    {"domain": "bloomberg.com",      "organisation": "Bloomberg",                               "assets": ["Bitcoin", "Gold"], "type": "financial news"},
+    {"domain": "ft.com",             "organisation": "Financial Times",                         "assets": ["Bitcoin", "Gold"], "type": "financial news"},
+    {"domain": "wsj.com",            "organisation": "Wall Street Journal",                     "assets": ["Bitcoin", "Gold"], "type": "financial news"},
+    {"domain": "cnbc.com",           "organisation": "CNBC",                                    "assets": ["Bitcoin", "Gold"], "type": "financial news"},
+    {"domain": "bbc.com",            "organisation": "BBC",                                     "assets": ["Bitcoin", "Gold"], "type": "general news"},
+    {"domain": "bbc.co.uk",          "organisation": "BBC",                                     "assets": ["Bitcoin", "Gold"], "type": "general news"},
+    {"domain": "theguardian.com",    "organisation": "The Guardian",                            "assets": ["Bitcoin", "Gold"], "type": "general news"},
+    {"domain": "nytimes.com",        "organisation": "The New York Times",                      "assets": ["Bitcoin", "Gold"], "type": "general news"},
+    {"domain": "nbcnews.com",        "organisation": "NBC News",                                "assets": ["Bitcoin", "Gold"], "type": "general news"},
+    {"domain": "sec.gov",            "organisation": "US Securities and Exchange Commission",   "assets": ["Bitcoin"],         "type": "official regulator"},
+    {"domain": "sebi.gov.in",        "organisation": "Securities and Exchange Board of India",  "assets": ["Bitcoin"],         "type": "official regulator"},
+    {"domain": "federalreserve.gov", "organisation": "US Federal Reserve",                      "assets": ["Gold"],            "type": "official central bank"},
+    {"domain": "rbi.org.in",         "organisation": "Reserve Bank of India",                   "assets": ["Gold"],            "type": "official central bank"},
+    {"domain": "gold.org",           "organisation": "World Gold Council",                      "assets": ["Gold"],            "type": "industry data (funded by gold miners - use for data, not opinion)"}
+  ]
+}

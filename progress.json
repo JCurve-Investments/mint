@@ -1,0 +1,268 @@
+{
+  "note": "You edit this file by hand. status can be done, doing or todo. Add a new line to 'log' whenever something important happens (a problem, a fix, a decision). The dashboard reads this file.",
+  "project": "MINT - Market Intelligence & News Tracker",
+  "steps": [
+    {
+      "name": "Factor list (5 for Bitcoin, 5 for Gold, with past evidence)",
+      "status": "done",
+      "note": "Fact-checked against published studies"
+    },
+    {
+      "name": "Trusted source list (separate for each asset)",
+      "status": "done",
+      "note": "Sources with conflicts of interest removed"
+    },
+    {
+      "name": "Bitcoin Scout",
+      "status": "done",
+      "note": "Breaking news + Nasdaq and Wikipedia data checks"
+    },
+    {
+      "name": "Gold Scout",
+      "status": "done",
+      "note": "Reads Fed and BLS calendars itself + weekly news"
+    },
+    {
+      "name": "Official feeds: SEC",
+      "status": "doing",
+      "note": "Passes the sample test. Real run still to do."
+    },
+    {
+      "name": "World Gold Council monthly data (central bank buying)",
+      "status": "doing",
+      "note": "File downloaded by hand; waiting to see its layout"
+    },
+    {
+      "name": "Social Watcher (Trump via trumpstruth.org, Binance Telegram)",
+      "status": "doing",
+      "note": "Works on test data. Real run still to do. A post can only start a Watch."
+    },
+    {
+      "name": "Supervisor agent",
+      "status": "done",
+      "note": "Groups stories into events, proof rules, memory, factor check, first-run learning. 16 of 16 tests pass."
+    },
+    {
+      "name": "Decision agent",
+      "status": "doing",
+      "note": "Rules mode works. AI: Groq (free, recommended), OpenRouter free, Gemini free, Ollama (local) or Claude (paid). Real AI test still to do."
+    },
+    {
+      "name": "Price tracking (outcome after 1 hour, 1 day, 7 days)",
+      "status": "done",
+      "note": "Real CoinGecko prices work (first real run 4 Nov)."
+    },
+    {
+      "name": "Telegram alerts and sign-up",
+      "status": "doing",
+      "note": "Alerts, watches, watch updates, heads-ups and a Sunday weekly summary with decision accuracy. Subscribers choose asset and 'Alerts only' or 'Everything'. 17 of 17 tests pass with a pretend Telegram server."
+    },
+    {
+      "name": "Schedule (runs every 30 to 60 minutes)",
+      "status": "doing",
+      "note": "Cloud version built: GitHub Actions runs MINT every 15 minutes for free, PC can be off. Setup on GitHub still to do."
+    },
+    {
+      "name": "Test with 5 past events",
+      "status": "todo",
+      "note": "Also measures how late the alert would have been"
+    },
+    {
+      "name": "MINT app (replaces the terminal and the old dashboard)",
+      "status": "done",
+      "note": "Opens from a Desktop icon. Run now, automatic runs, live agent status."
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-01",
+      "title": "First versions of both Scouts",
+      "detail": "Built the Bitcoin Scout and Gold Scout. Test runs on made-up sample data passed."
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Problem: unrelated stories",
+      "detail": "The bans search returned stories that only matched the word 'lawsuit'. Fix: added a check that the headline is about the asset."
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Problem: trusted list too narrow",
+      "detail": "Too few stories passed. Added BBC, The Guardian, NYT and NBC. Removed CoinDesk, The Block and Kitco because of conflicts of interest."
+    },
+    {
+      "date": "2026-11-02",
+      "title": "First real Gold run",
+      "detail": "Read the Fed calendar (54 meetings) and the BLS calendar (48 releases) from the official websites."
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Problem: no trusted stories for central bank buying and ETF flows",
+      "detail": "Of 57 and 55 stories found, none came from approved websites. Plan: use the SEC for Bitcoin and the World Gold Council monthly data for central banks."
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Problem: old event, new article",
+      "detail": "An article published hours ago can be about an event from days ago, so the 24-hour age check is not enough. Fix planned: the Supervisor will remember events it has already seen."
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Added a summary box",
+      "detail": "Each Scout now ends with a SUMMARY and a BOTTOM LINE."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Added SEC official feeds",
+      "detail": "The Bitcoin Scout now reads three SEC feeds directly. The World Gold Council's terms do not allow programs to scrape its website, so that file is downloaded by hand."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Decision: an official source counts on its own",
+      "detail": "A second source is only needed for news websites. An official source (SEC, Fed, World Gold Council) is proof by itself. A social media post can only start a Watch."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Built the Supervisor",
+      "detail": "Groups stories about the same event (shared names, amounts and key words), applies the proof rules, remembers every event so an old event with a new article is only an update. Wrote 10 tests; all pass."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Built price tracking",
+      "detail": "Free CoinGecko prices (no key). Gold uses PAX Gold, a token backed by real gold, because CoinGecko has no direct gold price. Records how much the price had already moved when MINT noticed, and the move after 1 hour, 1 day and 7 days."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Built the Decision agent",
+      "detail": "Uses Claude if an API key is added, otherwise simple rules. It may only use the supplied headlines, must check the event date, and its message is blocked if it sounds like financial advice."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Problem: running MINT from the terminal is not practical",
+      "detail": "Built the MINT app: double-click an icon, it opens in the browser, runs on a timer and shows what each agent is doing."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Problem: failed checks looked like 'Calm'",
+      "detail": "When the internet was off, every check failed but the asset still showed Calm. Fix: the state now shows Unknown when all checks fail, and says how many failed."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "First real run of the full system",
+      "detail": "All five agents ran on real data. Real prices from CoinGecko. The Binance hack was reported by 6 organisations and grouped into ONE event."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Problem: first run alerted on old news",
+      "detail": "With an empty memory, MINT treated everything already in the news as new (for example a follow-up article on the Binance hack). Fix: the first run only learns (no alerts), and follow-up wording like 'after record hack' or 'battles to' now triggers the date check."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Problem: 6-day-old gold news became an alert",
+      "detail": "Gold searches 7 days back for the weekly summary. Fix: only events first reported in the last 48 hours (gold) or 24 hours (Bitcoin) can become alerts; older gold news goes into the weekly summary."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Problem: stories filed under the wrong factor",
+      "detail": "Google returned political stories for the 'exchange hacks' search. Fix: each factor has keywords; the headline must contain one, otherwise it is moved to a better factor or dropped as off-topic. Supervisor tests: 15 of 15 pass."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Research: free ways to read social media",
+      "detail": "X (Twitter) no longer has a free way to read posts (it charges per post read). Free options: Trump's Truth Social posts through the trumpstruth.org public archive feed, public Telegram channels (web preview), Bluesky profile RSS feeds."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Built the Social Watcher",
+      "detail": "Follows Trump (Truth Social) and Binance announcements (Telegram). A post is kept only if it is under 24 hours old and matches a factor's keywords. A post can only start a Watch, because accounts can be hacked (the SEC's X account was hacked in January 2024)."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Decision: logic first, AI only for reading and writing",
+      "detail": "Proof, age, memory and factor checks stay as fixed rules (easy to test and explain). AI is only used to read the date and write the alert, and is optional: Groq or Gemini (free tiers), Ollama (free, on this computer) or Claude (paid). If the AI fails, the rules take over."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Problem: page animations kept replaying",
+      "detail": "The page refreshes every few seconds and the fade-in animation played every time. Fix: animations only play when a page is opened."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Research: best free AI for the Decision agent",
+      "detail": "Groq: free, no card, 1,000 requests a day, does not train on your data - chosen. OpenRouter free models (50 a day) as backup. Gemini free tier may use data to improve Google's products. Note: Grok (xAI) is a different, paid service."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Built the Telegram bot",
+      "detail": "People sign up with /start and choose Gold, Bitcoin or both. MINT stores only the chat number and the choice. Alerts are sent once, only to the right people, never during test runs, and never if older than 6 hours. 11 tests pass using a pretend Telegram server."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Added more Telegram message types and a weekly summary",
+      "detail": "People choose 'Alerts only' or 'Everything' (watches, watch updates, heads-ups). Every Sunday MINT sends a summary that checks its own decisions against the price: alerts followed by a clear move, and no-alert decisions with no clear move."
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Decision: smart timing",
+      "detail": "Every 30 minutes normally, every 15 minutes while something is on Watch (to catch the second source faster) or before a scheduled gold event. Never more often than 15 minutes so the free websites are not overloaded."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Problem: Telegram blocked on our network",
+      "detail": "Connecting the bot and reading the Binance Telegram channel both failed with WinError 10054 (connection cut off). The Telegram app still worked, so the network was blocking Telegram's websites. Fix: added Settings > Check connection, which tests every website MINT uses, and plain-English error messages."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Every event now has a prediction",
+      "detail": "Each event gets an expected direction from its factor's past pattern, read from the headline (dollar up = gold down, rate cut = gold up, exchange hack = Bitcoin down...). If the headline does not say which way, MINT says 'unclear' instead of guessing. With AI switched on, the Decision agent can give its own prediction for confirmed events."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Results now judge the prediction, not the price",
+      "detail": "Green means the price moved the way MINT predicted, red the other way. Each event ends as Right, Wrong or No clear move (3% Bitcoin, 1% gold). The History page and weekly summary show prediction accuracy overall, for alerts and per factor."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Wording: 'Dropped' renamed 'Not confirmed'",
+      "detail": "No event is ever deleted. A Watch that never gets a second source is kept and tracked like every other event; it just does not get an alert."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Problem: 'certificate verify failed' when connecting to Telegram",
+      "detail": "Python did not trust the certificate it received. Two possible causes: antivirus / a network filter checking secure connections, or the network sending us to a block page. Fix: MINT now checks certificates the same way Windows and the browser do (truststore), and Check connection reads the certificate to say which cause it is. Certificate checks are never switched off, so the bot token stays safe."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Problem: accuracy looked very low",
+      "detail": "Two problems with how it was measured, not with the agents: (1) events where the price hardly moved counted as failures, and (2) results were judged over 7 days, when other news has mixed in. Fix: judge on the 1-day move (when news moves prices most), count only events where the price clearly moved (1.5% Bitcoin, 0.5% gold), and show 'no clear move' separately. Factor accuracy is only shown with 3 or more results, because 1 or 2 results say nothing."
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Every event gets a prediction",
+      "detail": "When the factor rule cannot read the headline, MINT uses the market's first reaction written in the headline, and if AI is switched on, Groq predicts the rest. Added a Test AI button: the Groq key had never been used because the AI was only called for confirmed events."
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Decision: predict from similar past events, not from the headline",
+      "detail": "Reading the price move from the headline ('gold edges lower') is not a prediction. Now MINT finds the most similar past events (same asset, similar words, same factor, same kind of event) and looks at what the price really did 1 day later, then combines that with the factor pattern. Only events from before the new event are used. Past events come from MINT's own tracking and from real past events I research and add (MINT downloads the real prices). 20 of 20 Supervisor tests pass."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Problem: Groq AI gave error 1010",
+      "detail": "Groq's website security (Cloudflare) blocks requests that do not say which program they come from. Fix: MINT now sends a User-Agent ('MINT/1.0') with every AI request."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Decision: report everything",
+      "detail": "Removed the first-run learning (it hid recent events as 'already in the news'). Telegram now sends every event with MINT's view and prediction, every status change and the result 1 day later. A Telegram channel can be used so people only tap Join (Telegram never lets a bot message someone who has not pressed Start)."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Gave the Decision agent knowledge",
+      "detail": "Added factor_knowledge.json (how each factor affects the price, when the effect is bigger or smaller) and a starter library of 36 major past events (FTX, Terra, Bybit, SEC cases, ETF approval, Fed hikes and cuts 2022-2025, inflation and jobs surprises, central bank records, dollar shocks). MINT downloads their real prices. Every event now gets an analysis and a confidence level based on how many similar past events agree. Checking the factor rules against the 36 events found and fixed 4 mistakes."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Built the cloud version (GitHub Actions)",
+      "detail": "MINT should not depend on my PC being on. GitHub Actions runs all agents every 15 minutes for free in a public repository, saves MINT's memory back into the repository and publishes a view-only dashboard on GitHub Pages. Keys stay in GitHub Secrets (checked: no key ends up in any uploaded file). Because the repository is public, no subscriber list is stored: everything is posted to the Telegram channel."
+    }
+  ]
+}

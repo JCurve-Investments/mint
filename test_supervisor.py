@@ -1,0 +1,189 @@
+"""
+Tests for the Supervisor: 20 situations it must handle correctly.
+Every test uses made-up stories and a separate memory folder (data/selftest), so real data is never touched.
+
+Run:  py test_supervisor.py      (or press "Test the Supervisor" in the MINT app)
+"""
+
+import contextlib
+import io
+import shutil
+from datetime import datetime, timezone, timedelta
+
+import supervisor
+from common import FOLDER
+
+T0 = datetime(2026, 11, 1, 12, 0, tzinfo=timezone.utc)
+results = []
+
+
+def fresh_memory():
+    folder = FOLDER / "data" / "selftest"
+    shutil.rmtree(folder, ignore_errors=True)
+    supervisor.data_folder = lambda test_mode: (folder.mkdir(parents=True, exist_ok=True), folder)[1]
+
+
+def story(title, org, site, hours_ago, now=T0, factor="B2", link=None, summary=""):
+    return {"title": title, "organisation": org, "source_site": site, "source_name": org,
+            "link": link or f"https://{site}/{abs(hash(title))}", "summary": summary,
+            "published": (now - timedelta(hours=hours_ago)).isoformat(), "age_hours": hours_ago}
+
+
+def btc_report(stories_by_factor):
+    return {"scout": "bitcoin", "news": [{"id": f, "kept": s} for f, s in stories_by_factor.items()],
+            "data_checks": {}}
+
+
+def events():
+    return supervisor.load_memory(True)["events"]
+
+
+def check(name, condition, detail=""):
+    results.append((name, condition))
+    print(f"{'PASS' if condition else 'FAIL'}  {name}" + (f"   ({detail})" if detail and not condition else ""))
+
+
+def quiet_run(reports, now):
+    import contextlib
+    import io
+    with contextlib.redirect_stdout(io.StringIO()):
+        return supervisor.run(reports, test_mode=True, now=now)
+
+
+# 1. Two organisations, same hack, different words -> ONE event, confirmed
+fresh_memory()
+quiet_run([btc_report({"B2": [
+    story("Bybit hacked for $1.5bn in largest crypto heist - Reuters", "Reuters", "reuters.com", 3),
+    story("Hackers steal $1.5 billion from crypto exchange Bybit", "CNBC", "cnbc.com", 2)]})], T0)
+e = events()
+check("1. Two organisations, same hack -> one event", len(e) == 1, f"{len(e)} events")
+check("2. Two organisations -> confirmed (passed to Decision agent)", e and e[0]["state"] == "confirmed",
+      e and e[0]["state"])
+check("3. ' - Reuters' removed from the headline", e and not e[0]["title"].endswith("Reuters"), e and e[0]["title"])
+
+# 4. A different event from the same factor must NOT be joined to it
+quiet_run([btc_report({"B2": [story("Exchange Kraken suffers outage, users cannot trade", "Bloomberg", "bloomberg.com", 1)]})], T0)
+check("4. Different event, same factor -> kept separate", len(events()) == 2, f"{len(events())} events")
+
+# 5. Old event, new article: once alerted, a new article the next day is an UPDATE, not a new alert
+mem = supervisor.load_memory(True)
+mem["events"][0]["state"] = "alerted"
+mem["events"][0]["decision"] = {"time": T0.isoformat(), "send_alert": True}
+supervisor.save_memory(mem, True)
+later = T0 + timedelta(hours=30)
+summary = quiet_run([btc_report({"B2": [story("Bybit hack: how $1.5bn vanished in minutes", "BBC", "bbc.com", 2,
+                                              now=later)]})], later)
+check("5. New article about an alerted event -> update, no new alert",
+      summary["updates_ignored"] == 1 and summary["new_events"] == 0, str(summary))
+
+# 6. The same organisation twice is still only ONE organisation
+fresh_memory()
+quiet_run([btc_report({"B1": [
+    story("Country Z bans bitcoin mining", "Reuters", "reuters.com", 3, factor="B1"),
+    story("Country Z bans bitcoin mining, citing power shortages", "Reuters", "reuters.com", 1, factor="B1")]})], T0)
+e = events()
+check("6. Same organisation twice -> still Watch (needs a 2nd organisation)",
+      len(e) == 1 and e[0]["state"] == "watch", e and e[0]["state"])
+
+# 7. A Watch that never gets a second source expires
+summary = quiet_run([btc_report({})], T0 + timedelta(hours=26))
+check("7. Watch with no second source after 24h -> expired", events()[0]["state"] == "expired", events()[0]["state"])
+
+# 8. An official source counts on its own
+fresh_memory()
+quiet_run([btc_report({"B1": [story("SEC sues crypto exchange Acme for operating unregistered platform",
+                                     "US Securities and Exchange Commission", "sec.gov", 1, factor="B1")]})], T0)
+e = events()
+check("8. Official source (SEC) alone -> confirmed", e and e[0]["state"] == "confirmed", e and e[0]["state"])
+
+# 9. A headline about an older event is flagged for the date check
+fresh_memory()
+quiet_run([btc_report({"B2": [
+    story("A year after FTX collapse, exchange Gamma halts withdrawals", "Reuters", "reuters.com", 2),
+    story("Exchange Gamma halts withdrawals as FTX memories linger", "BBC", "bbc.com", 1)]})], T0)
+e = events()
+check("9. 'A year after...' -> flagged for the Decision agent's date check", e and bool(e[0]["old_clues"]),
+      e and str(e[0]["old_clues"]))
+
+# 10. First report too old (the Scout found a fresh article, but MINT already knew the event from 30h ago)
+fresh_memory()
+quiet_run([btc_report({"B2": [story("Exchange Delta hacked for $200m", "Reuters", "reuters.com", 1)]})],
+          T0 - timedelta(hours=30))
+quiet_run([btc_report({})], T0)
+check("10. Event first reported 30h ago (Bitcoin limit 24h) -> old", events()[0]["state"] in ("old", "expired"),
+      events()[0]["state"])
+
+# 11. A headline that is not about its factor is dropped (Google returned it, but it is about politics)
+fresh_memory()
+summary = quiet_run([btc_report({"B2": [story("Bitcoin slips as Democratic sweep bets threaten crypto agenda",
+                                              "Bloomberg", "bloomberg.com", 1)]})], T0)
+check("11. Headline not about its factor -> dropped as off-topic", summary["off_topic"] == 1 and not events(),
+      str(summary.get("off_topic")))
+
+# 12. A headline that fits another factor better is moved there
+fresh_memory()
+gold = {"scout": "gold", "calendar": {}, "weekly_news": [{"id": "G2", "kept": [
+    story("Gold gains 3% as dollar slides after midterm results", "Reuters", "reuters.com", 2, factor="G2")]}]}
+quiet_run([gold], T0)
+check("12. 'Gold gains as dollar slides' filed under G2 -> moved to G1 US dollar",
+      events() and events()[0]["factor"] == "G1", events() and events()[0]["factor"])
+
+# 13. Follow-up wording ("battles to save its brand after record hack") is flagged for the date check
+fresh_memory()
+quiet_run([btc_report({"B2": [
+    story("Binance battles to save its brand after record $6.3bn crypto hack", "BBC", "bbc.com", 2),
+    story("Binance fights to win back users after $6.3bn hack", "Reuters", "reuters.com", 1)]})], T0)
+check("13. 'battles to ... after record hack' -> flagged as a probably older event",
+      events() and len(events()[0]["old_clues"]) >= 1, events() and str(events()[0]["old_clues"]))
+
+# 14. Gold news that is 3 days old goes into the weekly summary, never an alert
+fresh_memory()
+gold = {"scout": "gold", "calendar": {}, "weekly_news": [{"id": "G2", "kept": [
+    story("Gold slides as Fed signals higher rates for longer", "Reuters", "reuters.com", 72, factor="G2"),
+    story("Gold falls as Fed signals rates stay high", "CNBC", "cnbc.com", 70, factor="G2")]}]}
+quiet_run([gold], T0)
+check("14. Proven gold event first reported 72h ago -> weekly summary, not an alert",
+      events() and events()[0]["state"] == "summary", events() and events()[0]["state"])
+
+# 15. The very FIRST run reports everything it finds normally (nothing is hidden as "already in the news")
+fresh_memory()
+with contextlib.redirect_stdout(io.StringIO()):
+    supervisor.run([btc_report({"B2": [story("Exchange Omega hacked for $90m", "Reuters", "reuters.com", 3),
+                                       story("Hackers drain $90m from exchange Omega", "BBC", "bbc.com", 2)]})],
+                   test_mode=True, now=T0)
+check("15. First run: a proven new event is reported normally (confirmed), not hidden",
+      events() and events()[0]["state"] == "confirmed", events() and events()[0]["state"])
+
+# 16. A social media post alone can only start a Watch, even from a famous account
+fresh_memory()
+post = story("Binance has suspended withdrawals while we investigate a security incident",
+             "Binance announcements (Telegram)", "binance_announcements", 1)
+post.update(kind="social", asset="Bitcoin")
+quiet_run([{"scout": "social", "news": [{"id": "B2", "kept": [post]}]}], T0)
+check("16. Social media post alone -> Watch only", events() and events()[0]["state"] == "watch"
+      and events()[0]["proof"] == "social_only", events() and events()[0]["state"])
+
+# 17-20. Predictions come from what happened after similar PAST events (+ the factor pattern)
+import library
+past = [
+    {"id": "P1", "date": "2026-03-18", "asset": "Gold", "factor": "G2", "title": "Fed signals no rate cut this year", "d1": -0.8},
+    {"id": "P2", "date": "2026-06-17", "asset": "Gold", "factor": "G2", "title": "Fed holds rates, says no cut until inflation falls", "d1": -0.4},
+    {"id": "P3", "date": "2026-09-16", "asset": "Gold", "factor": "G2", "title": "Fed cuts rates by a quarter point", "d1": 0.9},
+    {"id": "P4", "date": "2026-12-01", "asset": "Gold", "factor": "G2", "title": "Fed holds rates as traders look to next decision", "d1": 5.0},
+]
+p = library.make_prediction("G2", "Gold holds above $4,000 as traders look to Fed rate decision", "Gold", past,
+                            before="2026-11-01")
+check("17. A headline with no direction is predicted from similar past Fed events (gold fell after 2 of 3)",
+      p["direction"] == "down" and len(p["similar"]) == 3, p["reason"])
+check("18. A past event from AFTER the new event is never used (no peeking into the future)",
+      all(x["id"] != "P4" for x in p["similar"]), str([x["id"] for x in p["similar"]]))
+p2 = library.make_prediction("G2", "Fed must cut interest rates now", "Gold", past, before="2026-11-01")
+check("19. An opposite kind of event is not counted as similar ('cut' is not like 'no cut')",
+      [x["id"] for x in p2["similar"]] == ["P3"] and p2["direction"] == "up", str([x["id"] for x in p2["similar"]]))
+p3 = library.make_prediction("G1", "Gold steady as traders watch the dollar", "Gold", [], before="2026-11-01")
+check("20. No similar past events and no pattern -> 'unclear' (MINT does not guess)", p3["direction"] == "unclear",
+      p3["direction"])
+
+passed = sum(ok for _, ok in results)
+print(f"\nRESULT: {passed} of {len(results)} tests passed.")
+shutil.rmtree(FOLDER / "data" / "selftest", ignore_errors=True)

@@ -1,0 +1,18 @@
+{
+  "note": "Backup only. The Gold Scout reads the official calendars itself and uses this file ONLY if an official site can't be read. Dates checked on 1 Nov 2026 against federalreserve.gov (FOMC calendar) and bls.gov (2026 release schedule). Fed decision = last day of each meeting. 2027 Fed dates are tentative.",
+  "events": [
+    {"date": "2026-12-09", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-01-27", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-03-17", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-04-28", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-06-09", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-07-28", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-09-15", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-10-27", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2027-12-08", "factor": "G2", "event": "Fed interest-rate decision"},
+    {"date": "2026-11-06", "factor": "G3", "event": "US jobs report"},
+    {"date": "2026-11-10", "factor": "G3", "event": "US inflation report (CPI)"},
+    {"date": "2026-12-04", "factor": "G3", "event": "US jobs report"},
+    {"date": "2026-12-10", "factor": "G3", "event": "US inflation report (CPI)"}
+  ]
+}
