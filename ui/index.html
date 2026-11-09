@@ -135,7 +135,7 @@ const TABS = [["overview","Overview"],["events","Events"],["agents","Agents"],["
   .filter(([k]) => !(STATIC && k === "settings"));
 const UI = {drawn:{}, tab:"overview", asset:"Bitcoin", range:"7D", hover:null, filter:"all", open:null, out:{}, lastJson:"", testOutput:""};
 let S = null;
-const UI_VERSION = "12";   // must match VERSION in app.py
+const UI_VERSION = "13";   // must match VERSION in app.py
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money = v => v == null ? "–" : "$" + Math.round(v).toLocaleString("en-US");
@@ -306,7 +306,7 @@ function overview(){
     <div style="flex:1 1 380px"><h2 style="color:#F5F0E6">Get MINT alerts on Telegram</h2>
       <div style="color:#C9C4B3;font-size:15px;line-height:1.6;margin-top:6px">Choose Gold, Bitcoin or both. No name, no email, no phone number: open the bot and press Start.
       ${S.telegram.set_up?` ${S.telegram.subscribers} subscriber(s) so far.`:""}</div></div>
-    ${S.telegram.set_up ? `<a class="btn" style="background:#C9A227;border-color:#C9A227;color:#1E2420;text-decoration:none;font-weight:600" href="https://t.me/${esc((S.telegram.channel||"").startsWith("@") ? S.telegram.channel.slice(1) : S.telegram.username)}" target="_blank" rel="noopener">${(S.telegram.channel||"").startsWith("@") ? "Join "+esc(S.telegram.channel) : "Open @"+esc(S.telegram.username)}</a>`
+    ${S.telegram.set_up ? `<a class="btn" style="background:#C9A227;border-color:#C9A227;color:#1E2420;text-decoration:none;font-weight:600" href="${esc(S.telegram.channel_link || ("https://t.me/" + ((S.telegram.channel||"").startsWith("@") ? S.telegram.channel.slice(1) : S.telegram.username)))}" target="_blank" rel="noopener">${S.telegram.channel_link || (S.telegram.channel||"").startsWith("@") ? "Join the MINT channel" : "Open @"+esc(S.telegram.username)}</a>`
       : `<button class="btn" style="background:#C9A227;border-color:#C9A227;color:#1E2420;font-weight:600" onclick="go('settings')">Set up the bot</button>`}
   </section>`;
 }
@@ -776,8 +776,9 @@ function telegramSettings(){
     <div class="setting"><div class="txt"><b>Telegram channel (recommended)</b><div>Everything is also posted to a channel, so people just tap <b>Join</b> - no Start button, no choices.
       Set up: in Telegram, New Channel → give it a name and a public link (e.g. t.me/mint_alerts_yourname) → Channel settings → Administrators → add your bot. Then type the link here.
       ${t.channel?`<br>Posting to <b>${esc(t.channel)}</b>.`:""}</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap"><input type="text" id="tgchannel" value="${esc(t.channel||"")}" placeholder="@your_channel" style="width:180px">
-      <button class="btn small" onclick="post('/api/telegram-channel',{channel:document.getElementById('tgchannel').value}).then(()=>{UI.lastJson='';load()})">Save</button></div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><input type="text" id="tgchannel" value="${esc(t.channel||"")}" placeholder="@channel or -100… ID" style="width:170px">
+      <input type="text" id="tglink" value="${esc(t.channel_link||"")}" placeholder="Invite link (private channel)" style="width:200px">
+      <button class="btn small" onclick="post('/api/telegram-channel',{channel:document.getElementById('tgchannel').value,link:document.getElementById('tglink').value}).then(()=>{UI.lastJson='';load()})">Save</button></div></div>
     <div class="setting" style="display:block"><b style="font-size:14px">Recent messages</b>
       ${(t.log||[]).length ? (t.log||[]).slice().reverse().map(m => `<div style="display:flex;gap:12px;font-size:13px;padding:7px 0;border-bottom:1px solid var(--line)"><span class="muted" style="width:90px">${when(m.time)}</span><span class="pill p-grey">${esc(m.kind)}</span><span style="flex:1">${esc(m.title)}</span><span class="muted">${m.to} person(s)</span></div>`).join("") : `<div class="muted" style="font-size:13px;margin-top:6px">None yet.</div>`}</div>`;
 }

@@ -44,7 +44,7 @@ import weekly                        # noqa: E402
 from common import load_json         # noqa: E402
 from supervisor import data_folder, load_memory   # noqa: E402
 
-VERSION = "12"                         # must match UI_VERSION in ui/index.html
+VERSION = "13"                         # must match UI_VERSION in ui/index.html
 PORT = 8765
 ADDRESS = f"http://localhost:{PORT}"
 SCHEDULE = {"next_run": None}
@@ -256,6 +256,7 @@ def build_state():
         "social": social_state(test_mode),
         "telegram": {"set_up": bool(settings.get("telegram_token")), "username": settings.get("telegram_username", ""),
                      "channel": settings.get("telegram_channel", ""),
+                     "channel_link": settings.get("telegram_channel_link", ""),
                      "subscribers": len(telegram_bot.load_subscribers()),
                      "gold": sum("Gold" in s.get("assets", []) for s in telegram_bot.load_subscribers().values()),
                      "bitcoin": sum("Bitcoin" in s.get("assets", []) for s in telegram_bot.load_subscribers().values()),
@@ -494,6 +495,10 @@ class Handler(BaseHTTPRequestHandler):
                 telegram_bot.call(s["telegram_token"], "sendMessage", {
                     "chat_id": ch, "text": "MINT is connected to this channel. Every event, update and result will be posted here."})
             s["telegram_channel"] = ch
+            link = str(body.get("link", "")).strip()
+            if link and not link.startswith("https://t.me/"):
+                raise RuntimeError("The invite link should start with https://t.me/")
+            s["telegram_channel_link"] = link
             decision.save_settings(s)
             return {"message": f"Connected to channel {ch}: a test post was sent." if ch else "Channel removed."}
         if path == "/api/telegram-test":

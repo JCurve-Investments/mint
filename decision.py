@@ -99,6 +99,7 @@ def cloud_settings(s):
         s["ai_keys"] = {"groq": env("GROQ_KEY")}
     s["telegram_token"] = env("TELEGRAM_TOKEN", "")
     s["telegram_channel"] = env("TELEGRAM_CHANNEL", "")
+    s["telegram_channel_link"] = env("TELEGRAM_CHANNEL_LINK", "")   # invite link, for a private channel
     s["contact_email"] = env("CONTACT_EMAIL", "")
     return s
 

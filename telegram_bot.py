@@ -123,7 +123,9 @@ def handle_message(token, msg, subs):
     if os.environ.get("MINT_CLOUD") == "1":
         # In the cloud the data is in a PUBLIC repository, so MINT stores no subscriber list:
         # everything goes to the channel instead.
-        channel = os.environ.get("TELEGRAM_CHANNEL", "")
+        channel = os.environ.get("TELEGRAM_CHANNEL_LINK") or os.environ.get("TELEGRAM_CHANNEL", "")
+        if channel.lstrip("-").isdigit():
+            channel = ""                       # a number ID is no use to people; only show a real link
         text = (msg.get("text") or "").strip().lower()
         reply = status_text() if text in ("/status", "status") else (
             "Hi! MINT posts every event, update and result in its channel" +
