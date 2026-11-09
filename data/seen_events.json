@@ -1,0 +1,738 @@
+{
+  "events": [
+    {
+      "id": "GOLD-20261103-01",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "WGC lowers outlook for gold investment demand growth as bar buying slows",
+      "state": "summary",
+      "state_reason": "first reported 149 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (only 1 news organisation so far (Reuters) - waiting for a second)",
+      "proof": "one_news",
+      "proof_reason": "only 1 news organisation so far (Reuters) - waiting for a second",
+      "first_seen": "2026-11-09T10:36:10.420140+00:00",
+      "earliest_report": "2026-11-03T06:06:00+00:00",
+      "last_updated": "2026-11-09T10:36:10.420140+00:00",
+      "words": [
+        "bar",
+        "buy",
+        "demand",
+        "gold",
+        "growth",
+        "investment",
+        "lower",
+        "outlook",
+        "slows",
+        "wgc"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "WGC lowers outlook for gold investment demand growth as bar buying slows",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbXNhd2d5cnZVajh5dGZkbnVvc3daNEtvT3NWekFmajVxZ0FfWFRlUGVFb0Z3UWsyWFpVYmN4YmNNdXFkM3gtV0FxcFNjUGtHYVFrNFBoUV9JZl83REU3SmlRTU54bXVSS2NubW1nOEJCVXpyVjdCcnNTUmRmNV9YX05UMDVSTG5zaFA2XzRIMDFZU1kyUVlxVzBfeG9MQjhWdUU5ZEI4bkRUbjEwS3QwTXVGNA?oc=5",
+          "published": "2026-11-03T06:06:00+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new -> summary: first reported 149 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (only 1 news organisation so far (Reuters) - waiting for a second)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3919.27,
+        "start_time": "2026-11-03T06:00:00+00:00",
+        "moved_before_mint": 4.19,
+        "delay_hours": 148.5,
+        "h1": {
+          "price": 3913.79,
+          "move": -0.14,
+          "time": "2026-11-03T07:06:00+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 3997.58,
+          "move": 2.0,
+          "time": "2026-11-04T06:06:00+00:00",
+          "verdict": "wrong"
+        },
+        "effect": "wrong",
+        "effect_reason": "predicted down, but +2.0% after 1 day"
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "factor pattern",
+        "reason": "no similar past events in the library yet; factor pattern: Money flowing OUT of gold funds: the price has tended to fall",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 1.5
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The World Gold Council says demand for gold investment is expected to grow slower because buying of gold bars is slowing.",
+        "what_past_events_show": "There are no past events of this exact type to compare with.",
+        "direction": "down",
+        "why": [
+          "Weaker demand outlook could lead to investors pulling money out of gold ETFs.",
+          "Slower bar buying signals less overall interest in gold, which can pressure the price."
+        ],
+        "watch_next": "If ETF flow numbers are released showing outflows, the price pressure could increase; strong inflows would soften the impact.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T10:36:10.420140+00:00"
+      },
+      "telegram": {
+        "sent_state": "summary",
+        "result_sent": "2026-11-09T10:36:10.420140+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261103-02",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "Investment",
+      "state": "summary",
+      "state_reason": "first reported 145 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)",
+      "proof": "official",
+      "proof_reason": "official source: World Gold Council",
+      "first_seen": "2026-11-09T10:36:10.420140+00:00",
+      "earliest_report": "2026-11-03T09:29:55+00:00",
+      "last_updated": "2026-11-09T10:36:10.420140+00:00",
+      "words": [
+        "investment"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "World Gold Council",
+          "kind": "data",
+          "site": "gold.org",
+          "title": "Investment",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPakFsZ2RYNTJkM2E3d09JWk9Lb3cwN1RRMUpkRXBZV0RwYXhmQjFMcmV4blRPclBIa015T2VZNkZNemtvQ2U2MXdVVElkVVVpYndkVzlGeTc2R2wxRzVKM3Vjc01hbGNPU3JzTXozV2RtN3loTThNVm1XcmtjcVVURm9YQWxxeUpjcUpkNXN2YkJjMVVVb2hyS0hn?oc=5",
+          "published": "2026-11-03T09:29:55+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new event, first report by World Gold Council"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new -> summary: first reported 145 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3901.26,
+        "start_time": "2026-11-03T09:00:00+00:00",
+        "moved_before_mint": 4.67,
+        "delay_hours": 145.1,
+        "h1": {
+          "price": 3913.6,
+          "move": 0.32,
+          "time": "2026-11-03T10:29:55+00:00",
+          "verdict": "none"
+        },
+        "d1": {
+          "price": 4029.09,
+          "move": 3.28,
+          "time": "2026-11-04T09:29:55+00:00",
+          "verdict": "none"
+        },
+        "effect": "no_prediction",
+        "effect_reason": "no prediction was made for this event"
+      },
+      "prediction": {
+        "direction": "unclear",
+        "by": "factor pattern",
+        "reason": "The headline does not say if money is flowing in or out, and there are no similar past events in the library yet",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The World Gold Council reported on investment activity in gold ETFs, showing that investors are active in the market.",
+        "what_past_events_show": "There are no comparable past events with known 1\u2011day price moves to reference.",
+        "direction": "up",
+        "why": [
+          "ETF inflows generally support gold prices",
+          "Investor interest often precedes short\u2011term price gains"
+        ],
+        "watch_next": "If the council later publishes data showing large net inflows, the price impact could be stronger; large outflows would weaken it.",
+        "confidence": "low",
+        "confidence_reason": "no clear evidence",
+        "time": "2026-11-09T10:36:10.420140+00:00"
+      },
+      "telegram": {
+        "sent_state": "summary"
+      }
+    },
+    {
+      "id": "GOLD-20261103-03",
+      "asset": "Gold",
+      "factor": "G4",
+      "factor_name": "Central bank buying",
+      "title": "Central Banks Accelerated Gold Buying in Third Quarter",
+      "state": "summary",
+      "state_reason": "first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (only 1 news organisation so far (Wall Street Journal) - waiting for a second)",
+      "proof": "one_news",
+      "proof_reason": "only 1 news organisation so far (Wall Street Journal) - waiting for a second",
+      "first_seen": "2026-11-09T10:36:10.420140+00:00",
+      "earliest_report": "2026-11-03T11:57:00+00:00",
+      "last_updated": "2026-11-09T10:36:10.420140+00:00",
+      "words": [
+        "accelerat",
+        "banks",
+        "buy",
+        "central",
+        "gold",
+        "quarter",
+        "third"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Central Banks Accelerated Gold Buying in Third Quarter",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNE5ITWFudmVrYUgyekVzeUp1YkVlYTBkY0pZbTJSUFhraGRFRXdpczRWODFrOUpRRHQwU3VlbmJnNGk1ekV3MUpfOFJoa2liOEEtNEZDSEZQZDlUWENqa1NlaHJjZ25VYTNtMGVDQ2kxa3hJV25pZkxjTUJKandqeUgyUmJCaGpJWU8yaHBMQ2l4M19qRnFPYS1SSEZTMlF6ZFBubmRPMDgxUDFzbmtiaA?oc=5",
+          "published": "2026-11-03T11:57:00+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new event, first report by Wall Street Journal"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new -> summary: first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (only 1 news organisation so far (Wall Street Journal) - waiting for a second)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3910.18,
+        "start_time": "2026-11-03T12:00:00+00:00",
+        "moved_before_mint": 4.43,
+        "delay_hours": 142.7,
+        "h1": {
+          "price": 3934.81,
+          "move": 0.63,
+          "time": "2026-11-03T12:57:00+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 4037.45,
+          "move": 3.25,
+          "time": "2026-11-04T11:57:00+00:00",
+          "verdict": "right"
+        },
+        "effect": "right",
+        "effect_reason": "predicted up: +3.2% after 1 day (a clear move is 0.5% or more)"
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "factor pattern",
+        "reason": "no similar past events in the library yet; factor pattern: Central banks buying gold: it has tended to support the price",
+        "similar": [],
+        "votes": {
+          "up": 1.5,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The Wall Street Journal reports that central banks bought more gold in the third quarter, continuing a trend of using gold to reduce dollar holdings.",
+        "what_past_events_show": "There are no recorded past events of a similar announcement with a known 1\u2011day price move, so we have no direct evidence of an immediate reaction.",
+        "direction": "up",
+        "why": [
+          "Central\u2011bank buying is a steady source of demand that usually supports gold over the longer term",
+          "Even a modest surprise in buying can give a small positive bias to the market"
+        ],
+        "watch_next": "If the official buying figures turn out to be much larger than expected, the price could get a bigger boost; a weaker-than\u2011expected number could dampen it.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T10:36:10.420140+00:00"
+      },
+      "telegram": {
+        "sent_state": "summary",
+        "result_sent": "2026-11-09T10:36:10.420140+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261103-04",
+      "asset": "Gold",
+      "factor": "G4",
+      "factor_name": "Central bank buying",
+      "title": "Central bank buying and ETF inflows support gold demand in Q3",
+      "state": "summary",
+      "state_reason": "first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)",
+      "proof": "official",
+      "proof_reason": "official source: World Gold Council",
+      "first_seen": "2026-11-09T10:36:10.420140+00:00",
+      "earliest_report": "2026-11-03T12:00:00+00:00",
+      "last_updated": "2026-11-09T10:36:10.420140+00:00",
+      "words": [
+        "bank",
+        "buy",
+        "central",
+        "demand",
+        "etf",
+        "gold",
+        "inflows",
+        "september",
+        "statistic",
+        "support"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "World Gold Council",
+          "kind": "data",
+          "site": "gold.org",
+          "title": "Central bank buying and ETF inflows support gold demand in Q3",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNblIwcVI4MUo2VFVvTTZxWmZBT1JrRmIxVHhHQTk4WXQwQmNhU1RUNnJ6QURFZ3BqNkUwTVh2U1JEY1pKN2xEZmdiNkhIM2p1bzJJTDU5REFwUEZHSExqUTduazdBUnhaZ1FmcEwxT0I2UjJtRDRqQ3d2VjFFS3BjVTJfUF9wWVBPd0NkUkhPWWFBRzNqQ0VqWDlrUFJIYjgxQUhzUXhTMjZUbU5KUDQ0?oc=5",
+          "published": "2026-11-03T12:00:00+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G4"
+        },
+        {
+          "organisation": "World Gold Council",
+          "kind": "data",
+          "site": "gold.org",
+          "title": "Central Bank Gold Statistics: September 2026",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQjRORzU4eXMyNjBhcy1tNHU3NXRhRjFPQnFIem5Ba1psakVwWlZUTWZFWkNnZmpvNm4tYXRyOWRrc3p0Yi13X09NVkg5NDBOSS12N05ienp2RmRhNWoxb0Q1eElXWU1EZl9QeGdYXzh2a0lGRWg1SmVlSmpBekt2dmZTOEdicDZzQ2NGdVZaTzRkWFI5Y2c?oc=5",
+          "published": "2026-11-04T08:53:03+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new event, first report by World Gold Council"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "another report from World Gold Council (headlines share key words (53% match))"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new -> summary: first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3910.18,
+        "start_time": "2026-11-03T12:00:00+00:00",
+        "moved_before_mint": 4.43,
+        "delay_hours": 142.6,
+        "h1": {
+          "price": 3934.81,
+          "move": 0.63,
+          "time": "2026-11-03T13:00:00+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 4037.45,
+          "move": 3.25,
+          "time": "2026-11-04T12:00:00+00:00",
+          "verdict": "right"
+        },
+        "effect": "right",
+        "effect_reason": "predicted up: +3.2% after 1 day (a clear move is 0.5% or more)"
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "factor pattern",
+        "reason": "no similar past events in the library yet; factor pattern: Central banks buying gold: it has tended to support the price",
+        "similar": [],
+        "votes": {
+          "up": 1.5,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The World Gold Council says central banks and ETFs kept buying gold in Q3, which usually supports demand.",
+        "what_past_events_show": "There are no recorded one\u2011day price moves for similar past reports, so we have no direct evidence of an immediate effect.",
+        "direction": "down",
+        "why": [
+          "Central\u2011bank buying data is released weeks after the purchases, so it rarely moves the price in one day.",
+          "Without any past one\u2011day pattern, the safest guess is that the market will stay flat or drift slightly lower."
+        ],
+        "watch_next": "A surprise announcement of much larger or smaller central\u2011bank purchases in the next report would make the impact bigger.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T10:36:10.420140+00:00"
+      },
+      "telegram": {
+        "sent_state": "summary",
+        "result_sent": "2026-11-09T10:36:10.420140+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261103-05",
+      "asset": "Gold",
+      "factor": "G4",
+      "factor_name": "Central bank buying",
+      "title": "Gold Market Primer: Market size and structure",
+      "state": "summary",
+      "state_reason": "first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)",
+      "proof": "official",
+      "proof_reason": "official source: World Gold Council",
+      "first_seen": "2026-11-09T10:36:10.420140+00:00",
+      "earliest_report": "2026-11-03T12:00:00+00:00",
+      "last_updated": "2026-11-09T10:36:10.420140+00:00",
+      "words": [
+        "gold",
+        "market",
+        "primer",
+        "size",
+        "structure"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "World Gold Council",
+          "kind": "data",
+          "site": "gold.org",
+          "title": "Gold Market Primer: Market size and structure",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUUc5VjlWZ19IbEFRR09VV0hXUTRsdDRReGtuc0I2c1JlMFpPSkY4ZEF1QUpuckVGTWE0NUFFZWwydDd3TU9HWFF5ZFdxSzAtWDdvSEVRMHYzc0t4OVp4Zlh1LVNHeVdkSUdEb1ZVb3dWcnJsRjNoenBmcUVVdFBLYl94TFVSd0g5eXFIakh0RG8wVk1BQm9aVkFfSWQ?oc=5",
+          "published": "2026-11-03T12:00:00+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new event, first report by World Gold Council"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new -> summary: first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3910.18,
+        "start_time": "2026-11-03T12:00:00+00:00",
+        "moved_before_mint": 4.43,
+        "delay_hours": 142.6,
+        "h1": {
+          "price": 3934.81,
+          "move": 0.63,
+          "time": "2026-11-03T13:00:00+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 4037.45,
+          "move": 3.25,
+          "time": "2026-11-04T12:00:00+00:00",
+          "verdict": "right"
+        },
+        "effect": "right",
+        "effect_reason": "predicted up: +3.2% after 1 day (a clear move is 0.5% or more)"
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "factor pattern",
+        "reason": "no similar past events in the library yet; factor pattern: Central banks buying gold: it has tended to support the price",
+        "similar": [],
+        "votes": {
+          "up": 1.5,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The World Gold Council released a primer on gold market size and structure, but it does not contain new data on central\u2011bank purchases.",
+        "what_past_events_show": "There are no recorded past events of this exact type, so we have no direct 1\u2011day price evidence.",
+        "direction": "down",
+        "why": [
+          "No fresh central\u2011bank buying news, so demand pressure is unchanged.",
+          "The information is background and arrives weeks after any actual buying, giving little short\u2011term impact."
+        ],
+        "watch_next": "A new report showing a surprise increase or decrease in central\u2011bank gold purchases would make the price move more strongly.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T10:36:10.420140+00:00"
+      },
+      "telegram": {
+        "sent_state": "summary",
+        "result_sent": "2026-11-09T10:36:10.420140+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261103-06",
+      "asset": "Gold",
+      "factor": "G4",
+      "factor_name": "Central bank buying",
+      "title": "Gold Demand Trends: Q3 2026",
+      "state": "summary",
+      "state_reason": "first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)",
+      "proof": "official",
+      "proof_reason": "official source: World Gold Council",
+      "first_seen": "2026-11-09T10:36:10.420140+00:00",
+      "earliest_report": "2026-11-03T12:00:00+00:00",
+      "last_updated": "2026-11-09T10:36:10.420140+00:00",
+      "words": [
+        "demand",
+        "gold",
+        "trend"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "World Gold Council",
+          "kind": "data",
+          "site": "gold.org",
+          "title": "Gold Demand Trends: Q3 2026",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ1dpTkVIeDJNeExyczdrWG5IVjFYZUtTdmNoNWdvVkIzcnVJT0V4RDZfOFc4YXc4bGs1N0hSWUNOTENBTmdFRVM1WWYxX0h5d2NrX3pEUkxBN0NKNmNLYmVrdjc0Wl93V2NCTG1jeGN2SWM1eWYyU0szUXBQYkQtdzNYZEhhMmI3MjBn?oc=5",
+          "published": "2026-11-03T12:00:00+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new event, first report by World Gold Council"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new -> summary: first reported 143 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3910.18,
+        "start_time": "2026-11-03T12:00:00+00:00",
+        "moved_before_mint": 4.43,
+        "delay_hours": 142.6,
+        "h1": {
+          "price": 3934.81,
+          "move": 0.63,
+          "time": "2026-11-03T13:00:00+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 4037.45,
+          "move": 3.25,
+          "time": "2026-11-04T12:00:00+00:00",
+          "verdict": "right"
+        },
+        "effect": "right",
+        "effect_reason": "predicted up: +3.2% after 1 day (a clear move is 0.5% or more)"
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "factor pattern",
+        "reason": "no similar past events in the library yet; factor pattern: Central banks buying gold: it has tended to support the price",
+        "similar": [],
+        "votes": {
+          "up": 1.5,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The World Gold Council released its Q3 2026 gold demand report, noting central banks have been buying gold steadily to reduce dollar exposure.",
+        "what_past_events_show": "There are no recorded past events of a similar report with a known 1\u2011day price move to compare.",
+        "direction": "down",
+        "why": [
+          "The report is older than 48\u202fhours, so any impact is already baked in.",
+          "Central\u2011bank buying is a long\u2011term support factor, not a short\u2011term price driver."
+        ],
+        "watch_next": "A surprise change in central\u2011bank buying volumes or a new quarterly report could shift the price direction.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-09T10:36:10.420140+00:00"
+      },
+      "telegram": {
+        "sent_state": "summary",
+        "result_sent": "2026-11-09T10:36:10.420140+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261105-01",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "Europe remains in driver's seat",
+      "state": "summary",
+      "state_reason": "first reported 95 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)",
+      "proof": "official",
+      "proof_reason": "official source: World Gold Council",
+      "first_seen": "2026-11-09T10:36:10.420140+00:00",
+      "earliest_report": "2026-11-05T12:00:00+00:00",
+      "last_updated": "2026-11-09T10:36:10.420140+00:00",
+      "words": [
+        "driver",
+        "europe",
+        "remain",
+        "seat"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "World Gold Council",
+          "kind": "data",
+          "site": "gold.org",
+          "title": "Europe remains in driver's seat",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQmZsZ2tENzhwQTJ0SmZhaW5PcU9kZTh1WmZld0pySDQ0LTZDWnBTNkR0S3hKZTN2QXk4bjJrRmhqcGxjS1FQQkZ1X1VBNDVZTTJQRFAxVV81SGR1VUV4d2hVZnFBZ3NqSVRrQnQ5NmM1QUhCMUFHTktYMW9yaUo1dg?oc=5",
+          "published": "2026-11-05T12:00:00+00:00",
+          "found_at": "2026-11-09T10:36:10.420140+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new event, first report by World Gold Council"
+        },
+        {
+          "time": "2026-11-09T10:36:10.420140+00:00",
+          "note": "new -> summary: first reported 95 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (official source: World Gold Council)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 4123.4,
+        "start_time": "2026-11-05T12:00:00+00:00",
+        "moved_before_mint": -0.97,
+        "delay_hours": 94.6,
+        "h1": {
+          "price": 4108.08,
+          "move": -0.37,
+          "time": "2026-11-05T13:00:00+00:00",
+          "verdict": "none"
+        },
+        "d1": {
+          "price": 4052.34,
+          "move": -1.72,
+          "time": "2026-11-06T12:00:00+00:00",
+          "verdict": "none"
+        },
+        "effect": "no_prediction",
+        "effect_reason": "no prediction was made for this event"
+      },
+      "prediction": {
+        "direction": "unclear",
+        "by": "factor pattern",
+        "reason": "The headline does not say if money is flowing in or out, and there are no similar past events in the library yet",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Europe is still the main driver of gold demand, suggesting European investors may be buying gold through ETFs.",
+        "what_past_events_show": "There are no recorded past events of this exact type, so we have no direct price\u2011movement evidence.",
+        "direction": "up",
+        "why": [
+          "European investors appear to be net buyers, which usually supports gold prices",
+          "Gold ETF inflows tend to lift the price, even if they sometimes lag the market"
+        ],
+        "watch_next": "If the actual ETF flow numbers turn out to be strong inflows, the price boost could be larger; weak or negative flows would dampen it.",
+        "confidence": "low",
+        "confidence_reason": "no clear evidence",
+        "time": "2026-11-09T10:36:10.420140+00:00"
+      },
+      "telegram": {
+        "sent_state": "summary"
+      }
+    }
+  ],
+  "counter": {
+    "GOLD-20261103": 6,
+    "GOLD-20261105": 1
+  },
+  "last_run": {
+    "run_time": "2026-11-09T10:36:10.420140+00:00",
+    "test_mode": false,
+    "stories": 12,
+    "off_topic": 2,
+    "repeats": 2,
+    "new_events": 7,
+    "joined": 1,
+    "updates_ignored": 0,
+    "changes": {
+      "confirmed": 0,
+      "context": 0,
+      "summary": 7,
+      "old": 0,
+      "expired": 0,
+      "watch": 0
+    },
+    "open_events": 0,
+    "asset_states": {
+      "Bitcoin": {
+        "state": "Calm",
+        "reasons": [
+          "Nothing important found."
+        ]
+      },
+      "Gold": {
+        "state": "Watch",
+        "reasons": [
+          "Tomorrow: US inflation report (CPI). Gold may move."
+        ]
+      }
+    }
+  },
+  "last_states": {
+    "Bitcoin": {
+      "state": "Calm",
+      "reasons": [
+        "Nothing important found."
+      ]
+    },
+    "Gold": {
+      "state": "Calm",
+      "reasons": [
+        "Nothing important found."
+      ]
+    }
+  }
+}
