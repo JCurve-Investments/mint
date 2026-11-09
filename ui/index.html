@@ -135,7 +135,7 @@ const TABS = [["overview","Overview"],["events","Events"],["agents","Agents"],["
   .filter(([k]) => !(STATIC && k === "settings"));
 const UI = {drawn:{}, tab:"overview", asset:"Bitcoin", range:"7D", hover:null, filter:"all", open:null, out:{}, lastJson:"", testOutput:""};
 let S = null;
-const UI_VERSION = "13";   // must match VERSION in app.py
+const UI_VERSION = "16";   // must match VERSION in app.py
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money = v => v == null ? "–" : "$" + Math.round(v).toLocaleString("en-US");
@@ -214,7 +214,7 @@ function renderTop(){
   document.getElementById("nav").innerHTML = TABS.map(([k,l]) => `<button class="${UI.tab===k?"on":""}" onclick="go('${k}')">${l}</button>`).join("");
   let status;
   if (STATIC) {
-    document.getElementById("topright").innerHTML = `<span class="muted" style="font-size:13px">Updated ${ago(S.last_run)} · runs every 15 min in the cloud</span>`;
+    document.getElementById("topright").innerHTML = `<span class="muted" style="font-size:13px">Updated ${ago(S.last_run)} · checks the news about every 5 min</span>`;
     document.getElementById("banner").innerHTML = "";
     document.getElementById("credit").textContent = "Prices: CoinGecko";
     return;
@@ -748,8 +748,8 @@ function settings(){
       <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn small" ${S.running?"disabled":""} onclick="runNow(true)">Test run</button>
       ${S.test_mode?`<button class="btn small light" onclick="showReal()">Show real data</button>`:`<button class="btn small light" onclick="post('/api/view',{test:true}).then(()=>{UI.lastJson='';load()})">Show test data</button>`}
       <button class="btn small light" onclick="post('/api/reset-test').then(load)">Clear test data</button></div></div>
-    <div class="setting"><div class="txt"><b>Test the Supervisor</b><div>Runs 20 situations it must handle (same event from 2 organisations, old event with a new article, off-topic headlines, first run, a social post alone, predictions from past events...).</div></div>
-      <button class="btn small" onclick="runTests('supervisor')">Run the 20 tests</button></div>
+    <div class="setting"><div class="txt"><b>Test the Supervisor</b><div>Runs 22 situations it must handle (same event from 2 organisations, old event with a new article, off-topic headlines, first run, a social post alone, predictions from past events, the same story told twice...).</div></div>
+      <button class="btn small" onclick="runTests('supervisor')">Run the 22 tests</button></div>
     <div class="setting"><div class="txt"><b>Test the Telegram bot</b><div>Runs 17 checks with a pretend Telegram server (nothing is really sent): sign-ups, choices, alerts, watches, watch updates, heads-ups, the weekly summary, never twice, never in test runs.</div></div>
       <button class="btn small" onclick="runTests('telegram')">Run the 17 tests</button></div>
     ${UI.testOutput?`<div style="padding:0 22px 18px"><pre>${esc(UI.testOutput)}</pre></div>`:""}

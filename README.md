@@ -131,3 +131,17 @@ The Decision agent can now use **Groq** or **Gemini** (free tiers), **Ollama** (
 - Keys come from **GitHub Secrets**: `TELEGRAM_TOKEN`, `TELEGRAM_CHANNEL`, `GROQ_KEY`, `CONTACT_EMAIL`. They are never written to a file.
 - In the cloud, everything is posted to the Telegram **channel**; people who message the bot are pointed to the channel (no subscriber list in a public repository).
 - `.gitignore` keeps private files (settings, subscribers, evidence) out of the repository.
+
+## New on 9 Nov (v14): more Bitcoin news, no double counting
+
+- **Scouts search inside the approved websites** too (`site:reuters.com OR site:coindesk.com ...`), so approved stories are found even when Google shows mostly small websites.
+- **Same story = one event:** stories with the same factor on the same day that share key words are joined (e.g. the WGC's Q3 report and the WSJ story about it). Older duplicates in memory are joined automatically, and website sections ("Investment", "Gold Market Primer") are removed, so accuracy is not counted twice.
+- Tests: Supervisor 22/22, Telegram 18/18.
+
+## v15: approved websites only, more social accounts
+
+- **Scouts search ONLY inside the approved websites** (Google News `site:` search, in groups of 7 websites).
+- **Social Watcher** now also follows the Federal Reserve and the ECB (official Bluesky accounts), Watcher.Guru (Telegram) and Whale Alert (hack-type posts only). X (Elon Musk etc.) has no free way to read posts.
+- **Cloud schedule** moved to minutes 7, 22, 37, 52 (GitHub often delays runs planned for :00).
+
+- v16: the cloud now runs **every 5 minutes** (GitHub's fastest schedule).

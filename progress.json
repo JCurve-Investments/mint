@@ -273,6 +273,21 @@
       "date": "2026-11-09",
       "title": "Problem: Bitcoin's bad week was missed",
       "detail": "The first cloud run kept 0 Bitcoin stories while Bitcoin fell and ETFs saw over $1bn of outflows: every story came from websites not on my approved list. I added well-known specialist outlets (CoinDesk, The Block, Decrypt for crypto; Kitco for gold; MarketWatch and Barron's). Also: 'China extends gold-buying streak' was wrongly dropped (added keywords to G4), and website sections like 'Investment' were treated as news (now ignored)."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Problem: still 0 Bitcoin stories, and one story counted 4 times",
+      "detail": "The second cloud run again kept 0 Bitcoin stories even with CoinDesk, The Block and Decrypt approved: Google News only shows the ~100 most popular stories and none came from my approved sites. Fix: the Scouts now ALSO search inside the approved news websites only (site: search). Second problem: the World Gold Council's Q3 report became 4 separate events (WSJ story, two WGC pages, the 'Gold Market Primer'), so one story counted as 4 'right' predictions and made accuracy look better than it was. Fix: stories with the same factor on the same day that share key words are now one event, website sections are removed, and old memory is cleaned up automatically. Supervisor tests: 22 of 22."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Decision: search ONLY the approved websites; more social accounts",
+      "detail": "Instead of searching all of Google News and then rejecting stories from unapproved websites, the Scouts now search only inside the approved websites (site: search), so approved stories can never be crowded out by small websites. Social Watcher: added the Federal Reserve and the European Central Bank (official Bluesky accounts) and Watcher.Guru (Telegram), and switched Whale Alert on (only hack-type posts count). Elon Musk could not be added: he posts only on X, which has no free way to read posts. The cloud schedule was moved to minutes 7, 22, 37 and 52, because GitHub often delays or skips runs planned for :00."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Decision: run every 5 minutes",
+      "detail": "GitHub Actions is free for public repositories, and its fastest schedule is every 5 minutes, so MINT now runs at :02, :07, :12 and so on. GitHub does not promise exact times: busy periods can delay or skip runs. Other free limits checked: Groq is only used once per new event, CoinGecko allows far more requests than MINT makes, and the cloud keeps only the newest 10 result files of each kind so the repository stays small. Risk: Google News may refuse some searches if MINT searches too often; MINT then shows an error for that search and carries on."
     }
   ]
 }

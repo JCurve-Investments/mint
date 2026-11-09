@@ -1,5 +1,5 @@
 {
-  "note": "Accounts the Social Watcher follows. Only FREE ways to read them are used. type: 'rss' (any RSS feed, for example a Bluesky profile feed https://bsky.app/profile/<handle>/rss) or 'telegram' (a PUBLIC Telegram channel, read from its public web page https://t.me/s/<channel>). A post can only start a WATCH, never an alert on its own. X (Twitter) is not here because X no longer has a free way to read posts. Set 'on' to false to switch an account off.",
+  "note": "Accounts the Social Watcher follows. Only FREE ways to read them are used. type: 'rss' (any RSS feed, for example a Bluesky profile feed https://bsky.app/profile/<handle>/rss) or 'telegram' (a PUBLIC Telegram channel, read from its public web page https://t.me/s/<channel>). A post can only start a WATCH, never an alert on its own. X (Twitter) is not here because X no longer has a free way to read posts. Set 'on' to false to switch an account off. Elon Musk and most crypto CEOs post only on X, so they cannot be followed for free; MINT follows the official accounts that also post on Bluesky or Telegram.",
   "max_age_hours": 24,
   "accounts": [
     {
@@ -25,8 +25,35 @@
       "type": "telegram",
       "channel": "whale_alert_io",
       "via": "Whale Alert's public Telegram channel, read from https://t.me/s/whale_alert_io",
-      "why": "Reports very large crypto transfers and hacks quickly. Many posts are routine transfers, so only hack-type posts count.",
-      "on": false,
+      "why": "Reports very large crypto transfers and hacks quickly. Routine transfers are ignored: a post is only kept if it matches a factor word such as 'hack' or 'exploit'.",
+      "on": true,
+      "test_file": null
+    },
+    {
+      "name": "Federal Reserve (Bluesky)",
+      "type": "rss",
+      "url": "https://bsky.app/profile/federalreserve.gov/rss",
+      "via": "The Fed's official Bluesky account, read from Bluesky's free public RSS feed",
+      "why": "US central bank: interest rate decisions and speeches (G2 for gold)",
+      "on": true,
+      "test_file": null
+    },
+    {
+      "name": "European Central Bank (Bluesky)",
+      "type": "rss",
+      "url": "https://bsky.app/profile/ecb.europa.eu/rss",
+      "via": "The ECB's official Bluesky account, read from Bluesky's free public RSS feed",
+      "why": "Europe's central bank: its rate decisions move the dollar, which moves gold (G1, G2)",
+      "on": true,
+      "test_file": null
+    },
+    {
+      "name": "Watcher.Guru (Telegram)",
+      "type": "telegram",
+      "channel": "WatcherGuru",
+      "via": "Watcher.Guru's public Telegram channel, read from https://t.me/s/WatcherGuru",
+      "why": "Very fast crypto and market headlines. Often first, sometimes wrong - so it can only start a Watch, like every social account.",
+      "on": true,
       "test_file": null
     }
   ]

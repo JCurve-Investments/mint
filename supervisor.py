@@ -57,6 +57,8 @@ WATCH_EXPIRES_HOURS = {"Bitcoin": 24, "Gold": 7 * 24}   # a Watch with no extra 
 ALERT_STAYS_HOURS = {"Bitcoin": 24, "Gold": 72}         # how long an asset stays on "Alert" after an alert
 SAME_EVENT_SCORE = 0.5        # how similar two headlines must be (0 = nothing shared, 1 = same words)
 SAME_EVENT_SCORE_OTHER_FACTOR = 0.65   # stricter if the stories came from different factor searches
+SAME_DAY_HOURS = 12           # same factor, first reported within 12 hours, 2+ shared key words = one event
+                              # (e.g. the WGC's Q3 report and the WSJ story about it)
 
 # Words that appear in almost every story, so sharing them proves nothing.
 GENERIC = {
@@ -294,15 +296,61 @@ def find_matching_event(story, events, now):
         same_amount = bool(set(story["amounts"]) & set(ev["amounts"]))
         score, shared = similarity(words, set(ev["words"]))
         needed = SAME_EVENT_SCORE if story["factor"] == ev["factor"] else SAME_EVENT_SCORE_OTHER_FACTOR
+        same_day = abs(hours_between(published, parse_time(ev["earliest_report"]))) <= SAME_DAY_HOURS
         if same_amount and shared >= 1:
             score, why = max(score, 0.9), "same amount of money and shared key words"
         elif score >= needed and shared >= 2:
             why = f"headlines share key words ({score:.0%} match)"
+        elif story["factor"] == ev["factor"] and same_day and shared >= 2:
+            score, why = max(score, needed), "same factor, same day and shared key words"
+        elif story["factor"] == ev["factor"] and same_day and shared >= 1 and \
+                story.get("organisations", [story.get("organisation")]) and \
+                set(story.get("organisations", [story.get("organisation")])) & {x["organisation"] for x in ev["sources"]}:
+            score, why = max(score, needed), "same organisation, same factor and same day"
         else:
             continue
         if score > best_score:
             best, best_score, best_why = ev, score, why
     return best, best_why
+
+
+def not_news_title(title):
+    """True for website sections and guides ("Investment", "Gold Market Primer") - not news headlines."""
+    return len(title.split()) < 4 or bool(re.search(r"\b(primer|glossary|about us|faq)\b", title.lower()))
+
+
+def tidy_memory(memory, now, say):
+    """Clean up events saved by older versions of MINT:
+    1. remove 'events' that are really website sections (they were never news), and
+    2. join events that are the same story (same factor, same day, shared key words) into the first one,
+       so one story is never counted as several predictions."""
+    removed = memory.setdefault("removed", [])
+    for ev in list(memory["events"]):
+        if all(src["kind"] != "social" for src in ev["sources"]) and not_news_title(ev["title"]):
+            memory["events"].remove(ev)
+            removed.append({"id": ev["id"], "title": ev["title"], "removed_at": now.isoformat(),
+                            "reason": "a website section, not a news headline"})
+            say(f"REMOVED     [{ev['id']}] {ev['title']} - a website section, not a news headline")
+    ordered = sorted(memory["events"], key=lambda e: e["earliest_report"])
+    for i, later in enumerate(ordered):
+        if later not in memory["events"]:
+            continue
+        probe = {"asset": later["asset"], "factor": later["factor"], "words": later["words"],
+                 "amounts": later["amounts"], "published": later["earliest_report"],
+                 "organisations": [x["organisation"] for x in later["sources"]]}
+        earlier = [e for e in ordered[:i] if e in memory["events"]]
+        ev, why = find_matching_event(probe, earlier, now)
+        if ev is None:
+            continue
+        for src in later["sources"]:
+            add_story(ev, {**src, "clean_title": src["title"], "source_site": src.get("site", ""),
+                           "words": sorted(key_words(src["title"])), "amounts": sorted(amounts(src["title"])),
+                           "old_clues": []}, now)
+        note(ev, now, f"joined with {later['id']} ({why}) - the same story")
+        memory["events"].remove(later)
+        removed.append({"id": later["id"], "title": later["title"], "removed_at": now.isoformat(),
+                        "reason": f"the same story as {ev['id']} ({why})"})
+        say(f"JOINED      [{later['id']}] into [{ev['id']}] - the same story ({why})")
 
 
 def proof_level(ev):
@@ -465,18 +513,22 @@ def run(reports=None, test_mode=False, now=None, learn_first_run=None):
             ev["state"] = None
             note(ev, now, "re-checked: first-run learning is switched off")
     learning = learn_first_run and not memory["events"] and not memory.get("learned_at")
+    tidy_lines = []
+    tidy_memory(memory, now, tidy_lines.append)
 
     say(f"MINT SUPERVISOR  {now:%Y-%m-%d %H:%M} UTC{'  (TEST MODE)' if test_mode else ''}")
     stories = collect_stories(reports, sources)
     say(f"Read {len(reports)} Scout report(s): {len(stories)} kept stories to check.")
     if learning:
         say("FIRST RUN: MINT has no memory yet, so this run only learns what is already in the news. No alerts.")
+    for t in tidy_lines:
+        say(t)
     say("")
 
     checked, off_topic = [], 0
     for s in stories:
         words = s["clean_title"].split()
-        if s["kind"] != "social" and (len(words) < 4 or re.search(r"\b(primer|glossary|about us|faq)\b", s["clean_title"].lower())):
+        if s["kind"] != "social" and not_news_title(s["clean_title"]):
             off_topic += 1                       # e.g. "Investment" - a website section, not a news headline
             say(f"OFF-TOPIC   {s['clean_title']}  ({s.get('organisation')}) - not a news headline")
             continue

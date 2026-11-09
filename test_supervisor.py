@@ -1,5 +1,5 @@
 """
-Tests for the Supervisor: 20 situations it must handle correctly.
+Tests for the Supervisor: 22 situations it must handle correctly.
 Every test uses made-up stories and a separate memory folder (data/selftest), so real data is never touched.
 
 Run:  py test_supervisor.py      (or press "Test the Supervisor" in the MINT app)
@@ -183,6 +183,32 @@ check("19. An opposite kind of event is not counted as similar ('cut' is not lik
 p3 = library.make_prediction("G1", "Gold steady as traders watch the dollar", "Gold", [], before="2026-11-01")
 check("20. No similar past events and no pattern -> 'unclear' (MINT does not guess)", p3["direction"] == "unclear",
       p3["direction"])
+
+# 21. The same story from two organisations on the same day, in different words -> ONE event
+fresh_memory()
+quiet_run([{"scout": "gold", "news": [{"id": "G4", "kept": [
+    story("Central Banks Accelerated Gold Buying in Third Quarter", "Wall Street Journal", "wsj.com", 3, factor="G4"),
+    story("Central bank buying and ETF inflows support gold demand in Q3", "Reuters", "reuters.com", 2,
+          factor="G4")]}]}], T0)
+check("21. Same story, same day, different words (WSJ + Reuters on Q3 central bank buying) -> one event",
+      len(events()) == 1, f"{len(events())} events")
+
+# 22. Old memory cleaned up: a website section saved by an older version is removed, duplicates are joined
+fresh_memory()
+old_memory = supervisor.load_memory(True)
+for i, title in enumerate(["Investment", "Gold Demand Trends: Q3 2026", "Gold demand trends show record Q3 demand"]):
+    old_memory["events"].append({
+        "id": f"GOLD-OLD-{i}", "asset": "Gold", "factor": "G4", "factor_name": "Central banks", "title": title,
+        "state": "summary", "state_reason": "", "proof": "", "proof_reason": "", "first_seen": T0.isoformat(),
+        "earliest_report": (T0 - timedelta(hours=30 - i)).isoformat(), "last_updated": T0.isoformat(),
+        "words": sorted(supervisor.key_words(title)), "amounts": [], "old_clues": [], "history": [],
+        "sources": [{"organisation": "World Gold Council", "kind": "data", "site": "gold.org", "title": title,
+                     "link": f"https://gold.org/{i}", "published": None, "found_at": T0.isoformat(),
+                     "summary": "", "factor": "G4"}], "decision": None, "outcome": {}})
+supervisor.save_memory(old_memory, True)
+quiet_run([], T0)
+check("22. Old memory: website section removed, same-day duplicate joined (1 event left)",
+      [e["id"] for e in events()] == ["GOLD-OLD-1"], str([e["id"] for e in events()]))
 
 passed = sum(ok for _, ok in results)
 print(f"\nRESULT: {passed} of {len(results)} tests passed.")

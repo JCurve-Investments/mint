@@ -123,6 +123,30 @@ TOPIC_WORDS = {
 }
 
 
+SITES_PER_SEARCH = 7      # how many approved websites are put into one "site:" search
+
+
+def approved_site_entries(search_words, days, sources):
+    """Search ONLY inside the approved news websites ("site:reuters.com OR site:coindesk.com ...").
+    Google allows only a few "site:" words per search, so the approved list is split into small groups.
+    Official websites (SEC, Fed...) are skipped here - MINT reads their own feeds and calendars directly.
+    Returns (entries, number of searches that failed)."""
+    news_sites = [s for s in sources if "news" in s["type"] or "data" in s["type"]]
+    news_sites.sort(key=lambda s: 0 if "specialist" in s["type"] else 1)     # specialist news first
+    domains = list(dict.fromkeys(s["domain"] for s in news_sites))
+    entries, failed, searches = [], [], 0
+    for i in range(0, len(domains), SITES_PER_SEARCH):
+        searches += 1
+        sites = " OR ".join(f"site:{d}" for d in domains[i:i + SITES_PER_SEARCH])
+        feed = feedparser.parse(google_news_url(f"{search_words} ({sites})", days))
+        if feed.get("bozo") and not feed.entries:
+            failed.append(str(feed.get("bozo_exception")))
+        entries += list(feed.entries)
+    if searches and len(failed) == searches:
+        raise RuntimeError(f"could not read the news feed ({failed[0]})")
+    return entries
+
+
 def search_news(asset, search_words, max_age_hours, now, test_file=None):
     """
     Search the news and check every story for one asset ("Bitcoin" or "Gold").
@@ -131,12 +155,20 @@ def search_news(asset, search_words, max_age_hours, now, test_file=None):
     """
     sources = [s for s in load_json("sources.json")["sources"] if asset in s["assets"]]
     days = max(1, round(max_age_hours / 24))
-    feed = feedparser.parse(test_file if test_file else google_news_url(search_words, days))
-    if feed.get("bozo") and not feed.entries:
-        raise RuntimeError(f"could not read the news feed ({feed.get('bozo_exception')})")
+    if test_file:
+        feed = feedparser.parse(test_file)
+        if feed.get("bozo") and not feed.entries:
+            raise RuntimeError(f"could not read the news feed ({feed.get('bozo_exception')})")
+        entries = list(feed.entries)
+    else:
+        entries = approved_site_entries(search_words, days, sources)     # ONLY the approved websites
 
-    kept, rejected = [], []
-    for entry in feed.entries:
+    kept, rejected, seen = [], [], set()
+    for entry in entries:
+        key = entry.get("link") or entry.get("title")
+        if key in seen:
+            continue                     # the same story came back from two searches
+        seen.add(key)
         source_url = (entry.get("source") or {}).get("href", "")
         story = {
             "title": entry.get("title", "(no title)"),

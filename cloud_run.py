@@ -1,7 +1,7 @@
 """
 MINT in the cloud (GitHub Actions)
 ==================================
-GitHub runs this file every 15 minutes (see .github/workflows/mint.yml), so MINT works with your PC switched off.
+GitHub runs this file every 5 minutes (see .github/workflows/main.yml), so MINT works with your PC switched off.
 
 One run:
   1. answers anyone who messaged the bot (it points them to the Telegram channel)
