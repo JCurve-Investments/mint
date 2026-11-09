@@ -1,9 +1,9 @@
-# Runs MINT in the cloud every 15 minutes, for free (public repository).
+# Runs MINT in the cloud every 5 minutes (GitHub's fastest schedule), for free (public repository).
 name: MINT
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "2-59/5 * * * *"    # every 5 minutes (the fastest GitHub allows), at :02, :07, :12 ... to avoid the busy :00
   workflow_dispatch: {}
 
 permissions:
@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
