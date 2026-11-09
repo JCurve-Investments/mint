@@ -145,3 +145,4 @@ The Decision agent can now use **Groq** or **Gemini** (free tiers), **Ollama** (
 - **Cloud schedule** moved to minutes 7, 22, 37, 52 (GitHub often delays runs planned for :00).
 
 - v16: the cloud now runs **every 5 minutes** (GitHub's fastest schedule).
+- v18: Telegram messages start with an "at a glance" line (🔴🟠🟡 impact, 📈/📉 prediction, ▰▰▰ confidence); the channel gets a key to pin once. Tests: Supervisor 22/22, Telegram 20/20.

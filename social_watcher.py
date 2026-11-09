@@ -82,6 +82,13 @@ def read_telegram(account, test_mode):
     return posts
 
 
+def tidy_post(text):
+    """Remove decoration from a post: emojis at the start ("📉 📉 📉") and "Read Analysis" / "Read more" at the end."""
+    t = re.sub(r"^[^\w\"'(\[$]+", "", text.strip())
+    t = re.sub(r"\s*(read (the )?(full )?(analysis|more|article|story)|more here|details here)\W*$", "", t, flags=re.I)
+    return t.strip() or text.strip()
+
+
 def match_post(text, factors):
     """Which asset and factor is a post about? Returns (asset, factor id, matched word) or None."""
     low = text.lower()
@@ -92,8 +99,10 @@ def match_post(text, factors):
         if not hit:
             continue
         mentions_asset = any(w in low for w in TOPIC_WORDS[f["asset"]])
-        # Fed/rates/dollar posts matter for gold even when they do not say "gold"
-        if mentions_asset or (f["asset"] == "Gold" and hit in gold_factor_words):
+        about_crypto = any(w in low for w in TOPIC_WORDS["Bitcoin"])
+        # Fed/rates/dollar posts matter for gold even when they do not say "gold" -
+        # but not when the post is really about crypto ("crypto weakens as traders watch the Fed")
+        if mentions_asset or (f["asset"] == "Gold" and hit in gold_factor_words and not about_crypto):
             return f["asset"], f["id"], hit
     return None
 
@@ -124,6 +133,7 @@ def run(test_mode=False, now=None):
                 age = (now - p["published"]).total_seconds() / 3600
                 if age > max_age or age < -1:
                     continue
+                p["text"] = tidy_post(p["text"])
                 m = match_post(p["text"], factors)
                 short = p["text"][:110] + ("..." if len(p["text"]) > 110 else "")
                 if not m:

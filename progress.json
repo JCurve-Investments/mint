@@ -288,6 +288,16 @@
       "date": "2026-11-09",
       "title": "Decision: run every 5 minutes",
       "detail": "GitHub Actions is free for public repositories, and its fastest schedule is every 5 minutes, so MINT now runs at :02, :07, :12 and so on. GitHub does not promise exact times: busy periods can delay or skip runs. Other free limits checked: Groq is only used once per new event, CoinGecko allows far more requests than MINT makes, and the cloud keeps only the newest 10 result files of each kind so the repository stays small. Risk: Google News may refuse some searches if MINT searches too often; MINT then shows an error for that search and carries on."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Fix: crypto post filed under gold",
+      "detail": "First run with approved-only search: 9 Bitcoin stories found (before: 0), and the old duplicate events were cleaned up as planned. Problem: a Whale Alert post 'Crypto market weakens as traders watch ... for Fed clues' was filed as a GOLD event because it mentioned the Fed. Fix: a post about crypto is never filed under gold just for mentioning the Fed. Posts are also tidied (emojis at the start and 'Read Analysis' at the end removed)."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Telegram messages readable at a glance",
+      "detail": "Every Telegram message now starts with two short lines: what it is (🚨 alert, 👀 watch, ℹ️ info, ⌛ not confirmed, 📅 heads-up, ✅/❌ result) and how much it matters (🔴 high / 🟠 medium / 🟡 low impact, 📈 up / 📉 down, confidence bars ▰▰▰). The channel gets a one-time 'How to read MINT messages' key to pin. Telegram tests: 20 of 20."
     }
   ]
 }

@@ -35,6 +35,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 from supervisor import data_folder, load_memory, save_memory, asset_states, parse_time, hours_between
+from common import load_json
 
 API = "https://api.telegram.org"          # can be pointed at a pretend server for testing
 SEND_ALERTS_NEWER_THAN_HOURS = 6
@@ -105,6 +106,18 @@ def status_text():
     return "\n".join(lines)
 
 
+KEY_TEXT = ("📖 How to read MINT messages\n\n"
+            "First line - what it is:\n"
+            "🚨 Alert (confirmed by trusted sources)   👀 Watch (not proven yet)\n"
+            "ℹ️ Info only (slow factor)   ⌛ Not confirmed   🗂 Older news\n"
+            "📅 Heads-up (scheduled event tomorrow)   ✅ / ❌ / ➖ Result after 1 day\n\n"
+            "Second line - how much it matters:\n"
+            "🔴 HIGH   🟠 MEDIUM   🟡 LOW impact\n"
+            "📈 UP / 📉 DOWN = MINT's prediction for the next day\n"
+            "Confidence ▰▰▰ high   ▰▰▱ medium   ▰▱▱ low (how many similar past events agree)\n\n"
+            "Read 🚨 and 🔴 first.\n\n" + "Risk information only, not financial advice.")
+
+
 WELCOME = ("Welcome to MINT - Market Intelligence and News Tracker.\n\n"
            "I send a short alert when something important happens that could affect Gold or Bitcoin, "
            "and only when trusted sources confirm it. Most days there will be no alert - that is normal.\n\n"
@@ -112,6 +125,8 @@ WELCOME = ("Welcome to MINT - Market Intelligence and News Tracker.\n\n"
            "2. Choose how much: 'Everything' (the default: every event MINT finds with its view and prediction, "
            "every update, the result 1 day later, heads-ups and a Sunday summary) or 'Alerts only' "
            "(confirmed alerts + the Sunday summary).\n\n"
+           "At a glance: 🚨 alert · 👀 watch · 🔴 high / 🟠 medium / 🟡 low impact · 📈 up / 📉 down · "
+           "▰▰▰ confidence.\n\n"
            "Send /status any time, or /stop to leave.\n\n"
            "MINT is a student project. It shares risk information, not financial advice.")
 
@@ -192,6 +207,46 @@ HEADLINE = {"watch": "WATCH (not proven yet)", "confirmed": "BEING CHECKED", "al
             "expired": "NOT CONFIRMED", "rejected": "CHECKED - NO ALERT"}
 
 
+# ---------------------------------------------------------------------------
+# "At a glance" line: impact, direction and confidence, so you know what to read first
+# ---------------------------------------------------------------------------
+STATE_ICON = {"watch": "👀", "confirmed": "🔎", "alerted": "🚨", "context": "ℹ️", "summary": "🗂", "old": "🗂",
+              "expired": "⌛", "rejected": "✔️"}
+IMPACT_ICON = {"high": "🔴", "medium": "🟠", "low": "🟡"}
+ASSET_ICON = {"Bitcoin": "₿", "Gold": "🥇"}
+DIRECTION_ICON = {"up": "📈 UP", "down": "📉 DOWN"}
+CONFIDENCE_BARS = {"high": "▰▰▰", "medium": "▰▰▱", "low": "▰▱▱"}
+RESULT_ICON = {"right": "✅", "wrong": "❌", "no_clear_move": "➖"}
+GLANCE_KEY = "🔴 high · 🟠 medium · 🟡 low impact   ▰▰▰ = confidence"
+
+
+def impact_of(ev):
+    """high / medium / low. The Decision agent's answer if it decided; otherwise from the factor's strength."""
+    d = ev.get("decision") or {}
+    if d.get("impact") in IMPACT_ICON:
+        return d["impact"]
+    if ev["state"] in ("context", "summary", "old"):
+        return "low"
+    try:
+        strength = {f["id"]: f.get("strength") for f in load_json("factors.json")["factors"]}.get(ev["factor"])
+    except Exception:
+        strength = None
+    return "high" if strength == "strong" else "medium"
+
+
+def glance_lines(ev, kind):
+    """Two short lines at the top of every message, e.g.
+         🚨 ALERT · ₿ Bitcoin
+         🔴 HIGH impact · 📉 DOWN · Confidence ▰▰▰ high"""
+    p, a = ev.get("prediction") or {}, ev.get("analysis") or {}
+    impact = impact_of(ev)
+    conf = a.get("confidence")
+    second = f"{IMPACT_ICON[impact]} {impact.upper()} impact · {DIRECTION_ICON.get(p.get('direction'), '❔ unclear')}"
+    if conf in CONFIDENCE_BARS:
+        second += f" · Confidence {CONFIDENCE_BARS[conf]} {conf}"
+    return [f"{STATE_ICON.get(ev['state'], '•')} MINT {kind} · {ASSET_ICON.get(ev['asset'], '')} {ev['asset']}", second]
+
+
 def view_lines(ev):
     """MINT's view: prediction, evidence, confidence, what to watch."""
     p, a = ev.get("prediction") or {}, ev.get("analysis") or {}
@@ -216,8 +271,8 @@ def view_lines(ev):
 
 def event_text(ev, update=False):
     orgs = sorted({s["organisation"] for s in ev["sources"]})
-    head = f"MINT {'update' if update else 'event'} · {ev['asset']} · {HEADLINE.get(ev['state'], ev['state'].upper())}"
-    lines = [head, ev["title"], "",
+    kind = f"{'update' if update else 'event'} · {HEADLINE.get(ev['state'], ev['state'].upper())}"
+    lines = glance_lines(ev, kind) + ["", ev["title"], "",
              f"Sources: {', '.join(orgs)}", f"Status: {CLOSED_WORDS.get(ev['state']) or ev.get('state_reason', '')}"]
     o = ev.get("outcome") or {}
     if o.get("moved_before_mint") is not None:
@@ -239,7 +294,8 @@ CLOSED_WORDS = {
 def result_text(ev):
     o, p = ev.get("outcome") or {}, ev.get("prediction") or {}
     verdict = {"right": "RIGHT", "wrong": "WRONG", "no_clear_move": "NO CLEAR MOVE"}[o["effect"]]
-    return (f"MINT result · {ev['asset']} · prediction {verdict}\n{ev['title']}\n\n"
+    return (f"{RESULT_ICON[o['effect']]} MINT result · {ASSET_ICON.get(ev['asset'], '')} {ev['asset']} · prediction {verdict}\n"
+            f"{ev['title']}\n\n"
             f"Predicted: {ev['asset']} {str(p.get('direction', '?')).upper()}\n"
             f"After 1 day: {o['d1']['move']:+.1f}%\n{o.get('effect_reason', '')}\n\n"
             "Every result is added to MINT's past events library, so future predictions learn from it.\n" + FOOTER)
@@ -257,6 +313,8 @@ def alert_text(ev):
     since = was_on_watch(ev)
     if since:
         text = text.replace("\n", f"\n(Update: this was on Watch since {since:%d %b %H:%M} UTC.)\n", 1)
+    first, _, rest = text.partition("\n")
+    text = f"🚨 {first}\n{glance_lines(ev, 'alert')[1]}\n\n{rest}"     # add the "at a glance" line
     extra = view_lines(ev)
     return text.replace(FOOTER, "\n".join(extra) + "\n\n" + FOOTER) if FOOTER in text else text + "\n" + "\n".join(extra)
 
@@ -305,6 +363,13 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
     subs, state = load_subscribers(), load_state()
     total, waiting = 0, 0
     fresh = lambda t, hours: t and hours_between(now, parse_time(t)) <= hours
+
+    # 0. Once: post "How to read MINT messages" to the channel (pin it in Telegram so new members see it)
+    if channel and token and not test_mode and not state.get("key_sent"):
+        if deliver(token, {}, KEY_TEXT, None, "everything", "key", "How to read MINT messages", channel):
+            state["key_sent"] = now.isoformat()
+            total += 1
+            print("   KEY      -> channel: How to read MINT messages (pin it in Telegram)")
 
     for ev in memory["events"]:
         if ev["state"] is None:
@@ -358,7 +423,7 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
         for w in calendar_warnings or []:
             key = f"{now:%Y-%m-%d} {w}"
             if key not in sent_before:
-                n = deliver(token, subs, f"MINT heads-up · Gold\n{w}\n\n{FOOTER}", "Gold", "everything", "heads-up", w, channel)
+                n = deliver(token, subs, f"📅 MINT heads-up · 🥇 Gold\n{w}\n\n{FOOTER}", "Gold", "everything", "heads-up", w, channel)
                 sent_before.append(key)
                 total += n
                 print(f"   HEADS-UP -> {n}: {w}")
