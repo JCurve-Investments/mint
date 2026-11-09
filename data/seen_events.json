@@ -1004,7 +1004,13 @@
         "moved_before_mint": -0.21,
         "delay_hours": 0.8,
         "effect": "tracking",
-        "effect_reason": "waiting for the 1-day price"
+        "effect_reason": "waiting for the 1-day price (after 1 hour: -0.2%)",
+        "h1": {
+          "price": 74500.87,
+          "move": -0.21,
+          "time": "2026-11-09T14:43:00+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "up",
@@ -1133,7 +1139,7 @@
     "BTC-20261109": 6
   },
   "last_run": {
-    "run_time": "2026-11-09T14:50:53.949167+00:00",
+    "run_time": "2026-11-09T14:55:41.033745+00:00",
     "test_mode": false,
     "stories": 17,
     "off_topic": 10,
