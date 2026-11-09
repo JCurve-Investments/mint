@@ -151,3 +151,4 @@ The Decision agent can now use **Groq** or **Gemini** (free tiers), **Ollama** (
 - v21: **one reliable source is enough** - an approved news organisation or an official source confirms an event on its own. Watch = a social media post only (impact tracked, alert needs an approved source).
 - v22: predictions judged on **9 price checks** (1 h → 7 days) with a "clear move" bar that grows with time; History explains how success is measured and shows accuracy by time; Telegram sends a 1-day and a final 7-day result; social posts say where they came from.
 - v23: 📏 impact size and how long it lasted for every event; approved social media accounts count on their own (labelled "From social media").
+- v24: past-event test for success criterion 1 (`backtest_events.json` → History page) and run log + message timing for criterion 5.

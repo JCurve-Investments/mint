@@ -417,6 +417,7 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
                 d["telegram_sent_at"] = now.isoformat()
                 d["telegram_status"] = f"sent to {n} at {now:%d %b %H:%M} UTC"
                 tg["sent_state"] = "alerted"
+                tg.setdefault("first_sent_at", datetime.now(timezone.utc).isoformat())   # for the speed check
                 total += n
                 print(f"   ALERT    -> {n}: {ev['title'][:80]}")
         if test_mode or not token:
@@ -425,6 +426,8 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
         if not tg.get("sent_state") and ev["state"] != "alerted":
             if fresh(ev["first_seen"], WATCH_NOTICE_NEWER_THAN_HOURS):
                 n = deliver(token, subs, event_text(ev), ev["asset"], "everything", "event", ev["title"], channel)
+                if n:
+                    tg.setdefault("first_sent_at", datetime.now(timezone.utc).isoformat())   # for the speed check
                 total += n
                 print(f"   EVENT    -> {n}: {ev['title'][:80]} ({ev['state']})")
             tg["sent_state"] = ev["state"]
@@ -494,7 +497,7 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
     if not test_mode:
         save_state(state)
     print(f"\nBOTTOM LINE: {total} message(s) delivered, {len(subs)} subscriber(s)"
-          + (f", posting to channel {channel}" if channel else "")
+          + (", posting to the channel" if channel else "")
           + (f", {waiting} alert(s) waiting for the bot to be set up" if waiting else "")
           + (" (test run: nothing is sent)" if test_mode else "") + ".")
     return total

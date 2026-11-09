@@ -52,6 +52,8 @@ def write_dashboard():
     for p in state["settings"].get("providers", []):
         p["key_hint"] = ""
     state["telegram"]["subscribers"] = state["telegram"]["gold"] = state["telegram"]["bitcoin"] = 0
+    if str(state["telegram"].get("channel", "")).lstrip("-").isdigit():
+        state["telegram"]["channel"] = ""            # a private channel's number is not needed on a public page
     (docs / "state.json").write_text(json.dumps(state), encoding="utf-8")
     shutil.copy(FOLDER / "ui" / "index.html", docs / "index.html")
     (docs / ".nojekyll").write_text("", encoding="utf-8")

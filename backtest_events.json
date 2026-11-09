@@ -1,0 +1,10 @@
+{
+  "note": "Success criterion 1: put your 5 past events here, from your answer key (action plan step 2). MINT gets ONLY the date, asset and headline and must predict up or down; the real moves below are your answer key, which MINT never sees. date = YYYY-MM-DD, asset = Gold or Bitcoin, headline = what happened, written like a news headline, expected_factor = the factor id you expect (e.g. G2 or B1), real_move_7_days_percent = the real price change over the next 7 days (e.g. -3.2), real_move_1_day_percent = optional. Leave a headline empty to skip that event.",
+  "events": [
+    {"date": "", "asset": "Gold", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
+    {"date": "", "asset": "Gold", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
+    {"date": "", "asset": "Gold", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
+    {"date": "", "asset": "Bitcoin", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
+    {"date": "", "asset": "Bitcoin", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null}
+  ]
+}

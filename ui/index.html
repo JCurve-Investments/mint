@@ -101,6 +101,7 @@ input[type=password],input[type=text],input[type=number],select{padding:9px 12px
 .htable.hist{min-width:1080px}.htable.hist .evcol{min-width:230px;max-width:340px}.htable.hist td:last-child{min-width:150px}.htable.hist td,.htable.hist th{padding-left:10px;padding-right:10px}
 .htable tr.improw td{padding-top:0;font-size:13px;color:var(--muted);border-top:0}
 .htable tr.clickable:has(+ tr.improw) td{border-bottom:0}
+.htable.bt{min-width:1040px}.htable.bt .evcol{min-width:260px}.htable.bt td{white-space:nowrap}.htable.bt td.evcol{white-space:normal}
 .stag{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:99px;margin-right:6px;background:var(--grey);color:var(--muted);vertical-align:1px}
 .htable td.chk,.htable th.chk{padding-left:4px;padding-right:4px;font-size:12px}
 .conf{font-size:12px;color:var(--muted);margin-top:4px;padding-left:30px;white-space:nowrap}
@@ -143,7 +144,7 @@ const TABS = [["overview","Overview"],["events","Events"],["agents","Agents"],["
   .filter(([k]) => !(STATIC && k === "settings"));
 const UI = {drawn:{}, tab:"overview", asset:"Bitcoin", range:"7D", hover:null, filter:"all", open:null, out:{}, lastJson:"", testOutput:""};
 let S = null;
-const UI_VERSION = "23";   // must match VERSION in app.py
+const UI_VERSION = "25";   // must match VERSION in app.py
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money = v => v == null ? "–" : "$" + Math.round(v).toLocaleString("en-US");
@@ -679,6 +680,46 @@ function byTime(all){
     <td>${!n ? `<span class="muted" style="font-size:13px">no clear moves yet</span>` : `<div style="display:flex;align-items:center;gap:10px"><div class="bar"><div style="width:${Math.round(acc*100)}%"></div></div><span class="num" style="width:40px">${Math.round(acc*100)}%</span></div>`}</td></tr>`; }).join("")}
   </tbody></table><div class="legend"><span>Shows WHEN MINT's predictions work best - e.g. right in the first hours but not after a week, when other news has mixed in.</span></div></div>`;
 }
+function backtestCard(){
+  const B = S.backtest;
+  const tick = ok => ok ? `<span class="good">✓</span>` : `<span class="bad">✗</span>`;
+  const dir = d => d==="up" ? "↑ up" : d==="down" ? "↓ down" : (d || "–");
+  return `<h2 style="margin:34px 0 6px">Past-event test (success criterion 1)</h2>
+  <div class="muted" style="font-size:14px;max-width:820px;line-height:1.6;margin-bottom:12px">MINT gets only the date, asset and headline of 5 real past events, and predicts up or down
+    using past events from <b>before</b> that date. The real moves come from my answer key, which MINT never sees.
+    <b>Rules</b> = similar past events + the factor's pattern; <b>AI</b> = Groq, told to pretend it is that date (it may still remember famous events, so the rules column is the fairest test);
+    <b>MINT final</b> = the AI's answer when the AI is on, as in live use. A pass needs all 3 checks: an alert is sent, the right asset and factor, and the right direction over 7 days.</div>
+  <div class="card" style="overflow-x:auto">${!B || !B.total ? `<div class="empty">No past events yet. Add your 5 events and your answer key to <code>backtest_events.json</code> (on GitHub or in the MINT folder); MINT tests them on the next run.</div>` :
+  `<table class="htable bt"><thead><tr><th>Date</th><th class="evcol">Event</th><th>Factor</th><th>Alert?</th><th>Rules</th><th>AI</th><th>MINT final</th><th class="num">Real 1 day</th><th class="num">Real 7 days</th><th title="alert sent · right asset and factor · right direction">Checks</th><th>Result</th></tr></thead><tbody>
+  ${B.results.map(r => `<tr><td class="muted" style="white-space:nowrap">${esc(r.date)}</td><td class="evcol"><div class="ev-title">${esc(r.headline)}</div><div class="ev-meta">${esc(r.asset)}${r.expected_factor ? " · expected "+esc(r.expected_factor) : ""} · ${r.similar_used} similar past event(s) used</div></td>
+    <td>${esc(r.factor || "none")}</td><td>${r.alert ? "Alert" : "Info only"}</td><td title="${esc(r.rules_reason)}" class="${r.rules_right ? "good" : r.real_direction ? "bad" : ""}">${dir(r.rules)}</td>
+    <td title="${esc(r.ai_why || r.ai_by)}" class="${r.ai_right === true ? "good" : r.ai_right === false ? "bad" : "muted"}">${r.ai ? dir(r.ai) : `<span class="muted" style="font-size:12px">${esc(r.ai_by)}</span>`}</td>
+    <td style="font-weight:600">${dir(r.prediction)}</td>
+    <td class="num">${pctTxt(r.real.d1)}</td><td class="num">${pctTxt(r.real.d7)}</td>
+    <td>${tick(r.checks.alert_sent)} ${tick(r.checks.right_asset_and_factor)} ${tick(r.checks.right_direction_7_days)}</td>
+    <td>${r.passed ? `<span class="pill p-moved">Pass</span>` : `<span class="pill p-alert">Fail</span>`}</td></tr>`).join("")}
+  </tbody></table><div class="legend"><span>Checks: ✓/✗ alert sent · right asset and factor · right direction (7 days)</span><span><b>${B.passed} of ${B.total}</b> passed all 3 checks · directions right: rules ${B.rules_right} of ${B.total}${B.ai_used ? `, AI ${B.ai_right} of ${B.ai_used}` : ""} · tested ${when(B.time)}</span></div>`}</div>`;
+}
+function reliabilityCard(){
+  const R = S.reliability;
+  const sent = S.events.filter(e => (e.telegram||{}).first_sent_at).map(e => ({e, noticedMin: (new Date(e.telegram.first_sent_at) - new Date(e.first_seen))/60000,
+    reportHours: (new Date(e.telegram.first_sent_at) - new Date(e.earliest_report))/3600000}));
+  const within = sent.filter(x => x.noticedMin <= 15).length;
+  const dur = m => m < 1 ? "under 1 min" : m < 90 ? Math.round(m)+" min" : (m/60).toFixed(1)+" h";
+  return `<h2 style="margin:34px 0 6px">Reliability and speed (success criterion 5)</h2>
+  <div class="muted" style="font-size:14px;max-width:820px;line-height:1.6;margin-bottom:12px">Every run is logged. Target: at least 95% of runs finish without an error,
+    and every alert reaches Telegram within 15 minutes of the run that found it.</div>
+  <section class="kpis" style="margin-top:0">
+    ${R ? `<div class="kpi"><div class="kpi-big">${Math.round(R.ok/R.runs*100)}%</div><div class="kpi-label">Runs without errors</div><div class="kpi-sub">${R.ok} of ${R.runs} runs in the last 7 days</div></div>
+    <div class="kpi"><div class="kpi-big">${R.median_gap_min ?? "–"} min</div><div class="kpi-label">Typical time between runs</div><div class="kpi-sub">longest gap ${R.max_gap_min ?? "–"} min · a run takes ${R.avg_seconds}s</div></div>` :
+    `<div class="kpi"><div class="kpi-big">–</div><div class="kpi-label">Runs without errors</div><div class="kpi-sub">The run log starts with the next run</div></div>`}
+    <div class="kpi"><div class="kpi-big">${sent.length ? within+" of "+sent.length : "–"}</div><div class="kpi-label">Messages within 15 min</div><div class="kpi-sub">from MINT finding the event to the Telegram message</div></div>
+  </section>
+  ${sent.length ? `<div class="card" style="overflow-x:auto;margin-top:14px"><table class="htable"><thead><tr><th>Event</th><th>First reported</th><th>MINT found it</th><th>Telegram sent</th><th class="num">Found → sent</th><th class="num">First report → sent</th></tr></thead><tbody>
+    ${sent.map(x => `<tr><td><div class="ev-title">${esc(x.e.title)}</div><div class="ev-meta">${esc(x.e.asset)} · ${esc(STATE_WORDS[x.e.state]||x.e.state)}</div></td><td class="muted">${when(x.e.earliest_report)}</td><td class="muted">${when(x.e.first_seen)}</td><td class="muted">${when(x.e.telegram.first_sent_at)}</td>
+      <td class="num ${x.noticedMin <= 15 ? "good" : "bad"}">${dur(x.noticedMin)}</td><td class="num muted">${dur(x.reportHours*60)}</td></tr>`).join("")}
+  </tbody></table><div class="legend"><span>"First report → sent" includes the time before MINT could see the story (the news website publishing it, Google listing it).</span></div></div>` : ""}`;
+}
 function history(){
   const all = S.events;
   const done = all.filter(e => ["right","wrong"].includes((e.outcome||{}).effect));
@@ -726,6 +767,8 @@ function history(){
 
   ${howJudged()}
   ${byTime(all)}
+  ${backtestCard()}
+  ${reliabilityCard()}
 
   ${libraryCard()}
   <h2 style="margin:34px 0 12px">Accuracy by factor</h2>

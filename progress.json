@@ -323,6 +323,16 @@
       "date": "2026-11-09",
       "title": "Impact size and duration; approved social accounts count alone",
       "detail": "Right/wrong alone hid useful information: e.g. 'WGC lowers outlook' was judged Wrong, but gold DID fall 0.5% for about 7 hours before rising. MINT now measures every event's impact from the hourly prices: how far the price moved the predicted way, when it peaked, and how long the effect lasted before it faded (shown as 📏 on the website and in Telegram results). Also: posts from approved social media accounts (social_accounts.json) now count as an approved source on their own, like approved news websites - every message says '📱 From social media: <account>' so the reader knows. Tests: Supervisor 24/24, Telegram 21/21."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Built the tests for success criteria 1 and 5",
+      "detail": "Criterion 1 (past-event test): I give MINT 5 real past events (date, asset, headline) whose market reaction I already know; MINT predicts using only past events from before each date (the AI is not used, because it may remember what happened), and is marked on Criterion A's 3 checks: alert sent, right asset and factor, right direction over 7 days. Events go in backtest_events.json; results show on the History page. Criterion 5: every run is now logged (start, duration, errors), and the time from MINT finding an event to the Telegram message is recorded; the History page shows % of runs without errors, the time between runs and messages within 15 minutes. Also removed the private Telegram channel number from the public files."
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Past-event test uses my answer key, and shows rules and AI",
+      "detail": "MINT does not need to download prices for the past-event test: I already know how the market reacted, so the real moves come from my answer key in backtest_events.json. MINT only has to predict. The test now shows three predictions per event: the rules (similar past events + factor pattern), the AI (Groq, told to pretend it is that date), and MINT's final answer (the AI's when it is on, as in live use). The rules column is the fairest test, because an AI may remember what happened after famous events."
     }
   ]
 }

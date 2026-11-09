@@ -13,6 +13,7 @@ One agent failing never stops the others.
 """
 
 import contextlib
+import io
 import json
 import threading
 import time
@@ -150,6 +151,22 @@ def run_cycle(test_mode=False, reason="manual"):
         state["last_run"] = now.isoformat()
         state["last_run_real_time"] = datetime.now(timezone.utc).isoformat()
         save_state(state, test_mode)
+
+        if not test_mode:
+            try:                                   # success criterion 1: re-test only if the past events changed
+                import backtest
+                with contextlib.redirect_stdout(io.StringIO()):
+                    backtest.run()
+            except Exception as e:
+                log("MINT", f"Past-event test problem: {e}")
+
+        errors = [n for n in AGENT_NAMES if AGENTS[n]["state"] == "error"]
+        compact = data_folder(test_mode) / "run_log.json"      # success criterion 5: every run, kept small
+        run_log = json.loads(compact.read_text(encoding="utf-8")) if compact.exists() else []
+        run_log.append({"start": datetime.fromtimestamp(started, timezone.utc).isoformat(timespec="seconds"),
+                        "seconds": round(time.time() - started), "ok": not errors, "errors": errors,
+                        "reason": reason})
+        compact.write_text(json.dumps(run_log[-6000:]), encoding="utf-8")
 
         record = {"time": datetime.now(timezone.utc).isoformat(), "test_mode": test_mode, "reason": reason,
                   "seconds": round(time.time() - started),

@@ -42,9 +42,9 @@ import prices                        # noqa: E402
 import telegram_bot                  # noqa: E402
 import weekly                        # noqa: E402
 from common import load_json         # noqa: E402
-from supervisor import data_folder, load_memory   # noqa: E402
+from supervisor import data_folder, load_memory, hours_between   # noqa: E402
 
-VERSION = "23"                         # must match UI_VERSION in ui/index.html
+VERSION = "25"                         # must match UI_VERSION in ui/index.html
 PORT = 8765
 ADDRESS = f"http://localhost:{PORT}"
 SCHEDULE = {"next_run": None}
@@ -188,11 +188,29 @@ def social_state(test_mode):
 def public_event(ev):
     keep = ["id", "asset", "factor", "factor_name", "title", "state", "state_reason", "proof", "proof_reason",
             "first_seen", "earliest_report", "last_updated", "old_clues", "sources", "history", "decision",
-            "outcome", "prediction", "analysis"]
+            "outcome", "prediction", "analysis", "telegram"]
     out = {k: ev.get(k) for k in keep}
     import telegram_bot
     out["impact"] = telegram_bot.impact_of(ev)      # high / medium / low, the same as in Telegram
     return out
+
+
+def run_reliability(test_mode, now):
+    """Success criterion 5: how many runs finished without an error, and the gaps between runs (last 7 days)."""
+    path = data_folder(test_mode) / "run_log.json"
+    if not path.exists():
+        return None
+    log = json.loads(path.read_text(encoding="utf-8"))
+    week = [r for r in log if hours_between(now, datetime.fromisoformat(r["start"])) <= 168]
+    if not week:
+        return None
+    starts = [datetime.fromisoformat(r["start"]) for r in week]
+    gaps = sorted((b - a).total_seconds() / 60 for a, b in zip(starts, starts[1:]))
+    return {"runs": len(week), "ok": sum(r["ok"] for r in week), "since": week[0]["start"],
+            "median_gap_min": round(gaps[len(gaps) // 2], 1) if gaps else None,
+            "max_gap_min": round(gaps[-1], 1) if gaps else None,
+            "avg_seconds": round(sum(r["seconds"] for r in week) / len(week), 1),
+            "failed": [r for r in week if not r["ok"]][-10:]}
 
 
 def build_state():
@@ -224,6 +242,9 @@ def build_state():
 
     runs_path = data_folder(test_mode) / "runs.json"
     runs = json.loads(runs_path.read_text(encoding="utf-8"))[-20:] if runs_path.exists() else []
+    reliability = run_reliability(test_mode, now)
+    bt_path = data_folder(False) / "backtest_results.json"
+    backtest = json.loads(bt_path.read_text(encoding="utf-8")) if bt_path.exists() and not test_mode else None
     progress = load_json("progress.json") if (FOLDER / "progress.json").exists() else {}
     with pipeline.STATUS_LOCK:
         agents = [{"name": n, **{k: v for k, v in pipeline.AGENTS[n].items()}} for n in pipeline.AGENT_NAMES]
@@ -254,6 +275,8 @@ def build_state():
         "agents": agents,
         "log": log,
         "runs": runs,
+        "reliability": reliability,
+        "backtest": backtest,
         "progress": progress,
         "windows": os.name == "nt",
         "social": social_state(test_mode),
