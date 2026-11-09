@@ -861,12 +861,13 @@
       "proof_reason": "reliable source: Wall Street Journal",
       "first_seen": "2026-11-09T11:27:28.307598+00:00",
       "earliest_report": "2026-11-09T10:06:46+00:00",
-      "last_updated": "2026-11-09T17:05:44.696936+00:00",
+      "last_updated": "2026-11-09T19:25:40.878325+00:00",
       "words": [
         "6.3",
         "acros",
         "acrypto",
         "analysi",
+        "animal",
         "biggest-ever",
         "billion",
         "binance",
@@ -878,10 +879,12 @@
         "deposit",
         "drain",
         "elliptic",
+        "elon",
         "five",
         "funds",
         "hack",
         "halt",
+        "homemade",
         "just",
         "korean",
         "launder",
@@ -890,8 +893,10 @@
         "loot",
         "made",
         "memecoin",
+        "mint",
         "morn",
         "move",
+        "musk",
         "near",
         "north",
         "open",
@@ -1007,6 +1012,17 @@
           "found_at": "2026-11-09T17:05:44.696936+00:00",
           "summary": "JUST IN: \ud83c\uddf0\ud83c\uddf5 North Korean hackers are using memecoins to launder funds stolen from the $6 billion Binance crypto hack. @WatcherGuru",
           "factor": "B2"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Binance hack launderers mint homemade Elon Musk, animal memecoins to move stolen funds: Elliptic",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQWYwZ0pqc01xaEQxMzRlNlB5RWhIS3lQbEF5WkkwODJLNk5nRmhaanhhOE4zdFdTandGMlgzcF9Od1VBZFZIc3h4NUlzVGRWcmw4SjFROEY4MHh0WXhLV0JzNl82N1ZlMkVpZVBvRkVRS1doZTNHTmNWbjJBb2VmSmg2MVo3a0lfbHUydnZuTzlrMGotWEdCbTBNbTY1Xy1nUmItQVpfSG1ROEItblNnbEJ3QWVFZHpwMW1lZUt1RmZ2dndsdXF6cE5ZaVlDODQzZ3pZMzZkMV9DLTdTU2dDaXQ2SQ?oc=5",
+          "published": "2026-11-09T15:54:00+00:00",
+          "found_at": "2026-11-09T19:25:40.878325+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -1053,6 +1069,10 @@
         {
           "time": "2026-11-09T17:05:44.696936+00:00",
           "note": "another report from Watcher.Guru (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-09T19:25:40.878325+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": {
@@ -1696,14 +1716,14 @@
     "BTC-20261109": 6
   },
   "last_run": {
-    "run_time": "2026-11-09T19:20:53.356659+00:00",
+    "run_time": "2026-11-09T19:25:40.878325+00:00",
     "test_mode": false,
-    "stories": 27,
-    "off_topic": 17,
-    "repeats": 10,
+    "stories": 28,
+    "off_topic": 18,
+    "repeats": 9,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
