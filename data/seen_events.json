@@ -2410,21 +2410,15 @@
           "time": "2026-11-08T12:07:49+00:00",
           "verdict": "right"
         },
-        "now": {
-          "move": 3.86,
-          "time": "2026-11-10T11:30:10+00:00",
-          "hours": 167.4,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 8,
+          "done": 9,
+          "right": 9,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
-        "effect_reason": "predicted up: 8 of 8 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted up: 9 of 9 clear price checks went the predicted way",
         "impact": {
           "peak": 5.61,
           "peak_hours": 40.9,
@@ -2433,6 +2427,12 @@
           "against_hours": 8.9,
           "until_hours": 167.4,
           "text": "Clear impact: Gold rose up to 5.6% (after 41 h). Still in the predicted direction after 7.0 days (+3.9%)."
+        },
+        "d7": {
+          "price": 4060.96,
+          "move": 3.86,
+          "time": "2026-11-10T12:07:49+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -2481,7 +2481,8 @@
       "telegram": {
         "first_sent_at": "2026-11-10T10:41:30.177576+00:00",
         "sent_state": "summary",
-        "result_sent": "2026-11-10T10:41:00.999961+00:00"
+        "result_sent": "2026-11-10T10:41:00.999961+00:00",
+        "final_sent": "2026-11-10T12:20:54.207304+00:00"
       }
     },
     {
@@ -7197,20 +7198,26 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-10T11:31:13.118505+00:00",
       "earliest_report": "2026-11-10T11:24:10+00:00",
-      "last_updated": "2026-11-10T11:31:13.118505+00:00",
+      "last_updated": "2026-11-10T12:20:54.207304+00:00",
       "words": [
         "ahead",
         "bitcoin",
+        "break",
         "btc",
         "cpi",
         "crypto",
+        "daily",
         "data",
         "etf",
         "fall",
+        "mara",
         "market",
         "mount",
         "outflows",
         "price",
+        "sells",
+        "some",
+        "stock",
         "today",
         "u.s"
       ],
@@ -7227,6 +7234,17 @@
           "found_at": "2026-11-10T11:31:13.118505+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin breaks with stocks as ETF outflows mount, MARA sells some BTC: Crypto Daily",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR3dUV3BMQTJ0TDRtRnM5b19NeXBIbVNRVnlCbVlLTFVfZXBsdEVjcVFsYjYweTNIR181aGlrVTN2a1JQZElDSG1DdVVDeDU2VW9CdzlIMDlUMDhsbFVyQzREM0ZpQ3pTWTFXQkVNT2FtNkp2OVFsdV9icmZYNVpKdWpBQko2MXNlM0M3MVFXRE9qb1JkQ2V0eEhuTXlFQjFua2diZ0JONnRCVDdRYThhVmduOFZ4WGdoTmNCT2dQcUt3dw?oc=5",
+          "published": "2026-11-10T12:15:00+00:00",
+          "found_at": "2026-11-10T12:20:54.207304+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -7237,6 +7255,10 @@
         {
           "time": "2026-11-10T11:31:13.118505+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        },
+        {
+          "time": "2026-11-10T12:20:54.207304+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": null,
@@ -7672,14 +7694,14 @@
     "GOLD-20261110": 2
   },
   "last_run": {
-    "run_time": "2026-11-10T12:15:51.211307+00:00",
+    "run_time": "2026-11-10T12:20:54.207304+00:00",
     "test_mode": false,
-    "stories": 29,
-    "off_topic": 14,
+    "stories": 31,
+    "off_topic": 15,
     "repeats": 15,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
