@@ -6494,14 +6494,14 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
-          "wrong": 2,
+          "wrong": 3,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 0 of 2 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "wrong",
+        "effect_reason": "predicted up, but 0 of 3 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": 0.34,
           "peak_hours": 6.8,
@@ -6510,6 +6510,12 @@
           "against_hours": 24.0,
           "until_hours": 24.0,
           "text": "Clear impact: Gold rose up to 0.3% (after 7 h). The effect lasted about 11 h, then faded - later it fell up to 1.6% (after 24 h)."
+        },
+        "d1": {
+          "price": 4044.71,
+          "move": -1.59,
+          "time": "2026-11-10T14:12:27+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -6551,7 +6557,8 @@
         }
       },
       "telegram": {
-        "sent_state": "context"
+        "sent_state": "context",
+        "result_sent": "2026-11-10T14:25:36.760041+00:00"
       },
       "analysis": {
         "by": "AI (Groq)",
@@ -7940,7 +7947,7 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-10T14:20:53.787820+00:00",
+    "run_time": "2026-11-10T14:25:36.760041+00:00",
     "test_mode": false,
     "stories": 26,
     "off_topic": 11,
