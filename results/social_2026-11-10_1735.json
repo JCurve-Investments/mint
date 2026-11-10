@@ -1,38 +1,8 @@
 {
   "scout": "social",
-  "run_time": "2026-11-10T16:40:51.947660+00:00",
+  "run_time": "2026-11-10T17:35:41.509641+00:00",
   "test_mode": false,
   "news": [
-    {
-      "id": "B2",
-      "name": "social media",
-      "kept": [
-        {
-          "title": "Initia halts its layer-1 blockchain after compromised rollup keys enable a $615K exploit",
-          "link": "https://t.me/whale_alert_io/104750",
-          "source_site": "whale_alert_io",
-          "organisation": "Whale Alert (Telegram)",
-          "kind": "social",
-          "asset": "Bitcoin",
-          "summary": "Initia halts its layer-1 blockchain after compromised rollup keys enable a $615K exploit",
-          "published": "2026-11-10T11:36:45+00:00",
-          "age_hours": 5.1
-        },
-        {
-          "title": "JUST IN: \ud83c\uddf0\ud83c\uddf5 North Korea is launching 'Elon Musk' crypto memecoins to launder $6.3 billion stolen from Binance. @WatcherGuru",
-          "link": "https://t.me/WatcherGuru/15924",
-          "source_site": "WatcherGuru",
-          "organisation": "Watcher.Guru (Telegram)",
-          "kind": "social",
-          "asset": "Bitcoin",
-          "summary": "JUST IN: \ud83c\uddf0\ud83c\uddf5 North Korea is launching 'Elon Musk' crypto memecoins to launder $6.3 billion stolen from Binance. @WatcherGuru",
-          "published": "2026-11-10T11:38:12+00:00",
-          "age_hours": 5.0
-        }
-      ],
-      "rejected": [],
-      "error": null
-    },
     {
       "id": "G2",
       "name": "social media",
@@ -46,7 +16,7 @@
           "asset": "Gold",
           "summary": "Did you receive a text message or email from the Federal Reserve claiming that there is suspicious activity on your bank account? Scammers use phony alerts and other tactics to steal your personal financial information.",
           "published": "2026-11-09T19:07:00+00:00",
-          "age_hours": 21.6
+          "age_hours": 22.5
         },
         {
           "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
@@ -57,7 +27,26 @@
           "asset": "Gold",
           "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
           "published": "2026-11-10T14:05:26+00:00",
-          "age_hours": 2.6
+          "age_hours": 3.5
+        }
+      ],
+      "rejected": [],
+      "error": null
+    },
+    {
+      "id": "B2",
+      "name": "social media",
+      "kept": [
+        {
+          "title": "JUST IN: \ud83c\uddf0\ud83c\uddf5 North Korea is launching 'Elon Musk' crypto memecoins to launder $6.3 billion stolen from Binance. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/15924",
+          "source_site": "WatcherGuru",
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "asset": "Bitcoin",
+          "summary": "JUST IN: \ud83c\uddf0\ud83c\uddf5 North Korea is launching 'Elon Musk' crypto memecoins to launder $6.3 billion stolen from Binance. @WatcherGuru",
+          "published": "2026-11-10T11:38:12+00:00",
+          "age_hours": 6.0
         }
       ],
       "rejected": [],
@@ -80,7 +69,7 @@
     {
       "name": "Whale Alert (Telegram)",
       "read": 20,
-      "kept": 1,
+      "kept": 0,
       "error": null
     },
     {
@@ -97,7 +86,7 @@
     },
     {
       "name": "Watcher.Guru (Telegram)",
-      "read": 16,
+      "read": 14,
       "kept": 2,
       "error": null
     }
