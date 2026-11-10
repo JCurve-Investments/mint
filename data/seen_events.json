@@ -873,7 +873,7 @@
       "proof_reason": "reliable source: Wall Street Journal",
       "first_seen": "2026-11-09T11:27:28.307598+00:00",
       "earliest_report": "2026-11-09T10:06:46+00:00",
-      "last_updated": "2026-11-09T19:25:40.878325+00:00",
+      "last_updated": "2026-11-10T05:40:55.344594+00:00",
       "words": [
         "6.3",
         "acros",
@@ -885,6 +885,7 @@
         "binance",
         "chain",
         "cisos",
+        "coins",
         "creat",
         "crypto",
         "custom",
@@ -904,6 +905,7 @@
         "liquidity",
         "loot",
         "made",
+        "meme",
         "memecoin",
         "mint",
         "morn",
@@ -1035,6 +1037,17 @@
           "found_at": "2026-11-09T19:25:40.878325+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Binance Hack Launderers Mint Elon Musk and Animal Meme Coins to Move Stolen Crypto",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRkY2YkFCUG55UW5uOS14SnNSY21kNHFmeG5lU080Zk92YWloakx4MWNmVS11WUF5ZTRBdnBYejFsenJPVnJoUWlnbnRHUmZpRGYtUTNXeDNWbDFHTDFYaURIcW9HQkMwUXA3a215RUVhbGFOS2tZZC02clp5YTJpNXd4LW9wV1ZlNl8yWFRtSmdPdw?oc=5",
+          "published": "2026-11-09T19:36:02+00:00",
+          "found_at": "2026-11-10T05:40:55.344594+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -1085,6 +1098,10 @@
         {
           "time": "2026-11-09T19:25:40.878325+00:00",
           "note": "another report from The Block - same event, no new alert"
+        },
+        {
+          "time": "2026-11-10T05:40:55.344594+00:00",
+          "note": "another report from Decrypt - same event, no new alert"
         }
       ],
       "decision": {
@@ -1768,6 +1785,173 @@
         "first_sent_at": "2026-11-09T19:11:10.188306+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "BTC-20261110-01",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-10T05:40:55.344594+00:00",
+      "earliest_report": "2026-11-10T05:36:15+00:00",
+      "last_updated": "2026-11-10T05:40:55.344594+00:00",
+      "words": [
+        "activiti",
+        "ban",
+        "bank",
+        "central",
+        "china",
+        "crypto",
+        "over",
+        "prob",
+        "reportedly",
+        "servic",
+        "shanghai",
+        "solana-relat"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+          "link": "https://t.me/whale_alert_io/104736",
+          "published": "2026-11-10T05:36:15+00:00",
+          "found_at": "2026-11-10T05:40:55.344594+00:00",
+          "summary": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-10T05:40:55.344594+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-10T05:40:55.344594+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-10T05:40:55.344594+00:00",
+          "note": "confirmed -> alerted: The report reveals a new regulatory probe in China, a known trigger for crypto price declines, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-10",
+        "date_evidence": "Report published 2026-11-10 05:36 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Regulatory crackdowns usually push crypto prices lower",
+        "alert_title": "China probes Solana activities",
+        "alert_message": "China\u2019s central bank is investigating Solana\u2011related services in Shanghai, signaling a regulatory crackdown that could affect the broader crypto market, including Bitcoin.",
+        "why_it_matters": [
+          "Regulatory crackdown in a major market",
+          "Past bans have lowered crypto prices"
+        ],
+        "reason": "The report reveals a new regulatory probe in China, a known trigger for crypto price declines, so an alert is warranted.",
+        "time": "2026-11-10T05:40:55.344594+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nChina probes Solana activities\n\nChina\u2019s central bank is investigating Solana\u2011related services in Shanghai, signaling a regulatory crackdown that could affect the broader crypto market, including Bitcoin.\n\nMINT's prediction: Bitcoin DOWN - Similar crackdowns (China ban, SEC suits) caused Bitcoin to fall about 4\u20115% the next day, with only one outlier where a lawsuit led to a rise.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 10 Nov 05:40 UTC",
+        "telegram_sent_at": "2026-11-10T05:40:55.344594+00:00"
+      },
+      "outcome": {
+        "start_price": 74754.46,
+        "start_time": "2026-11-10T05:24:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-10T05:24:00+00:00",
+          "hours": -0.2,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar crackdowns (China ban, SEC suits) caused Bitcoin to fall about 4\u20115% the next day, with only one outlier where a lawsuit led to a rise.",
+        "similar": [
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "source": "starter library (check the date)",
+            "score": 1.13
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20231121-B",
+            "date": "2023-11-21",
+            "title": "Binance pleads guilty and CZ steps down in $4.3bn settlement",
+            "d1": -4.44,
+            "d7": 0.94,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.45,
+          "down": 3.53
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "China\u2019s central bank is probing Solana\u2011related activities in Shanghai, hinting at a possible crackdown on crypto services, which can spook Bitcoin investors.",
+        "what_past_events_show": "Similar crackdowns (China ban, SEC suits) caused Bitcoin to fall about 4\u20115% the next day, with only one outlier where a lawsuit led to a rise.",
+        "direction": "down",
+        "why": [
+          "A big regulator\u2019s action raises fear of lower demand and higher risk.",
+          "A probe suggests future restrictions, even if no ban is announced yet."
+        ],
+        "watch_next": "If the investigation turns into an official ban or enforcement, the price drop could be bigger; if it stays just a probe, the effect may stay modest.",
+        "confidence": "high",
+        "confidence_reason": "3 of 4 similar past events moved this way",
+        "time": "2026-11-10T05:40:55.344594+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-10T05:41:07.614460+00:00"
+      }
     }
   ],
   "counter": {
@@ -1775,32 +1959,34 @@
     "GOLD-20261105": 1,
     "GOLD-20261108": 1,
     "GOLD-20261109": 2,
-    "BTC-20261109": 6
+    "BTC-20261109": 6,
+    "BTC-20261110": 1
   },
   "last_run": {
-    "run_time": "2026-11-10T05:35:38.836859+00:00",
+    "run_time": "2026-11-10T05:40:55.344594+00:00",
     "test_mode": false,
-    "stories": 23,
+    "stories": 25,
     "off_topic": 14,
     "repeats": 9,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Coinbase gets full U.S. trust charter from federal banking regulator",
-          "Alert: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis"
+          "Alert: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
+          "Being checked: China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services (approved social media account: Whale Alert (Telegram) (from social media))"
         ]
       },
       "Gold": {
@@ -1816,7 +2002,8 @@
       "state": "Alert",
       "reasons": [
         "Alert: Coinbase gets full U.S. trust charter from federal banking regulator",
-        "Alert: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis"
+        "Alert: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
+        "Alert: China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services"
       ]
     },
     "Gold": {
