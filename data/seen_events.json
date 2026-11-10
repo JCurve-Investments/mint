@@ -6419,8 +6419,8 @@
       },
       "prediction": {
         "direction": "up",
-        "by": "past events + factor pattern",
-        "reason": "3 similar past event(s): gold rose after 3 and fell after 0 (average 1-day move +1.5%); factor pattern: Central banks buying gold: it has tended to support the price",
+        "by": "AI + past events",
+        "reason": "When similar reports came out before, gold rose the next day (+0.8%, +0.3%, and a big +3.2% jump).",
         "similar": [
           {
             "id": "START-20240131-G",
@@ -6457,6 +6457,20 @@
       },
       "telegram": {
         "sent_state": "context"
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The news says central banks are still buying a lot of gold in 2026, which can help keep the price up.",
+        "what_past_events_show": "When similar reports came out before, gold rose the next day (+0.8%, +0.3%, and a big +3.2% jump).",
+        "direction": "up",
+        "why": [
+          "Central\u2011bank buying adds steady demand for gold",
+          "The report signals a strong, maybe surprising, buying level"
+        ],
+        "watch_next": "If the next official data shows the buying is even bigger or suddenly slows down, the price move could get stronger or weaker.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 3 similar past events moved this way",
+        "time": "2026-11-10T10:45:55.072564+00:00"
       }
     },
     {
@@ -6583,8 +6597,8 @@
       },
       "prediction": {
         "direction": "down",
-        "by": "past events + factor pattern",
-        "reason": "6 similar past event(s): gold rose after 3 and fell after 3 (average 1-day move -0.1%); factor pattern: Interest rates staying high or going up: gold has usually fallen (it pays no interest)",
+        "by": "AI + past events",
+        "reason": "When the Fed signaled higher or longer\u2011lasting rates, gold fell (e.g., -0.4% on 2022\u201112\u201114 and -1.1% on 2022\u201103\u201116), while neutral hikes sometimes gave tiny gains.",
         "similar": [
           {
             "id": "START-20220615-G",
@@ -6640,6 +6654,20 @@
       "telegram": {
         "sent_state": "alerted",
         "first_sent_at": "2026-11-10T10:41:56.627073+00:00"
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "US jobs data raised expectations that the Fed will keep raising rates in December, which is bad for gold because higher rates make it less attractive.",
+        "what_past_events_show": "When the Fed signaled higher or longer\u2011lasting rates, gold fell (e.g., -0.4% on 2022\u201112\u201114 and -1.1% on 2022\u201103\u201116), while neutral hikes sometimes gave tiny gains.",
+        "direction": "down",
+        "why": [
+          "Higher\u2011rate expectations reduce gold\u2019s appeal versus interest\u2011bearing assets.",
+          "Past hawkish signals have pushed gold lower."
+        ],
+        "watch_next": "If the Fed surprises the market with a cut or a softer stance, the impact on gold could be smaller or reverse.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-10T10:45:55.072564+00:00"
       }
     },
     {
@@ -6722,7 +6750,7 @@
           "price": 4111.77,
           "move": 0.15,
           "time": "2026-11-10T01:35:00+00:00",
-          "verdict": "right"
+          "verdict": "wrong"
         },
         "h5": {
           "price": 4107.97,
@@ -6734,17 +6762,17 @@
           "move": -1.04,
           "time": "2026-11-10T10:40:10+00:00",
           "hours": 10.1,
-          "verdict": "wrong"
+          "verdict": "right"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 1,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (2 of 9 checks done)",
+        "effect_reason": "first day not over yet - 1 of 2 clear price checks went the predicted way (3 of 9 checks done)",
         "impact": {
           "peak": 0.15,
           "peak_hours": 1.4,
@@ -6753,12 +6781,18 @@
           "against_hours": 10.1,
           "until_hours": 10.1,
           "text": "Clear impact: Gold rose up to 0.1% (after 1 h). The effect lasted about 2 h, then faded - later it fell up to 1.0% (after 10 h)."
+        },
+        "h10": {
+          "price": 4063.08,
+          "move": -1.04,
+          "time": "2026-11-10T10:35:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
-        "direction": "up",
-        "by": "past events",
-        "reason": "3 similar past event(s): gold rose after 2 and fell after 1 (average 1-day move +0.7%)",
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar past releases gave mixed 1\u2011day moves: a hotter\u2011than\u2011expected inflation print on 2022\u201109\u201113 led to \u20131.3%, a cooler\u2011than\u2011expected print on 2022\u201111\u201110 gave +2.3%, and a hot print on 2022\u201106\u201110 resulted in +1.2%.",
         "similar": [
           {
             "id": "START-20220913-G",
@@ -6795,6 +6829,20 @@
       },
       "telegram": {
         "sent_state": "context"
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold slipped a bit as investors wait for the upcoming US inflation report, which could change expectations for Fed interest rates.",
+        "what_past_events_show": "Similar past releases gave mixed 1\u2011day moves: a hotter\u2011than\u2011expected inflation print on 2022\u201109\u201113 led to \u20131.3%, a cooler\u2011than\u2011expected print on 2022\u201111\u201110 gave +2.3%, and a hot print on 2022\u201106\u201110 resulted in +1.2%.",
+        "direction": "down",
+        "why": [
+          "Unexpectedly strong inflation usually hurts gold because it points to higher rates",
+          "Gold was already edging lower before the data, indicating bearish sentiment"
+        ],
+        "watch_next": "A much hotter\u2011than\u2011expected inflation number would likely push gold down more, while a surprisingly cool reading could limit the drop or even turn it up.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 3 similar past events moved this way",
+        "time": "2026-11-10T10:45:55.072564+00:00"
       }
     },
     {
@@ -6911,8 +6959,8 @@
       },
       "prediction": {
         "direction": "up",
-        "by": "past events + factor pattern",
-        "reason": "3 similar past event(s): gold rose after 3 and fell after 0 (average 1-day move +1.5%); factor pattern: Central banks buying gold: it has tended to support the price",
+        "by": "AI + past events",
+        "reason": "When past news said central banks were buying a lot of gold, gold went up the next day (+0.8%, +0.3%, +3.2%).",
         "similar": [
           {
             "id": "START-20240131-G",
@@ -6949,6 +6997,20 @@
       },
       "telegram": {
         "sent_state": "context"
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Singapore said it will let central banks store gold in a new vault, showing more places for banks to keep gold.",
+        "what_past_events_show": "When past news said central banks were buying a lot of gold, gold went up the next day (+0.8%, +0.3%, +3.2%).",
+        "direction": "up",
+        "why": [
+          "It hints at more buying or easier storage, which usually supports gold",
+          "Past similar news has lifted gold price the next day"
+        ],
+        "watch_next": "If the actual buying numbers released later are bigger or smaller than expected, that will change how strong the move could be.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 3 similar past events moved this way",
+        "time": "2026-11-10T10:45:55.072564+00:00"
       }
     },
     {
@@ -7028,9 +7090,9 @@
         "impact": null
       },
       "prediction": {
-        "direction": "up",
-        "by": "factor pattern",
-        "reason": "no similar past events in the library yet; factor pattern: Money flowing INTO bitcoin funds: the price has tended to rise",
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no recorded past events of this exact type to compare with.",
         "similar": [],
         "votes": {
           "up": 1.5,
@@ -7039,6 +7101,20 @@
       },
       "telegram": {
         "sent_state": "context"
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Ark Invest reduced its holdings in Block, Bullish and its own Bitcoin ETF, indicating a pull\u2011back from Bitcoin, while adding Nvidia and SoFi stocks.",
+        "what_past_events_show": "There are no recorded past events of this exact type to compare with.",
+        "direction": "down",
+        "why": [
+          "Selling Bitcoin ETF shares is an outflow, which has usually been linked to price drops.",
+          "A big investor cutting exposure can signal weaker demand and hurt sentiment."
+        ],
+        "watch_next": "If more investors start selling Bitcoin ETFs or the price falls further, the impact grows; a quick price rebound would lessen it.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-10T10:45:55.072564+00:00"
       }
     }
   ],
@@ -7055,23 +7131,23 @@
     "GOLD-20261110": 2
   },
   "last_run": {
-    "run_time": "2026-11-10T10:41:00.999961+00:00",
+    "run_time": "2026-11-10T10:45:55.072564+00:00",
     "test_mode": false,
-    "stories": 173,
-    "off_topic": 80,
-    "repeats": 44,
-    "new_events": 30,
-    "joined": 18,
-    "updates_ignored": 1,
+    "stories": 27,
+    "off_topic": 16,
+    "repeats": 11,
+    "new_events": 0,
+    "joined": 0,
+    "updates_ignored": 0,
     "changes": {
-      "confirmed": 3,
-      "context": 5,
-      "summary": 22,
+      "confirmed": 0,
+      "context": 0,
+      "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 3,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -7085,9 +7161,9 @@
         "state": "Alert",
         "reasons": [
           "Alert: America took a giant step back in History with the results of the last Election \u2014 Even the Stock Market, which has been a \u201cROCKETSHIP\u201d under \u201cTRUMP,\u201d took a one",
-          "Being checked: Weekly Markets Monitor - Surprise, surprise (official source: World Gold Council)",
-          "Being checked: Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report (reliable source: Kitco News)",
-          "Being checked: Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets (reliable source: Bloomberg)"
+          "Alert: Weekly Markets Monitor - Surprise, surprise",
+          "Alert: Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report",
+          "Alert: Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets"
         ]
       }
     }
