@@ -7275,22 +7275,30 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-10T11:31:13.118505+00:00",
       "earliest_report": "2026-11-10T11:24:10+00:00",
-      "last_updated": "2026-11-10T12:20:54.207304+00:00",
+      "last_updated": "2026-11-10T19:05:45.025972+00:00",
       "words": [
         "ahead",
+        "avalanche",
         "bitcoin",
         "break",
         "btc",
+        "cashtag",
         "cpi",
         "crypto",
         "daily",
         "data",
         "etf",
         "fall",
+        "fomo",
+        "hits",
+        "hot",
+        "links",
         "mara",
         "market",
         "mount",
+        "nyse",
         "outflows",
+        "picks",
         "price",
         "sells",
         "some",
@@ -7322,6 +7330,17 @@
           "found_at": "2026-11-10T12:20:54.207304+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Hot CPI Hits Crypto - ETF Outflows, NYSE Picks Avalanche and X Links Cashtags to FOMO",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWFZ4NVBhNWhBdF9ELThqckc1RjBHNUJxQ2Fnd2puWi1vWHJjanY5cU1IXzFBQW1Qa19ON19EekJpd213YnFIMmhrYnJlal94U2hJbTlFRlR5WU4tNWtLN2E0RV83UkFRWE1MOWNOTkZhdWhEbThVSHZUQldWSFdLSHlfYlFoX1dzVjVPMGVVNHgzQkJXVUhwLW1sM3k3WWJjcjZCWUlfS2ZXQjBXQmxvaXk2Y3c4YldfTmVyQ1p0OFliSDgwTnBsT0Vn?oc=5",
+          "published": "2026-11-10T19:01:44+00:00",
+          "found_at": "2026-11-10T19:05:45.025972+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -7336,6 +7355,10 @@
         {
           "time": "2026-11-10T12:20:54.207304+00:00",
           "note": "another report from CoinDesk - same event, no new alert"
+        },
+        {
+          "time": "2026-11-10T19:05:45.025972+00:00",
+          "note": "another report from Decrypt - same event, no new alert"
         }
       ],
       "decision": null,
@@ -8032,14 +8055,14 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-10T19:01:27.530099+00:00",
+    "run_time": "2026-11-10T19:05:45.025972+00:00",
     "test_mode": false,
-    "stories": 32,
-    "off_topic": 21,
+    "stories": 34,
+    "off_topic": 22,
     "repeats": 11,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
