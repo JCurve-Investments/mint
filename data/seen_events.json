@@ -1913,14 +1913,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 1,
-          "right": 0,
+          "done": 2,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (2 of 9 checks done)",
         "impact": {
           "peak": -0.75,
           "peak_hours": 5.1,
@@ -1935,6 +1935,12 @@
           "move": -0.23,
           "time": "2026-11-10T06:36:15+00:00",
           "verdict": "flat"
+        },
+        "h5": {
+          "price": 74196.74,
+          "move": -0.75,
+          "time": "2026-11-10T10:36:15+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -6774,13 +6780,13 @@
         "effect": "tracking",
         "effect_reason": "first day not over yet - 1 of 2 clear price checks went the predicted way (3 of 9 checks done)",
         "impact": {
-          "peak": 0.15,
-          "peak_hours": 1.4,
-          "faded_hours": 2.4,
-          "against": -1.04,
-          "against_hours": 10.1,
+          "peak": -1.04,
+          "peak_hours": 10.1,
+          "faded_hours": null,
+          "against": 0.15,
+          "against_hours": 1.4,
           "until_hours": 10.1,
-          "text": "Clear impact: Gold rose up to 0.1% (after 1 h). The effect lasted about 2 h, then faded - later it fell up to 1.0% (after 10 h)."
+          "text": "Clear impact: Gold fell up to 1.0% (after 10 h). Still in the predicted direction after 10 h (-1.0%)."
         },
         "h10": {
           "price": 4063.08,
@@ -7131,11 +7137,11 @@
     "GOLD-20261110": 2
   },
   "last_run": {
-    "run_time": "2026-11-10T10:45:55.072564+00:00",
+    "run_time": "2026-11-10T10:50:56.244006+00:00",
     "test_mode": false,
-    "stories": 27,
+    "stories": 28,
     "off_topic": 16,
-    "repeats": 11,
+    "repeats": 12,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
