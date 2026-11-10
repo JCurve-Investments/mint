@@ -7815,9 +7815,12 @@
       "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
       "first_seen": "2026-11-10T14:10:56.799019+00:00",
       "earliest_report": "2026-11-10T14:05:26+00:00",
-      "last_updated": "2026-11-10T14:10:56.799019+00:00",
+      "last_updated": "2026-11-10T18:10:53.621156+00:00",
       "words": [
+        "basis",
         "could",
+        "federal",
+        "fomc",
         "goldman",
         "high",
         "hike",
@@ -7825,8 +7828,13 @@
         "interest",
         "just",
         "lead",
+        "meet",
         "next",
+        "point",
+        "project",
+        "raise",
         "rate",
+        "reserve",
         "sachs",
         "warns",
         "watcherguru",
@@ -7845,6 +7853,17 @@
           "found_at": "2026-11-10T14:10:56.799019+00:00",
           "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
           "factor": "G2"
+        },
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve projected to raise interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/15941",
+          "published": "2026-11-10T18:09:19+00:00",
+          "found_at": "2026-11-10T18:10:53.621156+00:00",
+          "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve projected to raise interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -7859,6 +7878,10 @@
         {
           "time": "2026-11-10T14:10:56.799019+00:00",
           "note": "confirmed -> alerted: A new warning about future rate hikes could affect gold, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-10T18:10:53.621156+00:00",
+          "note": "another report from Watcher.Guru (Telegram) - same event, no new alert"
         }
       ],
       "decision": {
@@ -8009,14 +8032,14 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-10T18:05:41.127815+00:00",
+    "run_time": "2026-11-10T18:10:53.621156+00:00",
     "test_mode": false,
-    "stories": 29,
+    "stories": 30,
     "off_topic": 19,
     "repeats": 10,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
