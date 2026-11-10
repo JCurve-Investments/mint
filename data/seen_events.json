@@ -5767,14 +5767,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 6,
+          "done": 7,
           "right": 1,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted up: 1 of 1 clear price checks went the predicted way (so far: 6 of 9 checks done)",
+        "effect_reason": "predicted up: 1 of 1 clear price checks went the predicted way (so far: 7 of 9 checks done)",
         "impact": {
           "peak": 1.4,
           "peak_hours": 65.5,
@@ -5783,6 +5783,12 @@
           "against_hours": 83.5,
           "until_hours": 83.5,
           "text": "Clear impact: Gold rose up to 1.4% (after 2.7 days). The effect lasted about 3.3 days, then faded - later it fell up to 0.9% (after 3.5 days)."
+        },
+        "h84": {
+          "price": 4029.95,
+          "move": -0.91,
+          "time": "2026-11-10T15:32:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -7965,7 +7971,7 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-10T15:40:57.193778+00:00",
+    "run_time": "2026-11-10T15:45:51.829007+00:00",
     "test_mode": false,
     "stories": 30,
     "off_topic": 17,
