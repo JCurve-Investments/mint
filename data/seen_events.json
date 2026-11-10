@@ -7165,28 +7165,53 @@
       "proof_reason": "reliable source: The Block",
       "first_seen": "2026-11-10T10:41:00.999961+00:00",
       "earliest_report": "2026-11-10T03:35:00+00:00",
-      "last_updated": "2026-11-10T21:15:51.031970+00:00",
+      "last_updated": "2026-11-10T21:20:55.550156+00:00",
       "words": [
+        "ahead",
         "ark",
+        "avalanche",
         "bitcoin",
         "blackrock",
         "block",
+        "break",
+        "btc",
         "bullish",
         "buy",
+        "cashtag",
         "chart",
+        "cpi",
+        "crypto",
         "daily",
+        "data",
         "etf",
+        "fall",
         "fidelity",
         "flow",
+        "fomo",
+        "hits",
         "holding",
+        "hot",
         "invest",
+        "links",
+        "mara",
+        "market",
+        "mount",
         "net",
         "nvidia",
+        "nyse",
+        "outflows",
         "own",
+        "picks",
+        "price",
+        "sells",
         "sofi",
+        "some",
         "spot",
+        "stock",
+        "today",
         "total",
         "trims",
+        "u.s",
         "while"
       ],
       "amounts": [],
@@ -7213,6 +7238,39 @@
           "found_at": "2026-11-10T21:15:51.031970+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin (BTC) price slips as ETF outflows mount ahead of U.S. CPI data: Crypto Markets Today",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYUNGeTZzR0JTUjFjc3FxVENCUUpCTDM1Z19fX0tFejdLMno0aFN1SS04SEh0bG9IN3F0cWpBMUpYTEYwWDNjUG56c2NLclNncTFjYmRIMGg5M3QxcTd2Y2U5Y3p2UmJoNnJyOUZ1cXRtQTc0SFdTU2RSZG92a1dyRDJHY3h3WXR3c0xFNWNqaW02ejVOYkg5VllvUmo1dUVvS2xNNUxtYjI?oc=5",
+          "published": "2026-11-10T11:24:10+00:00",
+          "found_at": "2026-11-10T21:20:55.550156+00:00",
+          "summary": "",
+          "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin breaks with stocks as ETF outflows mount, MARA sells some BTC: Crypto Daily",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR3dUV3BMQTJ0TDRtRnM5b19NeXBIbVNRVnlCbVlLTFVfZXBsdEVjcVFsYjYweTNIR181aGlrVTN2a1JQZElDSG1DdVVDeDU2VW9CdzlIMDlUMDhsbFVyQzREM0ZpQ3pTWTFXQkVNT2FtNkp2OVFsdV9icmZYNVpKdWpBQko2MXNlM0M3MVFXRE9qb1JkQ2V0eEhuTXlFQjFua2diZ0JONnRCVDdRYThhVmduOFZ4WGdoTmNCT2dQcUt3dw?oc=5",
+          "published": "2026-11-10T12:15:00+00:00",
+          "found_at": "2026-11-10T21:20:55.550156+00:00",
+          "summary": "",
+          "factor": "B4"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Hot CPI Hits Crypto - ETF Outflows, NYSE Picks Avalanche and X Links Cashtags to FOMO",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWFZ4NVBhNWhBdF9ELThqckc1RjBHNUJxQ2Fnd2puWi1vWHJjanY5cU1IXzFBQW1Qa19ON19EekJpd213YnFIMmhrYnJlal94U2hJbTlFRlR5WU4tNWtLN2E0RV83UkFRWE1MOWNOTkZhdWhEbThVSHZUQldWSFdLSHlfYlFoX1dzVjVPMGVVNHgzQkJXVUhwLW1sM3k3WWJjcjZCWUlfS2ZXQjBXQmxvaXk2Y3c4YldfTmVyQ1p0OFliSDgwTnBsT0Vn?oc=5",
+          "published": "2026-11-10T19:01:44+00:00",
+          "found_at": "2026-11-10T21:20:55.550156+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -7227,6 +7285,10 @@
         {
           "time": "2026-11-10T21:15:51.031970+00:00",
           "note": "another report from The Block - same event, no new alert"
+        },
+        {
+          "time": "2026-11-10T21:20:55.550156+00:00",
+          "note": "joined with BTC-20261110-03 (same factor, same day and shared key words) - the same story"
         }
       ],
       "decision": null,
@@ -7304,176 +7366,6 @@
         "confidence": "low",
         "confidence_reason": "no similar past events yet - based on the factor pattern only",
         "time": "2026-11-10T10:45:55.072564+00:00"
-      }
-    },
-    {
-      "id": "BTC-20261110-03",
-      "asset": "Bitcoin",
-      "factor": "B4",
-      "factor_name": "ETF flows",
-      "title": "Bitcoin (BTC) price slips as ETF outflows mount ahead of U.S. CPI data: Crypto Markets Today",
-      "state": "context",
-      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
-      "proof": "news",
-      "proof_reason": "reliable source: CoinDesk",
-      "first_seen": "2026-11-10T11:31:13.118505+00:00",
-      "earliest_report": "2026-11-10T11:24:10+00:00",
-      "last_updated": "2026-11-10T19:05:45.025972+00:00",
-      "words": [
-        "ahead",
-        "avalanche",
-        "bitcoin",
-        "break",
-        "btc",
-        "cashtag",
-        "cpi",
-        "crypto",
-        "daily",
-        "data",
-        "etf",
-        "fall",
-        "fomo",
-        "hits",
-        "hot",
-        "links",
-        "mara",
-        "market",
-        "mount",
-        "nyse",
-        "outflows",
-        "picks",
-        "price",
-        "sells",
-        "some",
-        "stock",
-        "today",
-        "u.s"
-      ],
-      "amounts": [],
-      "old_clues": [],
-      "sources": [
-        {
-          "organisation": "CoinDesk",
-          "kind": "news",
-          "site": "coindesk.com",
-          "title": "Bitcoin (BTC) price slips as ETF outflows mount ahead of U.S. CPI data: Crypto Markets Today",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYUNGeTZzR0JTUjFjc3FxVENCUUpCTDM1Z19fX0tFejdLMno0aFN1SS04SEh0bG9IN3F0cWpBMUpYTEYwWDNjUG56c2NLclNncTFjYmRIMGg5M3QxcTd2Y2U5Y3p2UmJoNnJyOUZ1cXRtQTc0SFdTU2RSZG92a1dyRDJHY3h3WXR3c0xFNWNqaW02ejVOYkg5VllvUmo1dUVvS2xNNUxtYjI?oc=5",
-          "published": "2026-11-10T11:24:10+00:00",
-          "found_at": "2026-11-10T11:31:13.118505+00:00",
-          "summary": "",
-          "factor": "B4"
-        },
-        {
-          "organisation": "CoinDesk",
-          "kind": "news",
-          "site": "coindesk.com",
-          "title": "Bitcoin breaks with stocks as ETF outflows mount, MARA sells some BTC: Crypto Daily",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR3dUV3BMQTJ0TDRtRnM5b19NeXBIbVNRVnlCbVlLTFVfZXBsdEVjcVFsYjYweTNIR181aGlrVTN2a1JQZElDSG1DdVVDeDU2VW9CdzlIMDlUMDhsbFVyQzREM0ZpQ3pTWTFXQkVNT2FtNkp2OVFsdV9icmZYNVpKdWpBQko2MXNlM0M3MVFXRE9qb1JkQ2V0eEhuTXlFQjFua2diZ0JONnRCVDdRYThhVmduOFZ4WGdoTmNCT2dQcUt3dw?oc=5",
-          "published": "2026-11-10T12:15:00+00:00",
-          "found_at": "2026-11-10T12:20:54.207304+00:00",
-          "summary": "",
-          "factor": "B4"
-        },
-        {
-          "organisation": "Decrypt",
-          "kind": "news",
-          "site": "decrypt.co",
-          "title": "Hot CPI Hits Crypto - ETF Outflows, NYSE Picks Avalanche and X Links Cashtags to FOMO",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWFZ4NVBhNWhBdF9ELThqckc1RjBHNUJxQ2Fnd2puWi1vWHJjanY5cU1IXzFBQW1Qa19ON19EekJpd213YnFIMmhrYnJlal94U2hJbTlFRlR5WU4tNWtLN2E0RV83UkFRWE1MOWNOTkZhdWhEbThVSHZUQldWSFdLSHlfYlFoX1dzVjVPMGVVNHgzQkJXVUhwLW1sM3k3WWJjcjZCWUlfS2ZXQjBXQmxvaXk2Y3c4YldfTmVyQ1p0OFliSDgwTnBsT0Vn?oc=5",
-          "published": "2026-11-10T19:01:44+00:00",
-          "found_at": "2026-11-10T19:05:45.025972+00:00",
-          "summary": "",
-          "factor": "B4"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-10T11:31:13.118505+00:00",
-          "note": "new event, first report by CoinDesk"
-        },
-        {
-          "time": "2026-11-10T11:31:13.118505+00:00",
-          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
-        },
-        {
-          "time": "2026-11-10T12:20:54.207304+00:00",
-          "note": "another report from CoinDesk - same event, no new alert"
-        },
-        {
-          "time": "2026-11-10T19:05:45.025972+00:00",
-          "note": "another report from Decrypt - same event, no new alert"
-        }
-      ],
-      "decision": null,
-      "outcome": {
-        "start_price": 74243.43,
-        "start_time": "2026-11-10T11:29:50+00:00",
-        "moved_before_mint": 0.0,
-        "delay_hours": 0.1,
-        "now": {
-          "move": -0.43,
-          "time": "2026-11-10T21:09:40+00:00",
-          "hours": 9.8,
-          "verdict": "flat"
-        },
-        "checks": {
-          "done": 2,
-          "right": 1,
-          "wrong": 0,
-          "total": 9
-        },
-        "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (2 of 9 checks done)",
-        "impact": {
-          "peak": -1.89,
-          "peak_hours": 5.6,
-          "faded_hours": null,
-          "against": 0.13,
-          "against_hours": 0.6,
-          "until_hours": 9.8,
-          "text": "Clear impact: Bitcoin fell up to 1.9% (after 6 h). Still in the predicted direction after 10 h (-0.4%)."
-        },
-        "h1": {
-          "price": 74281.91,
-          "move": 0.05,
-          "time": "2026-11-10T12:24:10+00:00",
-          "verdict": "flat"
-        },
-        "h5": {
-          "price": 73198.32,
-          "move": -1.41,
-          "time": "2026-11-10T16:24:10+00:00",
-          "verdict": "right"
-        }
-      },
-      "prediction": {
-        "direction": "down",
-        "by": "AI + past events",
-        "reason": "There are no recorded past events of the same kind to compare with.",
-        "similar": [],
-        "votes": {
-          "up": 0,
-          "down": 1.5
-        }
-      },
-      "analysis": {
-        "by": "AI (Groq)",
-        "summary": "Bitcoin fell as money left spot Bitcoin ETFs just before the U.S. CPI report, suggesting investors are pulling back.",
-        "what_past_events_show": "There are no recorded past events of the same kind to compare with.",
-        "direction": "down",
-        "why": [
-          "ETF outflows usually coincide with price drops",
-          "Investors may be nervous ahead of the CPI data"
-        ],
-        "watch_next": "If the CPI numbers are higher than expected, the sell pressure could grow; a softer CPI could ease the decline.",
-        "confidence": "low",
-        "confidence_reason": "no similar past events yet - based on the factor pattern only",
-        "time": "2026-11-10T11:31:13.118505+00:00"
-      },
-      "telegram": {
-        "first_sent_at": "2026-11-10T11:31:20.967351+00:00",
-        "sent_state": "context"
       }
     },
     {
@@ -8275,14 +8167,14 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-10T21:15:51.031970+00:00",
+    "run_time": "2026-11-10T21:20:55.550156+00:00",
     "test_mode": false,
-    "stories": 31,
-    "off_topic": 20,
+    "stories": 28,
+    "off_topic": 18,
     "repeats": 10,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 1,
+    "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
       "context": 0,
@@ -8367,6 +8259,12 @@
       "title": "Crypto market weakens as traders watch U.S. CPI, PPI, jobless claims, and major earnings for Fed clues",
       "removed_at": "2026-11-09T15:05:41.922959+00:00",
       "reason": "re-checked with the newer rules: not about Gold"
+    },
+    {
+      "id": "BTC-20261110-03",
+      "title": "Bitcoin (BTC) price slips as ETF outflows mount ahead of U.S. CPI data: Crypto Markets Today",
+      "removed_at": "2026-11-10T21:20:55.550156+00:00",
+      "reason": "the same story as BTC-20261110-02 (same factor, same day and shared key words)"
     }
   ]
 }
