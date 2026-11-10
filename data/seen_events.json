@@ -7444,6 +7444,200 @@
         "first_sent_at": "2026-11-10T11:41:05.767464+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "BTC-20261110-05",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "Coinbase, Kalshi and Payward backs CFTC in lawsuit over single-stock perp futures",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: The Block",
+      "first_seen": "2026-11-10T12:01:27.017056+00:00",
+      "earliest_report": "2026-11-10T06:19:00+00:00",
+      "last_updated": "2026-11-10T12:01:27.017056+00:00",
+      "words": [
+        "backs",
+        "cftc",
+        "coinbase",
+        "futur",
+        "kalshi",
+        "over",
+        "payward",
+        "perp",
+        "single-stock",
+        "sue"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Coinbase, Kalshi and Payward backs CFTC in lawsuit over single-stock perp futures",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZm9kdlI1U1podWdOcEExQzR1RzFmT1RFbGxuazhfOUVyamI3MTU1T21CLXM0VGhReG9VcE1IQXM3X0ItUkEzWDFla3E3LWI2NmhjR2J0V0N6VjhGRkZ2N0JZUVVMNlByWEdHU2VVUkdlWTF6d19IdTdHTkZDZGZmbDFWM1FVVllMMVpsTWxKZlJaRDllXzVVbmljZ245QQ?oc=5",
+          "published": "2026-11-10T06:19:00+00:00",
+          "found_at": "2026-11-10T12:01:27.017056+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-10T12:01:27.017056+00:00",
+          "note": "new event, first report by The Block"
+        },
+        {
+          "time": "2026-11-10T12:01:27.017056+00:00",
+          "note": "new -> confirmed: reliable source: The Block - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-10T12:01:27.017056+00:00",
+          "note": "confirmed -> alerted: The lawsuit is a fresh regulatory event that can affect Bitcoin, and price already fell, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-10",
+        "date_evidence": "The article was published on 2026-11-10 06:19 UTC.",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "lawsuits and crackdowns have historically pushed Bitcoin lower",
+        "alert_title": "CFTC Lawsuit Targets Crypto Platforms",
+        "alert_message": "The CFTC filed a lawsuit, backed by Coinbase, Kalshi and Payward, over single\u2011stock perpetual futures. This regulatory action could tighten rules on crypto derivatives and add pressure on Bitcoin.",
+        "why_it_matters": [
+          "Regulatory crackdown could limit market activity",
+          "Investor fear may drive price down"
+        ],
+        "reason": "The lawsuit is a fresh regulatory event that can affect Bitcoin, and price already fell, so an alert is warranted.",
+        "time": "2026-11-10T12:01:27.017056+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nCFTC Lawsuit Targets Crypto Platforms\n\nThe CFTC filed a lawsuit, backed by Coinbase, Kalshi and Payward, over single\u2011stock perpetual futures. This regulatory action could tighten rules on crypto derivatives and add pressure on Bitcoin.\n\nMINT's prediction: Bitcoin UP - Past legal news that helped the market (e.g., Coinbase getting a trust charter) gave a small rise, while lawsuits against exchanges have caused both up and down moves, showing mixed but often negative reactions.\n\nBitcoin had already moved -0.7% since the first report.\nSources: The Block\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 10 Nov 12:01 UTC",
+        "telegram_sent_at": "2026-11-10T12:01:27.017056+00:00"
+      },
+      "outcome": {
+        "start_price": 74740.47,
+        "start_time": "2026-11-10T06:00:00+00:00",
+        "moved_before_mint": -0.67,
+        "delay_hours": 5.7,
+        "h1": {
+          "price": 74566.11,
+          "move": -0.23,
+          "time": "2026-11-10T07:19:00+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 74243.43,
+          "move": -0.67,
+          "time": "2026-11-10T11:19:00+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.67,
+          "time": "2026-11-10T11:29:50+00:00",
+          "hours": 5.2,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 2,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (2 of 9 checks done)",
+        "impact": {
+          "peak": -0.78,
+          "peak_hours": 4.7,
+          "faded_hours": null,
+          "against": 0.05,
+          "against_hours": 1.7,
+          "until_hours": 5.2,
+          "text": "Clear impact: Bitcoin fell up to 0.8% (after 5 h). Still in the predicted direction after 5 h (-0.7%)."
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "Past legal news that helped the market (e.g., Coinbase getting a trust charter) gave a small rise, while lawsuits against exchanges have caused both up and down moves, showing mixed but often negative reactions.",
+        "similar": [
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "source": "starter library (check the date)",
+            "score": 0.83
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "source": "starter library (check the date)",
+            "score": 0.64
+          },
+          {
+            "id": "BTC-20261109-01",
+            "date": "2026-11-09",
+            "title": "Coinbase gets full U.S. trust charter from federal banking regulator",
+            "d1": 0.13,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20231121-B",
+            "date": "2023-11-21",
+            "title": "Binance pleads guilty and CZ steps down in $4.3bn settlement",
+            "d1": -4.44,
+            "d7": 0.94,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.4,
+          "down": 3.04
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Coinbase, Kalshi and Payward are supporting the CFTC in a lawsuit about single\u2011stock perpetual futures, which could clarify crypto rules.",
+        "what_past_events_show": "Past legal news that helped the market (e.g., Coinbase getting a trust charter) gave a small rise, while lawsuits against exchanges have caused both up and down moves, showing mixed but often negative reactions.",
+        "direction": "up",
+        "why": [
+          "Support for regulators can be seen as a sign of clearer rules, which usually helps price",
+          "Similar supportive legal outcomes have previously nudged Bitcoin up"
+        ],
+        "watch_next": "If the lawsuit leads to new restrictions on futures or penalties for the firms, the price could turn lower.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-10T12:01:27.017056+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-10T12:01:39.073069+00:00"
+      }
     }
   ],
   "counter": {
@@ -7452,37 +7646,38 @@
     "GOLD-20261108": 1,
     "GOLD-20261109": 7,
     "BTC-20261109": 6,
-    "BTC-20261110": 4,
+    "BTC-20261110": 5,
     "GOLD-20261104": 6,
     "GOLD-20261106": 7,
     "GOLD-20261107": 1,
     "GOLD-20261110": 2
   },
   "last_run": {
-    "run_time": "2026-11-10T11:55:38.913097+00:00",
+    "run_time": "2026-11-10T12:01:27.017056+00:00",
     "test_mode": false,
-    "stories": 28,
-    "off_topic": 13,
+    "stories": 30,
+    "off_topic": 14,
     "repeats": 15,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Coinbase gets full U.S. trust charter from federal banking regulator",
           "Alert: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
-          "Alert: China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services"
+          "Alert: China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+          "Being checked: Coinbase, Kalshi and Payward backs CFTC in lawsuit over single-stock perp futures (reliable source: The Block)"
         ]
       },
       "Gold": {
@@ -7502,7 +7697,8 @@
       "reasons": [
         "Alert: Coinbase gets full U.S. trust charter from federal banking regulator",
         "Alert: \ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
-        "Alert: China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services"
+        "Alert: China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+        "Alert: Coinbase, Kalshi and Payward backs CFTC in lawsuit over single-stock perp futures"
       ]
     },
     "Gold": {
