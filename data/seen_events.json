@@ -1146,8 +1146,8 @@
           "time": "2026-11-09T11:06:46+00:00",
           "verdict": "flat"
         },
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 0 of 1 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "wrong",
+        "effect_reason": "predicted down, but 0 of 1 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "now": {
           "move": 0.13,
           "time": "2026-11-10T09:44:20+00:00",
@@ -1155,7 +1155,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
           "wrong": 1,
           "total": 9
@@ -1181,6 +1181,12 @@
           "move": 1.06,
           "time": "2026-11-09T20:06:46+00:00",
           "verdict": "wrong"
+        },
+        "d1": {
+          "price": 74314.69,
+          "move": 0.13,
+          "time": "2026-11-10T10:06:46+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -1254,7 +1260,8 @@
         "time": "2026-11-09T11:27:28.307598+00:00"
       },
       "telegram": {
-        "sent_state": "alerted"
+        "sent_state": "alerted",
+        "result_sent": "2026-11-10T10:20:57.802561+00:00"
       }
     },
     {
@@ -1985,7 +1992,7 @@
     "BTC-20261110": 1
   },
   "last_run": {
-    "run_time": "2026-11-10T10:15:51.468613+00:00",
+    "run_time": "2026-11-10T10:20:57.802561+00:00",
     "test_mode": false,
     "stories": 26,
     "off_topic": 16,
