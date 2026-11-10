@@ -7164,20 +7164,28 @@
       "proof": "news",
       "proof_reason": "reliable source: The Block",
       "first_seen": "2026-11-10T10:41:00.999961+00:00",
-      "earliest_report": "2026-11-10T10:36:00+00:00",
-      "last_updated": "2026-11-10T10:41:00.999961+00:00",
+      "earliest_report": "2026-11-10T03:35:00+00:00",
+      "last_updated": "2026-11-10T21:15:51.031970+00:00",
       "words": [
         "ark",
         "bitcoin",
+        "blackrock",
         "block",
         "bullish",
         "buy",
+        "chart",
+        "daily",
         "etf",
+        "fidelity",
+        "flow",
         "holding",
         "invest",
+        "net",
         "nvidia",
         "own",
         "sofi",
+        "spot",
+        "total",
         "trims",
         "while"
       ],
@@ -7194,6 +7202,17 @@
           "found_at": "2026-11-10T10:41:00.999961+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Spot Bitcoin ETF Total Net Flow Daily Chart: BlackRock, Fidelity and More",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5PcjFZWW9nVF9mSUZHa0gxZWVXczZQOFRkVk9xY3gxaldvVThuRVpSd3VYR1ZQNmJUSjlvVVFEMGl5OEswVUQ2WHlYN1ZnQ0VYQ3ppQ3pldHdWV1RJakU0TWt3NFhBRy1jd2M2MEhBb2tMMlk?oc=5",
+          "published": "2026-11-10T03:35:00+00:00",
+          "found_at": "2026-11-10T21:15:51.031970+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -7204,6 +7223,10 @@
         {
           "time": "2026-11-10T10:41:00.999961+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)"
+        },
+        {
+          "time": "2026-11-10T21:15:51.031970+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": null,
@@ -7215,7 +7238,7 @@
         "now": {
           "move": -0.37,
           "time": "2026-11-10T21:09:40+00:00",
-          "hours": 10.6,
+          "hours": 17.6,
           "verdict": "flat"
         },
         "checks": {
@@ -7229,12 +7252,12 @@
         "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (3 of 9 checks done)",
         "impact": {
           "peak": -1.83,
-          "peak_hours": 6.4,
+          "peak_hours": 13.4,
           "faded_hours": null,
-          "against": 0.19,
-          "against_hours": 1.4,
-          "until_hours": 10.6,
-          "text": "Clear impact: Bitcoin fell up to 1.8% (after 6 h). Still in the predicted direction after 11 h (-0.4%)."
+          "against": 0.78,
+          "against_hours": 4.4,
+          "until_hours": 17.6,
+          "text": "Clear impact: Bitcoin fell up to 1.8% (after 13 h). Still in the predicted direction after 18 h (-0.4%)."
         },
         "h1": {
           "price": 74243.43,
@@ -8252,14 +8275,14 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-10T21:10:53.990856+00:00",
+    "run_time": "2026-11-10T21:15:51.031970+00:00",
     "test_mode": false,
-    "stories": 27,
-    "off_topic": 17,
+    "stories": 31,
+    "off_topic": 20,
     "repeats": 10,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
