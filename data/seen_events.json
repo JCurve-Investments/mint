@@ -295,7 +295,7 @@
           "verdict": "right"
         },
         "effect": "right",
-        "effect_reason": "predicted up: 8 of 8 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted up: 9 of 9 clear price checks went the predicted way",
         "h5": {
           "price": 3931.36,
           "move": 0.54,
@@ -332,19 +332,13 @@
           "time": "2026-11-08T11:57:00+00:00",
           "verdict": "right"
         },
-        "now": {
-          "move": 3.86,
-          "time": "2026-11-10T11:30:10+00:00",
-          "hours": 167.6,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 8,
+          "done": 9,
+          "right": 9,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "impact": {
           "peak": 5.61,
           "peak_hours": 41.0,
@@ -353,6 +347,12 @@
           "against_hours": 0.1,
           "until_hours": 167.6,
           "text": "Clear impact: Gold rose up to 5.6% (after 41 h). Still in the predicted direction after 7.0 days (+3.9%)."
+        },
+        "d7": {
+          "price": 4060.96,
+          "move": 3.86,
+          "time": "2026-11-10T11:57:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -381,7 +381,8 @@
       },
       "telegram": {
         "sent_state": "summary",
-        "result_sent": "2026-11-09T10:36:10.420140+00:00"
+        "result_sent": "2026-11-09T10:36:10.420140+00:00",
+        "final_sent": "2026-11-10T12:10:57.531566+00:00"
       }
     },
     {
@@ -484,7 +485,13 @@
           "hours": 119.5,
           "verdict": "none"
         },
-        "impact": null
+        "impact": null,
+        "d5": {
+          "price": 4060.96,
+          "move": -1.51,
+          "time": "2026-11-10T12:00:00+00:00",
+          "verdict": "none"
+        }
       },
       "prediction": {
         "direction": "unclear",
@@ -2123,15 +2130,15 @@
           "time": "2026-11-08T12:00:00+00:00",
           "verdict": "none"
         },
-        "now": {
-          "move": 3.86,
-          "time": "2026-11-10T11:30:10+00:00",
-          "hours": 167.5,
-          "verdict": "none"
-        },
         "effect": "no_prediction",
         "effect_reason": "no prediction was made for this event",
-        "impact": null
+        "impact": null,
+        "d7": {
+          "price": 4060.96,
+          "move": 3.86,
+          "time": "2026-11-10T12:00:00+00:00",
+          "verdict": "none"
+        }
       },
       "prediction": {
         "direction": "unclear",
@@ -2261,15 +2268,15 @@
           "time": "2026-11-08T12:00:00+00:00",
           "verdict": "none"
         },
-        "now": {
-          "move": 3.86,
-          "time": "2026-11-10T11:30:10+00:00",
-          "hours": 167.5,
-          "verdict": "none"
-        },
         "effect": "no_prediction",
         "effect_reason": "no prediction was made for this event",
-        "impact": null
+        "impact": null,
+        "d7": {
+          "price": 4060.96,
+          "move": 3.86,
+          "time": "2026-11-10T12:00:00+00:00",
+          "verdict": "none"
+        }
       },
       "prediction": {
         "direction": "unclear",
@@ -4033,7 +4040,13 @@
         },
         "effect": "no_prediction",
         "effect_reason": "no prediction was made for this event",
-        "impact": null
+        "impact": null,
+        "d5": {
+          "price": 4060.96,
+          "move": -1.51,
+          "time": "2026-11-10T12:00:00+00:00",
+          "verdict": "none"
+        }
       },
       "prediction": {
         "direction": "unclear",
@@ -4163,7 +4176,13 @@
         },
         "effect": "no_prediction",
         "effect_reason": "no prediction was made for this event",
-        "impact": null
+        "impact": null,
+        "d5": {
+          "price": 4060.96,
+          "move": -1.51,
+          "time": "2026-11-10T12:00:00+00:00",
+          "verdict": "none"
+        }
       },
       "prediction": {
         "direction": "unclear",
@@ -7653,11 +7672,11 @@
     "GOLD-20261110": 2
   },
   "last_run": {
-    "run_time": "2026-11-10T12:05:39.109709+00:00",
+    "run_time": "2026-11-10T12:10:57.531566+00:00",
     "test_mode": false,
-    "stories": 30,
+    "stories": 29,
     "off_topic": 14,
-    "repeats": 16,
+    "repeats": 15,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
