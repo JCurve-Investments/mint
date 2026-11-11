@@ -3095,21 +3095,15 @@
           "time": "2026-11-09T05:04:15+00:00",
           "verdict": "right"
         },
-        "now": {
-          "move": 2.06,
-          "time": "2026-11-11T05:00:20+00:00",
-          "hours": 167.9,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 8,
+          "done": 9,
+          "right": 9,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
-        "effect_reason": "predicted up: 8 of 8 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted up: 9 of 9 clear price checks went the predicted way",
         "impact": {
           "peak": 4.39,
           "peak_hours": 23.9,
@@ -3118,6 +3112,12 @@
           "against_hours": 0.9,
           "until_hours": 167.9,
           "text": "Clear impact: Gold rose up to 4.4% (after 24 h). Still in the predicted direction after 7.0 days (+2.1%)."
+        },
+        "d7": {
+          "price": 4037.61,
+          "move": 2.06,
+          "time": "2026-11-11T05:04:15+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -3157,7 +3157,8 @@
       "telegram": {
         "first_sent_at": "2026-11-10T10:41:35.395646+00:00",
         "sent_state": "summary",
-        "result_sent": "2026-11-10T10:41:00.999961+00:00"
+        "result_sent": "2026-11-10T10:41:00.999961+00:00",
+        "final_sent": "2026-11-11T05:15:47.104171+00:00"
       }
     },
     {
@@ -8475,10 +8476,10 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-11T05:10:52.570796+00:00",
+    "run_time": "2026-11-11T05:15:47.104171+00:00",
     "test_mode": false,
-    "stories": 27,
-    "off_topic": 16,
+    "stories": 28,
+    "off_topic": 17,
     "repeats": 11,
     "new_events": 0,
     "joined": 0,
