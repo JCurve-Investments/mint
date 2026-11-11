@@ -10307,6 +10307,183 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-11T17:21:10.260164+00:00"
       }
+    },
+    {
+      "id": "BTC-20261111-03",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-11T21:01:30.072067+00:00",
+      "earliest_report": "2026-11-11T21:00:19+00:00",
+      "last_updated": "2026-11-11T21:01:30.072067+00:00",
+      "words": [
+        "78.6m",
+        "arkham",
+        "bitget",
+        "btc",
+        "coinjoin",
+        "hack",
+        "moved",
+        "rout",
+        "says",
+        "through",
+        "worth"
+      ],
+      "amounts": [
+        78.6
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
+          "link": "https://t.me/whale_alert_io/104806",
+          "published": "2026-11-11T21:00:19+00:00",
+          "found_at": "2026-11-11T21:01:30.072067+00:00",
+          "summary": "Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T21:01:30.072067+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-11T21:01:30.072067+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-11T21:01:30.072067+00:00",
+          "note": "confirmed -> alerted: New hack event with significant BTC loss, likely to affect price."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-11",
+        "date_evidence": "First report published 2026-11-11 21:00",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "hacks usually cause price falls",
+        "alert_title": "Bitget hack moves 1,052 BTC",
+        "alert_message": "A hacker moved over 1,000 BTC from Bitget, routing most through CoinJoin. This shows a major breach and could hurt confidence in Bitcoin.",
+        "why_it_matters": [
+          "Large amount stolen",
+          "May trigger sell pressure"
+        ],
+        "reason": "New hack event with significant BTC loss, likely to affect price.",
+        "time": "2026-11-11T21:01:30.072067+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nBitget hack moves 1,052 BTC\n\nA hacker moved over 1,000 BTC from Bitget, routing most through CoinJoin. This shows a major breach and could hurt confidence in Bitcoin.\n\nMINT's prediction: Bitcoin UP - Similar hacks of exchanges have mostly led to small price moves, with four out of five recent cases seeing Bitcoin rise 0.1\u20111.9% the next day, while only a large\u2011scale Bybit hack caused a 2.2% drop.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 11 Nov 21:01 UTC",
+        "telegram_sent_at": "2026-11-11T21:01:30.072067+00:00"
+      },
+      "outcome": {
+        "start_price": 74637.91,
+        "start_time": "2026-11-11T20:56:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-11T20:56:00+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "Similar hacks of exchanges have mostly led to small price moves, with four out of five recent cases seeing Bitcoin rise 0.1\u20111.9% the next day, while only a large\u2011scale Bybit hack caused a 2.2% drop.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "source": "starter library (check the date)",
+            "score": 0.88
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "source": "starter library (check the date)",
+            "score": 0.68
+          },
+          {
+            "id": "BTC-20261110-06",
+            "date": "2026-11-10",
+            "title": "JUST IN: Crypto wallet company Ledger CEO says \"everybody will be hacked at some point.\" @WatcherGuru",
+            "d1": 1.23,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "BTC-20261110-07",
+            "date": "2026-11-10",
+            "title": "Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
+            "d1": 1.95,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.59
+          },
+          {
+            "id": "BTC-20261109-02",
+            "date": "2026-11-09",
+            "title": "\ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
+            "d1": 0.13,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.55
+          }
+        ],
+        "votes": {
+          "up": 2.66,
+          "down": 2.73
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A hacker stole about 1,052\u202fBTC (~$78\u202fM) from the Bitget exchange and moved most of it through CoinJoin, raising concerns about security.",
+        "what_past_events_show": "Similar hacks of exchanges have mostly led to small price moves, with four out of five recent cases seeing Bitcoin rise 0.1\u20111.9% the next day, while only a large\u2011scale Bybit hack caused a 2.2% drop.",
+        "direction": "up",
+        "why": [
+          "The stolen amount is modest compared to the whole market, so panic is limited.",
+          "Past comparable hacks have usually resulted in a slight price rise rather than a crash."
+        ],
+        "watch_next": "If Bitget confirms users will be reimbursed or the stolen coins are quickly recovered, the impact will shrink; further large\u2011scale transfers to exchanges could push the price down.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-11T21:01:30.072067+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-11T21:01:43.677596+00:00"
+      }
     }
   ],
   "counter": {
@@ -10321,32 +10498,33 @@
     "GOLD-20261107": 1,
     "GOLD-20261110": 6,
     "GOLD-20261111": 3,
-    "BTC-20261111": 2
+    "BTC-20261111": 3
   },
   "last_run": {
-    "run_time": "2026-11-11T20:57:50.941942+00:00",
+    "run_time": "2026-11-11T21:01:30.072067+00:00",
     "test_mode": false,
-    "stories": 13,
+    "stories": 14,
     "off_topic": 7,
     "repeats": 6,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
-          "Alert: Binance hack reveals crypto's uphill battle against hackers"
+          "Alert: Binance hack reveals crypto's uphill battle against hackers",
+          "Being checked: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin (approved social media account: Whale Alert (Telegram) (from social media))"
         ]
       },
       "Gold": {
@@ -10369,7 +10547,8 @@
       "state": "Alert",
       "reasons": [
         "Alert: Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
-        "Alert: Binance hack reveals crypto's uphill battle against hackers"
+        "Alert: Binance hack reveals crypto's uphill battle against hackers",
+        "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin"
       ]
     },
     "Gold": {
