@@ -9826,6 +9826,191 @@
         "first_sent_at": "2026-11-11T12:25:52.429645+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261111-02",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "Binance hack reveals crypto's uphill battle against hackers",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Reuters",
+      "first_seen": "2026-11-11T15:20:55.761368+00:00",
+      "earliest_report": "2026-11-11T12:03:44+00:00",
+      "last_updated": "2026-11-11T15:20:55.761368+00:00",
+      "words": [
+        "against",
+        "battle",
+        "binance",
+        "crypto",
+        "hack",
+        "reveal",
+        "uphill"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Binance hack reveals crypto's uphill battle against hackers",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPalZrZE4zekRsSWZIS2FZNkZ4SG5JcGRDdlptSlNnNGJvR1luV1I5cHFtcEN0RFB5VkpSMjZRSXlOcU5oekFVbDNXSXBhSWYzMzRQcTUwTmF0Sm1LUTA5RjdUSHJPMXhTQ0h4RElvaFpXeGloaUNzQVJVQWZqaGNsanpOSWMzQVpNQ1hLOVBTcHFWZXZCWHpvbzBULTlJaU9uM2dxTjlDLVNpWkplUDlHYQ?oc=5",
+          "published": "2026-11-11T12:03:44+00:00",
+          "found_at": "2026-11-11T15:20:55.761368+00:00",
+          "summary": "",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T15:20:55.761368+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-11T15:20:55.761368+00:00",
+          "note": "new -> confirmed: reliable source: Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-11T15:20:55.761368+00:00",
+          "note": "confirmed -> alerted: The hack is a fresh, significant event that can affect Bitcoin, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-11",
+        "date_evidence": "The Reuters article reporting the Binance hack was published on 2026-11-11.",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Hacks of major exchanges have historically pushed Bitcoin lower.",
+        "alert_title": "Binance hack shakes crypto market",
+        "alert_message": "A hack at Binance was reported, showing exchange vulnerability. This could pressure Bitcoin\u2019s price lower as confidence wanes.",
+        "why_it_matters": [
+          "Exchange security concerns",
+          "Potential loss of investor confidence"
+        ],
+        "reason": "The hack is a fresh, significant event that can affect Bitcoin, so an alert is warranted.",
+        "time": "2026-11-11T15:20:55.761368+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nBinance hack shakes crypto market\n\nA hack at Binance was reported, showing exchange vulnerability. This could pressure Bitcoin\u2019s price lower as confidence wanes.\n\nMINT's prediction: Bitcoin DOWN - Similar hacks have produced mixed results \u2013 Binance\u2019s own 2019 hack saw a 1.4% rise, Bybit\u2019s 2025 breach led to a 2.2% drop, and smaller exploits caused tiny moves up or down.\n\nBitcoin had already moved -0.3% since the first report.\nSources: Reuters\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 11 Nov 15:20 UTC",
+        "telegram_sent_at": "2026-11-11T15:20:55.761368+00:00"
+      },
+      "outcome": {
+        "start_price": 73948.66,
+        "start_time": "2026-11-11T12:00:00+00:00",
+        "moved_before_mint": -0.34,
+        "delay_hours": 3.3,
+        "h1": {
+          "price": 73826.13,
+          "move": -0.17,
+          "time": "2026-11-11T13:03:44+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.34,
+          "time": "2026-11-11T14:39:10+00:00",
+          "hours": 2.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "impact": {
+          "peak": -0.34,
+          "peak_hours": 2.6,
+          "faded_hours": null,
+          "against": -0.17,
+          "against_hours": 0.9,
+          "until_hours": 2.6,
+          "text": "Small impact: Bitcoin fell up to 0.3% (after 3 h). Still in the predicted direction after 3 h (-0.3%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar hacks have produced mixed results \u2013 Binance\u2019s own 2019 hack saw a 1.4% rise, Bybit\u2019s 2025 breach led to a 2.2% drop, and smaller exploits caused tiny moves up or down.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "source": "starter library (check the date)",
+            "score": 1.32
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "source": "starter library (check the date)",
+            "score": 0.75
+          },
+          {
+            "id": "BTC-20261109-02",
+            "date": "2026-11-09",
+            "title": "\ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
+            "d1": 0.13,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.61
+          },
+          {
+            "id": "BTC-20261110-04",
+            "date": "2026-11-10",
+            "title": "Initia halts its layer-1 blockchain after compromised rollup keys enable a $615K exploit",
+            "d1": -0.4,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.61
+          },
+          {
+            "id": "START-20220613-B",
+            "date": "2022-06-13",
+            "title": "Crypto lender Celsius freezes customer withdrawals",
+            "d1": -15.97,
+            "d7": -23.03,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 1.93,
+          "down": 3.82
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A hack at Binance was reported, raising concerns that users might lose funds and trust in the platform could be shaken.",
+        "what_past_events_show": "Similar hacks have produced mixed results \u2013 Binance\u2019s own 2019 hack saw a 1.4% rise, Bybit\u2019s 2025 breach led to a 2.2% drop, and smaller exploits caused tiny moves up or down.",
+        "direction": "down",
+        "why": [
+          "A breach at a major exchange usually scares investors and can trigger selling.",
+          "When the outcome for users\u2019 funds is unclear, the market tends to react negatively."
+        ],
+        "watch_next": "If Binance quickly assures that user funds are safe or promises compensation, the price impact could be muted; confirmation of large losses would likely push it lower.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-11T15:20:55.761368+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-11T15:21:08.660714+00:00"
+      }
     }
   ],
   "counter": {
@@ -9840,31 +10025,32 @@
     "GOLD-20261107": 1,
     "GOLD-20261110": 6,
     "GOLD-20261111": 2,
-    "BTC-20261111": 1
+    "BTC-20261111": 2
   },
   "last_run": {
-    "run_time": "2026-11-11T15:15:52.953746+00:00",
+    "run_time": "2026-11-11T15:20:55.761368+00:00",
     "test_mode": false,
-    "stories": 18,
+    "stories": 19,
     "off_topic": 10,
     "repeats": 8,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
-          "Alert: Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell"
+          "Alert: Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
+          "Being checked: Binance hack reveals crypto's uphill battle against hackers (reliable source: Reuters)"
         ]
       },
       "Gold": {
@@ -9885,7 +10071,8 @@
     "Bitcoin": {
       "state": "Alert",
       "reasons": [
-        "Alert: Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell"
+        "Alert: Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
+        "Alert: Binance hack reveals crypto's uphill battle against hackers"
       ]
     },
     "Gold": {
