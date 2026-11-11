@@ -9609,6 +9609,116 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-11T10:46:23.365730+00:00"
       }
+    },
+    {
+      "id": "BTC-20261111-01",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-11T12:25:41.982821+00:00",
+      "earliest_report": "2026-11-11T12:19:30+00:00",
+      "last_updated": "2026-11-11T12:25:41.982821+00:00",
+      "words": [
+        "barely",
+        "bitcoin",
+        "cpi",
+        "etf",
+        "flinch",
+        "hot",
+        "sell",
+        "slows"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT3Y0dHcyWEVqRUhxUFdzUlVuWGlwb1ZyaWVEcTlPYUxBVFk2UUJvcEY5RlJuQ1BSRVVBWGdHeWY3RUk2cmlkZ1RaQTlnekVpRlJJOHVUTnlvX3ZDTFVxbTRMZDZESE9HOUEyZ0JmdEVUeEpXaWdZVkpZQlJPU3VwUHN4RTgxTlN5NEp2RTBzMzJlT2Uza3NOOXpzYXZfSHhSWnhhUg?oc=5",
+          "published": "2026-11-11T12:19:30+00:00",
+          "found_at": "2026-11-11T12:25:41.982821+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T12:25:41.982821+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-11T12:25:41.982821+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 73939.11,
+        "start_time": "2026-11-11T11:59:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-11T11:59:50+00:00",
+          "hours": -0.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "The only similar case (Nov\u202f9\u202f2026) saw Bitcoin drop about 0.6% the next day.",
+        "similar": [
+          {
+            "id": "BTC-20261109-04",
+            "date": "2026-11-09",
+            "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+            "d1": -0.62,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 1.95
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin stayed almost unchanged despite a hot CPI report, while ETF selling slowed down.",
+        "what_past_events_show": "The only similar case (Nov\u202f9\u202f2026) saw Bitcoin drop about 0.6% the next day.",
+        "direction": "down",
+        "why": [
+          "ETF outflows were easing, which historically can precede a small price dip",
+          "Past example with the same pattern led to a modest decline"
+        ],
+        "watch_next": "If ETF inflows turn strongly positive or negative for several days, the price move could become larger.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-11T12:25:41.982821+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-11T12:25:52.429645+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -9622,20 +9732,21 @@
     "GOLD-20261106": 8,
     "GOLD-20261107": 1,
     "GOLD-20261110": 6,
-    "GOLD-20261111": 2
+    "GOLD-20261111": 2,
+    "BTC-20261111": 1
   },
   "last_run": {
-    "run_time": "2026-11-11T12:20:51.329673+00:00",
+    "run_time": "2026-11-11T12:25:41.982821+00:00",
     "test_mode": false,
-    "stories": 15,
+    "stories": 16,
     "off_topic": 10,
     "repeats": 5,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
