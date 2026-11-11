@@ -7252,14 +7252,14 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 1,
-          "wrong": 2,
+          "wrong": 3,
           "total": 9
         },
         "final": false,
         "effect": "wrong",
-        "effect_reason": "predicted up, but 1 of 3 clear price checks went the predicted way (so far: 4 of 9 checks done)",
+        "effect_reason": "predicted up, but 1 of 4 clear price checks went the predicted way (so far: 5 of 9 checks done)",
         "impact": {
           "peak": 0.3,
           "peak_hours": 1.7,
@@ -7279,6 +7279,12 @@
           "price": 4039.42,
           "move": -1.38,
           "time": "2026-11-11T04:20:00+00:00",
+          "verdict": "wrong"
+        },
+        "h36": {
+          "price": 3996.71,
+          "move": -2.42,
+          "time": "2026-11-11T16:20:00+00:00",
           "verdict": "wrong"
         }
       },
@@ -9857,16 +9863,22 @@
       "proof": "news",
       "proof_reason": "reliable source: Reuters",
       "first_seen": "2026-11-11T15:20:55.761368+00:00",
-      "earliest_report": "2026-11-11T12:03:44+00:00",
-      "last_updated": "2026-11-11T15:20:55.761368+00:00",
+      "earliest_report": "2026-11-11T11:24:21+00:00",
+      "last_updated": "2026-11-11T16:31:12.773202+00:00",
       "words": [
+        "action",
         "against",
         "battle",
         "binance",
         "crypto",
+        "forc",
+        "greek",
         "hack",
+        "pay",
         "reveal",
-        "uphill"
+        "uphill",
+        "users",
+        "weekly"
       ],
       "amounts": [],
       "old_clues": [],
@@ -9879,6 +9891,17 @@
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPalZrZE4zekRsSWZIS2FZNkZ4SG5JcGRDdlptSlNnNGJvR1luV1I5cHFtcEN0RFB5VkpSMjZRSXlOcU5oekFVbDNXSXBhSWYzMzRQcTUwTmF0Sm1LUTA5RjdUSHJPMXhTQ0h4RElvaFpXeGloaUNzQVJVQWZqaGNsanpOSWMzQVpNQ1hLOVBTcHFWZXZCWHpvbzBULTlJaU9uM2dxTjlDLVNpWkplUDlHYQ?oc=5",
           "published": "2026-11-11T12:03:44+00:00",
           "found_at": "2026-11-11T15:20:55.761368+00:00",
+          "summary": "",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Crypto Weekly: Binance hack forces action, Greek crypto users to pay up",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5TWExOdk9jbkR1amI1QlBKejVIU1psVmRndnZTMGJyaFVHVVpVdF9VdWI5VTA0blV0MU9JU1dHdDRZVnRUVUhyQVZHZ3Z4U2RoeXR3cEs2d19aR2ItNHhIcTFxMFk5R3M?oc=5",
+          "published": "2026-11-11T11:24:21+00:00",
+          "found_at": "2026-11-11T16:31:12.773202+00:00",
           "summary": "",
           "factor": "B2"
         }
@@ -9895,6 +9918,10 @@
         {
           "time": "2026-11-11T15:20:55.761368+00:00",
           "note": "confirmed -> alerted: The hack is a fresh, significant event that can affect Bitcoin, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-11T16:31:12.773202+00:00",
+          "note": "another report from Reuters - same event, no new alert"
         }
       ],
       "decision": {
@@ -9934,7 +9961,7 @@
         "now": {
           "move": 0.37,
           "time": "2026-11-11T16:24:20+00:00",
-          "hours": 4.3,
+          "hours": 5.0,
           "verdict": "flat"
         },
         "checks": {
@@ -9948,12 +9975,12 @@
         "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
         "impact": {
           "peak": -0.61,
-          "peak_hours": 2.9,
-          "faded_hours": 4.3,
+          "peak_hours": 3.6,
+          "faded_hours": 5.0,
           "against": 0.37,
-          "against_hours": 4.3,
-          "until_hours": 4.3,
-          "text": "Clear impact: Bitcoin fell up to 0.6% (after 3 h). The effect lasted about 4 h, then faded."
+          "against_hours": 5.0,
+          "until_hours": 5.0,
+          "text": "Clear impact: Bitcoin fell up to 0.6% (after 4 h). The effect lasted about 5 h, then faded."
         }
       },
       "prediction": {
@@ -10047,14 +10074,14 @@
     "BTC-20261111": 2
   },
   "last_run": {
-    "run_time": "2026-11-11T16:25:40.159353+00:00",
+    "run_time": "2026-11-11T16:31:12.773202+00:00",
     "test_mode": false,
-    "stories": 19,
-    "off_topic": 10,
+    "stories": 23,
+    "off_topic": 13,
     "repeats": 9,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
