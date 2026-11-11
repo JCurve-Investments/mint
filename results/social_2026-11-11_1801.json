@@ -1,6 +1,6 @@
 {
   "scout": "social",
-  "run_time": "2026-11-11T17:10:52.283344+00:00",
+  "run_time": "2026-11-11T18:01:27.418914+00:00",
   "test_mode": false,
   "news": [
     {
@@ -16,7 +16,7 @@
           "asset": "Gold",
           "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve projected to raise interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
           "published": "2026-11-10T18:09:19+00:00",
-          "age_hours": 23.0
+          "age_hours": 23.9
         },
         {
           "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Bank of America warns Federal Reserve could raise interest rates by 50 basis points in December after CPI came in higher than expected. @WatcherGuru",
@@ -27,7 +27,7 @@
           "asset": "Gold",
           "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Bank of America warns Federal Reserve could raise interest rates by 50 basis points in December after CPI came in higher than expected. @WatcherGuru",
           "published": "2026-11-11T12:33:42+00:00",
-          "age_hours": 4.6
+          "age_hours": 5.5
         }
       ],
       "rejected": [],
@@ -46,7 +46,26 @@
           "asset": "Bitcoin",
           "summary": "JUST IN: Crypto wallet company Ledger CEO says \"everybody will be hacked at some point.\" @WatcherGuru",
           "published": "2026-11-10T20:11:36+00:00",
-          "age_hours": 21.0
+          "age_hours": 21.8
+        }
+      ],
+      "rejected": [],
+      "error": null
+    },
+    {
+      "id": "G1",
+      "name": "social media",
+      "kept": [
+        {
+          "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/15954",
+          "source_site": "WatcherGuru",
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "asset": "Gold",
+          "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+          "published": "2026-11-11T17:19:51+00:00",
+          "age_hours": 0.7
         }
       ],
       "rejected": [],
@@ -86,8 +105,8 @@
     },
     {
       "name": "Watcher.Guru (Telegram)",
-      "read": 13,
-      "kept": 3,
+      "read": 14,
+      "kept": 4,
       "error": null
     }
   ]
