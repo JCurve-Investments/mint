@@ -5930,11 +5930,14 @@
       "proof_reason": "reliable source: CNBC, Kitco News, Reuters",
       "first_seen": "2026-11-10T10:41:00.999961+00:00",
       "earliest_report": "2026-11-09T03:01:00+00:00",
-      "last_updated": "2026-11-10T10:41:00.999961+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
       "words": [
+        "cpi",
         "crude",
         "data",
+        "day",
         "ease",
+        "expect",
         "fears",
         "focus",
         "gains",
@@ -6003,6 +6006,17 @@
           "found_at": "2026-11-10T10:41:00.999961+00:00",
           "summary": "",
           "factor": "G3"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold prices down 2% on the day as US CPI rises more than expected",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOV9mS1BKa1d2YmFyNkpBcmVzdzQwbF82bFh5RjRZSVcyeDZ0V1QyQ0xiSUY4SW9pQUZfbkpaWW1wbkVfb3pWcEY5bzFiX29VenI1X2hiQk02V00zSElkS015bDVxWkNJX3dFbjlMNWJVdVNMeGNzSWFlRFdlYzVqQ2Z0MHcybG1CUExJR3dOLVQ1Vm44ZExPWFBlYw?oc=5",
+          "published": "2026-11-10T13:30:46+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G3"
         }
       ],
       "history": [
@@ -6029,6 +6043,10 @@
         {
           "time": "2026-11-10T10:41:00.999961+00:00",
           "note": "new -> context: Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: CNBC, Kitco News, Reuters)"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": null,
@@ -7895,27 +7913,44 @@
       "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
       "first_seen": "2026-11-10T14:10:56.799019+00:00",
       "earliest_report": "2026-11-10T14:05:26+00:00",
-      "last_updated": "2026-11-10T18:10:53.621156+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
       "words": [
         "basis",
+        "core",
         "could",
+        "cpi",
+        "december",
+        "fed",
         "federal",
         "fomc",
+        "gold",
         "goldman",
         "high",
         "hike",
+        "hotter",
         "inflation",
         "interest",
         "just",
+        "kitco",
+        "larger",
         "lead",
+        "lifts",
         "meet",
         "next",
+        "odds",
+        "plunge",
         "point",
         "project",
+        "prospect",
+        "rais",
         "raise",
         "rate",
+        "report",
         "reserve",
+        "retreat",
         "sachs",
+        "silver",
+        "u.s",
         "warns",
         "watcherguru",
         "year"
@@ -7944,6 +7979,28 @@
           "found_at": "2026-11-10T18:10:53.621156+00:00",
           "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve projected to raise interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
           "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold, silver retreat as high core CPI lifts December Fed hike odds- Kitco AM Report",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVFVQeklvWERhQ2FQMVNKaDhvRVN2dHNKQ1Bib0piZkZxMS1WaWhRVm1wRmpFUTJ6aXJxVXlHUHFfU2VPRW1VZ0RaZk1rZzh0Z2E5empNTVB4X3czTDBIcXVnOV9jVGJScHlQNGRscEZXazlwY1ZNVWVNWkhYMlAzWFEtRjNobEJUSWlJa0JrUmVXY3FpdGlPLWpobTdTY0poQjlSVkhFcl9YZWZyd0ZOb3lsWm9LdDJu?oc=5",
+          "published": "2026-11-10T14:20:24+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold, silver plunge as hotter U.S. inflation raises prospect of larger Fed rate hike - Kitco PM Report",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWjFnYTZXd19NRGpCTENYaVNGRFJjYkkyOWM3ZVZycC1NeV9MTVBvVDBsVE10UGhvZFlzRWg1UkJXTDduSVZ2S25QOXBtTGdyZzB3d1VQc3lUc000d2hQUnU2SFBVbG1vU0pTeW5oTlFEdVJRODBKanAwbWpOeC0xOS1UTEhYUzh3WVRYajY4aU1OTlNmSFpkM3VyZEMxcnBqQXVyU2VNMFdOR3R6RXNITEdPbkJpcWZkNy1Bcjln?oc=5",
+          "published": "2026-11-10T22:10:04+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -7962,6 +8019,14 @@
         {
           "time": "2026-11-10T18:10:53.621156+00:00",
           "note": "another report from Watcher.Guru (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -8506,6 +8571,1001 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-10T22:55:48.548569+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261106-08",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "Goldman Sachs Global Income Bond Opportunities Active UCITS ETF Overview (GIBO)",
+      "state": "summary",
+      "state_reason": "first reported 119 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (reliable source: Barron's)",
+      "proof": "news",
+      "proof_reason": "reliable source: Barron's",
+      "first_seen": "2026-11-11T10:45:50.419421+00:00",
+      "earliest_report": "2026-11-06T11:43:32+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
+      "words": [
+        "active",
+        "bond",
+        "etf",
+        "gibo",
+        "global",
+        "goldman",
+        "income",
+        "opportuniti",
+        "overview",
+        "sachs",
+        "ucits"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Barron's",
+          "kind": "news",
+          "site": "barrons.com",
+          "title": "Goldman Sachs Global Income Bond Opportunities Active UCITS ETF Overview (GIBO)",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9JVUY1RF95TnNuQkNxUklUWGVxVXQydkZ1VGw0MERrUWNLLUxfVDVMWTZfd3hTUW1zN0o5Y1Z1YkkzVlR2SnR6UlBsSEhlMWkzVDV3NzJHVk4yNnNEd0tqdmJWQ1FONHZIMkhkTlF3?oc=5",
+          "published": "2026-11-06T11:43:32+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new event, first report by Barron's"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new -> summary: first reported 119 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (reliable source: Barron's)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 4052.34,
+        "start_time": "2026-11-06T12:00:00+00:00",
+        "moved_before_mint": -0.3,
+        "delay_hours": 119.0,
+        "h1": {
+          "price": 4050.93,
+          "move": -0.03,
+          "time": "2026-11-06T12:43:32+00:00",
+          "verdict": "none"
+        },
+        "h5": {
+          "price": 4053.9,
+          "move": 0.04,
+          "time": "2026-11-06T16:43:32+00:00",
+          "verdict": "none"
+        },
+        "h10": {
+          "price": 4054.99,
+          "move": 0.07,
+          "time": "2026-11-06T21:43:32+00:00",
+          "verdict": "none"
+        },
+        "d1": {
+          "price": 4061.45,
+          "move": 0.22,
+          "time": "2026-11-07T11:43:32+00:00",
+          "verdict": "none"
+        },
+        "h36": {
+          "price": 4059.98,
+          "move": 0.19,
+          "time": "2026-11-07T23:43:32+00:00",
+          "verdict": "none"
+        },
+        "d2": {
+          "price": 4054.56,
+          "move": 0.05,
+          "time": "2026-11-08T11:43:32+00:00",
+          "verdict": "none"
+        },
+        "h84": {
+          "price": 4120.53,
+          "move": 1.68,
+          "time": "2026-11-09T23:43:32+00:00",
+          "verdict": "none"
+        },
+        "now": {
+          "move": -0.3,
+          "time": "2026-11-11T10:14:50+00:00",
+          "hours": 118.5,
+          "verdict": "none"
+        },
+        "effect": "no_prediction",
+        "effect_reason": "no prediction was made for this event",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "unclear",
+        "by": "factor pattern",
+        "reason": "The headline does not say if money is flowing in or out, and there are no similar past events in the library yet",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Barron's reported an overview of the Goldman Sachs Global Income Bond Opportunities Active UCITS ETF, which could signal investor interest in gold\u2011linked funds.",
+        "what_past_events_show": "There are no comparable past events with known 1\u2011day price moves to reference.",
+        "direction": "down",
+        "why": [
+          "The article does not indicate new inflows, so no immediate buying pressure.",
+          "Gold ETF news often follows price moves rather than leads them."
+        ],
+        "watch_next": "If actual fund flow numbers are released showing strong inflows, the impact could swing upward; large outflows would reinforce a down move.",
+        "confidence": "low",
+        "confidence_reason": "no clear evidence",
+        "time": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-11T10:46:16.711806+00:00",
+        "sent_state": "summary"
+      }
+    },
+    {
+      "id": "GOLD-20261110-04",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CNBC, Reuters",
+      "first_seen": "2026-11-11T10:45:50.419421+00:00",
+      "earliest_report": "2026-11-10T03:31:00+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
+      "words": [
+        "cpi",
+        "dollar",
+        "fall",
+        "forecast",
+        "gold",
+        "lift",
+        "nearly",
+        "tops",
+        "yield"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUUt5d0NsOEFXZzVGWU5qOFFwbGtuT0pyM3RMcTR3ZDRXYzFqV1NkM1VadUV0VzdNUFpZREVYLU1mdWFpSDE5V0w3Qlo5X1luTXVXRkZKNHQ1bXY1X0VCNHRienZVbnhQdE93UWFYRk41T0Fhd2tiQ2dpZzF2WEZmM0hVTFpjMVFzR2JhNlpWN0R5ZkFCY0JkRUVuYw?oc=5",
+          "published": "2026-11-10T03:31:00+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G1"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Gold falls as CPI tops forecasts, lifting dollar and yields",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZGItVzRMT1dpY19zRm5oSlJwTXRwQTZpMFNYaUJEVFZfbmZmUjVfZWluWEZRVUt5Q0ZDa21tcHJObUdCLXNkTmVRajh6SDRkYS1Zc24zZ3pWNFFEdGZBM0Y0MHV5TWZPcnZhZkYxdVpuYTQ0amp4aUZtR052SHRlVjZoampxbDgwYlZabkxtTDl4dk1z?oc=5",
+          "published": "2026-11-10T05:46:59+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "another report from CNBC (headlines share key words (100% match))"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new -> confirmed: reliable source: CNBC, Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "confirmed -> alerted: The CPI surprise is a fresh macro event that moved gold, so we alert."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-10",
+        "date_evidence": "Reports dated 2026-11-10 describe the CPI release and gold drop",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of further drop",
+        "expected_direction": "down",
+        "direction_reason": "Higher CPI lifted the dollar, which historically pushes gold lower",
+        "alert_title": "CPI data pushes gold down",
+        "alert_message": "US CPI topped forecasts, lifting the dollar and yields; gold fell nearly 3%, already down 1.4% before we saw it.",
+        "why_it_matters": [
+          "Dollar strength hurts gold",
+          "Higher yields reduce gold appeal"
+        ],
+        "reason": "The CPI surprise is a fresh macro event that moved gold, so we alert.",
+        "time": "2026-11-11T10:45:50.419421+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nCPI data pushes gold down\n\nUS CPI topped forecasts, lifting the dollar and yields; gold fell nearly 3%, already down 1.4% before we saw it.\n\nMINT's prediction: Gold DOWN - 3 similar past event(s): gold rose after 0 and fell after 3 (average 1-day move -2.1%)\n\nGold had already moved -1.4% since the first report.\nSources: CNBC, Reuters\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 11 Nov 10:45 UTC",
+        "telegram_sent_at": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "outcome": {
+        "start_price": 4095.8,
+        "start_time": "2026-11-10T04:00:00+00:00",
+        "moved_before_mint": -1.36,
+        "delay_hours": 31.2,
+        "h1": {
+          "price": 4101.44,
+          "move": 0.14,
+          "time": "2026-11-10T04:31:00+00:00",
+          "verdict": "wrong"
+        },
+        "h5": {
+          "price": 4101.5,
+          "move": 0.14,
+          "time": "2026-11-10T08:31:00+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 4039.99,
+          "move": -1.36,
+          "time": "2026-11-10T13:31:00+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 4037.11,
+          "move": -1.43,
+          "time": "2026-11-11T03:31:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -1.36,
+          "time": "2026-11-11T10:14:50+00:00",
+          "hours": 30.7,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 4,
+          "right": 2,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "right",
+        "effect_reason": "predicted down: 2 of 3 clear price checks went the predicted way (so far: 4 of 9 checks done)",
+        "impact": {
+          "peak": -2.08,
+          "peak_hours": 14.5,
+          "faded_hours": null,
+          "against": 0.3,
+          "against_hours": 2.5,
+          "until_hours": 30.7,
+          "text": "Clear impact: Gold fell up to 2.1% (after 14 h). Still in the predicted direction after 31 h (-1.4%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "past events",
+        "reason": "3 similar past event(s): gold rose after 0 and fell after 3 (average 1-day move -2.1%)",
+        "similar": [
+          {
+            "id": "START-20250403-G",
+            "date": "2025-04-03",
+            "title": "Dollar slides after sweeping US tariff announcement",
+            "d1": -1.41,
+            "d7": 0.36,
+            "source": "starter library (check the date)",
+            "score": 0.65
+          },
+          {
+            "id": "GOLD-20261105-02",
+            "date": "2026-11-05",
+            "title": "Gold at more than two-week high as dollar, yields weaken; U.S. payrolls data awaited",
+            "d1": -2.23,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.53
+          },
+          {
+            "id": "START-20241106-G",
+            "date": "2024-11-06",
+            "title": "Dollar jumps after US election result",
+            "d1": -2.67,
+            "d7": -5.94,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 1.68
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold dropped almost 3% after US CPI came in hotter than expected, which pushed the dollar and Treasury yields higher.",
+        "what_past_events_show": "In similar cases when the dollar jumped, gold fell about 1\u20113% the next day (e.g., -2.7% after the 2024 election, -2.2% after a weak dollar rally).",
+        "direction": "down",
+        "why": [
+          "A stronger dollar makes gold more expensive for non\u2011dollar buyers, cutting demand.",
+          "Higher yields give investors a better return than non\u2011yielding gold."
+        ],
+        "watch_next": "If later data shows inflation easing or the dollar starts to fall, the downside pressure on gold could ease.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 3 similar past events moved this way",
+        "time": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-11T10:46:17.386649+00:00",
+        "result_sent": "2026-11-11T10:45:50.419421+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261110-05",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold reserve repatriations don\u2019t mean central banks are de-dollarizing \u2013 Fed\u2019s Weiss",
+      "state": "rejected",
+      "state_reason": "Decision agent: The article is new but only talks about gold reserve moves, not about Fed rate decisions that affect gold price, and price change was minimal.",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-11T10:45:50.419421+00:00",
+      "earliest_report": "2026-11-10T16:05:46+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
+      "words": [
+        "banks",
+        "central",
+        "de-dollariz",
+        "don",
+        "fed",
+        "gold",
+        "mean",
+        "repatriation",
+        "reserve",
+        "weiss"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold reserve repatriations don\u2019t mean central banks are de-dollarizing \u2013 Fed\u2019s Weiss",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1dmX2w5RWs0ZHd3cEtEVmFDZ1VKOXNVdmJFb0QtV2hKX282RmMxTldrNlVoam5XUmJBR0NxWHNCeXVtUHhMR2l4S0N0bWhFZnJ4bl9aWUpGbTBIR1FzWXlBb3BQc0ZUUnhRejVDTTJJejdVcGxYY2J5ZEFwSGdpTU9Ub3RrT3RYTU41NjZ4QmlmOVZ1SFJaVG1BMHNwXy1jYzZZVWVQdHplME1ZaGdGV29wM1kwSjUtSHlFMg?oc=5",
+          "published": "2026-11-10T16:05:46+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "confirmed -> rejected: The article is new but only talks about gold reserve moves, not about Fed rate decisions that affect gold price, and price change was minimal."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-10",
+        "date_evidence": "Article published 2026-11-10 UTC",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "no clear effect",
+        "expected_direction": "unclear",
+        "direction_reason": "article does not mention a rate change",
+        "alert_title": "",
+        "alert_message": "",
+        "why_it_matters": [],
+        "reason": "The article is new but only talks about gold reserve moves, not about Fed rate decisions that affect gold price, and price change was minimal.",
+        "time": "2026-11-11T10:45:50.419421+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 4030.85,
+        "start_time": "2026-11-10T16:00:00+00:00",
+        "moved_before_mint": 0.23,
+        "delay_hours": 18.7,
+        "h1": {
+          "price": 4012.55,
+          "move": -0.45,
+          "time": "2026-11-10T17:05:46+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 4022.92,
+          "move": -0.2,
+          "time": "2026-11-10T21:05:46+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 4036.46,
+          "move": 0.14,
+          "time": "2026-11-11T02:05:46+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": 0.23,
+          "time": "2026-11-11T10:14:50+00:00",
+          "hours": 18.2,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 3,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (3 of 9 checks done)",
+        "impact": {
+          "peak": 0.45,
+          "peak_hours": 14.9,
+          "faded_hours": null,
+          "against": -0.5,
+          "against_hours": 1.9,
+          "until_hours": 18.2,
+          "text": "Clear impact: Gold rose up to 0.4% (after 15 h). Still in the predicted direction after 18 h (+0.2%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "The only similar past event (central banks buying gold) saw gold rise 0.8% the next day, but that event involved a supply\u2011demand signal, not a Fed statement.",
+        "similar": [
+          {
+            "id": "START-20240131-G",
+            "date": "2024-01-31",
+            "title": "Central banks bought over 1,000 tonnes of gold in 2023",
+            "d1": 0.83,
+            "d7": 0.99,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 0.5,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Fed official Weiss said that central banks moving gold back home doesn\u2019t mean they are abandoning the dollar, a comment that adds little new information about interest rates.",
+        "what_past_events_show": "The only similar past event (central banks buying gold) saw gold rise 0.8% the next day, but that event involved a supply\u2011demand signal, not a Fed statement.",
+        "direction": "down",
+        "why": [
+          "Fed comments were expected and gave no surprise, so gold usually stays flat or drifts lower.",
+          "Higher\u2011or\u2011steady rates make gold less attractive, and no dovish signal was given."
+        ],
+        "watch_next": "If the Fed later surprises the market with a rate cut or a clear dovish shift, gold could move higher.",
+        "confidence": "low",
+        "confidence_reason": "only 0 of 1 similar past events moved this way",
+        "time": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-11T10:46:18.496533+00:00",
+        "sent_state": "rejected"
+      }
+    },
+    {
+      "id": "GOLD-20261110-06",
+      "asset": "Gold",
+      "factor": "G4",
+      "factor_name": "Central bank buying",
+      "title": "China buys gold for two straight years as central bank demand remains a key pillar of support",
+      "state": "context",
+      "state_reason": "Central bank buying is a moderate factor - shown for context, never an alert (reliable source: Kitco News, Reuters)",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News, Reuters",
+      "first_seen": "2026-11-11T10:45:50.419421+00:00",
+      "earliest_report": "2026-11-10T16:50:34+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
+      "words": [
+        "bank",
+        "buy",
+        "central",
+        "china",
+        "demand",
+        "drop",
+        "gains",
+        "gold",
+        "hawkish",
+        "key",
+        "pillar",
+        "remain",
+        "signal",
+        "steep",
+        "straight",
+        "support",
+        "two",
+        "weigh",
+        "years"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "China buys gold for two straight years as central bank demand remains a key pillar of support",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcnMwUHdaakNobncwZG8wWE41M290UThlMmQxQV84UkRuNThLMDdwcU9JWWVKTVUtN0hiWS1nNDNqYUVocXdYZVdjSlpUN0FjamdpRGtFSmNIbk9ITGl3Q0Q4LTJ0WC1BTW03cDBIaTY5MldITlJDVVlsdVZQZkpqelJfSnpSeF9MWGRnOTZXWndsdmFIVjc5bEVNZ28zWThaaXI4VVVuVWxGbmtVOUZfZ24tdmlZX1RUbTA0?oc=5",
+          "published": "2026-11-10T16:50:34+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G4"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Gold gains after steep drop, but hawkish central bank signals weigh",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUkZNV2RySHI5TXJ4YTBhNlNpTllnVXUyRk9CNzBrLXBLWFc3OTlOM0Y1MUVDcGRhS1pQU1oxR3hveVE5VWRfVGF1aTR4Z0lhcWJjbGV4Ym93cDdqb09JQlpFdC10cW9FUkVBX0NPVFFyOTdxSV81Z0RWUEx4UkdITjNwUnRHUmdDbmg5a0F5QmZXRzdjWGZzeXJsdUNUbDRKM3NvU0VGVGQ?oc=5",
+          "published": "2026-11-11T03:39:00+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "another report from Reuters (same factor, same day and shared key words)"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new -> context: Central bank buying is a moderate factor - shown for context, never an alert (reliable source: Kitco News, Reuters)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 4012.55,
+        "start_time": "2026-11-10T17:00:00+00:00",
+        "moved_before_mint": 0.69,
+        "delay_hours": 17.9,
+        "h1": {
+          "price": 4010.64,
+          "move": -0.05,
+          "time": "2026-11-10T17:50:34+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 4022.21,
+          "move": 0.24,
+          "time": "2026-11-10T21:50:34+00:00",
+          "verdict": "wrong"
+        },
+        "h10": {
+          "price": 4034.02,
+          "move": 0.54,
+          "time": "2026-11-11T02:50:34+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 0.69,
+          "time": "2026-11-11T10:14:50+00:00",
+          "hours": 17.4,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 3,
+          "right": 0,
+          "wrong": 2,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 0 of 2 clear price checks went the predicted way (3 of 9 checks done)",
+        "impact": {
+          "peak": 0.91,
+          "peak_hours": 14.2,
+          "faded_hours": null,
+          "against": -0.05,
+          "against_hours": 1.2,
+          "until_hours": 17.4,
+          "text": "Clear impact: Gold rose up to 0.9% (after 14 h). Still in the predicted direction after 17 h (+0.7%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar news about China\u2019s buying streak and other central\u2011bank buying gave mixed 1\u2011day moves, with two cases showing small drops (\u20110.2% and \u20111.6%) and three showing modest gains (+0.3% to +3.2%).",
+        "similar": [
+          {
+            "id": "GOLD-20261109-06",
+            "date": "2026-11-09",
+            "title": "Gold SWOT: Central bank gold buying remains strong in 2026",
+            "d1": -1.59,
+            "d7": null,
+            "source": "MINT",
+            "score": 1.13
+          },
+          {
+            "id": "START-20240131-G",
+            "date": "2024-01-31",
+            "title": "Central banks bought over 1,000 tonnes of gold in 2023",
+            "d1": 0.83,
+            "d7": 0.99,
+            "source": "starter library (check the date)",
+            "score": 0.95
+          },
+          {
+            "id": "START-20230131-G",
+            "date": "2023-01-31",
+            "title": "Central banks bought a record 1,136 tonnes of gold in 2022",
+            "d1": 0.34,
+            "d7": -1.98,
+            "source": "starter library (check the date)",
+            "score": 0.88
+          },
+          {
+            "id": "GOLD-20261107-01",
+            "date": "2026-11-07",
+            "title": "China Extends Gold-Buying Streak to Two Years as Prices Drop",
+            "d1": -0.2,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.83
+          },
+          {
+            "id": "GOLD-20261103-03",
+            "date": "2026-11-03",
+            "title": "Central Banks Accelerated Gold Buying in Third Quarter",
+            "d1": 3.25,
+            "d7": 3.86,
+            "source": "MINT",
+            "score": 0.82
+          }
+        ],
+        "votes": {
+          "up": 4.85,
+          "down": 1.96
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "China\u2019s central bank said it will keep buying gold for a second year, a move that adds steady demand but is usually a slow\u2011moving factor.",
+        "what_past_events_show": "Similar news about China\u2019s buying streak and other central\u2011bank buying gave mixed 1\u2011day moves, with two cases showing small drops (\u20110.2% and \u20111.6%) and three showing modest gains (+0.3% to +3.2%).",
+        "direction": "down",
+        "why": [
+          "Past China\u2011specific streak news led to slight price drops.",
+          "Central\u2011bank buying is a background factor and rarely moves gold much in one day."
+        ],
+        "watch_next": "If a large, unexpected buying volume figure is released or if the price already moves sharply, the impact could become bigger.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-11T10:46:19.052294+00:00",
+        "sent_state": "context"
+      }
+    },
+    {
+      "id": "GOLD-20261111-01",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "India gold ETF, equity fund inflows ease in October",
+      "state": "context",
+      "state_reason": "ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: Reuters)",
+      "proof": "news",
+      "proof_reason": "reliable source: Reuters",
+      "first_seen": "2026-11-11T10:45:50.419421+00:00",
+      "earliest_report": "2026-11-11T06:52:00+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
+      "words": [
+        "ease",
+        "equity",
+        "etf",
+        "fund",
+        "gold",
+        "india",
+        "inflows",
+        "october"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "India gold ETF, equity fund inflows ease in October",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTmwyLUwwUWl2S283cFhlNElveXhTeVhxR0p4TjhQZkxGelZneXUyaVBoRDVZMEJ5OV9hcXhfdXVfVzhrcE52Z29BR3lPSlNHYTNTZVBIVHVoOEFhNzQyVE9iYjlDME9sMEdaVkxrV2h4enVRV2stUlBKNnJPd3lrRlZfZzFlXzVRelpMWWNtb3JtR3NDcW4tSXQ4bTh2cXdQYkxrMjA5V08yOU5MQU9kcHVGS3R0T2wyaE5Kcw?oc=5",
+          "published": "2026-11-11T06:52:00+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new -> context: ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: Reuters)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 4048.95,
+        "start_time": "2026-11-11T07:00:00+00:00",
+        "moved_before_mint": -0.21,
+        "delay_hours": 3.9,
+        "h1": {
+          "price": 4045.68,
+          "move": -0.08,
+          "time": "2026-11-11T07:52:00+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.21,
+          "time": "2026-11-11T10:14:50+00:00",
+          "hours": 3.4,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "impact": {
+          "peak": 0.0,
+          "peak_hours": 0.1,
+          "faded_hours": 1.1,
+          "against": -0.29,
+          "against_hours": 3.1,
+          "until_hours": 3.4,
+          "text": "Never moved the predicted way. It fell up to 0.3% (after 3 h)."
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "When similar Indian demand reports came out, gold rose the next day (+3.2% and +0.7%).",
+        "similar": [
+          {
+            "id": "GOLD-20261103-08",
+            "date": "2026-11-03",
+            "title": "Gold Demand Trends: India Focus Q3 2026",
+            "d1": 3.25,
+            "d7": 3.86,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "GOLD-20261106-03",
+            "date": "2026-11-06",
+            "title": "India's gold demand picks up as Diwali coincides with price dip",
+            "d1": 0.67,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 2.5,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "India's gold ETF and equity fund inflows slowed a bit in October, which could signal a slight cooling of demand.",
+        "what_past_events_show": "When similar Indian demand reports came out, gold rose the next day (+3.2% and +0.7%).",
+        "direction": "up",
+        "why": [
+          "Recent comparable Indian demand news lifted gold price the following day",
+          "Even easing, the flows still show ongoing interest, which tends to support gold"
+        ],
+        "watch_next": "A bigger change in fund flows or a major price move before Diwali could make the impact larger or smaller.",
+        "confidence": "medium",
+        "confidence_reason": "2 of 2 similar past events moved this way",
+        "time": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-11T10:46:22.787132+00:00",
+        "sent_state": "context"
+      }
+    },
+    {
+      "id": "GOLD-20261111-02",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-11T10:45:50.419421+00:00",
+      "earliest_report": "2026-11-11T07:17:00+00:00",
+      "last_updated": "2026-11-11T10:45:50.419421+00:00",
+      "words": [
+        "fed",
+        "gold",
+        "holds",
+        "hot",
+        "inflation",
+        "loss",
+        "near",
+        "remark"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2tORWxkdHRBenRxSW9hSW4wekZsa3Y5VTA0d3A3NTNzTVhMazhTWnNEWlJvMlMzUFIyenNRVl8xWWJaOTdMN2NQVmNsWjhRYUJKWmplRU8zbGthZGQ0R0NlRzFSWmZObzBRSnVNSHFGM3owd2JpTmZHVEkyaEVIS2dLclc3cGZkWXBUSlFoRnpCUTRKdTFrNzNCb2xwUVJic0RoaGgwZzF0ZktCMWc?oc=5",
+          "published": "2026-11-11T07:17:00+00:00",
+          "found_at": "2026-11-11T10:45:50.419421+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-11T10:45:50.419421+00:00",
+          "note": "confirmed -> alerted: Rules mode: enough proof and no sign of an older event."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-11",
+        "date_evidence": "no date clue in the headlines, so the first report date is used",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "the price may move",
+        "alert_title": "Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
+        "alert_message": "Bloomberg reports: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks. In the past, events like this (interest rates and fed decisions) have often been followed by: rates up, gold down.",
+        "why_it_matters": [
+          "Past pattern for this factor: Rates up, gold down."
+        ],
+        "reason": "Rules mode: enough proof and no sign of an older event.",
+        "time": "2026-11-11T10:45:50.419421+00:00",
+        "mode": "rules (AI failed)",
+        "model": null,
+        "telegram_message": "MINT alert \u00b7 Gold\nGold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks\n\nBloomberg reports: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks. In the past, events like this (interest rates and fed decisions) have often been followed by: rates up, gold down.\n\nMINT's prediction: Gold DOWN - In similar situations, gold fell about 1.6\u20111.7% the next day (two out of three cases), with only a tiny 0.2% rise when politics, not rates, drove the move.\n\nGold had already moved -0.2% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 11 Nov 10:45 UTC",
+        "telegram_sent_at": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "outcome": {
+        "start_price": 4048.95,
+        "start_time": "2026-11-11T07:00:00+00:00",
+        "moved_before_mint": -0.21,
+        "delay_hours": 3.5,
+        "h1": {
+          "price": 4045.68,
+          "move": -0.08,
+          "time": "2026-11-11T08:17:00+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.21,
+          "time": "2026-11-11T10:14:50+00:00",
+          "hours": 3.0,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "impact": {
+          "peak": -0.29,
+          "peak_hours": 2.7,
+          "faded_hours": null,
+          "against": -0.08,
+          "against_hours": 0.7,
+          "until_hours": 3.0,
+          "text": "Clear impact: Gold fell up to 0.3% (after 3 h). Still in the predicted direction after 3 h (-0.2%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar situations, gold fell about 1.6\u20111.7% the next day (two out of three cases), with only a tiny 0.2% rise when politics, not rates, drove the move.",
+        "similar": [
+          {
+            "id": "GOLD-20261105-05",
+            "date": "2026-11-05",
+            "title": "Gold market holding solid gains even as BoE raises interest rates due to rising inflation",
+            "d1": -1.72,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.45
+          },
+          {
+            "id": "GOLD-20261106-07",
+            "date": "2026-11-06",
+            "title": "Democrats' midterm sweep gives gold a boost, but the Federal Reserve still holds the cards",
+            "d1": 0.17,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.45
+          },
+          {
+            "id": "GOLD-20261109-07",
+            "date": "2026-11-09",
+            "title": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
+            "d1": -1.65,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.45,
+          "down": 0.9
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold stayed near a loss around $4,000 as US inflation stayed hot and the Fed gave hawkish remarks, which can hurt gold.",
+        "what_past_events_show": "In similar situations, gold fell about 1.6\u20111.7% the next day (two out of three cases), with only a tiny 0.2% rise when politics, not rates, drove the move.",
+        "direction": "down",
+        "why": [
+          "Higher or expected\u2011higher rates make gold less attractive.",
+          "Past comparable events mostly led to a 1\u2011day drop of around 1.6\u20111.7%."
+        ],
+        "watch_next": "If the Fed later surprises with a rate cut or softer inflation data, the downside could be lessened.",
+        "confidence": "medium",
+        "confidence_reason": "2 of 3 similar past events moved this way",
+        "time": "2026-11-11T10:45:50.419421+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-11T10:46:23.365730+00:00"
+      }
     }
   ],
   "counter": {
@@ -8516,28 +9576,29 @@
     "BTC-20261109": 6,
     "BTC-20261110": 7,
     "GOLD-20261104": 6,
-    "GOLD-20261106": 7,
+    "GOLD-20261106": 8,
     "GOLD-20261107": 1,
-    "GOLD-20261110": 3
+    "GOLD-20261110": 6,
+    "GOLD-20261111": 2
   },
   "last_run": {
-    "run_time": "2026-11-11T10:40:51.640818+00:00",
+    "run_time": "2026-11-11T10:45:50.419421+00:00",
     "test_mode": false,
-    "stories": 21,
-    "off_topic": 13,
-    "repeats": 8,
-    "new_events": 0,
-    "joined": 0,
-    "updates_ignored": 0,
+    "stories": 138,
+    "off_topic": 60,
+    "repeats": 67,
+    "new_events": 6,
+    "joined": 2,
+    "updates_ignored": 3,
     "changes": {
-      "confirmed": 0,
-      "context": 0,
-      "summary": 0,
+      "confirmed": 3,
+      "context": 2,
+      "summary": 1,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 3,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -8553,7 +9614,10 @@
           "Alert: Weekly Markets Monitor - Surprise, surprise",
           "Alert: Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report",
           "Alert: Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
-          "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru"
+          "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
+          "Being checked: Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields (reliable source: CNBC, Reuters)",
+          "Being checked: Gold reserve repatriations don\u2019t mean central banks are de-dollarizing \u2013 Fed\u2019s Weiss (reliable source: Kitco News)",
+          "Being checked: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks (reliable source: Bloomberg)"
         ]
       }
     }
@@ -8573,7 +9637,9 @@
         "Alert: Weekly Markets Monitor - Surprise, surprise",
         "Alert: Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report",
         "Alert: Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
-        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru"
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
+        "Alert: Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
+        "Alert: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks"
       ]
     }
   },
