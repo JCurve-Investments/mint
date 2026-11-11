@@ -1867,8 +1867,8 @@
           "hours": 47.9,
           "verdict": "right"
         },
-        "effect": "no_clear_move",
-        "effect_reason": "predicted down: 2 of 4 clear price checks went the predicted way (so far: 5 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted down: 3 of 5 clear price checks went the predicted way (so far: 6 of 9 checks done)",
         "impact": {
           "peak": -2.69,
           "peak_hours": 47.9,
@@ -1879,8 +1879,8 @@
           "text": "Clear impact: Gold fell up to 2.7% (after 48 h). Still in the predicted direction after 48 h (-2.7%)."
         },
         "checks": {
-          "done": 5,
-          "right": 2,
+          "done": 6,
+          "right": 3,
           "wrong": 2,
           "total": 9
         },
@@ -1913,6 +1913,12 @@
           "price": 4043.77,
           "move": -1.15,
           "time": "2026-11-11T07:07:00+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3980.67,
+          "move": -2.69,
+          "time": "2026-11-11T19:07:00+00:00",
           "verdict": "right"
         }
       },
@@ -10299,7 +10305,7 @@
     "BTC-20261111": 2
   },
   "last_run": {
-    "run_time": "2026-11-11T19:15:58.007461+00:00",
+    "run_time": "2026-11-11T19:20:54.708998+00:00",
     "test_mode": false,
     "stories": 15,
     "off_topic": 8,
