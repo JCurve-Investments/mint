@@ -8603,14 +8603,14 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 0 of 3 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "wrong",
+        "effect_reason": "predicted down, but 0 of 4 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": 0.51,
           "peak_hours": 0.9,
@@ -8624,6 +8624,12 @@
           "price": 73743.56,
           "move": 1.24,
           "time": "2026-11-11T03:07:45+00:00",
+          "verdict": "wrong"
+        },
+        "d1": {
+          "price": 74262.8,
+          "move": 1.95,
+          "time": "2026-11-11T17:07:45+00:00",
           "verdict": "wrong"
         }
       },
@@ -8699,7 +8705,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-10T22:55:48.548569+00:00"
+        "first_sent_at": "2026-11-10T22:55:48.548569+00:00",
+        "result_sent": "2026-11-11T17:20:54.856703+00:00"
       }
     },
     {
@@ -10076,6 +10083,167 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-11T15:21:08.660714+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261111-03",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-11T17:20:54.856703+00:00",
+      "earliest_report": "2026-11-11T17:19:51+00:00",
+      "last_updated": "2026-11-11T17:20:54.856703+00:00",
+      "words": [
+        "billion",
+        "dollar",
+        "donald",
+        "expect",
+        "hundred",
+        "just",
+        "oil",
+        "president",
+        "says",
+        "soon",
+        "tak",
+        "trump",
+        "venezuela",
+        "watcherguru",
+        "worth"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/15954",
+          "published": "2026-11-11T17:19:51+00:00",
+          "found_at": "2026-11-11T17:20:54.856703+00:00",
+          "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-11T17:20:54.856703+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-11T17:20:54.856703+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-11T17:20:54.856703+00:00",
+          "note": "confirmed -> alerted: The statement is a fresh political development that could lift the dollar, which historically drags gold down, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-11",
+        "date_evidence": "The source was published on 2026-11-11 17:19 UTC.",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Dollar may rise from oil gains, which historically pushes gold down.",
+        "alert_title": "US oil claim may boost dollar, pressuring gold",
+        "alert_message": "President Trump says the US is taking billions of Venezuelan oil, expecting more. This could strengthen the US dollar, which historically pushes gold prices lower.",
+        "why_it_matters": [
+          "Dollar strength can lower gold prices",
+          "Oil inflow may boost US economic outlook"
+        ],
+        "reason": "The statement is a fresh political development that could lift the dollar, which historically drags gold down, so an alert is warranted.",
+        "time": "2026-11-11T17:20:54.856703+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nUS oil claim may boost dollar, pressuring gold\n\nPresident Trump says the US is taking billions of Venezuelan oil, expecting more. This could strengthen the US dollar, which historically pushes gold prices lower.\n\nMINT's prediction: Gold DOWN - When the dollar jumped (election result) gold fell about 2.7% the next day, but a past case where the dollar slid saw gold also fall 1.4%, so the pattern isn\u2019t perfectly consistent.\n\nGold had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 11 Nov 17:20 UTC",
+        "telegram_sent_at": "2026-11-11T17:20:54.856703+00:00"
+      },
+      "outcome": {
+        "start_price": 3992.57,
+        "start_time": "2026-11-11T17:14:40+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-11T17:14:40+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "When the dollar jumped (election result) gold fell about 2.7% the next day, but a past case where the dollar slid saw gold also fall 1.4%, so the pattern isn\u2019t perfectly consistent.",
+        "similar": [
+          {
+            "id": "START-20241106-G",
+            "date": "2024-11-06",
+            "title": "Dollar jumps after US election result",
+            "d1": -2.67,
+            "d7": -5.94,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261104-06",
+            "date": "2026-11-04",
+            "title": "The dollar decides: What the midterm rally in gold and silver says about the next turn",
+            "d1": 0.46,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.49
+          },
+          {
+            "id": "START-20250403-G",
+            "date": "2025-04-03",
+            "title": "Dollar slides after sweeping US tariff announcement",
+            "d1": -1.41,
+            "d7": 0.36,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.49,
+          "down": 0.95
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "President Trump says the US is taking billions of dollars worth of Venezuelan oil and expects even more, which could boost the US dollar.",
+        "what_past_events_show": "When the dollar jumped (election result) gold fell about 2.7% the next day, but a past case where the dollar slid saw gold also fall 1.4%, so the pattern isn\u2019t perfectly consistent.",
+        "direction": "down",
+        "why": [
+          "The news is likely to strengthen the dollar, making gold more expensive for non\u2011dollar buyers.",
+          "Past events where the dollar rose usually saw gold drop the next day."
+        ],
+        "watch_next": "If the oil move triggers broader market panic or strong geopolitical tension, the dollar\u2011gold link could weaken.",
+        "confidence": "medium",
+        "confidence_reason": "2 of 3 similar past events moved this way",
+        "time": "2026-11-11T17:20:54.856703+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-11T17:21:10.260164+00:00"
+      }
     }
   ],
   "counter": {
@@ -10089,27 +10257,27 @@
     "GOLD-20261106": 8,
     "GOLD-20261107": 1,
     "GOLD-20261110": 6,
-    "GOLD-20261111": 2,
+    "GOLD-20261111": 3,
     "BTC-20261111": 2
   },
   "last_run": {
-    "run_time": "2026-11-11T17:15:52.349132+00:00",
+    "run_time": "2026-11-11T17:20:54.856703+00:00",
     "test_mode": false,
-    "stories": 17,
+    "stories": 18,
     "off_topic": 9,
     "repeats": 8,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -10127,7 +10295,8 @@
           "Alert: Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
           "Alert: Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
-          "Alert: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks"
+          "Alert: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
+          "Being checked: JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru (approved social media account: Watcher.Guru (Telegram) (from social media))"
         ]
       }
     }
@@ -10149,7 +10318,8 @@
         "Alert: Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
         "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
         "Alert: Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
-        "Alert: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks"
+        "Alert: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru"
       ]
     }
   },
