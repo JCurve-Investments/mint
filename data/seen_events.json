@@ -7135,14 +7135,14 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 1,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 1 of 2 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "wrong",
+        "effect_reason": "predicted up, but 1 of 3 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": 0.3,
           "peak_hours": 1.7,
@@ -7156,6 +7156,12 @@
           "price": 4044.71,
           "move": -1.25,
           "time": "2026-11-10T14:20:00+00:00",
+          "verdict": "wrong"
+        },
+        "d1": {
+          "price": 4039.42,
+          "move": -1.38,
+          "time": "2026-11-11T04:20:00+00:00",
           "verdict": "wrong"
         }
       },
@@ -7198,7 +7204,8 @@
         }
       },
       "telegram": {
-        "sent_state": "context"
+        "sent_state": "context",
+        "result_sent": "2026-11-11T04:31:08.368911+00:00"
       },
       "analysis": {
         "by": "AI (Groq)",
@@ -8468,7 +8475,7 @@
     "GOLD-20261110": 3
   },
   "last_run": {
-    "run_time": "2026-11-11T04:25:37.554131+00:00",
+    "run_time": "2026-11-11T04:31:08.368911+00:00",
     "test_mode": false,
     "stories": 28,
     "off_topic": 17,
