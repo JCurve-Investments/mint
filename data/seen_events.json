@@ -7291,7 +7291,7 @@
       "proof_reason": "reliable source: The Block",
       "first_seen": "2026-11-10T10:41:00.999961+00:00",
       "earliest_report": "2026-11-10T03:35:00+00:00",
-      "last_updated": "2026-11-10T21:20:55.550156+00:00",
+      "last_updated": "2026-11-11T11:40:51.056514+00:00",
       "words": [
         "ahead",
         "ark",
@@ -7305,6 +7305,7 @@
         "buy",
         "cashtag",
         "chart",
+        "continue",
         "cpi",
         "crypto",
         "daily",
@@ -7329,7 +7330,9 @@
         "own",
         "picks",
         "price",
+        "rebound",
         "sells",
+        "sits",
         "sofi",
         "some",
         "spot",
@@ -7397,6 +7400,17 @@
           "found_at": "2026-11-10T21:20:55.550156+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin sits out stock rebound as ETF outflows continue: Crypto Markets Today",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVE1LTjN4empxV2lyWVZDMDkxX2xMRlRlS0hvRXhYY01kVlZYaVVGT3psdE9XUTIwUXdPalhwRm5ocDNyWjd3cEhCOUtZdHlzS292U2JHZlA3a2Itd05oenNlQ1JMcEJFSzRUZHFfeERuMktnLW9EM2pFR3dEWVNrenkyZFhBZi15T1RIT3ExU1N2a2d3akpGN3dXeDlMRWNYU3ZWZ3lqNjhrczNRWWU0RQ?oc=5",
+          "published": "2026-11-11T11:37:04+00:00",
+          "found_at": "2026-11-11T11:40:51.056514+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -7415,6 +7429,10 @@
         {
           "time": "2026-11-10T21:20:55.550156+00:00",
           "note": "joined with BTC-20261110-03 (same factor, same day and shared key words) - the same story"
+        },
+        {
+          "time": "2026-11-11T11:40:51.056514+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": null,
@@ -9588,14 +9606,14 @@
     "GOLD-20261111": 2
   },
   "last_run": {
-    "run_time": "2026-11-11T11:35:39.171645+00:00",
+    "run_time": "2026-11-11T11:40:51.056514+00:00",
     "test_mode": false,
-    "stories": 18,
+    "stories": 19,
     "off_topic": 11,
     "repeats": 7,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
