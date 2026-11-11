@@ -7387,7 +7387,7 @@
       "proof_reason": "reliable source: The Block",
       "first_seen": "2026-11-10T10:41:00.999961+00:00",
       "earliest_report": "2026-11-10T03:35:00+00:00",
-      "last_updated": "2026-11-11T11:40:51.056514+00:00",
+      "last_updated": "2026-11-11T22:25:39.429090+00:00",
       "words": [
         "ahead",
         "ark",
@@ -7410,12 +7410,16 @@
         "fall",
         "fidelity",
         "flow",
+        "flows",
         "fomo",
         "hits",
         "holding",
+        "hong",
         "hot",
         "invest",
+        "kong",
         "links",
+        "live",
         "mara",
         "market",
         "mount",
@@ -7507,6 +7511,17 @@
           "found_at": "2026-11-11T11:40:51.056514+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Hong Kong Spot Bitcoin ETF Flows chart and live data",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sMS1jWDhXbEcxbG9wSEVfS010ME9OM1hhQ3oxY2thWGJUbDFJb3FoR0xOOWcxYVYwU2hIekFZXzRxckZpZkRYSWJibmg1UU9RLXhBZW5XNld2UUxabEVvVFNkZjBOcFI5dG1HYzZqX2JjVUlv?oc=5",
+          "published": "2026-11-11T00:26:22+00:00",
+          "found_at": "2026-11-11T22:25:39.429090+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -7529,6 +7544,10 @@
         {
           "time": "2026-11-11T11:40:51.056514+00:00",
           "note": "another report from CoinDesk - same event, no new alert"
+        },
+        {
+          "time": "2026-11-11T22:25:39.429090+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": null,
@@ -10629,14 +10648,14 @@
     "BTC-20261111": 4
   },
   "last_run": {
-    "run_time": "2026-11-11T22:20:54.621457+00:00",
+    "run_time": "2026-11-11T22:25:39.429090+00:00",
     "test_mode": false,
-    "stories": 16,
-    "off_topic": 8,
-    "repeats": 8,
+    "stories": 19,
+    "off_topic": 9,
+    "repeats": 9,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
