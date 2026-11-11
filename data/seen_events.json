@@ -1538,7 +1538,7 @@
         "moved_before_mint": -0.21,
         "delay_hours": 0.8,
         "effect": "no_clear_move",
-        "effect_reason": "predicted up: no clear move in any price check yet (so far: 5 of 9 checks done)",
+        "effect_reason": "predicted up: no clear move in any price check yet (so far: 6 of 9 checks done)",
         "h1": {
           "price": 74500.87,
           "move": -0.21,
@@ -1552,7 +1552,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -1589,6 +1589,12 @@
           "price": 73656.2,
           "move": -1.34,
           "time": "2026-11-11T01:43:00+00:00",
+          "verdict": "flat"
+        },
+        "d2": {
+          "price": 73696.49,
+          "move": -1.29,
+          "time": "2026-11-11T13:43:00+00:00",
           "verdict": "flat"
         }
       },
@@ -9800,7 +9806,7 @@
     "BTC-20261111": 1
   },
   "last_run": {
-    "run_time": "2026-11-11T13:50:54.254342+00:00",
+    "run_time": "2026-11-11T13:55:37.651728+00:00",
     "test_mode": false,
     "stories": 18,
     "off_topic": 11,
