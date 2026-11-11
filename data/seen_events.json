@@ -1351,7 +1351,7 @@
       "proof_reason": "only 1 news organisation so far (CoinDesk) - waiting for a second",
       "first_seen": "2026-11-09T12:45:12.168724+00:00",
       "earliest_report": "2026-11-09T12:30:00+00:00",
-      "last_updated": "2026-11-11T22:31:17.169649+00:00",
+      "last_updated": "2026-11-11T22:35:37.455539+00:00",
       "words": [
         "ahead",
         "ark",
@@ -1360,24 +1360,29 @@
         "blackrock",
         "block",
         "break",
+        "brisk",
         "btc",
         "bullish",
         "bulls",
+        "busines",
         "buy",
         "can't",
         "cashtag",
         "chart",
         "continue",
+        "conversion",
         "cpi",
         "crypto",
         "daily",
         "data",
+        "doing",
         "etf",
         "fall",
         "fidelity",
         "flow",
         "flows",
         "fomo",
+        "here",
         "hits",
         "holding",
         "hong",
@@ -1500,6 +1505,17 @@
           "found_at": "2026-11-11T22:31:17.169649+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "Barron's",
+          "kind": "news",
+          "site": "barrons.com",
+          "title": "BlackRock Is Doing a Brisk Business in Crypto ETF Conversions. Here\u2019s Why.",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbmZOMWNsbjI2LWxMT2MwSWI3S1ZObU1XX2lqVGRST05XNW5RWXY4YzFFd3JXS0RMa3JYSTFkcnBGdUtra2lZVjRULV96YTZMcEwwNFIxczhURGNPQlIzWkQwMjUzSlp1WGw2UW04Tk5iS3FCSTU0MHFiVXM5MTJQVEVaajBTbnhiTmFmcGtOM0dBY2M?oc=5",
+          "published": "2026-11-09T13:43:00+00:00",
+          "found_at": "2026-11-11T22:35:37.455539+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -1514,6 +1530,10 @@
         {
           "time": "2026-11-11T22:31:17.169649+00:00",
           "note": "joined with BTC-20261110-02 (headlines share key words (55% match)) - the same story"
+        },
+        {
+          "time": "2026-11-11T22:35:37.455539+00:00",
+          "note": "joined with BTC-20261109-05 (same factor, same day and shared key words) - the same story"
         }
       ],
       "decision": null,
@@ -1610,150 +1630,6 @@
       "telegram": {
         "sent_state": "context",
         "result_sent": "2026-11-10T12:40:54.896114+00:00"
-      }
-    },
-    {
-      "id": "BTC-20261109-05",
-      "asset": "Bitcoin",
-      "factor": "B4",
-      "factor_name": "ETF flows",
-      "title": "BlackRock Is Doing a Brisk Business in Crypto ETF Conversions. Here\u2019s Why.",
-      "state": "context",
-      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (only 1 news organisation so far (Barron's) - waiting for a second)",
-      "proof": "one_news",
-      "proof_reason": "only 1 news organisation so far (Barron's) - waiting for a second",
-      "first_seen": "2026-11-09T14:33:24.177676+00:00",
-      "earliest_report": "2026-11-09T13:43:00+00:00",
-      "last_updated": "2026-11-09T14:33:24.177676+00:00",
-      "words": [
-        "blackrock",
-        "brisk",
-        "busines",
-        "conversion",
-        "crypto",
-        "doing",
-        "etf",
-        "here"
-      ],
-      "amounts": [],
-      "old_clues": [],
-      "sources": [
-        {
-          "organisation": "Barron's",
-          "kind": "news",
-          "site": "barrons.com",
-          "title": "BlackRock Is Doing a Brisk Business in Crypto ETF Conversions. Here\u2019s Why.",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbmZOMWNsbjI2LWxMT2MwSWI3S1ZObU1XX2lqVGRST05XNW5RWXY4YzFFd3JXS0RMa3JYSTFkcnBGdUtra2lZVjRULV96YTZMcEwwNFIxczhURGNPQlIzWkQwMjUzSlp1WGw2UW04Tk5iS3FCSTU0MHFiVXM5MTJQVEVaajBTbnhiTmFmcGtOM0dBY2M?oc=5",
-          "published": "2026-11-09T13:43:00+00:00",
-          "found_at": "2026-11-09T14:33:24.177676+00:00",
-          "summary": "",
-          "factor": "B4"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-09T14:33:24.177676+00:00",
-          "note": "new event, first report by Barron's"
-        },
-        {
-          "time": "2026-11-09T14:33:24.177676+00:00",
-          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (only 1 news organisation so far (Barron's) - waiting for a second)"
-        }
-      ],
-      "decision": null,
-      "outcome": {
-        "start_price": 74658.6,
-        "start_time": "2026-11-09T14:00:00+00:00",
-        "moved_before_mint": -0.21,
-        "delay_hours": 0.8,
-        "effect": "no_clear_move",
-        "effect_reason": "predicted up: no clear move in any price check yet (so far: 6 of 9 checks done)",
-        "h1": {
-          "price": 74500.87,
-          "move": -0.21,
-          "time": "2026-11-09T14:43:00+00:00",
-          "verdict": "flat"
-        },
-        "now": {
-          "move": -0.32,
-          "time": "2026-11-11T21:49:30+00:00",
-          "hours": 56.1,
-          "verdict": "flat"
-        },
-        "checks": {
-          "done": 6,
-          "right": 0,
-          "wrong": 0,
-          "total": 9
-        },
-        "final": false,
-        "impact": {
-          "peak": 1.08,
-          "peak_hours": 2.3,
-          "faded_hours": 5.3,
-          "against": -2.44,
-          "against_hours": 27.3,
-          "until_hours": 56.1,
-          "text": "Clear impact: Bitcoin rose up to 1.1% (after 2 h). The effect lasted about 5 h, then faded - later it fell up to 2.4% (after 27 h)."
-        },
-        "h5": {
-          "price": 74559.5,
-          "move": -0.13,
-          "time": "2026-11-09T18:43:00+00:00",
-          "verdict": "flat"
-        },
-        "h10": {
-          "price": 75085.31,
-          "move": 0.57,
-          "time": "2026-11-09T23:43:00+00:00",
-          "verdict": "flat"
-        },
-        "d1": {
-          "price": 74358.16,
-          "move": -0.4,
-          "time": "2026-11-10T13:43:00+00:00",
-          "verdict": "flat"
-        },
-        "h36": {
-          "price": 73656.2,
-          "move": -1.34,
-          "time": "2026-11-11T01:43:00+00:00",
-          "verdict": "flat"
-        },
-        "d2": {
-          "price": 73696.49,
-          "move": -1.29,
-          "time": "2026-11-11T13:43:00+00:00",
-          "verdict": "flat"
-        }
-      },
-      "prediction": {
-        "direction": "up",
-        "by": "AI + past events",
-        "reason": "There are no directly comparable past events yet, so we have no concrete price\u2011movement record to rely on.",
-        "similar": [],
-        "votes": {
-          "up": 0,
-          "down": 0
-        }
-      },
-      "analysis": {
-        "by": "AI (Groq)",
-        "summary": "BlackRock is quickly converting assets into Bitcoin ETFs, which could mean more money is flowing into these funds.",
-        "what_past_events_show": "There are no directly comparable past events yet, so we have no concrete price\u2011movement record to rely on.",
-        "direction": "up",
-        "why": [
-          "ETF inflows usually line up with higher Bitcoin prices",
-          "Big\u2011name involvement (BlackRock) tends to boost market confidence"
-        ],
-        "watch_next": "Look for actual ETF flow numbers or a second news source confirming the scale of the conversions.",
-        "confidence": "low",
-        "confidence_reason": "no similar past events yet - based on the factor pattern only",
-        "time": "2026-11-09T14:33:24.177676+00:00"
-      },
-      "telegram": {
-        "sent_state": "context",
-        "result_sent": "2026-11-10T13:55:39.114552+00:00"
       }
     },
     {
@@ -10524,7 +10400,7 @@
     "BTC-20261111": 4
   },
   "last_run": {
-    "run_time": "2026-11-11T22:31:17.169649+00:00",
+    "run_time": "2026-11-11T22:35:37.455539+00:00",
     "test_mode": false,
     "stories": 16,
     "off_topic": 8,
@@ -10636,6 +10512,12 @@
       "title": "Ark Invest trims Block, Bullish and its own bitcoin ETF holdings while buying Nvidia, SoFi",
       "removed_at": "2026-11-11T22:31:17.169649+00:00",
       "reason": "the same story as BTC-20261109-04 (headlines share key words (55% match))"
+    },
+    {
+      "id": "BTC-20261109-05",
+      "title": "BlackRock Is Doing a Brisk Business in Crypto ETF Conversions. Here\u2019s Why.",
+      "removed_at": "2026-11-11T22:35:37.455539+00:00",
+      "reason": "the same story as BTC-20261109-04 (same factor, same day and shared key words)"
     }
   ]
 }
