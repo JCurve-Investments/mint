@@ -4015,21 +4015,15 @@
           "time": "2026-11-10T05:03:03+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -3.93,
-          "time": "2026-11-12T04:44:20+00:00",
-          "hours": 167.7,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 0,
-          "wrong": 7,
+          "wrong": 8,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "wrong",
-        "effect_reason": "predicted up, but 0 of 7 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted up, but 0 of 8 clear price checks went the predicted way",
         "impact": {
           "peak": -0.14,
           "peak_hours": 111.9,
@@ -4038,6 +4032,12 @@
           "against_hours": 167.7,
           "until_hours": 167.7,
           "text": "Never moved the predicted way. It fell up to 3.9% (after 7.0 days)."
+        },
+        "d7": {
+          "price": 3967.35,
+          "move": -3.93,
+          "time": "2026-11-12T05:03:03+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -4076,7 +4076,8 @@
       "telegram": {
         "first_sent_at": "2026-11-10T10:41:42.122775+00:00",
         "sent_state": "summary",
-        "result_sent": "2026-11-10T10:41:00.999961+00:00"
+        "result_sent": "2026-11-10T10:41:00.999961+00:00",
+        "final_sent": "2026-11-12T05:15:51.131947+00:00"
       }
     },
     {
@@ -10501,7 +10502,7 @@
     "BTC-20261111": 4
   },
   "last_run": {
-    "run_time": "2026-11-12T05:10:53.009170+00:00",
+    "run_time": "2026-11-12T05:15:51.131947+00:00",
     "test_mode": false,
     "stories": 22,
     "off_topic": 14,
