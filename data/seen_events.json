@@ -12809,19 +12809,25 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-12T13:50:55.712189+00:00",
       "earliest_report": "2026-11-12T13:47:32+00:00",
-      "last_updated": "2026-11-12T22:15:49.688008+00:00",
+      "last_updated": "2026-11-12T23:15:51.383815+00:00",
       "words": [
+        "2.7",
         "26.9b",
         "analyst",
         "ark",
+        "billion",
+        "binance",
         "bottleneck",
         "crypto",
         "deepfake",
         "department",
+        "detail",
+        "freeze",
         "hack",
         "highlight",
         "industry",
         "justice",
+        "korea",
         "korean",
         "million",
         "north",
@@ -12837,6 +12843,7 @@
       ],
       "amounts": [
         400.0,
+        2700.0,
         26900.0
       ],
       "old_clues": [
@@ -12864,6 +12871,17 @@
           "found_at": "2026-11-12T22:15:49.688008+00:00",
           "summary": "U.S. Justice Department says North Korean hackers stole over $400 million in crypto through AI deepfake video-call scams",
           "factor": "B2"
+        },
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "US Details $2.7 Billion Freeze After North Korea\u2019s Binance Hack",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeW1GTEtDNFJteWJfNTQ3X0hZbFp6X283dU1aWkZ2SnlVNG5EQmdQcHhQeXpPMHJmUkxTMlNYUUNsZXN1aGVjVzhQMzFaUzBKZXlHT1ZYc2V4dlh2Y1VfM1pYSTB5SjhQWnRjZFVvQ01RTHllbGtvVmktWmp5cTBYV2FCUWpUNTVTd3dHM211Q1BpV0RJcEJURXJSbnlOcVQ4U213el9WX1pGODJmUDJORWxHZw?oc=5",
+          "published": "2026-11-12T21:40:07+00:00",
+          "found_at": "2026-11-12T23:15:51.383815+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -12882,6 +12900,10 @@
         {
           "time": "2026-11-12T22:15:49.688008+00:00",
           "note": "another report from Whale Alert (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-12T23:15:51.383815+00:00",
+          "note": "another report from Bloomberg - same event, no new alert"
         }
       ],
       "decision": {
@@ -13565,14 +13587,14 @@
     "GOLD-20261112": 4
   },
   "last_run": {
-    "run_time": "2026-11-12T23:11:04.499921+00:00",
+    "run_time": "2026-11-12T23:15:51.383815+00:00",
     "test_mode": false,
-    "stories": 28,
+    "stories": 29,
     "off_topic": 16,
     "repeats": 12,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
