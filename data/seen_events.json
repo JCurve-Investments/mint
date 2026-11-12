@@ -12756,6 +12756,179 @@
         "first_sent_at": "2026-11-12T13:51:08.893804+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "BTC-20261112-07",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CNBC",
+      "first_seen": "2026-11-12T14:50:59.402699+00:00",
+      "earliest_report": "2026-11-12T13:44:27+00:00",
+      "last_updated": "2026-11-12T14:50:59.402699+00:00",
+      "words": [
+        "armstrong",
+        "binance",
+        "brian",
+        "ceo",
+        "coinbase",
+        "democrat",
+        "hack",
+        "sweep",
+        "talks"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRl8yZHZ5Z0ctVmYzcXZKc3VOcGVTUWtlcmt0TTNNdXJIeHBLMlNQdTRyZ0dpVHRFMlhWWngycG5rVjFMZDZuV1JIbHlfaTNYcDlQRVh0eGNad1A3eTJkUFRFd3VLaW1HVGs5LTd0ODJLbGhJenMxVXVTWWtUUFhMTGlRY3VBMjJsMUJRTlcwREhwSnJJWjJMNjdZV2hmdXcyX0E?oc=5",
+          "published": "2026-11-12T13:44:27+00:00",
+          "found_at": "2026-11-12T14:50:59.402699+00:00",
+          "summary": "",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T14:50:59.402699+00:00",
+          "note": "new event, first report by CNBC"
+        },
+        {
+          "time": "2026-11-12T14:50:59.402699+00:00",
+          "note": "new -> confirmed: reliable source: CNBC - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T14:50:59.402699+00:00",
+          "note": "confirmed -> alerted: The hack is a fresh event reported today and fits a pattern that usually hurts Bitcoin, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-12",
+        "date_evidence": "article published 2026-11-12 13:44 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "exchange hacks have historically pushed Bitcoin lower",
+        "alert_title": "Binance hack raises Bitcoin risk",
+        "alert_message": "A recent Binance hack was highlighted by Coinbase CEO, sparking security worries that could pressure Bitcoin price.",
+        "why_it_matters": [
+          "security concerns for a major exchange",
+          "possible market panic and sell\u2011offs"
+        ],
+        "reason": "The hack is a fresh event reported today and fits a pattern that usually hurts Bitcoin, so an alert is warranted.",
+        "time": "2026-11-12T14:50:59.402699+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nBinance hack raises Bitcoin risk\n\nA recent Binance hack was highlighted by Coinbase CEO, sparking security worries that could pressure Bitcoin price.\n\nMINT's prediction: Bitcoin DOWN - Similar hacks gave mixed 1\u2011day moves: Binance hack in 2019 +1.4%, another Binance hack in 2026 \u20130.8%, Bybit hack \u20132.2%, plus a few small positive bumps, indicating only modest reactions.\n\nBitcoin had already moved +0.0% since the first report.\nSources: CNBC\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 12 Nov 14:50 UTC",
+        "telegram_sent_at": "2026-11-12T14:50:59.402699+00:00"
+      },
+      "outcome": {
+        "start_price": 71886.17,
+        "start_time": "2026-11-12T14:24:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 1.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-12T14:24:20+00:00",
+          "hours": 0.7,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar hacks gave mixed 1\u2011day moves: Binance hack in 2019 +1.4%, another Binance hack in 2026 \u20130.8%, Bybit hack \u20132.2%, plus a few small positive bumps, indicating only modest reactions.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "source": "starter library (check the date)",
+            "score": 1.32
+          },
+          {
+            "id": "BTC-20261111-02",
+            "date": "2026-11-11",
+            "title": "Binance hack reveals crypto's uphill battle against hackers",
+            "d1": -0.76,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.77
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "source": "starter library (check the date)",
+            "score": 0.68
+          },
+          {
+            "id": "BTC-20261110-06",
+            "date": "2026-11-10",
+            "title": "JUST IN: Crypto wallet company Ledger CEO says \"everybody will be hacked at some point.\" @WatcherGuru",
+            "d1": 1.23,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.67
+          },
+          {
+            "id": "BTC-20261110-07",
+            "date": "2026-11-10",
+            "title": "Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
+            "d1": 1.95,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.59
+          }
+        ],
+        "votes": {
+          "up": 3.14,
+          "down": 2.95
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Coinbase CEO Brian Armstrong commented on a recent Binance hack while political news was also highlighted; hacks of big exchanges can shake confidence in Bitcoin.",
+        "what_past_events_show": "Similar hacks gave mixed 1\u2011day moves: Binance hack in 2019 +1.4%, another Binance hack in 2026 \u20130.8%, Bybit hack \u20132.2%, plus a few small positive bumps, indicating only modest reactions.",
+        "direction": "down",
+        "why": [
+          "Large exchange hacks usually hurt trust and can trigger selling",
+          "No clear sign that Binance has fully covered the loss yet"
+        ],
+        "watch_next": "If Binance quickly assures users that all funds are safe, the drop could be limited; new details about unrecovered losses would likely push it lower.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-12T14:50:59.402699+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-12T14:51:12.377054+00:00"
+      }
     }
   ],
   "counter": {
@@ -12771,27 +12944,27 @@
     "GOLD-20261110": 6,
     "GOLD-20261111": 6,
     "BTC-20261111": 4,
-    "BTC-20261112": 6,
+    "BTC-20261112": 7,
     "GOLD-20261112": 3
   },
   "last_run": {
-    "run_time": "2026-11-12T14:45:52.208743+00:00",
+    "run_time": "2026-11-12T14:50:59.402699+00:00",
     "test_mode": false,
-    "stories": 32,
+    "stories": 33,
     "off_topic": 17,
     "repeats": 15,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -12799,7 +12972,8 @@
           "Alert: Binance hack reveals crypto's uphill battle against hackers",
           "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
           "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
-          "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades"
+          "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+          "Being checked: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep (reliable source: CNBC)"
         ]
       },
       "Gold": {
@@ -12828,7 +13002,8 @@
         "Alert: Binance hack reveals crypto's uphill battle against hackers",
         "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
         "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
-        "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades"
+        "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+        "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep"
       ]
     },
     "Gold": {
