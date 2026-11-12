@@ -11945,6 +11945,109 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-12T10:46:20.557510+00:00"
       }
+    },
+    {
+      "id": "BTC-20261112-03",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin ETFs Bleed $1.4B in Five Days as Investors Cut Risk",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: Decrypt)",
+      "proof": "news",
+      "proof_reason": "reliable source: Decrypt",
+      "first_seen": "2026-11-12T11:31:13.786624+00:00",
+      "earliest_report": "2026-11-12T11:24:19+00:00",
+      "last_updated": "2026-11-12T11:31:13.786624+00:00",
+      "words": [
+        "1.4b",
+        "bitcoin",
+        "bleed",
+        "cut",
+        "days",
+        "etfs",
+        "five",
+        "investor",
+        "risk"
+      ],
+      "amounts": [
+        1400.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Bitcoin ETFs Bleed $1.4B in Five Days as Investors Cut Risk",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR1lIU2RTQ0xfanhGTzd5cHRIVXJUc2QwUnduM2dWZ000Ql9EQnl4Vm16UmVva1RsNlJXMmEtbW1PUEZwSTJlc0g0M0JqcW5kQTViczFXblNTRUgtWlg3V21Dd3kwR0ZLZDJZelRHN0JDaVlGTldnZ1doNHd3dU5td2RkREVtWmF6VjRiVQ?oc=5",
+          "published": "2026-11-12T11:24:19+00:00",
+          "found_at": "2026-11-12T11:31:13.786624+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T11:31:13.786624+00:00",
+          "note": "new event, first report by Decrypt"
+        },
+        {
+          "time": "2026-11-12T11:31:13.786624+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: Decrypt)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 73385.7,
+        "start_time": "2026-11-12T10:54:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-12T10:54:00+00:00",
+          "hours": -0.5,
+          "verdict": "flat"
+        },
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null,
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no recorded past events of the same size to compare, so we rely on general patterns.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin ETFs saw about $1.4\u202fbillion leave in five days as investors reduced risk, which could signal less buying pressure for Bitcoin.",
+        "what_past_events_show": "There are no recorded past events of the same size to compare, so we rely on general patterns.",
+        "direction": "down",
+        "why": [
+          "Large, multi\u2011day outflows usually line up with falling prices.",
+          "Sustained selling from ETFs can add to overall market pressure."
+        ],
+        "watch_next": "If the outflows keep growing or turn into a longer trend, the downside could strengthen; a quick reversal of flows would lessen the impact.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-12T11:31:13.786624+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-12T11:31:25.059979+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -11960,21 +12063,21 @@
     "GOLD-20261110": 6,
     "GOLD-20261111": 6,
     "BTC-20261111": 4,
-    "BTC-20261112": 2,
+    "BTC-20261112": 3,
     "GOLD-20261112": 2
   },
   "last_run": {
-    "run_time": "2026-11-12T11:25:37.990692+00:00",
+    "run_time": "2026-11-12T11:31:13.786624+00:00",
     "test_mode": false,
-    "stories": 26,
+    "stories": 27,
     "off_topic": 16,
     "repeats": 10,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
