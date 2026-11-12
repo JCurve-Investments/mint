@@ -12999,6 +12999,179 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-12T14:51:12.377054+00:00"
       }
+    },
+    {
+      "id": "BTC-20261112-08",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-12T16:51:06.266981+00:00",
+      "earliest_report": "2026-11-12T16:45:52+00:00",
+      "last_updated": "2026-11-12T16:51:06.266981+00:00",
+      "words": [
+        "court",
+        "crypto",
+        "enforce",
+        "illinoi",
+        "impossible",
+        "industry",
+        "tax",
+        "tells",
+        "written"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeGxwWFJYeVNkTmRzYmJraUNBVGx3VjZXbFlJWkJHbTB4NC1FNkFsQ2JUX2YwTlY1NWx0VDFUd25FbEgxZUlNekZ6UkFFOUxibUJhazdFRUdOQmR6VEF2OVhSaGZqVVVHaFRWOU1MOWtMMlJFTUdLRzRYUW5teEItVjBJTTI2dW9JSnlTTEZ5eWlFdGtrbnpoTUxNdkt5NG5Fb05Pdkp3dkd4bE5MSzhXUU5XS0lHQ0hTd2RuNUhyVVNvdTEy?oc=5",
+          "published": "2026-11-12T16:45:52+00:00",
+          "found_at": "2026-11-12T16:51:06.266981+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T16:51:06.266981+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-12T16:51:06.266981+00:00",
+          "note": "new -> confirmed: reliable source: CoinDesk - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T16:51:06.266981+00:00",
+          "note": "confirmed -> alerted: The report reveals a new legal challenge to crypto taxation, a fresh regulatory event that could negatively affect Bitcoin, so we issue an alert."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-12",
+        "date_evidence": "article published 2026-11-12 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "regulatory crackdown usually pushes price lower",
+        "alert_title": "Illinois crypto tax deemed unenforceable",
+        "alert_message": "A court case says Illinois' crypto tax is impossible to enforce, raising regulatory uncertainty for Bitcoin and could pressure its price lower.",
+        "why_it_matters": [
+          "Regulatory uncertainty may hurt sentiment",
+          "Potential for broader legal challenges"
+        ],
+        "reason": "The report reveals a new legal challenge to crypto taxation, a fresh regulatory event that could negatively affect Bitcoin, so we issue an alert.",
+        "time": "2026-11-12T16:51:06.266981+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nIllinois crypto tax deemed unenforceable\n\nA court case says Illinois' crypto tax is impossible to enforce, raising regulatory uncertainty for Bitcoin and could pressure its price lower.\n\nMINT's prediction: Bitcoin DOWN - In similar legal or regulatory crackdowns, Bitcoin usually fell about 4\u20115% the next day (e.g., China ban -4.6%, Binance lawsuit -5.0%, Binance guilty plea -4.4%), with one outlier where a Coinbase lawsuit led to a +5.7% move.\n\nBitcoin had already moved +0.0% since the first report.\nSources: CoinDesk\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 12 Nov 16:51 UTC",
+        "telegram_sent_at": "2026-11-12T16:51:06.266981+00:00"
+      },
+      "outcome": {
+        "start_price": 71979.45,
+        "start_time": "2026-11-12T16:09:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-12T16:09:20+00:00",
+          "hours": -0.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar legal or regulatory crackdowns, Bitcoin usually fell about 4\u20115% the next day (e.g., China ban -4.6%, Binance lawsuit -5.0%, Binance guilty plea -4.4%), with one outlier where a Coinbase lawsuit led to a +5.7% move.",
+        "similar": [
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261110-01",
+            "date": "2026-11-10",
+            "title": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+            "d1": -1.48,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.49
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20231121-B",
+            "date": "2023-11-21",
+            "title": "Binance pleads guilty and CZ steps down in $4.3bn settlement",
+            "d1": -4.44,
+            "d7": 0.94,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.9,
+          "down": 3.39
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A court case in Illinois argues that the state's new crypto tax is impossible to enforce, highlighting regulatory pressure on the crypto industry.",
+        "what_past_events_show": "In similar legal or regulatory crackdowns, Bitcoin usually fell about 4\u20115% the next day (e.g., China ban -4.6%, Binance lawsuit -5.0%, Binance guilty plea -4.4%), with one outlier where a Coinbase lawsuit led to a +5.7% move.",
+        "direction": "down",
+        "why": [
+          "Regulatory action tends to scare investors and cut demand.",
+          "Most comparable events caused a multi\u2011percent drop the following day."
+        ],
+        "watch_next": "If the court rules in favor of the crypto industry and the tax is softened, the impact could be reduced.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-12T16:51:06.266981+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-12T16:51:20.374096+00:00"
+      }
     }
   ],
   "counter": {
@@ -13014,27 +13187,27 @@
     "GOLD-20261110": 6,
     "GOLD-20261111": 6,
     "BTC-20261111": 4,
-    "BTC-20261112": 7,
+    "BTC-20261112": 8,
     "GOLD-20261112": 3
   },
   "last_run": {
-    "run_time": "2026-11-12T16:45:53.158249+00:00",
+    "run_time": "2026-11-12T16:51:06.266981+00:00",
     "test_mode": false,
-    "stories": 27,
+    "stories": 28,
     "off_topic": 14,
     "repeats": 13,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -13042,7 +13215,8 @@
           "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
           "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
           "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
-          "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep"
+          "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
+          "Being checked: Illinois crypto tax is impossible to enforce as written, crypto industry tells court (reliable source: CoinDesk)"
         ]
       },
       "Gold": {
@@ -13070,7 +13244,8 @@
         "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
         "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
         "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
-        "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep"
+        "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
+        "Alert: Illinois crypto tax is impossible to enforce as written, crypto industry tells court"
       ]
     },
     "Gold": {
