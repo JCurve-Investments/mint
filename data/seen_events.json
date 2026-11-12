@@ -10012,14 +10012,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
           "wrong": 0,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - no clear move in any price check yet (3 of 9 checks done)",
+        "effect": "no_clear_move",
+        "effect_reason": "predicted down: no clear move in any price check yet (so far: 4 of 9 checks done)",
         "impact": {
           "peak": -0.76,
           "peak_hours": 23.5,
@@ -10039,6 +10039,12 @@
           "price": 74637.91,
           "move": 0.93,
           "time": "2026-11-11T21:24:21+00:00",
+          "verdict": "flat"
+        },
+        "d1": {
+          "price": 73385.7,
+          "move": -0.76,
+          "time": "2026-11-12T11:24:21+00:00",
           "verdict": "flat"
         }
       },
@@ -10114,7 +10120,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-11T15:21:08.660714+00:00"
+        "first_sent_at": "2026-11-11T15:21:08.660714+00:00",
+        "result_sent": "2026-11-12T11:35:40.576108+00:00"
       }
     },
     {
@@ -12048,6 +12055,118 @@
         "first_sent_at": "2026-11-12T11:31:25.059979+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261112-04",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-12T11:35:40.576108+00:00",
+      "earliest_report": "2026-11-12T11:30:00+00:00",
+      "last_updated": "2026-11-12T11:35:40.576108+00:00",
+      "words": [
+        "bitcoin",
+        "ceo",
+        "etf",
+        "fall",
+        "nvidia",
+        "outflows",
+        "stock",
+        "tech",
+        "turmoil",
+        "weigh"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcU54SUVyeng5QXhCMi1RS00tSzQ5QjkyVElxR2hZcURCVFJZS01jaFVCZXVIMVdWZVBfMUV0VEVRdTFZeDlSM0NQREVWZ1dicWFYckY4WlJ5emtPRVI1Y3F6cWl2cTJFaHM1VDlLTHh0amdjNENDVVpJNmVCQUFwckpqcFZGQkkyNkZEU2NVOUg5RUoydnRsMkhtZHJLZVZF?oc=5",
+          "published": "2026-11-12T11:30:00+00:00",
+          "found_at": "2026-11-12T11:35:40.576108+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T11:35:40.576108+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-12T11:35:40.576108+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 73385.7,
+        "start_time": "2026-11-12T10:54:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-12T10:54:00+00:00",
+          "hours": -0.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "The only similar past case showed a 0.6% drop the next day, indicating a modest downside after ETF outflows.",
+        "similar": [
+          {
+            "id": "BTC-20261109-04",
+            "date": "2026-11-09",
+            "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+            "d1": -0.62,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 1.95
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin fell as tech stocks slipped, with Nvidia CEO turmoil and outflows from Bitcoin ETFs adding pressure.",
+        "what_past_events_show": "The only similar past case showed a 0.6% drop the next day, indicating a modest downside after ETF outflows.",
+        "direction": "down",
+        "why": [
+          "ETF outflows have historically coincided with short\u2011term price declines",
+          "Negative tech\u2011sector news (Nvidia) adds extra selling pressure"
+        ],
+        "watch_next": "If ETF flows turn positive or the Nvidia leadership issue resolves, the downside could be limited; continued outflows would likely push price lower.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-12T11:35:40.576108+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-12T11:35:52.012208+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -12063,15 +12182,15 @@
     "GOLD-20261110": 6,
     "GOLD-20261111": 6,
     "BTC-20261111": 4,
-    "BTC-20261112": 3,
+    "BTC-20261112": 4,
     "GOLD-20261112": 2
   },
   "last_run": {
-    "run_time": "2026-11-12T11:31:13.786624+00:00",
+    "run_time": "2026-11-12T11:35:40.576108+00:00",
     "test_mode": false,
-    "stories": 27,
+    "stories": 30,
     "off_topic": 16,
-    "repeats": 10,
+    "repeats": 13,
     "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
