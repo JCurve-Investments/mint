@@ -12738,7 +12738,7 @@
           "verdict": "right"
         },
         "effect": "tracking",
-        "effect_reason": "first day not over yet - 2 of 2 clear price checks went the predicted way (2 of 9 checks done)",
+        "effect_reason": "first day not over yet - 3 of 3 clear price checks went the predicted way (3 of 9 checks done)",
         "impact": {
           "peak": -1.59,
           "peak_hours": 2.9,
@@ -12749,8 +12749,8 @@
           "text": "Clear impact: Gold fell up to 1.6% (after 3 h). Still in the predicted direction after 10 h (-1.4%)."
         },
         "checks": {
-          "done": 2,
-          "right": 2,
+          "done": 3,
+          "right": 3,
           "wrong": 0,
           "total": 9
         },
@@ -12765,6 +12765,12 @@
           "price": 3872.42,
           "move": -1.43,
           "time": "2026-11-12T18:07:34+00:00",
+          "verdict": "right"
+        },
+        "h10": {
+          "price": 3873.77,
+          "move": -1.4,
+          "time": "2026-11-12T23:07:34+00:00",
           "verdict": "right"
         }
       },
@@ -12798,28 +12804,33 @@
       }
     },
     {
-      "id": "BTC-20261112-06",
+      "id": "BTC-20261112-07",
       "asset": "Bitcoin",
       "factor": "B2",
       "factor_name": "Exchange collapses and hacks",
-      "title": "ARK analyst says crypto hacks have drained $26.9B since 2017, highlighting security as the industry's bottleneck",
-      "state": "rejected",
-      "state_reason": "Decision agent: The source discusses past cumulative hacks, not a new event, and price has not moved, so no alert is needed.",
-      "proof": "social",
-      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
-      "first_seen": "2026-11-12T13:50:55.712189+00:00",
-      "earliest_report": "2026-11-12T13:47:32+00:00",
-      "last_updated": "2026-11-12T23:15:51.383815+00:00",
+      "title": "Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CNBC",
+      "first_seen": "2026-11-12T14:50:59.402699+00:00",
+      "earliest_report": "2026-11-12T13:44:27+00:00",
+      "last_updated": "2026-11-12T23:20:52.855838+00:00",
       "words": [
         "2.7",
         "26.9b",
         "analyst",
         "ark",
+        "armstrong",
         "billion",
         "binance",
         "bottleneck",
+        "brian",
+        "ceo",
+        "coinbase",
         "crypto",
         "deepfake",
+        "democrat",
         "department",
         "detail",
         "freeze",
@@ -12837,6 +12848,8 @@
         "security",
         "since",
         "stole",
+        "sweep",
+        "talks",
         "through",
         "u.s",
         "video-call"
@@ -12846,228 +12859,6 @@
         2700.0,
         26900.0
       ],
-      "old_clues": [
-        "mentions 2017"
-      ],
-      "sources": [
-        {
-          "organisation": "Whale Alert (Telegram)",
-          "kind": "social",
-          "site": "whale_alert_io",
-          "title": "ARK analyst says crypto hacks have drained $26.9B since 2017, highlighting security as the industry's bottleneck",
-          "link": "https://t.me/whale_alert_io/104820",
-          "published": "2026-11-12T13:47:32+00:00",
-          "found_at": "2026-11-12T13:50:55.712189+00:00",
-          "summary": "ARK analyst says crypto hacks have drained $26.9B since 2017, highlighting security as the industry's bottleneck",
-          "factor": "B2"
-        },
-        {
-          "organisation": "Whale Alert (Telegram)",
-          "kind": "social",
-          "site": "whale_alert_io",
-          "title": "U.S. Justice Department says North Korean hackers stole over $400 million in crypto through AI deepfake video-call scams",
-          "link": "https://t.me/whale_alert_io/104851",
-          "published": "2026-11-12T22:12:23+00:00",
-          "found_at": "2026-11-12T22:15:49.688008+00:00",
-          "summary": "U.S. Justice Department says North Korean hackers stole over $400 million in crypto through AI deepfake video-call scams",
-          "factor": "B2"
-        },
-        {
-          "organisation": "Bloomberg",
-          "kind": "news",
-          "site": "bloomberg.com",
-          "title": "US Details $2.7 Billion Freeze After North Korea\u2019s Binance Hack",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeW1GTEtDNFJteWJfNTQ3X0hZbFp6X283dU1aWkZ2SnlVNG5EQmdQcHhQeXpPMHJmUkxTMlNYUUNsZXN1aGVjVzhQMzFaUzBKZXlHT1ZYc2V4dlh2Y1VfM1pYSTB5SjhQWnRjZFVvQ01RTHllbGtvVmktWmp5cTBYV2FCUWpUNTVTd3dHM211Q1BpV0RJcEJURXJSbnlOcVQ4U213el9WX1pGODJmUDJORWxHZw?oc=5",
-          "published": "2026-11-12T21:40:07+00:00",
-          "found_at": "2026-11-12T23:15:51.383815+00:00",
-          "summary": "",
-          "factor": "B2"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-12T13:50:55.712189+00:00",
-          "note": "new event, first report by Whale Alert (Telegram)"
-        },
-        {
-          "time": "2026-11-12T13:50:55.712189+00:00",
-          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent; the Decision agent must check the date (mentions 2017)"
-        },
-        {
-          "time": "2026-11-12T13:50:55.712189+00:00",
-          "note": "confirmed -> rejected: The source discusses past cumulative hacks, not a new event, and price has not moved, so no alert is needed."
-        },
-        {
-          "time": "2026-11-12T22:15:49.688008+00:00",
-          "note": "another report from Whale Alert (Telegram) - same event, no new alert"
-        },
-        {
-          "time": "2026-11-12T23:15:51.383815+00:00",
-          "note": "another report from Bloomberg - same event, no new alert"
-        }
-      ],
-      "decision": {
-        "is_new_event": false,
-        "event_date": "unknown",
-        "date_evidence": "headline refers to hacks since 2017, no recent date given",
-        "send_alert": false,
-        "impact": "low",
-        "possible_effect": "risk of a drop",
-        "expected_direction": "down",
-        "direction_reason": "historical hacks have tended to push Bitcoin lower",
-        "alert_title": "No new hack reported",
-        "alert_message": "The post only cites total hacks since 2017, not a new incident, so there is no immediate price impact.",
-        "why_it_matters": [
-          "Only historical data mentioned",
-          "Bitcoin price unchanged"
-        ],
-        "reason": "The source discusses past cumulative hacks, not a new event, and price has not moved, so no alert is needed.",
-        "time": "2026-11-12T13:50:55.712189+00:00",
-        "mode": "AI",
-        "model": "Groq openai/gpt-oss-120b"
-      },
-      "outcome": {
-        "start_price": 72532.8,
-        "start_time": "2026-11-12T13:29:40+00:00",
-        "moved_before_mint": 0.0,
-        "delay_hours": 0.1,
-        "now": {
-          "move": -1.49,
-          "time": "2026-11-12T23:09:30+00:00",
-          "hours": 9.4,
-          "verdict": "right"
-        },
-        "checks": {
-          "done": 2,
-          "right": 2,
-          "wrong": 0,
-          "total": 9
-        },
-        "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 2 of 2 clear price checks went the predicted way (2 of 9 checks done)",
-        "impact": {
-          "peak": -1.58,
-          "peak_hours": 7.2,
-          "faded_hours": null,
-          "against": -0.14,
-          "against_hours": 0.2,
-          "until_hours": 9.4,
-          "text": "Clear impact: Bitcoin fell up to 1.6% (after 7 h). Still in the predicted direction after 9 h (-1.5%)."
-        },
-        "h1": {
-          "price": 71886.17,
-          "move": -0.89,
-          "time": "2026-11-12T14:47:32+00:00",
-          "verdict": "right"
-        },
-        "h5": {
-          "price": 71767.36,
-          "move": -1.06,
-          "time": "2026-11-12T18:47:32+00:00",
-          "verdict": "right"
-        }
-      },
-      "prediction": {
-        "direction": "down",
-        "by": "AI + past events",
-        "reason": "Similar headlines have produced mixed moves, but recent hack news often led to price drops of -0.8% to -2.2%, while older or less severe stories gave modest gains of about +1\u20112%.",
-        "similar": [
-          {
-            "id": "START-20190507-B",
-            "date": "2019-05-07",
-            "title": "Binance hacked, 7,000 bitcoin stolen",
-            "d1": 1.44,
-            "d7": 39.11,
-            "source": "starter library (check the date)",
-            "score": 0.88
-          },
-          {
-            "id": "START-20250221-B",
-            "date": "2025-02-21",
-            "title": "Crypto exchange Bybit hacked for $1.5bn",
-            "d1": -2.25,
-            "d7": -14.2,
-            "source": "starter library (check the date)",
-            "score": 0.75
-          },
-          {
-            "id": "BTC-20261110-06",
-            "date": "2026-11-10",
-            "title": "JUST IN: Crypto wallet company Ledger CEO says \"everybody will be hacked at some point.\" @WatcherGuru",
-            "d1": 1.23,
-            "d7": null,
-            "source": "MINT",
-            "score": 0.67
-          },
-          {
-            "id": "BTC-20261111-02",
-            "date": "2026-11-11",
-            "title": "Binance hack reveals crypto's uphill battle against hackers",
-            "d1": -0.76,
-            "d7": null,
-            "source": "MINT",
-            "score": 0.66
-          },
-          {
-            "id": "BTC-20261110-07",
-            "date": "2026-11-10",
-            "title": "Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
-            "d1": 1.95,
-            "d7": null,
-            "source": "MINT",
-            "score": 0.63
-          }
-        ],
-        "votes": {
-          "up": 2.73,
-          "down": 2.91
-        }
-      },
-      "analysis": {
-        "by": "AI (Groq)",
-        "summary": "An ARK analyst warned that crypto hacks have taken $26.9\u202fbillion since 2017, flagging security as a big problem for the market.",
-        "what_past_events_show": "Similar headlines have produced mixed moves, but recent hack news often led to price drops of -0.8% to -2.2%, while older or less severe stories gave modest gains of about +1\u20112%.",
-        "direction": "down",
-        "why": [
-          "Security worries usually lower confidence and push prices down",
-          "Recent comparable hack reports have triggered short\u2011term declines"
-        ],
-        "watch_next": "If a major exchange announces full reimbursement or a breakthrough security fix, the negative effect could be reduced.",
-        "confidence": "low",
-        "confidence_reason": "only 2 of 5 similar past events moved this way",
-        "time": "2026-11-12T13:50:55.712189+00:00"
-      },
-      "telegram": {
-        "first_sent_at": "2026-11-12T13:51:08.893804+00:00",
-        "sent_state": "rejected"
-      }
-    },
-    {
-      "id": "BTC-20261112-07",
-      "asset": "Bitcoin",
-      "factor": "B2",
-      "factor_name": "Exchange collapses and hacks",
-      "title": "Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
-      "state": "alerted",
-      "state_reason": "stamped by the Decision agent - alert ready",
-      "proof": "news",
-      "proof_reason": "reliable source: CNBC",
-      "first_seen": "2026-11-12T14:50:59.402699+00:00",
-      "earliest_report": "2026-11-12T13:44:27+00:00",
-      "last_updated": "2026-11-12T14:50:59.402699+00:00",
-      "words": [
-        "armstrong",
-        "binance",
-        "brian",
-        "ceo",
-        "coinbase",
-        "democrat",
-        "hack",
-        "sweep",
-        "talks"
-      ],
-      "amounts": [],
       "old_clues": [],
       "sources": [
         {
@@ -13078,6 +12869,39 @@
           "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRl8yZHZ5Z0ctVmYzcXZKc3VOcGVTUWtlcmt0TTNNdXJIeHBLMlNQdTRyZ0dpVHRFMlhWWngycG5rVjFMZDZuV1JIbHlfaTNYcDlQRVh0eGNad1A3eTJkUFRFd3VLaW1HVGs5LTd0ODJLbGhJenMxVXVTWWtUUFhMTGlRY3VBMjJsMUJRTlcwREhwSnJJWjJMNjdZV2hmdXcyX0E?oc=5",
           "published": "2026-11-12T13:44:27+00:00",
           "found_at": "2026-11-12T14:50:59.402699+00:00",
+          "summary": "",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "ARK analyst says crypto hacks have drained $26.9B since 2017, highlighting security as the industry's bottleneck",
+          "link": "https://t.me/whale_alert_io/104820",
+          "published": "2026-11-12T13:47:32+00:00",
+          "found_at": "2026-11-12T23:20:52.855838+00:00",
+          "summary": "ARK analyst says crypto hacks have drained $26.9B since 2017, highlighting security as the industry's bottleneck",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "U.S. Justice Department says North Korean hackers stole over $400 million in crypto through AI deepfake video-call scams",
+          "link": "https://t.me/whale_alert_io/104851",
+          "published": "2026-11-12T22:12:23+00:00",
+          "found_at": "2026-11-12T23:20:52.855838+00:00",
+          "summary": "U.S. Justice Department says North Korean hackers stole over $400 million in crypto through AI deepfake video-call scams",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "US Details $2.7 Billion Freeze After North Korea\u2019s Binance Hack",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeW1GTEtDNFJteWJfNTQ3X0hZbFp6X283dU1aWkZ2SnlVNG5EQmdQcHhQeXpPMHJmUkxTMlNYUUNsZXN1aGVjVzhQMzFaUzBKZXlHT1ZYc2V4dlh2Y1VfM1pYSTB5SjhQWnRjZFVvQ01RTHllbGtvVmktWmp5cTBYV2FCUWpUNTVTd3dHM211Q1BpV0RJcEJURXJSbnlOcVQ4U213el9WX1pGODJmUDJORWxHZw?oc=5",
+          "published": "2026-11-12T21:40:07+00:00",
+          "found_at": "2026-11-12T23:20:52.855838+00:00",
           "summary": "",
           "factor": "B2"
         }
@@ -13094,6 +12918,10 @@
         {
           "time": "2026-11-12T14:50:59.402699+00:00",
           "note": "confirmed -> alerted: The hack is a fresh event reported today and fits a pattern that usually hurts Bitcoin, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-12T23:20:52.855838+00:00",
+          "note": "joined with BTC-20261112-06 (same factor, same day and shared key words) - the same story"
         }
       ],
       "decision": {
@@ -13587,14 +13415,14 @@
     "GOLD-20261112": 4
   },
   "last_run": {
-    "run_time": "2026-11-12T23:15:51.383815+00:00",
+    "run_time": "2026-11-12T23:20:52.855838+00:00",
     "test_mode": false,
-    "stories": 29,
-    "off_topic": 16,
+    "stories": 27,
+    "off_topic": 15,
     "repeats": 12,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 1,
+    "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
       "context": 0,
@@ -13713,6 +13541,12 @@
       "title": "BlackRock Is Doing a Brisk Business in Crypto ETF Conversions. Here\u2019s Why.",
       "removed_at": "2026-11-11T22:35:37.455539+00:00",
       "reason": "the same story as BTC-20261109-04 (same factor, same day and shared key words)"
+    },
+    {
+      "id": "BTC-20261112-06",
+      "title": "ARK analyst says crypto hacks have drained $26.9B since 2017, highlighting security as the industry's bottleneck",
+      "removed_at": "2026-11-12T23:20:52.855838+00:00",
+      "reason": "the same story as BTC-20261112-07 (same factor, same day and shared key words)"
     }
   ]
 }
