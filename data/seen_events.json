@@ -6630,24 +6630,29 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-10T10:41:00.999961+00:00",
       "earliest_report": "2026-11-09T14:12:27+00:00",
-      "last_updated": "2026-11-10T10:41:00.999961+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
       "words": [
         "bank",
         "banks",
         "beat",
         "buy",
         "central",
+        "description",
         "extend",
+        "france",
         "gold",
         "heraeu",
         "pace",
+        "page",
         "post-election",
         "pric",
         "rebound",
         "remain",
+        "reserv",
         "silver",
         "strong",
-        "swot"
+        "swot",
+        "uzbekistan"
       ],
       "amounts": [],
       "old_clues": [
@@ -6675,6 +6680,39 @@
           "found_at": "2026-11-10T10:41:00.999961+00:00",
           "summary": "",
           "factor": "G4"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "central bank gold purchases description={PAGE_DESCRIPTION}",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hQTRZeWpwQUpBZnRpWkFHa0Y5eTlNLUNvVzlMcFA2a19MWldZTTk2Xzc1NS1qX2o0aTVTM0JwZ04tZ1dvUTdodVRKSTJsOF9GdWhfXzdSYUdfU1ZpMzFMUVhFai1TbUJYdUE?oc=5",
+          "published": "2026-11-10T20:02:39+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G4"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "France\u2019s gold reserves description={PAGE_DESCRIPTION}",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB6T3VLeWNqM1BubGg3d3RpUF9MbEZzUTdhYVFFU2lGV093MHUzU0pKWU9EM2w0d25RRlR4YlRxWXdJMFFldVA4N1FydThVRlpEZFRCX05yV0lGSTFIWHZ1dGRn?oc=5",
+          "published": "2026-11-10T20:41:55+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G4"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Uzbekistan gold reserves description={PAGE_DESCRIPTION}",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0xTTIyYjlmdHRURDVrMFBvdW5HSl9JREFoZ18yV2pDT3NoQTNwY3llc0ZvUm00NnhGclVsd0pMSFdGVlpsT3VIb1BrODFiTWVlYlUyWjRfYW5wUmdqa21BRTdyU0Q4QQ?oc=5",
+          "published": "2026-11-10T20:41:55+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G4"
         }
       ],
       "history": [
@@ -6689,6 +6727,18 @@
         {
           "time": "2026-11-10T10:41:00.999961+00:00",
           "note": "new -> context: Central bank buying is a moderate factor - shown for context, never an alert (reliable source: Kitco News)"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": null,
@@ -7237,20 +7287,28 @@
       "proof_reason": "reliable source: Bloomberg, Wall Street Journal",
       "first_seen": "2026-11-10T10:41:00.999961+00:00",
       "earliest_report": "2026-11-10T04:20:00+00:00",
-      "last_updated": "2026-11-10T10:41:00.999961+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
       "words": [
+        "asian",
         "bank",
         "banks",
         "boost",
         "central",
+        "dbs",
+        "explor",
+        "foreign",
         "gold",
         "gold-vault",
         "hub",
+        "hubs",
         "launch",
+        "reserv",
         "rolls",
+        "safe",
         "servic",
         "service",
         "singapore",
+        "storage",
         "trad",
         "vault"
       ],
@@ -7278,6 +7336,28 @@
           "found_at": "2026-11-10T10:41:00.999961+00:00",
           "summary": "",
           "factor": "G4"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Central banks are exploring Asian gold hubs for safe storage of reserves - DBS",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcnY3Qm9WcHl6ZEhpNWI0dUl3Y0JMY1hNS2ZZclBoQkNrOWs4LTNKcmdWWnYtU2p4cENXZkFieFFadXNmU196SF9tWDJiTDhzUllhaE5fMk50M1pLOFloM1JvQ3ZhSEhYRVk4MmNUV1J2aGhZOHZpX0ZZNWxiMWNONGZiSE5JQmxwYVRoblZTNzdfTnNIYkVwTVJHLWRhOER6Y0lDR0FSSThVbTM4ZjRpSTMyRUdRQQ?oc=5",
+          "published": "2026-11-10T08:00:00+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G4"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Singapore to launch gold vault service for foreign central banks",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdkZPMEwxa2tfX3NsSzdWM3J1OHg1QlhWc0Nhb2hwV1ZfRWdUZDhrSWgwMmROOS15YkI0RElqMlJWWmpaUWlBSHllQ1h4UlNNaWlTa2FBbEVqVXlENmI0OHFCZzlVeEhwTjdraVhWOUxFY194dHBSbWFZZFB0SE9NYVJ2ZUhnMXVOQ1VaUm1QaFp6amVWRHVmY3c1T2tzWE5lSGRZZWJMUW1pTjFIS2pJckJB?oc=5",
+          "published": "2026-11-10T09:09:52+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G4"
         }
       ],
       "history": [
@@ -7292,6 +7372,14 @@
         {
           "time": "2026-11-10T10:41:00.999961+00:00",
           "note": "new -> context: Central bank buying is a moderate factor - shown for context, never an alert (reliable source: Bloomberg, Wall Street Journal)"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from Reuters - same event, no new alert"
         }
       ],
       "decision": null,
@@ -8735,16 +8823,20 @@
       "proof_reason": "reliable source: CNBC, Reuters",
       "first_seen": "2026-11-11T10:45:50.419421+00:00",
       "earliest_report": "2026-11-10T03:31:00+00:00",
-      "last_updated": "2026-11-11T10:45:50.419421+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
       "words": [
         "cpi",
+        "data",
         "dollar",
         "fall",
         "forecast",
+        "futur",
         "gold",
         "lift",
         "nearly",
+        "rise",
         "tops",
+        "u.s",
         "yield"
       ],
       "amounts": [],
@@ -8771,6 +8863,17 @@
           "found_at": "2026-11-11T10:45:50.419421+00:00",
           "summary": "",
           "factor": "G1"
+        },
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOLWdJcGVCYzJpRDF3cHlEUlBWb3duUEl2bUp3bHYzQXVUWTh0Q3hMZVRzVlhoUndFTlUzOHBvNzBWUVhPUGFNVWdudGF4S0J5dFVtaTZyYWp3amZlRGktZHZ4XzdUNDZOc3BSN0pJaEVWdUhSd3RpMVFEV1VmUnRoZC1XSlF5dDFzV0VrSzFIMDlGbHlpRE5WYm5Wc1dzZnVvSnBVLWtWVW5EWTh2RF9VbE1sTlBRUQ?oc=5",
+          "published": "2026-11-10T20:48:00+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G1"
         }
       ],
       "history": [
@@ -8789,6 +8892,10 @@
         {
           "time": "2026-11-11T10:45:50.419421+00:00",
           "note": "confirmed -> alerted: The CPI surprise is a fresh macro event that moved gold, so we alert."
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from Wall Street Journal - same event, no new alert"
         }
       ],
       "decision": {
@@ -10899,6 +11006,925 @@
         "first_sent_at": "2026-11-12T10:11:07.166530+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261111-04",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Gold falls as hot inflation figures, higher dollar weigh",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Reuters",
+      "first_seen": "2026-11-12T10:45:50.472999+00:00",
+      "earliest_report": "2026-11-11T03:39:00+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
+      "words": [
+        "dollar",
+        "fall",
+        "figur",
+        "gold",
+        "higher",
+        "hot",
+        "inflation",
+        "weigh"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Gold falls as hot inflation figures, higher dollar weigh",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUkZNV2RySHI5TXJ4YTBhNlNpTllnVXUyRk9CNzBrLXBLWFc3OTlOM0Y1MUVDcGRhS1pQU1oxR3hveVE5VWRfVGF1aTR4Z0lhcWJjbGV4Ym93cDdqb09JQlpFdC10cW9FUkVBX0NPVFFyOTdxSV81Z0RWUEx4UkdITjNwUnRHUmdDbmg5a0F5QmZXRzdjWGZzeXJsdUNUbDRKM3NvU0VGVGQ?oc=5",
+          "published": "2026-11-11T03:39:00+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new -> confirmed: reliable source: Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "confirmed -> alerted: The news about inflation and a stronger dollar caused a noticeable gold decline, so an alert is needed."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-11",
+        "date_evidence": "First report published 2026-11-11 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Higher dollar usually pushes gold lower",
+        "alert_title": "Gold drops on strong dollar and inflation",
+        "alert_message": "Gold fell 2.5% after hot inflation data lifted the US dollar, which typically pushes gold lower.",
+        "why_it_matters": [
+          "Dollar strength hurts gold",
+          "Inflation data signals higher rates"
+        ],
+        "reason": "The news about inflation and a stronger dollar caused a noticeable gold decline, so an alert is needed.",
+        "time": "2026-11-12T10:45:50.472999+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold drops on strong dollar and inflation\n\nGold fell 2.5% after hot inflation data lifted the US dollar, which typically pushes gold lower.\n\nMINT's prediction: Gold DOWN - 4 similar past event(s): gold rose after 1 and fell after 3 (average 1-day move -0.6%)\n\nGold had already moved -2.5% since the first report.\nSources: Reuters\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 12 Nov 10:45 UTC",
+        "telegram_sent_at": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "outcome": {
+        "start_price": 4037.11,
+        "start_time": "2026-11-11T04:00:00+00:00",
+        "moved_before_mint": -2.48,
+        "delay_hours": 31.1,
+        "h1": {
+          "price": 4037.09,
+          "move": -0.0,
+          "time": "2026-11-11T04:39:00+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 4044.76,
+          "move": 0.19,
+          "time": "2026-11-11T08:39:00+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 4025.64,
+          "move": -0.28,
+          "time": "2026-11-11T13:39:00+00:00",
+          "verdict": "flat"
+        },
+        "d1": {
+          "price": 3973.97,
+          "move": -1.56,
+          "time": "2026-11-12T03:39:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -2.48,
+          "time": "2026-11-12T10:00:30+00:00",
+          "hours": 30.4,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 4,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "right",
+        "effect_reason": "predicted down: 1 of 1 clear price checks went the predicted way (so far: 4 of 9 checks done)",
+        "impact": {
+          "peak": -2.86,
+          "peak_hours": 29.4,
+          "faded_hours": null,
+          "against": 0.29,
+          "against_hours": 3.4,
+          "until_hours": 30.4,
+          "text": "Clear impact: Gold fell up to 2.9% (after 29 h). Still in the predicted direction after 30 h (-2.5%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "past events",
+        "reason": "4 similar past event(s): gold rose after 1 and fell after 3 (average 1-day move -0.6%)",
+        "similar": [
+          {
+            "id": "START-20250403-G",
+            "date": "2025-04-03",
+            "title": "Dollar slides after sweeping US tariff announcement",
+            "d1": -1.41,
+            "d7": 0.36,
+            "source": "starter library (check the date)",
+            "score": 0.65
+          },
+          {
+            "id": "GOLD-20261110-04",
+            "date": "2026-11-10",
+            "title": "Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
+            "d1": -1.43,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "START-20241106-G",
+            "date": "2024-11-06",
+            "title": "Dollar jumps after US election result",
+            "d1": -2.67,
+            "d7": -5.94,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261103-09",
+            "date": "2026-11-03",
+            "title": "Gold falls as higher oil stokes inflation fears ahead of US midterms",
+            "d1": 3.25,
+            "d7": 3.86,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.45,
+          "down": 1.72
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold dropped because US inflation numbers were hotter than expected, pushing the dollar higher and making gold more expensive for non\u2011dollar buyers.",
+        "what_past_events_show": "In similar cases where inflation data lifted the dollar, gold fell about 1\u20133% the next day (e.g., 2026\u201111\u201110 and 2024\u201111\u201106), though one outlier showed a rise after oil\u2011driven inflation fears.",
+        "direction": "down",
+        "why": [
+          "A stronger dollar usually hurts gold demand.",
+          "Hot inflation numbers tend to boost the dollar."
+        ],
+        "watch_next": "If the dollar keeps rising or new inflation surprises appear, the drop could deepen; strong gold\u2011specific news (e.g., central\u2011bank buying) could limit the fall.",
+        "confidence": "high",
+        "confidence_reason": "3 of 4 similar past events moved this way",
+        "time": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-12T10:46:14.562695+00:00",
+        "result_sent": "2026-11-12T10:45:50.472999+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261111-05",
+      "asset": "Gold",
+      "factor": "G3",
+      "factor_name": "Surprise US data (jobs, inflation)",
+      "title": "Gold, silver rebound after CPI-driven selloff, Hormuz tensions lift crude oil - Kitco AM Report",
+      "state": "context",
+      "state_reason": "Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Kitco News)",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-12T10:45:50.472999+00:00",
+      "earliest_report": "2026-11-11T13:33:41+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
+      "words": [
+        "cpi-driven",
+        "crude",
+        "gold",
+        "hormuz",
+        "kitco",
+        "lift",
+        "oil",
+        "rebound",
+        "report",
+        "selloff",
+        "silver",
+        "tension"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold, silver rebound after CPI-driven selloff, Hormuz tensions lift crude oil - Kitco AM Report",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOUp0cFVSZ2RUU2QxeDJYaklxUVk5UTdNT2dyU0RYRHhoR0ZiUzRWTWZQc01pSUFKdzZEa3YzWU5EOFA0MEs2NnVnV2tON1IwOWw5UzgyOXktcGtzVUpkSHVjVlhlXzBTYkNEaEotQUlha01iZkpNWktaUUdVMzhuZHM2RkxiMzg5THBfUjFRSUpFUDZKcGhoX21BTXZEVGlKcGljWUhhZkQwRldhTmQ3cVVBX0VaUWR2SVJCYWFR?oc=5",
+          "published": "2026-11-11T13:33:41+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G3"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new -> context: Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Kitco News)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 4025.64,
+        "start_time": "2026-11-11T14:00:00+00:00",
+        "moved_before_mint": -2.21,
+        "delay_hours": 21.2,
+        "h1": {
+          "price": 4005.93,
+          "move": -0.49,
+          "time": "2026-11-11T14:33:41+00:00",
+          "verdict": "wrong"
+        },
+        "h5": {
+          "price": 3980.67,
+          "move": -1.12,
+          "time": "2026-11-11T18:33:41+00:00",
+          "verdict": "wrong"
+        },
+        "h10": {
+          "price": 3971.83,
+          "move": -1.34,
+          "time": "2026-11-11T23:33:41+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": -2.21,
+          "time": "2026-11-12T10:00:30+00:00",
+          "hours": 20.4,
+          "verdict": "wrong"
+        },
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 0 of 3 clear price checks went the predicted way (3 of 9 checks done)",
+        "impact": null,
+        "checks": {
+          "done": 3,
+          "right": 0,
+          "wrong": 3,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "There are no recorded past events of this exact type to compare with.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold and silver bounced back after a sell\u2011off caused by a CPI report, while tensions in the Hormuz Strait pushed oil prices higher.",
+        "what_past_events_show": "There are no recorded past events of this exact type to compare with.",
+        "direction": "up",
+        "why": [
+          "Gold is already rebounding after the CPI\u2011driven drop, so momentum points upward.",
+          "Higher oil prices from Hormuz tensions usually boost gold as a safe\u2011haven asset."
+        ],
+        "watch_next": "If the next US jobs or inflation data surprise strongly to the upside, it could dampen the rebound; a softer surprise would reinforce the rise.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-12T10:46:15.662172+00:00",
+        "sent_state": "context"
+      }
+    },
+    {
+      "id": "GOLD-20261111-06",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Gold falls below $4,000 as dollar surges, Fed hike bets rise - Kitco PM Report",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CNBC, Kitco News, Reuters",
+      "first_seen": "2026-11-12T10:45:50.472999+00:00",
+      "earliest_report": "2026-11-11T22:00:14+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
+      "words": [
+        "below",
+        "bets",
+        "dollar",
+        "extend",
+        "fall",
+        "fed",
+        "firm",
+        "gold",
+        "hike",
+        "kitco",
+        "loss",
+        "low",
+        "one-week",
+        "over",
+        "ralli",
+        "rate",
+        "report",
+        "rise"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold falls below $4,000 as dollar surges, Fed hike bets rise - Kitco PM Report",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQkRUZVFwS0pNb3NBQjg1aUNMcjQ5Y0pVU0NLUjU4M3pJLXh5WFYtd3ZFMXhzM2I2Y3RDd25WeXhvaWY4ZHh1TzhrRVJIRzRFT2JJRWE3Tkc2MkVTOFNSZnUzQTVTMFltZXl1cVZRSXdmR0h4ekJUdEhHYjNGTmpnbU5ZTnhyZzlJVGxlc3F2NUhCa3pxd1UtRnd1Yk1UblE2Y05TdmNOR0xMbjhyQkhLZ0hCUFJwYUE?oc=5",
+          "published": "2026-11-11T22:00:14+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G1"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Gold extends losses to one-week low as dollar rallies on Fed hike bets",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPc09mRGRCVmlxTnVTdDR2Y0ktNjVkZE1xUHhyTnZWUGZvbFZFS2hsTFk1SkVfNE82SVZlMTFXbUFtckZMaDIwbzA5RlgxWUxKbE5ZMGhrRkl1UWFrVG9ibW9mdWlGM0NYRTVlQnZramhHSTVadmtEaFhWMDRFY1dYVWRPX1RzNm9YNURTVUVzeGo2aEo4UzZReXRCVlQ0amhjVGFWTU1BVFVQR1k?oc=5",
+          "published": "2026-11-12T03:40:00+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G1"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Gold falls to over one-week low on firm dollar, Fed rate hike bets",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOHlpb0xtblhxMVdhVkM0ZWtJb19QV1hGbGN4UHh6YnVmZ01HcjVXTDZzUVcwbWhzdGt5TmtPM08xclJ4N1hyclFtMUJ1Yjk5Q1NsWF9Bc2ZYTjNzX0xpN0ZkbjFmekV0SS1GUmphX29XTkdQSHRNd2h6ZVhUeG9mMlNsbVVaZ3VjblVVOVN3V05DVTVZSTVXWU1JelNqekh2QmxXSg?oc=5",
+          "published": "2026-11-12T03:57:00+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from Reuters (same factor, same day and shared key words)"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "another report from CNBC (headlines share key words (74% match))"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new -> confirmed: reliable source: CNBC, Kitco News, Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "confirmed -> alerted: The dollar surge and Fed hike bets caused a fresh drop in gold, already reflected in price, so it is a new significant event."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-11",
+        "date_evidence": "First report published 2026-11-11 22:00 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Dollar up usually pushes gold down",
+        "alert_title": "Gold drops as dollar surges",
+        "alert_message": "Gold fell below $4,000 as the US dollar rose and Fed rate\u2011hike bets grew, pushing the metal down about 1% in a short time.",
+        "why_it_matters": [
+          "Dollar strength hurts gold price",
+          "Fed hike expectations add pressure on gold"
+        ],
+        "reason": "The dollar surge and Fed hike bets caused a fresh drop in gold, already reflected in price, so it is a new significant event.",
+        "time": "2026-11-12T10:45:50.472999+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold drops as dollar surges\n\nGold fell below $4,000 as the US dollar rose and Fed rate\u2011hike bets grew, pushing the metal down about 1% in a short time.\n\nMINT's prediction: Gold DOWN - In three similar cases gold fell 1\u20112% the next day, while one case saw a small rise, so the pattern leans toward a drop.\n\nGold had already moved -1.1% since the first report.\nSources: CNBC, Kitco News, Reuters\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 12 Nov 10:45 UTC",
+        "telegram_sent_at": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "outcome": {
+        "start_price": 3980.16,
+        "start_time": "2026-11-11T22:00:00+00:00",
+        "moved_before_mint": -1.09,
+        "delay_hours": 12.8,
+        "h1": {
+          "price": 3981.05,
+          "move": 0.02,
+          "time": "2026-11-11T23:00:14+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 3972.17,
+          "move": -0.2,
+          "time": "2026-11-12T03:00:14+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 3956.39,
+          "move": -0.6,
+          "time": "2026-11-12T08:00:14+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -1.09,
+          "time": "2026-11-12T10:00:30+00:00",
+          "hours": 12.0,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 3,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (3 of 9 checks done)",
+        "impact": {
+          "peak": -1.47,
+          "peak_hours": 11.0,
+          "faded_hours": null,
+          "against": 0.14,
+          "against_hours": 3.0,
+          "until_hours": 12.0,
+          "text": "Clear impact: Gold fell up to 1.5% (after 11 h). Still in the predicted direction after 12 h (-1.1%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In three similar cases gold fell 1\u20112% the next day, while one case saw a small rise, so the pattern leans toward a drop.",
+        "similar": [
+          {
+            "id": "START-20241106-G",
+            "date": "2024-11-06",
+            "title": "Dollar jumps after US election result",
+            "d1": -2.67,
+            "d7": -5.94,
+            "source": "starter library (check the date)",
+            "score": 0.95
+          },
+          {
+            "id": "GOLD-20261106-02",
+            "date": "2026-11-06",
+            "title": "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case - Kitco AM Report",
+            "d1": 0.75,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.69
+          },
+          {
+            "id": "GOLD-20261110-04",
+            "date": "2026-11-10",
+            "title": "Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
+            "d1": -1.43,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.54
+          },
+          {
+            "id": "GOLD-20261109-07",
+            "date": "2026-11-09",
+            "title": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
+            "d1": -1.65,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.49
+          }
+        ],
+        "votes": {
+          "up": 0.69,
+          "down": 3.48
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The dollar jumped and bets on a Fed rate hike rose, pushing gold below $4,000.",
+        "what_past_events_show": "In three similar cases gold fell 1\u20112% the next day, while one case saw a small rise, so the pattern leans toward a drop.",
+        "direction": "down",
+        "why": [
+          "A stronger dollar makes gold more expensive for non\u2011USD buyers.",
+          "Higher Fed\u2011hike expectations lift yields, pulling money away from gold."
+        ],
+        "watch_next": "If a geopolitical shock or big central\u2011bank buying shows up, the drop could be smaller.",
+        "confidence": "high",
+        "confidence_reason": "3 of 4 similar past events moved this way",
+        "time": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-12T10:46:16.218947+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261112-01",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Wall Street Journal",
+      "first_seen": "2026-11-12T10:45:50.472999+00:00",
+      "earliest_report": "2026-11-12T00:48:00+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
+      "words": [
+        "amid",
+        "dims",
+        "expectation",
+        "fed",
+        "gold",
+        "rate-hike",
+        "ris"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOFRSMC1GZ0NrUl9iRUdXSnFXX0xRTXNTb0dkTTluUE9HMGp3d3N4OG51U0s0WUs2aEVTTEJrYVRyVExXYjJYUzAwWEtHcUx1ZXVFNVkzZV9YWUN3TWE3R2RvdHNPUzJSektyTWpvV1RpSEp4QXVQZ0puLUFNRUZnU2xWYlhaVzIyYVJzN2Z5aWE3UU02Q2tGekp2eXZwa1oyRGpDbGl1NXE?oc=5",
+          "published": "2026-11-12T00:48:00+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new event, first report by Wall Street Journal"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new -> confirmed: reliable source: Wall Street Journal - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "confirmed -> alerted: Rules mode: enough proof and no sign of an older event."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-12",
+        "date_evidence": "no date clue in the headlines, so the first report date is used",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "the price may move",
+        "alert_title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+        "alert_message": "Wall Street Journal reports: Gold Dims Amid Rising Fed Rate-Hike Expectations. In the past, events like this (interest rates and fed decisions) have often been followed by: rates up, gold down.",
+        "why_it_matters": [
+          "Past pattern for this factor: Rates up, gold down."
+        ],
+        "reason": "Rules mode: enough proof and no sign of an older event.",
+        "time": "2026-11-12T10:45:50.472999+00:00",
+        "mode": "rules (AI failed)",
+        "model": null,
+        "telegram_message": "MINT alert \u00b7 Gold\nGold Dims Amid Rising Fed Rate-Hike Expectations\n\nWall Street Journal reports: Gold Dims Amid Rising Fed Rate-Hike Expectations. In the past, events like this (interest rates and fed decisions) have often been followed by: rates up, gold down.\n\nMINT's prediction: Gold DOWN - When the Fed raised rates or the market saw stronger reasons for hikes, gold usually fell (e.g., -1.1% on 2022\u201103\u201116 and -1.7% on 2026\u201111\u201105), though a few small upticks (+0.3%) occurred in other cases.\n\nGold had already moved -1.2% since the first report.\nSources: Wall Street Journal\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 12 Nov 10:45 UTC",
+        "telegram_sent_at": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "outcome": {
+        "start_price": 3985.91,
+        "start_time": "2026-11-12T01:00:00+00:00",
+        "moved_before_mint": -1.23,
+        "delay_hours": 10.0,
+        "h1": {
+          "price": 3977.52,
+          "move": -0.21,
+          "time": "2026-11-12T01:48:00+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 3970.68,
+          "move": -0.38,
+          "time": "2026-11-12T05:48:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -1.23,
+          "time": "2026-11-12T10:00:30+00:00",
+          "hours": 9.2,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 2,
+          "right": 2,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 2 of 2 clear price checks went the predicted way (2 of 9 checks done)",
+        "impact": {
+          "peak": -1.61,
+          "peak_hours": 8.2,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.2,
+          "until_hours": 9.2,
+          "text": "Clear impact: Gold fell up to 1.6% (after 8 h). Still in the predicted direction after 9 h (-1.2%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "When the Fed raised rates or the market saw stronger reasons for hikes, gold usually fell (e.g., -1.1% on 2022\u201103\u201116 and -1.7% on 2026\u201111\u201105), though a few small upticks (+0.3%) occurred in other cases.",
+        "similar": [
+          {
+            "id": "GOLD-20261106-02",
+            "date": "2026-11-06",
+            "title": "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case - Kitco AM Report",
+            "d1": 0.75,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "START-20220316-G",
+            "date": "2022-03-16",
+            "title": "Fed raises rates for the first time since 2018",
+            "d1": -1.06,
+            "d7": 0.39,
+            "source": "starter library (check the date)",
+            "score": 0.52
+          },
+          {
+            "id": "START-20230726-G",
+            "date": "2023-07-26",
+            "title": "Fed raises rates by a quarter point",
+            "d1": 0.33,
+            "d7": 0.58,
+            "source": "starter library (check the date)",
+            "score": 0.52
+          },
+          {
+            "id": "GOLD-20261105-05",
+            "date": "2026-11-05",
+            "title": "Gold market holding solid gains even as BoE raises interest rates due to rising inflation",
+            "d1": -1.72,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.52
+          },
+          {
+            "id": "START-20220615-G",
+            "date": "2022-06-15",
+            "title": "Fed raises rates by 0.75 point, biggest hike since 1994",
+            "d1": 0.34,
+            "d7": 1.37,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 2.11,
+          "down": 2.54
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The Wall Street Journal says gold is losing shine because investors expect the Fed to keep raising rates, which makes gold less attractive.",
+        "what_past_events_show": "When the Fed raised rates or the market saw stronger reasons for hikes, gold usually fell (e.g., -1.1% on 2022\u201103\u201116 and -1.7% on 2026\u201111\u201105), though a few small upticks (+0.3%) occurred in other cases.",
+        "direction": "down",
+        "why": [
+          "Higher or expected\u2011higher rates make gold less appealing versus interest\u2011bearing assets.",
+          "Most similar past events with rate\u2011hike news saw gold drop the next day."
+        ],
+        "watch_next": "A surprise Fed hike or a clear dovish shift would make the move larger or smaller respectively.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-12T10:46:16.798236+00:00"
+      }
+    },
+    {
+      "id": "GOLD-20261112-02",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-12T10:45:50.472999+00:00",
+      "earliest_report": "2026-11-12T07:34:00+00:00",
+      "last_updated": "2026-11-12T10:45:50.472999+00:00",
+      "words": [
+        "ahead",
+        "below",
+        "fed",
+        "gold",
+        "hike",
+        "holds",
+        "looks",
+        "market",
+        "rate"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMTJybnByRUZtMk5uajdEUVROVDJnSmZlQVRsazNHSmZaY0FKMVM0d0tvVnhDdlozdUhuMkx4ZkJZV0IyUDRCMmxtSzF0U3RmWWkxckVJVVVUV1pZczI2dmZfN29TYmN0YkVWMml2X2NJY1liZk1WeWFVdXNHbFpqdHBVWmhMTE4zTHozN2l5ZGFOWVBxWVBzTVB6V3dLeTR5UmlYYTVtN0xJQW5MMTVRdUJn?oc=5",
+          "published": "2026-11-12T07:34:00+00:00",
+          "found_at": "2026-11-12T10:45:50.472999+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T10:45:50.472999+00:00",
+          "note": "confirmed -> alerted: Rules mode: enough proof and no sign of an older event."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-12",
+        "date_evidence": "no date clue in the headlines, so the first report date is used",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "the price may move",
+        "alert_title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike",
+        "alert_message": "Bloomberg reports: Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike. In the past, events like this (interest rates and fed decisions) have often been followed by: rates up, gold down.",
+        "why_it_matters": [
+          "Past pattern for this factor: Rates up, gold down."
+        ],
+        "reason": "Rules mode: enough proof and no sign of an older event.",
+        "time": "2026-11-12T10:45:50.472999+00:00",
+        "mode": "rules (AI failed)",
+        "model": null,
+        "telegram_message": "MINT alert \u00b7 Gold\nGold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike\n\nBloomberg reports: Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike. In the past, events like this (interest rates and fed decisions) have often been followed by: rates up, gold down.\n\nMINT's prediction: Gold UP - When the market already expected a rate hike, gold usually moved only a little, sometimes up about 0.3% (2022\u201106\u201115, 2022\u201109\u201121, 2023\u201107\u201126) and other times down modestly (\u20110.4% on 2022\u201112\u201114).\n\nGold had already moved -0.5% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 12 Nov 10:45 UTC",
+        "telegram_sent_at": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "outcome": {
+        "start_price": 3956.39,
+        "start_time": "2026-11-12T08:00:00+00:00",
+        "moved_before_mint": -0.49,
+        "delay_hours": 3.2,
+        "h1": {
+          "price": 3921.72,
+          "move": -0.88,
+          "time": "2026-11-12T08:34:00+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": -0.49,
+          "time": "2026-11-12T10:00:30+00:00",
+          "hours": 2.4,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 0 of 1 clear price checks went the predicted way (1 of 9 checks done)",
+        "impact": {
+          "peak": -0.88,
+          "peak_hours": 1.4,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.4,
+          "until_hours": 2.4,
+          "text": "Clear impact: Gold fell up to 0.9% (after 1 h). Still in the predicted direction after 2 h (-0.5%)."
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "When the market already expected a rate hike, gold usually moved only a little, sometimes up about 0.3% (2022\u201106\u201115, 2022\u201109\u201121, 2023\u201107\u201126) and other times down modestly (\u20110.4% on 2022\u201112\u201114).",
+        "similar": [
+          {
+            "id": "GOLD-20261109-07",
+            "date": "2026-11-09",
+            "title": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
+            "d1": -1.65,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.93
+          },
+          {
+            "id": "START-20220615-G",
+            "date": "2022-06-15",
+            "title": "Fed raises rates by 0.75 point, biggest hike since 1994",
+            "d1": 0.34,
+            "d7": 1.37,
+            "source": "starter library (check the date)",
+            "score": 0.78
+          },
+          {
+            "id": "START-20220921-G",
+            "date": "2022-09-21",
+            "title": "Fed raises rates by 0.75 point again and signals more hikes",
+            "d1": 0.28,
+            "d7": -0.07,
+            "source": "starter library (check the date)",
+            "score": 0.78
+          },
+          {
+            "id": "START-20221214-G",
+            "date": "2022-12-14",
+            "title": "Fed slows to a half-point hike but says rates will stay higher for longer",
+            "d1": -0.37,
+            "d7": -0.01,
+            "source": "starter library (check the date)",
+            "score": 0.78
+          },
+          {
+            "id": "START-20230726-G",
+            "date": "2023-07-26",
+            "title": "Fed raises rates by a quarter point",
+            "d1": 0.33,
+            "d7": 0.58,
+            "source": "starter library (check the date)",
+            "score": 0.75
+          }
+        ],
+        "votes": {
+          "up": 2.31,
+          "down": 3.95
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold stayed under $4,000 while investors waited for the Fed\u2019s next rate decision, which could affect gold\u2019s appeal.",
+        "what_past_events_show": "When the market already expected a rate hike, gold usually moved only a little, sometimes up about 0.3% (2022\u201106\u201115, 2022\u201109\u201121, 2023\u201107\u201126) and other times down modestly (\u20110.4% on 2022\u201112\u201114).",
+        "direction": "up",
+        "why": [
+          "The rate hike is largely expected, so no big surprise to shift gold sharply.",
+          "Past expected\u2011hike days often saw a small rise as investors kept gold as a safe\u2011haven."
+        ],
+        "watch_next": "A surprise dovish comment or a cut would boost gold, while a surprise hawkish tone or a larger\u2011than\u2011expected hike would push it lower.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-12T10:45:50.472999+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-12T10:46:20.557510+00:00"
+      }
     }
   ],
   "counter": {
@@ -10912,28 +11938,29 @@
     "GOLD-20261106": 8,
     "GOLD-20261107": 1,
     "GOLD-20261110": 6,
-    "GOLD-20261111": 3,
+    "GOLD-20261111": 6,
     "BTC-20261111": 4,
-    "BTC-20261112": 2
+    "BTC-20261112": 2,
+    "GOLD-20261112": 2
   },
   "last_run": {
-    "run_time": "2026-11-12T10:40:56.613545+00:00",
+    "run_time": "2026-11-12T10:45:50.472999+00:00",
     "test_mode": false,
-    "stories": 23,
-    "off_topic": 13,
-    "repeats": 10,
-    "new_events": 0,
-    "joined": 0,
-    "updates_ignored": 0,
+    "stories": 140,
+    "off_topic": 51,
+    "repeats": 76,
+    "new_events": 5,
+    "joined": 2,
+    "updates_ignored": 6,
     "changes": {
-      "confirmed": 0,
-      "context": 0,
+      "confirmed": 4,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 4,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -10953,7 +11980,11 @@
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
           "Alert: Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
           "Alert: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
-          "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru"
+          "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+          "Being checked: Gold falls as hot inflation figures, higher dollar weigh (reliable source: Reuters)",
+          "Being checked: Gold falls below $4,000 as dollar surges, Fed hike bets rise - Kitco PM Report (reliable source: CNBC, Kitco News, Reuters)",
+          "Being checked: Gold Dims Amid Rising Fed Rate-Hike Expectations (reliable source: Wall Street Journal)",
+          "Being checked: Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike (reliable source: Bloomberg)"
         ]
       }
     }
@@ -10977,7 +12008,11 @@
         "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
         "Alert: Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
         "Alert: Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
-        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru"
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+        "Alert: Gold falls as hot inflation figures, higher dollar weigh",
+        "Alert: Gold falls below $4,000 as dollar surges, Fed hike bets rise - Kitco PM Report",
+        "Alert: Gold Dims Amid Rising Fed Rate-Hike Expectations",
+        "Alert: Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike"
       ]
     }
   },
