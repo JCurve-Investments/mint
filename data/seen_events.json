@@ -10651,14 +10651,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 3,
+          "done": 4,
+          "right": 4,
           "wrong": 0,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 3 of 3 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted down: 4 of 4 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": -3.9,
           "peak_hours": 23.6,
@@ -10684,6 +10684,12 @@
           "price": 73485.43,
           "move": -1.25,
           "time": "2026-11-12T07:46:03+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 71515.96,
+          "move": -3.9,
+          "time": "2026-11-12T21:46:03+00:00",
           "verdict": "right"
         }
       },
@@ -10723,7 +10729,8 @@
       },
       "telegram": {
         "first_sent_at": "2026-11-11T21:55:54.887807+00:00",
-        "sent_state": "context"
+        "sent_state": "context",
+        "result_sent": "2026-11-12T22:01:24.624208+00:00"
       }
     },
     {
@@ -13242,14 +13249,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 0,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (2 of 9 checks done)",
         "impact": {
           "peak": -0.64,
           "peak_hours": 4.6,
@@ -13263,6 +13270,12 @@
           "price": 71881.05,
           "move": -0.14,
           "time": "2026-11-12T17:45:52+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 71515.96,
+          "move": -0.64,
+          "time": "2026-11-12T21:45:52+00:00",
           "verdict": "flat"
         }
       },
@@ -13499,7 +13512,7 @@
     "GOLD-20261112": 4
   },
   "last_run": {
-    "run_time": "2026-11-12T21:55:37.503009+00:00",
+    "run_time": "2026-11-12T22:01:24.624208+00:00",
     "test_mode": false,
     "stories": 28,
     "off_topic": 17,
