@@ -2054,14 +2054,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 1,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 1 of 1 clear price checks went the predicted way (so far: 5 of 9 checks done)",
+        "effect_reason": "predicted down: 1 of 1 clear price checks went the predicted way (so far: 6 of 9 checks done)",
         "impact": {
           "peak": -2.56,
           "peak_hours": 11.4,
@@ -2099,6 +2099,12 @@
           "price": 74262.8,
           "move": -0.66,
           "time": "2026-11-11T17:36:15+00:00",
+          "verdict": "flat"
+        },
+        "d2": {
+          "price": 73574.11,
+          "move": -1.58,
+          "time": "2026-11-12T05:36:15+00:00",
           "verdict": "flat"
         }
       },
@@ -10508,7 +10514,7 @@
     "BTC-20261111": 4
   },
   "last_run": {
-    "run_time": "2026-11-12T05:45:47.921034+00:00",
+    "run_time": "2026-11-12T05:50:59.950372+00:00",
     "test_mode": false,
     "stories": 23,
     "off_topic": 15,
