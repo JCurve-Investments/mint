@@ -10628,15 +10628,21 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
-        "impact": null
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "impact": null,
+        "h1": {
+          "price": 73543.27,
+          "move": 0.08,
+          "time": "2026-11-12T08:41:18+00:00",
+          "verdict": "flat"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -10730,7 +10736,7 @@
     "BTC-20261112": 1
   },
   "last_run": {
-    "run_time": "2026-11-12T08:50:53.848082+00:00",
+    "run_time": "2026-11-12T08:55:40.911267+00:00",
     "test_mode": false,
     "stories": 22,
     "off_topic": 13,
