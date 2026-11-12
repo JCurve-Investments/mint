@@ -800,8 +800,8 @@
           "time": "2026-11-09T11:00:00+00:00",
           "verdict": "flat"
         },
-        "effect": "right",
-        "effect_reason": "predicted up: 1 of 1 clear price checks went the predicted way (so far: 6 of 9 checks done)",
+        "effect": "no_clear_move",
+        "effect_reason": "predicted up: 1 of 2 clear price checks went the predicted way (so far: 7 of 9 checks done)",
         "now": {
           "move": -3.64,
           "time": "2026-11-12T21:24:10+00:00",
@@ -809,9 +809,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 6,
+          "done": 7,
           "right": 1,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -853,6 +853,12 @@
           "move": -0.76,
           "time": "2026-11-11T10:00:00+00:00",
           "verdict": "flat"
+        },
+        "h84": {
+          "price": 71515.96,
+          "move": -3.64,
+          "time": "2026-11-12T22:00:00+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -11619,14 +11625,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 1,
+          "done": 4,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted down: 2 of 2 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": -2.86,
           "peak_hours": 18.0,
@@ -11635,6 +11641,12 @@
           "against_hours": 3.0,
           "until_hours": 23.4,
           "text": "Clear impact: Gold fell up to 2.9% (after 18 h). Still in the predicted direction after 23 h (-2.7%)."
+        },
+        "d1": {
+          "price": 3871.13,
+          "move": -2.74,
+          "time": "2026-11-12T22:00:14+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -11700,7 +11712,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-12T10:46:16.218947+00:00"
+        "first_sent_at": "2026-11-12T10:46:16.218947+00:00",
+        "result_sent": "2026-11-12T22:10:54.353635+00:00"
       }
     },
     {
@@ -13512,7 +13525,7 @@
     "GOLD-20261112": 4
   },
   "last_run": {
-    "run_time": "2026-11-12T22:05:47.154906+00:00",
+    "run_time": "2026-11-12T22:10:54.353635+00:00",
     "test_mode": false,
     "stories": 28,
     "off_topic": 17,
