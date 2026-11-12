@@ -10262,14 +10262,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 3,
+          "done": 4,
+          "right": 4,
           "wrong": 0,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 3 of 3 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted down: 4 of 4 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": -3.16,
           "peak_hours": 22.7,
@@ -10295,6 +10295,12 @@
           "price": 3971.68,
           "move": -0.52,
           "time": "2026-11-12T03:19:51+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 3876.03,
+          "move": -2.92,
+          "time": "2026-11-12T17:19:51+00:00",
           "verdict": "right"
         }
       },
@@ -10352,7 +10358,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-11T17:21:10.260164+00:00"
+        "first_sent_at": "2026-11-11T17:21:10.260164+00:00",
+        "result_sent": "2026-11-12T17:31:14.614830+00:00"
       }
     },
     {
@@ -12501,22 +12508,36 @@
       "proof_reason": "approved social media account: Donald Trump (Truth Social) (from social media)",
       "first_seen": "2026-11-12T13:10:54.784157+00:00",
       "earliest_report": "2026-11-12T13:07:34+00:00",
-      "last_updated": "2026-11-12T13:10:54.784157+00:00",
+      "last_updated": "2026-11-12T17:31:14.614830+00:00",
       "words": [
+        "again",
         "asked",
         "attention",
+        "before",
+        "better",
+        "bigger",
         "citi",
         "complete",
+        "congres",
         "corruption",
         "crime",
         "democrat",
+        "doing",
+        "ever",
+        "first",
         "focus",
+        "majority",
         "massive",
+        "military",
+        "next",
         "place",
         "president",
+        "radical",
+        "rebuilt",
         "run",
         "stat",
         "tak",
+        "term",
         "total",
         "vance",
         "vice"
@@ -12534,6 +12555,17 @@
           "found_at": "2026-11-12T13:10:54.784157+00:00",
           "summary": "I have asked Vice President Vance to focus his complete and total attention on the Massive Corruption and Crime taking place in Democrat run Cities and States throughout the U.S. The Blue States, such as Minnesota, California, Illinois, and many more, are all poorly run, corrupt disasters. Billions of Dollars is being stolen each and every month. Our Budget could be quickly BALANCED with the correction of this large scale criminal activity. CORRUPTION is in the Democrat Leadership\u2019s blood! We don\u2019t need a deal with Iran. Those days have long since passed. We\u2019ve got their money, Hundreds of Bil",
           "factor": "G1"
+        },
+        {
+          "organisation": "Donald Trump (Truth Social)",
+          "kind": "social",
+          "site": "Donald Trump (Truth Social)",
+          "title": "I rebuilt our Military in my First Term, and we\u2019re doing it AGAIN, bigger and better than ever before! The Radical Democrat Majority in the next Congress has al",
+          "link": "https://www.trumpstruth.org/statuses/43562",
+          "published": "2026-11-12T17:24:53+00:00",
+          "found_at": "2026-11-12T17:31:14.614830+00:00",
+          "summary": "I rebuilt our Military in my First Term, and we\u2019re doing it AGAIN, bigger and better than ever before! The Radical Democrat Majority in the next Congress has already made it clear that their Number One Agenda is to BLOCK and RESIST this historic investment in our National Security. They want to leave our Warriors weak, and unguarded, but the American People want their Warriors SAFE and STRONG. That\u2019s why TODAY I am calling on Senate Leadership to IMMEDIATELY move on the 350 Billion Dollar Reconciliation Bill to give our brave Warriors the DECISIVE ADVANTAGE they deserve. Our Military must be s",
+          "factor": "G1"
         }
       ],
       "history": [
@@ -12548,6 +12580,10 @@
         {
           "time": "2026-11-12T13:10:54.784157+00:00",
           "note": "confirmed -> rejected: The post is new but vague and shows no clear effect on the dollar, so it likely has low impact on gold and does not merit an alert."
+        },
+        {
+          "time": "2026-11-12T17:31:14.614830+00:00",
+          "note": "another report from Donald Trump (Truth Social) - same event, no new alert"
         }
       ],
       "decision": {
@@ -13203,14 +13239,14 @@
     "GOLD-20261112": 3
   },
   "last_run": {
-    "run_time": "2026-11-12T17:25:40.589698+00:00",
+    "run_time": "2026-11-12T17:31:14.614830+00:00",
     "test_mode": false,
-    "stories": 27,
+    "stories": 28,
     "off_topic": 14,
     "repeats": 13,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
