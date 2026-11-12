@@ -12181,6 +12181,198 @@
         "first_sent_at": "2026-11-12T11:35:52.012208+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261112-05",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-12T12:20:55.447718+00:00",
+      "earliest_report": "2026-11-12T10:10:48+00:00",
+      "last_updated": "2026-11-12T12:20:55.447718+00:00",
+      "words": [
+        "alleg",
+        "ban",
+        "coindcx",
+        "crim",
+        "cross-border",
+        "crypto",
+        "delta",
+        "exchang",
+        "financial",
+        "india",
+        "over",
+        "raids",
+        "trad",
+        "watchdog"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOdVlTQWdpTzBYbmhpM3ZFNkJGWWhPTm1TLVNQZy1XLVR0UWZObGhkX0ZYZVBfQ2pFNTNrdm5vZVVTUGEtdXBCYlhHNndxazlhTWU1SkhXakhoZjlBYkVNRFc5cHZfUEVEM0d4dFE3cEZkVEo1RFI1Wmpzb05KQzNWRGtLZW5GeFlLYmxRWGlyQzBoOFQzRWNneFpyeWRIVUYyTzN6YXFpejJVMmtQLTlJZUVrVS1pbkloZGpNUVpnZ0o3NnZWUzkzVU5TU0UzeVlCcjN3eWhLb29rYXF6dnRXN0J6RHdCYmZmM2sza2xOWQ?oc=5",
+          "published": "2026-11-12T10:10:48+00:00",
+          "found_at": "2026-11-12T12:20:55.447718+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T12:20:55.447718+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-12T12:20:55.447718+00:00",
+          "note": "new -> confirmed: reliable source: CoinDesk - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T12:20:55.447718+00:00",
+          "note": "confirmed -> alerted: The raid is a fresh regulatory crackdown that can push Bitcoin down, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-12",
+        "date_evidence": "The article published on 2026-11-12 reports the raids.",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Crackdowns have historically pushed Bitcoin lower.",
+        "alert_title": "India raids crypto exchanges",
+        "alert_message": "India\u2019s financial crimes watchdog raided CoinDCX and Delta over alleged illegal cross\u2011border trades, raising regulatory risk for Bitcoin.",
+        "why_it_matters": [
+          "Increased regulatory scrutiny on crypto",
+          "Potential loss of trading volume on major exchanges"
+        ],
+        "reason": "The raid is a fresh regulatory crackdown that can push Bitcoin down, so an alert is warranted.",
+        "time": "2026-11-12T12:20:55.447718+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nIndia raids crypto exchanges\n\nIndia\u2019s financial crimes watchdog raided CoinDCX and Delta over alleged illegal cross\u2011border trades, raising regulatory risk for Bitcoin.\n\nMINT's prediction: Bitcoin DOWN - Similar crackdowns usually pushed Bitcoin down 1\u20115% in one day (e.g., China\u2019s ban \u20134.6%, SEC suits \u20135.0% and \u20131.2%).\n\nBitcoin had already moved -0.7% since the first report.\nSources: CoinDesk\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 12 Nov 12:20 UTC",
+        "telegram_sent_at": "2026-11-12T12:20:55.447718+00:00"
+      },
+      "outcome": {
+        "start_price": 73418.46,
+        "start_time": "2026-11-12T10:00:00+00:00",
+        "moved_before_mint": -0.73,
+        "delay_hours": 2.2,
+        "h1": {
+          "price": 73389.92,
+          "move": -0.04,
+          "time": "2026-11-12T11:10:48+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.73,
+          "time": "2026-11-12T11:44:30+00:00",
+          "hours": 1.6,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "impact": {
+          "peak": -0.73,
+          "peak_hours": 1.6,
+          "faded_hours": null,
+          "against": -0.04,
+          "against_hours": 0.8,
+          "until_hours": 1.6,
+          "text": "Clear impact: Bitcoin fell up to 0.7% (after 2 h). Still in the predicted direction after 2 h (-0.7%)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar crackdowns usually pushed Bitcoin down 1\u20115% in one day (e.g., China\u2019s ban \u20134.6%, SEC suits \u20135.0% and \u20131.2%).",
+        "similar": [
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "source": "starter library (check the date)",
+            "score": 0.66
+          },
+          {
+            "id": "BTC-20261110-01",
+            "date": "2026-11-10",
+            "title": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+            "d1": -1.48,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.6
+          },
+          {
+            "id": "BTC-20261110-05",
+            "date": "2026-11-10",
+            "title": "Coinbase, Kalshi and Payward backs CFTC in lawsuit over single-stock perp futures",
+            "d1": -1.21,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.48
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.45,
+          "down": 4.14
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "India\u2019s financial crimes watchdog raided two crypto exchanges over suspected illegal cross\u2011border trades, raising concerns about tighter regulation.",
+        "what_past_events_show": "Similar crackdowns usually pushed Bitcoin down 1\u20115% in one day (e.g., China\u2019s ban \u20134.6%, SEC suits \u20135.0% and \u20131.2%).",
+        "direction": "down",
+        "why": [
+          "Regulatory action creates fear of reduced demand",
+          "It involves major local exchanges in a large market"
+        ],
+        "watch_next": "If Indian authorities announce a formal ban or clear the exchanges, the impact could become larger or smaller respectively.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-12T12:20:55.447718+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-12T12:21:07.679226+00:00"
+      }
     }
   ],
   "counter": {
@@ -12196,34 +12388,35 @@
     "GOLD-20261110": 6,
     "GOLD-20261111": 6,
     "BTC-20261111": 4,
-    "BTC-20261112": 4,
+    "BTC-20261112": 5,
     "GOLD-20261112": 2
   },
   "last_run": {
-    "run_time": "2026-11-12T12:15:50.290487+00:00",
+    "run_time": "2026-11-12T12:20:55.447718+00:00",
     "test_mode": false,
-    "stories": 29,
+    "stories": 28,
     "off_topic": 16,
-    "repeats": 13,
-    "new_events": 0,
+    "repeats": 11,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Binance hack reveals crypto's uphill battle against hackers",
           "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
-          "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%"
+          "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
+          "Being checked: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades (reliable source: CoinDesk)"
         ]
       },
       "Gold": {
@@ -12251,7 +12444,8 @@
       "reasons": [
         "Alert: Binance hack reveals crypto's uphill battle against hackers",
         "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
-        "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%"
+        "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
+        "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades"
       ]
     },
     "Gold": {
