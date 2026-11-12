@@ -10726,6 +10726,179 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-12T07:46:02.850521+00:00"
       }
+    },
+    {
+      "id": "BTC-20261112-02",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "Notice on ADR Fees for US Stocks on Binance Stock Trading - October 2026 Binance would like to inform users of the applicable American Depositary Receipt (ADR)",
+      "state": "rejected",
+      "state_reason": "Decision agent: The announcement concerns ADR fees for US stocks, not Bitcoin, and price unchanged.",
+      "proof": "social",
+      "proof_reason": "approved social media account: Binance announcements (Telegram) (from social media)",
+      "first_seen": "2026-11-12T10:10:55.095757+00:00",
+      "earliest_report": "2026-11-12T10:05:33+00:00",
+      "last_updated": "2026-11-12T10:10:55.095757+00:00",
+      "words": [
+        "adr",
+        "american",
+        "applicable",
+        "binance",
+        "depositary",
+        "fees",
+        "inform",
+        "like",
+        "notice",
+        "october",
+        "receipt",
+        "stock",
+        "trad",
+        "users",
+        "would"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Binance announcements (Telegram)",
+          "kind": "social",
+          "site": "binance_announcements",
+          "title": "Notice on ADR Fees for US Stocks on Binance Stock Trading - October 2026 Binance would like to inform users of the applicable American Depositary Receipt (ADR)",
+          "link": "https://t.me/binance_announcements/9130",
+          "published": "2026-11-12T10:05:33+00:00",
+          "found_at": "2026-11-12T10:10:55.095757+00:00",
+          "summary": "Notice on ADR Fees for US Stocks on Binance Stock Trading - October 2026 Binance would like to inform users of the applicable American Depositary Receipt (ADR) fees charged by the relevant depositary banks for certain US equities. \ud83d\udc49\ud83c\udffb Learn",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-12T10:10:55.095757+00:00",
+          "note": "new event, first report by Binance announcements (Telegram)"
+        },
+        {
+          "time": "2026-11-12T10:10:55.095757+00:00",
+          "note": "new -> confirmed: approved social media account: Binance announcements (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-12T10:10:55.095757+00:00",
+          "note": "confirmed -> rejected: The announcement concerns ADR fees for US stocks, not Bitcoin, and price unchanged."
+        }
+      ],
+      "decision": {
+        "is_new_event": false,
+        "event_date": "unknown",
+        "date_evidence": "The notice mentions October 2026.",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "no effect",
+        "expected_direction": "unclear",
+        "direction_reason": "The news is about stock fees, not Bitcoin.",
+        "alert_title": "",
+        "alert_message": "",
+        "why_it_matters": [],
+        "reason": "The announcement concerns ADR fees for US stocks, not Bitcoin, and price unchanged.",
+        "time": "2026-11-12T10:10:55.095757+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 73411.71,
+        "start_time": "2026-11-12T09:59:40+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-12T09:59:40+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Past legal actions involving Binance usually caused the price to fall about 4\u20115% in one day, but a few unrelated events gave small gains, so the record is mixed.",
+        "similar": [
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "source": "starter library (check the date)",
+            "score": 0.64
+          },
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "source": "starter library (check the date)",
+            "score": 0.63
+          },
+          {
+            "id": "START-20231121-B",
+            "date": "2023-11-21",
+            "title": "Binance pleads guilty and CZ steps down in $4.3bn settlement",
+            "d1": -4.44,
+            "d7": 0.94,
+            "source": "starter library (check the date)",
+            "score": 0.62
+          },
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.53,
+          "down": 3.21
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Binance posted a notice about fees for American Depositary Receipts (ADR) on its US stock trading platform, which could raise costs for users.",
+        "what_past_events_show": "Past legal actions involving Binance usually caused the price to fall about 4\u20115% in one day, but a few unrelated events gave small gains, so the record is mixed.",
+        "direction": "down",
+        "why": [
+          "Extra fees can make buying Bitcoin less attractive.",
+          "Binance has been under legal pressure lately, so the market is already nervous."
+        ],
+        "watch_next": "If Binance says the fees will be low or removes them, the effect could be smaller; larger fees or new regulatory moves would make the drop bigger.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-12T10:10:55.095757+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-12T10:11:07.166530+00:00",
+        "sent_state": "rejected"
+      }
     }
   ],
   "counter": {
@@ -10741,33 +10914,34 @@
     "GOLD-20261110": 6,
     "GOLD-20261111": 3,
     "BTC-20261111": 4,
-    "BTC-20261112": 1
+    "BTC-20261112": 2
   },
   "last_run": {
-    "run_time": "2026-11-12T10:05:43.310869+00:00",
+    "run_time": "2026-11-12T10:10:55.095757+00:00",
     "test_mode": false,
     "stories": 24,
-    "off_topic": 15,
+    "off_topic": 14,
     "repeats": 9,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Binance hack reveals crypto's uphill battle against hackers",
           "Alert: Arkham says Bitget hacker moved 1,052 BTC worth $78.6M, with 80% routed through CoinJoin",
-          "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%"
+          "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
+          "Being checked: Notice on ADR Fees for US Stocks on Binance Stock Trading - October 2026 Binance would like to inform users of the applicable American Depositary Receipt (ADR) (approved social media account: Binance announcements (Telegram) (from social media))"
         ]
       },
       "Gold": {
