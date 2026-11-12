@@ -11326,8 +11326,8 @@
           "hours": 23.9,
           "verdict": "wrong"
         },
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 0 of 3 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "wrong",
+        "effect_reason": "predicted up, but 0 of 4 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": 0.0,
           "peak_hours": 0.4,
@@ -11338,12 +11338,18 @@
           "text": "Never moved the predicted way. It fell up to 3.0% (after 24 h)."
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
-        "final": false
+        "final": false,
+        "d1": {
+          "price": 3904.05,
+          "move": -3.02,
+          "time": "2026-11-12T13:33:41+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "up",
@@ -11371,7 +11377,8 @@
       },
       "telegram": {
         "first_sent_at": "2026-11-12T10:46:15.662172+00:00",
-        "sent_state": "context"
+        "sent_state": "context",
+        "result_sent": "2026-11-12T13:45:52.723110+00:00"
       }
     },
     {
@@ -12572,7 +12579,7 @@
     "GOLD-20261112": 3
   },
   "last_run": {
-    "run_time": "2026-11-12T13:40:55.972752+00:00",
+    "run_time": "2026-11-12T13:45:52.723110+00:00",
     "test_mode": false,
     "stories": 32,
     "off_topic": 18,
