@@ -12098,14 +12098,14 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 0 of 3 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "wrong",
+        "effect_reason": "predicted up, but 0 of 4 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": 0.0,
           "peak_hours": 0.4,
@@ -12125,6 +12125,12 @@
           "price": 3876.03,
           "move": -2.03,
           "time": "2026-11-12T17:34:00+00:00",
+          "verdict": "wrong"
+        },
+        "d1": {
+          "price": 3889.55,
+          "move": -1.69,
+          "time": "2026-11-13T07:34:00+00:00",
           "verdict": "wrong"
         }
       },
@@ -12200,7 +12206,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-12T10:46:20.557510+00:00"
+        "first_sent_at": "2026-11-12T10:46:20.557510+00:00",
+        "result_sent": "2026-11-13T07:45:56.331176+00:00"
       }
     },
     {
@@ -13740,7 +13747,7 @@
     "BTC-20261113": 1
   },
   "last_run": {
-    "run_time": "2026-11-13T07:40:55.966697+00:00",
+    "run_time": "2026-11-13T07:45:56.331176+00:00",
     "test_mode": false,
     "stories": 42,
     "off_topic": 24,
@@ -13761,7 +13768,6 @@
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
-          "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
           "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
           "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
           "Alert: Illinois crypto tax is impossible to enforce as written, crypto industry tells court"
@@ -13789,7 +13795,6 @@
     "Bitcoin": {
       "state": "Alert",
       "reasons": [
-        "Alert: BTC news: Canaan may sell bitcoin to buy back its own stock after mining-rig sales collapsed 96%",
         "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
         "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
         "Alert: Illinois crypto tax is impossible to enforce as written, crypto industry tells court"
