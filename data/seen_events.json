@@ -13128,19 +13128,32 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-12T16:51:06.266981+00:00",
       "earliest_report": "2026-11-12T16:45:52+00:00",
-      "last_updated": "2026-11-12T16:51:06.266981+00:00",
+      "last_updated": "2026-11-13T01:20:51.253071+00:00",
       "words": [
+        "1.2",
+        "approval",
+        "billion",
+        "binance",
         "court",
         "crypto",
+        "doj",
         "enforce",
+        "gets",
+        "hack",
         "illinoi",
         "impossible",
         "industry",
+        "korea",
+        "north",
+        "seize",
         "tax",
         "tells",
+        "tied",
         "written"
       ],
-      "amounts": [],
+      "amounts": [
+        1200.0
+      ],
       "old_clues": [],
       "sources": [
         {
@@ -13151,6 +13164,17 @@
           "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeGxwWFJYeVNkTmRzYmJraUNBVGx3VjZXbFlJWkJHbTB4NC1FNkFsQ2JUX2YwTlY1NWx0VDFUd25FbEgxZUlNekZ6UkFFOUxibUJhazdFRUdOQmR6VEF2OVhSaGZqVVVHaFRWOU1MOWtMMlJFTUdLRzRYUW5teEItVjBJTTI2dW9JSnlTTEZ5eWlFdGtrbnpoTUxNdkt5NG5Fb05Pdkp3dkd4bE5MSzhXUU5XS0lHQ0hTd2RuNUhyVVNvdTEy?oc=5",
           "published": "2026-11-12T16:45:52+00:00",
           "found_at": "2026-11-12T16:51:06.266981+00:00",
+          "summary": "",
+          "factor": "B1"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "DOJ gets court approval to seize $1.2 billion tied to North Korea's Binance hack",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZnhOaHFuMTFtcGtQdUdzSFZxWUthYVZNMnlPem9XdzZ3cjdGVGFaN25IQlR2QVM1bmN2aWZ4RDBwT3NIN3dvb0tpVzZlVFBFUXFuTzQyODd2N1lHc2VzVGFtNmJ1Q2V6bFN5M3drUHZURmFKNnZQbmctOVZnWjh1YVF3OHZZVTB1ZzVGODdScUZDdUZsNnFYZERaYWFJdU53SmI3RnY5dkxhVXlZSHZqNnNXb2hFYW9VeTRvbUlmaV9sNFYwRnc5ajVvaUN1SzVONFE?oc=5",
+          "published": "2026-11-12T22:55:52+00:00",
+          "found_at": "2026-11-13T01:20:51.253071+00:00",
           "summary": "",
           "factor": "B1"
         }
@@ -13167,6 +13191,10 @@
         {
           "time": "2026-11-12T16:51:06.266981+00:00",
           "note": "confirmed -> alerted: The report reveals a new legal challenge to crypto taxation, a fresh regulatory event that could negatively affect Bitcoin, so we issue an alert."
+        },
+        {
+          "time": "2026-11-13T01:20:51.253071+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": {
@@ -13473,14 +13501,14 @@
     "GOLD-20261112": 4
   },
   "last_run": {
-    "run_time": "2026-11-13T01:16:03.829255+00:00",
+    "run_time": "2026-11-13T01:20:51.253071+00:00",
     "test_mode": false,
     "stories": 34,
-    "off_topic": 19,
-    "repeats": 15,
+    "off_topic": 17,
+    "repeats": 16,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
