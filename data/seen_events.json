@@ -9962,14 +9962,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 1,
+          "done": 6,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 1 of 1 clear price checks went the predicted way (so far: 5 of 9 checks done)",
+        "effect_reason": "predicted down: 2 of 2 clear price checks went the predicted way (so far: 6 of 9 checks done)",
         "impact": {
           "peak": -7.95,
           "peak_hours": 41.7,
@@ -10007,6 +10007,12 @@
           "price": 71371.98,
           "move": -3.47,
           "time": "2026-11-13T00:19:30+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 69396.63,
+          "move": -6.14,
+          "time": "2026-11-13T12:19:30+00:00",
           "verdict": "right"
         }
       },
@@ -13311,7 +13317,7 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-12T16:51:06.266981+00:00",
       "earliest_report": "2026-11-12T16:45:52+00:00",
-      "last_updated": "2026-11-13T01:20:51.253071+00:00",
+      "last_updated": "2026-11-13T12:31:13.879256+00:00",
       "words": [
         "1.2",
         "approval",
@@ -13319,6 +13325,7 @@
         "binance",
         "court",
         "crypto",
+        "cryptocurrency",
         "doj",
         "enforce",
         "gets",
@@ -13328,10 +13335,12 @@
         "industry",
         "korea",
         "north",
+        "seiz",
         "seize",
         "tax",
         "tells",
         "tied",
+        "u.s",
         "written"
       ],
       "amounts": [
@@ -13360,6 +13369,17 @@
           "found_at": "2026-11-13T01:20:51.253071+00:00",
           "summary": "",
           "factor": "B1"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKOHA5R0ZGa0tFdEtTZElXN1Q3eDNQZndVeGw2aERqWjNSdEtZVjlacUVpZ0hWZFNDLUV2Zzk5OGRkemg3WGJxd0lwMEJxRXNfTU1aTlEzeXk4eTZJckl3Y1JNV2J4QTFEWVpaQVFvZHlNS0Ja0gF6QVVfeXFMT1ZJWGJJc3BxU2xqY1JBdmZDM3FELU1XWjNHVW9ubzFIQldoaFlXdzcyX2J0Q2txRGN5Q05xZEZjMS1VVDlhcWhpQ0s4VW1GWGhpWjdzQWtJU3hTLURZVlZiVXh2VERlOGtjR2l2MHFGUmVaOTJCTWNLQ0E?oc=5",
+          "published": "2026-11-13T12:03:24+00:00",
+          "found_at": "2026-11-13T12:31:13.879256+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -13378,6 +13398,10 @@
         {
           "time": "2026-11-13T01:20:51.253071+00:00",
           "note": "another report from CoinDesk - same event, no new alert"
+        },
+        {
+          "time": "2026-11-13T12:31:13.879256+00:00",
+          "note": "another report from CNBC - same event, no new alert"
         }
       ],
       "decision": {
@@ -15075,14 +15099,14 @@
     "GOLD-20261113": 1
   },
   "last_run": {
-    "run_time": "2026-11-13T12:25:39.238905+00:00",
+    "run_time": "2026-11-13T12:31:13.879256+00:00",
     "test_mode": false,
-    "stories": 30,
+    "stories": 31,
     "off_topic": 19,
     "repeats": 11,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
