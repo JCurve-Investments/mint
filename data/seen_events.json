@@ -12608,14 +12608,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 2,
+          "done": 4,
+          "right": 3,
           "wrong": 0,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 2 of 2 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted down: 3 of 3 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": -7.3,
           "peak_hours": 19.8,
@@ -12635,6 +12635,12 @@
           "price": 71471.06,
           "move": -2.65,
           "time": "2026-11-12T20:10:48+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 69034.59,
+          "move": -5.97,
+          "time": "2026-11-13T10:10:48+00:00",
           "verdict": "right"
         }
       },
@@ -12710,7 +12716,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-12T12:21:07.679226+00:00"
+        "first_sent_at": "2026-11-12T12:21:07.679226+00:00",
+        "result_sent": "2026-11-13T10:20:58.503873+00:00"
       }
     },
     {
@@ -13906,11 +13913,11 @@
     "BTC-20261113": 2
   },
   "last_run": {
-    "run_time": "2026-11-13T10:15:59.523143+00:00",
+    "run_time": "2026-11-13T10:20:58.503873+00:00",
     "test_mode": false,
-    "stories": 6,
-    "off_topic": 1,
-    "repeats": 5,
+    "stories": 38,
+    "off_topic": 23,
+    "repeats": 15,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -13929,8 +13936,7 @@
         "reasons": [
           "Alert: India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
           "Alert: Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
-          "Alert: Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
-          "3 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: Illinois crypto tax is impossible to enforce as written, crypto industry tells court"
         ]
       },
       "Gold": {
