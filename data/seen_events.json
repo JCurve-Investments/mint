@@ -5312,21 +5312,15 @@
           "time": "2026-11-10T03:00:16+00:00",
           "verdict": "wrong"
         },
-        "now": {
-          "move": -3.76,
-          "time": "2026-11-13T14:54:30+00:00",
-          "hours": 167.9,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 0,
+          "done": 9,
+          "right": 1,
           "wrong": 5,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "wrong",
-        "effect_reason": "predicted down, but 0 of 5 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted down, but 1 of 6 clear price checks went the predicted way",
         "impact": {
           "peak": -4.17,
           "peak_hours": 145.0,
@@ -5341,6 +5335,12 @@
           "move": -0.7,
           "time": "2026-11-11T15:00:16+00:00",
           "verdict": "flat"
+        },
+        "d7": {
+          "price": 3882.96,
+          "move": -3.76,
+          "time": "2026-11-13T15:00:16+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -5406,7 +5406,8 @@
       "telegram": {
         "first_sent_at": "2026-11-10T10:41:50.296580+00:00",
         "sent_state": "summary",
-        "result_sent": "2026-11-10T10:41:00.999961+00:00"
+        "result_sent": "2026-11-10T10:41:00.999961+00:00",
+        "final_sent": "2026-11-13T15:11:09.521936+00:00"
       }
     },
     {
@@ -13954,14 +13955,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 0,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (2 of 9 checks done)",
         "impact": {
           "peak": -0.07,
           "peak_hours": 4.9,
@@ -13975,6 +13976,12 @@
           "price": 69233.69,
           "move": 0.29,
           "time": "2026-11-13T10:59:50+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 68987.3,
+          "move": -0.07,
+          "time": "2026-11-13T14:59:50+00:00",
           "verdict": "flat"
         }
       },
@@ -15146,7 +15153,7 @@
     "GOLD-20261113": 1
   },
   "last_run": {
-    "run_time": "2026-11-13T15:05:41.452294+00:00",
+    "run_time": "2026-11-13T15:11:09.521936+00:00",
     "test_mode": false,
     "stories": 36,
     "off_topic": 25,
