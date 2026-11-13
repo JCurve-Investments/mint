@@ -12864,10 +12864,11 @@
       "proof_reason": "reliable source: CNBC",
       "first_seen": "2026-11-12T14:50:59.402699+00:00",
       "earliest_report": "2026-11-12T13:44:27+00:00",
-      "last_updated": "2026-11-13T01:10:52.589306+00:00",
+      "last_updated": "2026-11-13T03:20:49.918706+00:00",
       "words": [
         "2.7",
         "26.9b",
+        "400m",
         "6.3",
         "analyst",
         "ark",
@@ -12876,6 +12877,7 @@
         "binance",
         "bottleneck",
         "brian",
+        "calls",
         "ceo",
         "coinbase",
         "cover",
@@ -12885,6 +12887,8 @@
         "democrat",
         "department",
         "detail",
+        "fake",
+        "fbi",
         "finish",
         "freeze",
         "hack",
@@ -12906,6 +12910,8 @@
         "through",
         "token",
         "u.s",
+        "used",
+        "video",
         "video-call"
       ],
       "amounts": [
@@ -12970,6 +12976,17 @@
           "found_at": "2026-11-13T01:10:52.589306+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "BBC",
+          "kind": "news",
+          "site": "bbc.com",
+          "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0dTZDYlBKanhSU1hkU2pLdERyOWFrYVpETnBSMkV4N0VDZXlPNEFCT05YeFRNMExVNjJKVU1taW9JZFZyT1RJYlk4UldfZEpsRlBibHdKU0NmbVk?oc=5",
+          "published": "2026-11-13T02:48:29+00:00",
+          "found_at": "2026-11-13T03:20:49.918706+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -12992,6 +13009,10 @@
         {
           "time": "2026-11-13T01:10:52.589306+00:00",
           "note": "another report from Bloomberg - same event, no new alert"
+        },
+        {
+          "time": "2026-11-13T03:20:49.918706+00:00",
+          "note": "another report from BBC - same event, no new alert"
         }
       ],
       "decision": {
@@ -13531,14 +13552,14 @@
     "GOLD-20261112": 4
   },
   "last_run": {
-    "run_time": "2026-11-13T03:15:49.898542+00:00",
+    "run_time": "2026-11-13T03:20:49.918706+00:00",
     "test_mode": false,
-    "stories": 33,
+    "stories": 34,
     "off_topic": 16,
     "repeats": 17,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
