@@ -13551,6 +13551,137 @@
         "first_sent_at": "2026-11-12T18:35:53.768130+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "BTC-20261113-01",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-13T06:15:47.465346+00:00",
+      "earliest_report": "2026-11-13T05:45:26+00:00",
+      "last_updated": "2026-11-13T06:15:47.465346+00:00",
+      "words": [
+        "1.5",
+        "billion",
+        "bitcoin",
+        "etfs",
+        "net",
+        "now",
+        "outflows",
+        "over",
+        "year"
+      ],
+      "amounts": [
+        1500.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONHFNbFhVR1kxWEZsMG9vckcyZTBKVDBPWnpMUHV4NGJKUTFfMWk1bFA2bnBKSzlrNGxwbU5MMDVzNFZLUWlDZWs2akx3WHlpUHNLUGU0MDVva05sSF9SSXhlWkYxNDZUVUNrTXM5LTY3S2dROS1UbUhNOWUyQ3VZQ2xmVF9ibUJPajU0dHZneEtVOEd2bjBhcXgwdzNDbGVpbzEwc1NSeEpZSXdGWHk1d3FfekZ3QnFVZXc?oc=5",
+          "published": "2026-11-13T05:45:26+00:00",
+          "found_at": "2026-11-13T06:15:47.465346+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-13T06:15:47.465346+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-13T06:15:47.465346+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 68168.37,
+        "start_time": "2026-11-13T06:09:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.5,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-13T06:09:50+00:00",
+          "hours": 0.4,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In three recent similar cases, Bitcoin fell the next day by about 1\u202f% to 4\u202f% (\u20111.1\u202f%, \u20111.4\u202f%, \u20113.9\u202f%).",
+        "similar": [
+          {
+            "id": "BTC-20261111-04",
+            "date": "2026-11-11",
+            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+            "d1": -3.9,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.63
+          },
+          {
+            "id": "BTC-20261109-06",
+            "date": "2026-11-09",
+            "title": "JUST IN: $15 trillion BlackRock expects billions of dollars in crypto to move into ETFs over security concerns. @WatcherGuru",
+            "d1": -1.11,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "BTC-20261111-01",
+            "date": "2026-11-11",
+            "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+            "d1": -1.43,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.49
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 3.17
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin ETFs have recorded over $1.5\u202fbillion of net outflows for the year, meaning big investors are pulling money out of the funds.",
+        "what_past_events_show": "In three recent similar cases, Bitcoin fell the next day by about 1\u202f% to 4\u202f% (\u20111.1\u202f%, \u20111.4\u202f%, \u20113.9\u202f%).",
+        "direction": "down",
+        "why": [
+          "Large outflows have historically been followed by price drops.",
+          "Outflows reduce buying pressure and signal weaker investor sentiment."
+        ],
+        "watch_next": "If the outflows keep happening for several days in a row, the downside could grow; a quick reversal to inflows would lessen the impact.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 3 similar past events moved this way",
+        "time": "2026-11-13T06:15:47.465346+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-13T06:15:56.674856+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -13567,20 +13698,21 @@
     "GOLD-20261111": 6,
     "BTC-20261111": 4,
     "BTC-20261112": 8,
-    "GOLD-20261112": 4
+    "GOLD-20261112": 4,
+    "BTC-20261113": 1
   },
   "last_run": {
-    "run_time": "2026-11-13T06:10:54.034696+00:00",
+    "run_time": "2026-11-13T06:15:47.465346+00:00",
     "test_mode": false,
-    "stories": 38,
+    "stories": 39,
     "off_topic": 20,
     "repeats": 18,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
