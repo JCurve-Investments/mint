@@ -14979,14 +14979,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
           "wrong": 2,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 0 of 2 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "wrong",
+        "effect_reason": "predicted down, but 0 of 2 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": -0.28,
           "peak_hours": 17.7,
@@ -14995,6 +14995,12 @@
           "against_hours": 5.7,
           "until_hours": 23.6,
           "text": "Small impact: Gold fell up to 0.3% (after 18 h). The effect lasted about 20 h, then faded."
+        },
+        "d1": {
+          "price": 3874.32,
+          "move": 0.02,
+          "time": "2026-11-13T22:16:45+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -15069,7 +15075,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-13T10:46:25.216751+00:00"
+        "first_sent_at": "2026-11-13T10:46:25.216751+00:00",
+        "result_sent": "2026-11-13T22:31:24.252054+00:00"
       }
     },
     {
@@ -15454,7 +15461,7 @@
     "GOLD-20261113": 2
   },
   "last_run": {
-    "run_time": "2026-11-13T22:25:54.950125+00:00",
+    "run_time": "2026-11-13T22:31:24.252054+00:00",
     "test_mode": false,
     "stories": 34,
     "off_topic": 25,
