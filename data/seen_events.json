@@ -10741,14 +10741,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 4,
+          "done": 5,
+          "right": 5,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 4 of 4 clear price checks went the predicted way (so far: 4 of 9 checks done)",
+        "effect_reason": "predicted down: 5 of 5 clear price checks went the predicted way (so far: 5 of 9 checks done)",
         "impact": {
           "peak": -8.54,
           "peak_hours": 32.2,
@@ -10780,6 +10780,12 @@
           "price": 71515.96,
           "move": -3.9,
           "time": "2026-11-12T21:46:03+00:00",
+          "verdict": "right"
+        },
+        "h36": {
+          "price": 69034.59,
+          "move": -7.23,
+          "time": "2026-11-13T09:46:03+00:00",
           "verdict": "right"
         }
       },
@@ -13740,6 +13746,133 @@
         "first_sent_at": "2026-11-13T06:15:56.674856+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261113-02",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin Strategy ETF (BITO) Price, Flows & Assets",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)",
+      "proof": "news",
+      "proof_reason": "reliable source: The Block",
+      "first_seen": "2026-11-13T10:01:32.073451+00:00",
+      "earliest_report": "2026-11-13T09:59:50+00:00",
+      "last_updated": "2026-11-13T10:01:32.073451+00:00",
+      "words": [
+        "asset",
+        "bitcoin",
+        "bito",
+        "etf",
+        "flows",
+        "price",
+        "strategy"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Bitcoin Strategy ETF (BITO) Price, Flows & Assets",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xZ0Q0a2RxbGRPbzVnelpXUnNfLTRReWFPOEl6MVVOd2hfOENSMnBwR3dSdHBteThpLUhpOGZGZEJEZFhmWVBIOTRhMXBJb2MzYmZR?oc=5",
+          "published": "2026-11-13T09:59:50+00:00",
+          "found_at": "2026-11-13T10:01:32.073451+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-13T10:01:32.073451+00:00",
+          "note": "new event, first report by The Block"
+        },
+        {
+          "time": "2026-11-13T10:01:32.073451+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 69034.59,
+        "start_time": "2026-11-13T09:39:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-13T09:39:20+00:00",
+          "hours": -0.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In three recent similar cases, Bitcoin fell the next day (\u20110.6%, \u20111.4% and \u20113.9%).",
+        "similar": [
+          {
+            "id": "BTC-20261109-04",
+            "date": "2026-11-09",
+            "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+            "d1": -0.62,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.72
+          },
+          {
+            "id": "BTC-20261111-01",
+            "date": "2026-11-11",
+            "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+            "d1": -1.43,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.52
+          },
+          {
+            "id": "BTC-20261111-04",
+            "date": "2026-11-11",
+            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+            "d1": -3.9,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.52
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 1.76
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The report shows recent activity in the Bitcoin Strategy ETF (BITO), highlighting its price, flows and assets, which can signal investor sentiment toward Bitcoin.",
+        "what_past_events_show": "In three recent similar cases, Bitcoin fell the next day (\u20110.6%, \u20111.4% and \u20113.9%).",
+        "direction": "down",
+        "why": [
+          "Recent ETF outflows have historically been followed by price drops",
+          "Flows often lag price, so a drop may reflect weakening buying pressure"
+        ],
+        "watch_next": "If ETF outflows keep happening for several days in a row, the decline could get larger; a reversal to inflows would likely soften the move.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 3 similar past events moved this way",
+        "time": "2026-11-13T10:01:32.073451+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-13T10:01:40.846673+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -13757,20 +13890,20 @@
     "BTC-20261111": 4,
     "BTC-20261112": 8,
     "GOLD-20261112": 4,
-    "BTC-20261113": 1
+    "BTC-20261113": 2
   },
   "last_run": {
-    "run_time": "2026-11-13T09:55:42.862465+00:00",
+    "run_time": "2026-11-13T10:01:32.073451+00:00",
     "test_mode": false,
-    "stories": 38,
-    "off_topic": 21,
+    "stories": 41,
+    "off_topic": 23,
     "repeats": 17,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
