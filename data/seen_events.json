@@ -16756,14 +16756,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 2,
-          "right": 0,
+          "done": 3,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - no clear move in any price check yet (2 of 9 checks done)",
+        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (3 of 9 checks done)",
         "impact": {
           "peak": -1.62,
           "peak_hours": 9.7,
@@ -16772,6 +16772,12 @@
           "against_hours": 5.1,
           "until_hours": 9.7,
           "text": "Clear impact: Bitcoin fell up to 1.6% (after 10 h). Still in the predicted direction after 10 h (-1.6%)."
+        },
+        "h10": {
+          "price": 65965.81,
+          "move": -1.62,
+          "time": "2026-11-14T14:56:55+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -16870,7 +16876,7 @@
     "BTC-20261114": 3
   },
   "last_run": {
-    "run_time": "2026-11-14T15:05:41.931774+00:00",
+    "run_time": "2026-11-14T15:10:52.556384+00:00",
     "test_mode": false,
     "stories": 21,
     "off_topic": 14,
