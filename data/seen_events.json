@@ -13952,14 +13952,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 1,
+          "done": 5,
+          "right": 2,
           "wrong": 1,
           "total": 9
         },
         "final": false,
-        "effect": "no_clear_move",
-        "effect_reason": "predicted down: 1 of 2 clear price checks went the predicted way (so far: 4 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted down: 2 of 3 clear price checks went the predicted way (so far: 5 of 9 checks done)",
         "impact": {
           "peak": -4.43,
           "peak_hours": 35.5,
@@ -13991,6 +13991,12 @@
           "price": 66984.81,
           "move": -1.74,
           "time": "2026-11-14T05:45:26+00:00",
+          "verdict": "right"
+        },
+        "h36": {
+          "price": 65148.79,
+          "move": -4.43,
+          "time": "2026-11-14T17:45:26+00:00",
           "verdict": "right"
         }
       },
@@ -16872,6 +16878,141 @@
         "first_sent_at": "2026-11-14T14:21:04.953351+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261114-04",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)",
+      "proof": "news",
+      "proof_reason": "reliable source: The Block",
+      "first_seen": "2026-11-14T17:55:35.537305+00:00",
+      "earliest_report": "2026-11-14T17:50:00+00:00",
+      "last_updated": "2026-11-14T17:55:35.537305+00:00",
+      "words": [
+        "billion",
+        "bitcoin",
+        "bleed",
+        "continue",
+        "crypto",
+        "etfs",
+        "except",
+        "funds",
+        "lose",
+        "one",
+        "row",
+        "second",
+        "week"
+      ],
+      "amounts": [
+        1000.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding",
+          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOd2RhQ3lIWVBkNjRaQ1ZucjBhNkItQ21qZi1NMFhuRE1Kd0FPMWhsb0F6eWVLVkpRVDZtSHJoQWdCQ0RacUNkdEJLQ1dHLVdHYzN4MkpUdU1od1FUcm8ybmdUdFEzb25BYTl0WUtJQy1oQ21nSnRybXBUbFExQmpmZDN2b3g2dTRZMjRHWE9FVlZ5UldzMVhMb0ZiWktmcjJHOElUYndGbG5XQS10dm5oLTlQQkphTEFTYUZubTVRbUpyV0pWV3VuV2ZESVpyOHdvSG9ieW5Bck9sTDFHUVhHZWY0WGJXYW9yelBHcA?oc=5",
+          "published": "2026-11-14T17:50:00+00:00",
+          "found_at": "2026-11-14T17:55:35.537305+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-14T17:55:35.537305+00:00",
+          "note": "new event, first report by The Block"
+        },
+        {
+          "time": "2026-11-14T17:55:35.537305+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 65148.79,
+        "start_time": "2026-11-14T17:14:30+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-14T17:14:30+00:00",
+          "hours": -0.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In three similar cases of large ETF outflows, Bitcoin fell the next day by between 1.1% and 5.5%.",
+        "similar": [
+          {
+            "id": "BTC-20261112-03",
+            "date": "2026-11-12",
+            "title": "Bitcoin ETFs Bleed $1.4B in Five Days as Investors Cut Risk",
+            "d1": -5.49,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "BTC-20261113-01",
+            "date": "2026-11-13",
+            "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
+            "d1": -1.74,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "BTC-20261109-06",
+            "date": "2026-11-09",
+            "title": "JUST IN: $15 trillion BlackRock expects billions of dollars in crypto to move into ETFs over security concerns. @WatcherGuru",
+            "d1": -1.11,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.46
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 1.56
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin ETFs lost about $1\u202fbillion for the second week in a row, showing continued money leaving the funds, which can push Bitcoin lower.",
+        "what_past_events_show": "In three similar cases of large ETF outflows, Bitcoin fell the next day by between 1.1% and 5.5%.",
+        "direction": "down",
+        "why": [
+          "Repeated outflows have historically been followed by price drops.",
+          "Large, multi\u2011day outflows signal weaker investor confidence."
+        ],
+        "watch_next": "If inflows reverse or a strong positive catalyst appears, the downward pressure could ease; continued outflows would likely deepen the drop.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 3 similar past events moved this way",
+        "time": "2026-11-14T17:55:35.537305+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-14T17:55:44.495104+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -16891,20 +17032,20 @@
     "GOLD-20261112": 7,
     "BTC-20261113": 2,
     "GOLD-20261113": 6,
-    "BTC-20261114": 3
+    "BTC-20261114": 4
   },
   "last_run": {
-    "run_time": "2026-11-14T17:50:56.258003+00:00",
+    "run_time": "2026-11-14T17:55:35.537305+00:00",
     "test_mode": false,
-    "stories": 18,
+    "stories": 19,
     "off_topic": 12,
     "repeats": 6,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
