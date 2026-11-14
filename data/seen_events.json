@@ -1740,7 +1740,7 @@
         "moved_before_mint": -0.21,
         "delay_hours": 0.6,
         "effect": "wrong",
-        "effect_reason": "predicted up, but 0 of 1 clear price checks went the predicted way (so far: 7 of 9 checks done)",
+        "effect_reason": "predicted up, but 0 of 2 clear price checks went the predicted way (so far: 8 of 9 checks done)",
         "now": {
           "move": -10.66,
           "time": "2026-11-14T13:44:20+00:00",
@@ -1748,9 +1748,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 7,
+          "done": 8,
           "right": 0,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
@@ -1803,6 +1803,12 @@
           "price": 70834.31,
           "move": -5.12,
           "time": "2026-11-13T01:57:12+00:00",
+          "verdict": "wrong"
+        },
+        "d5": {
+          "price": 66698.67,
+          "move": -10.66,
+          "time": "2026-11-14T13:57:12+00:00",
           "verdict": "wrong"
         }
       },
@@ -15652,14 +15658,14 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 0,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - 0 of 1 clear price checks went the predicted way (2 of 9 checks done)",
+        "effect_reason": "first day not over yet - 0 of 2 clear price checks went the predicted way (3 of 9 checks done)",
         "impact": {
           "peak": -0.28,
           "peak_hours": 6.1,
@@ -15680,6 +15686,12 @@
           "move": -0.53,
           "time": "2026-11-14T08:56:41+00:00",
           "verdict": "flat"
+        },
+        "h10": {
+          "price": 66698.67,
+          "move": -1.27,
+          "time": "2026-11-14T13:56:41+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -16088,14 +16100,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 1,
           "wrong": 0,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted up: 1 of 1 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": 0.3,
           "peak_hours": 1.0,
@@ -16104,6 +16116,12 @@
           "against_hours": 14.0,
           "until_hours": 23.8,
           "text": "Clear impact: Gold rose up to 0.3% (after 1 h). The effect lasted about 2 h, then faded - later it fell up to 0.3% (after 14 h)."
+        },
+        "d1": {
+          "price": 3862.31,
+          "move": -0.22,
+          "time": "2026-11-14T13:57:43+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -16151,7 +16169,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-14T10:51:18.107976+00:00"
+        "first_sent_at": "2026-11-14T10:51:18.107976+00:00",
+        "result_sent": "2026-11-14T14:10:53.543914+00:00"
       }
     },
     {
@@ -16674,10 +16693,10 @@
     "BTC-20261114": 2
   },
   "last_run": {
-    "run_time": "2026-11-14T14:05:46.074640+00:00",
+    "run_time": "2026-11-14T14:10:53.543914+00:00",
     "test_mode": false,
-    "stories": 18,
-    "off_topic": 11,
+    "stories": 19,
+    "off_topic": 12,
     "repeats": 7,
     "new_events": 0,
     "joined": 0,
