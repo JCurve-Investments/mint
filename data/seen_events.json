@@ -17071,6 +17071,164 @@
         "first_sent_at": "2026-11-14T17:55:44.495104+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261114-05",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Ishares Bitcoin Premium Income ETF (BITA.N)",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: Reuters)",
+      "proof": "news",
+      "proof_reason": "reliable source: Reuters",
+      "first_seen": "2026-11-14T21:10:52.982304+00:00",
+      "earliest_report": "2026-11-14T17:25:29+00:00",
+      "last_updated": "2026-11-14T21:10:52.982304+00:00",
+      "words": [
+        "bita.n",
+        "bitcoin",
+        "etf",
+        "income",
+        "ishar",
+        "premium"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Ishares Bitcoin Premium Income ETF (BITA.N)",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ja1hDNnVER0NCS1BoamRKdEQxMmV3M0VYRkg2XzJObm8wVmVSSGcyYXZtSzgzdHEwTFpTRmRwMG5YWU5jYWJNM3lFbzdOZXlRd1lZZUJMcl9fb05mU3ZHZmhXMDkyVXJtdElDbQ?oc=5",
+          "published": "2026-11-14T17:25:29+00:00",
+          "found_at": "2026-11-14T21:10:52.982304+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-14T21:10:52.982304+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-14T21:10:52.982304+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: Reuters)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 65287.25,
+        "start_time": "2026-11-14T17:00:00+00:00",
+        "moved_before_mint": 0.22,
+        "delay_hours": 3.8,
+        "h1": {
+          "price": 65845.01,
+          "move": 0.85,
+          "time": "2026-11-14T18:25:29+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 0.22,
+          "time": "2026-11-14T20:44:10+00:00",
+          "hours": 3.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 0 of 1 clear price checks went the predicted way (1 of 9 checks done)",
+        "impact": {
+          "peak": 0.22,
+          "peak_hours": 3.3,
+          "faded_hours": null,
+          "against": 0.85,
+          "against_hours": 0.6,
+          "until_hours": 3.3,
+          "text": "Never moved the predicted way. It rose up to 0.9% (after 1 h)."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Recent similar news about ETF outflows saw Bitcoin drop between 0.6% and 5.5% the next day.",
+        "similar": [
+          {
+            "id": "BTC-20261113-02",
+            "date": "2026-11-13",
+            "title": "Bitcoin Strategy ETF (BITO) Price, Flows & Assets",
+            "d1": -2.85,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.52
+          },
+          {
+            "id": "BTC-20261109-04",
+            "date": "2026-11-09",
+            "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+            "d1": -0.62,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261111-01",
+            "date": "2026-11-11",
+            "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+            "d1": -1.43,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261111-04",
+            "date": "2026-11-11",
+            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+            "d1": -3.9,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261112-04",
+            "date": "2026-11-12",
+            "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+            "d1": -5.49,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 2.52
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The iShares Bitcoin Premium Income ETF (BITA.N) was highlighted, and any large movement of money into or out of the fund can influence Bitcoin\u2019s price.",
+        "what_past_events_show": "Recent similar news about ETF outflows saw Bitcoin drop between 0.6% and 5.5% the next day.",
+        "direction": "down",
+        "why": [
+          "Past ETF outflows have consistently preceded price declines",
+          "All comparable recent events resulted in a lower Bitcoin price the following day"
+        ],
+        "watch_next": "If the next flow report shows a net inflow instead of an outflow, the price impact could be smaller or even reverse.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-14T21:10:52.982304+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-14T21:11:04.887842+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -17090,20 +17248,20 @@
     "GOLD-20261112": 7,
     "BTC-20261113": 2,
     "GOLD-20261113": 6,
-    "BTC-20261114": 4
+    "BTC-20261114": 5
   },
   "last_run": {
-    "run_time": "2026-11-14T21:05:39.775636+00:00",
+    "run_time": "2026-11-14T21:10:52.982304+00:00",
     "test_mode": false,
-    "stories": 18,
-    "off_topic": 11,
-    "repeats": 7,
-    "new_events": 0,
+    "stories": 22,
+    "off_topic": 12,
+    "repeats": 9,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
