@@ -17905,11 +17905,11 @@
     "GOLD-20261114": 1
   },
   "last_run": {
-    "run_time": "2026-11-15T22:20:50.568930+00:00",
+    "run_time": "2026-11-15T22:25:44.128581+00:00",
     "test_mode": false,
-    "stories": 11,
-    "off_topic": 8,
-    "repeats": 3,
+    "stories": 3,
+    "off_topic": 1,
+    "repeats": 2,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -17924,9 +17924,9 @@
     "open_events": 0,
     "asset_states": {
       "Bitcoin": {
-        "state": "Calm",
+        "state": "Watch",
         "reasons": [
-          "Nothing important found."
+          "4 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
