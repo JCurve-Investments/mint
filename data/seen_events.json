@@ -17473,6 +17473,135 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-15T00:55:54.980547+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261115-02",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-15T02:05:40.305863+00:00",
+      "earliest_report": "2026-11-15T02:04:33+00:00",
+      "last_updated": "2026-11-15T02:05:40.305863+00:00",
+      "words": [
+        "agenda",
+        "american",
+        "consider",
+        "democrat",
+        "fund",
+        "just",
+        "multitrillion-dollar",
+        "rais",
+        "spend",
+        "taxes",
+        "watcherguru"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/16045",
+          "published": "2026-11-15T02:04:33+00:00",
+          "found_at": "2026-11-15T02:05:40.305863+00:00",
+          "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-15T02:05:40.305863+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-15T02:05:40.305863+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-15T02:05:40.305863+00:00",
+          "note": "confirmed -> alerted: The tax\u2011raising proposal is a new political development that could influence the dollar and thus gold, so we alert."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-15",
+        "date_evidence": "First report published 2026-11-15 02:04 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a price move",
+        "expected_direction": "unclear",
+        "direction_reason": "The news does not state how the dollar will react",
+        "alert_title": "US tax plan may affect gold",
+        "alert_message": "Democrats are looking at raising taxes to fund a huge spending plan in 2027. This could change US fiscal outlook and influence the dollar, which may affect gold prices.",
+        "why_it_matters": [
+          "Fiscal policy can move the dollar",
+          "Dollar moves often impact gold"
+        ],
+        "reason": "The tax\u2011raising proposal is a new political development that could influence the dollar and thus gold, so we alert.",
+        "time": "2026-11-15T02:05:40.305863+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nUS tax plan may affect gold\n\nDemocrats are looking at raising taxes to fund a huge spending plan in 2027. This could change US fiscal outlook and influence the dollar, which may affect gold prices.\n\nMINT's prediction: Gold DOWN - There are no similar past events to compare with.\n\nGold had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 15 Nov 02:05 UTC",
+        "telegram_sent_at": "2026-11-15T02:05:40.305863+00:00"
+      },
+      "outcome": {
+        "start_price": 3800.26,
+        "start_time": "2026-11-15T01:59:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-15T01:59:50+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null,
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no similar past events to compare with.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Democrats are talking about raising taxes to pay for a huge spending plan starting in 2027, which could affect the US dollar.",
+        "what_past_events_show": "There are no similar past events to compare with.",
+        "direction": "down",
+        "why": [
+          "Higher taxes can tighten fiscal policy and support a stronger dollar",
+          "A stronger dollar usually makes gold cheaper for foreign buyers"
+        ],
+        "watch_next": "If the tax plan looks unlikely or is delayed, the dollar may not rise and gold could stay steady or rise.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-15T02:05:40.305863+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-15T02:05:54.058577+00:00"
+      }
     }
   ],
   "counter": {
@@ -17493,26 +17622,26 @@
     "BTC-20261113": 2,
     "GOLD-20261113": 6,
     "BTC-20261114": 5,
-    "GOLD-20261115": 1
+    "GOLD-20261115": 2
   },
   "last_run": {
-    "run_time": "2026-11-15T02:01:20.092964+00:00",
+    "run_time": "2026-11-15T02:05:40.305863+00:00",
     "test_mode": false,
-    "stories": 15,
+    "stories": 16,
     "off_topic": 9,
     "repeats": 6,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -17532,7 +17661,8 @@
           "Alert: Gold rebounds from 13-month low as PPI complicates Fed outlook - Kitco AM Report",
           "Alert: Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800",
           "Alert: Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis",
-          "Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s"
+          "Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s",
+          "Being checked: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru (approved social media account: Watcher.Guru (Telegram) (from social media))"
         ]
       }
     }
@@ -17556,7 +17686,8 @@
         "Alert: Gold rebounds from 13-month low as PPI complicates Fed outlook - Kitco AM Report",
         "Alert: Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800",
         "Alert: Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis",
-        "Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s"
+        "Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s",
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru"
       ]
     }
   },
