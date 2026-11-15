@@ -11948,15 +11948,18 @@
       "proof_reason": "reliable source: CNBC, Kitco News, Reuters",
       "first_seen": "2026-11-12T10:45:50.472999+00:00",
       "earliest_report": "2026-11-11T22:00:14+00:00",
-      "last_updated": "2026-11-13T10:45:51.195805+00:00",
+      "last_updated": "2026-11-15T10:55:38.999245+00:00",
       "words": [
         "below",
         "bets",
+        "cpi",
+        "data",
         "dollar",
         "extend",
         "fall",
         "fed",
         "firm",
+        "futur",
         "gold",
         "hike",
         "kitco",
@@ -11971,6 +11974,7 @@
         "rise",
         "silver",
         "treasury",
+        "u.s",
         "yield"
       ],
       "amounts": [],
@@ -12019,6 +12023,17 @@
           "found_at": "2026-11-13T10:45:51.195805+00:00",
           "summary": "",
           "factor": "G1"
+        },
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOLWdJcGVCYzJpRDF3cHlEUlBWb3duUEl2bUp3bHYzQXVUWTh0Q3hMZVRzVlhoUndFTlUzOHBvNzBWUVhPUGFNVWdudGF4S0J5dFVtaTZyYWp3amZlRGktZHZ4XzdUNDZOc3BSN0pJaEVWdUhSd3RpMVFEV1VmUnRoZC1XSlF5dDFzV0VrSzFIMDlGbHlpRE5WYm5Wc1dzZnVvSnBVLWtWVW5EWTh2RF9VbE1sTlBRUQ?oc=5",
+          "published": "2026-11-14T07:54:30+00:00",
+          "found_at": "2026-11-15T10:55:38.999245+00:00",
+          "summary": "",
+          "factor": "G1"
         }
       ],
       "history": [
@@ -12045,6 +12060,10 @@
         {
           "time": "2026-11-13T10:45:51.195805+00:00",
           "note": "another report from Kitco News - same event, no new alert"
+        },
+        {
+          "time": "2026-11-15T10:55:38.999245+00:00",
+          "note": "another report from Wall Street Journal - same event, no new alert"
         }
       ],
       "decision": {
@@ -16179,13 +16198,14 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-14T10:50:54.119059+00:00",
       "earliest_report": "2026-11-13T13:57:43+00:00",
-      "last_updated": "2026-11-14T10:50:54.119059+00:00",
+      "last_updated": "2026-11-15T10:55:38.999245+00:00",
       "words": [
         "13-month",
         "abandon",
         "abound",
         "bears",
         "below",
+        "bets",
         "bias",
         "bullish",
         "complicat",
@@ -16194,15 +16214,24 @@
         "gold",
         "inflation",
         "kitco",
+        "loss",
         "low",
         "main",
         "outlook",
+        "persist",
+        "posts",
         "ppi",
         "rebound",
         "report",
+        "rise",
         "sours",
+        "steep",
         "street",
-        "wall"
+        "tighten",
+        "treasury",
+        "wall",
+        "weekly",
+        "yield"
       ],
       "amounts": [],
       "old_clues": [],
@@ -16228,6 +16257,17 @@
           "found_at": "2026-11-14T10:50:54.119059+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold posts steep weekly loss as Treasury yields rise, Fed tightening bets persist - Kitco PM Report",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPX0k2NHE2ZjJka2ltRGxrN2ZDN1JKQ1FBZnRxT240TTRqcmp5Qlp4UWkwQWtVM3dFTXBtYU5vNkpYQXFQRi1vQ3FYRG5fd1J5YTdrUjc1RjMwRGhVeHZJdEoyYmdQTGdTbW1QWVFiQVkwXzVELU9mOFBXdEdBbnZ1M0VaODNDckVvb2hfanpQMXJRdWVBOGdiWldtM0xlYWxUaEM3NFVPMnJaLTdlYlFEN2o2dzNuUQ?oc=5",
+          "published": "2026-11-13T22:46:15+00:00",
+          "found_at": "2026-11-15T10:55:38.999245+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -16246,6 +16286,10 @@
         {
           "time": "2026-11-14T10:50:54.119059+00:00",
           "note": "confirmed -> alerted: The Fed outlook changed due to inflation data, a new event that can push gold lower, so we issue an alert."
+        },
+        {
+          "time": "2026-11-15T10:55:38.999245+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -17923,6 +17967,174 @@
         "first_sent_at": "2026-11-15T04:05:49.242563+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261114-01",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "GDX | VanEck Gold Miners ETF Overview",
+      "state": "context",
+      "state_reason": "ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: MarketWatch)",
+      "proof": "news",
+      "proof_reason": "reliable source: MarketWatch",
+      "first_seen": "2026-11-15T10:55:38.999245+00:00",
+      "earliest_report": "2026-11-14T00:59:00+00:00",
+      "last_updated": "2026-11-15T10:55:38.999245+00:00",
+      "words": [
+        "etf",
+        "gdx",
+        "gold",
+        "miner",
+        "overview",
+        "vaneck"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "MarketWatch",
+          "kind": "news",
+          "site": "marketwatch.com",
+          "title": "GDX | VanEck Gold Miners ETF Overview",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ndV9aYmZoa0NSaXNCRUJ1b3Q1Vmp4N2ZPLXUxYlN6WDA1WlRlX0pweW9ZQ3JUc3M1OFc3V1c0NlZfd3dWN3prRXRyTm52anVTNlBlRm5Yc2dHUQ?oc=5",
+          "published": "2026-11-14T00:59:00+00:00",
+          "found_at": "2026-11-15T10:55:38.999245+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-15T10:55:38.999245+00:00",
+          "note": "new event, first report by MarketWatch"
+        },
+        {
+          "time": "2026-11-15T10:55:38.999245+00:00",
+          "note": "new -> context: ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: MarketWatch)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3876.13,
+        "start_time": "2026-11-14T01:00:00+00:00",
+        "moved_before_mint": -1.32,
+        "delay_hours": 33.9,
+        "h1": {
+          "price": 3874.82,
+          "move": -0.03,
+          "time": "2026-11-14T01:59:00+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 3863.5,
+          "move": -0.33,
+          "time": "2026-11-14T05:59:00+00:00",
+          "verdict": "wrong"
+        },
+        "h10": {
+          "price": 3865.58,
+          "move": -0.27,
+          "time": "2026-11-14T10:59:00+00:00",
+          "verdict": "flat"
+        },
+        "d1": {
+          "price": 3806.41,
+          "move": -1.8,
+          "time": "2026-11-15T00:59:00+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": -1.32,
+          "time": "2026-11-15T10:50:00+00:00",
+          "hours": 33.9,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 4,
+          "right": 0,
+          "wrong": 2,
+          "total": 9
+        },
+        "final": false,
+        "effect": "wrong",
+        "effect_reason": "predicted up, but 0 of 2 clear price checks went the predicted way (so far: 4 of 9 checks done)",
+        "impact": {
+          "peak": 0.0,
+          "peak_hours": 0.0,
+          "faded_hours": 1.0,
+          "against": -2.37,
+          "against_hours": 21.0,
+          "until_hours": 33.9,
+          "text": "Never moved the predicted way. It fell up to 2.4% (after 21 h)."
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "past events",
+        "reason": "4 similar past event(s): gold rose after 2 and fell after 1 (average 1-day move -0.3%)",
+        "similar": [
+          {
+            "id": "GOLD-20261107-02",
+            "date": "2026-11-07",
+            "title": "RING | iShares MSCI Global Gold Miners ETF SEC Filings",
+            "d1": 0.05,
+            "d7": -4.47,
+            "source": "MINT",
+            "score": 0.68
+          },
+          {
+            "id": "GOLD-20261106-08",
+            "date": "2026-11-06",
+            "title": "Goldman Sachs Global Income Bond Opportunities Active UCITS ETF Overview (GIBO)",
+            "d1": 0.22,
+            "d7": -4.29,
+            "source": "MINT",
+            "score": 0.63
+          },
+          {
+            "id": "GOLD-20261104-05",
+            "date": "2026-11-04",
+            "title": "Reksa Dana Syariah KIM Gold ETF Sharia, XKGS:JKT:IDR risk",
+            "d1": 0.46,
+            "d7": -2.1,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261111-01",
+            "date": "2026-11-11",
+            "title": "India gold ETF, equity fund inflows ease in October",
+            "d1": -1.98,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 1.13,
+          "down": 0.5
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "MarketWatch posted an overview of VanEck's Gold Miners ETF, which signals investor interest in gold\u2011related funds.",
+        "what_past_events_show": "Recent similar ETF overviews usually preceded small gains (0.1%\u20110.5%) the next day, with only one case of a larger drop when inflows were reported to be easing.",
+        "direction": "up",
+        "why": [
+          "Most comparable events led to modest price increases the next day.",
+          "The overview suggests steady or growing interest, which typically supports gold."
+        ],
+        "watch_next": "If the report later reveals large inflows or outflows, that could amplify or reverse the effect.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 4 similar past events moved this way",
+        "time": "2026-11-15T10:55:38.999245+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-15T10:55:54.178258+00:00",
+        "sent_state": "context",
+        "result_sent": "2026-11-15T10:55:38.999245+00:00"
+      }
     }
   ],
   "counter": {
@@ -17944,20 +18156,21 @@
     "GOLD-20261113": 6,
     "BTC-20261114": 5,
     "GOLD-20261115": 2,
-    "BTC-20261115": 1
+    "BTC-20261115": 1,
+    "GOLD-20261114": 1
   },
   "last_run": {
-    "run_time": "2026-11-15T10:50:53.040262+00:00",
+    "run_time": "2026-11-15T10:55:38.999245+00:00",
     "test_mode": false,
-    "stories": 14,
-    "off_topic": 11,
-    "repeats": 3,
-    "new_events": 0,
+    "stories": 131,
+    "off_topic": 54,
+    "repeats": 74,
+    "new_events": 1,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 2,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
