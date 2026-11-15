@@ -17563,6 +17563,157 @@
         "sent_state": "context",
         "result_sent": "2026-11-15T10:55:38.999245+00:00"
       }
+    },
+    {
+      "id": "BTC-20261115-02",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin ETFs Lose $2.1 Billion in November as Outflow Streak Hits Seven Days",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: Decrypt)",
+      "proof": "news",
+      "proof_reason": "reliable source: Decrypt",
+      "first_seen": "2026-11-15T14:10:51.196402+00:00",
+      "earliest_report": "2026-11-15T14:01:02+00:00",
+      "last_updated": "2026-11-15T14:10:51.196402+00:00",
+      "words": [
+        "2.1",
+        "billion",
+        "bitcoin",
+        "days",
+        "etfs",
+        "hits",
+        "lose",
+        "november",
+        "outflows",
+        "seven",
+        "streak"
+      ],
+      "amounts": [
+        2100.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Bitcoin ETFs Lose $2.1 Billion in November as Outflow Streak Hits Seven Days",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaU5hRnFDb0tjOEhBc2ExUTVNWmpoMURNSFJETTRmV1phOTY0X0RZQkt3aHFWbzNhVFJKYk8zWlBTQmx4cTB4V3VkZWFLWVExLXlaT0R1dE1ubDJzTFkwbGllQklVLW5tUjZDWk9XUUtPWTdRemU0VXVIQ1ZEUElNX2EzTWNjc2ZFTTRxSEtvNVNkVHFo?oc=5",
+          "published": "2026-11-15T14:01:02+00:00",
+          "found_at": "2026-11-15T14:10:51.196402+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-15T14:10:51.196402+00:00",
+          "note": "new event, first report by Decrypt"
+        },
+        {
+          "time": "2026-11-15T14:10:51.196402+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: Decrypt)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 65550.13,
+        "start_time": "2026-11-15T13:29:40+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.2,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-15T13:29:40+00:00",
+          "hours": -0.5,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar outflow news in the past led to Bitcoin falling between about 1.4% and 5.5% the next day.",
+        "similar": [
+          {
+            "id": "BTC-20261113-01",
+            "date": "2026-11-13",
+            "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
+            "d1": -1.74,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.88
+          },
+          {
+            "id": "BTC-20261111-04",
+            "date": "2026-11-11",
+            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+            "d1": -3.9,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.63
+          },
+          {
+            "id": "BTC-20261112-04",
+            "date": "2026-11-12",
+            "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+            "d1": -5.49,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.59
+          },
+          {
+            "id": "BTC-20261112-03",
+            "date": "2026-11-12",
+            "title": "Bitcoin ETFs Bleed $1.4B in Five Days as Investors Cut Risk",
+            "d1": -5.49,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "BTC-20261111-01",
+            "date": "2026-11-11",
+            "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+            "d1": -1.43,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.49
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 4.64
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin ETFs saw a $2.1\u202fbillion net outflow in November, marking a seven\u2011day streak of money leaving the funds, which can pressure Bitcoin lower.",
+        "what_past_events_show": "Similar outflow news in the past led to Bitcoin falling between about 1.4% and 5.5% the next day.",
+        "direction": "down",
+        "why": [
+          "Large, multi\u2011day outflows signal selling pressure on Bitcoin.",
+          "Historical cases show price drops after comparable outflow streaks."
+        ],
+        "watch_next": "If the outflow streak ends and new inflows appear, the impact could be lessened.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-15T14:10:51.196402+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-15T14:11:02.549336+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -17584,21 +17735,21 @@
     "GOLD-20261113": 6,
     "BTC-20261114": 5,
     "GOLD-20261115": 2,
-    "BTC-20261115": 1,
+    "BTC-20261115": 2,
     "GOLD-20261114": 1
   },
   "last_run": {
-    "run_time": "2026-11-15T14:05:39.622292+00:00",
+    "run_time": "2026-11-15T14:10:51.196402+00:00",
     "test_mode": false,
-    "stories": 11,
+    "stories": 12,
     "off_topic": 8,
     "repeats": 3,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
