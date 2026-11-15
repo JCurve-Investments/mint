@@ -1,6 +1,6 @@
 {
   "scout": "bitcoin",
-  "run_time": "2026-11-15T11:10:17.433603+00:00",
+  "run_time": "2026-11-15T11:10:51.701387+00:00",
   "test_mode": false,
   "news": [
     {
@@ -118,7 +118,7 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-13T16:01:27+00:00",
-          "age_hours": 43.1,
+          "age_hours": 43.2,
           "reason": "too old (43 hours)"
         },
         {
@@ -148,7 +148,7 @@
           "source_name": "Financial Times",
           "organisation": "Financial Times",
           "published": "2026-11-08T05:01:18+00:00",
-          "age_hours": 174.1,
+          "age_hours": 174.2,
           "reason": "too old (174 hours)"
         },
         {
@@ -166,7 +166,7 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-12T07:55:37+00:00",
-          "age_hours": 75.2,
+          "age_hours": 75.3,
           "reason": "too old (75 hours)"
         },
         {
@@ -226,7 +226,7 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-11T12:19:30+00:00",
-          "age_hours": 94.8,
+          "age_hours": 94.9,
           "reason": "too old (95 hours)"
         },
         {
@@ -1107,7 +1107,7 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2013-10-21T19:13:22+00:00",
-          "age_hours": 114543.9,
+          "age_hours": 114544.0,
           "reason": "too old (114544 hours)"
         },
         {
@@ -1205,7 +1205,7 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-11T12:19:30+00:00",
-          "age_hours": 94.8,
+          "age_hours": 94.9,
           "reason": "too old (95 hours)"
         },
         {
@@ -1409,14 +1409,6 @@
         {
           "title": "Bloomberg Asia - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE8tSGpjYlJXTTF0OHBWVG9HaUxxcUNDM014NUwxblE1OUw5X3M5NlFaVXNndEQ5clRSSzJtbjBFQXdoWU5T?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Bloomberg Businessweek - Bloomberg - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rZzA3NW15dWxmZzV5aFBXWGtHVWNPa2w1Uzd5MXBHZkRMTDV1aEIyMFI1c1lXdTF2MVNfaFRVbVFPTDdOM2dKV3JvLWNKdE0?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -1909,6 +1901,16 @@
           "published": "2026-11-03T08:00:00+00:00",
           "age_hours": 291.2,
           "reason": "too old (291 hours)"
+        },
+        {
+          "title": "Binance hack prompted US regulators to check in on bank systems, sources say - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUTBnQWFyUm5Ob1BXb24yOUNReWNWOW1IV3FYaGVrcjh2Z0pBTy1QdE4zTVpfSHg0cm9KY3dCeVd2aFR4aGpueTJ2UmZJUUE4T3haMWMwY3VqemRBNXIzdUtfZ19HS1QtNVlscFhmVnBCT2FFUUdpUUtEb2ZLUHRKVnZUZndrcXEyWl9ZMEpnTFVLS2JVc01lT295X0RMWjN5UlhYNTZweHU0VlpJY0xLTlZPWjlPamJuRmxv?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "published": "2026-11-05T08:00:00+00:00",
+          "age_hours": 243.2,
+          "reason": "too old (243 hours)"
         },
         {
           "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI - BBC",
@@ -2781,6 +2783,14 @@
           "source_name": "MarketWatch",
           "organisation": "MarketWatch",
           "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "NYC Stock Price | American Strategic Investment Co. Stock Quote (U.S.: NYSE) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5UVndMa0hVRUF4Q1RjLXp2WmJYa1NONkZ4MXBNSTR1Q3lzNWZkbHIyazltOHRybmh3bWhBQ05RRmt0bW84VS1FTHVoVk5jb3htamVmR2VCaTFva00?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Bitcoin"
         }
       ],
       "error": null
@@ -3537,9 +3547,9 @@
       "warning": false
     },
     "B5": {
-      "views_last_7_days": 23209,
-      "views_previous_7_days": 28014,
-      "ratio": 0.83,
+      "views_last_7_days": 25453,
+      "views_previous_7_days": 31252,
+      "ratio": 0.81,
       "warning": false
     }
   }
