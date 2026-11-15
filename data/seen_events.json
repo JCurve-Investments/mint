@@ -15740,14 +15740,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 2,
+          "done": 5,
+          "right": 3,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 2 of 2 clear price checks went the predicted way (so far: 4 of 9 checks done)",
+        "effect_reason": "predicted down: 3 of 3 clear price checks went the predicted way (so far: 5 of 9 checks done)",
         "impact": {
           "peak": -6.58,
           "peak_hours": 21.5,
@@ -15773,6 +15773,12 @@
           "price": 64768.27,
           "move": -3.36,
           "time": "2026-11-15T04:30:00+00:00",
+          "verdict": "right"
+        },
+        "h36": {
+          "price": 64670.76,
+          "move": -3.51,
+          "time": "2026-11-15T16:30:00+00:00",
           "verdict": "right"
         }
       },
@@ -16402,14 +16408,16 @@
       "proof_reason": "reliable source: The Block",
       "first_seen": "2026-11-14T14:20:54.576631+00:00",
       "earliest_report": "2026-11-14T04:56:55+00:00",
-      "last_updated": "2026-11-14T14:20:54.576631+00:00",
+      "last_updated": "2026-11-15T16:40:51.388240+00:00",
       "words": [
         "coin",
         "crypto",
         "etf",
         "market",
+        "mixed",
         "share",
         "spot",
+        "strategy",
         "volume"
       ],
       "amounts": [],
@@ -16425,6 +16433,17 @@
           "found_at": "2026-11-14T14:20:54.576631+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Mixed Strategy Crypto ETF Volume",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0Z1pSdUFpb2xhbml0cWZESGVpR0lvQ1VXcFVFeDlROU9hQTlwY3FUdzlQMFVhcjgzNFV6ZklheHE4N0I1R2dYNGNpQkhnczliWDI3ZlN0bjNPdllBZzUyWGpxNWRoc296cC16SQ?oc=5",
+          "published": "2026-11-15T08:01:25+00:00",
+          "found_at": "2026-11-15T16:40:51.388240+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -16435,6 +16454,10 @@
         {
           "time": "2026-11-14T14:20:54.576631+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)"
+        },
+        {
+          "time": "2026-11-15T16:40:51.388240+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": null,
@@ -17254,11 +17277,15 @@
       "proof_reason": "reliable source: The Block",
       "first_seen": "2026-11-15T04:05:39.386324+00:00",
       "earliest_report": "2026-11-15T00:49:18+00:00",
-      "last_updated": "2026-11-15T04:05:39.386324+00:00",
+      "last_updated": "2026-11-15T16:40:51.388240+00:00",
       "words": [
         "bitcoin",
         "btc",
+        "daily",
+        "data",
         "etf",
+        "flows",
+        "fund",
         "holding",
         "on-chain",
         "percentage",
@@ -17278,6 +17305,17 @@
           "found_at": "2026-11-15T04:05:39.386324+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Spot Bitcoin ETF Flows in BTC Data: Daily Flows by Fund",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0wN3RDSjRLU1BPSXRTWncxUmh4TllqQnotX2w0ZjdMcExTNE1GdG9oRWJEOWFCNHF5bm9fbGpNV3pORlp5U3ZCS0dBaDEyQ2lpc0pQQW85aHhxUW43UWNPNUJqZ3AybW9YM01pb0pqcEs?oc=5",
+          "published": "2026-11-15T11:56:14+00:00",
+          "found_at": "2026-11-15T16:40:51.388240+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -17288,6 +17326,10 @@
         {
           "time": "2026-11-15T04:05:39.386324+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)"
+        },
+        {
+          "time": "2026-11-15T16:40:51.388240+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": null,
@@ -17777,14 +17819,14 @@
     "GOLD-20261114": 1
   },
   "last_run": {
-    "run_time": "2026-11-15T16:35:37.195364+00:00",
+    "run_time": "2026-11-15T16:40:51.388240+00:00",
     "test_mode": false,
-    "stories": 9,
-    "off_topic": 5,
-    "repeats": 4,
+    "stories": 16,
+    "off_topic": 9,
+    "repeats": 5,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 2,
     "changes": {
       "confirmed": 0,
       "context": 0,
