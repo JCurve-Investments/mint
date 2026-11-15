@@ -12100,14 +12100,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 6,
-          "right": 6,
+          "done": 7,
+          "right": 7,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 6 of 6 clear price checks went the predicted way (so far: 6 of 9 checks done)",
+        "effect_reason": "predicted down: 7 of 7 clear price checks went the predicted way (so far: 7 of 9 checks done)",
         "impact": {
           "peak": -5.06,
           "peak_hours": 69.2,
@@ -12139,6 +12139,12 @@
           "price": 3876.44,
           "move": -2.75,
           "time": "2026-11-14T00:48:00+00:00",
+          "verdict": "right"
+        },
+        "h84": {
+          "price": 3828.0,
+          "move": -3.96,
+          "time": "2026-11-15T12:48:00+00:00",
           "verdict": "right"
         }
       },
@@ -17575,10 +17581,10 @@
     "GOLD-20261114": 1
   },
   "last_run": {
-    "run_time": "2026-11-15T12:55:37.840089+00:00",
+    "run_time": "2026-11-15T13:01:27.802585+00:00",
     "test_mode": false,
-    "stories": 13,
-    "off_topic": 10,
+    "stories": 10,
+    "off_topic": 7,
     "repeats": 3,
     "new_events": 0,
     "joined": 0,
