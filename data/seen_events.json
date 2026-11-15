@@ -12100,14 +12100,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 6,
-          "right": 4,
+          "done": 7,
+          "right": 5,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 4 of 4 clear price checks went the predicted way (so far: 6 of 9 checks done)",
+        "effect_reason": "predicted down: 5 of 5 clear price checks went the predicted way (so far: 7 of 9 checks done)",
         "impact": {
           "peak": -4.92,
           "peak_hours": 72.0,
@@ -12133,6 +12133,12 @@
           "price": 3874.32,
           "move": -2.66,
           "time": "2026-11-13T22:00:14+00:00",
+          "verdict": "right"
+        },
+        "h84": {
+          "price": 3827.09,
+          "move": -3.85,
+          "time": "2026-11-15T10:00:14+00:00",
           "verdict": "right"
         }
       },
@@ -14220,14 +14226,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 2,
+          "done": 6,
+          "right": 3,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 2 of 2 clear price checks went the predicted way (so far: 5 of 9 checks done)",
+        "effect_reason": "predicted down: 3 of 3 clear price checks went the predicted way (so far: 6 of 9 checks done)",
         "impact": {
           "peak": -9.3,
           "peak_hours": 40.0,
@@ -14265,6 +14271,12 @@
           "price": 64688.55,
           "move": -6.3,
           "time": "2026-11-14T21:59:50+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 65333.61,
+          "move": -5.36,
+          "time": "2026-11-15T09:59:50+00:00",
           "verdict": "right"
         }
       },
@@ -17935,7 +17947,7 @@
     "BTC-20261115": 1
   },
   "last_run": {
-    "run_time": "2026-11-15T10:05:39.174182+00:00",
+    "run_time": "2026-11-15T10:10:54.925117+00:00",
     "test_mode": false,
     "stories": 14,
     "off_topic": 11,
