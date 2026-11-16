@@ -6461,12 +6461,6 @@
           "time": "2026-11-09T20:55:26+00:00",
           "verdict": "none"
         },
-        "now": {
-          "move": -5.82,
-          "time": "2026-11-16T10:29:40+00:00",
-          "hours": 167.6,
-          "verdict": "none"
-        },
         "effect": "no_prediction",
         "effect_reason": "no prediction was made for this event",
         "impact": null,
@@ -6498,6 +6492,12 @@
           "price": 3866.25,
           "move": -5.34,
           "time": "2026-11-14T10:55:26+00:00",
+          "verdict": "none"
+        },
+        "d7": {
+          "price": 3846.84,
+          "move": -5.82,
+          "time": "2026-11-16T10:55:26+00:00",
           "verdict": "none"
         }
       },
@@ -18741,7 +18741,7 @@
     "GOLD-20261116": 1
   },
   "last_run": {
-    "run_time": "2026-11-16T11:01:30.951312+00:00",
+    "run_time": "2026-11-16T11:05:42.259315+00:00",
     "test_mode": false,
     "stories": 8,
     "off_topic": 6,
