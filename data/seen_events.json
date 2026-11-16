@@ -19496,15 +19496,21 @@
           "verdict": "wrong"
         },
         "effect": "tracking",
-        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "effect_reason": "first day not over yet - 0 of 1 clear price checks went the predicted way (1 of 9 checks done)",
         "impact": null,
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
-        "final": false
+        "final": false,
+        "h1": {
+          "price": 3853.54,
+          "move": 0.26,
+          "time": "2026-11-16T18:02:00+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -19561,7 +19567,7 @@
     "GOLD-20261116": 2
   },
   "last_run": {
-    "run_time": "2026-11-16T18:10:56.010004+00:00",
+    "run_time": "2026-11-16T18:15:58.844320+00:00",
     "test_mode": false,
     "stories": 23,
     "off_topic": 20,
@@ -19585,7 +19591,7 @@
           "Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
           "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
           "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
-          "US stock market (Nasdaq) fell -2.17% on its last day"
+          "US stock market (Nasdaq) fell -2.18% on its last day"
         ]
       },
       "Gold": {
