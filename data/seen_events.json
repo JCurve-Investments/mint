@@ -14182,14 +14182,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 6,
-          "right": 3,
+          "done": 7,
+          "right": 4,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "predicted down: 3 of 3 clear price checks went the predicted way (so far: 6 of 9 checks done)",
+        "effect_reason": "predicted down: 4 of 4 clear price checks went the predicted way (so far: 7 of 9 checks done)",
         "impact": {
           "peak": -9.3,
           "peak_hours": 40.0,
@@ -14233,6 +14233,12 @@
           "price": 65333.61,
           "move": -5.36,
           "time": "2026-11-15T09:59:50+00:00",
+          "verdict": "right"
+        },
+        "h84": {
+          "price": 65325.87,
+          "move": -5.37,
+          "time": "2026-11-16T21:59:50+00:00",
           "verdict": "right"
         }
       },
@@ -19630,11 +19636,11 @@
     "GOLD-20261116": 2
   },
   "last_run": {
-    "run_time": "2026-11-16T22:05:41.727443+00:00",
+    "run_time": "2026-11-16T22:11:13.277290+00:00",
     "test_mode": false,
-    "stories": 2,
-    "off_topic": 0,
-    "repeats": 2,
+    "stories": 19,
+    "off_topic": 16,
+    "repeats": 3,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -19654,8 +19660,7 @@
           "Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
           "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
           "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
-          "US stock market (Nasdaq) fell -2.49% on its last day",
-          "1 check(s) failed in the last run (internet problem?) - see Agents"
+          "US stock market (Nasdaq) fell -2.49% on its last day"
         ]
       },
       "Gold": {
