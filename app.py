@@ -44,7 +44,7 @@ import weekly                        # noqa: E402
 from common import load_json         # noqa: E402
 from supervisor import data_folder, load_memory, hours_between   # noqa: E402
 
-VERSION = "25"                         # must match UI_VERSION in ui/index.html
+VERSION = "26"                         # must match UI_VERSION in ui/index.html
 PORT = 8765
 ADDRESS = f"http://localhost:{PORT}"
 SCHEDULE = {"next_run": None}

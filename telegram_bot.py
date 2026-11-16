@@ -32,7 +32,7 @@ import json
 import time
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from supervisor import data_folder, load_memory, save_memory, asset_states, parse_time, hours_between
 from common import load_json
@@ -379,6 +379,43 @@ def deliver(token, subs, text, asset=None, level="alerts", kind="", title="", ch
     return ok
 
 
+DAILY_SUMMARY_UTC = (15, 30)          # 21:00 in India
+
+
+def daily_text(memory, now):
+    """The once-a-day wrap-up: what MINT found in the last 24 hours, results that came in, and the state of each asset."""
+    ist = now + timedelta(hours=5, minutes=30)
+    icon = {"alerted": "🚨", "confirmed": "✅", "watch": "👀"}
+    found = [e for e in memory["events"] if e.get("state") and hours_between(now, parse_time(e["first_seen"])) <= 24]
+    results = []
+    for e in memory["events"]:
+        o = e.get("outcome") or {}
+        tg = e.get("telegram") or {}
+        for key, label in (("result_sent", "1 day"), ("final_sent", "7 days")):
+            if tg.get(key) and hours_between(now, parse_time(tg[key])) <= 24 and o.get("effect") in ("right", "wrong", "no_clear_move"):
+                results.append(f"{'✔' if o['effect'] == 'right' else '✖' if o['effect'] == 'wrong' else '•'} "
+                               f"{e['asset']}: {e['title'][:70]} ({label}: {o['effect'].replace('_', ' ')})")
+    lines = [f"🌙 MINT daily summary · {ist:%d %b}"]
+    if found:
+        lines.append(f"\nFound today ({len(found)}):")
+        lines += [f"{icon.get(e['state'], '•')} {'🥇' if e['asset'] == 'Gold' else '₿'} {e['title'][:90]}" for e in found[:8]]
+        if len(found) > 8:
+            lines.append(f"…and {len(found) - 8} more")
+    else:
+        lines.append("\nNothing new found today.")
+    if results:
+        lines.append("\nResults that came in:")
+        lines += results[:6]
+    try:
+        states = asset_states(memory, [], now)
+        lines.append("\n" + " · ".join(f"{ {'CALM': '🟢', 'WATCH': '👀', 'ALERT': '🚨'}.get(str(states[a]['state']).upper(), '•') } "
+                                       f"{a}: {str(states[a]['state']).capitalize()}" for a in ("Bitcoin", "Gold")))
+    except Exception:
+        pass
+    return "\n".join(lines) + "\n\n" + FOOTER
+
+
+
 def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channel=""):
     """Send everything that is due. Prints what it did (shown in the app). Returns how many messages were delivered.
        'Everything' subscribers and the channel get: every new event with MINT's view, every status change,
@@ -477,20 +514,16 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
             print(f"   WEEKLY   -> {n}: summary for {week}")
         state["weekly_done"] = week
 
-    # 7. RUN COMPLETE: if nothing else was posted, a short SILENT note to the channel, so you can see MINT is running
-    if channel and token and not test_mode and total == 0:
-        try:
-            states = asset_states(memory, [], now)
-        except Exception:
-            states = {a: {"state": "?"} for a in ("Bitcoin", "Gold")}
-        icon = {"CALM": "🟢", "WATCH": "👀", "ALERT": "🚨"}
-        watching = sum(1 for e in memory["events"] if e["state"] == "watch")
-        text = (f"✅ MINT run complete · {now:%d %b %H:%M} UTC\nNothing new to report.\n"
-                + " · ".join(f"{icon.get(str(states[a]['state']).upper(), '•')} {a}: {str(states[a]['state']).capitalize()}"
-                             for a in ("Bitcoin", "Gold"))
-                + (f"\n{watching} event(s) on Watch - MINT is tracking their impact." if watching else ""))
-        if deliver(token, {}, text, None, "everything", "run complete", "", channel, silent=True):
-            print("   RUN DONE -> channel (silent): nothing new to report")
+    # 7. DAILY SUMMARY: ONE message a day at 21:00 India time (15:30 UTC). Nothing is posted just to say "run complete".
+    #    Anything MINT finds is still sent straight away (steps 1-6); this only wraps up the day.
+    today = f"{now:%Y-%m-%d}"
+    if channel and token and not test_mode and state.get("daily_done") != today \
+            and (now.hour, now.minute) >= DAILY_SUMMARY_UTC:
+        text = daily_text(memory, now)
+        if deliver(token, {}, text, None, "everything", "daily summary", today, channel):
+            total += 1
+            print("   DAILY    -> channel: summary for " + today)
+        state["daily_done"] = today
 
     save_memory(memory, test_mode)
     save_subscribers(subs)

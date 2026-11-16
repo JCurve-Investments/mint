@@ -84,7 +84,7 @@ n = len(sent)
 tb.check_messages("T")
 check("5. Old messages are not answered twice", len(sent) == n)
 
-now = datetime.now(timezone.utc)
+now = datetime.now(timezone.utc).replace(hour=10, minute=0)   # before the 21:00 India summary time, so tests do not depend on the clock
 CH = "@mint_test_channel"
 
 
@@ -140,8 +140,14 @@ check("19. Messages start with the 'at a glance' line (impact, direction, confid
 sent.clear()
 quiet(tb.send_alerts, "T", False, now, [], CH)
 check("20. The key is posted only once", to("How to read MINT messages") == [])
-check("21. A run with nothing new posts a short SILENT 'run complete' note to the channel only",
-      to("MINT run complete") == [CH] and [m for m in sent if "MINT run complete" in m["text"]][0].get("disable_notification") is True)
+check("21. A run with nothing new posts NOTHING (no 'run complete' note)", to("MINT run complete") == [] and sent == [])
+evening = datetime(2026, 11, 7, 15, 40, tzinfo=timezone.utc)
+sent.clear()
+quiet(tb.send_alerts, "T", False, evening, [], CH)
+quiet(tb.send_alerts, "T", False, evening, [], CH)
+check("22. One daily summary at 21:00 India time, to the channel, only once a day",
+      [m for m in sent if "daily summary" in m["text"]] and len([m for m in sent if "daily summary" in m["text"]]) == 1
+      and all(str(m["chat_id"]) == CH for m in sent if "daily summary" in m["text"]))
 mem = supervisor.load_memory(False)
 mem["events"][0].update(state="expired")
 supervisor.save_memory(mem, False)
@@ -173,7 +179,7 @@ sent.clear()
 quiet(tb.send_alerts, "T", False, sunday, [], CH)
 quiet(tb.send_alerts, "T", False, sunday, [], CH)
 check("18. The weekly summary goes to everyone and the channel on Sunday, only once, and is saved",
-      sorted(str(m["chat_id"]) for m in sent if "run complete" not in m["text"]) == ["222", "333", CH]
+      sorted(str(m["chat_id"]) for m in sent if "daily summary" not in m["text"]) == ["222", "333", CH]
       and len(weekly.load_all(False)) == 1
       and "How good were MINT's predictions" in sent[0]["text"])
 
