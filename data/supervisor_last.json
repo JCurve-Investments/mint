@@ -1,9 +1,9 @@
 {
-  "run_time": "2026-11-16T23:25:40.628755+00:00",
+  "run_time": "2026-11-16T23:31:27.095231+00:00",
   "test_mode": false,
-  "stories": 7,
-  "off_topic": 4,
-  "repeats": 3,
+  "stories": 1,
+  "off_topic": 0,
+  "repeats": 1,
   "new_events": 0,
   "joined": 0,
   "updates_ignored": 0,
@@ -23,7 +23,8 @@
         "Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
         "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
         "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
-        "US stock market (Nasdaq) fell -2.49% on its last day"
+        "US stock market (Nasdaq) fell -2.49% on its last day",
+        "3 check(s) failed in the last run (internet problem?) - see Agents"
       ]
     },
     "Gold": {
@@ -38,5 +39,5 @@
       ]
     }
   },
-  "output": "MINT SUPERVISOR  2026-11-16 23:25 UTC\nRead 3 Scout report(s): 7 kept stories to check.\n\nOFF-TOPIC   Bitcoin slides to $62,000 following liquidation cascade, then rebounds slightly  (CNBC) - headline is not about any Bitcoin factor\nOFF-TOPIC   Did Bitcoin Prices Bottom at $62,000? Strategy Has Bought the Decline.  (Barron's) - headline is not about any Bitcoin factor\nOFF-TOPIC   BTCUSD | CoinDesk Bitcoin Price Index (XBX) Overview  (MarketWatch) - headline is not about any Bitcoin factor\nOFF-TOPIC   Bitcoin Prices Tumble and Bring Coinbase and Strategy Stocks Down With Them  (Barron's) - headline is not about any Bitcoin factor\n\n\nBitcoin: ALERT\n   - Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto\n   - Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru\n   - Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access\n   - US stock market (Nasdaq) fell -2.49% on its last day\nGold: ALERT\n   - Alert: Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800\n   - Alert: Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis\n   - Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s\n   - Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru\n   - Alert: Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data\n   - Alert: Gold hits over one-year low on resilient dollar as hawkish Fed bets build\n\nBOTTOM LINE: 7 stories (4 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 3 repeat(s). 0 event(s) passed to the Decision agent."
+  "output": "MINT SUPERVISOR  2026-11-16 23:31 UTC\nRead 3 Scout report(s): 1 kept stories to check.\n\n\n\nBitcoin: ALERT\n   - Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto\n   - Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru\n   - Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access\n   - US stock market (Nasdaq) fell -2.49% on its last day\n   - 3 check(s) failed in the last run (internet problem?) - see Agents\nGold: ALERT\n   - Alert: Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800\n   - Alert: Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis\n   - Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s\n   - Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru\n   - Alert: Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data\n   - Alert: Gold hits over one-year low on resilient dollar as hawkish Fed bets build\n\nBOTTOM LINE: 1 stories (0 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 1 repeat(s). 0 event(s) passed to the Decision agent."
 }
