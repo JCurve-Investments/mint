@@ -6262,21 +6262,15 @@
           "time": "2026-11-10T03:01:00+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -5.7,
-          "time": "2026-11-16T02:39:40+00:00",
-          "hours": 167.6,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 0,
-          "wrong": 6,
+          "wrong": 7,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "wrong",
-        "effect_reason": "predicted up, but 0 of 6 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted up, but 0 of 7 clear price checks went the predicted way",
         "impact": {
           "peak": 0.41,
           "peak_hours": 18.0,
@@ -6308,6 +6302,12 @@
           "price": 3866.26,
           "move": -5.86,
           "time": "2026-11-14T03:01:00+00:00",
+          "verdict": "wrong"
+        },
+        "d7": {
+          "price": 3872.72,
+          "move": -5.7,
+          "time": "2026-11-16T03:01:00+00:00",
           "verdict": "wrong"
         }
       },
@@ -6364,7 +6364,8 @@
       },
       "telegram": {
         "sent_state": "context",
-        "result_sent": "2026-11-10T10:41:00.999961+00:00"
+        "result_sent": "2026-11-10T10:41:00.999961+00:00",
+        "final_sent": "2026-11-16T03:15:50.730451+00:00"
       }
     },
     {
@@ -17962,7 +17963,7 @@
     "GOLD-20261114": 1
   },
   "last_run": {
-    "run_time": "2026-11-16T03:10:53.973762+00:00",
+    "run_time": "2026-11-16T03:15:50.730451+00:00",
     "test_mode": false,
     "stories": 11,
     "off_topic": 10,
