@@ -1931,14 +1931,8 @@
         "start_time": "2026-11-09T18:54:40+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
-        "now": {
-          "move": -6.06,
-          "time": "2026-11-16T19:14:50+00:00",
-          "hours": 168.1,
-          "verdict": "right"
-        },
         "effect": "right",
-        "effect_reason": "predicted down: 5 of 7 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted down: 6 of 8 clear price checks went the predicted way",
         "impact": {
           "peak": -7.49,
           "peak_hours": 122.9,
@@ -1949,12 +1943,12 @@
           "text": "Clear impact: Gold fell up to 7.5% (after 5.1 days). Still in the predicted direction after 7.0 days (-6.0%)."
         },
         "checks": {
-          "done": 8,
-          "right": 5,
+          "done": 9,
+          "right": 6,
           "wrong": 2,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "h1": {
           "price": 4112.72,
           "move": 0.54,
@@ -2002,6 +1996,12 @@
           "move": -6.5,
           "time": "2026-11-14T19:07:00+00:00",
           "verdict": "right"
+        },
+        "d7": {
+          "price": 3842.75,
+          "move": -6.06,
+          "time": "2026-11-16T19:07:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -2031,7 +2031,8 @@
       "telegram": {
         "first_sent_at": "2026-11-09T19:11:10.188306+00:00",
         "sent_state": "rejected",
-        "result_sent": "2026-11-10T19:20:52.177659+00:00"
+        "result_sent": "2026-11-10T19:20:52.177659+00:00",
+        "final_sent": "2026-11-16T19:21:03.373164+00:00"
       }
     },
     {
@@ -19604,7 +19605,7 @@
     "GOLD-20261116": 2
   },
   "last_run": {
-    "run_time": "2026-11-16T19:15:56.187840+00:00",
+    "run_time": "2026-11-16T19:21:03.373164+00:00",
     "test_mode": false,
     "stories": 25,
     "off_topic": 21,
@@ -19628,7 +19629,7 @@
           "Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
           "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
           "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
-          "US stock market (Nasdaq) fell -2.29% on its last day"
+          "1 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
