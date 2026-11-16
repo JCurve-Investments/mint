@@ -13794,7 +13794,7 @@
           "verdict": "flat"
         },
         "effect": "wrong",
-        "effect_reason": "predicted down, but 1 of 3 clear price checks went the predicted way (so far: 6 of 9 checks done)",
+        "effect_reason": "predicted down, but 1 of 3 clear price checks went the predicted way (so far: 7 of 9 checks done)",
         "impact": {
           "peak": -2.27,
           "peak_hours": 51.5,
@@ -13805,7 +13805,7 @@
           "text": "Clear impact: Gold fell up to 2.3% (after 2.1 days). The effect lasted about 3.2 days, then faded."
         },
         "checks": {
-          "done": 6,
+          "done": 7,
           "right": 1,
           "wrong": 2,
           "total": 9
@@ -13846,6 +13846,12 @@
           "move": -1.0,
           "time": "2026-11-14T18:33:00+00:00",
           "verdict": "right"
+        },
+        "h84": {
+          "price": 3838.45,
+          "move": -0.88,
+          "time": "2026-11-16T06:33:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -18005,7 +18011,7 @@
     "GOLD-20261114": 1
   },
   "last_run": {
-    "run_time": "2026-11-16T06:40:56.017720+00:00",
+    "run_time": "2026-11-16T06:45:50.966754+00:00",
     "test_mode": false,
     "stories": 10,
     "off_topic": 9,
