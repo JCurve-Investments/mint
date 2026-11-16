@@ -19362,6 +19362,134 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-16T16:11:09.879299+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261116-02",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Chairman Warsh delivers opening remarks at the Federal Reserve\u2019s Productivity and Jobs Task Force Conference: https://www.federalreserve.gov/newsevents/speech/w",
+      "state": "rejected",
+      "state_reason": "Decision agent: The Fed chairman's opening remarks do not contain any policy decision, so there is no new event that could move gold.",
+      "proof": "social",
+      "proof_reason": "approved social media account: Federal Reserve (Bluesky) (from social media)",
+      "first_seen": "2026-11-16T17:06:01.746026+00:00",
+      "earliest_report": "2026-11-16T17:02:00+00:00",
+      "last_updated": "2026-11-16T17:06:01.746026+00:00",
+      "words": [
+        "chairman",
+        "conference",
+        "deliver",
+        "federal",
+        "force",
+        "https",
+        "jobs",
+        "newsevent",
+        "open",
+        "productivity",
+        "remark",
+        "reserve",
+        "speech",
+        "task",
+        "warsh",
+        "www.federalreserve.gov"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Federal Reserve (Bluesky)",
+          "kind": "social",
+          "site": "Federal Reserve (Bluesky)",
+          "title": "Chairman Warsh delivers opening remarks at the Federal Reserve\u2019s Productivity and Jobs Task Force Conference: https://www.federalreserve.gov/newsevents/speech/w",
+          "link": "https://bsky.app/profile/federalreserve.gov/post/3n2gyywpb3k2p",
+          "published": "2026-11-16T17:02:00+00:00",
+          "found_at": "2026-11-16T17:06:01.746026+00:00",
+          "summary": "Chairman Warsh delivers opening remarks at the Federal Reserve\u2019s Productivity and Jobs Task Force Conference: https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm Watch live: https://www.frbsf.org/news-and-media/events/2026/11/productivity-and-jobs-task-force-conference/ Learn more about Chairman Warsh: https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-16T17:06:01.746026+00:00",
+          "note": "new event, first report by Federal Reserve (Bluesky)"
+        },
+        {
+          "time": "2026-11-16T17:06:01.746026+00:00",
+          "note": "new -> confirmed: approved social media account: Federal Reserve (Bluesky) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-16T17:06:01.746026+00:00",
+          "note": "confirmed -> rejected: The Fed chairman's opening remarks do not contain any policy decision, so there is no new event that could move gold."
+        }
+      ],
+      "decision": {
+        "is_new_event": false,
+        "event_date": "2026-11-16",
+        "date_evidence": "The report was published on 2026-11-16 17:02 UTC",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "no immediate effect",
+        "expected_direction": "unclear",
+        "direction_reason": "no indication of a rate change",
+        "alert_title": "",
+        "alert_message": "",
+        "why_it_matters": [],
+        "reason": "The Fed chairman's opening remarks do not contain any policy decision, so there is no new event that could move gold.",
+        "time": "2026-11-16T17:06:01.746026+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 3843.36,
+        "start_time": "2026-11-16T16:39:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-16T16:39:50+00:00",
+          "hours": -0.4,
+          "verdict": "flat"
+        },
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null,
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no recorded past events of this exact type to compare with.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Fed Chairman Warsh gave opening remarks at a Fed conference, but the speech itself does not contain any new policy surprise.",
+        "what_past_events_show": "There are no recorded past events of this exact type to compare with.",
+        "direction": "down",
+        "why": [
+          "No surprise in the Fed message, so expectations of high rates stay the same",
+          "Gold is usually weaker when rates are expected to stay high"
+        ],
+        "watch_next": "If the speech includes unexpected hawkish or dovish comments about future rate moves, that could change the impact.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-16T17:06:01.746026+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-16T17:06:14.409385+00:00",
+        "sent_state": "rejected"
+      }
     }
   ],
   "counter": {
@@ -19386,26 +19514,26 @@
     "BTC-20261115": 2,
     "GOLD-20261114": 2,
     "BTC-20261116": 4,
-    "GOLD-20261116": 1
+    "GOLD-20261116": 2
   },
   "last_run": {
-    "run_time": "2026-11-16T17:01:37.189102+00:00",
+    "run_time": "2026-11-16T17:06:01.746026+00:00",
     "test_mode": false,
-    "stories": 22,
+    "stories": 23,
     "off_topic": 19,
     "repeats": 3,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -19424,7 +19552,8 @@
           "Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
           "Alert: Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
-          "Alert: Gold hits over one-year low on resilient dollar as hawkish Fed bets build"
+          "Alert: Gold hits over one-year low on resilient dollar as hawkish Fed bets build",
+          "Being checked: Chairman Warsh delivers opening remarks at the Federal Reserve\u2019s Productivity and Jobs Task Force Conference: https://www.federalreserve.gov/newsevents/speech/w (approved social media account: Federal Reserve (Bluesky) (from social media))"
         ]
       }
     }
