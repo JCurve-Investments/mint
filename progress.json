@@ -373,6 +373,21 @@
       "date": "2026-11-17",
       "title": "New website design: three equal lenses and a full event history",
       "detail": "The website was redesigned from a draft: a cleaner light look with soft animations. Each asset card shows the price, a 7-day line and the three lenses (news, volume, buyers vs sellers) side by side with one signal bar, so the market lenses are as visible as the news. Opening an asset shows each lens in detail. Events has the full history, 10 per page with page numbers like Google, and each event opens in a side panel with the forecast, what each lens said and how it turned out. The detailed tables moved under 'More detail' on Track record. It also works on phones."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Partial results now count, and a fair gold delay",
+      "detail": "A PARTIAL (the price went the predicted way but was too small or did not hold for 2 hours) used to count the same as a MISS. Now the accuracy score gives HIT = 1, PARTIAL = half, MISS = 0, and the lazy guess is scored the same way. Real history on 17 Nov: 29 HIT, 8 partial, 22 miss → 56% score (49% if partial counted as nothing); lazy 'always down' 82%. The gold delay now only counts stories found after 17 Nov 11:46 UTC, when gold news started being searched every run instead of once a day (before that the median was 13 hours)."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Partial results count as right, and the 5-event past test is set up",
+      "detail": "I decided a PARTIAL should count as right, because MINT got the direction right; only the size or the 2-hour hold was missed. With that, 37 of 59 judged predictions were right (63%); the lazy 'always down' guess, judged the same way, scores 88%. I also filled backtest_events.json with 5 real past events for success criterion 1: the Fed emergency cut (3 Mar 2020) and the bank failures (13 Mar 2023) for gold, the dollar jump after the US election (6 Nov 2024), and the Celsius (13 Jun 2022) and FTX (8 Nov 2022) withdrawal freezes for Bitcoin. The real price moves come from Yahoo Finance daily prices."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Fake websites and disagreeing sources tested; the three lenses now count equally",
+      "detail": "New Supervisor tests (27 of 27 pass): 2 planted stories from fake websites (fakereuters.com, cryptobreakingnow.biz) are both thrown out by the code check while a real Reuters story is kept (criterion 2: 2 of 2). When approved sources report different facts (Reuters 'Fed raises rates' vs CNBC 'Fed holds rates', or a hack report vs a denial), the event stays on Watch with 'sources disagree' and no alert is sent until they agree (edge case 2). Checked on all 96 real events: no false 'disagree' flags. The 'likely' percentage is now the average of one score per lens, so news, volume and buyers vs sellers count equally."
     }
   ]
 }

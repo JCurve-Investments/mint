@@ -1,5 +1,5 @@
 """
-Tests for the Supervisor: 24 situations it must handle correctly.
+Tests for the Supervisor: 27 situations it must handle correctly.
 Every test uses made-up stories and a separate memory folder (data/selftest), so real data is never touched.
 
 Run:  py test_supervisor.py      (or press "Test the Supervisor" in the MINT app)
@@ -230,6 +230,43 @@ o["h84"] = {"move": 3.5, "verdict": prices.cell_verdict(3.5, "down", "Bitcoin", 
 effect, why = prices.judge(o, "Bitcoin", "down")
 check("24. Later checks go the other way (4 wrong vs 3 right) -> wrong, and final after 7 days",
       effect == "wrong" and o["final"], f"{effect}: {why}")
+
+# ---- Criterion 2 and edge case 2 (planted fakes, sources that disagree) ----
+# 25. Two planted stories from FAKE websites (a look-alike of Reuters and an unknown crypto site) are thrown out
+#     by the code check before any agent or AI sees them; a real Reuters story in the same feed is kept.
+from email.utils import format_datetime
+import common
+pub = format_datetime(T0 - timedelta(hours=2))
+fake_feed = f"""<?xml version="1.0"?><rss version="2.0"><channel><title>test</title>
+<item><title>Bitcoin exchange hacked, $900m stolen</title><link>https://fakereuters.com/a</link><pubDate>{pub}</pubDate><source url="https://fakereuters.com">Reuters</source></item>
+<item><title>BREAKING: Bitcoin to be banned worldwide tomorrow</title><link>https://cryptobreakingnow.biz/b</link><pubDate>{pub}</pubDate><source url="https://cryptobreakingnow.biz">Crypto Breaking Now</source></item>
+<item><title>Bitcoin ETFs see record inflows</title><link>https://www.reuters.com/c</link><pubDate>{pub}</pubDate><source url="https://www.reuters.com">Reuters</source></item>
+</channel></rss>"""
+kept, rejected = common.search_news("Bitcoin", "bitcoin", 24, T0, test_file=fake_feed)
+fakes = [r for r in rejected if r.get("reason") == "website not on approved list"]
+check("25. 2 planted stories from fake websites (fakereuters.com, cryptobreakingnow.biz) -> both thrown out; the real Reuters story is kept",
+      len(fakes) == 2 and len(kept) == 1 and kept[0]["organisation"] == "Reuters", f"kept {len(kept)}, fakes {len(fakes)}")
+
+# 26. Two approved sources report DIFFERENT rate decisions -> Watch ("sources disagree"), no alert
+fresh_memory()
+quiet_run([{"scout": "gold", "news": [{"id": "G2", "kept": [
+    story("Fed raises interest rates by a quarter point", "Reuters", "reuters.com", 2, factor="G2"),
+    story("Fed holds interest rates steady, no hike this month", "CNBC", "cnbc.com", 1, factor="G2")]}],
+    "data_checks": {}}], T0)
+e = events()
+check("26. Reuters says 'Fed raises rates', CNBC says 'Fed holds rates' -> Watch (sources disagree), no alert",
+      len(e) >= 1 and all(x["state"] in ("watch", None) for x in e) and any("disagree" in x["state_reason"] for x in e),
+      "; ".join(f"{x['state']}: {x['state_reason'][:60]}" for x in e))
+
+# 27. One source reports a hack, another says the hack is false -> Watch, no alert
+fresh_memory()
+quiet_run([btc_report({"B2": [
+    story("Crypto exchange Bybit hacked, $400m in bitcoin stolen", "Reuters", "reuters.com", 2),
+    story("Bybit denies bitcoin hack, says reports of $400m theft are false", "CoinDesk", "coindesk.com", 1)]})], T0)
+e = events()
+check("27. Reuters reports a Bybit hack, CoinDesk says Bybit denies it -> Watch (sources disagree), no alert",
+      len(e) >= 1 and not any(x["state"] in ("confirmed", "alerted") for x in e) and any("disagree" in x["state_reason"] for x in e),
+      "; ".join(f"{x['state']}: {x['state_reason'][:60]}" for x in e))
 
 passed = sum(ok for _, ok in results)
 print(f"\nRESULT: {passed} of {len(results)} tests passed.")

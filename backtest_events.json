@@ -1,10 +1,46 @@
 {
   "note": "Success criterion 1: put your 5 past events here, from your answer key (action plan step 2). MINT gets ONLY the date, asset and headline and must predict up or down; the real moves below are your answer key, which MINT never sees. date = YYYY-MM-DD, asset = Gold or Bitcoin, headline = what happened, written like a news headline, expected_factor = the factor id you expect (e.g. G2 or B1), real_move_7_days_percent = the real price change over the next 7 days (e.g. -3.2), real_move_1_day_percent = optional. Leave a headline empty to skip that event.",
   "events": [
-    {"date": "", "asset": "Gold", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
-    {"date": "", "asset": "Gold", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
-    {"date": "", "asset": "Gold", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
-    {"date": "", "asset": "Bitcoin", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null},
-    {"date": "", "asset": "Bitcoin", "headline": "", "expected_factor": "", "real_move_1_day_percent": null, "real_move_7_days_percent": null}
-  ]
+    {
+      "date": "2020-03-03",
+      "asset": "Gold",
+      "headline": "Fed makes emergency half-point interest rate cut as coronavirus spreads",
+      "expected_factor": "G2",
+      "real_move_1_day_percent": 3.13,
+      "real_move_7_days_percent": 4.2
+    },
+    {
+      "date": "2023-03-13",
+      "asset": "Gold",
+      "headline": "Bank failures raise bets the Fed will pause interest rate hikes",
+      "expected_factor": "G2",
+      "real_move_1_day_percent": 2.64,
+      "real_move_7_days_percent": 6.19
+    },
+    {
+      "date": "2024-11-06",
+      "asset": "Gold",
+      "headline": "US dollar jumps after the US election result",
+      "expected_factor": "G1",
+      "real_move_1_day_percent": -2.67,
+      "real_move_7_days_percent": -5.94
+    },
+    {
+      "date": "2022-06-13",
+      "asset": "Bitcoin",
+      "headline": "Crypto lender Celsius freezes all customer withdrawals",
+      "expected_factor": "B2",
+      "real_move_1_day_percent": -15.97,
+      "real_move_7_days_percent": -23.03
+    },
+    {
+      "date": "2022-11-08",
+      "asset": "Bitcoin",
+      "headline": "Crypto exchange FTX halts customer withdrawals as crisis deepens",
+      "expected_factor": "B2",
+      "real_move_1_day_percent": -10.01,
+      "real_move_7_days_percent": -18.05
+    }
+  ],
+  "answer_key_source": "Real moves from Yahoo Finance daily prices (last close before the date to the close 1 and 7 days later), as worked out by MINT's past events library."
 }

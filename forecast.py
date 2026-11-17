@@ -44,7 +44,7 @@ HOLD_HOURS = 2                       # a move must last this long to count
 MIN_THRESHOLD = {"Bitcoin": 0.6, "Gold": 0.25}
 DEFAULT_SIGMA = {"Bitcoin": 2.8, "Gold": 1.0}    # a normal day's move (%), if the price history is too short
 MIN_WINDOW, MAX_WINDOW = 4, 120
-LENS_POINTS = 0.05
+LENS_WEIGHT = 0.25                   # a market lens that agrees scores 0.75, one that disagrees 0.25 (news scored from past events)
 GROUP_HOURS = 12
 VERSION = 2                          # forecasts made with this version of the rules
 
@@ -122,14 +122,21 @@ def make_forecast(ev, sigma, market_state=None, library_entries=None):
         window_basis = "time the market normally needs to move this much"
     window = round(min(max(window, MIN_WINDOW), MAX_WINDOW), 1)
     n, k = len(sims), len(agree)
-    prob = (k + 1) / (n + 2) if n else 0.5
     rule = (p.get("votes") or {})
     votes, L = lens_votes(market_state, ev["asset"])
-    lens_notes = []
+    # The three lenses count EQUALLY: "likely" is the average of one score per lens.
+    #   news   = how many similar past events moved this way: (agreeing + 1) / (all + 2); none for a market-triggered event
+    #   volume, buyers vs sellers = 0.75 if the lens points the predicted way, 0.25 if the other way, 0.5 if no signal
+    # A lens with no data is left out. So a forecast is only very likely when the market agrees with the news.
+    scores, lens_notes = {}, []
+    if not ev.get("market_triggered"):
+        scores["news"] = (k + 1) / (n + 2) if n else 0.5
     for name, v in votes.items():
-        if v:
-            prob += LENS_POINTS if v == sign else -LENS_POINTS
-            lens_notes.append(f"{'agrees' if v == sign else 'disagrees'}: {name.replace('_', '/')}")
+        if not (L.get(name) or {}).get("ok"):
+            continue
+        scores[name] = 0.5 + LENS_WEIGHT * (1 if v == sign else -1) if v else 0.5
+        lens_notes.append(f"{'agrees' if v == sign else 'disagrees' if v else 'no signal'}: {name.replace('_', '/')}")
+    prob = statistics.mean(scores.values()) if scores else 0.5
     prob = round(min(max(prob, 0.2), 0.9), 2)
     thr, floor = threshold(ev["asset"], sigma, mid)
     return {"version": VERSION, "made": datetime.now(timezone.utc).isoformat(),
@@ -138,7 +145,7 @@ def make_forecast(ev, sigma, market_state=None, library_entries=None):
             "basis": basis, "window_basis": window_basis, "sigma": sigma, "threshold": thr, "floor": floor,
             "lenses": {name: v for name, v in votes.items()},
             "lens_text": {name: (L.get(name) or {}).get("text") for name in votes if (L.get(name) or {}).get("ok")},
-            "lens_notes": lens_notes, "rule_votes": rule}
+            "lens_notes": lens_notes, "lens_scores": {k_: round(v_, 2) for k_, v_ in scores.items()}, "rule_votes": rule}
 
 
 def fmt_hours(h):
@@ -164,7 +171,7 @@ def headline(ev):
     lo, hi = sorted([abs(f["low"]), abs(f["high"])])
     s = "+" if p["direction"] == "up" else "-"
     likely = f"{f['probability'] * 100:.0f}% likely" if f["probability"] >= 0.5 else \
-        f"only {f['probability'] * 100:.0f}% likely (past events disagree)"
+        f"only {f['probability'] * 100:.0f}% likely (the lenses disagree)"
     return f"{icon} {ev['asset']} {arrow} {s}{lo:.1f}% to {s}{hi:.1f}% within ~{fmt_hours(f['window_hours'])} · {likely}"
 
 
@@ -288,6 +295,15 @@ def apply(memory, histories, market_state, now, library_entries=None):
 # ---------------------------------------------------------------------------
 # Fair accuracy (History page, 9 pm summary, weekly summary)
 # ---------------------------------------------------------------------------
+PARTIAL_CREDIT = 1.0          # a PARTIAL (right way, but too small or too short) counts as a HIT: the direction was right
+GOLD_FAST_SINCE = "2026-11-17T11:46:00+00:00"   # gold news searched every run from here (before: once a day)
+
+
+def score_of(hit, partial, decided):
+    """Accuracy score: HIT and PARTIAL = right, MISS = wrong. No clear move is left out."""
+    return round((hit + PARTIAL_CREDIT * partial) / decided, 3) if decided else None
+
+
 def market_accuracy(events):
     """HIT rate of the market-triggered events (volume + buyers/sellers, no news) - kept apart from the news events."""
     judged = [e for e in events if e.get("market_triggered") and
@@ -298,7 +314,7 @@ def market_accuracy(events):
     decided = hit + miss + partial
     open_ = sum(1 for e in events if e.get("market_triggered") and e not in judged)
     return {"judged": len(judged), "hit": hit, "miss": miss, "partial": partial, "no_clear_move": flat,
-            "hit_rate": round(hit / decided, 3) if decided else None, "open": open_,
+            "hit_rate": round(hit / decided, 3) if decided else None, "score": score_of(hit, partial, decided), "open": open_,
             "total": sum(1 for e in events if e.get("market_triggered"))}
 
 
@@ -311,7 +327,8 @@ def accuracy(events, cloud_start=None):
     hit, miss, partial, flat = count("hit"), count("miss"), count("partial"), count("no_clear_move")
     decided = hit + miss + partial
     out = {"judged": len(judged), "hit": hit, "miss": miss, "partial": partial, "no_clear_move": flat,
-           "hit_rate": round(hit / decided, 3) if decided else None, "market": market_part}
+           "hit_rate": round(hit / decided, 3) if decided else None, "score": score_of(hit, partial, decided),
+           "partial_credit": PARTIAL_CREDIT, "market": market_part}
     # same price move = one group
     groups = []
     for asset in ("Bitcoin", "Gold"):
@@ -328,7 +345,7 @@ def accuracy(events, cloud_start=None):
     gh = gm = gp = 0
     for g in groups:
         vs = [x["outcome"]["result"]["verdict"] for x in g["events"]]
-        score = vs.count("hit") - vs.count("miss")
+        score = vs.count("hit") + PARTIAL_CREDIT * vs.count("partial") - vs.count("miss")
         if vs.count("hit") + vs.count("miss") + vs.count("partial") == 0:
             continue
         if score > 0:
@@ -338,18 +355,20 @@ def accuracy(events, cloud_start=None):
         else:
             gp += 1
     gd = gh + gm + gp
-    out["moves"] = {"total": gd, "hit": gh, "miss": gm, "other": gp, "hit_rate": round(gh / gd, 3) if gd else None}
+    out["moves"] = {"total": gd, "hit": gh, "miss": gm, "other": gp, "hit_rate": round(gh / gd, 3) if gd else None,
+                    "score": round(gh / gd, 3) if gd else None}   # partials count toward a move being right
     # lazy guess: always up / always down
     lazy = {}
     for word in ("up", "down"):
-        h = d_ = 0
+        h = pa = d_ = 0
         for e in judged:
             r = e["outcome"]["result"]
             v = r["verdict"] if e["prediction"]["direction"] == word else r.get("opposite")
             if v in ("hit", "miss", "partial"):
                 d_ += 1
                 h += v == "hit"
-        lazy[word] = round(h / d_, 3) if d_ else None
+                pa += v == "partial"
+        lazy[word] = score_of(h, pa, d_)                  # judged the same way as MINT
     best = max((v, k) for k, v in lazy.items() if v is not None) if any(v is not None for v in lazy.values()) else (None, None)
     out["lazy"] = {"always_up": lazy["up"], "always_down": lazy["down"], "best": best[0], "best_word": best[1]}
     # calibration
@@ -359,7 +378,9 @@ def accuracy(events, cloud_start=None):
         es = [e for e in judged if lo <= ((e["prediction"].get("forecast") or {}).get("probability") or 0) < hi
               and e["outcome"]["result"]["verdict"] in ("hit", "miss", "partial")]
         if es:
-            cal.append({"label": label, "n": len(es), "hit": sum(1 for e in es if e["outcome"]["result"]["verdict"] == "hit")})
+            h = sum(1 for e in es if e["outcome"]["result"]["verdict"] == "hit")
+            pa = sum(1 for e in es if e["outcome"]["result"]["verdict"] == "partial")
+            cal.append({"label": label, "n": len(es), "hit": h, "partial": pa, "score": score_of(h, pa, len(es))})
     out["calibration"] = cal
     # old rule (9 checks, from the first report) for comparison
     old = [e for e in events if (e.get("outcome") or {}).get("old_effect") in ("right", "wrong")]
@@ -373,9 +394,11 @@ def accuracy(events, cloud_start=None):
             continue
         if cloud_start and e["first_seen"] < cloud_start:
             continue
+        if e["asset"] == "Gold" and e["first_seen"] < GOLD_FAST_SINCE:
+            continue                                  # gold was searched once a day before this: not a fair delay
         delays.setdefault(e["asset"], []).append(o["delay_hours"])
     allv = sorted(v for vs in delays.values() for v in vs)
     out["delay"] = {"median_hours": round(statistics.median(allv), 1) if allv else None, "n": len(allv),
                     "by_asset": {a: round(statistics.median(v), 1) for a, v in delays.items() if v},
-                    "since": cloud_start}
+                    "since": cloud_start, "gold_since": GOLD_FAST_SINCE}
     return out

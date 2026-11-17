@@ -432,6 +432,41 @@ def best_title(ev):
     return ranked[0]["title"]
 
 
+# Edge case 2: sources that report DIFFERENT facts about the same event -> no alert until they agree
+DENIAL = re.compile(r"\b(denies|denied|deny|denial|hoax|debunk\w*|not true|false (report|claim|rumou?r)s?|"
+                    r"fake news|no (hack|breach|ban)|was not hacked|funds are safe)\b", re.I)
+# a rate DECISION: a central bank doing something to rates (not "gold holds" or "rate-hike bets")
+BANK = r"(fed|federal reserve|fomc|central bank|ecb|boe|bank of \w+|rbi|pboc|powell|warsh)"
+RATE_ACTIONS = [("hold", re.compile(BANK + r"\W+(\w+\W+){0,3}(holds?|keeps?|leaves?|pauses?)\b.{0,25}\brates?\b", re.I)),
+                ("cut", re.compile(BANK + r"\W+(\w+\W+){0,3}(cuts?|lowers?|slash\w*)\b.{0,25}\brates?\b", re.I)),
+                ("hike", re.compile(BANK + r"\W+(\w+\W+){0,3}(raises?|hikes?|lifts?|increases?)\b.{0,25}\brates?\b", re.I))]
+
+
+def sources_disagree(ev):
+    """Return a short reason when the event's sources contradict each other, else None.
+    Two checks: one source denies what another reports (hack denied, report called false...), or sources give
+    different interest-rate decisions (hike vs cut vs hold)."""
+    titles = [(s.get("organisation", "?"), s.get("title", "")) for s in ev.get("sources", [])]
+    if len(titles) < 2:
+        return None
+    deny = [o for o, t in titles if DENIAL.search(t)]
+    plain = [o for o, t in titles if not DENIAL.search(t)]
+    if deny and plain:
+        return f"{deny[0]} denies or disputes what {plain[0]} reports"
+    actions = {}
+    for org, t in titles:
+        if "rate" not in t.lower():
+            continue
+        for name, pat in RATE_ACTIONS:
+            if pat.search(t):
+                actions.setdefault(name, org)
+                break
+    if len(actions) > 1:
+        (a1, o1), (a2, o2) = list(actions.items())[:2]
+        return f"{o1} says the rate decision is a {a1}, {o2} says {a2}"
+    return None
+
+
 def update_state(ev, factors, now):
     """Decide the state of an event that is still open (watch or confirmed)."""
     factor = factors.get(ev["factor"], {})
@@ -457,6 +492,10 @@ def update_state(ev, factors, now):
         ev["state"] = "context"
         ev["state_reason"] = (f"{factor.get('name', ev['factor'])} is a moderate factor - shown for context, "
                               f"never an alert ({why})")
+    elif proven and sources_disagree(ev):
+        ev["state"] = "watch"
+        ev["state_reason"] = (f"sources disagree ({sources_disagree(ev)}) - no alert until they agree; "
+                              "checked again on the next run")
     elif proven:
         if factor.get("strength") == "strong":
             ev["state"] = "confirmed"

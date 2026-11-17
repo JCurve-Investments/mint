@@ -113,16 +113,16 @@ KEY_TEXT = ("📖 How to read MINT messages\n\n"
             "Where the numbers come from:\n"
             "• size = the typical move after similar past events\n"
             "• time = how long those moves took (bigger moves take longer)\n"
-            "• likely = how many similar past events went that way, +/- 5 points for each market lens "
-            "(trading volume, buyers vs sellers) that agrees or disagrees\n\n"
+            "• likely = the 3 lenses counted equally: the news (how many similar past events went that way), "
+            "trading volume and buyers vs sellers (each agrees, disagrees or shows no signal)\n\n"
             "First icon: 🚨 alert · 👀 watch (not confirmed yet) · ℹ️ info only (slow factor) · ✔️ checked, no alert\n\n"
             "Results (one message, as soon as it is known):\n"
             "✅ HIT - moved at least half the predicted amount the predicted way and held it 2+ hours\n"
-            "🟨 PARTIAL - the right way, but too small or too short\n"
+            "🟨 PARTIAL - the right way, but too small or too short (counts as right)\n"
             "❌ MISS - moved clearly the other way\n"
             "➖ NO CLEAR MOVE - nothing happened inside the time window\n\n"
             "Every evening at 9 pm (India time): the detailed daily summary.\n\n" + "Risk information only, not financial advice.")
-KEY_VERSION = 2
+KEY_VERSION = 3
 
 
 WELCOME = ("Welcome to MINT - Market Intelligence and News Tracker.\n\n"
@@ -520,15 +520,15 @@ def daily_text(memory, now):
             lz = acc["lazy"]
             lines.append("\nAccuracy so far:")
             lines.append(f"   {acc['hit']} HIT · {acc['partial']} partial · {acc['miss']} miss"
-                         + (f" → {acc['hit_rate'] * 100:.0f}% HIT" if acc["hit_rate"] is not None else ""))
+                         + (f" → {acc['score'] * 100:.0f}% right (HIT + partial)" if acc.get("score") is not None else ""))
             if acc["moves"]["total"]:
                 lines.append(f"   Counting each price move once: {acc['moves']['hit']} of {acc['moves']['total']} right")
             if lz.get("best") is not None:
-                lines.append(f"   A lazy guess (always {lz['best_word']}) would score {lz['best'] * 100:.0f}% HIT")
+                lines.append(f"   A lazy guess (always {lz['best_word']}) would score {lz['best'] * 100:.0f}%")
         mk = acc.get("market") or {}
         if mk.get("total"):
             lines.append(f"   Market-triggered (no news): {mk['total']} so far, {mk['hit']} HIT · {mk['partial']} partial · "
-                         f"{mk['miss']} miss" + (f" → {mk['hit_rate'] * 100:.0f}% HIT" if mk["hit_rate"] is not None else
+                         f"{mk['miss']} miss" + (f" → {mk['score'] * 100:.0f}% score" if mk.get("score") is not None else
                                                  " (still being judged)"))
     except Exception as e:
         lines.append(f"\n(accuracy not available: {e})")
@@ -556,8 +556,8 @@ def signal_text(memory, now, strong_only=None):
     lines = [f"📡 MINT signal check · {ist:%d %b %H:%M}"] + market_lines(memory, now, private=True)
     try:
         acc = forecast.accuracy(memory["events"])
-        if acc["hit_rate"] is not None:
-            lines.append(f"\nMINT's record so far: {acc['hit_rate'] * 100:.0f}% HIT ({acc['hit']} of "
+        if acc.get("score") is not None:
+            lines.append(f"\nMINT's record so far: {acc['score'] * 100:.0f}% right ({acc['hit']} HIT + {acc['partial']} partial of "
                          f"{acc['hit'] + acc['miss'] + acc['partial']}). The lenses describe market conditions from data. Not financial advice.")
     except Exception:
         pass
