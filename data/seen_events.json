@@ -20912,10 +20912,12 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-17T01:16:09.528767+00:00",
       "earliest_report": "2026-11-17T01:13:33+00:00",
-      "last_updated": "2026-11-17T13:15:54.937605+00:00",
+      "last_updated": "2026-11-17T14:01:31.971803+00:00",
       "words": [
+        "bbc",
         "behind",
         "binance",
+        "code",
         "credit-card",
         "crypto-steal",
         "detail",
@@ -20925,15 +20927,21 @@
         "follow",
         "funds",
         "hack",
+        "hsbc",
+        "includ",
         "inject",
+        "ledger",
         "major",
         "maliciou",
         "malware",
         "million",
         "move",
+        "organization",
+        "plant",
         "record",
         "script",
         "seizur",
+        "sites",
         "transferr",
         "unknown",
         "usd",
@@ -21043,6 +21051,17 @@
           "found_at": "2026-11-17T13:15:54.937605+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Hackers planted crypto-stealing code on 178 organizations\u2019 sites, including HSBC, BBC and Ledger",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWEpvVG5hSUpEMTVCTHdMTEpPT3JPMkNrX0ZLMUxqdE5FbGJKRzRnNnJXTWhjbjUySkgtaE94NnVVUURsZWJjZDdYVlZ4VXBlUlc0MGdEQTFsSHZBRE5nNFZWRWtMVkZ6T2IwRmdLX2MzODZFa2N1UzJxRTd5OTI5VHhBRFdPbkxtM191MG1ibU1WcmFZQkV6T05IbFF4NHdmSUFNT3huOXIxdldkbTUwNHRza1B2dWtxLWhISFdLeG9Mb3pfaEtSVXcwWDNpNkk?oc=5",
+          "published": "2026-11-17T10:22:18+00:00",
+          "found_at": "2026-11-17T14:01:31.971803+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -21088,6 +21107,10 @@
         },
         {
           "time": "2026-11-17T13:15:54.937605+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
+        },
+        {
+          "time": "2026-11-17T14:01:31.971803+00:00",
           "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
@@ -24008,14 +24031,14 @@
     "GOLD-20261117": 5
   },
   "last_run": {
-    "run_time": "2026-11-17T13:55:43.527439+00:00",
+    "run_time": "2026-11-17T14:01:31.971803+00:00",
     "test_mode": false,
-    "stories": 156,
-    "off_topic": 73,
-    "repeats": 83,
+    "stories": 92,
+    "off_topic": 44,
+    "repeats": 47,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
