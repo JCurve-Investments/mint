@@ -24455,6 +24455,204 @@
         "first_sent_at": "2026-11-17T17:01:54.344296+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261117-08",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "India\u2019s gold demand boosted by lower prices in October, with jewelry, ETFs, and imports strong \u2013 WGC\u2019s Chacko",
+      "state": "context",
+      "state_reason": "ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: Kitco News)",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-17T19:45:56.541597+00:00",
+      "earliest_report": "2026-11-17T19:18:38+00:00",
+      "last_updated": "2026-11-17T19:45:56.541597+00:00",
+      "words": [
+        "boost",
+        "chacko",
+        "demand",
+        "etfs",
+        "gold",
+        "import",
+        "india",
+        "jewelry",
+        "lower",
+        "october",
+        "pric",
+        "strong",
+        "wgc"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "India\u2019s gold demand boosted by lower prices in October, with jewelry, ETFs, and imports strong \u2013 WGC\u2019s Chacko",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWmNZNGdIMm5uRzhVN2duRGtVb0NFSlN4dTlMS21DTWtZcHlvT0dveUJQY3h1cFZKNW5PdFZ4ZHdkaVZ4a3d2N1VtRmFRT1IyMFozbFZhdElYM3l5SnV6T2oxOUNJTFFlODBpSzI2NHdBellDZ1pBTDNBbExMWHBWb1I4QUpfRXlIVHlhRkNVMlA1ZWtwcGdVWjY3SDh4VE1sV0pBeXRrY0JRQnVnWXdmU183MGVkVTY1X0E?oc=5",
+          "published": "2026-11-17T19:18:38+00:00",
+          "found_at": "2026-11-17T19:45:56.541597+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-17T19:45:56.541597+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-17T19:45:56.541597+00:00",
+          "note": "new -> context: ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: Kitco News)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3843.18,
+        "start_time": "2026-11-17T19:00:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.5,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-17T19:00:20+00:00",
+          "hours": -0.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far +0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3843.18,
+          "start_time": "2026-11-17T19:45:56.541597+00:00",
+          "threshold": 0.85,
+          "window_hours": 54.0,
+          "peak": 0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far +0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "Similar Indian demand spikes previously led to price gains of +3.2%, +0.7% and +2.0% the next day, while a drop in ETF inflows caused a -2.0% move.",
+        "similar": [
+          {
+            "id": "GOLD-20261103-08",
+            "date": "2026-11-03",
+            "title": "Gold Demand Trends: India Focus Q3 2026",
+            "d1": 3.25,
+            "d7": 3.86,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.78
+          },
+          {
+            "id": "GOLD-20261106-03",
+            "date": "2026-11-06",
+            "title": "India's gold demand picks up as Diwali coincides with price dip",
+            "d1": 0.67,
+            "d7": -4.05,
+            "peak_hours": 78.4,
+            "source": "MINT",
+            "score": 0.6
+          },
+          {
+            "id": "GOLD-20261103-01",
+            "date": "2026-11-03",
+            "title": "WGC lowers outlook for gold investment demand growth as bar buying slows",
+            "d1": 2.0,
+            "d7": 4.78,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261111-01",
+            "date": "2026-11-11",
+            "title": "India gold ETF, equity fund inflows ease in October",
+            "d1": -1.98,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.47
+          }
+        ],
+        "votes": {
+          "up": 1.88,
+          "down": 0.47
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-17T19:46:10.580980+00:00",
+          "low": 1.2,
+          "mid": 1.71,
+          "high": 2.28,
+          "window_hours": 54.0,
+          "probability": 0.64,
+          "agree": 3,
+          "similar": 4,
+          "basis": "3 of 4 similar past events moved this way (typical move 2.0%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.14,
+          "threshold": 0.85,
+          "floor": 0.47,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "normal: 0.9x a normal day, price -0.2%",
+            "buy_sell": "53% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.67,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.88,
+            "down": 0.47
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "India\u2019s lower gold prices in October are sparking stronger demand for jewelry, imports and especially gold ETFs, which can push the price higher.",
+        "what_past_events_show": "Similar Indian demand spikes previously led to price gains of +3.2%, +0.7% and +2.0% the next day, while a drop in ETF inflows caused a -2.0% move.",
+        "direction": "up",
+        "why": [
+          "Higher Indian demand, especially ETF inflows, has historically lifted gold prices.",
+          "Lower prices attract more buying, reinforcing the upward move."
+        ],
+        "watch_next": "If gold prices keep falling or other major markets cut demand, the boost could be weaker.",
+        "confidence": "high",
+        "confidence_reason": "3 of 4 similar past events moved this way",
+        "time": "2026-11-17T19:45:56.541597+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-17T19:46:12.479217+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -24481,20 +24679,20 @@
     "BTC-20261116": 6,
     "GOLD-20261116": 8,
     "BTC-20261117": 2,
-    "GOLD-20261117": 7
+    "GOLD-20261117": 8
   },
   "last_run": {
-    "run_time": "2026-11-17T19:40:56.490110+00:00",
+    "run_time": "2026-11-17T19:45:56.541597+00:00",
     "test_mode": false,
-    "stories": 145,
-    "off_topic": 64,
-    "repeats": 81,
-    "new_events": 0,
+    "stories": 140,
+    "off_topic": 60,
+    "repeats": 79,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
