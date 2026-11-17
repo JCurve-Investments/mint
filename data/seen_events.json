@@ -8012,21 +8012,15 @@
           "time": "2026-11-10T11:19:00+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -13.24,
-          "time": "2026-11-17T05:44:10+00:00",
-          "hours": 167.4,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 0,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "wrong",
-        "effect_reason": "predicted up, but 0 of 3 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted up, but 0 of 4 clear price checks went the predicted way",
         "impact": {
           "peak": 0.05,
           "peak_hours": 1.7,
@@ -8070,6 +8064,12 @@
           "price": 64459.41,
           "move": -13.76,
           "time": "2026-11-15T06:19:00+00:00",
+          "verdict": "wrong"
+        },
+        "d7": {
+          "price": 64844.94,
+          "move": -13.24,
+          "time": "2026-11-17T06:19:00+00:00",
           "verdict": "wrong"
         }
       },
@@ -8146,7 +8146,8 @@
       "telegram": {
         "sent_state": "alerted",
         "first_sent_at": "2026-11-10T12:01:39.073069+00:00",
-        "result_sent": "2026-11-11T06:31:10.700243+00:00"
+        "result_sent": "2026-11-11T06:31:10.700243+00:00",
+        "final_sent": "2026-11-17T06:31:15.526770+00:00"
       }
     },
     {
@@ -20444,11 +20445,11 @@
     "BTC-20261117": 2
   },
   "last_run": {
-    "run_time": "2026-11-17T06:25:47.359338+00:00",
+    "run_time": "2026-11-17T06:31:15.526770+00:00",
     "test_mode": false,
-    "stories": 25,
-    "off_topic": 18,
-    "repeats": 7,
+    "stories": 11,
+    "off_topic": 7,
+    "repeats": 4,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -20469,7 +20470,8 @@
           "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
           "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
           "Alert: Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts",
-          "US stock market (Nasdaq) fell -2.49% on its last day"
+          "US stock market (Nasdaq) fell -2.49% on its last day",
+          "1 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
