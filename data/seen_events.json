@@ -19292,9 +19292,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 0,
-          "wrong": 2,
+          "wrong": 3,
           "total": 9
         },
         "final": false,
@@ -19335,7 +19335,13 @@
           "text": "still inside the 33 hours window (biggest move so far -0.5%)",
           "size": null
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "d2": {
+          "price": 3855.38,
+          "move": 0.84,
+          "time": "2026-11-17T12:30:00+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -21235,14 +21241,20 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-17T05:41:00.423823+00:00",
       "earliest_report": "2026-11-17T05:37:23+00:00",
-      "last_updated": "2026-11-17T05:41:00.423823+00:00",
+      "last_updated": "2026-11-17T12:40:59.047296+00:00",
       "words": [
         "billion",
         "bitcoin",
         "combin",
+        "dan",
         "etf",
         "fargo",
+        "gabungan",
         "holding",
+        "kepemilikan",
+        "kini",
+        "menyaingi",
+        "miliar",
         "now",
         "rival",
         "spacex",
@@ -21264,6 +21276,17 @@
           "found_at": "2026-11-17T05:41:00.423823+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Kepemilikan ETF bitcoin Wells Fargo kini menyaingi gabungan $2 miliar Tesla dan SpaceX",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTzNNN0xZWW9sczZEaGFnYlRiSnFkMUdrdHhaSTdkeFMzT1hWeVRjV2JXaTNQZTI0SkVVR1pieE91S2VvNmFNZFYyMTFiWWJfM0FoWlYtbHMyalFwbFh5cnVfUlhLTEtfc2xxUENlbmZTNmhXTmhEaWpFWlpxeklvc3I0YjFXeVVVblFsdlVJX29EVDFDVGpseW9Yb0cyenNfdGZNZnVLUTFyN2FfTGdLMW9sdEhjTzZXOVJuc3d2SnlUbzVq?oc=5",
+          "published": "2026-11-17T05:37:23+00:00",
+          "found_at": "2026-11-17T12:40:59.047296+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -21274,6 +21297,10 @@
         {
           "time": "2026-11-17T05:41:00.423823+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        },
+        {
+          "time": "2026-11-17T12:40:59.047296+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": null,
@@ -23702,14 +23729,14 @@
     "GOLD-20261117": 4
   },
   "last_run": {
-    "run_time": "2026-11-17T12:35:44.593126+00:00",
+    "run_time": "2026-11-17T12:40:59.047296+00:00",
     "test_mode": false,
-    "stories": 154,
-    "off_topic": 75,
-    "repeats": 79,
+    "stories": 84,
+    "off_topic": 47,
+    "repeats": 36,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
