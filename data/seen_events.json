@@ -22607,12 +22607,26 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-17T10:55:45.304753+00:00",
       "earliest_report": "2026-11-16T19:27:14+00:00",
-      "last_updated": "2026-11-17T10:55:45.304753+00:00",
+      "last_updated": "2026-11-17T15:10:59.653205+00:00",
       "words": [
+        "14-month",
         "back",
         "fall",
         "gold",
-        "inflation"
+        "inflation",
+        "kitco",
+        "low",
+        "near",
+        "one-year",
+        "persist",
+        "pressure",
+        "report",
+        "retail",
+        "sales",
+        "slow",
+        "steadi",
+        "trad",
+        "u.s"
       ],
       "amounts": [],
       "old_clues": [],
@@ -22627,6 +22641,28 @@
           "found_at": "2026-11-17T10:55:45.304753+00:00",
           "summary": "",
           "factor": "G3"
+        },
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Gold Steadies Near 14-Month Low as Inflation Pressure Persists",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMDI4MEt3a3M4XzFhaC01R3pmSzdkOXZ2ZWhUWjhPb1lOZWZPbjdXTWFydWVFcmZNS21rZGZLUmZ6S21OcXFDUUkyN0NLc3BiZnlCWUJ1QmMxbHh0aWtZUjEzZFBuQng0bkRiVFZxN0pOUUJBQXRqQ0NGTUFZcEtLRUx6NkVWZklRTjhxOTNJMzdVUldYX21ieEFQcDlnTks2NFAxMDBrY1ktNmtlVzZYR2FxRQ?oc=5",
+          "published": "2026-11-17T05:20:00+00:00",
+          "found_at": "2026-11-17T15:10:59.653205+00:00",
+          "summary": "",
+          "factor": "G3"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold trades near one-year low as U.S. retail sales slow - Kitco AM Report",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNVBMcGpQbmJMNUNTUmt3NkVvVm1TU3JGZ1lEVDFZeXB3cjdsb05lckt1NDAwakNiaVh0cDdYMHF5WGU3VDV6NUE2NXlCZWFFTEJRSUNSN05HRTM5aXJDV2ROTktwbWFCRmZPVjZpM2YyNnhPVmNYVHoxT3Nyb0huY2xrSWRjRTFGNlp3SkJwUFRfdTBrUXFGeFBha1hvUDVZeW9WaTFXRmM3TVlCTWNNa2JB?oc=5",
+          "published": "2026-11-17T13:54:57+00:00",
+          "found_at": "2026-11-17T15:10:59.653205+00:00",
+          "summary": "",
+          "factor": "G3"
         }
       ],
       "history": [
@@ -22637,6 +22673,10 @@
         {
           "time": "2026-11-17T10:55:45.304753+00:00",
           "note": "new -> context: Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Kitco News)"
+        },
+        {
+          "time": "2026-11-17T15:10:59.653205+00:00",
+          "note": "joined with GOLD-20261117-02 (same organisation, same factor and same day) - the same story"
         }
       ],
       "decision": null,
@@ -22995,236 +23035,6 @@
       "telegram": {
         "sent_state": "alerted",
         "first_sent_at": "2026-11-17T10:56:21.046053+00:00"
-      }
-    },
-    {
-      "id": "GOLD-20261117-02",
-      "asset": "Gold",
-      "factor": "G3",
-      "factor_name": "Surprise US data (jobs, inflation)",
-      "title": "Gold Steadies Near 14-Month Low as Inflation Pressure Persists",
-      "state": "context",
-      "state_reason": "Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Bloomberg)",
-      "proof": "news",
-      "proof_reason": "reliable source: Bloomberg",
-      "first_seen": "2026-11-17T10:55:45.304753+00:00",
-      "earliest_report": "2026-11-17T05:20:00+00:00",
-      "last_updated": "2026-11-17T15:05:42.662967+00:00",
-      "words": [
-        "14-month",
-        "gold",
-        "inflation",
-        "kitco",
-        "low",
-        "near",
-        "one-year",
-        "persist",
-        "pressure",
-        "report",
-        "retail",
-        "sales",
-        "slow",
-        "steadi",
-        "trad",
-        "u.s"
-      ],
-      "amounts": [],
-      "old_clues": [],
-      "sources": [
-        {
-          "organisation": "Bloomberg",
-          "kind": "news",
-          "site": "bloomberg.com",
-          "title": "Gold Steadies Near 14-Month Low as Inflation Pressure Persists",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMDI4MEt3a3M4XzFhaC01R3pmSzdkOXZ2ZWhUWjhPb1lOZWZPbjdXTWFydWVFcmZNS21rZGZLUmZ6S21OcXFDUUkyN0NLc3BiZnlCWUJ1QmMxbHh0aWtZUjEzZFBuQng0bkRiVFZxN0pOUUJBQXRqQ0NGTUFZcEtLRUx6NkVWZklRTjhxOTNJMzdVUldYX21ieEFQcDlnTks2NFAxMDBrY1ktNmtlVzZYR2FxRQ?oc=5",
-          "published": "2026-11-17T05:20:00+00:00",
-          "found_at": "2026-11-17T10:55:45.304753+00:00",
-          "summary": "",
-          "factor": "G3"
-        },
-        {
-          "organisation": "Kitco News",
-          "kind": "news",
-          "site": "kitco.com",
-          "title": "Gold trades near one-year low as U.S. retail sales slow - Kitco AM Report",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNVBMcGpQbmJMNUNTUmt3NkVvVm1TU3JGZ1lEVDFZeXB3cjdsb05lckt1NDAwakNiaVh0cDdYMHF5WGU3VDV6NUE2NXlCZWFFTEJRSUNSN05HRTM5aXJDV2ROTktwbWFCRmZPVjZpM2YyNnhPVmNYVHoxT3Nyb0huY2xrSWRjRTFGNlp3SkJwUFRfdTBrUXFGeFBha1hvUDVZeW9WaTFXRmM3TVlCTWNNa2JB?oc=5",
-          "published": "2026-11-17T13:54:57+00:00",
-          "found_at": "2026-11-17T15:05:42.662967+00:00",
-          "summary": "",
-          "factor": "G3"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-17T10:55:45.304753+00:00",
-          "note": "new event, first report by Bloomberg"
-        },
-        {
-          "time": "2026-11-17T10:55:45.304753+00:00",
-          "note": "new -> context: Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Bloomberg)"
-        },
-        {
-          "time": "2026-11-17T15:05:42.662967+00:00",
-          "note": "another report from Kitco News - same event, no new alert"
-        }
-      ],
-      "decision": null,
-      "outcome": {
-        "start_price": 3862.06,
-        "start_time": "2026-11-17T05:00:00+00:00",
-        "moved_before_mint": -0.37,
-        "delay_hours": 5.6,
-        "h1": {
-          "price": 3867.22,
-          "move": 0.13,
-          "time": "2026-11-17T06:20:00+00:00",
-          "verdict": "right"
-        },
-        "h5": {
-          "price": 3847.68,
-          "move": -0.37,
-          "time": "2026-11-17T10:20:00+00:00",
-          "verdict": "wrong"
-        },
-        "now": {
-          "move": -0.28,
-          "time": "2026-11-17T14:30:30+00:00",
-          "hours": 9.2,
-          "verdict": "flat"
-        },
-        "checks": {
-          "done": 2,
-          "right": 1,
-          "wrong": 1,
-          "total": 9
-        },
-        "final": false,
-        "effect": "tracking",
-        "effect_reason": "still inside the 28 hours window (biggest move so far +0.4%)",
-        "impact": {
-          "peak": 0.13,
-          "peak_hours": 0.7,
-          "faded_hours": 1.7,
-          "against": -0.56,
-          "against_hours": 8.7,
-          "until_hours": 9.2,
-          "text": "Clear impact: Gold rose up to 0.1% (after 1 h). The effect lasted about 2 h, then faded - later it fell up to 0.6% (after 9 h)."
-        },
-        "result": {
-          "start_price": 3841.93,
-          "start_time": "2026-11-17T10:55:45.304753+00:00",
-          "threshold": 0.61,
-          "window_hours": 28.4,
-          "peak": 0.39,
-          "peak_hours": 1.1,
-          "held_hours": 0.0,
-          "checked_until": 3.6,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 28 hours window (biggest move so far +0.4%)",
-          "size": null
-        }
-      },
-      "prediction": {
-        "direction": "up",
-        "by": "past events",
-        "reason": "5 similar past event(s): gold rose after 3 and fell after 2 (average 1-day move +0.3%)",
-        "similar": [
-          {
-            "id": "START-20220913-G",
-            "date": "2022-09-13",
-            "title": "US inflation hotter than expected",
-            "d1": -1.33,
-            "d7": -3.99,
-            "source": "starter library (check the date)",
-            "score": 0.58
-          },
-          {
-            "id": "START-20221110-G",
-            "date": "2022-11-10",
-            "title": "US inflation cooler than expected",
-            "d1": 2.33,
-            "d7": 2.88,
-            "source": "starter library (check the date)",
-            "score": 0.58
-          },
-          {
-            "id": "GOLD-20261106-04",
-            "date": "2026-11-06",
-            "title": "Gold price trades near $4,050/oz after preliminary Consumer Sentiment rises to 51, inflation expectations ease",
-            "d1": 0.67,
-            "d7": -3.76,
-            "source": "MINT",
-            "score": 0.57
-          },
-          {
-            "id": "GOLD-20261112-05",
-            "date": "2026-11-12",
-            "title": "Gold drops to over one-year low as fading Middle East peace hopes fan inflation fears",
-            "d1": -1.57,
-            "d7": null,
-            "source": "MINT",
-            "score": 0.57
-          },
-          {
-            "id": "START-20220610-G",
-            "date": "2022-06-10",
-            "title": "US inflation hits 8.6%, hotter than expected",
-            "d1": 1.23,
-            "d7": -0.66,
-            "source": "starter library (check the date)",
-            "score": 0.45
-          }
-        ],
-        "votes": {
-          "up": 1.6,
-          "down": 1.15
-        },
-        "forecast": {
-          "version": 2,
-          "made": "2026-11-17T11:51:12.926083+00:00",
-          "low": 0.74,
-          "mid": 1.23,
-          "high": 1.72,
-          "window_hours": 28.4,
-          "probability": 0.57,
-          "agree": 3,
-          "similar": 5,
-          "basis": "3 of 5 similar past events moved this way (typical move 1.2%)",
-          "window_basis": "time the market normally needs to move this much",
-          "sigma": 1.13,
-          "threshold": 0.61,
-          "floor": 0.46,
-          "lenses": {
-            "volume": 0,
-            "buy_sell": 0
-          },
-          "lens_text": {},
-          "lens_notes": [],
-          "rule_votes": {
-            "up": 1.6,
-            "down": 1.15
-          },
-          "lenses_used": false,
-          "note": "made after the event (re-judged with the new rules); no market lenses"
-        }
-      },
-      "analysis": {
-        "by": "rules",
-        "summary": "Gold Steadies Near 14-Month Low as Inflation Pressure Persists.",
-        "what_past_events_show": "5 similar past event(s): gold rose after 3 and fell after 2 (average 1-day move +0.3%)",
-        "direction": "up",
-        "why": [
-          "Hot inflation or strong jobs: gold has tended to fall on the day; cool inflation or weak jobs: gold has tended to rise (for example the soft inflation report of November 2022 and the weak jobs report of August 2024)."
-        ],
-        "watch_next": "Bigger if: The number is far from what economists expected.",
-        "confidence": "medium",
-        "confidence_reason": "3 of 5 similar past events moved this way",
-        "time": "2026-11-17T10:55:45.304753+00:00"
-      },
-      "telegram": {
-        "first_sent_at": "2026-11-17T10:56:21.672005+00:00",
-        "sent_state": "context"
       }
     },
     {
@@ -24071,6 +23881,219 @@
         "first_sent_at": "2026-11-17T13:41:16.937156+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261117-06",
+      "asset": "Gold",
+      "factor": "G3",
+      "factor_name": "Surprise US data (jobs, inflation)",
+      "title": "Gold price drops to $3,848/oz after October retail sales rise 0.2%, core rises 0.6%",
+      "state": "context",
+      "state_reason": "Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Kitco News)",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-17T15:10:59.653205+00:00",
+      "earliest_report": "2026-11-17T13:30:22+00:00",
+      "last_updated": "2026-11-17T15:10:59.653205+00:00",
+      "words": [
+        "0.2",
+        "0.6",
+        "core",
+        "fall",
+        "gold",
+        "october",
+        "price",
+        "retail",
+        "rise",
+        "sales"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold price drops to $3,848/oz after October retail sales rise 0.2%, core rises 0.6%",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdXNLbU1TNG8wbkdSLXhsV3I1N0ZBUjdzdGc0M2l5RW5qRzFodjRjX0MxX0kxQlVVUVl2YW9UYldCYVZUUHpSRzI2OGN2Rm1TdGV5YnE1RXJFZWpfZ1VveEVMblduTm8xY1dOUXB1VnZ6RWM4S3hTb3VablduVnNJODRBWktHcmhPUFh4Vk92cmxPU0NxNWx6ZHEzOU9laTBFSGJiWHRkRUQ1MkpDZEFEdXBnYm4tUlFZS1E?oc=5",
+          "published": "2026-11-17T13:30:22+00:00",
+          "found_at": "2026-11-17T15:10:59.653205+00:00",
+          "summary": "",
+          "factor": "G3"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-17T15:10:59.653205+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-17T15:10:59.653205+00:00",
+          "note": "new -> context: Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Kitco News)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3840.44,
+        "start_time": "2026-11-17T14:00:00+00:00",
+        "moved_before_mint": 0.29,
+        "delay_hours": 1.7,
+        "h1": {
+          "price": 3851.39,
+          "move": 0.29,
+          "time": "2026-11-17T14:30:22+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 0.29,
+          "time": "2026-11-17T14:30:30+00:00",
+          "hours": 1.0,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": 0.0,
+          "peak_hours": 0.5,
+          "faded_hours": 1.0,
+          "against": 0.29,
+          "against_hours": 1.0,
+          "until_hours": 1.0,
+          "text": "Never moved the predicted way. It rose up to 0.3% (after 1 h)."
+        },
+        "result": {
+          "start_price": 3851.39,
+          "start_time": "2026-11-17T15:10:59.653205+00:00",
+          "threshold": 0.85,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar surprise US data have led to mixed 1\u2011day moves: two past events saw gold drop (\u20112.8% and \u20111.3%) while two saw it rise (+0.7% and +1.2%).",
+        "similar": [
+          {
+            "id": "GOLD-20261106-04",
+            "date": "2026-11-06",
+            "title": "Gold price trades near $4,050/oz after preliminary Consumer Sentiment rises to 51, inflation expectations ease",
+            "d1": 0.67,
+            "d7": -3.76,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "START-20230203-G",
+            "date": "2023-02-03",
+            "title": "US jobs growth surges far past forecasts",
+            "d1": -2.81,
+            "d7": -2.92,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.62
+          },
+          {
+            "id": "START-20220610-G",
+            "date": "2022-06-10",
+            "title": "US inflation hits 8.6%, hotter than expected",
+            "d1": 1.23,
+            "d7": -0.66,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20220913-G",
+            "date": "2022-09-13",
+            "title": "US inflation hotter than expected",
+            "d1": -1.33,
+            "d7": -3.99,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20241106-G",
+            "date": "2024-11-06",
+            "title": "Dollar jumps after US election result",
+            "d1": -2.67,
+            "d7": -5.94,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.09,
+          "down": 3.02
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-17T15:11:14.041001+00:00",
+          "low": -1.37,
+          "mid": -1.71,
+          "high": -2.28,
+          "window_hours": 54.0,
+          "probability": 0.52,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 2.7%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.14,
+          "threshold": 0.85,
+          "floor": 0.47,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "quiet: 0.7x a normal day (moves are less reliable)",
+            "buy_sell": "54% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "disagrees: buy/sell"
+          ],
+          "rule_votes": {
+            "up": 1.09,
+            "down": 3.02
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold fell to $3,848/oz after October US retail sales rose 0.2% and core inflation rose 0.6%, a surprise that could signal stronger inflation.",
+        "what_past_events_show": "Similar surprise US data have led to mixed 1\u2011day moves: two past events saw gold drop (\u20112.8% and \u20111.3%) while two saw it rise (+0.7% and +1.2%).",
+        "direction": "down",
+        "why": [
+          "Hotter\u2011than\u2011expected retail sales and inflation usually push expectations of higher rates, which tends to weigh on gold",
+          "Most comparable past events resulted in a price decline the next day"
+        ],
+        "watch_next": "If the data turn out to be close to forecasts, the drop could be smaller; a bigger surprise would likely push gold lower.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-17T15:10:59.653205+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-17T15:11:16.064027+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -24097,20 +24120,20 @@
     "BTC-20261116": 6,
     "GOLD-20261116": 8,
     "BTC-20261117": 2,
-    "GOLD-20261117": 5
+    "GOLD-20261117": 6
   },
   "last_run": {
-    "run_time": "2026-11-17T15:05:42.662967+00:00",
+    "run_time": "2026-11-17T15:10:59.653205+00:00",
     "test_mode": false,
-    "stories": 155,
-    "off_topic": 70,
+    "stories": 150,
+    "off_topic": 65,
     "repeats": 84,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
-    "updates_ignored": 1,
+    "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
@@ -24350,6 +24373,12 @@
       "title": "Bitcoin Strategy ETF (BITO) Price, Flows & Assets",
       "removed_at": "2026-11-17T11:50:59.270284+00:00",
       "reason": "not a news headline (a website section, fund page or warning)"
+    },
+    {
+      "id": "GOLD-20261117-02",
+      "title": "Gold Steadies Near 14-Month Low as Inflation Pressure Persists",
+      "removed_at": "2026-11-17T15:10:59.653205+00:00",
+      "reason": "the same story as GOLD-20261116-08 (same organisation, same factor and same day)"
     }
   ]
 }
