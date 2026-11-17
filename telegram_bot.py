@@ -107,15 +107,22 @@ def status_text():
 
 
 KEY_TEXT = ("📖 How to read MINT messages\n\n"
-            "First line - what it is:\n"
-            "🚨 Alert (confirmed by trusted sources)   👀 Watch (not proven yet)\n"
-            "ℹ️ Info only (slow factor)   ⌛ Not confirmed   🗂 Older news\n"
-            "📅 Heads-up (scheduled event tomorrow)   ✅ / ❌ / ➖ Result after 1 day\n\n"
-            "Second line - how much it matters:\n"
-            "🔴 HIGH   🟠 MEDIUM   🟡 LOW impact\n"
-            "📈 UP / 📉 DOWN = MINT's prediction for the next day\n"
-            "Confidence ▰▰▰ high   ▰▰▱ medium   ▰▱▱ low (how many similar past events agree)\n\n"
-            "Read 🚨 and 🔴 first.\n\n" + "Risk information only, not financial advice.")
+            "Line 1 says everything:\n"
+            "🥇 Gold ↓ -0.8% to -1.5% within ~1.5 days · 70% likely\n"
+            "= MINT expects gold to FALL by 0.8% to 1.5% within about 1.5 days, and it is 70% likely.\n\n"
+            "Where the numbers come from:\n"
+            "• size = the typical move after similar past events\n"
+            "• time = how long those moves took (bigger moves take longer)\n"
+            "• likely = how many similar past events went that way, +/- 5 points for each market lens "
+            "(trading volume, buyers vs sellers) that agrees or disagrees\n\n"
+            "First icon: 🚨 alert · 👀 watch (not confirmed yet) · ℹ️ info only (slow factor) · ✔️ checked, no alert\n\n"
+            "Results (one message, as soon as it is known):\n"
+            "✅ HIT - moved at least half the predicted amount the predicted way and held it 2+ hours\n"
+            "🟨 PARTIAL - the right way, but too small or too short\n"
+            "❌ MISS - moved clearly the other way\n"
+            "➖ NO CLEAR MOVE - nothing happened inside the time window\n\n"
+            "Every evening at 9 pm (India time): the detailed daily summary.\n\n" + "Risk information only, not financial advice.")
+KEY_VERSION = 2
 
 
 WELCOME = ("Welcome to MINT - Market Intelligence and News Tracker.\n\n"
@@ -142,6 +149,10 @@ def handle_message(token, msg, subs):
         if channel.lstrip("-").isdigit():
             channel = ""                       # a number ID is no use to people; only show a real link
         text = (msg.get("text") or "").strip().lower()
+        if text in ("/id", "id"):
+            call(token, "sendMessage", {"chat_id": int(chat), "text": f"Your chat ID is {chat}. To get the private "
+                 "signal check, add it as the GitHub secret TELEGRAM_OWNER."})
+            return None
         reply = status_text() if text in ("/status", "status") else (
             "Hi! MINT posts every event, update and result in its channel" +
             (f": {channel}\nTap the link and press Join." if channel else ".") +
@@ -277,17 +288,73 @@ def social_line(ev):
     return ""
 
 
-def event_text(ev, update=False):
+SHORT_FOOTER = "Not financial advice."
+STATUS_SHORT = {"watch": "Watch: not confirmed by an approved source yet", "confirmed": "Being checked",
+                "alerted": "Alert", "context": "Info only (slow factor)", "summary": "Older news",
+                "old": "Too old to be news", "expired": "Not confirmed in time", "rejected": "Checked - no alert needed"}
+
+
+def one_liner(ev, limit=160):
+    """What happened, in one line: the AI's one-sentence summary if there is one, otherwise the headline."""
+    a = ev.get("analysis") or {}
+    text = a.get("summary") if str(a.get("by", "")).startswith("AI") and a.get("summary") else ev["title"]
+    text = " ".join(str(text).replace("TEST: ", "").split())
+    return text if len(text) <= limit else text[:limit - 1].rsplit(" ", 1)[0] + "…"
+
+
+def evidence_line(ev):
+    """'Why: 4 of 5 similar past events fell (typical -1.4%) · market: volume 1.6x, real selling'"""
+    p = ev.get("prediction") or {}
+    f = p.get("forecast") or {}
+    if p.get("direction") not in ("up", "down"):
+        return "Why: not enough evidence for a prediction yet"
+    word = "rose" if p["direction"] == "up" else "fell"
+    if f.get("similar"):
+        why = f"Why: {f['agree']} of {f['similar']} similar past events {word}"
+        if f.get("agree"):
+            why += f" (typical {abs(f['mid']):.1f}%)"
+    elif f:
+        why = "Why: no similar past events yet - " + ("factor pattern" if p.get("by") != "AI" else "AI's reading")
+    else:
+        why = f"Why: {p.get('reason', '')[:120]}"
+    agree = [n.split(": ")[1] for n in f.get("lens_notes", []) if n.startswith("agrees")]
+    against = [n.split(": ")[1] for n in f.get("lens_notes", []) if n.startswith("disagrees")]
+    if agree:
+        why += " · market agrees (" + ", ".join(agree) + ")"
+    if against:
+        why += " · market disagrees (" + ", ".join(against) + ")"
+    return why
+
+
+def source_line(ev):
+    social = social_line(ev)
+    status = STATUS_SHORT.get(ev["state"], ev["state"])
+    if social:
+        return f"{status} · {social}"
     orgs = sorted({s["organisation"] for s in ev["sources"]})
-    kind = f"{'update' if update else 'event'} · {HEADLINE.get(ev['state'], ev['state'].upper())}"
-    source_line = social_line(ev) or f"Sources: {', '.join(orgs)}"
-    lines = glance_lines(ev, kind) + ["", ev["title"], "",
-             source_line, f"Status: {CLOSED_WORDS.get(ev['state']) or ev.get('state_reason', '')}"]
-    o = ev.get("outcome") or {}
-    if o.get("moved_before_mint") is not None:
-        lines.append(f"{ev['asset']} had moved {o['moved_before_mint']:+.1f}% between the first report and MINT noticing.")
-    lines += [""] + view_lines(ev) + ["", FOOTER]
-    return "\n".join(lines)
+    return f"{status} · Source: {', '.join(orgs[:3])}"
+
+
+def already_moved(ev):
+    o, f = ev.get("outcome") or {}, ((ev.get("prediction") or {}).get("forecast") or {})
+    m = o.get("moved_before_mint")
+    if m is None or abs(m) < max(0.2, f.get("floor", 0.3) / 2):
+        return ""
+    return f"Already moved {m:+.1f}% before MINT saw it."
+
+
+def event_text(ev, update=False):
+    """The short instant message for a new event (4 or 5 lines)."""
+    import forecast
+    icon = "🚨" if ev["state"] == "alerted" else STATE_ICON.get(ev["state"], "•")
+    if update:
+        return (f"🔄 Update · {ASSET_ICON.get(ev['asset'], '')} {ev['asset']}: {one_liner(ev, 110)}\n"
+                f"Now: {CLOSED_WORDS.get(ev['state']) or STATUS_SHORT.get(ev['state'], ev['state'])}\n{SHORT_FOOTER}")
+    lines = [f"{icon} {forecast.headline(ev)}", one_liner(ev), evidence_line(ev), source_line(ev)]
+    moved = already_moved(ev)
+    if moved:
+        lines.append(moved)
+    return "\n".join(lines) + f"\n{SHORT_FOOTER}"
 
 
 CLOSED_WORDS = {
@@ -311,18 +378,35 @@ def checks_lines(ev):
     return out
 
 
-def result_text(ev, final=False):
+RESULT_WORD = {"hit": ("✅", "HIT"), "miss": ("❌", "MISS"), "partial": ("🟨", "PARTIAL"),
+               "no_clear_move": ("➖", "NO CLEAR MOVE")}
+
+
+def result_line(ev, title=True):
+    """'✅ HIT · 🥇 Gold ↓ predicted -0.8% to -1.5% within ~1.5 days → reached -1.6% (inside the predicted range)'"""
+    import forecast
     o, p = ev.get("outcome") or {}, ev.get("prediction") or {}
-    verdict = {"right": "RIGHT", "wrong": "WRONG", "no_clear_move": "NO CLEAR MOVE"}[o["effect"]]
-    head = "FINAL result (7 days)" if final else "result after 1 day (so far)"
-    return (f"{RESULT_ICON[o['effect']]} MINT {head} · {ASSET_ICON.get(ev['asset'], '')} {ev['asset']} · prediction {verdict}\n"
-            f"{ev['title']}\n\n"
-            f"Predicted: {ev['asset']} {str(p.get('direction', '?')).upper()}\n"
-            + "\n".join(checks_lines(ev)) + f"\n\n{o.get('effect_reason', '')}\n"
-            + (f"📏 {o['impact']['text']}\n" if o.get("impact") else "")
-            + "✅ moved clearly the predicted way · ❌ clearly the other way · ➖ too small to count\n\n"
-            + ("" if final else "MINT keeps checking until 7 days and sends the final result then.\n")
-            + "Every result is added to MINT's past events library, so future predictions learn from it.\n" + FOOTER)
+    r, f = o.get("result") or {}, p.get("forecast") or {}
+    icon, word = RESULT_WORD.get(r.get("verdict"), ("•", str(r.get("verdict", "")).upper()))
+    arrow = "↑" if p.get("direction") == "up" else "↓"
+    s_ = "+" if p.get("direction") == "up" else "-"
+    lo, hi = sorted([abs(f.get("low", 0)), abs(f.get("high", 0))])
+    pred = f"predicted {s_}{lo:.1f}% to {s_}{hi:.1f}% within ~{forecast.fmt_hours(f.get('window_hours'))}"
+    v = r.get("verdict")
+    if v == "hit":
+        got = f"reached {r['peak']:+.1f}%" + (f" ({r['size']})" if r.get("size") else "")
+    elif v == "miss":
+        got = f"went the other way ({-r['threshold'] if p.get('direction') == 'up' else r['threshold']:+.1f}% or more for 2+ hours)"
+    elif v == "partial":
+        got = f"only {r['peak']:+.1f}% or did not hold 2 hours"
+    else:
+        got = f"no clear move (biggest {r.get('peak', 0):+.1f}%)"
+    line = f"{icon} {word} · {ASSET_ICON.get(ev['asset'], '')} {ev['asset']} {arrow} {pred} → {got}"
+    return line + (f"\n{one_liner(ev, 120)}" if title else "")
+
+
+def result_text(ev, final=True):
+    return result_line(ev) + f"\n{SHORT_FOOTER}"
 
 
 def was_on_watch(ev):
@@ -333,15 +417,11 @@ def was_on_watch(ev):
 
 
 def alert_text(ev):
-    text = ev["decision"]["telegram_message"]
+    text = event_text(ev)
     since = was_on_watch(ev)
     if since:
-        text = text.replace("\n", f"\n(Update: this was on Watch since {since:%d %b %H:%M} UTC.)\n", 1)
-    first, _, rest = text.partition("\n")
-    social = social_line(ev)
-    text = f"🚨 {first}\n{glance_lines(ev, 'alert')[1]}\n{social + chr(10) if social else ''}\n{rest}"   # "at a glance" line
-    extra = view_lines(ev)
-    return text.replace(FOOTER, "\n".join(extra) + "\n\n" + FOOTER) if FOOTER in text else text + "\n" + "\n".join(extra)
+        text = text.replace(f"\n{SHORT_FOOTER}", f"\n(Was on Watch since {since:%d %b %H:%M} UTC.)\n{SHORT_FOOTER}")
+    return text
 
 
 # ---------------------------------------------------------------------------
@@ -382,38 +462,96 @@ def deliver(token, subs, text, asset=None, level="alerts", kind="", title="", ch
 DAILY_SUMMARY_UTC = (15, 30)          # 21:00 in India
 
 
+def run_health(now):
+    try:
+        log = json.loads((data_folder(False) / "run_log.json").read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    day = [r for r in log if hours_between(now, parse_time(r["start"])) <= 24]
+    return (len(day), sum(1 for r in day if not r.get("ok"))) if day else None
+
+
+def market_lines(memory, now, private=False):
+    """One line per asset: the three lenses (news, volume, buyers vs sellers)."""
+    import market
+    mstate = market.load(False)
+    out = []
+    for asset in ("Bitcoin", "Gold"):
+        sc = market.signal_check(memory, mstate, asset, now)
+        arrow = lambda v: "↑" if v > 0 else "↓" if v < 0 else "·"
+        out.append(f"{ASSET_ICON[asset]} {asset}" + (f": {sc['verdict']}" if private else ""))
+        out.append(f"   {arrow(sc['votes']['news'])} News: {sc['news']['text']}")
+        out.append(f"   {arrow(sc['votes']['volume'])} Volume: {sc['volume'].get('text', 'no data')}")
+        out.append(f"   {arrow(sc['votes']['buy_sell'])} Buyers vs sellers: {sc['buy_sell'].get('text', 'no data')}")
+    return out
+
+
 def daily_text(memory, now):
-    """The once-a-day wrap-up: what MINT found in the last 24 hours, results that came in, and the state of each asset."""
+    """The detailed once-a-day summary: everything found in the last 24 hours with its forecast, the results that came
+    in, MINT's fair accuracy so far, the market lenses, and run health."""
+    import forecast
     ist = now + timedelta(hours=5, minutes=30)
-    icon = {"alerted": "🚨", "confirmed": "✅", "watch": "👀"}
-    found = [e for e in memory["events"] if e.get("state") and hours_between(now, parse_time(e["first_seen"])) <= 24]
-    results = []
-    for e in memory["events"]:
-        o = e.get("outcome") or {}
-        tg = e.get("telegram") or {}
-        for key, label in (("result_sent", "1 day"), ("final_sent", "7 days")):
-            if tg.get(key) and hours_between(now, parse_time(tg[key])) <= 24 and o.get("effect") in ("right", "wrong", "no_clear_move"):
-                results.append(f"{'✔' if o['effect'] == 'right' else '✖' if o['effect'] == 'wrong' else '•'} "
-                               f"{e['asset']}: {e['title'][:70]} ({label}: {o['effect'].replace('_', ' ')})")
-    lines = [f"🌙 MINT daily summary · {ist:%d %b}"]
+    found = [e for e in memory["events"] if e.get("state") not in (None, "baseline")
+             and hours_between(now, parse_time(e["first_seen"])) <= 24]
+    results = [e for e in memory["events"] if (e.get("telegram") or {}).get("verdict_sent")
+               and str(e["telegram"]["verdict_sent"])[:2] == "20"
+               and hours_between(now, parse_time(e["telegram"]["verdict_sent"])) <= 24]
+    lines = [f"🌙 MINT daily summary · {ist:%a %d %b}"]
     if found:
         lines.append(f"\nFound today ({len(found)}):")
-        lines += [f"{icon.get(e['state'], '•')} {'🥇' if e['asset'] == 'Gold' else '₿'} {e['title'][:90]}" for e in found[:8]]
-        if len(found) > 8:
-            lines.append(f"…and {len(found) - 8} more")
+        for e in found[:10]:
+            icon = "🚨" if e["state"] == "alerted" else STATE_ICON.get(e["state"], "•")
+            lines.append(f"{icon} {forecast.headline(e)}\n   {one_liner(e, 110)}")
+        if len(found) > 10:
+            lines.append(f"…and {len(found) - 10} more (see the website)")
     else:
         lines.append("\nNothing new found today.")
     if results:
-        lines.append("\nResults that came in:")
-        lines += results[:6]
+        lines.append(f"\nResults today ({len(results)}):")
+        lines += [result_line(e, title=False) + f"\n   {one_liner(e, 90)}" for e in results[:8]]
+    try:
+        acc = forecast.accuracy(memory["events"])
+        if acc["hit"] + acc["miss"] + acc["partial"]:
+            lz = acc["lazy"]
+            lines.append("\nAccuracy so far:")
+            lines.append(f"   {acc['hit']} HIT · {acc['partial']} partial · {acc['miss']} miss"
+                         + (f" → {acc['hit_rate'] * 100:.0f}% HIT" if acc["hit_rate"] is not None else ""))
+            if acc["moves"]["total"]:
+                lines.append(f"   Counting each price move once: {acc['moves']['hit']} of {acc['moves']['total']} right")
+            if lz.get("best") is not None:
+                lines.append(f"   A lazy guess (always {lz['best_word']}) would score {lz['best'] * 100:.0f}% HIT")
+    except Exception as e:
+        lines.append(f"\n(accuracy not available: {e})")
+    try:
+        lines.append("\nMarkets now (3 lenses):")
+        lines += market_lines(memory, now)
+    except Exception:
+        pass
     try:
         states = asset_states(memory, [], now)
         lines.append("\n" + " · ".join(f"{ {'CALM': '🟢', 'WATCH': '👀', 'ALERT': '🚨'}.get(str(states[a]['state']).upper(), '•') } "
                                        f"{a}: {str(states[a]['state']).capitalize()}" for a in ("Bitcoin", "Gold")))
     except Exception:
         pass
+    h = run_health(now)
+    if h:
+        lines.append(f"Runs in the last 24 h: {h[0]}, {h[1]} with errors.")
     return "\n".join(lines) + "\n\n" + FOOTER
 
+
+def signal_text(memory, now, strong_only=None):
+    """The PRIVATE signal check (sent only to your own chat): the 3 lenses for each asset and what they add up to."""
+    import forecast
+    ist = now + timedelta(hours=5, minutes=30)
+    lines = [f"🔒 MINT signal check (private) · {ist:%d %b %H:%M}"] + market_lines(memory, now, private=True)
+    try:
+        acc = forecast.accuracy(memory["events"])
+        if acc["hit_rate"] is not None:
+            lines.append(f"\nMINT's record so far: {acc['hit_rate'] * 100:.0f}% HIT ({acc['hit']} of "
+                         f"{acc['hit'] + acc['miss'] + acc['partial']}). Lenses only describe conditions from the data.")
+    except Exception:
+        pass
+    return "\n".join(lines)
 
 
 def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channel=""):
@@ -423,14 +561,16 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
     import weekly
     now = now or datetime.now(timezone.utc)
     memory = load_memory(test_mode)
+    owner = str(owner_chat() or "")
     subs, state = load_subscribers(), load_state()
     total, waiting = 0, 0
     fresh = lambda t, hours: t and hours_between(now, parse_time(t)) <= hours
 
     # 0. Once: post "How to read MINT messages" to the channel (pin it in Telegram so new members see it)
-    if channel and token and not test_mode and not state.get("key_sent"):
+    if channel and token and not test_mode and state.get("key_version") != KEY_VERSION:
         if deliver(token, {}, KEY_TEXT, None, "everything", "key", "How to read MINT messages", channel):
             state["key_sent"] = now.isoformat()
+            state["key_version"] = KEY_VERSION
             total += 1
             print("   KEY      -> channel: How to read MINT messages (pin it in Telegram)")
 
@@ -474,22 +614,20 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
             tg["sent_state"] = ev["state"]
             total += n
             print(f"   UPDATE   -> {n}: {ev['title'][:80]} (now {ev['state']})")
-        # 4. RESULT: was the prediction right after 1 day?
-        o = ev.get("outcome") or {}
-        if o.get("effect") in ("right", "wrong", "no_clear_move") and o.get("d1") and not tg.get("result_sent"):
-            if fresh(o["d1"].get("time"), 48):
+        # 4. RESULT: one short message as soon as the verdict is known (HIT / MISS straight away,
+        #    PARTIAL / NO CLEAR MOVE when the time window ends)
+        r = (ev.get("outcome") or {}).get("result") or {}
+        if r.get("final") and r.get("verdict") in RESULT_WORD and not tg.get("verdict_sent"):
+            if not state.get("results_v2") or not fresh(ev["first_seen"], 24 * 8):
+                tg["verdict_sent"] = "judged before the new rules - not re-sent"
+            else:
                 n = deliver(token, subs, result_text(ev), ev["asset"], "everything", "result", ev["title"], channel)
+                tg["verdict_sent"] = now.isoformat()
                 total += n
-                print(f"   RESULT   -> {n}: {ev['title'][:70]} ({o['effect']}, after 1 day)")
-            tg["result_sent"] = now.isoformat()
-        # 4b. FINAL RESULT after all 9 price checks (7 days)
-        if o.get("effect") in ("right", "wrong", "no_clear_move") and o.get("final") and not tg.get("final_sent"):
-            if fresh(o["d7"].get("time"), 48):
-                n = deliver(token, subs, result_text(ev, final=True), ev["asset"], "everything", "final result",
-                            ev["title"], channel)
-                total += n
-                print(f"   FINAL    -> {n}: {ev['title'][:70]} ({o['effect']}, after 7 days)")
-            tg["final_sent"] = now.isoformat()
+                print(f"   RESULT   -> {n}: {ev['title'][:70]} ({r['verdict'].upper()})")
+
+    if token and not test_mode:
+        state["results_v2"] = state.get("results_v2") or now.isoformat()   # from now on, results are sent
 
     if not test_mode and token:
         # 5. HEADS-UP before scheduled gold events, once each
@@ -524,6 +662,28 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
             total += 1
             print("   DAILY    -> channel: summary for " + today)
         state["daily_done"] = today
+        if owner and send_private(token, owner, signal_text(memory, now)):
+            print("   SIGNAL   -> your own chat (private signal check)")
+
+    # 8. PRIVATE signal check straight away when 2 or 3 lenses agree and nothing disagrees (at most every 6 hours
+    #    per asset, and only when the picture changes)
+    if owner and token and not test_mode:
+        try:
+            import market
+            mstate = market.load(False)
+            for asset in ("Bitcoin", "Gold"):
+                sc = market.signal_check(memory, mstate, asset, now)
+                strong = "up" if sc["ups"] >= 2 and not sc["downs"] else "down" if sc["downs"] >= 2 and not sc["ups"] else None
+                key = f"signal_{asset}"
+                last = state.get(key) or {}
+                if strong and (last.get("dir") != strong or not fresh(last.get("time"), 6)):
+                    if send_private(token, owner, signal_text(memory, now)):
+                        print(f"   SIGNAL   -> your own chat: {asset} {strong} ({sc['verdict']})")
+                    state[key] = {"dir": strong, "time": now.isoformat()}
+                elif not strong and last.get("dir"):
+                    state[key] = {"dir": None, "time": now.isoformat()}
+        except Exception as e:
+            print(f"   SIGNAL problem: {e}")
 
     save_memory(memory, test_mode)
     save_subscribers(subs)
@@ -534,6 +694,24 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
           + (f", {waiting} alert(s) waiting for the bot to be set up" if waiting else "")
           + (" (test run: nothing is sent)" if test_mode else "") + ".")
     return total
+
+
+def owner_chat():
+    """Your own Telegram chat ID (GitHub secret TELEGRAM_OWNER, or "telegram_owner" in settings). Send /id to the bot
+    to find it."""
+    import decision
+    return decision.load_settings().get("telegram_owner") or ""
+
+
+def send_private(token, chat, text):
+    try:
+        call(token, "sendMessage", {"chat_id": int(chat) if str(chat).lstrip("-").isdigit() else chat,
+                                    "text": text[:4000], "disable_web_page_preview": True})
+        log_message("private signal check", "signal check", 1)
+        return True
+    except Exception as e:
+        print(f"   PRIVATE message problem: {e}")
+        return False
 
 
 def send_test(token):

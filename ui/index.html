@@ -128,7 +128,7 @@ input[type=password],input[type=text],input[type=number],select{padding:9px 12px
 <div id="banner"></div>
 <main id="main"><div class="empty">Loading MINT...</div></main>
 <footer style="padding:30px 0 6px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px;line-height:1.6">
-  <div style="max-width:640px">MINT is a student project (IB MYP Personal Project). It shares risk information, not financial advice. MINT reports what happened after events; it does not predict prices.</div>
+  <div style="max-width:640px">MINT is a student project (IB MYP Personal Project). It shares risk information, not financial advice. Its predictions come from what happened after similar past events and are often wrong - see History for the real accuracy.</div>
   <div id="credit">Prices: CoinGecko</div>
 </footer>
 </div>
@@ -144,7 +144,7 @@ const TABS = [["overview","Overview"],["events","Events"],["agents","Agents"],["
   .filter(([k]) => !(STATIC && k === "settings"));
 const UI = {drawn:{}, tab:"overview", asset:"Bitcoin", range:"7D", hover:null, filter:"all", open:null, out:{}, lastJson:"", testOutput:""};
 let S = null;
-const UI_VERSION = "26";   // must match VERSION in app.py
+const UI_VERSION = "27";   // must match VERSION in app.py
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money = v => v == null ? "–" : "$" + Math.round(v).toLocaleString("en-US");
@@ -307,6 +307,8 @@ function overview(){
     <div style="flex:1 1 300px;min-width:0">
       <h2 style="margin-bottom:12px">Coming up</h2>
       <div class="card" style="padding:4px 22px">${upcoming()}</div>
+      <h2 style="margin:26px 0 12px">Market lenses</h2>
+      <div class="card" style="padding:4px 22px">${marketCard()}</div>
       <h2 style="margin:26px 0 12px">Data checks</h2>
       <div class="card" style="padding:4px 22px">${dataChecks()}</div>
     </div>
@@ -343,6 +345,17 @@ function assetCard(asset, a){
   </div>`;
 }
 
+function marketCard(){
+  const M = S.market || {}, L = M.lenses || {};
+  if (!Object.keys(L).length) return `<div class="muted" style="font-size:13px;padding:14px 0">Volume and buyers-vs-sellers data appear after the next run.</div>`;
+  const ar = v => v > 0 ? `<span class="good">↑</span>` : v < 0 ? `<span class="bad">↓</span>` : `<span class="muted">·</span>`;
+  return ["Bitcoin","Gold"].map(a => { const x = L[a] || {}, n = (M.news||{})[a] || {};
+    return `<div style="padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.6"><b>${a}</b>
+      <div>${ar(n.vote)} News: ${esc(n.text||"–")}</div>
+      <div>${ar((x.volume||{}).vote)} Volume: ${esc((x.volume||{}).text||"no data")}</div>
+      <div>${ar((x.buy_sell||{}).vote)} Buyers vs sellers: ${esc((x.buy_sell||{}).text||"no data")}</div></div>`; }).join("")
+    + `<div class="muted" style="font-size:11px;padding:8px 0">Updated ${M.time ? ago(M.time) : "–"}. Kraken (Bitcoin trades, order book), Yahoo Finance (gold futures volume), CFTC (weekly positions). ${(M.errors||[]).length ? (M.errors.length+" source(s) failed last time") : ""}</div>`;
+}
 function upcoming(){
   const up = (S.calendar.upcoming || []);
   const warns = S.calendar.warnings || [];
@@ -479,7 +492,8 @@ function eventCard(e){
           <div style="font-size:14px;line-height:1.6;margin:8px 0 18px">
             ${e.analysis.by!=="rules" && e.analysis.summary ? `<div>${esc(e.analysis.summary)}</div>` : ""}
             ${e.analysis.what_past_events_show ? `<div style="margin-top:6px"><b>Past events:</b> ${esc(e.analysis.what_past_events_show)}</div>` : ""}
-            <div style="margin-top:6px"><b>Confidence:</b> <span class="pill ${e.analysis.confidence==="high"?"p-calm":e.analysis.confidence==="medium"?"p-watch":"p-grey"}">${esc(e.analysis.confidence)}</span> <span class="muted">${esc(e.analysis.confidence_reason||"")}</span></div>
+            ${(e.prediction||{}).forecast ? `<div style="margin-top:6px"><b>How likely:</b> <span class="pill ${e.prediction.forecast.probability>=0.65?"p-calm":e.prediction.forecast.probability>=0.5?"p-watch":"p-grey"}">${Math.round(e.prediction.forecast.probability*100)}%</span> <span class="muted">${esc(e.prediction.forecast.basis)}</span></div>` :
+            `<div style="margin-top:6px"><b>Confidence:</b> <span class="pill ${e.analysis.confidence==="high"?"p-calm":e.analysis.confidence==="medium"?"p-watch":"p-grey"}">${esc(e.analysis.confidence)}</span> <span class="muted">${esc(e.analysis.confidence_reason||"")}</span></div>`}
             ${(e.analysis.why||[]).length ? `<ul style="margin:6px 0 0;padding-left:18px">${e.analysis.why.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>` : ""}
             ${e.analysis.watch_next ? `<div style="margin-top:6px"><b>Watch next:</b> ${esc(e.analysis.watch_next)}</div>` : ""}
           </div>` : ""}
@@ -520,7 +534,11 @@ function outcomeBox(e){
   if (!o.start_price) return `<div class="muted" style="font-size:13px">${esc(o.effect_reason || "Prices are added after the next run.")}</div>`;
   const dir = (e.prediction||{}).direction;
   const cell = k => o[k] ? `<span class="${vCls(o[k].move, dir)}">${pctTxt(o[k].move)}</span>` : `<span class="muted">waiting</span>`;
+  const f = (e.prediction||{}).forecast, r = o.result || {};
   return `<div class="kv"><span class="muted">Prediction</span><div style="text-align:right">${predCell(e)}</div></div>
+    ${f ? `<div class="kv"><span class="muted">Why this size and time</span><span style="text-align:right;font-size:12px;max-width:60%">${esc(f.basis)}; time: ${esc(f.window_basis)}${f.lens_notes && f.lens_notes.length ? "; market lenses: "+esc(f.lens_notes.join(", ")) : ""}${f.note ? " ("+esc(f.note)+")" : ""}</span></div>
+    <div class="kv"><span class="muted">Counts as a HIT if</span><span style="text-align:right;font-size:12px;max-width:60%">it moves ${(e.prediction.direction==="up"?"+":"−")+f.threshold.toFixed(1)}% or more and holds it for 2+ hours within ~${hrs(f.window_hours)} of MINT's prediction</span></div>` : ""}
+    ${r.verdict ? `<div class="kv"><span class="muted">Result</span><span style="text-align:right">${resultPill(o.effect)} <span style="font-size:12px">${esc(r.text||"")}</span></span></div>` : ""}
     ${e.impact ? `<div class="kv"><span class="muted">Impact</span>${impactTag(e.impact)}</div>` : ""}
     <div class="kv"><span class="muted">At first report</span><span>${money(o.start_price)}</span></div>
     <div class="kv"><span class="muted">When MINT noticed (${o.delay_hours} h later)</span><span class="${vCls(o.moved_before_mint, dir)}">${pctTxt(o.moved_before_mint)}</span></div>
@@ -572,7 +590,7 @@ function agents(){
 // ---------------------------------------------------------------------------
 // HISTORY
 // ---------------------------------------------------------------------------
-const RESULT = {right:["Right","p-moved"], wrong:["Wrong","p-alert"], no_clear_move:["No clear move","p-grey"],
+const RESULT = {right:["HIT","p-moved"], wrong:["MISS","p-alert"], partial:["Partial","p-watch"], no_clear_move:["No clear move","p-grey"],
   tracking:["Tracking","p-tracking"], no_prediction:["No prediction","p-grey"], no_price:["No price","p-grey"]};
 const resultPill = r => { const x = RESULT[r]; return x ? `<span class="pill ${x[1]}">${x[0]}</span>` : `<span class="muted">–</span>`; };
 const arrow = d => d==="up" ? "↑" : d==="down" ? "↓" : "–";
@@ -582,12 +600,19 @@ const clearMove = (asset, h) => Math.max(MINMOVE[asset], BIGMOVE[asset]*Math.sqr
 const IMPACT = {high:["High","imp-high"], medium:["Medium","imp-med"], low:["Low","imp-low"]};
 const BARS = {high:"▰▰▰", medium:"▰▰▱", low:"▰▱▱"};
 const impactTag = i => IMPACT[i] ? `<span class="imp ${IMPACT[i][1]}">${IMPACT[i][0]} impact</span>` : "";
+const hrs = h => h == null ? "?" : h < 1.5 ? (h < 1 ? Math.round(h*60)+" min" : "1 hour") : h < 36 ? Math.round(h)+" hours" : (h/24).toFixed(1).replace(".0","")+" days";
+function fcText(e){
+  const p = e.prediction || {}, f = p.forecast;
+  if (!f || !["up","down"].includes(p.direction)) return "";
+  const s = p.direction === "up" ? "+" : "−", lo = Math.min(Math.abs(f.low), Math.abs(f.high)), hi = Math.max(Math.abs(f.low), Math.abs(f.high));
+  return `${s}${lo.toFixed(1)}% to ${s}${hi.toFixed(1)}% within ~${hrs(f.window_hours)}`;
+}
 function predCell(e){
-  const p = e.prediction || {}, c = (e.analysis || {}).confidence;
+  const p = e.prediction || {}, f = p.forecast;
   const word = p.direction==="up" ? `${e.asset} up` : p.direction==="down" ? `${e.asset} down` : "Unclear";
   return `<div title="${esc(p.reason||"")}" style="display:flex;align-items:center;gap:8px;white-space:nowrap">
     <span class="arrow ${esc(p.direction||"unclear")}">${arrow(p.direction)}</span><span>${esc(word)}</span></div>
-    ${BARS[c] && ["up","down"].includes(p.direction) ? `<div class="conf" title="${esc((e.analysis||{}).confidence_reason||"")}">${BARS[c]} ${esc(c)} confidence</div>` : ""}`;
+    ${f ? `<div class="conf" title="${esc(f.basis + ". Time: " + f.window_basis)}">${esc(fcText(e))}<br><b>${Math.round(f.probability*100)}% likely</b>${f.probability < 0.5 ? " (past events disagree)" : ""}</div>` : ""}`;
 }
 function moveCell(o, k){
   if (!o || !o[k]) return `<td class="num muted">–</td>`;
@@ -602,14 +627,13 @@ function soFarCell(o){
   return `<td class="num"><span class="${v==="right"?"good":v==="wrong"?"bad":"muted"}">${pctTxt(n.move)}</span><div class="ev-meta">after ${age}</div></td>`;
 }
 function resultCell(e){
-  const o = e.outcome || {}, c = o.checks;
-  const score = c && (c.right + c.wrong) ? `${c.right} of ${c.right + c.wrong} clear checks right` : c ? "no clear move yet" : "";
+  const o = e.outcome || {}, r = o.result || {};
+  const old = o.old_effect ? `<br><span title="the old rule: 9 price checks from the first report">old rule: ${esc((RESULT[o.old_effect]||[o.old_effect])[0].replace("HIT","Right").replace("MISS","Wrong"))}</span>` : "";
   if (o.effect === "tracking") {
-    const left = (new Date(e.earliest_report).getTime() + 24*3600e3 - Date.now()) / 3600e3;
-    return `<td>${resultPill("tracking")}<div class="ev-meta">${score ? score+"<br>" : ""}${left > 1 ? "first result in "+Math.round(left)+" h" : "first result at the next run"}</div></td>`;
+    const left = (new Date(e.first_seen).getTime() + (r.window_hours||0)*3600e3 - Date.now()) / 3600e3;
+    return `<td>${resultPill("tracking")}<div class="ev-meta">${esc(r.text||"")}${left > 0.5 ? "<br>window ends in "+hrs(left) : ""}${old}</div></td>`;
   }
-  const fin = o.effect === "no_prediction" ? "" : o.final ? "final" : "so far - final after 7 days";
-  return `<td>${resultPill(o.effect)}<div class="ev-meta">${[score, fin].filter(Boolean).join("<br>")}</div></td>`;
+  return `<td>${resultPill(o.effect)}<div class="ev-meta">${esc(r.text || o.effect_reason || "")}${r.size ? "<br>size: "+esc(r.size) : ""}${old}</div></td>`;
 }
 function impactRow(e, cols){
   const i = (e.outcome || {}).impact;
@@ -650,23 +674,26 @@ function libForm(){ return {date:document.getElementById("lib-date").value, asse
   factor:document.getElementById("lib-factor").value, title:document.getElementById("lib-title").value}; }
 async function addPast(){ const f = libForm(); UI.lib = f; if (!f.date || !f.title) return toast("Fill in the date and what happened.");
   toast("Downloading the real prices..."); await post("/api/library/add", f); UI.lib = null; UI.lastJson=""; load(); }
+function calibrationCard(){
+  const C = (S.accuracy||{}).calibration || [];
+  if (!C.length) return "";
+  return `<div class="card" style="margin-top:14px;padding:14px 20px;font-size:14px"><b>Is "likely" honest?</b> Of the predictions MINT called…
+    ${C.map(c => `<span style="margin-left:14px">${esc(c.label)} likely: <b>${c.hit} of ${c.n}</b> HIT (${Math.round(c.hit/c.n*100)}%)</span>`).join("")}
+    <div class="muted" style="font-size:12px;margin-top:4px">If MINT is honest, the "75%+" group should be right about 3 times in 4. Partial and miss count as not HIT; no clear move is left out.</div></div>`;
+}
 function howJudged(){
-  const row = a => CHECKS.map(c => `<td class="num">${clearMove(a, c[2]).toFixed(1)}%</td>`).join("");
-  return `<h2 id="judged" style="margin:34px 0 12px">How MINT decides if a prediction was right</h2>
+  return `<h2 id="judged" style="margin:34px 0 12px">How MINT predicts and judges</h2>
   <div class="card" style="padding:20px 24px">
     <ol style="margin:0 0 14px 18px;padding:0;line-height:1.7;font-size:14px">
-      <li><b>Before</b> the price moves, MINT predicts <b>up</b> or <b>down</b> from what happened after similar past events (and the AI's view). The prediction is then frozen.</li>
-      <li>MINT checks the price <b>9 times</b> after the first report: 1 h, 5 h, 10 h, 1 day, 36 h, 2 days, 3.5 days, 5 days and 7 days.</li>
-      <li>Each check is <span class="good">right</span> if the price moved <b>clearly</b> the predicted way, <span class="bad">wrong</span> if it moved clearly the other way,
-        and <span class="muted">not counted</span> if the move was smaller than normal wiggle. Prices wiggle more the longer you wait, so the bar grows with time (table below).</li>
-      <li>The <b>event</b> is <span class="good">Right</span> if more clear checks went the predicted way than the other way, <span class="bad">Wrong</span> if more went the other way,
-        and <b>No clear move</b> if there were none or it was a tie. The first result comes after 1 day; it is final after 7 days.</li>
-      <li><b>Impact</b> (📏): from every hourly price in the 7 days, MINT also measures how far the price moved the predicted way, when that peaked,
-        and how long the effect lasted before the price went back past where it started - so a small effect that faded is still recorded, even if the event is judged Wrong.</li>
-      <li><b>Accuracy</b> only counts clear moves: "Price checks right" = right checks ÷ all clear checks; "Events judged right" = right events ÷ (right + wrong events).</li>
+      <li><b>Prediction</b> (made before the price moves, then frozen): the <b>direction</b> from similar past events and the factor's pattern; the <b>size</b> = the typical move after the similar events that went that way;
+        the <b>time window</b> = how long those moves took to peak, or the time the market normally needs to move that much (bigger moves take longer, between 4 hours and 5 days);
+        <b>likely</b> = how many similar past events went that way ((agreeing + 1) ÷ (all + 2)), ±5 points for each market lens (trading volume, buyers vs sellers) that agrees or disagrees.</li>
+      <li><b>Judged from the moment MINT made the prediction</b>, not from the first report, so a move that happened before MINT saw the news never counts.</li>
+      <li><span class="good"><b>HIT</b></span> = the price moved at least <b>half the predicted size</b> the predicted way (and never less than about 2 hours of normal wiggle: about 0.5% for gold, 1.2% for Bitcoin right now) and <b>stayed there for 2+ hours</b>, inside the window.
+        <span class="bad"><b>MISS</b></span> = the same, the other way, first. <b>Partial</b> = the right way but too small or too short. <b>No clear move</b> = nothing either way (not counted).</li>
+      <li><b>Fair accuracy</b>: events of the same asset within 12 hours that predict the same way are one price move, so one big fall is not counted five times; and MINT is compared with the lazy guess (always up, or always down). If MINT does not beat it, the news added nothing.</li>
+      <li>The 9 price checks (1 h to 7 days) are still shown for every event, to see how long an effect lasted. Their colours use the old rule (clear move bar that grows with time).</li>
     </ol>
-    <div style="overflow-x:auto"><table class="htable"><thead><tr><th>A clear move is at least</th>${CHECKS.map(c => `<th class="num">${c[1]}</th>`).join("")}</tr></thead>
-      <tbody><tr><td>Bitcoin</td>${row("Bitcoin")}</tr><tr><td>Gold</td>${row("Gold")}</tr></tbody></table></div>
   </div>`;
 }
 function byTime(all){
@@ -735,23 +762,25 @@ function history(){
   const chip = (key, val, label) => `<button class="${(UI[key]||"all")===val?"on":""}" onclick="UI.${key}='${val}';render()">${label}</button>`;
   const kpi = (big, label, sub) => `<div class="kpi"><div class="kpi-big">${big}</div><div class="kpi-label">${label}</div><div class="kpi-sub">${sub}</div></div>`;
   return `<section style="padding:34px 0 6px"><div class="eyebrow">History</div><h1>Did MINT's predictions come true?</h1>
-    <div class="muted" style="font-size:15px;max-width:760px;line-height:1.6">Every event gets a prediction (up or down) before the price moves.
-    MINT then checks the price 9 times over 7 days and counts how often it moved clearly the predicted way.
+    <div class="muted" style="font-size:15px;max-width:760px;line-height:1.6">Every event gets a prediction before the price moves: the direction, how much, within how long, and how likely.
+    It is a <b>HIT</b> if the price moved at least half that much the predicted way and held it for 2 hours inside the time window.
     <a href="#judged" onclick="document.getElementById('judged').scrollIntoView({behavior:'smooth'});return false">How this is judged &darr;</a></div></section>
 
   <section class="kpis">
-    ${(() => { let r = 0, w = 0; all.forEach(e => { const c = (e.outcome||{}).checks; if (c && ["up","down"].includes((e.prediction||{}).direction)) { r += c.right; w += c.wrong; } });
-       return kpi(r + w ? Math.round(r/(r+w)*100)+"%" : "–", "Price checks right", r + w ? `${r} of ${r+w} clear price checks went the predicted way` : "Appears after the first clear price move"); })()}
-    ${kpi(done.length ? Math.round(right/done.length*100)+"%" : "–", "Events judged right", done.length ? `${right} right · ${wrong} wrong events (after day 1)` + ["Bitcoin","Gold"].map(a => { const d = done.filter(e => e.asset===a); return d.length ? `<br>${a}: ${d.filter(e => e.outcome.effect==="right").length} of ${d.length}` : ""; }).join("") : "Results appear 1 day after each event")}
-    ${kpi(alerts.length ? `${alertsRight} of ${alerts.length}` : "–", "Alerts that came true", "when the price clearly moved")}
-    ${kpi(all.length, "Events tracked", `${tracking} waiting for the 1-day price · ${flat} no clear move`)}
-    ${kpi(avgDelay==null ? "–" : avgDelay.toFixed(1)+" h", "Typical delay", "first report to MINT noticing (median)")}
+    ${(() => { const A = S.accuracy || {}; const d = (A.hit||0)+(A.miss||0)+(A.partial||0);
+      return kpi(A.hit_rate==null ? "–" : Math.round(A.hit_rate*100)+"%", "HIT rate (new rule)", d ? `${A.hit} HIT · ${A.partial} partial · ${A.miss} miss<br>${A.no_clear_move} no clear move (not counted)` : "Appears when the first time window ends"); })()}
+    ${(() => { const M = (S.accuracy||{}).moves || {}; return kpi(M.hit_rate==null ? "–" : Math.round(M.hit_rate*100)+"%", "Each price move once", M.total ? `${M.hit} of ${M.total} price moves right (events of one asset within 12 h that predict the same way = 1 move)` : "–"); })()}
+    ${(() => { const L = (S.accuracy||{}).lazy || {}; return kpi(L.best==null ? "–" : Math.round(L.best*100)+"%", "Lazy guess to beat", L.best==null ? "–" : `always saying "${esc(L.best_word)}" would score this (always up ${Math.round((L.always_up||0)*100)}%, always down ${Math.round((L.always_down||0)*100)}%)`); })()}
+    ${(() => { const O = (S.accuracy||{}).old_rule || {}; return kpi(O.rate==null ? "–" : Math.round(O.rate*100)+"%", "Old rule (for comparison)", O.total ? `${O.right} of ${O.total} "right" with the old 9-check rule, judged from the first report` : "–"); })()}
+    ${(() => { const D = (S.accuracy||{}).delay || {}; const by = D.by_asset || {};
+      return kpi(D.median_hours==null ? "–" : D.median_hours.toFixed(1)+" h", "Typical delay", `first report to MINT noticing (median of ${D.n} new stories since the cloud schedule started${D.since ? " on "+when(D.since,false) : ""})` + Object.keys(by).map(a => `<br>${a}: ${by[a]} h`).join("")); })()}
   </section>
+  ${calibrationCard()}
 
   <section class="card" style="margin-top:22px;overflow:hidden">
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)">
       <div class="chips">${chip("hfilter","all","All assets")}${chip("hfilter","Bitcoin","Bitcoin")}${chip("hfilter","Gold","Gold")}</div>
-      <div class="chips">${chip("hresult","all","All results")}${chip("hresult","right","Right")}${chip("hresult","wrong","Wrong")}${chip("hresult","no_clear_move","No clear move")}${chip("hresult","tracking","Tracking")}</div>
+      <div class="chips">${chip("hresult","all","All results")}${chip("hresult","right","HIT")}${chip("hresult","partial","Partial")}${chip("hresult","wrong","MISS")}${chip("hresult","no_clear_move","No clear move")}${chip("hresult","tracking","Tracking")}</div>
     </div>
     <div style="overflow-x:auto">${rows.length ? `<table class="htable hist"><thead><tr><th class="evcol">Event</th><th>Prediction</th>
       <th class="num">So far</th>${CHECKS.map(c => `<th class="num chk">${c[1]}</th>`).join("")}<th>Result</th></tr></thead><tbody>
@@ -872,8 +901,8 @@ function settings(){
       <button class="btn small light" onclick="post('/api/reset-test').then(load)">Clear test data</button></div></div>
     <div class="setting"><div class="txt"><b>Test the Supervisor</b><div>Runs 24 situations it must handle (the same event from 2 organisations, old event with a new article, off-topic headlines, first run, a social post alone, predictions from past events, the same story told twice...).</div></div>
       <button class="btn small" onclick="runTests('supervisor')">Run the 24 tests</button></div>
-    <div class="setting"><div class="txt"><b>Test the Telegram bot</b><div>Runs 17 checks with a pretend Telegram server (nothing is really sent): sign-ups, choices, alerts, watches, watch updates, heads-ups, the weekly summary, never twice, never in test runs.</div></div>
-      <button class="btn small" onclick="runTests('telegram')">Run the 17 tests</button></div>
+    <div class="setting"><div class="txt"><b>Test the Telegram bot</b><div>Runs 24 checks with a pretend Telegram server (nothing is really sent): sign-ups, choices, alerts, watches, watch updates, heads-ups, the weekly summary, never twice, never in test runs.</div></div>
+      <button class="btn small" onclick="runTests('telegram')">Run the 24 tests</button></div>
     ${UI.testOutput?`<div style="padding:0 22px 18px"><pre>${esc(UI.testOutput)}</pre></div>`:""}
   </div>`;
 }

@@ -70,14 +70,14 @@ def build(test_mode=False, now=None):
         lines += ["", "Alerts:"]
         for e in alerts:
             o = e.get("outcome") or {}
-            res = {"right": "prediction right", "wrong": "prediction wrong", "no_clear_move": "no clear move",
+            res = {"right": "HIT", "wrong": "MISS", "partial": "partial", "no_clear_move": "no clear move",
                    "tracking": "still tracking", "no_prediction": "no prediction"}.get(o.get("effect"), "no price yet")
             d1 = f", 1 day: {o['d1']['move']:+.1f}%" if o.get("d1") else ""
             lines.append(f"- {e['title'][:90]} ({e['asset']}) - {res}{d1}")
 
     # Accuracy over the last 30 days: only events whose price check is finished
     recent = [e for e in events if parse_time(e["first_seen"]) >= now - timedelta(days=30)
-              and (e.get("outcome") or {}).get("effect") in ("right", "wrong")]
+              and (e.get("outcome") or {}).get("effect") in ("right", "wrong", "partial")]
     right = [e for e in recent if e["outcome"]["effect"] == "right"]
     wrong = [e for e in recent if e["outcome"]["effect"] == "wrong"]
     a_all = [e for e in recent if e["state"] == "alerted"]
@@ -88,8 +88,8 @@ def build(test_mode=False, now=None):
     if not recent:
         lines.append("- Not enough finished price checks yet (each takes up to 7 days).")
     else:
-        lines.append(f"- Prediction accuracy: {len(right)} of {len(recent)} right ({len(right) / len(recent):.0%}) "
-                     "- counting only events where the price clearly moved within 1 day")
+        lines.append(f"- HIT rate: {len(right)} of {len(recent)} ({len(right) / len(recent):.0%}) "
+                     "- a HIT = at least half the predicted move, the predicted way, held 2+ hours, inside the time window")
         if a_all:
             lines.append(f"- Alerts where the prediction came true: {len(a_good)} of {len(a_all)}")
         missed = len(n_all) - len(n_good)

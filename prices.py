@@ -275,9 +275,10 @@ def describe_impact(points, start, start_price, direction, asset, now):
             "against_hours": against_h, "until_hours": last_h, "text": text}
 
 
-def rejudge(memory):
+def rejudge(memory, test_mode=False, now=None):
     """Judge every event again with its CURRENT prediction. The Decision agent runs after the Price Tracker and
     can add a prediction, so without this an event could show a prediction but still say "No prediction"."""
+    now = now or (TEST_NOW if test_mode else datetime.now(timezone.utc))
     for ev in memory["events"]:
         o, direction = ev.get("outcome") or {}, (ev.get("prediction") or {}).get("direction")
         if ev["state"] is None or o.get("start_price") is None:
@@ -288,6 +289,29 @@ def rejudge(memory):
         if o.get("now"):
             o["now"]["verdict"] = cell_verdict(o["now"]["move"], direction, ev["asset"], max(o["now"]["hours"], 1))
         o["effect"], o["effect_reason"] = judge(o, ev["asset"], direction)
+    apply_forecasts(memory, test_mode, now)
+
+
+def apply_forecasts(memory, test_mode, now, histories=None, market_state=None):
+    """The new forecast (size, time window, likely %) and HIT / MISS / PARTIAL judging - see forecast.py."""
+    import forecast
+    import library
+    import market
+    if histories is None:
+        histories = {}
+        for asset in COINGECKO_IDS:
+            try:
+                histories[asset] = get_history(asset, test_mode, now)
+            except Exception:
+                saved = data_folder(test_mode) / f"price_history_{asset.lower()}.json"
+                histories[asset] = json.loads(saved.read_text(encoding="utf-8")) if saved.exists() else {"points": []}
+    if market_state is None:
+        market_state = market.load(test_mode)
+    try:
+        entries = library.all_entries(test_mode, memory)
+    except Exception:
+        entries = []
+    return forecast.apply(memory, histories, market_state, now, entries)
 
 
 def run(test_mode=False, now=None):
@@ -305,7 +329,9 @@ def run(test_mode=False, now=None):
         except Exception as e:
             summary["errors"].append(f"{asset} history: {e}")
             print(f"   ERROR {asset} history: {e}")
-            histories[asset] = {"points": [], "source": "none"}
+            saved = folder / f"price_history_{asset.lower()}.json"
+            histories[asset] = json.loads(saved.read_text(encoding="utf-8")) if saved.exists() and not test_mode \
+                else {"points": [], "source": "none"}           # the last saved prices are better than none
 
     try:
         live, source = live_prices(test_mode, now)
@@ -330,11 +356,24 @@ def run(test_mode=False, now=None):
         print(f"   Past events library: could not load starter events ({e})")
     memory = load_memory(test_mode)
     added = update_outcomes(memory, histories, now, factors)
+    import market
+    try:
+        mstate = market.refresh(now, test_mode)
+        for asset, L in (mstate.get("lenses") or {}).items():
+            print(f"   {asset} market: volume {L['volume']['text']} | buy/sell {L['buy_sell']['text']}")
+        for e in mstate.get("errors", [])[:4]:
+            print(f"   market data problem: {e}")
+    except Exception as e:
+        mstate = market.load(test_mode)
+        print(f"   market lenses: could not refresh ({e})")
+    sig = apply_forecasts(memory, test_mode, now, histories, mstate)
+    summary["normal_day_move"] = sig
+    print(f"   A normal day's move now: Bitcoin {sig.get('Bitcoin')}%, gold {sig.get('Gold')}%")
     save_memory(memory, test_mode)
     summary["prices_added"] = added
     tracked = [e for e in memory["events"] if e.get("outcome", {}).get("start_price")]
     moved = sum(1 for e in tracked if e["outcome"].get("effect") == "right")
-    print(f"   Outcomes: {added} new price check(s). {len(tracked)} event(s) tracked, {moved} prediction(s) right so far.")
+    print(f"   Outcomes: {added} new price check(s). {len(tracked)} event(s) tracked, {moved} HIT(s) so far.")
     for e in tracked[-8:]:
         o = e["outcome"]
         cells = "  ".join(f"{k}: {o[k]['move']:+.1f}%" if o.get(k) else f"{k}: -" for k in CHECKPOINTS)

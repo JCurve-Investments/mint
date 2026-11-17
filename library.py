@@ -80,9 +80,11 @@ def own_entries(memory):
         o = ev.get("outcome") or {}
         if (o.get("d1") or {}).get("move") is None:
             continue
+        imp = o.get("impact") or {}
+        peak_h = imp.get("peak_hours") if imp.get("peak") and (imp["peak"] > 0) == (o["d1"]["move"] > 0) else None
         out.append({"id": ev["id"], "date": ev["earliest_report"][:10], "asset": ev["asset"], "factor": ev["factor"],
                     "title": ev["title"], "d1": o["d1"]["move"], "d7": (o.get("d7") or {}).get("move"),
-                    "source": "MINT"})
+                    "peak_hours": peak_h, "source": "MINT"})
     return out
 
 
@@ -188,7 +190,11 @@ def find_similar(asset, factor, title, entries, exclude_id=None, before=None):
             continue
         if before and e["date"] >= before:          # only events from BEFORE this one
             continue
+        if e["title"].strip().lower() == title.strip().lower():
+            continue                # the same story again (a copy of this event) is not a "past event"
         score, shared = similarity(words, key_words(e["title"]))
+        if score >= 0.85:
+            continue                # almost the same headline: the same story, not a separate past event
         if e["factor"] == factor:
             score += SAME_FACTOR_BONUS
         past_cause = predict(e["factor"], e["title"], asset)["direction"]
@@ -196,6 +202,8 @@ def find_similar(asset, factor, title, entries, exclude_id=None, before=None):
             if past_cause != cause:
                 continue            # opposite kind of event ("Fed cuts" is not like "Fed will NOT cut")
             score += 0.2            # same kind of event
+        elif cause == "unclear" and past_cause != "unclear":
+            score -= 0.1            # we do not know what kind this one is: a clearly different kind counts a bit less
         if score >= MIN_SCORE and (shared >= 1 or e["factor"] == factor):
             found.append({**e, "score": round(score, 2)})
     found.sort(key=lambda e: (-e["score"], e["date"]))
@@ -234,5 +242,6 @@ def make_prediction(factor, title, asset, entries, exclude_id=None, before=None)
     by = ("past events + factor pattern" if similar and rule["direction"] != "unclear" else
           "past events" if similar else "factor pattern")
     return {"direction": direction, "by": by, "reason": "; ".join(parts)[:400],
-            "similar": [{k: e.get(k) for k in ("id", "date", "title", "d1", "d7", "source", "score")} for e in similar[:5]],
+            "similar": [{k: e.get(k) for k in ("id", "date", "title", "d1", "d7", "peak_hours", "source", "score")}
+                        for e in similar[:5]],
             "votes": {"up": round(vote_up, 2), "down": round(vote_down, 2)}}

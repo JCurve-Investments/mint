@@ -333,6 +333,31 @@
       "date": "2026-11-09",
       "title": "Past-event test uses my answer key, and shows rules and AI",
       "detail": "MINT does not need to download prices for the past-event test: I already know how the market reacted, so the real moves come from my answer key in backtest_events.json. MINT only has to predict. The test now shows three predictions per event: the rules (similar past events + factor pattern), the AI (Groq, told to pretend it is that date), and MINT's final answer (the AI's when it is on, as in live use). The rules column is the fairest test, because an AI may remember what happened after famous events."
+    },
+    {
+      "date": "2026-11-16",
+      "title": "One daily summary instead of a message every run",
+      "detail": "MINT sent a 'run complete, nothing new' note every 5 minutes, which was noise. Now anything MINT finds is still sent straight away, nothing is sent when nothing is found, and one summary goes to the channel at 9 pm India time."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Real accuracy was much lower than it looked",
+      "detail": "Re-judging every past event with fairer rules: about 49% HIT (not 63%), and counting each price move once, about 43%. Saying 'gold down' every time would have scored about 77%, because gold fell all week. Three reasons: one gold fall was counted as a win for 5 different events; some 'events' were fund pages and a scam warning; and the 'similar past events' were matched by words (e.g. 'ETF') instead of meaning (money going in or out)."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Predictions now give size, time and how likely",
+      "detail": "Each prediction says how much the price should move, within how long, and how likely it is, e.g. 'Gold down 0.8% to 1.5% within about 1.5 days, 70% likely'. Size comes from the typical move after similar past events, time from how long those moves took (bigger moves take longer), likely from how many similar events agreed. A HIT = at least half the predicted move, the predicted way, held for 2 hours inside the time window, judged from the moment MINT made the prediction."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Two new lenses: trading volume and buyers vs sellers",
+      "detail": "Bitcoin: Kraken trades (who started each trade, buyer or seller) and order book. Gold: futures volume in rising vs falling hours (Yahoo Finance) and the weekly CFTC report. Each lens votes up, down or neutral and moves the 'likely' percentage by 5 points. A private signal check (news + volume + buyers vs sellers) goes only to my own Telegram chat."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Gold news was found about 13 hours late",
+      "detail": "The 9.5 h 'typical delay' came partly from manual runs before the cloud schedule, but mostly from the gold news search running only once a day in the cloud. It now runs every run, like Bitcoin, and the delay only counts new stories found since the cloud schedule started."
     }
   ]
 }

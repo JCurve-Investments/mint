@@ -44,7 +44,7 @@ import weekly                        # noqa: E402
 from common import load_json         # noqa: E402
 from supervisor import data_folder, load_memory, hours_between   # noqa: E402
 
-VERSION = "26"                         # must match UI_VERSION in ui/index.html
+VERSION = "27"                         # must match UI_VERSION in ui/index.html
 PORT = 8765
 ADDRESS = f"http://localhost:{PORT}"
 SCHEDULE = {"next_run": None}
@@ -243,6 +243,19 @@ def build_state():
     runs_path = data_folder(test_mode) / "runs.json"
     runs = json.loads(runs_path.read_text(encoding="utf-8"))[-20:] if runs_path.exists() else []
     reliability = run_reliability(test_mode, now)
+    import forecast
+    import market
+    cloud_start = None
+    try:
+        log0 = json.loads((data_folder(test_mode) / "run_log.json").read_text(encoding="utf-8"))
+        cloud_start = next((r["start"] for r in log0 if "cloud" in str(r.get("reason", ""))), None)
+    except Exception:
+        pass
+    accuracy = forecast.accuracy(memory["events"], cloud_start)
+    mstate = market.load(test_mode)
+    market_view = {"time": mstate.get("time"), "errors": mstate.get("errors", []),
+                   "lenses": mstate.get("lenses", {}),
+                   "news": {a: market.news_lens(memory, a, now) for a in ("Bitcoin", "Gold")}}
     bt_path = data_folder(False) / "backtest_results.json"
     backtest = json.loads(bt_path.read_text(encoding="utf-8")) if bt_path.exists() and not test_mode else None
     progress = load_json("progress.json") if (FOLDER / "progress.json").exists() else {}
@@ -276,6 +289,8 @@ def build_state():
         "log": log,
         "runs": runs,
         "reliability": reliability,
+        "accuracy": accuracy,
+        "market": market_view,
         "backtest": backtest,
         "progress": progress,
         "windows": os.name == "nt",

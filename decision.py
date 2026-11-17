@@ -101,6 +101,8 @@ def cloud_settings(s):
     s["telegram_channel"] = env("TELEGRAM_CHANNEL", "")
     s["telegram_channel_link"] = env("TELEGRAM_CHANNEL_LINK", "")   # invite link, for a private channel
     s["contact_email"] = env("CONTACT_EMAIL", "")
+    s["telegram_owner"] = env("TELEGRAM_OWNER", "")                 # your own chat ID, for the private signal check
+    s["gold_news_every_hours"] = 0       # search gold news EVERY run, like Bitcoin (once a day made gold ~1 day late)
     return s
 
 
@@ -337,6 +339,16 @@ def confidence(pred):
     return "low", "no similar past events yet - based on the factor pattern only"
 
 
+def past_events_disagree(pred, direction):
+    """True when the similar past events clearly point the OTHER way (at least 3 of them, and no more than a third
+    went the AI's way). Then the AI may write MINT's view, but it may not change the direction: the data wins."""
+    sims = [s for s in (pred.get("similar") or []) if s.get("d1") is not None and abs(s["d1"]) >= 0.1]
+    if len(sims) < 3:
+        return False
+    agree = sum(1 for s in sims if (s["d1"] > 0) == (direction == "up"))
+    return agree / len(sims) <= 1 / 3
+
+
 def analyse(ev, factor, choice):
     """MINT's view of one event. Uses the AI if switched on, otherwise fixed rules. Returns a dict."""
     pred = ev.get("prediction") or {}
@@ -383,7 +395,8 @@ def analyse_events(memory, choice, factors, now):
             a = analyse(ev, f, None)
         pred = ev.get("prediction") or {}
         frozen = (ev.get("outcome") or {}).get("d1") is not None
-        if a["by"].startswith("AI") and a.get("direction") in ("up", "down") and not frozen:
+        if a["by"].startswith("AI") and a.get("direction") in ("up", "down") and not frozen \
+                and not past_events_disagree(pred, a["direction"]):
             ev["prediction"] = {**pred, "direction": a["direction"], "by": "AI + past events",
                                 "reason": a.get("what_past_events_show") or pred.get("reason", "")}
         level, why = confidence(ev.get("prediction") or {})
@@ -462,7 +475,7 @@ def run(test_mode=False, now=None):
 
     memory["last_states"] = asset_states(memory, [], now)
     import prices
-    prices.rejudge(memory)            # predictions added in this run are used for the results straight away
+    prices.rejudge(memory, test_mode, now)            # predictions added in this run are used for the results straight away
     save_memory(memory, test_mode)
     print(f"\nBOTTOM LINE: {summary['decided']} decided, {summary['alerts']} alert(s) stamped, "
           f"{summary['rejected']} rejected, {len(summary['errors'])} AI problem(s).")

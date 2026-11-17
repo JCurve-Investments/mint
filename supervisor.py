@@ -314,9 +314,19 @@ def find_matching_event(story, events, now):
     return best, best_why
 
 
-def not_news_title(title):
-    """True for website sections and guides ("Investment", "Gold Market Primer") - not news headlines."""
-    return len(title.split()) < 4 or bool(re.search(r"\b(primer|glossary|about us|faq)\b", title.lower()))
+NOT_NEWS = re.compile(
+    r"\b(primer|glossary|about us|faq)\b"
+    r"|price, (flows|chart)|flows & assets|etf overview|\boverview$|sec filings?|holdings and flows"
+    r"|as percentage of|market share by|^insights: posts|^how much gold has been mined"
+    r"|did you receive a (text|call|message|email)|scam alert|phony alerts?"
+    r"|^notice on|announces pricing|\([a-z]{2,5}\.[a-z]{1,2}\)$|^[a-z]{2,5} \| ", re.I)
+
+
+def not_news_title(title, social=False):
+    """True for website sections, fund pages, guides and warnings ("Gold Market Primer", "Bitcoin Strategy ETF (BITO)
+    Price, Flows & Assets", "Did you receive a text message from the Federal Reserve...") - not news headlines.
+    Social posts can be short, so for them only the patterns count, not the length."""
+    return (not social and len(title.split()) < 4) or bool(NOT_NEWS.search(title.strip()))
 
 
 def tidy_memory(memory, now, say):
@@ -326,11 +336,11 @@ def tidy_memory(memory, now, say):
        so one story is never counted as several predictions."""
     removed = memory.setdefault("removed", [])
     for ev in list(memory["events"]):
-        if all(src["kind"] != "social" for src in ev["sources"]) and not_news_title(ev["title"]):
+        if not_news_title(ev["title"], social=any(src["kind"] == "social" for src in ev["sources"])):
             memory["events"].remove(ev)
             removed.append({"id": ev["id"], "title": ev["title"], "removed_at": now.isoformat(),
-                            "reason": "a website section, not a news headline"})
-            say(f"REMOVED     [{ev['id']}] {ev['title']} - a website section, not a news headline")
+                            "reason": "not a news headline (a website section, fund page or warning)"})
+            say(f"REMOVED     [{ev['id']}] {ev['title']} - not a news headline")
     import social_watcher
     factors = load_json("factors.json")["factors"]
     for ev in list(memory["events"]):
@@ -550,7 +560,7 @@ def run(reports=None, test_mode=False, now=None, learn_first_run=None):
     checked, off_topic = [], 0
     for s in stories:
         words = s["clean_title"].split()
-        if s["kind"] != "social" and not_news_title(s["clean_title"]):
+        if not_news_title(s["clean_title"], social=s["kind"] == "social"):
             off_topic += 1                       # e.g. "Investment" - a website section, not a news headline
             say(f"OFF-TOPIC   {s['clean_title']}  ({s.get('organisation')}) - not a news headline")
             continue

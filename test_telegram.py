@@ -1,5 +1,5 @@
 """
-Tests for the Telegram bot (21 checks), using a PRETEND Telegram server on this computer (nothing is really sent).
+Tests for the Telegram bot (24 checks), using a PRETEND Telegram server on this computer (nothing is really sent).
 Uses its own temporary folder (data/telegramtest), so real subscribers are never touched.
 
 Run:  py test_telegram.py   (or press "Test the Telegram bot" in the MINT app)
@@ -92,7 +92,10 @@ def ev(i, asset, state, hours=1, **extra):
     e = {"id": i, "asset": asset, "state": state, "title": f"Event {i}", "factor": "B2",
          "sources": [{"organisation": "Reuters"}], "state_reason": "test", "first_seen": (now - timedelta(hours=hours)).isoformat(),
          "history": [], "prediction": {"direction": "down", "reason": "test", "similar": [
-             {"date": "2025-02-21", "title": "Bybit hacked", "d1": -2.0}]},
+             {"date": "2025-02-21", "title": "Bybit hacked", "d1": -2.0}],
+             "forecast": {"low": -1.2, "mid": -2.0, "high": -2.8, "window_hours": 20, "probability": 0.67, "agree": 1,
+                          "similar": 1, "threshold": 1.0, "floor": 0.6, "lens_notes": ["agrees: volume"],
+                          "basis": "test", "window_basis": "test"}},
          "analysis": {"by": "rules", "confidence": "low", "confidence_reason": "test"}, "decision": None, "outcome": {}}
     if state == "alerted":
         e["decision"] = {"time": (now - timedelta(hours=hours)).isoformat(), "alert_title": i,
@@ -109,9 +112,9 @@ supervisor.save_memory({"events": [ev("BTC-1", "Bitcoin", "alerted"), ev("GOLD-1
                                    ev("BTC-OLD", "Bitcoin", "alerted", hours=10)], "counter": {}}, False)
 sent.clear()
 quiet(tb.send_alerts, "T", False, now)
-check("6. A Bitcoin alert goes only to people who chose Bitcoin", to("MINT alert BTC-1") == ["111", "222"])
-check("7. A gold alert goes only to people who chose gold", to("MINT alert GOLD-1") == ["222", "333"])
-check("8. An alert older than 6 hours is not sent", to("MINT alert BTC-OLD") == [])
+check("6. A Bitcoin alert goes only to people who chose Bitcoin", to("Event BTC-1") == ["111", "222"])
+check("7. A gold alert goes only to people who chose gold", to("Event GOLD-1") == ["222", "333"])
+check("8. An alert older than 6 hours is not sent", to("Event BTC-OLD") == [])
 sent.clear()
 quiet(tb.send_alerts, "T", False, now)
 check("9. Nothing is sent twice", sent == [])
@@ -131,11 +134,11 @@ supervisor.save_memory({"events": [watch], "counter": {}}, False)
 sent.clear()
 quiet(tb.send_alerts, "T", False, now, [], CH)
 event_msgs = [m for m in sent if "Event GOLD-W" in m["text"]]
-check("13. EVERY new event (here a Watch) goes to 'Everything' people and the channel, with MINT's view",
-      to("Event GOLD-W") == ["333", CH] and "Predicted effect" in event_msgs[0]["text"]
-      and "Similar past events" in event_msgs[0]["text"])
-check("19. Messages start with the 'at a glance' line (impact, direction, confidence), and the channel gets the key once",
-      " impact · " in event_msgs[0]["text"].split("\n")[1] and
+check("13. EVERY new event (here a Watch) goes to 'Everything' people and the channel, SHORT (max 6 lines) with the evidence",
+      to("Event GOLD-W") == ["333", CH] and "Why: 1 of 1 similar past events fell" in event_msgs[0]["text"]
+      and len(event_msgs[0]["text"].split("\n")) <= 6)
+check("19. Line 1 says everything (asset, direction, size, time, likely %), and the channel gets the key once",
+      event_msgs[0]["text"].split("\n")[0] == "👀 🥇 Gold ↓ -1.2% to -2.8% within ~20 hours · 67% likely" and
       to("How to read MINT messages") == [CH])
 sent.clear()
 quiet(tb.send_alerts, "T", False, now, [], CH)
@@ -145,30 +148,41 @@ evening = datetime(2026, 11, 7, 15, 40, tzinfo=timezone.utc)
 sent.clear()
 quiet(tb.send_alerts, "T", False, evening, [], CH)
 quiet(tb.send_alerts, "T", False, evening, [], CH)
+daily = [m for m in sent if "daily summary" in m["text"]]
 check("22. One daily summary at 21:00 India time, to the channel, only once a day",
-      [m for m in sent if "daily summary" in m["text"]] and len([m for m in sent if "daily summary" in m["text"]]) == 1
-      and all(str(m["chat_id"]) == CH for m in sent if "daily summary" in m["text"]))
+      len(daily) == 1 and all(str(m["chat_id"]) == CH for m in daily))
+check("23. The daily summary is the detailed one: forecasts and the market lenses",
+      daily and "% likely" in daily[0]["text"] and "Markets now (3 lenses)" in daily[0]["text"])
 mem = supervisor.load_memory(False)
 mem["events"][0].update(state="expired")
 supervisor.save_memory(mem, False)
 sent.clear()
 quiet(tb.send_alerts, "T", False, now, [], CH)
-check("14. When its status changes, an update is sent", to("MINT update") == ["333", CH] and "NOT CONFIRMED" in sent[0]["text"])
+check("14. When its status changes, a short update is sent", to("Update") == ["333", CH] and "in time" in sent[0]["text"])
 mem = supervisor.load_memory(False)
-mem["events"][0]["outcome"] = {"effect": "right", "effect_reason": "predicted down: -0.8% after 1 day",
-                               "d1": {"move": -0.8, "time": now.isoformat()}}
+mem["events"][0]["outcome"] = {"effect": "right", "result": {"verdict": "hit", "final": True, "peak": -1.9, "threshold": 1.0,
+                               "size": "inside the predicted range", "text": "test"}}
 supervisor.save_memory(mem, False)
 sent.clear()
 quiet(tb.send_alerts, "T", False, now, [], CH)
 quiet(tb.send_alerts, "T", False, now, [], CH)
-check("15. After 1 day the RESULT is sent once (was the prediction right?)",
-      to("MINT result") == ["333", CH] and "prediction RIGHT" in sent[0]["text"])
+check("15. The RESULT is sent once, as soon as it is known, in 2 lines (HIT, predicted range, actual move)",
+      to("HIT") == ["333", CH] and sent[0]["text"].startswith("✅ HIT · 🥇 Gold ↓ predicted -1.2% to -2.8% within ~20 hours → reached -1.9%"))
+st = tb.load_state()
+st.pop("results_v2", None)
+tb.save_state(st)
+mem = supervisor.load_memory(False)
+mem["events"][0]["telegram"].pop("verdict_sent", None)
+supervisor.save_memory(mem, False)
+sent.clear()
+quiet(tb.send_alerts, "T", False, now, [], CH)
+check("24. Results judged before the update are NOT re-sent (no flood of old results)", to("HIT") == [])
 w2 = ev("BTC-W", "Bitcoin", "alerted", history=[{"time": now.isoformat(), "note": "new -> watch: 1 source"}])
 supervisor.save_memory({"events": [w2], "counter": {}}, False)
 sent.clear()
 quiet(tb.send_alerts, "T", False, now)
 check("16. An alert that started as a Watch says so ('was on Watch since')",
-      sent and all("was on Watch since" in m["text"] for m in sent))
+      sent and all("Was on Watch since" in m["text"] for m in sent))
 supervisor.save_memory({"events": [], "counter": {}}, False)
 sent.clear()
 quiet(tb.send_alerts, "T", False, now, ["Tomorrow: US jobs report. Gold may move."])

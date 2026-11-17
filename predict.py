@@ -53,10 +53,11 @@ def predict(factor_id, title, asset):
     say = lambda d, r: {"direction": d, "reason": r}
 
     if factor_id == "B1":
-        if has(r"\b(guilty|charged|sues|sued|bans?|banned|crackdown|arrest\w*|fraud)\b", t) and \
+        cleared = has(r"\b(cleared|acquit\w*|not guilty|exonerat\w*|charges? (dropped|dismissed))\b", t)
+        if has(r"\b(guilty|charged|sues|sued|bans?|banned|crackdown|arrest\w*|fraud)\b", t) and not cleared and \
                 not has(r"\b(drops?|dropped|dismiss\w*|wins?|won|overturn\w*)\b", t):
             return say("down", "Bans, crackdowns and lawsuits: Bitcoin has usually fallen afterwards")
-        if has(r"\b(drops?|dropped|dismiss\w*|ends?|ended|settle\w*|approv\w*|wins?|won|overturn\w*|lift\w*|"
+        if cleared or has(r"\b(drops?|dropped|dismiss\w*|ends?|ended|settle\w*|approv\w*|wins?|won|overturn\w*|lift\w*|"
                r"reserve|legal tender|legaliz\w*|adopt\w*|embrac\w*|not securities)\b", t):
             return say("up", "Good news for crypto (a case dropped, settled or an approval): Bitcoin has tended to rise")
         return say("down", "Bans, crackdowns and lawsuits: Bitcoin has usually fallen afterwards")
@@ -70,9 +71,11 @@ def predict(factor_id, title, asset):
         return say("down", "Exchange hacks and collapses: Bitcoin has usually fallen afterwards")
     if factor_id in ("B4", "G5"):
         a = "Bitcoin" if factor_id == "B4" else "Gold"
-        if has(r"\b(outflow\w*|withdraw\w*|less demand|demand (falls|slows|drops)|slows|sell\w*)\b", t):
+        if has(r"\b(outflow\w*|withdraw\w*|less demand|demand (falls|slows|drops)|slows|sell\w*|bleed\w*|lose|loses|lost|"
+               r"redemption\w*|pull\w* out|exodus)\b", t):
             return say("down", f"Money flowing OUT of {a.lower()} funds: the price has tended to fall")
-        if has(r"\b(inflow\w*|demand (rises|jumps|grows)|record demand|buy\w*|more demand)\b", t):
+        if has(r"\b(inflow\w*|demand (rises|jumps|grows)|record demand|buy\w*|more demand|accumulat\w*)\b", t) or \
+                has(r"\bholdings?\b.{0,25}\b(rival|top|tops|hit|hits|reach\w*|grow\w*|rise\w*|swell\w*|jump\w*|surpass\w*|record)\b", t):
             return say("up", f"Money flowing INTO {a.lower()} funds: the price has tended to rise")
         return say("unclear", "The headline does not say if money is flowing in or out")
     if factor_id == "G1":
