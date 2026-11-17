@@ -19621,6 +19621,171 @@
         "first_sent_at": "2026-11-16T17:06:14.409385+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "BTC-20261116-05",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin Strategy ETF (BITO) Price, Flows & Assets",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)",
+      "proof": "news",
+      "proof_reason": "reliable source: The Block",
+      "first_seen": "2026-11-17T00:25:39.291757+00:00",
+      "earliest_report": "2026-11-16T14:56:00+00:00",
+      "last_updated": "2026-11-17T00:25:39.291757+00:00",
+      "words": [
+        "asset",
+        "bitcoin",
+        "bito",
+        "etf",
+        "flows",
+        "price",
+        "strategy"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Bitcoin Strategy ETF (BITO) Price, Flows & Assets",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xZ0Q0a2RxbGRPbzVnelpXUnNfLTRReWFPOEl6MVVOd2hfOENSMnBwR3dSdHBteThpLUhpOGZGZEJEZFhmWVBIOTRhMXBJb2MzYmZR?oc=5",
+          "published": "2026-11-16T14:56:00+00:00",
+          "found_at": "2026-11-17T00:25:39.291757+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-17T00:25:39.291757+00:00",
+          "note": "new event, first report by The Block"
+        },
+        {
+          "time": "2026-11-17T00:25:39.291757+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: The Block)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 65141.77,
+        "start_time": "2026-11-16T15:00:00+00:00",
+        "moved_before_mint": -0.43,
+        "delay_hours": 9.5,
+        "h1": {
+          "price": 64435.51,
+          "move": -1.08,
+          "time": "2026-11-16T15:56:00+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 65010.15,
+          "move": -0.2,
+          "time": "2026-11-16T19:56:00+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -0.43,
+          "time": "2026-11-16T23:39:30+00:00",
+          "hours": 8.7,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 2,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (2 of 9 checks done)",
+        "impact": {
+          "peak": -1.08,
+          "peak_hours": 1.1,
+          "faded_hours": 7.1,
+          "against": 0.22,
+          "against_hours": 7.1,
+          "until_hours": 8.7,
+          "text": "Clear impact: Bitcoin fell up to 1.1% (after 1 h). The effect lasted about 7 h, then faded."
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In five similar recent cases, Bitcoin fell the next day, with drops ranging from -0.6% to -5.5%. All of those events involved ETF outflows or weak inflows.",
+        "similar": [
+          {
+            "id": "BTC-20261113-02",
+            "date": "2026-11-13",
+            "title": "Bitcoin Strategy ETF (BITO) Price, Flows & Assets",
+            "d1": -2.85,
+            "d7": null,
+            "source": "MINT",
+            "score": 1.25
+          },
+          {
+            "id": "BTC-20261109-04",
+            "date": "2026-11-09",
+            "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+            "d1": -0.62,
+            "d7": -14.39,
+            "source": "MINT",
+            "score": 0.72
+          },
+          {
+            "id": "BTC-20261111-01",
+            "date": "2026-11-11",
+            "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+            "d1": -1.43,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.52
+          },
+          {
+            "id": "BTC-20261111-04",
+            "date": "2026-11-11",
+            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+            "d1": -3.9,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.52
+          },
+          {
+            "id": "BTC-20261112-04",
+            "date": "2026-11-12",
+            "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+            "d1": -5.49,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.52
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 4.05
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The latest report shows Bitcoin Strategy ETF (BITO) activity, and the flow numbers suggest investors are pulling money out rather than adding it.",
+        "what_past_events_show": "In five similar recent cases, Bitcoin fell the next day, with drops ranging from -0.6% to -5.5%. All of those events involved ETF outflows or weak inflows.",
+        "direction": "down",
+        "why": [
+          "ETF outflows have historically been linked to short\u2011term price declines.",
+          "The recent flow pattern matches past cases that led to drops of up to several percent."
+        ],
+        "watch_next": "If ETF inflows turn positive and stay that way for a few days, the downside could be limited; continued outflows would likely push Bitcoin lower.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-17T00:25:39.291757+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-17T00:25:48.376101+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -19644,21 +19809,21 @@
     "GOLD-20261115": 3,
     "BTC-20261115": 2,
     "GOLD-20261114": 2,
-    "BTC-20261116": 4,
+    "BTC-20261116": 5,
     "GOLD-20261116": 2
   },
   "last_run": {
-    "run_time": "2026-11-17T00:20:53.113210+00:00",
+    "run_time": "2026-11-17T00:25:39.291757+00:00",
     "test_mode": false,
-    "stories": 8,
-    "off_topic": 5,
+    "stories": 23,
+    "off_topic": 19,
     "repeats": 3,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
