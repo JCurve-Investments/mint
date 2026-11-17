@@ -16609,9 +16609,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 6,
+          "done": 7,
           "right": 0,
-          "wrong": 5,
+          "wrong": 6,
           "total": 9
         },
         "final": false,
@@ -16677,7 +16677,13 @@
           "size": "inside the predicted range",
           "opposite": "no_clear_move"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "h84": {
+          "price": 64970.95,
+          "move": -3.82,
+          "time": "2026-11-17T15:56:41+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "up",
@@ -24145,10 +24151,10 @@
     "GOLD-20261117": 6
   },
   "last_run": {
-    "run_time": "2026-11-17T16:05:46.555659+00:00",
+    "run_time": "2026-11-17T16:11:00.766804+00:00",
     "test_mode": false,
-    "stories": 157,
-    "off_topic": 75,
+    "stories": 155,
+    "off_topic": 73,
     "repeats": 82,
     "new_events": 0,
     "joined": 0,
@@ -24166,7 +24172,6 @@
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
-          "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
           "Alert: Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts"
         ]
       },
@@ -24192,7 +24197,6 @@
     "Bitcoin": {
       "state": "Alert",
       "reasons": [
-        "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
         "Alert: Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts"
       ]
     },
