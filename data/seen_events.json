@@ -10197,19 +10197,13 @@
           "time": "2026-11-11T02:05:46+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -4.36,
-          "time": "2026-11-17T15:24:40+00:00",
-          "hours": 167.3,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 6,
+          "done": 9,
+          "right": 7,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
         "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 4 hours (biggest move -1.6%)",
         "impact": {
@@ -10266,7 +10260,13 @@
           "size": "inside the predicted range",
           "opposite": "miss"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "d7": {
+          "price": 3854.91,
+          "move": -4.36,
+          "time": "2026-11-17T16:05:46+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -24151,7 +24151,7 @@
     "GOLD-20261117": 6
   },
   "last_run": {
-    "run_time": "2026-11-17T16:11:00.766804+00:00",
+    "run_time": "2026-11-17T16:15:54.299277+00:00",
     "test_mode": false,
     "stories": 155,
     "off_topic": 73,
