@@ -309,6 +309,9 @@ def evidence_line(ev):
     if p.get("direction") not in ("up", "down"):
         return "Why: not enough evidence for a prediction yet"
     word = "rose" if p["direction"] == "up" else "fell"
+    if ev.get("market_triggered"):
+        lt = f.get("lens_text") or {}
+        return "Why: " + "; ".join(x for x in (lt.get("volume"), lt.get("buy_sell")) if x)[:230]
     if f.get("similar"):
         why = f"Why: {f['agree']} of {f['similar']} similar past events {word}"
         if f.get("agree"):
@@ -327,6 +330,8 @@ def evidence_line(ev):
 
 
 def source_line(ev):
+    if ev.get("market_triggered"):
+        return "📊 Market signal (volume + buyers vs sellers) · no news report found yet"
     social = social_line(ev)
     status = STATUS_SHORT.get(ev["state"], ev["state"])
     if social:
@@ -520,11 +525,16 @@ def daily_text(memory, now):
                 lines.append(f"   Counting each price move once: {acc['moves']['hit']} of {acc['moves']['total']} right")
             if lz.get("best") is not None:
                 lines.append(f"   A lazy guess (always {lz['best_word']}) would score {lz['best'] * 100:.0f}% HIT")
+        mk = acc.get("market") or {}
+        if mk.get("total"):
+            lines.append(f"   Market-triggered (no news): {mk['total']} so far, {mk['hit']} HIT · {mk['partial']} partial · "
+                         f"{mk['miss']} miss" + (f" → {mk['hit_rate'] * 100:.0f}% HIT" if mk["hit_rate"] is not None else
+                                                 " (still being judged)"))
     except Exception as e:
         lines.append(f"\n(accuracy not available: {e})")
     try:
         lines.append("\nMarkets now (3 lenses):")
-        lines += market_lines(memory, now)
+        lines += market_lines(memory, now, private=True)
     except Exception:
         pass
     try:
@@ -540,15 +550,15 @@ def daily_text(memory, now):
 
 
 def signal_text(memory, now, strong_only=None):
-    """The PRIVATE signal check (sent only to your own chat): the 3 lenses for each asset and what they add up to."""
+    """The signal check (sent to the channel): the 3 lenses for each asset and what they add up to."""
     import forecast
     ist = now + timedelta(hours=5, minutes=30)
-    lines = [f"🔒 MINT signal check (private) · {ist:%d %b %H:%M}"] + market_lines(memory, now, private=True)
+    lines = [f"📡 MINT signal check · {ist:%d %b %H:%M}"] + market_lines(memory, now, private=True)
     try:
         acc = forecast.accuracy(memory["events"])
         if acc["hit_rate"] is not None:
             lines.append(f"\nMINT's record so far: {acc['hit_rate'] * 100:.0f}% HIT ({acc['hit']} of "
-                         f"{acc['hit'] + acc['miss'] + acc['partial']}). Lenses only describe conditions from the data.")
+                         f"{acc['hit'] + acc['miss'] + acc['partial']}). The lenses describe market conditions from data. Not financial advice.")
     except Exception:
         pass
     return "\n".join(lines)
@@ -662,12 +672,10 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
             total += 1
             print("   DAILY    -> channel: summary for " + today)
         state["daily_done"] = today
-        if owner and send_private(token, owner, signal_text(memory, now)):
-            print("   SIGNAL   -> your own chat (private signal check)")
 
-    # 8. PRIVATE signal check straight away when 2 or 3 lenses agree and nothing disagrees (at most every 6 hours
-    #    per asset, and only when the picture changes)
-    if owner and token and not test_mode:
+    # 8. SIGNAL CHECK to the channel straight away when 2 or 3 lenses agree and nothing disagrees (at most every 6 hours
+    #    per asset, and only when the picture changes). The 9 pm summary already carries the verdict lines.
+    if channel and token and not test_mode:
         try:
             import market
             mstate = market.load(False)
@@ -677,8 +685,9 @@ def send_alerts(token, test_mode=False, now=None, calendar_warnings=None, channe
                 key = f"signal_{asset}"
                 last = state.get(key) or {}
                 if strong and (last.get("dir") != strong or not fresh(last.get("time"), 6)):
-                    if send_private(token, owner, signal_text(memory, now)):
-                        print(f"   SIGNAL   -> your own chat: {asset} {strong} ({sc['verdict']})")
+                    if deliver(token, {}, signal_text(memory, now), None, "everything", "signal check", asset, channel):
+                        total += 1
+                        print(f"   SIGNAL   -> channel: {asset} {strong} ({sc['verdict']})")
                     state[key] = {"dir": strong, "time": now.isoformat()}
                 elif not strong and last.get("dir"):
                     state[key] = {"dir": None, "time": now.isoformat()}

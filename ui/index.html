@@ -144,7 +144,7 @@ const TABS = [["overview","Overview"],["events","Events"],["agents","Agents"],["
   .filter(([k]) => !(STATIC && k === "settings"));
 const UI = {drawn:{}, tab:"overview", asset:"Bitcoin", range:"7D", hover:null, filter:"all", open:null, out:{}, lastJson:"", testOutput:""};
 let S = null;
-const UI_VERSION = "27";   // must match VERSION in app.py
+const UI_VERSION = "28";   // must match VERSION in app.py
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money = v => v == null ? "–" : "$" + Math.round(v).toLocaleString("en-US");
@@ -691,6 +691,7 @@ function howJudged(){
       <li><b>Judged from the moment MINT made the prediction</b>, not from the first report, so a move that happened before MINT saw the news never counts.</li>
       <li><span class="good"><b>HIT</b></span> = the price moved at least <b>half the predicted size</b> the predicted way (and never less than about 2 hours of normal wiggle: about 0.5% for gold, 1.2% for Bitcoin right now) and <b>stayed there for 2+ hours</b>, inside the window.
         <span class="bad"><b>MISS</b></span> = the same, the other way, first. <b>Partial</b> = the right way but too small or too short. <b>No clear move</b> = nothing either way (not counted).</li>
+      <li><b>Market-triggered events</b>: when trading is busy (1.5x a normal day) and both the volume lens and the buyers-vs-sellers lens point the same way, MINT starts an event with no news report (at most one per asset every 12 hours, and not if the news points the other way). It gets a forecast and a HIT / MISS like any event, but is counted on its own line so the news accuracy stays clean.</li>
       <li><b>Fair accuracy</b>: events of the same asset within 12 hours that predict the same way are one price move, so one big fall is not counted five times; and MINT is compared with the lazy guess (always up, or always down). If MINT does not beat it, the news added nothing.</li>
       <li>The 9 price checks (1 h to 7 days) are still shown for every event, to see how long an effect lasted. Their colours use the old rule (clear move bar that grows with time).</li>
     </ol>
@@ -771,6 +772,8 @@ function history(){
       return kpi(A.hit_rate==null ? "–" : Math.round(A.hit_rate*100)+"%", "HIT rate (new rule)", d ? `${A.hit} HIT · ${A.partial} partial · ${A.miss} miss<br>${A.no_clear_move} no clear move (not counted)` : "Appears when the first time window ends"); })()}
     ${(() => { const M = (S.accuracy||{}).moves || {}; return kpi(M.hit_rate==null ? "–" : Math.round(M.hit_rate*100)+"%", "Each price move once", M.total ? `${M.hit} of ${M.total} price moves right (events of one asset within 12 h that predict the same way = 1 move)` : "–"); })()}
     ${(() => { const L = (S.accuracy||{}).lazy || {}; return kpi(L.best==null ? "–" : Math.round(L.best*100)+"%", "Lazy guess to beat", L.best==null ? "–" : `always saying "${esc(L.best_word)}" would score this (always up ${Math.round((L.always_up||0)*100)}%, always down ${Math.round((L.always_down||0)*100)}%)`); })()}
+    ${(() => { const K = (S.accuracy||{}).market || {}; const d = (K.hit||0)+(K.miss||0)+(K.partial||0);
+      return kpi(K.hit_rate==null ? "–" : Math.round(K.hit_rate*100)+"%", "Market-triggered (no news)", K.total ? `${K.total} started by volume + buyers vs sellers: ${K.hit} HIT · ${K.partial} partial · ${K.miss} miss${K.open ? " · "+K.open+" still open" : ""}. Counted apart from news events.` : "None yet: needs busy trading (1.5x) with both lenses agreeing"); })()}
     ${(() => { const O = (S.accuracy||{}).old_rule || {}; return kpi(O.rate==null ? "–" : Math.round(O.rate*100)+"%", "Old rule (for comparison)", O.total ? `${O.right} of ${O.total} "right" with the old 9-check rule, judged from the first report` : "–"); })()}
     ${(() => { const D = (S.accuracy||{}).delay || {}; const by = D.by_asset || {};
       return kpi(D.median_hours==null ? "–" : D.median_hours.toFixed(1)+" h", "Typical delay", `first report to MINT noticing (median of ${D.n} new stories since the cloud schedule started${D.since ? " on "+when(D.since,false) : ""})` + Object.keys(by).map(a => `<br>${a}: ${by[a]} h`).join("")); })()}
@@ -785,7 +788,7 @@ function history(){
     <div style="overflow-x:auto">${rows.length ? `<table class="htable hist"><thead><tr><th class="evcol">Event</th><th>Prediction</th>
       <th class="num">So far</th>${CHECKS.map(c => `<th class="num chk">${c[1]}</th>`).join("")}<th>Result</th></tr></thead><tbody>
       ${rows.map(e => { const o = e.outcome || {}; return `<tr class="clickable" onclick="openEvent('${esc(e.id)}')">
-        <td class="evcol"><div class="ev-title">${esc(e.title)}</div><div class="ev-meta">${impactTag(e.impact)}<span class="stag">${esc(STATE_WORDS[e.state]||e.state)}</span> ${esc(e.asset)} · ${esc(e.factor)} ${esc(e.factor_name)} · ${when(e.earliest_report)}</div></td>
+        <td class="evcol"><div class="ev-title">${esc(e.title)}</div><div class="ev-meta">${impactTag(e.impact)}<span class="stag">${e.market_triggered ? "📊 Market signal (no news)" : esc(STATE_WORDS[e.state]||e.state)}</span> ${esc(e.asset)} · ${esc(e.factor)} ${esc(e.factor_name)} · ${when(e.earliest_report)}</div></td>
         <td>${predCell(e)}</td>
         ${soFarCell(o)}${CHECKS.map(c => checkCell(o, c[0])).join("")}${resultCell(e)}</tr>${impactRow(e, 4 + CHECKS.length)}`; }).join("")}
       </tbody></table>` : `<div class="empty">No events match.</div>`}</div>

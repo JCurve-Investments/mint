@@ -358,6 +358,16 @@
       "date": "2026-11-17",
       "title": "Gold news was found about 13 hours late",
       "detail": "The 9.5 h 'typical delay' came partly from manual runs before the cloud schedule, but mostly from the gold news search running only once a day in the cloud. It now runs every run, like Bitcoin, and the delay only counts new stories found since the cloud schedule started."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "The market lenses can start an event on their own",
+      "detail": "When Bitcoin or gold trading is busy (1.5x a normal day) and both the volume lens and the buyers-vs-sellers lens point the same way, MINT now starts a 'market-triggered' event with its own forecast, judged HIT or MISS like the others. It is counted on a separate accuracy line, so MINT can compare news-triggered and market-triggered predictions. At most one per asset every 12 hours, and not if the news already covers it or points the other way."
+    },
+    {
+      "date": "2026-11-17",
+      "title": "The signal check is now public, in the channel",
+      "detail": "The 3-lens signal check (news, volume, buyers vs sellers) is no longer private. It goes to the channel when 2 or 3 lenses agree, and the 9 pm summary shows each lens verdict. Wording stays neutral: it describes conditions and is not financial advice. This replaces the earlier private plan, so Criterion A should note the change."
     }
   ]
 }

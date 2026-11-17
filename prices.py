@@ -366,6 +366,12 @@ def run(test_mode=False, now=None):
     except Exception as e:
         mstate = market.load(test_mode)
         print(f"   market lenses: could not refresh ({e})")
+    if not test_mode:
+        try:
+            for ev in market.trigger_events(memory, mstate, now):
+                print(f"   MARKET EVENT [{ev['id']}] {ev['title']} ({ev['prediction']['direction']})")
+        except Exception as e:
+            print(f"   market-triggered events: could not check ({e})")
     sig = apply_forecasts(memory, test_mode, now, histories, mstate)
     summary["normal_day_move"] = sig
     print(f"   A normal day's move now: Bitcoin {sig.get('Bitcoin')}%, gold {sig.get('Gold')}%")

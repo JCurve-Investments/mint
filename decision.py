@@ -101,7 +101,7 @@ def cloud_settings(s):
     s["telegram_channel"] = env("TELEGRAM_CHANNEL", "")
     s["telegram_channel_link"] = env("TELEGRAM_CHANNEL_LINK", "")   # invite link, for a private channel
     s["contact_email"] = env("CONTACT_EMAIL", "")
-    s["telegram_owner"] = env("TELEGRAM_OWNER", "")                 # your own chat ID, for the private signal check
+    s["telegram_owner"] = env("TELEGRAM_OWNER", "")                 # your own chat ID, for the optional private copy (the signal check itself now goes to the channel)
     s["gold_news_every_hours"] = 0       # search gold news EVERY run, like Bitcoin (once a day made gold ~1 day late)
     return s
 

@@ -44,7 +44,7 @@ import weekly                        # noqa: E402
 from common import load_json         # noqa: E402
 from supervisor import data_folder, load_memory, hours_between   # noqa: E402
 
-VERSION = "27"                         # must match UI_VERSION in ui/index.html
+VERSION = "28"                         # must match UI_VERSION in ui/index.html
 PORT = 8765
 ADDRESS = f"http://localhost:{PORT}"
 SCHEDULE = {"next_run": None}
@@ -186,7 +186,7 @@ def social_state(test_mode):
 
 
 def public_event(ev):
-    keep = ["id", "asset", "factor", "factor_name", "title", "state", "state_reason", "proof", "proof_reason",
+    keep = ["id", "asset", "factor", "factor_name", "market_triggered", "title", "state", "state_reason", "proof", "proof_reason",
             "first_seen", "earliest_report", "last_updated", "old_clues", "sources", "history", "decision",
             "outcome", "prediction", "analysis", "telegram"]
     out = {k: ev.get(k) for k in keep}

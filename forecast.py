@@ -92,7 +92,11 @@ def make_forecast(ev, sigma, market_state=None, library_entries=None):
     sign = 1 if d == "up" else -1
     sims = [s for s in (p.get("similar") or []) if s.get("d1") is not None]
     agree = [s for s in sims if sign * s["d1"] >= 0.1]
-    if agree:
+    if ev.get("market_triggered"):
+        mid = sigma * 0.6
+        lo, hi = mid * 0.6, mid * 1.5
+        basis = "market-triggered: busy trading with the same side in control; size = 0.6 of a normal day's move"
+    elif agree:
         lo, mid, hi = pct_range([abs(s["d1"]) for s in agree])
         basis = f"{len(agree)} of {len(sims)} similar past events moved this way (typical move {mid:.1f}%)"
     else:
@@ -284,14 +288,30 @@ def apply(memory, histories, market_state, now, library_entries=None):
 # ---------------------------------------------------------------------------
 # Fair accuracy (History page, 9 pm summary, weekly summary)
 # ---------------------------------------------------------------------------
+def market_accuracy(events):
+    """HIT rate of the market-triggered events (volume + buyers/sellers, no news) - kept apart from the news events."""
+    judged = [e for e in events if e.get("market_triggered") and
+              ((e.get("outcome") or {}).get("result") or {}).get("verdict") in ("hit", "miss", "partial", "no_clear_move")
+              and e["outcome"]["result"].get("final")]
+    count = lambda v: sum(1 for e in judged if e["outcome"]["result"]["verdict"] == v)
+    hit, miss, partial, flat = count("hit"), count("miss"), count("partial"), count("no_clear_move")
+    decided = hit + miss + partial
+    open_ = sum(1 for e in events if e.get("market_triggered") and e not in judged)
+    return {"judged": len(judged), "hit": hit, "miss": miss, "partial": partial, "no_clear_move": flat,
+            "hit_rate": round(hit / decided, 3) if decided else None, "open": open_,
+            "total": sum(1 for e in events if e.get("market_triggered"))}
+
+
 def accuracy(events, cloud_start=None):
+    market_part = market_accuracy(events)
+    events = [e for e in events if not e.get("market_triggered")]      # the news events: the main accuracy
     judged = [e for e in events if ((e.get("outcome") or {}).get("result") or {}).get("verdict") in
               ("hit", "miss", "partial", "no_clear_move") and (e["outcome"]["result"].get("final"))]
     count = lambda v: sum(1 for e in judged if e["outcome"]["result"]["verdict"] == v)
     hit, miss, partial, flat = count("hit"), count("miss"), count("partial"), count("no_clear_move")
     decided = hit + miss + partial
     out = {"judged": len(judged), "hit": hit, "miss": miss, "partial": partial, "no_clear_move": flat,
-           "hit_rate": round(hit / decided, 3) if decided else None}
+           "hit_rate": round(hit / decided, 3) if decided else None, "market": market_part}
     # same price move = one group
     groups = []
     for asset in ("Bitcoin", "Gold"):

@@ -1,5 +1,5 @@
 """
-Tests for the Telegram bot (24 checks), using a PRETEND Telegram server on this computer (nothing is really sent).
+Tests for the Telegram bot (28 checks), using a PRETEND Telegram server on this computer (nothing is really sent).
 Uses its own temporary folder (data/telegramtest), so real subscribers are never touched.
 
 Run:  py test_telegram.py   (or press "Test the Telegram bot" in the MINT app)
@@ -196,6 +196,39 @@ check("18. The weekly summary goes to everyone and the channel on Sunday, only o
       sorted(str(m["chat_id"]) for m in sent if "daily summary" not in m["text"]) == ["222", "333", CH]
       and len(weekly.load_all(False)) == 1
       and "How good were MINT's predictions" in sent[0]["text"])
+
+# ---- v28: market-triggered events and the public signal check ----
+import market
+market.data_folder = pretend_folder
+def lenses_up(ratio=1.8, vol=1, bs=1):
+    return {"time": now.isoformat(), "errors": [], "lenses": {
+        "Bitcoin": {"volume": {"vote": vol, "ratio": ratio, "ok": True, "text": f"busy: {ratio}x a normal day, price +1.2% - real buying"},
+                    "buy_sell": {"vote": bs, "ok": True, "text": "buyers started 58% of trades (24 h)"}},
+        "Gold": {"volume": {"vote": 0, "ratio": 1.0, "ok": True, "text": "normal"}, "buy_sell": {"vote": 0, "ok": True, "text": "flat"}}}}
+mem = {"events": [], "counter": {}}
+made = market.trigger_events(mem, lenses_up(), now)
+check("25. Busy trading + volume and buyers-vs-sellers both UP starts a market-triggered event (not for gold, which is quiet)",
+      len(made) == 1 and made[0]["asset"] == "Bitcoin" and made[0]["market_triggered"] and made[0]["prediction"]["direction"] == "up")
+again = market.trigger_events(mem, lenses_up(), now + timedelta(hours=1))
+weak = market.trigger_events({"events": [], "counter": {}}, lenses_up(ratio=1.3), now)
+split = market.trigger_events({"events": [], "counter": {}}, lenses_up(bs=-1), now)
+check("26. No second event within 12 hours, none when trading is only 1.3x, none when the two lenses disagree",
+      again == [] and weak == [] and split == [])
+import forecast
+ev_m = made[0]
+ev_m["prediction"]["forecast"] = forecast.make_forecast(ev_m, 2.0, lenses_up())
+text = tb.event_text(ev_m)
+check("27. The message says it is a market signal with no news, shows the lens evidence, and the accuracy is counted apart",
+      "Market signal" in text and "busy: 1.8x" in text and "Source:" not in text
+      and forecast.accuracy([ev_m])["market"]["total"] == 1 and forecast.accuracy([ev_m])["judged"] == 0)
+mem2 = {"events": [], "counter": {}}
+market.save(lenses_up(), False)
+supervisor.save_memory(mem2, False)
+sent.clear()
+quiet(tb.send_alerts, "T", False, now, [], CH)
+sig = [m for m in sent if "signal check" in m["text"]]
+check("28. The signal check goes to the channel when 2 lenses agree (not to a private chat)",
+      len(sig) == 1 and str(sig[0]["chat_id"]) == CH and "private" not in sig[0]["text"].lower())
 
 print(f"\nRESULT: {sum(results)} of {len(results)} tests passed.")
 server.shutdown()

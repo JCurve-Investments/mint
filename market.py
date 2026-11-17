@@ -397,6 +397,58 @@ def signal_check(memory, state, asset, now):
             "volume": L.get("volume") or {}, "buy_sell": L.get("buy_sell") or {}}
 
 
+# ---------------------------------------------------------------------------
+# Market-triggered events: the lenses can start an event on their own (no news needed)
+# ---------------------------------------------------------------------------
+TRIGGER_VOLUME_RATIO = 1.5         # 24-hour volume at least 1.5x a normal day
+TRIGGER_COOLDOWN_HOURS = 12        # at most one market-triggered event per asset every 12 hours
+NEWS_COVERS_HOURS = 6              # skip it if a news event pointing the same way was found in the last 6 hours
+
+
+def trigger_events(memory, mstate, now):
+    """Start an event when the volume lens AND the buyers-vs-sellers lens both point the same way and trading is
+    clearly busy (1.5x a normal day), unless the news already covers it or the news points the other way.
+    The event has a forecast and is judged HIT / MISS like any other, but is counted on its own accuracy line.
+    Returns the new events."""
+    from supervisor import new_event_id
+    made = []
+    for asset in ("Bitcoin", "Gold"):
+        L = (mstate.get("lenses") or {}).get(asset) or {}
+        vol, bs = L.get("volume") or {}, L.get("buy_sell") or {}
+        if not (vol.get("ok") and bs.get("ok")):
+            continue
+        direction = vol.get("vote", 0)
+        if not direction or bs.get("vote", 0) != direction or (vol.get("ratio") or 0) < TRIGGER_VOLUME_RATIO:
+            continue
+        word = "up" if direction > 0 else "down"
+        news = news_lens(memory, asset, now)
+        if news["vote"] == -direction:
+            continue                                       # the news points the other way: no clear picture
+        recent = [e for e in memory.get("events", []) if e.get("asset") == asset and e.get("state") not in (None, "baseline")]
+        if any(e.get("market_triggered") and hours_between(now, parse_time(e["first_seen"])) < TRIGGER_COOLDOWN_HOURS
+               for e in recent):
+            continue
+        if any((e.get("prediction") or {}).get("direction") == word and not e.get("market_triggered")
+               and hours_between(now, parse_time(e["first_seen"])) < NEWS_COVERS_HOURS for e in recent):
+            continue                                       # a news event already covers this move
+        side = "buyers" if direction > 0 else "sellers"
+        ev = {
+            "id": new_event_id(memory, asset, now), "asset": asset, "factor": "market",
+            "factor_name": "Market move (volume + buyers vs sellers)", "market_triggered": True,
+            "title": f"{asset} market move: busy trading ({vol.get('ratio'):.1f}x a normal day) with {side} in control",
+            "state": "context", "state_reason": "started by the market lenses, no news report", "proof": "market",
+            "proof_reason": "volume and buy/sell data, not a news report",
+            "first_seen": now.isoformat(), "earliest_report": now.isoformat(), "last_updated": now.isoformat(),
+            "words": [], "amounts": [], "old_clues": [], "sources": [], "decision": None, "outcome": {},
+            "history": [{"time": now.isoformat(), "note": f"new market-triggered event ({word}): {vol.get('text')}; {bs.get('text')}"}],
+            "prediction": {"direction": word, "by": "market lenses", "similar": [], "votes": {},
+                           "reason": f"Volume: {vol.get('text')}. Buyers vs sellers: {bs.get('text')}."},
+        }
+        memory["events"].append(ev)
+        made.append(ev)
+    return made
+
+
 if __name__ == "__main__":
     s = refresh(test_mode="--test" in sys.argv)
     for a, L in s.get("lenses", {}).items():
