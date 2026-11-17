@@ -20304,7 +20304,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 1,
           "wrong": 0,
           "total": 9
@@ -20346,7 +20346,14 @@
           "final": false,
           "text": "still inside the 2.2 days window (biggest move so far -0.6%)",
           "size": null
-        }
+        },
+        "d1": {
+          "price": 64871.53,
+          "move": -0.41,
+          "time": "2026-11-17T14:32:01+00:00",
+          "verdict": "flat"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "down",
@@ -23892,9 +23899,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -23922,6 +23929,12 @@
           "final": false,
           "text": "still inside the 4 hours window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 3851.39,
+          "move": 0.47,
+          "time": "2026-11-17T14:34:10+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -24064,11 +24077,11 @@
     "GOLD-20261117": 5
   },
   "last_run": {
-    "run_time": "2026-11-17T14:41:14.853985+00:00",
+    "run_time": "2026-11-17T14:45:57.517280+00:00",
     "test_mode": false,
-    "stories": 158,
-    "off_topic": 74,
-    "repeats": 84,
+    "stories": 150,
+    "off_topic": 68,
+    "repeats": 82,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
