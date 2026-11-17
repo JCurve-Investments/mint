@@ -20501,14 +20501,14 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 1,
-          "right": 1,
+          "done": 2,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (1 of 9 checks done)",
+        "effect_reason": "first day not over yet - 2 of 2 clear price checks went the predicted way (2 of 9 checks done)",
         "impact": {
           "peak": -1.08,
           "peak_hours": 3.4,
@@ -20522,6 +20522,12 @@
           "price": 64271.83,
           "move": -1.09,
           "time": "2026-11-17T06:37:23+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 64288.77,
+          "move": -1.07,
+          "time": "2026-11-17T10:37:23+00:00",
           "verdict": "right"
         }
       },
@@ -20627,7 +20633,7 @@
     "BTC-20261117": 2
   },
   "last_run": {
-    "run_time": "2026-11-17T10:45:53.186375+00:00",
+    "run_time": "2026-11-17T10:50:58.231341+00:00",
     "test_mode": false,
     "stories": 39,
     "off_topic": 25,
@@ -20658,8 +20664,6 @@
       "Gold": {
         "state": "Alert",
         "reasons": [
-          "Alert: Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800",
-          "Alert: Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis",
           "Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
           "Alert: Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
@@ -20681,8 +20685,6 @@
     "Gold": {
       "state": "Alert",
       "reasons": [
-        "Alert: Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800",
-        "Alert: Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis",
         "Alert: Has anyone noticed that immediately after the Election the Stock Market lost 3 Trillion Dollars in Value? In other words, Investors throughout the World hated s",
         "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
         "Alert: Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
