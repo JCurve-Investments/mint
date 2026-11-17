@@ -7568,21 +7568,15 @@
           "time": "2026-11-10T09:20:00+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -5.85,
-          "time": "2026-11-17T04:00:20+00:00",
-          "hours": 167.7,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 1,
-          "wrong": 6,
+          "wrong": 7,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "wrong",
-        "effect_reason": "predicted up, but 1 of 7 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted up, but 1 of 8 clear price checks went the predicted way",
         "impact": {
           "peak": 0.3,
           "peak_hours": 1.7,
@@ -7627,6 +7621,12 @@
           "move": -6.64,
           "time": "2026-11-15T04:20:00+00:00",
           "verdict": "wrong"
+        },
+        "d7": {
+          "price": 3856.29,
+          "move": -5.85,
+          "time": "2026-11-17T04:20:00+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -7669,7 +7669,8 @@
       },
       "telegram": {
         "sent_state": "context",
-        "result_sent": "2026-11-11T04:31:08.368911+00:00"
+        "result_sent": "2026-11-11T04:31:08.368911+00:00",
+        "final_sent": "2026-11-17T04:31:14.692600+00:00"
       },
       "analysis": {
         "by": "AI (Groq)",
@@ -20285,10 +20286,10 @@
     "BTC-20261117": 1
   },
   "last_run": {
-    "run_time": "2026-11-17T04:25:40.445714+00:00",
+    "run_time": "2026-11-17T04:31:14.692600+00:00",
     "test_mode": false,
-    "stories": 26,
-    "off_topic": 19,
+    "stories": 27,
+    "off_topic": 20,
     "repeats": 7,
     "new_events": 0,
     "joined": 0,
