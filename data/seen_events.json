@@ -21348,13 +21348,17 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-17T05:41:00.423823+00:00",
       "earliest_report": "2026-11-17T05:37:23+00:00",
-      "last_updated": "2026-11-17T13:40:58.204702+00:00",
+      "last_updated": "2026-11-17T16:45:53.053055+00:00",
       "words": [
         "1.28b",
+        "add",
         "billion",
         "bitcoin",
+        "casino-chip",
         "combin",
+        "crypto",
         "dan",
+        "disappear",
         "doubl",
         "etf",
         "ether",
@@ -21369,10 +21373,13 @@
         "menyaingi",
         "miliar",
         "now",
+        "outflows",
+        "pain",
         "rival",
         "sachs",
         "sharply",
         "spacex",
+        "spot",
         "tesla",
         "wells"
       ],
@@ -21414,6 +21421,17 @@
           "found_at": "2026-11-17T13:40:58.204702+00:00",
           "summary": "Goldman Sachs more than doubles Bitcoin ETF holdings to $1.28B and sharply increases Ether ETF exposure",
           "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Crypto's 'casino-chips' are disappearing, adding to pain from spot ETF outflows",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZ2ZZT28yXy1nTXBER2FibVM4Wks4YjZWSkVhdFFTaFlrVlk2c2g4aGNUcnd5Q21wUkZBRFNQNll5b2VCY192OVFhX1BsLWo2RVV2c2gxWjVtOVdpUERMS1ZRMkQ2X3JnTVViTURHODV5ZDRRQ0hWSFY3RW1vTXBVUExvMk4zZDM5R3lNeFJjWlMzMkJZRDJFakUxZGFWb2V3cS0zZmljQnhGVHZsWFhoTUwxZWktSWJQTEJsWW9BS0U?oc=5",
+          "published": "2026-11-17T12:23:41+00:00",
+          "found_at": "2026-11-17T16:45:53.053055+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -21432,6 +21450,10 @@
         {
           "time": "2026-11-17T13:40:58.204702+00:00",
           "note": "another report from Whale Alert (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-17T16:45:53.053055+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": null,
@@ -24157,14 +24179,14 @@
     "GOLD-20261117": 6
   },
   "last_run": {
-    "run_time": "2026-11-17T16:41:07.121670+00:00",
+    "run_time": "2026-11-17T16:45:53.053055+00:00",
     "test_mode": false,
-    "stories": 152,
-    "off_topic": 71,
-    "repeats": 81,
+    "stories": 119,
+    "off_topic": 58,
+    "repeats": 60,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
