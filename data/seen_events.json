@@ -10435,19 +10435,13 @@
           "time": "2026-11-11T02:50:34+00:00",
           "verdict": "wrong"
         },
-        "now": {
-          "move": -3.89,
-          "time": "2026-11-17T16:19:50+00:00",
-          "hours": 167.5,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 4,
+          "done": 9,
+          "right": 5,
           "wrong": 2,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
         "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 4 hours (biggest move -1.6%)",
         "impact": {
@@ -10504,7 +10498,13 @@
           "size": "bigger than predicted",
           "opposite": "miss"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "d7": {
+          "price": 3856.54,
+          "move": -3.89,
+          "time": "2026-11-17T16:50:34+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -14958,8 +14958,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 7,
-          "right": 5,
+          "done": 8,
+          "right": 6,
           "wrong": 0,
           "total": 9
         },
@@ -15032,7 +15032,13 @@
           "size": "bigger than predicted",
           "opposite": "miss"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "d5": {
+          "price": 64052.55,
+          "move": -11.01,
+          "time": "2026-11-17T16:45:52+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -24150,6 +24156,231 @@
         "first_sent_at": "2026-11-17T15:11:16.064027+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261117-07",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold will reclaim $5,600/oz in 2028 as rate cuts bring Western investors back to precious metals \u2013 Goldman Sachs",
+      "state": "rejected",
+      "state_reason": "Decision agent: The article only forecasts future rate cuts; no concrete Fed decision or price change has occurred, so it is not a new actionable event.",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-17T17:01:34.317885+00:00",
+      "earliest_report": "2026-11-17T16:22:43+00:00",
+      "last_updated": "2026-11-17T17:01:34.317885+00:00",
+      "words": [
+        "back",
+        "bring",
+        "cut",
+        "gold",
+        "goldman",
+        "investor",
+        "metal",
+        "preciou",
+        "rate",
+        "reclaim",
+        "sachs",
+        "western",
+        "will"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold will reclaim $5,600/oz in 2028 as rate cuts bring Western investors back to precious metals \u2013 Goldman Sachs",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSkFNSTNMZjM2c2VOOW1qQmlURFQ2UFNPaVBlLTd0Mm11WVN1c1ptLWxqMlF6MmVTU2ctZlUtWXBHMGsxenpqUGo3RlVDY1Bsd0JIRE8xNUNKV2x4anJJT0FqaFJOZ2VLVE85eXUxZzhJU0IzcEUxc1lfblkxTFA5VXVPVElrcDVTLV9FaDJETTBKc080ZGFYWFU3ZXhGaThoblBNN0xoLTBvWGNQNHR2dDJHWTk?oc=5",
+          "published": "2026-11-17T16:22:43+00:00",
+          "found_at": "2026-11-17T17:01:34.317885+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-17T17:01:34.317885+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-17T17:01:34.317885+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-17T17:01:34.317885+00:00",
+          "note": "confirmed -> rejected: The article only forecasts future rate cuts; no concrete Fed decision or price change has occurred, so it is not a new actionable event."
+        }
+      ],
+      "decision": {
+        "is_new_event": false,
+        "event_date": "unknown",
+        "date_evidence": "Article published 2026-11-17 16:22 UTC",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "unclear",
+        "expected_direction": "up",
+        "direction_reason": "forecast says future rate cuts could push gold higher",
+        "alert_title": "Rate\u2011cut forecast for gold",
+        "alert_message": "Gold analysts expect price to reach $5,600/oz by 2028 if rates are cut, but no actual policy change yet.",
+        "why_it_matters": [
+          "It is only a prediction, not a current policy move",
+          "Gold price has not moved yet"
+        ],
+        "reason": "The article only forecasts future rate cuts; no concrete Fed decision or price change has occurred, so it is not a new actionable event.",
+        "time": "2026-11-17T17:01:34.317885+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 3856.54,
+        "start_time": "2026-11-17T16:19:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.6,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-17T16:19:50+00:00",
+          "hours": -0.0,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 29 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3856.54,
+          "start_time": "2026-11-17T17:01:34.317885+00:00",
+          "threshold": 0.62,
+          "window_hours": 28.6,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 29 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Recent real Fed cuts usually nudged gold up (e.g., +0.2% and +1.1%), but a Goldman Sachs forecast change previously pushed gold down 2.3%, showing mixed reactions.",
+        "similar": [
+          {
+            "id": "START-20240918-G",
+            "date": "2024-09-18",
+            "title": "Fed cuts rates by half a point",
+            "d1": 0.24,
+            "d7": 3.56,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.92
+          },
+          {
+            "id": "START-20241107-G",
+            "date": "2024-11-07",
+            "title": "Fed cuts rates by a quarter point",
+            "d1": 1.1,
+            "d7": -3.86,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.92
+          },
+          {
+            "id": "START-20250917-G",
+            "date": "2025-09-17",
+            "title": "Fed cuts rates by a quarter point",
+            "d1": -0.2,
+            "d7": 1.15,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.92
+          },
+          {
+            "id": "START-20200303-G",
+            "date": "2020-03-03",
+            "title": "Fed makes emergency half-point rate cut",
+            "d1": 3.13,
+            "d7": 4.2,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.83
+          },
+          {
+            "id": "GOLD-20261111-07",
+            "date": "2026-11-11",
+            "title": "Why Goldman Sachs is changing its Fed interest-rate forecast",
+            "d1": -2.29,
+            "d7": null,
+            "peak_hours": 83.4,
+            "source": "MINT",
+            "score": 0.63
+          }
+        ],
+        "votes": {
+          "up": 4.79,
+          "down": 1.55
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-17T17:01:53.611181+00:00",
+          "low": -0.75,
+          "mid": -1.25,
+          "high": -1.74,
+          "window_hours": 28.6,
+          "probability": 0.38,
+          "agree": 2,
+          "similar": 5,
+          "basis": "2 of 5 similar past events moved this way (typical move 1.2%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.14,
+          "threshold": 0.62,
+          "floor": 0.47,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "normal: 0.8x a normal day, price +0.4%",
+            "buy_sell": "66% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "disagrees: buy/sell"
+          ],
+          "rule_votes": {
+            "up": 4.79,
+            "down": 1.55
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold is predicted to hit $5,600/oz by 2028 because analysts think future Fed rate cuts will make the metal more attractive.",
+        "what_past_events_show": "Recent real Fed cuts usually nudged gold up (e.g., +0.2% and +1.1%), but a Goldman Sachs forecast change previously pushed gold down 2.3%, showing mixed reactions.",
+        "direction": "down",
+        "why": [
+          "The headline adds no new Fed surprise, just speculation.",
+          "Similar news about Goldman Sachs forecasts previously caused gold to fall."
+        ],
+        "watch_next": "A surprise Fed rate cut or a clear dovish statement would make gold move higher.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-17T17:01:34.317885+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-17T17:01:54.344296+00:00",
+        "sent_state": "rejected"
+      }
     }
   ],
   "counter": {
@@ -24176,26 +24407,26 @@
     "BTC-20261116": 6,
     "GOLD-20261116": 8,
     "BTC-20261117": 2,
-    "GOLD-20261117": 6
+    "GOLD-20261117": 7
   },
   "last_run": {
-    "run_time": "2026-11-17T16:55:43.212863+00:00",
+    "run_time": "2026-11-17T17:01:34.317885+00:00",
     "test_mode": false,
-    "stories": 149,
-    "off_topic": 68,
-    "repeats": 81,
-    "new_events": 0,
+    "stories": 117,
+    "off_topic": 58,
+    "repeats": 58,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -24216,7 +24447,8 @@
           "Alert: Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
           "Alert: Gold inches up from over one-year low, Fed outlook caps gains",
           "Alert: India gold market update: Gold demand gets festive boost",
-          "Alert: Gold Remains Pressured by Fed Rate-Hike Bets"
+          "Alert: Gold Remains Pressured by Fed Rate-Hike Bets",
+          "Being checked: Gold will reclaim $5,600/oz in 2028 as rate cuts bring Western investors back to precious metals \u2013 Goldman Sachs (reliable source: Kitco News)"
         ]
       }
     }
