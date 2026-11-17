@@ -20887,27 +20887,37 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-17T01:16:09.528767+00:00",
       "earliest_report": "2026-11-17T01:13:33+00:00",
-      "last_updated": "2026-11-17T08:10:57.951105+00:00",
+      "last_updated": "2026-11-17T13:15:54.937605+00:00",
       "words": [
+        "behind",
         "binance",
         "credit-card",
         "crypto-steal",
         "detail",
+        "doj",
         "eth",
+        "ether",
+        "follow",
         "funds",
         "hack",
         "inject",
         "major",
         "maliciou",
         "malware",
+        "million",
+        "move",
+        "record",
         "script",
+        "seizur",
         "transferr",
         "unknown",
         "usd",
         "wallet",
         "websit"
       ],
-      "amounts": [],
+      "amounts": [
+        63.0
+      ],
       "old_clues": [],
       "sources": [
         {
@@ -20997,6 +21007,17 @@
           "found_at": "2026-11-17T08:10:57.951105+00:00",
           "summary": "2,879 $ETH (5,273,862 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
           "factor": "B2"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Hackers behind record Binance breach move $63 million in ether following DOJ seizures",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQllHTTFzTmlhVkVaOGh5bnM5UTNyejh0WG5TZWpsYi1OMXFuRTRGejZDX2Z5Z0syVC1uUy1UUVF5UGtEWF9hWTF5RjU4TGZUNEE1WkVWS191UjFQdXVlTW4yMXR2MTJhU0RIeVpWYXBhWVNQNzNpaHA0X1lMcFc0VHhLWWRlQUJDUXBMR0pKQ3FXTkFjam1kc3pvYmt3SEdMd2tHZ0JmYlA3TktNYU81Z0s2dDVUay1jUmxUSVA3MA?oc=5",
+          "published": "2026-11-17T09:21:19+00:00",
+          "found_at": "2026-11-17T13:15:54.937605+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -21039,6 +21060,10 @@
         {
           "time": "2026-11-17T08:10:57.951105+00:00",
           "note": "another report from Whale Alert (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-17T13:15:54.937605+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": {
@@ -23731,14 +23756,14 @@
     "GOLD-20261117": 4
   },
   "last_run": {
-    "run_time": "2026-11-17T13:10:56.699351+00:00",
+    "run_time": "2026-11-17T13:15:54.937605+00:00",
     "test_mode": false,
-    "stories": 151,
-    "off_topic": 74,
-    "repeats": 77,
+    "stories": 154,
+    "off_topic": 75,
+    "repeats": 78,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
