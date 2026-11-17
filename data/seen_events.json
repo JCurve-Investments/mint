@@ -18245,14 +18245,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 2,
           "wrong": 0,
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "first day not over yet - 2 of 2 clear price checks went the predicted way (3 of 9 checks done)",
+        "effect": "right",
+        "effect_reason": "predicted down: 2 of 2 clear price checks went the predicted way (so far: 4 of 9 checks done)",
         "impact": {
           "peak": -1.32,
           "peak_hours": 5.0,
@@ -18278,6 +18278,12 @@
           "price": 64879.58,
           "move": -0.12,
           "time": "2026-11-16T17:57:03+00:00",
+          "verdict": "flat"
+        },
+        "d1": {
+          "price": 64651.4,
+          "move": -0.48,
+          "time": "2026-11-17T07:57:03+00:00",
           "verdict": "flat"
         }
       },
@@ -18353,7 +18359,8 @@
       },
       "telegram": {
         "first_sent_at": "2026-11-16T08:01:41.470578+00:00",
-        "sent_state": "context"
+        "sent_state": "context",
+        "result_sent": "2026-11-17T08:10:57.951105+00:00"
       }
     },
     {
@@ -20092,7 +20099,7 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-17T01:16:09.528767+00:00",
       "earliest_report": "2026-11-17T01:13:33+00:00",
-      "last_updated": "2026-11-17T08:05:43.299429+00:00",
+      "last_updated": "2026-11-17T08:10:57.951105+00:00",
       "words": [
         "binance",
         "credit-card",
@@ -20169,6 +20176,39 @@
           "found_at": "2026-11-17T08:05:43.299429+00:00",
           "summary": "12,000 $ETH (21,959,569 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
           "factor": "B2"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "12,000 $ETH (21,956,113 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "link": "https://t.me/whale_alert_io/104936",
+          "published": "2026-11-17T08:06:27+00:00",
+          "found_at": "2026-11-17T08:10:57.951105+00:00",
+          "summary": "12,000 $ETH (21,956,113 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "12,000 $ETH (21,960,282 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "link": "https://t.me/whale_alert_io/104937",
+          "published": "2026-11-17T08:07:27+00:00",
+          "found_at": "2026-11-17T08:10:57.951105+00:00",
+          "summary": "12,000 $ETH (21,960,282 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "2,879 $ETH (5,273,862 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "link": "https://t.me/whale_alert_io/104938",
+          "published": "2026-11-17T08:10:47+00:00",
+          "found_at": "2026-11-17T08:10:57.951105+00:00",
+          "summary": "2,879 $ETH (5,273,862 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -20198,6 +20238,18 @@
         },
         {
           "time": "2026-11-17T08:05:43.299429+00:00",
+          "note": "another report from Whale Alert (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-17T08:10:57.951105+00:00",
+          "note": "another report from Whale Alert (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-17T08:10:57.951105+00:00",
+          "note": "another report from Whale Alert (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-17T08:10:57.951105+00:00",
           "note": "another report from Whale Alert (Telegram) - same event, no new alert"
         }
       ],
@@ -20533,14 +20585,14 @@
     "BTC-20261117": 2
   },
   "last_run": {
-    "run_time": "2026-11-17T08:05:43.299429+00:00",
+    "run_time": "2026-11-17T08:10:57.951105+00:00",
     "test_mode": false,
-    "stories": 30,
-    "off_topic": 21,
-    "repeats": 8,
+    "stories": 37,
+    "off_topic": 23,
+    "repeats": 11,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 1,
+    "updates_ignored": 3,
     "changes": {
       "confirmed": 0,
       "context": 0,
