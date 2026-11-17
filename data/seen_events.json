@@ -23009,16 +23009,24 @@
       "proof_reason": "reliable source: Bloomberg",
       "first_seen": "2026-11-17T10:55:45.304753+00:00",
       "earliest_report": "2026-11-17T05:20:00+00:00",
-      "last_updated": "2026-11-17T10:55:45.304753+00:00",
+      "last_updated": "2026-11-17T15:05:42.662967+00:00",
       "words": [
         "14-month",
         "gold",
         "inflation",
+        "kitco",
         "low",
         "near",
+        "one-year",
         "persist",
         "pressure",
-        "steadi"
+        "report",
+        "retail",
+        "sales",
+        "slow",
+        "steadi",
+        "trad",
+        "u.s"
       ],
       "amounts": [],
       "old_clues": [],
@@ -23033,6 +23041,17 @@
           "found_at": "2026-11-17T10:55:45.304753+00:00",
           "summary": "",
           "factor": "G3"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold trades near one-year low as U.S. retail sales slow - Kitco AM Report",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNVBMcGpQbmJMNUNTUmt3NkVvVm1TU3JGZ1lEVDFZeXB3cjdsb05lckt1NDAwakNiaVh0cDdYMHF5WGU3VDV6NUE2NXlCZWFFTEJRSUNSN05HRTM5aXJDV2ROTktwbWFCRmZPVjZpM2YyNnhPVmNYVHoxT3Nyb0huY2xrSWRjRTFGNlp3SkJwUFRfdTBrUXFGeFBha1hvUDVZeW9WaTFXRmM3TVlCTWNNa2JB?oc=5",
+          "published": "2026-11-17T13:54:57+00:00",
+          "found_at": "2026-11-17T15:05:42.662967+00:00",
+          "summary": "",
+          "factor": "G3"
         }
       ],
       "history": [
@@ -23043,6 +23062,10 @@
         {
           "time": "2026-11-17T10:55:45.304753+00:00",
           "note": "new -> context: Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Bloomberg)"
+        },
+        {
+          "time": "2026-11-17T15:05:42.662967+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": null,
@@ -24077,14 +24100,14 @@
     "GOLD-20261117": 5
   },
   "last_run": {
-    "run_time": "2026-11-17T15:01:34.839578+00:00",
+    "run_time": "2026-11-17T15:05:42.662967+00:00",
     "test_mode": false,
-    "stories": 96,
-    "off_topic": 42,
-    "repeats": 54,
+    "stories": 155,
+    "off_topic": 70,
+    "repeats": 84,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
@@ -24116,8 +24139,7 @@
           "Alert: Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
           "Alert: Gold inches up from over one-year low, Fed outlook caps gains",
           "Alert: India gold market update: Gold demand gets festive boost",
-          "Alert: Gold Remains Pressured by Fed Rate-Hike Bets",
-          "1 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: Gold Remains Pressured by Fed Rate-Hike Bets"
         ]
       }
     }
