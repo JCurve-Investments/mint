@@ -12417,7 +12417,7 @@
           "verdict": "right"
         },
         "effect": "right",
-        "effect_reason": "predicted down: 7 of 7 clear price checks went the predicted way (so far: 7 of 9 checks done)",
+        "effect_reason": "predicted down: 8 of 8 clear price checks went the predicted way (so far: 8 of 9 checks done)",
         "impact": {
           "peak": -14.68,
           "peak_hours": 62.6,
@@ -12428,8 +12428,8 @@
           "text": "Clear impact: Bitcoin fell up to 14.7% (after 2.6 days). Still in the predicted direction after 5.0 days (-12.7%)."
         },
         "checks": {
-          "done": 7,
-          "right": 7,
+          "done": 8,
+          "right": 8,
           "wrong": 0,
           "total": 9
         },
@@ -12474,6 +12474,12 @@
           "price": 65201.85,
           "move": -11.15,
           "time": "2026-11-15T23:24:19+00:00",
+          "verdict": "right"
+        },
+        "d5": {
+          "price": 64048.47,
+          "move": -12.72,
+          "time": "2026-11-17T11:24:19+00:00",
           "verdict": "right"
         }
       },
@@ -22288,10 +22294,10 @@
     "GOLD-20261117": 4
   },
   "last_run": {
-    "run_time": "2026-11-17T11:31:21.306636+00:00",
+    "run_time": "2026-11-17T11:35:47.912784+00:00",
     "test_mode": false,
-    "stories": 37,
-    "off_topic": 23,
+    "stories": 38,
+    "off_topic": 24,
     "repeats": 14,
     "new_events": 0,
     "joined": 0,
