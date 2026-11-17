@@ -7324,21 +7324,15 @@
           "time": "2026-11-10T05:35:00+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -6.41,
-          "time": "2026-11-17T00:29:30+00:00",
-          "hours": 167.9,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 6,
+          "done": 9,
+          "right": 7,
           "wrong": 1,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
-        "effect_reason": "predicted down: 6 of 7 clear price checks went the predicted way (so far: 8 of 9 checks done)",
+        "effect_reason": "predicted down: 7 of 8 clear price checks went the predicted way",
         "impact": {
           "peak": -7.83,
           "peak_hours": 117.4,
@@ -7383,6 +7377,12 @@
           "move": -7.27,
           "time": "2026-11-15T00:35:00+00:00",
           "verdict": "right"
+        },
+        "d7": {
+          "price": 3842.52,
+          "move": -6.41,
+          "time": "2026-11-17T00:35:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -7425,7 +7425,8 @@
       },
       "telegram": {
         "sent_state": "context",
-        "result_sent": "2026-11-11T00:45:46.912986+00:00"
+        "result_sent": "2026-11-11T00:45:46.912986+00:00",
+        "final_sent": "2026-11-17T00:45:50.213943+00:00"
       },
       "analysis": {
         "by": "AI (Groq)",
@@ -19381,14 +19382,14 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 1,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (2 of 9 checks done)",
+        "effect_reason": "first day not over yet - 1 of 1 clear price checks went the predicted way (3 of 9 checks done)",
         "impact": {
           "peak": -1.08,
           "peak_hours": 1.5,
@@ -19402,6 +19403,12 @@
           "price": 64862.88,
           "move": -0.43,
           "time": "2026-11-16T19:32:01+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 64554.36,
+          "move": -0.9,
+          "time": "2026-11-17T00:32:01+00:00",
           "verdict": "flat"
         }
       },
@@ -19792,6 +19799,209 @@
         "first_sent_at": "2026-11-17T00:25:48.376101+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261116-06",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "MIT Brothers Cleared of Charges in $25 Million Crypto Case",
+      "state": "rejected",
+      "state_reason": "Decision agent: The event is new but its impact on Bitcoin is low and the price already moved, so no alert is needed",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg, Reuters",
+      "first_seen": "2026-11-17T00:45:50.213943+00:00",
+      "earliest_report": "2026-11-16T22:09:57+00:00",
+      "last_updated": "2026-11-17T00:45:50.213943+00:00",
+      "words": [
+        "brother",
+        "case",
+        "charge",
+        "clear",
+        "crypto",
+        "cryptocurrency",
+        "hack",
+        "judge",
+        "million",
+        "mit",
+        "mit-educat"
+      ],
+      "amounts": [
+        25.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "MIT Brothers Cleared of Charges in $25 Million Crypto Case",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPckIwQjFMRmlqWlZFcmx5WDBDRVVvai1rVEZRZjd1eE1ja3NjTHZ6M20wUU1Md1Y4SUpJbFVVTkJDSVhETnFSZ1pnMEx0S18tWEpMOHQ3Y1hKN0UtcW1GalROMFAtYzlUUy1iVUdISWxUY0ptRGhqYl9KdDZNMWVCMXV4THpFSGwwQnpBLUxnMmlJUFVPeDZ1a2lsQXBaZUhfLWRMUWJ5M1lGd2JaTXpKbGxBZw?oc=5",
+          "published": "2026-11-16T22:09:57+00:00",
+          "found_at": "2026-11-17T00:45:50.213943+00:00",
+          "summary": "",
+          "factor": "B1"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
+          "published": "2026-11-16T22:38:46+00:00",
+          "found_at": "2026-11-17T00:45:50.213943+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-17T00:45:50.213943+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-17T00:45:50.213943+00:00",
+          "note": "another report from Reuters (same amount of money and shared key words)"
+        },
+        {
+          "time": "2026-11-17T00:45:50.213943+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg, Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-17T00:45:50.213943+00:00",
+          "note": "confirmed -> rejected: The event is new but its impact on Bitcoin is low and the price already moved, so no alert is needed"
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-16",
+        "date_evidence": "Both articles published on 2026-11-16 report the brothers were cleared of charges",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Legal outcomes have historically pushed Bitcoin lower",
+        "alert_title": "MIT brothers cleared in crypto case",
+        "alert_message": "A US judge cleared MIT\u2011educated brothers of a $25\u202fmillion cryptocurrency theft case. Bitcoin fell 1.1% after the news, showing market sensitivity to legal events.",
+        "why_it_matters": [
+          "Legal case resolution may affect crypto sentiment",
+          "Shows market reacts to lawsuit news"
+        ],
+        "reason": "The event is new but its impact on Bitcoin is low and the price already moved, so no alert is needed",
+        "time": "2026-11-17T00:45:50.213943+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 65285.15,
+        "start_time": "2026-11-16T22:00:00+00:00",
+        "moved_before_mint": -1.12,
+        "delay_hours": 2.6,
+        "h1": {
+          "price": 65275.13,
+          "move": -0.02,
+          "time": "2026-11-16T23:09:57+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -1.12,
+          "time": "2026-11-17T00:29:40+00:00",
+          "hours": 2.3,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (1 of 9 checks done)",
+        "impact": {
+          "peak": -1.12,
+          "peak_hours": 2.3,
+          "faded_hours": null,
+          "against": -0.02,
+          "against_hours": 0.8,
+          "until_hours": 2.3,
+          "text": "Clear impact: Bitcoin fell up to 1.1% (after 2 h). Still in the predicted direction after 2 h (-1.1%)."
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "Past similar legal actions that were negative (bans or lawsuits) made Bitcoin fall 1\u20115% the next day; we have no direct past example of a case being dismissed.",
+        "similar": [
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261110-01",
+            "date": "2026-11-10",
+            "title": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+            "d1": -1.48,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261112-05",
+            "date": "2026-11-12",
+            "title": "India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+            "d1": -5.97,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261112-08",
+            "date": "2026-11-12",
+            "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
+            "d1": -4.57,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.45,
+          "down": 3.95
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Two MIT brothers were cleared of charges in a $25\u202fmillion crypto case, which removes a legal cloud over the industry.",
+        "what_past_events_show": "Past similar legal actions that were negative (bans or lawsuits) made Bitcoin fall 1\u20115% the next day; we have no direct past example of a case being dismissed.",
+        "direction": "up",
+        "why": [
+          "Good legal news eases fear and can boost demand.",
+          "The market usually reacts positively when a lawsuit is dropped."
+        ],
+        "watch_next": "If regulators announce new lawsuits or bans, the upside could be limited; further clearances would make the rally stronger.",
+        "confidence": "low",
+        "confidence_reason": "only 0 of 5 similar past events moved this way",
+        "time": "2026-11-17T00:45:50.213943+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-17T00:46:04.764103+00:00",
+        "sent_state": "rejected"
+      }
     }
   ],
   "counter": {
@@ -19815,27 +20025,27 @@
     "GOLD-20261115": 3,
     "BTC-20261115": 2,
     "GOLD-20261114": 2,
-    "BTC-20261116": 5,
+    "BTC-20261116": 6,
     "GOLD-20261116": 2
   },
   "last_run": {
-    "run_time": "2026-11-17T00:40:54.066392+00:00",
+    "run_time": "2026-11-17T00:45:50.213943+00:00",
     "test_mode": false,
-    "stories": 21,
-    "off_topic": 19,
-    "repeats": 2,
-    "new_events": 0,
-    "joined": 0,
+    "stories": 23,
+    "off_topic": 18,
+    "repeats": 3,
+    "new_events": 1,
+    "joined": 1,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -19843,6 +20053,7 @@
           "Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
           "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
           "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
+          "Being checked: MIT Brothers Cleared of Charges in $25 Million Crypto Case (reliable source: Bloomberg, Reuters)",
           "US stock market (Nasdaq) fell -2.49% on its last day"
         ]
       },
