@@ -19342,8 +19342,8 @@
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "still inside the 33 hours window (biggest move so far -0.5%)",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 33 hours (biggest -0.5%)",
         "impact": {
           "peak": -0.08,
           "peak_hours": 2.5,
@@ -19374,10 +19374,11 @@
           "peak_hours": 33.0,
           "held_hours": 0.0,
           "checked_until": 33.0,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 33 hours window (biggest move so far -0.5%)",
-          "size": null
+          "verdict": "no_clear_move",
+          "final": true,
+          "text": "no clear move either way within 33 hours (biggest -0.5%)",
+          "size": null,
+          "opposite": "no_clear_move"
         },
         "old_effect": "wrong",
         "d2": {
@@ -19470,7 +19471,8 @@
       "telegram": {
         "first_sent_at": "2026-11-16T10:56:04.628783+00:00",
         "sent_state": "context",
-        "result_sent": "2026-11-16T12:40:58.012614+00:00"
+        "result_sent": "2026-11-16T12:40:58.012614+00:00",
+        "verdict_sent": "2026-11-17T20:40:58.575796+00:00"
       }
     },
     {
@@ -24931,7 +24933,7 @@
     "GOLD-20261117": 9
   },
   "last_run": {
-    "run_time": "2026-11-17T20:35:43.683650+00:00",
+    "run_time": "2026-11-17T20:40:58.575796+00:00",
     "test_mode": false,
     "stories": 137,
     "off_topic": 61,
