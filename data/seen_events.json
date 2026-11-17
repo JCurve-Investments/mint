@@ -23454,6 +23454,218 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-17T10:56:22.936539+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261111-07",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Why Goldman Sachs is changing its Fed interest-rate forecast",
+      "state": "summary",
+      "state_reason": "first reported 145 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (reliable source: MarketWatch)",
+      "proof": "news",
+      "proof_reason": "reliable source: MarketWatch",
+      "first_seen": "2026-11-17T12:05:43.973510+00:00",
+      "earliest_report": "2026-11-11T10:37:00+00:00",
+      "last_updated": "2026-11-17T12:05:43.973510+00:00",
+      "words": [
+        "chang",
+        "fed",
+        "forecast",
+        "goldman",
+        "interest-rate",
+        "sachs"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "MarketWatch",
+          "kind": "news",
+          "site": "marketwatch.com",
+          "title": "Why Goldman Sachs is changing its Fed interest-rate forecast",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTGdtTE91eW54djJTX0RfbklOYmhXbWpkNW5VZHNsX2ZtRGhIZDRaUEZSbDBqSzdScl9YNlZMbkZFOGZ3dzVGZmwtUVpBNkhMNXp5YUQ0eEFFWVJ1X3ZwOU84WUhObzlBOWItSDFWZzRwYU5pb3RxOFlMczhYWXYweVZrSjVmWWNiQjZMRHpzTWh6alFhUWF2cUcwZXJzVWhodUtpall0NWU2aWt3V19BSjNGVllGYkJyd2pn?oc=5",
+          "published": "2026-11-11T10:37:00+00:00",
+          "found_at": "2026-11-17T12:05:43.973510+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-17T12:05:43.973510+00:00",
+          "note": "new event, first report by MarketWatch"
+        },
+        {
+          "time": "2026-11-17T12:05:43.973510+00:00",
+          "note": "new -> summary: first reported 145 hours ago - older than the 48-hour alert window, so it goes in the weekly summary (reliable source: MarketWatch)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 4037.7,
+        "start_time": "2026-11-11T11:00:00+00:00",
+        "moved_before_mint": -4.52,
+        "delay_hours": 145.5,
+        "h1": {
+          "price": 4033.05,
+          "move": -0.12,
+          "time": "2026-11-11T11:37:00+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 3997.24,
+          "move": -1.0,
+          "time": "2026-11-11T15:37:00+00:00",
+          "verdict": "right"
+        },
+        "h10": {
+          "price": 3977.91,
+          "move": -1.48,
+          "time": "2026-11-11T20:37:00+00:00",
+          "verdict": "right"
+        },
+        "d1": {
+          "price": 3945.1,
+          "move": -2.29,
+          "time": "2026-11-12T10:37:00+00:00",
+          "verdict": "right"
+        },
+        "h36": {
+          "price": 3876.18,
+          "move": -4.0,
+          "time": "2026-11-12T22:37:00+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3880.13,
+          "move": -3.9,
+          "time": "2026-11-13T10:37:00+00:00",
+          "verdict": "right"
+        },
+        "h84": {
+          "price": 3794.0,
+          "move": -6.04,
+          "time": "2026-11-14T22:37:00+00:00",
+          "verdict": "right"
+        },
+        "d5": {
+          "price": 3857.43,
+          "move": -4.46,
+          "time": "2026-11-16T10:37:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -4.52,
+          "time": "2026-11-17T11:54:30+00:00",
+          "hours": 145.3,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 8,
+          "right": 8,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 6 hours window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -6.27,
+          "peak_hours": 83.4,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.4,
+          "until_hours": 145.3,
+          "text": "Clear impact: Gold fell up to 6.3% (after 3.5 days). Still in the predicted direction after 6.1 days (-4.5%)."
+        },
+        "result": {
+          "start_price": 3855.38,
+          "start_time": "2026-11-17T12:05:43.973510+00:00",
+          "threshold": 0.46,
+          "window_hours": 5.5,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 6 hours window (biggest move so far -0.0%)",
+          "size": null
+        },
+        "old_effect": "right"
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "past events",
+        "reason": "1 similar past event(s): gold rose after 0 and fell after 1 (average 1-day move -0.5%)",
+        "similar": [
+          {
+            "id": "GOLD-20261110-03",
+            "date": "2026-11-10",
+            "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
+            "d1": -0.54,
+            "d7": null,
+            "peak_hours": 103.9,
+            "source": "MINT",
+            "score": 0.53
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.53
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-17T12:05:58.273237+00:00",
+          "low": -0.32,
+          "mid": -0.54,
+          "high": -0.76,
+          "window_hours": 5.5,
+          "probability": 0.62,
+          "agree": 1,
+          "similar": 1,
+          "basis": "1 of 1 similar past events moved this way (typical move 0.5%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.13,
+          "threshold": 0.46,
+          "floor": 0.46,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "quiet: 0.7x a normal day (moves are less reliable)",
+            "buy_sell": "55% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "disagrees: buy/sell"
+          ],
+          "rule_votes": {
+            "up": 0,
+            "down": 0.53
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Goldman Sachs updated its forecast for Fed interest rates, hinting that rates may stay higher or rise, which can make gold less attractive.",
+        "what_past_events_show": "A similar Goldman Sachs warning about higher inflation and possible rate hikes on 2026-11-10 saw gold fall about 0.5% the next day.",
+        "direction": "down",
+        "why": [
+          "A hawkish forecast points to higher or longer\u2011lasting rates, hurting gold\u2019s appeal.",
+          "Gold has no interest, so higher rates make bonds and cash more attractive."
+        ],
+        "watch_next": "If the Fed later announces a surprise rate cut or a more dovish stance, the impact on gold could be reduced.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-17T12:05:43.973510+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-17T12:06:00.214753+00:00",
+        "sent_state": "summary"
+      }
     }
   ],
   "counter": {
@@ -23467,7 +23679,7 @@
     "GOLD-20261106": 8,
     "GOLD-20261107": 2,
     "GOLD-20261110": 6,
-    "GOLD-20261111": 6,
+    "GOLD-20261111": 7,
     "BTC-20261111": 4,
     "BTC-20261112": 8,
     "GOLD-20261112": 7,
@@ -23483,18 +23695,18 @@
     "GOLD-20261117": 4
   },
   "last_run": {
-    "run_time": "2026-11-17T12:01:30.515758+00:00",
+    "run_time": "2026-11-17T12:05:43.973510+00:00",
     "test_mode": false,
-    "stories": 147,
-    "off_topic": 70,
-    "repeats": 77,
-    "new_events": 0,
+    "stories": 156,
+    "off_topic": 76,
+    "repeats": 79,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
       "context": 0,
-      "summary": 0,
+      "summary": 1,
       "old": 0,
       "expired": 0,
       "watch": 0
