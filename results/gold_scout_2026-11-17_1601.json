@@ -1,0 +1,2406 @@
+{
+  "scout": "gold",
+  "run_time": "2026-11-17T16:01:40.662050+00:00",
+  "test_mode": false,
+  "calendar": {
+    "notes": [
+      "Fed calendar read from official site (54 meetings found)",
+      "Jobs/inflation calendar read from official site (48 releases found)"
+    ],
+    "upcoming": [],
+    "warnings": []
+  },
+  "weekly_news": [
+    {
+      "id": "G1",
+      "name": "US dollar",
+      "kept": [],
+      "rejected": [
+        {
+          "title": "iShares Russell 2000 ETF Overview (IWM) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Nd1RjUkVRMy16bDdaRzJQZXZraWR5U1A2UC1SOVc1YV9QVUt0dmpVOFJVYkxaSkMwQ1V3bjhrWVdlTXdnaFZXS19nbDRYeVJwODE4bjZkMmw?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Indonesian Rupiah/Canadian Dollar Overview (IDRCAD) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA0dTdLemQwRFExeTJrRGpfV0wtaFBadlh3bkk1WE5vS2JTNDQtM2NCcVYxblI2bzZERDNpRWdmaFY3enVZOVJZZ2tmSFBzRHM1WTBkUW1vQUxkX0pQVi05OENKQQ?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin Slumps Below $70,000. Robinhood, Coinbase, and Other Crypto Stocks Follow It Down. - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTV80VkdRSEwyNVd4aEsxc0ljT2V0ekpnR3BOZ0l2TlpRT1ZVY1dva2YweDQ1N3MzZUI4c0h3YjBDTW12X1FLVUpOdWpOSjNqR3RUSkxVTTdDUVhLWGlEeVczay1MbkhiczgxNnpVRGxCcENSNzZCSzNySEQyUlVrcWdsYXprMmVIY25qcFBjTTJ0ams?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "G2",
+      "name": "Interest rates and Fed decisions",
+      "kept": [],
+      "rejected": [
+        {
+          "title": "The 60/40 Portfolio Is Having a Disappointing Year. Blame Bonds. - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSS1ZaXNmUXJNWFVaMTUzX05yQ2dXeGtpaExETlhDZEVtRUZSSXh6UTZxM3RRQlJzLTVlaGZOOGJKUEV1bzdpWlE4SVk3RDJRTGpfOWluOWVvWFByTHZJSW5QNmF1TVpkSUtKd1R3QjhheW9xcWR1eUFjVWctUDM0OEFhNS0xWHBCaV9DT3hJLWNHLXdld0VCbm9jdVJBZGkwUzNSdm05dw?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Consumer Spending in Emerging Markets Has a Dark Side: Big Debt - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQUFZN0VrU2dteS1xc2lsSXdjeVFlZmNuejNWcjVDcjUtOU9IcGRaR3hFSEVtR1RZOUNCRl9FNzctTXptalh1YU1KQ2lINWdzM2dhR3BnMUxhNEIzN2xKVWhONjNycHlwbEVqTGhvcEo3eDcyWUdCSDVkdmFyOHRQbXZiR1RFdlQ2cUYxdVAwdS1uWUU?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Rising Yields Don\u2019t Scare This Veteran Bond Manager. What She\u2019s Buying Now - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUjZBQkt4MEg1bjBiSlZZYVE2bjA1eV9VNkQwYUlrSE01VFZsXzFDbHkxLUk5OVBiaWJESjBpRVVJR2RGVHhvQ0pRTHB6WjQxQ2EyVHdJUHVQeE1fdE5KYU1jZFN4b2FMVFpEOXRycm1idnhBTTM4MjhmcFdrNVZZOS1Udk1OcHBsbkxPUDFYb0tyWjVoRVBMMkl3OW5tR3FJTFRSbnBEdVZaWmpTektwblJhT1BLZw?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Review & Preview: Hot Inflation - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVHh4eDF2STZxSHlwTVpDZnNKTERhVGg4MUxWbFdzSjN3and1dExzSTgxSmlKQkRfQ1lUUDNoOFFSMkxYb2hCcFpiWnIxaWs2SDZES19TaHBUbFg1VUdjdENyOFByYmtscTBhQzZmYUx4QVFuNEppQXVadkcwQUlrZ2FZZXZ2T0NIQXVXeW1uM1k5VUE?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Economics - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54SnA2dEtHX0ZIbmFnbGJ3TEI0WndoWVk4bUJtS1dyN1dQVG93OElzeGktRkZCWGRRRkdMWUxpVk1XemtXcTEzNXF1QWV2T2d1bWc?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Banks - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5kVzRhRGxLa0RRVFU3all2eG9TeTRYT1VEZzFlQmdrcDNLdmVFdEY1a29ZN0JUS2MxWENtbjR6aHJnckQxb3FVaWdqVU4?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Cartier Owner and 2 More Luxury Stocks to Buy as Sector Slumps - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRnpKdkpMcEE4emI3bzhVdGxWbktSdVY1bWZIMHpja0dYak5HY3c3eGJZaFYzTG5EbjVOcHNpRDViRHlkRjBmZl84OXFvSzhleTN4bVE2NnAyOUFrQU5qbnRQdEtQQ3Z0aVk3dUM5Rmg3eHM0NWJNV0RDZFpEVzhJLXFEaUszUQ?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Kai-Fu Lee on How AI Can Help Grow a Company\u2019s Earnings - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUTJvbUtKM2dta2NSTDBUOVIzeFJNcjdlOV9UOE1ReFFrZXdfbGkwand1anRvNU5UbHlvbnlOQ3k1dWRLMWJLOHl1b05TZFgyOUNJQ3ptZldaVUZhSlBXOFlJcFF1bDNpbGN2YkVWX3Yxa1RfQzk1dzBra212TGV1RE1ZNVRoZlhNRkZOWktjbmdCUlZyaTBSQzJkRlJabVhJNWRoNkhlOS1fQnNRVVB4Z3hJZmp5TEVCRnAwWlBR?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "British Pound/Thai Baht Overview (GBPTHB) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ZZVVqYkpIajZ5MmlVZGlldmtXYlZBN2dLLS1lSjlWZzE4UGVpNDVjWkRadUgteTZ3NmtWRVdqMHBuN3ZFOHc5bEJWVFhvSWVyR0tBdWVvTlp6dEZyR3VNSUpqUQ?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin Prices Tumble and Bring Coinbase and Strategy Stocks Down With Them - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSDRNd2pTWHJEZDhoRGJ3QkhZM1BBY1NfdEpkR21kWXdRRk51NlJ6bVJ4ZGtyNV9kNjQ1TDZZZkNnUnNLZHpWWFR5aEpBR2pYYmtxTGJtVDdMQVh4a0NoU3RFRTBfYTlIcEdRclNFR2d2aTFVT3JkQkNxM1hyR18zb0tPbzhhMjFxeXc?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin Slumps Below $70,000. Robinhood, Coinbase, and Other Crypto Stocks Follow It Down. - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTV80VkdRSEwyNVd4aEsxc0ljT2V0ekpnR3BOZ0l2TlpRT1ZVY1dva2YweDQ1N3MzZUI4c0h3YjBDTW12X1FLVUpOdWpOSjNqR3RUSkxVTTdDUVhLWGlEeVczay1MbkhiczgxNnpVRGxCcENSNzZCSzNySEQyUlVrcWdsYXprMmVIY25qcFBjTTJ0ams?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "In Taiwan, Jensen Huang's 'Flawless' Image Damaged By Affairs - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPY0h6bzduM3lPbEUyWUxWamNCWjVCRXhhLWNvOTAwWkhfeWFGSFNLTzJMRTlfczk5Z25QMEoxcDJxWEg3c0xjeGs1N3JGY2lyUG5odmVSWnhHSWJ3SXZId1pxTVdqRHBHSWpmOU9HM0Q2SFBFdm1UX08xVllUWk5Ia0xkckNwNTlia2VzcV9qQ04wdTh2dS1iVEYtNDA?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "AI - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB0VEY5ZUlLeXBMWWh1Qk9TNDhDaFR5ZmZaZUFwdlR0Snp5cjJXeU85Z0pLX25BM0xRWWpxd0JIV3RVVUlQQzMyNg?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares Russell 2000 ETF Overview (IWM) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Nd1RjUkVRMy16bDdaRzJQZXZraWR5U1A2UC1SOVc1YV9QVUt0dmpVOFJVYkxaSkMwQ1V3bjhrWVdlTXdnaFZXS19nbDRYeVJwODE4bjZkMmw?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "FIG | Figma Inc. Cl A Stock Overview (U.S.: NYSE) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9JNUJoQTBNWXlXcnlacTlGS3NPVkFYZzVhMlV1Y1dqVjN6ZXhUaXFWRXJKTjNOcHFuVWNwSWd4eGdBXzZHWEhndzBNX2FHV3ZqQmZkN2RXMmFudw?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "SPCE | Virgin Galactic Holdings Inc. Stock Overview (U.S.: NYSE) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pM1BFYWxadTBoelVUeFVtZVBWdWFkRy1ncXZfc2h6QWlweGdxQ25wVFNYTkRLWk1Ja0VCYm9TbXNfQml5eFBIdURDOVVBUnR4N3pqc01vRU5yYjA?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares Latin America 40 ETF Overview (ILF) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WTU5oY1pQeGtTeUJNQ0IycXJrUDZlclRKNThUQ1pTa19RNWdocDV6VWZrbEZ3SFpaMUk4VS1KN09TRThheC05TEtuam5OSkZnVGFLV3NweUc?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "G4",
+      "name": "Central bank buying",
+      "kept": [
+        {
+          "title": "Gold reserve repatriations don\u2019t mean central banks are de-dollarizing \u2013 Fed\u2019s Weiss - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1dmX2w5RWs0ZHd3cEtEVmFDZ1VKOXNVdmJFb0QtV2hKX282RmMxTldrNlVoam5XUmJBR0NxWHNCeXVtUHhMR2l4S0N0bWhFZnJ4bl9aWUpGbTBIR1FzWXlBb3BQc0ZUUnhRejVDTTJJejdVcGxYY2J5ZEFwSGdpTU9Ub3RrT3RYTU41NjZ4QmlmOVZ1SFJaVG1BMHNwXy1jYzZZVWVQdHplME1ZaGdGV29wM1kwSjUtSHlFMg?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-10T16:05:46+00:00",
+          "age_hours": 167.9
+        },
+        {
+          "title": "Goldman Sachs cuts year-end gold price target to $4,150/oz, 2027 target to $4,800/oz - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQkZKMk5lUVlMdkdFWlJNOUE2UFI1Yk50NHRsZmNwV1kyeEF4eENvVmR3MDNUV1RVbElwc3ZGbXd0OGhRckZ2QTI3Q0NqRFNhSWM4U1NrVUhSVW1FaEVzdGx6N05lTUV3bWJFX0x2YlAtcktKT3U5MHNFcUV4M0pIZTNLbzNmZXNoSF9IMi1EOG1ybXVWQjVFVkhIeDd0LXU0b05fNnZmWTBYSVItTTZFMzUyWXNpZjhF?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-13T15:25:53+00:00",
+          "age_hours": 96.6
+        },
+        {
+          "title": "Goldman Forecasts Gold to Take Two Years to Recapture All-Time Highs - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNczF1RXhsRmNwczFILVk5SGZNMVhVeERCSHJkOS1OdDFNcndMcHk0ZTUxVVc0QXNUd0lCZEVqYmxfOGV5eGpsMEhnMGpRWUhLVEJqdWQ1MExqZUxMcjQ1S1h1LWx5QzBDVzkyY3BYQVk1Y2VkSnIyOWxMOV9tcTdYOU1lSUxCMHVfNFJkTm5vbDFpLUItZnFWMlhfamdvdHZoak9RRG9Xakl6RFBIb29JSkRWRENVM1dlWU1v?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-16T20:15:45+00:00",
+          "age_hours": 19.8
+        },
+        {
+          "title": "Gold sinks to 1-year low as Treasury yields and dollar bite, set for worst year since 2015 - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVkNEMWt0MEpVV2U4c0tCZEQ0N3FJRnBMWEFJRktVNVpBNGZ4RWFjVXA0TnR0VE8yam5OenZaaF9KWVhuc3RCQkZXWGlwb0pPRElEM0JoU0Rsb3BpX2ZTUjBLUG52SUM1V2RkcHRKLVdLR1ZmeXFISlplcTRQU0xJMzZHcFBFbUZPVWtYeGpqbWxKU1gtQjMxZXBMZU5rdldKOTRaWXpNSkZqd3MwajRHUzVvSVI2QTBOb1dJMGc3U3VzdTFP?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "published": "2026-11-16T18:03:06+00:00",
+          "age_hours": 22.0
+        },
+        {
+          "title": "Gold SWOT: Barrick Mining plans U.S. IPO for new gold spin-off - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYy1IeURGRnFmX1dsOUx1Tl93YVRHNkJmM0xiUlMzWEg0TWlYcHYyUTZVZlJ6LVNQRXZsSVZiUmJMUzRsdnQ1Y1VmTTJITnFLd2pwdUxwVHdhTDE3NFRidUllN2pyWXgzLU10X3otZGFsWkFpUkdiR0MwZTVFNGZwWXZvVHhtdWJZblVWbXM1T0drTVN6bWNCQWRn?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-16T18:41:03+00:00",
+          "age_hours": 21.3
+        },
+        {
+          "title": "Gold's drop below $4,000 offers long-term value as WisdomTree sees potential for $4,800 by 2027 - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTTBfZngzcHEwdE1RQ3hVcWI2Rndhb2c1MUVxVElnN1RQb3l6NzNrazk5X0VwVWk2cko5M1VmZzVOYVNfc2tJcGtjYnVVdktuaHZYSzFsU2xPZUM4d1RlRHJ2bWZuZHZaLWFCaU83WmN4bW8xTXlQQk1HdTNkNEdnZ3FMMXdwWWlzLXhZRnNjRFFvenlVTFY0OFNvWG8tNVVPNjlMbU1FOWVPY2g4UWllV2o0dUNsaWQ4NlluYm9R?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-13T21:11:56+00:00",
+          "age_hours": 90.8
+        },
+        {
+          "title": "Turkish Households Buckle Under Gold-Price Slide, Funds Crisis - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVi10UE0yMEdRNGxLamVGY2Iycl9OSXF5WWJTbVFlbm9RbDNKMExPaFRlUGdVdE10RllDaGRaekx3WHZxcF9rV1Q1OFRFSVljNlA1SlliVDBURTk3ZHFyWS0tdzNIVTQxekMwY2kwdEU5ZVNvQmlxcVNSMi1sQjFyek5wcm9SMERad25zQ3FOQlJWTzdCUWRfdWxpTXFienA3dkx0ekhRRzNPYXdMQVFFMDVn?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-17T09:25:23+00:00",
+          "age_hours": 6.6
+        },
+        {
+          "title": "\u2018We believe gold and silver are not simply defensive assets\u2019 \u2013 BlackRock\u2019s Akullian - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY2lPdXhYZUxpMXE1eUd1S01pNVVpZWMzdGxiRnhrWnZOS2xyWTUwcTZDSjB2WmJrM3IxNVpPZGRGNVhqcmY4TXIxNVVJWWd5RlpyNTNxQkxpa0NrYWlqcnRQZE4tWWhtM05rSl91amhsOEhYdDhYTU1FQjdpMks2UGNlbTJ0VHp0RlU2V0s1Sm9UOWlka29kMUxLT2lCUFlYV1NHaWJKV0Zia2t1VmhIU08wbzNBQQ?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-12T19:45:37+00:00",
+          "age_hours": 116.3
+        },
+        {
+          "title": "Gold Holds Drop to Near One-Year Low as Rate-Hike Bets Increase - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT3F2NGZ0c25jVUdYLU1WVFUydUJtUHQwWm9uTHlQbG10SHFHLUpZUndrUzZNR2ZwRFBqMUdKNDQ4NmlnY0dDS2hjR3hkenpsZlo1Q3Q2Q21pV3c4dDRFNmdSTnJPejNNR191a1RxVFd5dDNIYkhrb20wcWRRREFCTHFlOXJ1cXZGRlFLRC0ybWNyS0sxODJoWTBBVlFCZDM3S0tSdm9BREUzSVZnQzRiOXc5OXY?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-13T21:33:54+00:00",
+          "age_hours": 90.5
+        },
+        {
+          "title": "Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800 - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOamVpVk9OcXdFVWlWTFVUTG1xendnVlZLR2NId0llYnVBa3U0UGlnZ3NsV1JMUVhCeEdwT3AwdGgwdF9QYk4wZ3ZFWVpUQjFCblBhYzI0Q1BNc3NONjRiSkpCc1JhQTJfcDVrR2pSOHhya0I1QWhCOEMwdS1UX0hHQTJEY2piYWgzaGRDTWRLV1hJaGJiOHlQdzZiZ2xGQV9fUUtDM2ZESQ?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-13T20:24:26+00:00",
+          "age_hours": 91.6
+        },
+        {
+          "title": "Gold Steadies Near 14-Month Low as Inflation Pressure Persists - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMDI4MEt3a3M4XzFhaC01R3pmSzdkOXZ2ZWhUWjhPb1lOZWZPbjdXTWFydWVFcmZNS21rZGZLUmZ6S21OcXFDUUkyN0NLc3BiZnlCWUJ1QmMxbHh0aWtZUjEzZFBuQng0bkRiVFZxN0pOUUJBQXRqQ0NGTUFZcEtLRUx6NkVWZklRTjhxOTNJMzdVUldYX21ieEFQcDlnTks2NFAxMDBrY1ktNmtlVzZYR2FxRQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-17T12:55:38+00:00",
+          "age_hours": 3.1
+        },
+        {
+          "title": "Gold prices find solid support at $4,000 as Standard Chartered sees rally to $4,650 by year-end - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUllaZWRQc1poVDQzVEh2N3BDSmhHd0ZDMnE0WU8zZi1YUEI3TTg0Yk1LTWJ1UlhzNnlIY0ZRYWdzZkhicGZvRWxBTk9uazE3UERhdE15MUQxR25oOGdkVS1UTEc4aW8yY2U1WDNvdTFBMzNjNmJoeldUOW1UOEVKNzU0UUhZaVprR0dFcHRWV19SR05fV0czM3FkdWdhbFQ0eXBtay1SRi1laFMzRE9RT25Bcy1GMlRHSlhGWU5n?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-11T14:59:53+00:00",
+          "age_hours": 145.0
+        },
+        {
+          "title": "Wall Street bears abound after inflation sours Fed outlook, Main Street abandons bullish bias as gold drops below $3,900/oz - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZ09SOU1XMmZSdkZoVU5iQkdoN1duRHpoNUhqWHlJVVRhd3ozYzFLLXkteml0ZXJoODBvUy1iMDB1Yk9qRy1oSFhfQ296RlBITmhSbzFSRVBVeGZLQ1lXb05ZRmRIVl9PclVZdzVJQ0h0M2JTRnZKUzZndkswa1JNNEtwbjdNMW1IQXZuQ1BDdVJlM0Y2TmRRWnhEUDFVb3FROEZyOFA1ZEdjNjlWbzYxak9QSjNKLVk?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-13T23:00:05+00:00",
+          "age_hours": 89.0
+        },
+        {
+          "title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMTJybnByRUZtMk5uajdEUVROVDJnSmZlQVRsazNHSmZaY0FKMVM0d0tvVnhDdlozdUhuMkx4ZkJZV0IyUDRCMmxtSzF0U3RmWWkxckVJVVVUV1pZczI2dmZfN29TYmN0YkVWMml2X2NJY1liZk1WeWFVdXNHbFpqdHBVWmhMTE4zTHozN2l5ZGFOWVBxWVBzTVB6V3dLeTR5UmlYYTVtN0xJQW5MMTVRdUJn?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-12T11:17:15+00:00",
+          "age_hours": 124.7
+        },
+        {
+          "title": "Singapore wants a bigger slice of the global gold market. Is it too late to the party? - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE54Mk1EZHJhMTJhUy00SHhnLWFzaDljNFpWeXVDalo0eFdkUGtTaGNMUjRIc3BOX291d0JuaExKa1ZpSVRWanFmanlzUnEtdlN3M182and1RVMxRlQzb0VPTGJpSnZ1S196aExWR2ljb3hXMWQxZ1J0ZDQ0VWPSAYIBQVVfeXFMTk9VcnFpTWdQREY1UzVRU0hHUENBWjFPRzlLVkdMcThTczVfMzlXWXA4MXkwRGhaY2loMEVscWI3UnhEc3FUcTFnaUVSeEFlTnkwYlFuUU5YRU1McVhRSDlMRnBBVW9zOHVVMTBSVGNzY1dOZFBsTjIwQUdjbnZPS2pyUQ?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "published": "2026-11-11T02:46:00+00:00",
+          "age_hours": 157.3
+        },
+        {
+          "title": "Gold Futures Slip Back Under $4,000 Level - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdnJBZW5Fem9UUENmZGVOTTlwcnBqUVhocFcwSUtzRlB2aGk5Tk13akZlU3ZEbkNSUEZoeDNTT3hDMzZQWUFVdlBsVDBfV0dpNjk3RUtDTzJ6ZWtOTTB5QkhzY1lEMFBJd2FaenJEaGt3c1I5Tk10U21LbXNXUzl1SHNpZ3ZpbVdualFweXRwX2RDSDhtdm9uWDB0ZUx5TG0xRDQ3bg?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "published": "2026-11-11T19:47:00+00:00",
+          "age_hours": 140.2
+        },
+        {
+          "title": "Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2tORWxkdHRBenRxSW9hSW4wekZsa3Y5VTA0d3A3NTNzTVhMazhTWnNEWlJvMlMzUFIyenNRVl8xWWJaOTdMN2NQVmNsWjhRYUJKWmplRU8zbGthZGQ0R0NlRzFSWmZObzBRSnVNSHFGM3owd2JpTmZHVEkyaEVIS2dLclc3cGZkWXBUSlFoRnpCUTRKdTFrNzNCb2xwUVJic0RoaGgwZzF0ZktCMWc?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-11T20:06:32+00:00",
+          "age_hours": 139.9
+        },
+        {
+          "title": "China buys gold for two straight years as central bank demand remains a key pillar of support - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcnMwUHdaakNobncwZG8wWE41M290UThlMmQxQV84UkRuNThLMDdwcU9JWWVKTVUtN0hiWS1nNDNqYUVocXdYZVdjSlpUN0FjamdpRGtFSmNIbk9ITGl3Q0Q4LTJ0WC1BTW03cDBIaTY5MldITlJDVVlsdVZQZkpqelJfSnpSeF9MWGRnOTZXWndsdmFIVjc5bEVNZ28zWThaaXI4VVVuVWxGbmtVOUZfZ24tdmlZX1RUbTA0?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-10T16:50:34+00:00",
+          "age_hours": 167.2
+        },
+        {
+          "title": "Central banks are exploring Asian gold hubs for safe storage of reserves - DBS - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcnY3Qm9WcHl6ZEhpNWI0dUl3Y0JMY1hNS2ZZclBoQkNrOWs4LTNKcmdWWnYtU2p4cENXZkFieFFadXNmU196SF9tWDJiTDhzUllhaE5fMk50M1pLOFloM1JvQ3ZhSEhYRVk4MmNUV1J2aGhZOHZpX0ZZNWxiMWNONGZiSE5JQmxwYVRoblZTNzdfTnNIYkVwTVJHLWRhOER6Y0lDR0FSSThVbTM4ZjRpSTMyRUdRQQ?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-11T15:44:58+00:00",
+          "age_hours": 144.3
+        },
+        {
+          "title": "Barrick Moves Toward Listing North American Gold Assets With SEC Filing - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaFVDNXJxU3FIanFKdF9EZ2NqNEo2WThvcHRTRFg4ZFktQjI3QWhseXdub2tMRlZqZlZRRGI2Tk13SjVGc0h0WXBDb2xwMTNsQkZhSGNHMDN6eEc3NTZKTXVpTzFTNEk3OV9aMGZiV2ZKQlJKVGV4eGhVbnNSOGIxR09vMW9EZmxyb3N2MUhtcXVBdmNsMjZyZGJ2Vmd6NUdib0V4T29EeldsMmZ2MHc?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "published": "2026-11-11T02:55:00+00:00",
+          "age_hours": 157.1
+        },
+        {
+          "title": "Gold, silver plunge as hotter U.S. inflation raises prospect of larger Fed rate hike - Kitco PM Report - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWjFnYTZXd19NRGpCTENYaVNGRFJjYkkyOWM3ZVZycC1NeV9MTVBvVDBsVE10UGhvZFlzRWg1UkJXTDduSVZ2S25QOXBtTGdyZzB3d1VQc3lUc000d2hQUnU2SFBVbG1vU0pTeW5oTlFEdVJRODBKanAwbWpOeC0xOS1UTEhYUzh3WVRYajY4aU1OTlNmSFpkM3VyZEMxcnBqQXVyU2VNMFdOR3R6RXNITEdPbkJpcWZkNy1Bcjln?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-10T22:10:04+00:00",
+          "age_hours": 161.9
+        },
+        {
+          "title": "Gold Holds Gain Above $4,100 as Lower Oil Eases Inflation Woes - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMWZxX1NKb3NlaFNCOHJlcE1kN2NRZjh0OEVaM3hQS1dQX0t4VkFadURVZzJhVE45Mlk0a2RWajItRjdDdWxBSU1mcWZBYng4cnBFUTNSSWE3VnQyOUE0WnRVWGtpcFNZejlNWlJLelgwNk9hWjRsZ3ZyYU1ERnQ1cS1VRWk5dG1PcUJoU01SeURPQUZoN3RnVEFTM1FkVzRORU9PWUpHN20wYXZpOU9jNGd3?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-10T20:17:23+00:00",
+          "age_hours": 163.7
+        },
+        {
+          "title": "TAG: Schroders ISF Global Gold fund - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qbGRTNGdyTlhBXzJIZ3VvQlpqNEQwYVFHWWx6dFp3UktDUEtlQjhMeVBZa1VrajFsTmswN2xSSmV0OUtyY1c4bG1zMVVVMGVMR2FZZlFzN0c2a1laazFIQlJvSWZqeFZWS0FMdmtR?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-16T21:57:46+00:00",
+          "age_hours": 18.1
+        },
+        {
+          "title": "Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVTRSTldzM0ZRZjRNM2ktRnZjenYwSG5nUkFCdzZQNFlBcDlqcUxJalBxOFJwaGZaX1RldkJrMFl1VUxFdU5iV2RFN2xqMTlqQlk4UGtpVklxVDVYT0VXTHhCTUN0cTFOWXVJcTNqa3ZETnprRXJpQ0lDTXpjUzdBV0t4WUstWDZwRTgtV0NsMGNMRVZWcEJQM2JfVE9oU29OZERJOHR3a3dmVV9nU0ZhUnFKb3ZGRXM?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-13T20:45:15+00:00",
+          "age_hours": 91.3
+        },
+        {
+          "title": "Precious Metals Prices Canada - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBqalFQMEJZcTRGQUUtck45dzl5MEtzYmFhZURNVVU1NnFwcXZuNG9MQnhoenNBc28yV2RHU18wM3BuT3RpRnJPQ0FKbkNzMmlLbWxUUmduQjdPUFpGSkt3?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-16T23:46:34+00:00",
+          "age_hours": 16.3
+        },
+        {
+          "title": "Insights - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5oOVQwd3I4NlY1YzVaVzBLbktIMk5IUWdUU1FuSm5fYi04WERjUnphSDBkOVVFM3NqcGxxUVk4djNRLXFvSktIbDNBZ3l0Sk5o?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-17T13:30:59+00:00",
+          "age_hours": 2.5
+        },
+        {
+          "title": "Gold News - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE5PckNicDdYRXdmbURFeE9fN0xhV1hLb3Brclo0RlJxSjlfamNOZHhnSmd5WGFjQnA5MWNINnNB?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-13T12:00:00+00:00",
+          "age_hours": 100.0
+        },
+        {
+          "title": "Research - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QUWMxeWVLS3BtN0d5eDJ0YjZGal91ZFNhM3QyRnVNOFpWLXlNZE9VdzhkUEZRbjZkYUNQRlE1ZEdIRFBsRmdGcTNjUWl6cHJFQW1KbzFXd0o?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-14T08:00:00+00:00",
+          "age_hours": 80.0
+        },
+        {
+          "title": "Goldman Sees Gold Rising Above $4,600 an Ounce by End-2027 on Central-Bank Buying - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSlVBXzhmaGxmdWNKdV9DRi12cldWdk03NTRybGVMb3BHWkJFLTN1WWI2a0FvS0RaUG94akpnZTdoMGNocTUtZlQ4VHdDQkIyTy1janpLZWhCdXhKS01XWl9ud0NNTHUwQlcyZnlyaloyUko4RW1lMFhGQ2lsWkhDcFMzcUtlSzdYeXA2dERWNjFDRkYyMTdaZWRiYVdkblVsZDZGYXJ0a2NGZktDeXBOc3BDVVN2MEVabl9KbVJudWtkLVpraHdQRnp1clk4VlE5U1phRDFrVVI?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "published": "2026-11-17T10:30:00+00:00",
+          "age_hours": 5.5
+        },
+        {
+          "title": "China gold market update: Robust demand in October | Post by Ray Jia | Insights - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX01TX2R4cG4wLTNVNTBJcWI5UWdhTDdXRi12cVA5N2NoZHJFbkpmZ3d0Smx2WHdMVHozR2NTQUwwYkRLVjVpdVZrZ1NQQ0VlRzNTSm5GX2hCeGhBRlE5eVJCS2xEcTl2dC1GQXZJZlNUbHJxZ09BVkh1bWlUZ05PNndSN2dWLXZUQjNFLUZTRXFtYmktWnpnWl9n?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-17T13:34:10+00:00",
+          "age_hours": 2.5
+        }
+      ],
+      "rejected": [
+        {
+          "title": "India Inc.\u2019s Sudden Craving for Dollars Is a Dangerous Gamble - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOVlTYVg2LUt0NWRHWFVqeUZVcTJlZmxOb3lfNFU3N2RHcjRPMUJDajZRdW15dXpvVi1uR01KQlNkMjJoaEtsamRFeGxMOFZlVkhlRjcyLVREY0VBdm1MaldNNFRhNzJ0eGtrZWgxNVhOSDJlRnVOUk1VZnMtbVNqVVNxVVdlMHpYcTd6OEtXVUZsR2txeDQxRF9YUEZyZFJBN2RpRXZhR201bFVlX09vbkZLOU0?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Retail Crowd Dump Vietnam Stocks for Near 10% Bank-Deposit Rates - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVmJTSU0yOF81bmI0cXZEbTJsaU9IN29iS09hSTczdEdpX08xdzFpb2ExREYxdk1JZDdJTE9xNERHWEYtX0RaNTJNOThBMDBuSm5DQ2ktY2hRNzlQSHZ2SzhQbTFKUEM1VnZNTGEtOHFobU5XdXozUWh4X0dadFR1ZlRxVnR0Mmk2bkFKUjI5ZmJlSWdIZ19qLVNlUFJjYWNuNjk2U3YtY1FKMlNVZXBJcjczMnA?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "For investors, a truly safe haven is hard to find - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQLWhsZ01HeXgxX09FRFotT2JPWlJrSkdGOG9lblVxR1ExM2lPTkh1MExjU2Vfci01ZzI0NzlGSVFXTjBHcUhBdDJ1cVJneU9PNUUxaldjbHRZZndFRFRJYmluVDN0NHlxNUJoVXFWWTdzRG9ScTlITURqMi1wLXN0dFl6ZktNUkVxcVpjVlBhbDYwUQ?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Exclusive | AI Bots Are Using Credit Cards. Banks Are Racing to Keep Up. - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNldJX01OcW9RMkRvR2QxbDljdmNZMGEyVUlnRjkwTWtqbmRsdVZHYnktd0ExUjlOYXFtNXdqcldodFpmemEyQWNfRDZXXzhIUi1DUVI2NFNBczZxdzc2ZWM0eW16bFJSa19PV1ZvSnQ2N1Y0RnJPM2F5R2VTWG1DOVBHNUFjUkhRbWZnYXFEenRMVjJlVlgyOF9JOA?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Equities close lower as Nvidia drop outweighs energy gains - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQY01YWkJBY3Roa2hlWkVsbHhpcHplMm5NX09pWEJlMC1rWTY1ZDJoTUh0elc0WTZvdmpDOXJhS04tN2J5Y0N4NmZPdGk0aUhKdVZLT2RMSTk4S2EyZEJMYzY3WnpMMklfRjF3ZEJXZzU3d1VBTmlWS3Y1cllaYURseVQ4Nl93RFVLOXB4M1J6bnM1YVQ5QXBaSDZCOXEwUQ?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "U.S., Eurozone Bond Yields Rise - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUm1uQmRvQ0wyVFV4VDljWGRaaWZVRDVONmUwc0dlNW9DeF9zMzRtME5KQmxjOHRkemVqeFA4TVBwUnQzLXhIekJ6ODVzOWpTVUZWemlCakw0UUF1RzY2TWJ0MXF2VkpDTHFsVnpSOU1Vd2wzTWN1dS16dGYwM3FDSC1GR0JuNTlXM3hqcjVoRnpaaW1JNkotYmYzalhoRWFYSmNIMFpYLXJSam1xbmhHZTdtTGRNd0hrZnplUDQ0MmMybERQUVd2ZA?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Nvidia Succession Shows Key Part of CFOs\u2019 Jobs: Serving as On-Call CEOs in a Pinch - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbjEzQTBEWmlhdXhxd214bjRkRXlBR09BdGpxMHlkY1d0WVgxcnpuSG83aUpJYmRMQWJFRkZFalV6QlFxTUstaWFzWHJobnhacjlRMUlyZklxSGJMbjg1SHpiVmdFdVp4Zlh6dTRmTU1ZSGFwQ1lkTlB6VFN6QWptdUhkX2tiM2JYUVBuTk9EbFZ2V0dzZUxscVhQNXZWdTRPWVctaXU3RGZlcXFqNG1EUkZSa2NuYkY5NHB0ZU9R?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Jensen Huang\u2019s Exit Will Test AI\u2019s Stocks, and Great-Man Theory - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTHNlYkI5QzVzNy1MVFlBTWRGVHluZTVaLThCRXMwVFVoN2daVURyNFZpSVJHb3VwNEJlcVFWdHgtY2o0a3V5YXE3UGZfVTEtZHpFU3FXMGtYd3BhLV9odEhLSFpOdkN0bXJCakw1dzVaem9TUy0tblo0M3dkdHYtOXRqNWpKejhnNUU3SlBESTI1RGhPVTJiR29FZWJPbFVNSWJIcGRfOA?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Treasury Yields Rise as Inflation Worries Come Back - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdFFJNzZwOHpzaW9aR3UzZlhvemJ6OG9tVkJzbTJaVF9LLVR2bHBMdDl6ZGdCc3VmZzVLT25hRU9CQXhydkpsRWdCWFJidzdtdDVsSy1kWjFhbXR5YlBIeXVtTmxaV000dnduamh3UnNyc09DTDlVRWdHVU5TS2NvekNXeXJlM1ZEVG9LT19Xak54WGV5VjQ3bg?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Zimbabwe Moves to Rebuild Local Bond Market After ZiG Chaos - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYWtnaXgwdGp6NUJQRWJfV0hOaTZROHJTYTdEVmtKd1Ewd1NPSTgzUjNCeDJ4cHNFTFRYZl8yOF9HZFlLdFk0eXYwZFh0QlI1bnhYRk9Bd0lzRUhRRWtZa242NXhQT2tVUmZxY3hQMUxEVTg3UDVBRGR4V2p2WWpaV1ZBSV8tYnhZZjZsRG5jTUhKVFkyYzFYWEMtVWlaU2dSYm9fbmZRQ1BzYnozZXdZSDZ6QldGdUZPZ09GZE9zR04yVDhI?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Brazil inflation remains above goal despite softer-than-expected October reading - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQVJ6a0pya05jUTVhNXlpbmxpTmRsOEFfM0RuT29icFU3WE4yT0ctazV5bEU0R1hpZGRGZXU3LU9DLXhRQVU2aUYxMHVPSkcwcTRsZVRKN1RFS0FMVWxkZHJDVVgteEdWcFpCUXE5TGt4c1g3R3RRcHhjbDlkSFlDY1F4TnZ6SjVzdXk4MDdFSThUV1BnaTdpd2xOVkpkMFN2WWs4QTJKNmtEWTQyUEZtd09sVlhkX1N2YXRKZDMtLVduUC1wdl81MGpVTQ?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "EU Takes Aim at Influencer Marketing, Deceptive Online Tactics With Revamped Rules - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdFJGVXFRaGgxZUFrZHdFY2hoZVIxNTRTLUdFanpBQmZOdGlLVm8yOXcwM2lsb1k0WWYyX2xQU2xxTm9KLWxOeVN1MW5lSDNCc0dZS3JNMTdCTVIzblhiYjRjX2ZzLW9GdldiVXRpSmdZU0pJSU1xT2NaVmpPX29Ob2N2UHhSUjBFMzUzLVBMYlpuM2RFUDlWVWV5RXVOX0RmaTVOeQ?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Funds Warn Brazil $126 Billion Stock Market Rout Isn\u2019t Over Yet - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbGtudWlSQ3hmb0xIWlRJY3g0bEFlRzlXWlV6b0JqY3VnTnZxeDItUFRkMFBXc0tUdEtwOG5GTG5xSHFkOTFZdWZ5Qm93bjJ0VEVzbVV1d25qcHJSVV9lT1h3WUVSdk82WTk3NG9xM2k3bFdtckdZWHh0NEpJN0hGM2U0MFdKVWNsN2s2T01ocnhZNlNNMEtrcENOUUxndFZqcHRTekpnZE1YcHJFVld1aE1Qbw?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "US Treasury Futures Retreat as Markets See More Fed Hikes - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa2hXVmxBejZuMktqMDMzbUNTcDA3ajBFdlE0MlpZc3AyU0ZPeHl0ZjJ3b3BhT2REdlRDVmRYWS05aFVhemtkZmVacFBnWFNXQlg5QjlmREo0VEdHRFFyTXNYR1FqV1VKUlhtVlNsT1ppUDRVQ0FVUTdGTW9FTXdVWWRVN0ZZMXpMNFo1dFBtMzJ4SzNRWHJkWnBlaGZId0x6dXJXSmU0ZW5tczhnc2pUM2Rn?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Behind Bangladesh's garment boom, workers cut food, healthcare as wages fall short - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZkIxMHdCcVF3RFhJV3plaFdBQVllblpmQnlmRnFwMDhsY29malVseUNDOTBfSXJKQi1wZjktUlI4VEN2alJLdUZKcHFQOWJnLTNMN0FYd0dXNG50cHBqTlRFYmxCUHBqcFQ0MGdZcnhOR21GZmpMVUp3VXJlc2toY1Y1Ym5UbmI4cFN0dzg1bURISGVsNzdYUTNQVW1NY0FoQXVXTkpxT3k3cjlzLVBLY3NCTjA5VDMwYWdiMi1FcVlyUktLSkloWjNCUWhGd1Vf?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Canada has not made a decision about lifting Arctic drilling ban, Carney says - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUW5WRWpFVkk3M3ZjNmw3VHNvMHYxX21XNWNnZUhjVUp0My1vS1gtblNzQWhzX0pabDdpUmdhUjN2cG90SGp3bHVyZE9vRklJZEdVUWo0N0hjUkk0X055N1A0S21WbklhZTdpaGF5ejdrMzhHYjVLc2VGWWVyR19WOUJQRkZxME5QMDhvNmtCMEZZYUpzOGFzZkUxYUNGNC1ERjZRYkt5SjlVeHFmSTd2SGVGcV93SUNXQlVXSGpXNS1VV1BrLUVOQzlJNA?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "The best high-yield savings accounts of November 2026: Earn up to 5.0% APY - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PT0ZhaW5qZm5GV0U2MS10anJlSkpDTWxNaFVnejRKeGpiamhMZDVySEFQa0loV1dfcVg4aTRESlU0bmZfNWh1Z0k0cnNnTXA5NExYaXc0REZJVThqMUoyUW40YVROQy1RYkRjenBn0gFzQVVfeXFMTVpBUzRYU1VWTU54cnFkRllRelpvN04zcDlZNHRfZmtaR0Q2SGJscndVRC1XTVJTV0l5UTF4MXZRZ0RCN0NJdC1ibWRuNmVZdm5ncGk0amZOWmRkTkNWQjJRbTN1WURpNWowbmdRbGRUVDJsdw?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: S&P GSCI - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1SZk85TXMyWnRlZHVxNVZwa1BfMGxoTGNQN1BEOHFfQVBPeUdqdndPT3pIMmJLME54SjBQVHRoNDROVWdUUkxockFEc3RkdGs?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: Invesco - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DWDIwcHpEQml1S0U2Q25uQkVqS2N5am9SRHU1SjlWeGxGX3pPZ1U2UVp1V1N3TDE0ZU5ZOGxPbzBzTTR4UV9PMWZ2VjIzbWc?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: DCA - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBXclVYQkxxdHFoRVY3QWNBRGtibG5rcllvWlZIMEEwN1JsSGYwc1JMYnZQNHpXRUt6aC1QSGRzeHhxc24zTndjdFZR?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: China - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE14OW93dklxSnczY2FacG50dWNkM3U5TGhMS1JGWUdtSlJXa0tkU1piX2JXVVNqeXRxVkdWOTRKRUh6b2FsZi1tN19pNWE?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: Euro - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9UOGNPdVNoRzAtLUo5Uk4yaUc1M3NPZnZ6aGpxM0UxSTl6Sks3aHpxTFJ1cEpDbU5kME5Ic1FVUEk0eDZBLU9iUzBEWQ?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Daniel Ghali description={PAGE_DESCRIPTION} - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUdlI1anFYYkxKZW9OcHQ5Q3gwRnh1anZia2tyODcxbWlqZjFydmdXd1VreGlXOHRRbm9ST3J1SUNPcFdMaXFHWmR6Z0FCeTdOblE5dWVR?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: bond yield - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RdnctaWcwWjJpX3pIU2pLRk0zSjdubFh3SHRvYTJKVXZjdVlvV3pET2k5X1ZnOWZwdDNiSHdpX3ZFYmRWNmRCQmZ5MVNJdVBpR280?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: GSCI - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE15Q05CSGxpbTBlSnJyWDNSUG9zNmk0enZuaEtKX2ZZZmxfNGVrNk05MlB2UUhSeGpldENoTGZGeFJBWEU0b1pIUWJqaw?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: AMD - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1ubzYxamg0U0RsdnNKZXNONzVvczgtOVZjbmtrNmNVdXZub1VkT0tNVWJldVBqVU5lMVVjSGpnRENWUUFOZTVtaEZB?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: Texas Stock Exchange - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NR21hMXJPeEVkb0ZBSnpaNDhLeFhiU2tLOHBqX3NSdTJiRWc5V09GTFlJdnVZWGhubDF3Qi0zdzl4eEQ1TkRHZERUUjBqTmFhM0g5QjZDeGt3WlNSTWQ1cA?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: UK inflation - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5aMmhBa0RGWnlWb01CR2pvY3o2QVMzV3dGUGowQ29vSWVKaGQwVGM5WDZUU19jQkZFTGl6VWk3TjJaSDN2dy1yTkMxcnJtMndQdDFrel93?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: Gold Survey - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8yeS1WMzl3VEgtZFktdDFoV2FnbEp1Q3VvZ2N5c2RQaTZEMWlfd05xMldaWDNEVjdZRTNZYzFqamlERVVEVjNKM1pxSlluS1BYOF9pajdYbw?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2023-12-23T02:34:06+00:00",
+          "age_hours": 25453.5,
+          "reason": "too old (25453 hours)"
+        },
+        {
+          "title": "TAG: November Empire State manufacturing survey - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE13Q2F3OGRkY1pBbjFQLVRUaXVmYTlUTnFIOUozcDNNSmtCUk1TRURZT3E4NERRZTdqOGRQbE5UUkRWUlJFNXVRbGJLZGF5WEJlNmlJZGRjX1YyQlZNY1haTXNjZVVkQ1lqLUhWclE0QnhVbEFUU2lsTzRtNnFDdw?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: New York manufacturing activity - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MQmhFcHh1VkpaZmVCWks1ejY5eXFfdlFvQUUxQW5DNWJCQkprTkZzSmxTX19iSGp2OEN0Z3dIWkk5YXFwUV9XYUlQUnhTbTE5SGxwOGtQNV8xNzdDZUtXY3c3SUw4OVh5Z2NLdHQ1RQ?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: blockchain technology - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1SbU5Pal8yWmhRZUlfMTNYUVMwcURWN2swdnJTZjVwR19rd2g0Tm10UU9zZjUzcmxoLXRvSS1aYWMyRWJicTdIT3o5TWVaREo5c01kNVp2Z29OS3lLbVMtcWpB?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: mBridge - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE15eWdHam9aVk9ZR2dFQXJiMWFhOC1NNWpOQ2lhSFBOOEFsWHlFdWU4VlpaT05PNFpxLVliUzFDZm5mZERJZzBodG5FS0ZTejg?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "PRECIOUS-METALS News - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8ybW9aSzlVQk4yRllSZU9KMUpQblQ1MXZRWFlUZDZVbEtzRC1qS2xsZjVJSkswMjNwYVZwb2dmb3ZOcDNIU2l3X0FDVFR4WmVvS1d2NW84Zm53V0hQSGRQNHQzSXZISmM?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Mining News, Mining Stocks, Junior Mining - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5STHBaMjloY2JzLWJYYVpreDFmdnB3cWVTZlRieVJWZEtLV2lGbU5ycHNiNWstUk5hMHJLVjNxX1BKMzZncFdPUm1SdllBbEo5bFpTag?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: store of wealth - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5aalFWUjZsczdiQk5KVGphNTRIbk5YQ3RkZElkMEozbk93OTBZSHRWZ1B6c3FwclRJaEVLNTNMZ2l3M3hXaXZNSUp6dTNGQW83V3J5ckFR?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: diamond - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmNURNNmJPYzVmUVgyUGVTV0RXcDJNODhKdkZVVW1OeXdfLUxQSXdmbzZzaHI3b2VWRU9IT1dVbnlGWndESHlRcXdnTVVKelk?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Fed\u2019s Hammack Proposes Principles for Market Interventions - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY3RGYkpKVzFsUmhlVXNza1ZvRkNRY1RyX0lRc194aFZuc1I5VGFVUWNNa0FvWGRneHY2ckc3VGV5V3RTVXdUdXdIelpJQmlfWHVjRVc0eVNULUtjSWlhM25pcjI3cjNPdWxRQ08taGRnUU03Q0plcmI3OEI2X0hhVHRkSEdRQ09teDdzVGUwcXZWeW5wVGlPTU9GdXJEbXhqczRCV3cwdFgtbzk4bHc?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Danish Central Bank Denies Shift in FX Peg After Krone Weakness - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYkRwa1MyVzc3TlJNUGpwNnA2UXF5MkowdnZyVEhocHZtTUpIazk3ZEdQRVVpWnBQaXN0dEhRdi1JOHNiZURnN1dUa3VYVy1VaXRzMFQ4VFlwZEJ2eVJLUjE3RDIwLUF0ZWJ3azkyQWpGMEJLUEstQS1Hb1NPZGlOTi1hd05ha01tZ1g0c1R5S2JJWWJjNmVuU3huWG1CX1RsWl9yajQxU1FEQ1BDdFJmaTJ4QTA?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Fed needs to prepare for bond-market intervention during calm times, Hammack says - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZkN4eGZCYkNwSFp4M2FkbVUtdzlpelNuR3drVmF4X2xHWTk2cVd1bFg1S2VHX01LRmJka2lDREwtRDBwOUdLREM2a2tUUTFBR0F1WUJ3OWg1dFp4bWpDYU5UXzhpb0k5SG9HMC1SVFBYN2NPMnowLU1BdjR1WlZ0OVUxUWlZOGxFNUtNYWtJVGN4YUtObzAzWF9mYUpHbmw2ZjIzVlVqeVZUaHNPN3FlMHdzWkdFTUtmbTdz?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Fed Launches Review of Possible Central Bank Digital Currency - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTTVCdXQtZWlaY2I3Z0wxN0EtVzdYME5fTDRnSmI1b3pWMlhFMTkxYWZvMHhkR0Jmem5acURMSHQ3S0pnbXV2bE1mbno2b1h1WVpKdXdsUjhqMDd5MTczVUN6bm9DNTNranVEN1kxNHNCNnJ2TmZyRXgwT01YdWFDcTRWVTc5dVZhTE9rVzUwUkw3ZTFoZHctN2tMbDJpUXBFTXBhQ0VIZDlfbjVxZjAzQkJB?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "For investors, a truly safe haven is hard to find - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQzlBMUZHSXc5eVFITm90UUl1MVBINjNUS0lYYTBQdTByWWZQTzFQb1FWRU1vZFljNzBHZDFTaU54N2MxMU9XdU9hVVlJaFduVzdOYTE3T3NNYVU4ZEEzTkU3cFpwNFg4YVRjaEVoNFV1UEVha2VWTTd4MnEyQkJ3bjhNd2pDRUg2SjFlakg1Nk0?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Stocks climb as CoreWeave results ease AI spending concerns - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPODdQZ19XR2c4LWdGMVhRUi00cm9lY21hN0p4cldPeEE1cUFXZlFXWTZfRnFrOUJpZmJCX0ozVzFYY0xwdlltaFNhUFNSTTk2VWtNNDZfS2JtX195MGxQaVV0UElmaEFpSHh5Z29jQW5zSExrUkRCVzdjVEEwREZTbUh1cUNtbENvN0pJQm5IODcwbUFzcDg3eWducnJOd1dUWXRsUXE2Ni1RZ3M?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "CCTV Script 16/11/26 - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9vMXd3YXpSN285ZXVtYWNiV3plZ3BZZ0F3TFdRaC1TTGpiUGxybmRsRkRJczRaS09wLTRYZE5KYXFkem9WbGVaMnU0QlhmcjVzVkxURXNnVDlDWnFPLTBOTmI5N0hNQdIBa0FVX3lxTFBZc3FkZlJGM0plYnRHQkh3YUdyYy1ULTM0S1lhWEFoQXZ5VFZHalpTbnpSQzRMbUtfV1RQOVJXaHlyWHFFS3N2SWNKS05yZ1ZqZzNTdlNORno3S2owQ2hDOGNKRHBBM0hvSXZn?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Russia's Sibur calls UK sanctions illegitimate, reserves right to challenge them - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcVBjNjA2LTV1c1FKMTFIbkxDQkszY3pVblROaTdIVy04bjN0Vnh3eUVUaTdpdnV0X0h3Z0RoRG95X2hZNVJ1d0M2RDRxNzZjYjU0Vk04eFRMUWUwSHE4R2MySWxCV1JIMWJnNW5mR0xmV1VER1BHVkxrTy02aHhabkF3LWtoRjlqRGxqMUo2RWctakpaVGhNYTlvOTNsZll0SzNRa3pkNHNodzh0eFd6LVhUQTItV3pTXzhPdkpTZUpZY19GTWc?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "OPINION description={PAGE_DESCRIPTION} News - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xajc4MlhBclg0b1VEY3ZLRFEta1RaSHp0MnJteGlGVVJmYWkzcjFCN1pSaDh4Tk1RTGRjZEZ2d3VCRjJJaWY2WXFFV0lWa2lFN2s5c1dR?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Basic Materials Roundup: Market Talk - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQWWRLRmw0OGJXcjlBQjg2ajdveW1LS3FkaGlxOXhBRERtOFU1c2lpX3BOZWx4YmZSVmlkb2lhaEMzUmhWcUdQaFRpVmd1aDF4bG5JN3JNdHBMWFdkVjdDbUVIQ3VJR2ZHRlFnLWJIX0hqR2lSQmdiQlBkZzhoQQ?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "India\u2019s Trade Deficit Widens as Festive Demand Boosts Imports - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOTdMTmU1NzRQdHNUbkNnblN1NXpJQ2Z3dElhVWtvelFfTDRqUFI1d1V1VUk4dGY2N1BhQ0lCWC1QcWFSVFdUdVhmZkVuMWNZcUpIWXZOUUlUajVtUkFRRkF0bzg4WEJlQ0FHd3dkTXVhU0kyQnJOeWZUSTFHbVV0N3FDNWxkVXVYQV9hVG5JaEpQWjJSNWVkWWkzVE1WeFFMSlg4QjhjNy1TSTZYOTg0dktB?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "India Newsletter Editor - Financial Times - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMinwNBVV95cUxNdTRiZU9jaVFtYnFOakpGWHhRYllZb1d1d2lrYWFpaG5aRTJNSWVFX1dkVlVPR1dsY3ZIQXF6MGJpU0dELTZFM3dwYVVtUG5WTXVEUTMxT1h5Ym9hT3hQMXhwWXVMLUg3Q1dYOVZMZHIySnZfRWh3SlRCM0JCekxsOGY3ZXFyS1pJUnUzUlR3TUVNMVZOenh4VU03QzgzWHcwQ2RsMzFQTTdxa1NaNHNwWkxLSHZVWENZakRsYi1hYVoxMWs0QWUySmY2Rzlvd0praGZ4V2RsQWFQelBOY250TzlJc2thaGN0TmdlcUV1dmUtcVRjanJoUEtNNzZwbmVrcFBZdExYU0thbzVSX2EtNDlETy1CQmdwTll0THloWlRDNFNzMThJS3pta1FNQ2lBMVFzVFN1cUJuTXg2NnV4c2x6NTRrSlFPeFZaOG5zcXFSQ2N3eGdMdVQ5U2V0T1JzMU0yRkZXOXFiaXNURU9ITVlMT1hsSWlvckttVFV0anFwYWFYRVU4MGw0b19TQ0FVN3pqR3lBS3FCbk9NajRn?oc=5",
+          "source_site": "ep.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "US labor market resilient; existing home sales hit more than 16-year low in October - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTkZlWVhYUEt1Sm1ISGs5ZGtiT0M2RTRzS1U5SFlKS1ZCZllXVVE0eGJiUmtDcVFCZ2toZ3ZkQTgzQzRYNlRfdzBoS284ZlhIbHg4VWlzeDdoLXNPQllJX1R5aktxUlhNbmdBOEJycktMQ0ZlZnNVdEtnOU9sTW5rLWdIcEh2RlZTdFRycEZqRlc3SjVzejVjN0xmVmR0blJhLTFDd0lDNFRNSTV0SzYyM0FRTXBZV2po?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "US Ties With Southeast Asia in Spotlight With Trump Stop Before Xi Meet - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQWEwMjJyNUJlX1p0azljbWZLYXVxVUdFMzN1WkNRV2d2UkZHWGtJMlVodndtNDBjQ2dKUmRmSTZTc3dJMVB2OFRFczMtdXQzM05OSFVESmMtS0FCYkpxRzVCR1oydEJfRGlUalM5d0NpbUFZQW9FejhnUlhfVjJoMldLcFBSQWhhcVZrNllPTl8xYmVIYVI3SDhfLVBTZ3NDVm1zRTltQWw2Y2RQbGROdHFXVW11VlVLODZDcmhPN2dBb2s?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Serbia Starts the Tricky Transition to Life After the Vu\u010di\u0107 Era - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYm5VYmxwVHplM1NPZjlQSkR4UVNQVXpaNUFyT1NOa2prLXRhWDlxNE1ud3RLUDBqNzR4V1N2bkhQNTFOR1FSbE9HR0ZoM0ZwYjdSQ0duTHBrY2k4bGFLNUNXQ0c2VGJPNkJ3cHhHR3QxVzB1ZFhDUERnT1RlbkttZHpZOFJVT0VPQ21HZy0xOXFEaGJrOWhuVmZmb3BYQW1mUTg3V2lzdWZ1RDZKWFFkNlRWUE9VczR5?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Macquarie Warns of Data Center Exuberance - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbXBENkJkWE4tdEhycV8zUjdyNVdSckYxM2JHWDFIMkoxWmQ4VVFpYW01b21rYXZqQlFKMXdPbjYteVlPRlc3ek8wUGk1WnJqekdiNjN3cVNpOEVTWVBRN2toMS0yaXFkWkRNV2ZQamRtV1E5d0dhM3Y0Um1KZ1hTM0Q1QVB4R1h1UkhScEJHZUVOQ01YbGt6RmJVUVBmcm9LRkM3UWE1bHBFZVFqWVZ0SFBmNDRRemJ2NmY4dkZzdEQ1cG5NU0VCcQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "China Hawks Ascend in Washington to Push New Tech Restrictions - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONnRwdXd4R0FpNlJDd01KMjBoeG1QRlhENnN1MUtjOG1MRjRmUFpNNThaVUNmSGYxZTVCajlpQ2NBVlhWT29hZS04QjIwMXZ6VEZNVlpmWVlqeVZVWUhNQUZIVGVUVF9WdU5ZcS1xMENuWkJVUHBtMEx4Mldkc0pIRHltbEN0TEtEcFQ0bF92SGhXaHM3X25yQkNEYjNWazhjWUlfZm5IVGdxUXQ2WjJ2S21NWGQwbUE?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Missiles! At the Crimea Bridge - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYk5mZjN1bHBFTDcwenlYbjdrdVQySEIzeVNhTm44WkRIaHFMSC05aW5qV2U3LUQ1Wm5HYTgteUp6QTVqQ3RuUjc1NFo1TjdKQjFBT1J5a3JPN1ZMdHJTMnlLaFpjVHlkSUUwMldVVkx4VEtPdnhDVkxiV0RObGNqRE5qeUhadWpMU29xQldnbnFmNGs1b2p1WTdROUNtTWwxcWU5SFdyVXVZalByQmt1QUZUX3NwN3Y5bFdOeQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "With Anthropic IPO, Dario Amodei Becomes AI\u2019s Leading Pitchman - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYXJwMmxnNFdIVGVKMTR2VUdUa3NXT0I2eUFpNTRsUHBkdVQyTzFmMFUycXVRMlVFckRJalFhOHR6TmI0X1RCZnNibHNvM29pbDJSdTBUcEdQejFQWEJpRHRacWs0eVJSQmRlQWVEOTRGbjNPUXdwUUVmWE9JRzBlLWdZSVhGUk1kZ2hNVkxYSUR1cDYydkNKOGx3N1FJTi1uUWltY190VEdhVFJXZFF4RWZLYUx2d1paN2FlRmJRNVNPRTA?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Week Ahead for FX, Bonds: Fed Minutes, U.K. Data in Focus - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVEJHdUxfSTJ2V0R4aVFfa3JEbjI4UHpfdmt1d3FWQmdoQk9lbTgtTG5HZUdWTHZFcHlnNWk1MzNSaG5pQVg3eGNvRVhZZjV3cGJwTkROcURLU05LUXpQSHpDd1dpcnBOU2lLVzVSS1pSMDJuZ1R2U1ltQWI5N0NaZzU3SzVtQWFqYW00TDlla0I4MG4z?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Argentina\u2019s Energy Boom to Extend Surge of Bond Sales Into 2027 - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbVBxU2E1el83THE3eDd0bzQzVnd1cFJIZTAtbWFTdThQZDVuYzNDNGx1ZlhkX2xMTVBWVlU1T3FDNGF0eFdCQ0VqNFBnbTAtUTRoRWdpNHA2azA5STk3MDJjWFEzVDhnd0lCYWJ1ZDliWnRJbTdnXy1HaTlSZ3BoeDRKQlVVZ1dYTWxoNnZUSVBjdWhRTGx5bHZjTnZQNHVsVkR0Uk5GMHBZR3VkcWRVc0x3V3E?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "BlackRock World Mining Trust Plc - Portfolio Update \u2013 Company Announcement - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPakk1cHFKUVJkNGV3amFyMXI1ZTVMV1VtakZfVHYzeTNtYUhXZUhKdHBoTjZmWW95UTlTcXlud1JaSEoyVE5zMmtsNnkxZklQeGwxZFVQUm1lVXF0ZjVhWUc4aDV4em5WT2tjR3VZUUw1SVdCMzN0SHd1WlJFT1J0YW02ZG5sc2JHQVJGelY4RUhOQ0lz?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Sri Lanka Budget Targets Growth With IMF Bailout Nearing End - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYTVsUmV1dnU0d0dnUjBhTDVaNFo4UU1UUXVQZnNHVkw2T1JnZUxsR2JHRkhfMVl3bU44VzRMcldCVHRwd0VrNGZ1VTFJRzdkSmRlSUhweHNlcjljWEdfd3pkU0d2ZVpCVmNOZmU4ZGRvZ1hwaV9weW5MaTdXZkhhblVRZ0xpNERyaHJQdFB0QjJ4LXBCeEFnMEc3U2ppS1lYUVVBX3lHZ1MyYWpYRGNmbQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Wall St ends lower as hot inflation data fuels interest rate worries - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93Snp4anhJNG12LW9YNXUxbEtPWk1kcXZuTV92OFphMnpkb3NYSEIzQktiTFcxZ3I4ZmFsY1JsWlpwQmFmM24wcFU3aUlOc2poMmRwM3Q5YzRXUi1yRzdIRE1kTFI3TEE?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "BSE SENSEX - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hMS1CRmtIVXZ5cVRjVUUwdDVySXJjd3BLVGhuSWNRc2RwMGdfc3JOcW9GVGNxXzItTU8wamZnTFRJWHE5cWN5LTZicG9ZZkhzZ0hxYg?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Nicholas G Miller - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzc3N6c3NSdkJuOHV6NUR2Ry03bGx0M2c5eFY4SDZBUkpOeDFZX1dyc1RZX2FMQW1zVWVKYlhueEJvNXJKY2w5b1lZRDljaVlCUi11dUdnRHMwWmlGdEE?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Investing - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9QdHpDSmFtdUphQzFXWVZwTU9IV1RYbEE5SG9qdGtPTDc3OHk2aDY5My1McjBPb0RPZ3hVbzl4UFVjeTVMMnVhWlB0TWlWWloxdjBBSUJUcw?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Economy - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1maGVDSHRJWTFuaEs4eDBJcjdJTFdBOXBiOFJMLWdUN01ESnB5N004QnZBR0JyYWlfUzFZYWdrcG90dVAzWXlTSjln?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: Michelle Makori - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB6VTVCa2hCVl9oNXpPd2g2U0gwSFJDUGZmZVJoMnlfMWdaZi1YVnM0eVpidXp3YlJjV0pYa0otUll6bGJUQlFpRHRvSjctczFmaGVlejA2TEpxQQ?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: Binance SAFU fund - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBDSkFKeGhYVFotaEVLOV90Z1pGdkhKMHRDRnFoWVlsR1R6d29aWW5Qd2U1WEljSEg1UDdmeXBNbU1WOTJMOTQxa3VhZVp5NTNSS1NrN0ZIWUE4VFpD?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Debt Problems of the Richest Countries Are Trickling Down to the Poorest - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPV2dXTHVZWHJEblJYalFkOE9VeVRXeEpIQXNQdHc2RnVaOGhSLVlZMFJzQkJvcHEtQVBMT0dSYzhlcGV1Mld0SzlyTG5fbHpmX1h4UHhyNjBkbjBkODRRQVJjODRUNUVzMEZNTTNSVzdSaEM1eWh0ZjF2VVYtMHZZRVBFWHJ5YVVpWVduQ0Mxc28?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Too Many Chips in One Basket? - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5LOGdQaThNc0s2UTZmcVJHYkdfaXBkVDZtQTRpNXBqUklrNXlia05nZ1ktdVRrcW9mUlo3Wk04VURWX2wyLVVDd0tUeXRZWml5WDRtMGsyMmFHd0l0cERndm5VWkZGLW8wcFF5a3NlZnUwZGdWSXdEaDAzM2pJa0U?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "AMD and other chip stocks slide as Wall Street rethinks the AI trade without Jensen Huang - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYVlEMXlPemQ5eVY1Y2F2Tmc1Ukx3bHBYSlZBQWVpamplYUNRcE5PdEd5a21IcGVRVlVIWW1jdDVfdTVVV0pTeENORTVvc3hpeGg1MTRrZDRTNnI3QktKbEJYZTdCOXQtRFBlb0wta2ZMc1otTElpV252bS1uQnFXX21zVEdsYlBhUUhzQnNpLWpTQTl2eWIyRGxsX0pURDJFaWZPY0dkeGs0ZTM4U2RpWU9uX2RmdGZtVUhnbnNidDBVWFJzRGt6QVhWREw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bond yields just saw their biggest surge since 2022 as expectations grow for more Fed rate hikes - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOYXRmY2hqcTlNTnNtZWMyeVJHSy10VGt0Zm5GdS1yRHNKU3lfY2RUZnVnVmk4alB2WFNhUDF2cV9FcnZLTHA5VjFpWmhLYTlfTVRuYjdLVlpFODE4N1U4WW9ma1BRS21rZjNndjJ1MG1fU0tpdWZnWk1FMHRiT2xZRVdOVWYxUXJzWEdOYmJUeGRFRjR1ckhsdk4zcVA0d1Q4aTh6WEhDR0ItU083a2RGclE4VThOd0h1TklldUxLYUptYWdrY0pjZ3lJZ3VqUWtaX1Y1dF93?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Inflation Continues to Challenge U.S. Economy - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQVpwcENQUHRhMFlZU2YwaTBFMUhNejZDd3lWc0kyWWcxZVlPTUs4Z2NWUkpMZUFlckdoQUR1SXVfLWFIWFZ0dGVvMndxd3pqelFHRnJMT29LRkdaOVJEUk96YVlCWGkwRnMzVVp2ZTV5b29uSnZoT01zY2hPSWhCckRSaw?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "About Dow Jones Newswires - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9PMWJ5Sl9rNk5icV9ZSG5ucVFUSjNEcmFNQ1Y2R05jaEhBR2RpZmpEM1FNQ2NoQ2s0LThDSUhmdnNodFgwNk9uamdHa3hLUQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "GC00 | Gold Continuous Contract Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBodjBUNHNlMnBNcTlTTG5TeFFPcWhoN3YxNWEzZFduNWZlYWkyZklxY3dVemhQWkdNN1ZLbVRZVHRmSTFOVXhuT2pVQk5JM2d3bXM0aWgxZFg0OGZuclE?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "published": "2019-04-23T06:47:55+00:00",
+          "age_hours": 66369.2,
+          "reason": "too old (66369 hours)"
+        },
+        {
+          "title": "British Pound - Page 2 - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAxUUpUTjZ1U19DTXVmV2RMZEtHa3VnUll1MDVjQ184ODhiREEwMTZtV2pfMzZldjdjdEx4OTk5b1lLSXNSRjNwd1ZkcFoweWNKQjllN1c4azBUd0pLcmo3ZA?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "U.S. inflation is already bad enough. It might get worse. - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYzl0dDJxRWlxV2ZHNHpHZTBZakRfSnAwNHV4cXYxTEFYSnNBbG81c0U1aFAtWUlmZU5oWk5uZzJ3RXJDek1IQ2doWXgtQlBCX2tZcE8xTDRNcGltUDRVWFlvTzhKejR0WEtld0hyTHJROHh4bzZvZmQ1bEcxWFlZaXpUSjhsUkxhZzRod0ZvLXhyNjFTSzdrNGFXT0lNZw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Credit and Debit Cards - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5mQ0RWQUtLQVNVYkxHVzJ2TXhnYnRCUmgzYWx4TWN1cnhJLWVzYm5iS1FSa1VhWUFHdjEta2ZMWjNHYklweVlVMlpKVE5CS1g3Q0tRQ1JPWE9idFRhNlh1ZWg1SEFFd1o0VDBURg?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Carlos Tejada - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41aXpVbmM2MHVLbkczMTJ0UVViTWFqNEtIbWNXS3N1NGFieEYyMi1La3ZzN2JmaHpDUlZlVERkbE1hREhpZGN6SEl2NUkwU1pGMUE?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "BMPS Stock Price | Banca Monte dei Paschi di Siena S.p.A. Stock Quote (Italy: Milan) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JLUxaS1ZmRWJWelNqdTg4RkNSRWRYb1lIOVRPdGtLWG5pZ2xZOEluWUw1RHdoaVBaLWFkRVQ5SjNfTGJTYVJxbVhFejRWZm8zdVNpZlpqcVpiRElKb3NQVTBCa2xmQVFHRlZkTVFjNFQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "SCBFF Stock Price | Standard Chartered PLC Stock Quote (U.S.: OTC) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5aVHlxdjZhalhveVR2MmNJdkRNUldYTm1KYnExTFZzWnZxOWZ0YlZLdW1jQURYXzIwOWE0Z2w4WlB3aEZuWE51dkxPTGRUNFhrUHNKcnRGSHNUbXlKenc?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Materials Down After Waller Comments - Materials Roundup - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUXN0X3E4ZWp6RU9IYkc4QnBsVXhmY0hqVVdjY3h4ZkRsV2VqMGVXQ2tRRW9NNGVhUFdfNmRQZEpUUERQalF1WHVGMHloTW1pZjFRYjl1SG5OZFhmMmpDOVc3U2d6S3hIdG5nT2RESTFUZWJmYk5IUHJkdnJwR3k3c1RtT2d2MWY5Z3czMG1YOW9pa0N0QmYyT2RLTUk3ZEI0OHFpUlItZkxpX1BjWERZS05Wd1I?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "4902 Stock Price | Konica Minolta Inc. Stock Quote (Japan: Tokyo) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBXWDNEVTVNZnVUUDRNaEg5am1EVkxoWUdzbUJPdkI0WGlRX2VfM3ItRG9fNXhoUkRXV0NrcGZkaWhLY1N0ZjF1aHlxc3ZwWmFxQlhwelpnV3FKZVU1TDNRcHZIejY0VFg2QlNQTTQ0aU8?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "IMO Stock Price | Imperial Oil Ltd. Stock Quote (U.S.: NYSE American) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wdnU2YjJ5OUNTS1NwaV93VUJLVUlMcEU1N0RvOGZBMFU2ZUoyS3gyY0VpU1VhWFlwc1Fad3ZsNWljTnhLdjVrNm03c2EzSkVWUUd4YUM1dzNCQmM?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "BLOX | Nicholas Crypto Income ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZZHpvY1hfNVRvY21BMzVucVRVUFc5a3owaEphVE1xU0laSWVEclF0YTlhTEhKcjVtS3BfWV9oNGRKTDlodDFZWnBVWE1BMXlOT1J6LUJVVERZN1U?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "U.S. Stocks Extend Slide on Nvidia, China Fears -- Update - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYXg2YTZib0xGQ0ZUenpEY1FSUlZCSC1wT2FoOVUtUFExcHBWU0lmeGFRd3lTVkRaUHY1V2xUYzY4dFFxeHppRTF0Q04zdmQzZC03eFYzRjlYMjQzUFp0NTQ4WlBDcjBrNGd4eFFOaGxNTDk1QXRlS3lCTXFvSkRDRHdJcUpuWU9nR0dCaDdxNUVOUFVETURQZWxsLU9LYVNaV2w5WTRDTzU5NVk?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "AGS WEEK AHEAD: Higher Dollar Weighs on Grain Prices - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaEFlakx4bmZON2w1eGFJRjUwcDZwN2dPczVtdTlBT3l0QVowUjFMTzgxRHI1N2w2bzdoTUF1cklWTm1taHYzeTYtNG9HTnlpZDE3cURoZVB4bHlFbTFBLW5GQnVidVlVWUxpNEVVSHpDUVk1YzNvTUFoXzFIb2FWV1ZEd3l5ZlJock5Za1dsYzdhNkNHaU9GdWhyTkJVOFJtMjMxMkJ2ckk0Ull2?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Consumer Spending in Emerging Markets Has a Dark Side: Big Debt - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQUFZN0VrU2dteS1xc2lsSXdjeVFlZmNuejNWcjVDcjUtOU9IcGRaR3hFSEVtR1RZOUNCRl9FNzctTXptalh1YU1KQ2lINWdzM2dhR3BnMUxhNEIzN2xKVWhONjNycHlwbEVqTGhvcEo3eDcyWUdCSDVkdmFyOHRQbXZiR1RFdlQ2cUYxdVAwdS1uWUU?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "British Pound/Thai Baht Overview (GBPTHB) - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ZZVVqYkpIajZ5MmlVZGlldmtXYlZBN2dLLS1lSjlWZzE4UGVpNDVjWkRadUgteTZ3NmtWRVdqMHBuN3ZFOHc5bEJWVFhvSWVyR0tBdWVvTlp6dEZyR3VNSUpqUQ?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "China - Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE94aGZSNHcwM1Q0RFpRT21CcnBDejktMHpraTIwbTVyNU43UHNnZ0UxWVRGcVhHWVk0eS1FdkhhU0dUbVFMZmMzeUhwTWo?oc=5",
+          "source_site": "barrons.com",
+          "source_name": "Barron's",
+          "organisation": "Barron's",
+          "reason": "headline is not about Gold"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "G5",
+      "name": "ETF and investor flows",
+      "kept": [
+        {
+          "title": "Gold SWOT: Barrick Mining plans U.S. IPO for new gold spin-off - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYy1IeURGRnFmX1dsOUx1Tl93YVRHNkJmM0xiUlMzWEg0TWlYcHYyUTZVZlJ6LVNQRXZsSVZiUmJMUzRsdnQ1Y1VmTTJITnFLd2pwdUxwVHdhTDE3NFRidUllN2pyWXgzLU10X3otZGFsWkFpUkdiR0MwZTVFNGZwWXZvVHhtdWJZblVWbXM1T0drTVN6bWNCQWRn?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-16T18:41:03+00:00",
+          "age_hours": 21.3
+        },
+        {
+          "title": "India gold ETF, equity fund inflows ease in October - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTmwyLUwwUWl2S283cFhlNElveXhTeVhxR0p4TjhQZkxGelZneXUyaVBoRDVZMEJ5OV9hcXhfdXVfVzhrcE52Z29BR3lPSlNHYTNTZVBIVHVoOEFhNzQyVE9iYjlDME9sMEdaVkxrV2h4enVRV2stUlBKNnJPd3lrRlZfZzFlXzVRelpMWWNtb3JtR3NDcW4tSXQ4bTh2cXdQYkxrMjA5V08yOU5MQU9kcHVGS3R0T2wyaE5Kcw?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "published": "2026-11-11T09:02:47+00:00",
+          "age_hours": 151.0
+        },
+        {
+          "title": "Tether taking aim at gold ETFs as tokenization gains momentum - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZF9lOHdWWE9sS2E2eUFpZDlScnU1YmNfck5CYXJ4X2xpQ0lfdV8wZXdIUzRZTGpiM1dYOXJlOWlRVFJITWlpU1VkZ2llamZQTDJDa2xCMWFYZnhkSGRLdjFpUGJTUm1uQzBBN256VU5Fajg2eDFhcWp2WVMyLUJMcnhUd19aOEZjMTZXYzdyRFFjUFNLbWJ6LUZTeVJrQXB3Tk53?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-13T21:41:21+00:00",
+          "age_hours": 90.3
+        },
+        {
+          "title": "\u2018We believe gold and silver are not simply defensive assets\u2019 \u2013 BlackRock\u2019s Akullian - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY2lPdXhYZUxpMXE1eUd1S01pNVVpZWMzdGxiRnhrWnZOS2xyWTUwcTZDSjB2WmJrM3IxNVpPZGRGNVhqcmY4TXIxNVVJWWd5RlpyNTNxQkxpa0NrYWlqcnRQZE4tWWhtM05rSl91amhsOEhYdDhYTU1FQjdpMks2UGNlbTJ0VHp0RlU2V0s1Sm9UOWlka29kMUxLT2lCUFlYV1NHaWJKV0Zia2t1VmhIU08wbzNBQQ?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-12T19:45:37+00:00",
+          "age_hours": 116.3
+        },
+        {
+          "title": "Gold Steadies Near 14-Month Low as Inflation Pressure Persists - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMDI4MEt3a3M4XzFhaC01R3pmSzdkOXZ2ZWhUWjhPb1lOZWZPbjdXTWFydWVFcmZNS21rZGZLUmZ6S21OcXFDUUkyN0NLc3BiZnlCWUJ1QmMxbHh0aWtZUjEzZFBuQng0bkRiVFZxN0pOUUJBQXRqQ0NGTUFZcEtLRUx6NkVWZklRTjhxOTNJMzdVUldYX21ieEFQcDlnTks2NFAxMDBrY1ktNmtlVzZYR2FxRQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-17T12:55:38+00:00",
+          "age_hours": 3.1
+        },
+        {
+          "title": "The gold is all there! Tether Gold releases KPMG audit of its reserves - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLVR2YllOQmlqcTlWdlk2T2cwbTNxU0xFeTNwRloyYUVINGsyeGtWRmRGTEZ2R2hpTks2LVlldXNnRGhfcjE2bC13TkVhNFBmRWEyM010Q01RczJFQ3EySEVhV2hYdDBRSm9MNm9Zem5VeDR3TWx6eW9pUUMtVHU5aksyT1RIREI3WWVhcVJxUF8xdms0Z0xwU3Y0R0lUOE9jdWZqVnMwTHM?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-12T21:42:48+00:00",
+          "age_hours": 114.3
+        },
+        {
+          "title": "Gold prices find solid support at $4,000 as Standard Chartered sees rally to $4,650 by year-end - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUllaZWRQc1poVDQzVEh2N3BDSmhHd0ZDMnE0WU8zZi1YUEI3TTg0Yk1LTWJ1UlhzNnlIY0ZRYWdzZkhicGZvRWxBTk9uazE3UERhdE15MUQxR25oOGdkVS1UTEc4aW8yY2U1WDNvdTFBMzNjNmJoeldUOW1UOEVKNzU0UUhZaVprR0dFcHRWV19SR05fV0czM3FkdWdhbFQ0eXBtay1SRi1laFMzRE9RT25Bcy1GMlRHSlhGWU5n?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "published": "2026-11-11T14:59:53+00:00",
+          "age_hours": 145.0
+        },
+        {
+          "title": "Vista Gold Announces Third Quarter 2026 Financial Results and Corporate Update - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWUdnZlYtazRXTkF3dWR3cjhSWVNDc3NXUEZqSHZFWFVZSm9EZ2NLOWd0SHdGRzBpWHl2VTdjd0lYWWdQa0FTNGRyNUZFMUdWZ09LVnRIZXRTWnBGZkdmeHJEb093bHpYNWdNVmxsVFd2TDhRYWw3N1U2Z3ptY1JFclRVVDlNdW5rZWN5SThnbGhNTUFxd1lIZk1OS2djZzNYMmhERWF3?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "published": "2026-11-12T11:45:00+00:00",
+          "age_hours": 124.3
+        },
+        {
+          "title": "India gold market update: Gold demand gets festive boost | Post by Kavita Chacko | Insights - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMmJiWm5XZk40M0RveHhSX0hqOW0tclZuTXNjNHZwZExaMmRnYTB0TFFxaWNLY1NQVlRMUGk1OEFFbjFrOUpUS2d0aUtJUWl4SlFuM0ZET01nZDNGX3BYXzA1dkFOaVcwZHJ2SjNLcnlpRU1aakE2QnJpU3ZrWWpxa2NtbWNiTjkyc3h1SDRFMVJ4cDZVUXExeHVidDVLN21VMnRhbU9n?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-17T08:54:09+00:00",
+          "age_hours": 7.1
+        },
+        {
+          "title": "Insights - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5oOVQwd3I4NlY1YzVaVzBLbktIMk5IUWdUU1FuSm5fYi04WERjUnphSDBkOVVFM3NqcGxxUVk4djNRLXFvSktIbDNBZ3l0Sk5o?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-17T13:30:59+00:00",
+          "age_hours": 2.5
+        },
+        {
+          "title": "Research - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QUWMxeWVLS3BtN0d5eDJ0YjZGal91ZFNhM3QyRnVNOFpWLXlNZE9VdzhkUEZRbjZkYUNQRlE1ZEdIRFBsRmdGcTNjUWl6cHJFQW1KbzFXd0o?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-14T08:00:00+00:00",
+          "age_hours": 80.0
+        },
+        {
+          "title": "China gold market update: Robust demand in October | Post by Ray Jia | Insights - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX01TX2R4cG4wLTNVNTBJcWI5UWdhTDdXRi12cVA5N2NoZHJFbkpmZ3d0Smx2WHdMVHozR2NTQUwwYkRLVjVpdVZrZ1NQQ0VlRzNTSm5GX2hCeGhBRlE5eVJCS2xEcTl2dC1GQXZJZlNUbHJxZ09BVkh1bWlUZ05PNndSN2dWLXZUQjNFLUZTRXFtYmktWnpnWl9n?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-17T13:34:10+00:00",
+          "age_hours": 2.5
+        },
+        {
+          "title": "Gold News - World Gold Council",
+          "link": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE5PckNicDdYRXdmbURFeE9fN0xhV1hLb3Brclo0RlJxSjlfamNOZHhnSmd5WGFjQnA5MWNINnNB?oc=5",
+          "source_site": "gold.org",
+          "source_name": "World Gold Council",
+          "organisation": "World Gold Council",
+          "published": "2026-11-13T12:00:00+00:00",
+          "age_hours": 100.0
+        }
+      ],
+      "rejected": [
+        {
+          "title": "Silver market remains resilient despite price volatility and weakening industrial demand \u2013 Metals Focus - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWEdEMV9PRURpTm5DVUVKY1lvcEgxbmxjOVBscU1nM2xKVVNJcWttaVk2azFmT2w3R1h3VWhSeDEwMmpGQTAxejBMNUp1LVpEQkxOTmVtNFlqYTk2Z1NRUFlndDBNLUgzWExFT0F3X3VZLXhua3NCTWhIY0lLQWhnTkJCZ0pKNVgxb1ZlUkpDSUJxQ1N4Z0tBcXJldGtrbnVTUFFub1pIVFlDd1ZtU3N4RjdDYTdBNWM?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin Options Traders Brace for Slide to $60,000 After Selloff - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLWdwVWxaMG5xZ2JlN1c1dURPTENWQjBQa2R0TC1PMUNybXczejBzSTMxWXg5NVhkUTBBTmRrVUozZ2M3bGdYNDVNd3Z0eTVIUlNpb0JCel9LbW8wM0dfZUhfWEh3MTdOUzV5MzgyVHNyWXhWd1Y3N3IwV25DUjQ2X0J2Z1h2VWxWWFhVTlJ4Y2tLX3ZaU1lSLWFMTEF5N0ZWaVF1ZkN5bE4?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin Holds Below $70,000 as Risk-Off Mood Pressures Crypto - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWkRFdXJ3VnJvNExRVTFoQVJFRG83VHNleGp6YURoaFJ4cW5UWlh0STJBZ01fb3ZJTlBNVWZtYWUyeVVtOXg1T2h0RDJ2Wk50SXFtMjFLaTBZZjRjS0FMSHpvZnByblFhZ3ppQkNrRHdENVkwalo1d2RiRkRDa2U1WHhnZ2lkZkhYcjRMaUozWG80dUIwZ2tyeGhPVDhCVXRzMkExRzZjeXIwUTlq?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Soros Joined Family Offices Selling Nvidia Before CEO Exit - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdFdvSGNrN0NhN3lvQ3N1c004b0NmeXhqa1JPYkVpUDZpVzdZd3RPQ3BTQVA0bXRVYk84UHNfQ2o3M0pOTEU4X0J5UHB1U190VzB2X3JEOUtyXzlfV1ZPYmxuNmNNaXVvb0ZNamkwZFdqLUNKVE9kYnZEX1IzWF9uTjhDSEFWNzFvLVRQeDFscUtTaEV6TWxuOXhmcHdQQWc4aHRiT3NCLVFJZTFlTHI3R3pyUHE?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin\u2019s Billion-Dollar Wipeouts Are Becoming a Familiar Sight - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOaUd5VFhXYWFteUNtX00xalQyaGdaSUNqRkxNY0FwaWY4WFdrWE4wdTZJWV95Y1YxU3NpVkVUX0lxdl9uQnl5TGVzUEFodHdCQl84b09TU25IY19VLXc0YjhmaDlWb1hfeEFuX29oT2tIOFQ0ekNFd25wb3lERUdqVUZlOTZnbGxlT1NpUWttdUgxNm1OQzl4QVZXd3gyZVV5UTFOTGtVM2dwUEdxcW53a0NobGY?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Stablecoin Market Shrinks Most Since Terra-Luna\u2019s 2022 Crash - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeC1mMVZYb1BIeXotMnN0MjR6ZlBvVWNZc2V2a0szMTk3WTdlSWNhbUhaRjZBY2J6RUpGV2Q0MkxMQXpxOC1hbnZuS0JsVTVnRjlnU2hHMmdZdW5NSWdtQWNUX01UTU9Vd0dkeXA2Ni1EcFdBVDRCRWFJTHRNYjctVXkwN1A4NDlFMUduODZHZWZmZVZRa2c4dEhhSDdpZkQ4cV9STm5sRTlYLWFNbmt2Ng?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Rothschild & Co anchors Italy at heart of European growth plan - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRlhmVWc0SEhfMHFsYk93eThiYkxkVGJ1Zjg3d2pHbVBSV3JyQ3hVcy02T2dZbjFHeDVwYkozdVd1aVg5UnFLMkdsVzZwYUliaWFzcDNOTGRlU1l3OWpnT3VPaDYtZmdPTDk2eGZDbmlXaEtZMEVvTTZrR0pRWXd6VHN6YXk?oc=5",
+          "source_site": "ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "It\u2019s Hard to Protect Your Nest Egg from Nvidia - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQU0phMHdBTVRpVW1qY2tEQTIwQ0RERktDa2tQbnNCMTlOVDM2dGxJdXBKRjF1VDVhRmE3M0g1d0J1emRNa0VMNmREOWx4Y3kxSXBSVldQZUxmLW9HYkZwa0FDSWlOME1VRWZPSVc4N2FMQUdSSHkydkx2YmVpSmlib3NEbnBsQUZiUWZqeEt4RGt6SjA?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "3 big things we're watching in the stock market in the week ahead - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMWJ1OEhiT3IxS0lyWGFiOXRULVRKUGxNZlRpRmZLNDNvVk5JdllEV2dRT2hlcDJ6RExJa2ZvX2VQWlYweTVIMzJQT0dJSDdVWXNWdmdocHdyMUhYa3VJRG9GMGdmMC1DWmZKZDVXeEVqTEZNUUZKOXBMd0tuNEp4MWZiZlh3eG11eVZPOTNaeWhSaWI0RlFtM1ByaE9VUV9DaWdRejhyNWc2ZzFkVFVzR3lyM1hzUQ?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "UK government set to limit banks\u2019 retreat from the high street - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONUF1ZEh5SHBMSUk2c3VXeFhobTk5bEo3c2MySWNYdWxnaWlyVktsRzBQRlVuNUdKNlJHV1poSEZzSGZSNzVaRVRzeEh6dmJRT3BYWFNtbVdfc0RXVnRzQm9jUlU0VDYyMlFIeFZMZ2FCV2ppczZQQmpOcVFiZlJKa3NGRmc?oc=5",
+          "source_site": "ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Why market timing is a fool\u2019s game (note to self) - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUEZRdG1tQnhMdFlHTm1SOWh3cDV3bTlaUDdFSjhzOG9TVVJ5eWFYbmMxcXpFZjRHQ1ZPWFNlbkdIZVh0ZlM2X05xS29tUGNKMVQ2TWtQbDYyWlVGX3ZlaVZSRTI4U05FNWxOTlFzLTVLMVpjdzM1clVHYlY4Y1JXaXlLQVk?oc=5",
+          "source_site": "ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Don\u2019t scoff at the dangers of tokenisation - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQ1FyUmJwMldHenROOW9TRWdzejZrQ2FuU0hxUkgwNVY1anh6X2JjSWthby1LN2lhVXIwd0U5cG10aWowVDRuZUdmYWI4dk83UlFuVFYwQ1E5V0RZUjFWNlQwVE1iaVpVNDRkLTFZS18xNDdSR2RjYUw3YkstZ2VKTmhwSGI?oc=5",
+          "source_site": "ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "The world's super-rich are piling into alternative investments. Here's why - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1CVU1uNUhTb2F1MXFSaDV0MjFaQktXLWQ4ZTZJTXdpOE8zaE1CcVJCYW05VnpnbWVTUWNnOVg2X2NucW9sVDJDd0ZDSE4yTjdBX2txaE05dkJrMWU3T0hycl9WeC00Mkw0cG1wVWd4RmxYM1lDSjVF0gF8QVVfeXFMUGFBa3BsbDRJTjV6V2t4SG5ScmQzalBVNmdjOGFSdVBEdUxxaXVFOEdkdkVITFJjdmFGeEszOWpCX3N3TUtLZTJzaVg3eFM5ZktCTk8yZ0FYTkF4S2xjY05xLU5ILW5abWNaMUUtU1NHR0FUU1gxM0xISUpHeQ?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Can You Quit Your Job and Live Off an ETF? The Reality of Dividend Nomads - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQWFdJc29uOGlfYTBtQnJZdTRfVGZ3UGlDNEhoOFNFb0o2MjIyLWY1TlVhd01EZ2JWTkpGYlZiN0pUc0pRREdWNktHdXVDUEMwQ3NWaWY0UktfX0Jscks2VnhrZllyUDFheVdlUVpDaE5Vcm0wVDgwaWVPaWhKRmRVRjh1Wk5fRVNFSGlWSUpnRVlUc0k4bTV3Ymx6aFVnNkJ1YjEyQ0RRNlE1bWhua2o2Q18xQ1NtNHFrQWdvUDJoYWY?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Cravath employee charged with trading on firm\u2019s corporate deals - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZDU3VkxTeWNrOUJ6Ukd4WlEwSmRwQURqdnVsZjcySXAxa1RtaDJDNUtkOEJPal9OWm5wN2Y3em84QldpZEkxMXdrN1puMTNlczJhcTA0VldSZTlOb3VYTkE1TkpyR0dwWnFkZjh5N1p5THhaclY3SDV2TFFpakdxbTBXczg?oc=5",
+          "source_site": "ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Direxion Daily Gold Miners Index Bull 2X ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43bjRHVWxmaGlyZXZuWHlHYWFmamxiNG1rU2VBR3hvX19pZG5wT1V5STgzd1RKTUxDb25UNmgzd2sxYUNHcG5KWW5PNGYxUkUz?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2014-03-20T03:47:12+00:00",
+          "age_hours": 111012.2,
+          "reason": "too old (111012 hours)"
+        },
+        {
+          "title": "TAG: S&P GSCI - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1SZk85TXMyWnRlZHVxNVZwa1BfMGxoTGNQN1BEOHFfQVBPeUdqdndPT3pIMmJLME54SjBQVHRoNDROVWdUUkxockFEc3RkdGs?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: store of wealth - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5aalFWUjZsczdiQk5KVGphNTRIbk5YQ3RkZElkMEozbk93OTBZSHRWZ1B6c3FwclRJaEVLNTNMZ2l3M3hXaXZNSUp6dTNGQW83V3J5ckFR?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Tencent Holdings Ltd - Company Profile and News - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MN2ZhQkFkLXdmMGxDNzEyOVA4ZTRTNHdjbVpzOW9hdmlKdGFfQi1nV25kZFZ0N0c2RGVCWklxM2ZnVVA2cTVnVFRqM3YxMlBaY0xoSUhXMVBOZXl2?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "SPDR Gold Shares - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9nYWZ2TzNoR3NGa1BNN0RMc1VNWjI5MnBFX01EN19TcE80YkRSSExjVGFIMHhMampRWmktdTRSRVFqMGJFWTVPQ1hWcmY0SG8?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2014-03-15T00:18:11+00:00",
+          "age_hours": 111135.7,
+          "reason": "too old (111136 hours)"
+        },
+        {
+          "title": "TAG: diamond - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmNURNNmJPYzVmUVgyUGVTV0RXcDJNODhKdkZVVW1OeXdfLUxQSXdmbzZzaHI3b2VWRU9IT1dVbnlGWndESHlRcXdnTVVKelk?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "AAAU Quote - Goldman Sachs Physical Gold ETF Fund - Bloomberg",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE12MzI5eVE0a0UzTnZSdHExWFR5TGZkQU5vMmNoZC1rejZ2YWdiOEtveDdBbHZuU1ctOE5uMHl3UHhDYlpicHRjeW1rNHoyMTZr?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg",
+          "organisation": "Bloomberg",
+          "published": "2018-08-15T09:49:46+00:00",
+          "age_hours": 72390.2,
+          "reason": "too old (72390 hours)"
+        },
+        {
+          "title": "TAG: Bitcoin price prediction - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14eVphaVlKYWJ5d0xyaDdCM0tIME9icldoX284RUdHaFVkRWhwaHU2QzNxRlNqVGFsMEpFQkdnNFV4ZWNBeUdqSGF4NDlyLUZFQ2xSZDZBazRJNmRLdXZ4aWtLQUszZw?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares MSCI South Korea ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBwdUF3dWxpUU5XMHZzSUIwaU92bE94cmtMQzRCaE5Kd19RQTRCS0xqS0N0ZW1jTEZiT05DT2FKNmhWRGJDUnZzRnhNVzh0MnM?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Anthropic's trillion-dollar IPO is coming, but retail investors could have owned AI stock much earlier - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XV1cxYUZWZ1FPWE1PenpNeVpQcHhhS3FfM09tM1h2VV9Lc1ZPWE1xUkhWbWZEc3dBQnlMWGNsTWtHQnl1Q3NkSEkzWFhjTS1vbU8teDIyaFRKcW52allZdGFmQTd2alNIWkZtZTd5RElMQdIBd0FVX3lxTFBUMVNkVkN1N2hxMGNsN1NoNFYyNjhkNnBpMkxkT1Z2WGlrQVFrQVdMUFRRSXpZdldiZElkY3g1OWE2VFhmR2s1WVFXdnNudHp4TE5HQWxRcXZBTFI1eThKaE1EX0pvb0lBTTJsV1dFeklCdUtGcm5n?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "SPDR Gold MiniShares Trust - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9uQVFvcXlrT1h0TmtRQ0g4NjRRWDJyTzVlY1JxV3RlMHEyV19kTjBrQkpnTV9PMWwxY281UDNWdVpYS2RrNHFzbElib3Ftb3Rs?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2018-06-25T13:44:17+00:00",
+          "age_hours": 73610.3,
+          "reason": "too old (73610 hours)"
+        },
+        {
+          "title": "VanEck Launches Pivotal Trends ETF (PIVT), Turning Its Highest Conviction Views into a Single Investment Strategy - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPczJERXdqZEprUmFoQ2xGVUtyVGRkWWhfckhYUVIxbzNkcHo5REdoYzdiTlpBaGt5RHBhc24wOHF0Rk45TGF4am5MUFVPU3RwTF9RT0xuWVNWRVdpREZFdWJzUklGYjdLRUhIZmJzYjR3akZjWDliRTJEVDZoTzVUNW9Td1ptZnJZMHZ3OG9wZ3JWM2tvRkVUVW5HbHRTREh3WC1hU3dn?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "BondBloxx CCC-Rated USD High Yield Corporate Bond ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9GaGZ5TGx0VnZYUjBqMjBrSWk4bGJNTFBpc051UDFOS1RlYlFrcGdWY1VEMHR3NFNfeG9uSm5tREtJYjBFazlUOUJxWm42WTAz?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares U.S. Aerospace & Defense ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFU3hjOUV2dVlDanJJV28yTFFrV3BlSU14alJvZ2p6RVNnN29tWlpkM3pDLURDdDI1TkVNLW9Sd01pQzJYUUR1XzRlOWlVV3M?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "GLD | SPDR Gold Shares Stock Price, Quotes and News - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5LQlRWcmRySVlIekFpbzlXbnY1Mm92Z2FDR3lRdl9DOTFCbTEzNDF0VnZvcjh6MEM5X0RWVWVReEpNOExuRUlLb3lFWE42QXJjTVJHWjZZMlVTdw?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "published": "2019-12-18T23:27:08+00:00",
+          "age_hours": 60616.6,
+          "reason": "too old (60617 hours)"
+        },
+        {
+          "title": "US Global Technology And Aerospace & Defense ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKMkpQWWdTVGhraHVPbTMzZlQ1bWx6dGE0Q2hnR0NtNWRPRkljRW5fT3VaclhSWUljRHdGVmZwNVpMUVgzWl9zRnVIRUlPbVk?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "State Street SPDR Portfolio Emerging Markets ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9OeDBzYkl6WVRZRjh0dXJodllzZFU5Z0RKQjdCZ3k5MXdqOXV6ZDZjaFY3SDR2TDVmYnA1V3o2SFVmT09wTzN2Y0YxUm96Nm0w?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "State Street SPDR S&P 500 ETF Trust - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0wRVlUVVVFZ090emZBVHVDQzM2S1U2NWRmd2dHbTlHY3dHNHR3M1BVYU9weWpLSmFibm5ZODlpT0tuUkN1NmlCZnN2Nk5iYjg?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "ETFs, Swaps, Perps Offer Back Door to Anthropic \u2018Stock\u2019 Pre-IPO - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbkQ5Nms0bXNzRk9vRjJXNHBnMXpMT0FHb1hXYnZhUzZqbjMtNmF3REtSMlB5TjRic0duY052cGRhdTFkdXBxV29UU09jX0hUZ3JFYUktMXFibEFSY3NQdkdRTjNUbFhZMEFOdGlEN003eE1xN25aTnNJbEtxTllaLWxPT2R5TWNTTHJZQlBwTHZsQThEZU5IYXVyWEV1bWtMWHhIdkVxOWlGUHBSVzBTSldn?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Invesco China Technology ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE94NTViY1o1RmZ4OERuOFB2ZVJFdW5fRXpCdFczeldRaHRWSFZTMUY1WEVKSjRXVUFTZVFRV0UzbnZlZVFfZ1ctNHlXMmpUSDly?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Roundhill Video Games ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ZY3l3VEV2d2lYRkliZS1WQm1jVExiNFF4ZDF1eG5rcW5Nclo2UG1aMXdkOGZpUktsX1I0UHNRcEV0b0RDOEZzdXlYQzNVWUdw?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "FT Vest US Equity Enhance & Moderate Buffer ETF - August - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JalZQWmZsRFFNZ0F0eHVTMkN3X1Z0dDNSYXZjdzZ3eXdnZWtmTEw2aE9JSlNZOHFoNlVYSnhXSDEwVEV5dWxiSzF4M2pNdFg4?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Satrix Capped All Share ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Ub3FaUkFJMjhlb05IeS1vTWY5bFFIMXZLQzJ4aVFlczZIQTdac1J6YVRYRWxoUXYyal9ONkI3d0lrUU5GVFhpMGdMZ0NKNnpNcVhJ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "XBI Quote - State Street SPDR S&P Biotech ETF Fund - Bloomberg",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1kRUR5SU1ONG5ORzlQSlQ1MDJPVGFWNGc2aGxDODNRMzBFRUdtWUV4c2Q3TmRsam1qaGpyVk9iODlBWkl1VjVXbWZGTWhfUHM?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares MSCI EAFE ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04VzREeGhfbE51TzViRHAtVW9DYy1JaFg4N0VyUWZwTzFOVi04N3AzQXBORW9QNGk5blFremNraDlPYTFhRVNrVV9WTThoaDQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Vanguard Morningstar Total Stock Market ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBhTVpOQ0VyQ0NiamZvVTZwM3ZfVGVvSGxKZFdSZ0g5Z2hwdjdkSlc2UF9NcDJVcDdlTmZIU04xQTJIYVlrMy1vVzlWWU5FRXc?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "State Street Consumer Staples Select Sector SPDR ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VSXVBOWVYUC1nRUtFWnVVQTVVeXBkSkRHMTdWRktTbmozVk81Y1ZSWjkzc3ZtdG13b0t2OW1sWXFMaTdqZ2xkMzVtd1gyZFE?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares U.S. Medical Devices ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mbFRONm0xZjVycW1XTTdnalR6bnlGckphTWx2UzA5RjU5UkhyclpuRVZxcUNBSDk1RWRyRVI2YTdnRHliTHNCbFlNaUl2NERD?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VanEck Semiconductor ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5IZ2g4QlBEY2VnZ3VGMjY3ZTNGZEdsZmRNU2RXX3RoZE95OTk0b3EwRE51V2xYRU9hTjBnaWFXNHJUVU4xODVjMWltUmtneHc?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "KraneShares CSI China Internet ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5qWEZIYk1CeXlFcTdQTlI2QThsd3pBaTR5YUZYUDA0LUJEWW1mRmpJa1ZFQ0c2SU40SEdJcUc4Q0pONElHaXBraWx4bEVEMHdl?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "IAU Quote - iShares Gold Trust Fund - Bloomberg",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjV0ZnTGpPb0dDSnZCUEhBMXJRUk1DZG94Mmdwem01TGdLY2FTRU5fbE80VmdHSzlzNTk3TmtnbU5rX1JOcmdfeENobDBkZnM?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg",
+          "organisation": "Bloomberg",
+          "published": "2014-03-15T00:18:15+00:00",
+          "age_hours": 111135.7,
+          "reason": "too old (111136 hours)"
+        },
+        {
+          "title": "iShares MSCI Emerging Markets ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA4aUt0TzQtV0ZWOXZZN1pvcHMzRF9McEliSHdRVWlmbGVtZnJLOFBkWng5TU9vd1ZPX3AwS0F6M1BKTWZrSHZzeHB3eEVCRmM?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares MSCI China ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9YX0FUVUJHVEdDalhkb194ZFhtRGU1SkpfVWxZZGZTV2hsa2g4NGZtU3R1MjkxZXRzWDJYVEJCQUdHMl9SMC0wMEo1cG1CakZ2?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitmine Immersion Technologies (BMNR) Announces ETH Holdings Reach 6.08 Million Tokens, and Total Crypto and Total Cash & Marketable Securities Holdings of $11.8 Billion \u2013 Company Announcement - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdnRBUWlqS1pIVF9lZ3F3bFZxWkpKcTgyZzRyZ0hiMmJlZzFpTk15TjZiY1BjcmJwR0xQNGRRelM0Yk02eWp6M1dYX29XYW9LWGtvZ0thb0hGS1YxSW9IM0psbDJUcWVrejRncllsZ0VRMXlJalpOcGJRX21NQWo3eE4zdU1aNC10NVBBMFBXSkZ6Tl9HVHFIWA?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "State Street Investment Management Launches New State Street\u00ae SPDR\u00ae Nasdaq\u00ae MyPaycheck ETF - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRUV1M2xTcDdoSks2TkZXYWNDOWptQkltNEZ2UW5MSkRVR0JVc2VDOXRrSXJReFdYV3B1X3gwcTlSY2VMVlcxQk5XV3VYUXlVcGxJN25obnh4NWcwRkF3aW1tRVM5eDZzTkdGOE44MGFUOHJzb0hTM3ZuM3dsMEliN0dUbEdOY2FIemNqaEFKMk9WWlVnMXRSWW82cjBQX080RjZWOU13?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "SS SPDR FTSE UK All Share UCITS ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB2ZUJDT2hGUzlPei1LWjJZVTJzTkFCNTJHNVVyMVpJTkE0akhiOVN5TU40TzJfTTZVTThYN2ptS3lFbENqWmZMU193WG41aU1u?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Northern Trust High Yield Value-Scored Bond ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBTUUlNdUM4TW1UU3ctbnJ6MWFVTWowTmxORHgtVTM5YVVqWVczX2F6U2F5RnFPWnhVMFpCeUFDZ1V0a2R3dmo1bHI5cUpUU3V5?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "HYG Quote - iShares iBoxx USD High Yield Corporate Bond ETF Fund - Bloomberg",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00OG96QVY1ZG1GZDZ5UmVIa1V0MURDMzdGeG9la2dBdUE1X0NnYTIzZE5PdHFjNkdKQjlaNzUyelR6SGlpOHhfOTFlN2VlR2M?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "MTUM Quote - iShares MSCI USA Momentum Factor ETF Fund - Bloomberg",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1MU2Q2NnE2VDZQa05JZXRJaDlTd1hfNkY0MzFacnlJaTJ1R3Bhal9qeGZOVWNVWHFfZDBud3NKaTY0T0F5TWhQXzYxampJZVF4?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Global Funds Cautiously Increasing Exposure to India IT Stocks - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ2NOQkNqYVZWbkN6TG0xVWxvcXkteG81NU93amR5aHNoSWlxT3V2SmJfSE9XVHNEWWI2RWhibWJGdENFd0s1T044cEZhYnllT2NtQWN3U0ZaT2xlN2c5eGpBSVE2R2xxd3VLUzZkWmRVdFY0a3Y2SVRqbzdXN0lpRzI2UVRuclRTX3FsR0N3WDZoc2tqOXlJZ0E0cEo2bDRRWTNJVk04UnZiajlQeXJtYXhwUTdyTmc?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin Retreats as Nvidia Turmoil Weighs on Risk Appetite - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVUxZZzlNWWNPa1prTjRxVlVjVGlKU05HRmwzZWkwY1M0WmZLeTQ0U2ZaVG9fYWZxeDZyQVBJRVNhWXN2b0puckFfNDN0czMzU3U2ZWlrUmVqWkdpd3IxOHN3S2hEUkk4Uzd5UHloOGJDRmxJaVozT2FxT2JpSGlnTWNrajc3MlRoUTk4N3I1TjlOMG8tNl8xTzFuVl9DaFNKSUZHZ1Rzem9vd3J3NEE?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "ABITL Select Global High Yield Active ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9oM1JTQVVXZVU1OGxHdHVYS1A2N2s2OTdpYTJwamI3d3Y2R3A5Z3ZVMkE2S1F2YV9fekltQ2psVWZnRHVpb2FFd05QSDBxdmJ5dEQ4?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "ProShares S&P 500 Dynamic Buffer ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ZY1JlUHM0M1Bwd1hKSGxSYzNKZVVZelRKbVFjWnQwMEVvQ2ItU01OTGpsejV1S2hza2pvbjFnekpkZktnQzJtanFhNGJSQQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "BlackRock World Mining Trust Plc - Portfolio Update \u2013 Company Announcement - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPakk1cHFKUVJkNGV3amFyMXI1ZTVMV1VtakZfVHYzeTNtYUhXZUhKdHBoTjZmWW95UTlTcXlud1JaSEoyVE5zMmtsNnkxZklQeGwxZFVQUm1lVXF0ZjVhWUc4aDV4em5WT2tjR3VZUUw1SVdCMzN0SHd1WlJFT1J0YW02ZG5sc2JHQVJGelY4RUhOQ0lz?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "JPMorgan BetaBuilders Japan ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rOG4tdHNLOTRiQ0JRRVpoT1pLdUUtT3dwa0pzTms1bHJjTVZ5NmVFV1FjVHdra3FUaGFNN0ppZ2hnTlhzXzROMUVwOWtFajEz?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "First Trust US Equity Opportunities ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PRnRJcnM5UjJwT2pHTVRDRDFqcmVpMjlDUk9LZzlLRHdmRUdSN092QVA2OUw3RDRjMUhsSk1pQ0w4TVRlQV81aU94aGZFSDQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "CEFS Quote - Saba Opportunistically Hedged Closed-End Funds ETF - Bloomberg",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9iLThaRmw2RHNLbW1YOFpia3BUNWctZDVWdmlydXNQNE80Vl9Uc0RZdHhvcWdTdnVRRmhVaFM3QkFyN21SMmY5a0ZYR25oUEx1?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "HSBC Japan Screened Equity UCITS ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9NNE0xZkR5cW1nc25SZWxXdlQ4MGlqMmhxeTAwMVVnZ0RLczlpMEdVOTRwTkh6bUpuelBsLWdqa3ZNM2tzUXp3d1cxVUlncUFa?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "F/m Emerald Life Sciences Innovation ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9iRHpINzRZeVlpZzU3UDhzTi1YdjdMcmpiTzhTOVdfU2NQR2I1V1U0TEJUYUlyNjQ5bGc1c0t1djZGeFl4OU45UmtreExGaVNm?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Tradr 2X Long Innovation 100 Quarterly ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBrck5jVHFRM2ZwVzlsVEdHQWI2U25iWW9Cbnh4NFp6R2pVNmlIUkRmVUFvWl9RS0pISEM3N0l0MzVlUnhzMVVtVEhXUkptd1FP?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "iShares 5-10 Year Investment Grade Corporate Bond ETF - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5CWDZOSE9PVTdkQ1p2OTNhSHVnMTRxZGZ4UkNKZFY0aVZySEk3N1U3SmlET04wSVZTTjdlZUpnSVFLYXUwSE5kRHM0WkJLbGpz?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Altius Reports Q3 2026 Attributable Royalty Revenue of $33.3M and Adjusted Earnings(1) of $10.6M - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMFl0cmRWblR2ZFR2aFdoenFFMml2NFVwQTVCSmtyMTFZdXdabzZYa0MxTE5XcjBCenB0TUxwNktyeTluYm9KeUNUdlFibjEtVHVERlRTNUZ2WS1XVE9DZnRWZHVHVkczb242NV8tM2NOYW9BY1M3aWlycEttLWFZNzJrNkUzTkZrblNQUGZTSnlrS1dwQ2ozQmlvdG0zV1Ewc3QwRkxR?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Intercontinental Exchange Launches Data Center Risk Tool: NYSE Content Update \u2013 Company Announcement - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObDBJbHE4ajYtMnkzaHNHMUhrWUMyU1JHTTJLZFFRZExobXNnM25ZU2o2VjFRYmI3YWxzV1VrXzFpbUZ6UHBSdlhCdVJBdlRLWjhKRmNLT011d2xFSDUxemRlRlJmVTd4cHpLem9DZWFod2FWV0FJNDc2TUh6WnlvMGVqU1FZWWg1LVllSEM2bVBsNDcyNUE?oc=5",
+          "source_site": "markets.ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Global Money Rushes Back Into Indian Stocks at Record Pace - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQN2xvczVrRTNBTlRVMnBhTDl1TkJGYkZhYXJNNlFMbWxQQkdMcm9Cc0FIOEhKcVNnQXhXZHNrR2thMFlMTkhVaURsd0VsLWZidmsyaHphTGQyQkN4b0lKR2Z6Sl9aTk41MXV6OXZZQjdibzlfSzdha2xNZHVkdEtUMTR5SDhLcENCQ0ptZXhBdERXalFETzVCeW5pX0VsWG1RLUJlTjVPY0ttNk9vSklIcmk4LVlxX2QxNzRva251M2k?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "JPMorgan Chase & Co - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hLTNEUTBsVjRQaGdyQ19kZnUtR24tZk9Ed0d1YzNsemc3cUVjeGZSeTgzZHVZYnhQTG5LMklBUFFZVXhSSEtKMVdvQ2FJRlA3LUxvN0ZpZ0VMOVZp?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "S&P 500 Index (SPX) Index Price Today - The Wall Street Journal - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5HUkQwY2ZpTmdJaUhFaUU5R2dVTW9JQVVhME1jdjVYYWZQTHB4eURkZmhlc1czUC0zLXhnbHJkR1FIUUNlalA4YnpPNlotRGZIMXlR?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TAG: Binance SAFU fund - Kitco",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBDSkFKeGhYVFotaEVLOV90Z1pGdkhKMHRDRnFoWVlsR1R6d29aWW5Qd2U1WEljSEg1UDdmeXBNbU1WOTJMOTQxa3VhZVp5NTNSS1NrN0ZIWUE4VFpD?oc=5",
+          "source_site": "kitco.com",
+          "source_name": "Kitco",
+          "organisation": "Kitco News",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Berkshire upped its bet on a beleaguered U.S. housing market, while souring on these bank stocks - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbWpiRGNNSlNIYThmNy1mN1R3M29Ja0VYRWNxRDZzakJYMVZ6dE5iUTJBOXBkVExPeUVkQldUSHFnRGRkZi1BTFJMWVgwYTZ5TEhBQWRJajJsQ0ZJcDI4S1J2RkJIY0hIV3lQd2wteWZiZ2NTd1lzUk1iemNmcGlwRkRVUmZBdUZVajI2Q3h0OHQ5enJQWGRHbUlVT3MxUVB5LW43ajNWeFFGbkxJbkwwZlYyZ2ZNUTFXdDUyQy1rWVZXWEp1T1dSazI1NUNuSnA4bjFN?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin is now below $68,000 and could fall even further if investors cash out to buy into the Anthropic IPO - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMWY1S3lwODdSRDlsR3F2Z181UE1HZUhWOWZEckxNVUZ3azFpOU9zVldJeENrS0VYYlVOWmRsTndGU3NBSXlKNmpRbXlkRGNtS2ltS0Z3RTR0QUlWQVRfYmNBNzZwUl9pTXp3ak1CeTV0cjNwcHZoT1BWaFIwTmxWNlpfRHJRT21aeE13YVgzRTJsSW5IOTJjRjYwSTRiNm5iNU8xUnA3WE9lQklUd2Y0M1JOVjFkTUxRV1Exd2xuVnFSclF2?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "AMD Stock Price | Advanced Micro Devices Inc. Stock Quote (U.S.: Nasdaq) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1sWUh3WlFTdGdDNXFqSTc0YWJLcGJjZjRFSjVGVjIzNnhUOXhlRGl2ejdJQnJmQ3dQa0RieDB2Zkd4ZzVzVFpMN1ItRUhwNUFkekFEOG9zODdWYXM?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "IAU | iShares Gold Trust Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5weFhnVHh2MUcwcWpwLW9VS1MwSDREZERoS0hRSnNpSC1kZmNsb0xZdmg2Y0w5NkNwRnBvRHVqa0pPS3UydlFSUC1uUU1vNDU4X0xJN04xcDhhdw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "published": "2017-10-14T08:15:08+00:00",
+          "age_hours": 79711.8,
+          "reason": "too old (79712 hours)"
+        },
+        {
+          "title": "WANT Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5uZXFkVF95dmNPaEdFX1VMSGF2MGM0SURURExUSzluWThzLW1XOGVBelJaS3BJUkNHT2YyY2JoY0V2V1VoRTg2YlVDQ3pUcGNDTjdmbWQ0Ny1OQnVTOXBmalZjUXdid0E?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "GUNR Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XWFppek5acUdDeVdjUkVaMGVyaGF0WnBRTHJHdWF1ZmowRzBzbkN5RDVXZjRKQkRrbHhBT002M0F3T1lyZkx2OFg1T19MbzZQQTFLTWg0SjdLQWEyQVEzZkl5RTg0NW8?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "PCPP Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1tUUdYYWlEM3JEaDczMDZtVHJPMGZIOFl2V0hCNnNYV29VVzNDa2ZwVVpEX0RuNkpqdVBxM3VlSV9WZEwzWFp4TUgwTGI4TFBic245NFJTTjJVMHIxYkIzRFFaMHpuclU?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "ROBT Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA4LS1jOHN4VG14T2VTR1JBMFBKQ3VVM3RnWEJDTGZQU2gxUTdXOTM4ZVBlYVFVMWFod2JYcWdLQllPZWhkZ21MQzBJajVZd3ZOZklfTmt3UHJuNzkzeHBrOGV5M3A1M0k?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "CARZ Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91MDI4X01jb09JcTItNGE4UUNQVHBZMkJHNGUyWUJ1VTUzZ0tLc3I0T05Dd0t3dWdyWElPOTl5Zlk1dXRibklwaUZGcklUcVl4YjNGM1Q1QXU4RTQ4TE5yMEN6UzZFU0E?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "POW Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtM3hULUpwOUFkVTF5V3U0TVhzUHJFT1Y4bzVaX2FTRHh4Zy1WWFBNTHZ2dDBJalFRc1gyQVd1cmZkczVRSmh3d180RExFb1FxRU9nUEsyLS1ackFEVWp4bFFIaE42QQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "YOLO Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWQlB5NkhTdHcxNmJFV1NJOEo2VERLb3U2UTBlYk9tampZenRvQkJYdTZsR2lZWjNVMnN4c19pS043bkpNc2xCcG1hNHlMUnFHdndnVzFON21IcmQtTzV5VDNyb3dWcGM?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "AOA Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1RQkVQN3dMSUEzdzBIWTZhOFpYaHBDdXlILUk2MFF1Q3ZrYmxrTkVpS002aGt0aDR5eXlKQ1htMGQ3YWcyU0NfSFBvU3B5LXFlSHp4bHZ4bGREM0dqbVRfYXI3QWZKUQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "USAF Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mZzdZM1lab0lBSDlaUk1zSmZCYmNsb1MydnRzbUl1TlVLdmtaRnF1dDhMSUxnRDRzM01KbDFJVHZhWkJOZzJTdW9JNHVtQl9wTnVpME1WQkxpaGEySGNUSTR2RUctZGc?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "XPH Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1hV1ZEckloa2lXSnd5UW03LWtEQ1lnU045dTA3cHpTWVZOaktnS2hZWF84YWJmVHRPbkhSYUlaWG1NUUt0RzQtUWdDbVlTQXpBMmRrWC0xV2dta1c0ZmZvSzVIUVVfdw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "IAT Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE50cVRHNElweVVLYWpXQjdDeGFOMG9HV0tNYURaLThRU3U5eDd3czVSbjJJY3dzeVp0V3gzZFNfSER6bjlsRUZHVHVtSVV6TEVYQ3J2Qkhwb1lqTlFoWjFMNGl2OXQzQQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "FXI Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1lNXB5aE02Y2VCYkFNTjVuR0FacW4xSDUzaXRDVmsyS2pSaF83MkZwSmlVTk5uMTVBMld6UGNvXzQyck9HaWNxTHZTNi1PaThrSXd6VlFyWHMwY0t0R3Jkb3hCbmVBUQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "KBWB Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9FYzVQQ1MxVk9FMVBHTjg3SWpJblJaVEhEYjJKWUsza3J0MVJHaENSRGNFdFhra3VVaEpONFVoaV9VRlF1NGp1ZkVNTnNTUk9zVjNkUUoyOWxWVkFNOGJwbXJXZUsweXc?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "JTEK Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfZFFFRTNjaXBNNEJUcjFUSXA5YzRWS0JXTlRVdGI2MmFjSEJHdDdFVzBoM1Z2dFY2dWFha3Vpd2g0ZngtbHlRVWJmcWRnc3AwbU5pRHpabURocWplRHJQdXo5N0pDOFU?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "EEMA Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ZZXZ3YTJkTGlOOHMyRWpaT1c1WFltc2JhZlVJbDc1a3ZQS1o2dWFxaXdpTkpxa3RBSDFmd3ltWmFIZzliaXhNVjZxVEVTd00yYml1TkpGQkI2QWlsVk94Qm9QQVVrdVE?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QQQI Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9jaFhBTThMejJLYlhaYlVMMEpORGhaSGNEWGV3dEVQT25OaHA1OXhPMVJRaXF5WFBiVzNYZU1qZV9PVWNQcjNySEJSR1ZwZHNtUWtEaURaWE92MkRhVE83VUdBQ0I3TDg?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "MPLY Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81ZXBmQ1pzRVJCSGpqMFRwNmhnYXJ3UnlSeDNjblRQcEJZMjNLdEV1M19nSXV4Tzk0V1BESmthcmR6MXp6aTk5Mi1aNnhSM3NEZFc5Z3EwMU9zY1JzLVZLeEU5bVlyaWc?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "DGS Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1LVVIwM3VEZUI5a3FYTmcxd2JzdmdsbW5pbURWdjF1eWY3MVhsOXhFV3ZsQ3RMbVRsdDRSemJ4RVN1UjJhaGVrYmh0Y3NfZzcyVVZycmtvRGwzUVRzdEFyd3hud2JDSGRYTGFJdGtjN0t3d0Z0b2hhbURB?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VBR Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1MTlJvbF81YnNVUzNqSVE4dVJFUGtXMDJzcFJCSks2aFA0TEFRcWlsWGhnV0xSNm9vNVl0UXNsZ2xSblFpUWJuRDlVMFNiZzNXVlVDbDBCVUI2MVVpRVVWV0FyY3V4QQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VEA | Vanguard FTSE Developed Markets ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA5dGtCbUFfMjQ2cjlJdDNXYkRHeWtHWHh1Tm1nVUlwUmx1OXNwaU9ubGN2bUVnX2xKMDlqQkxkWDZBYXYwREJXbXZLdmcwbTZQS1cxNklQRHY2Zw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "FASGX Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE82VkJpMTFWeXNoNy1qRXlhSjc1MFpCcWVITlJTdnlVTW5CU3RySFJSWjF6RExoYU85UHMzd0s3Z1FhX3AySUY3YUF5REdXYXlQamxNYWJsRTkwMnBLOVlaeVRfeVFVUXVq?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VTWO Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE52RzZ2MlV0NHhGV0FGOTgtVi12NGFuUV9yenI2aWVrWWh5bzVOczJMRjVldDUwNkprRFlIWXp6VFpwckxyVFA2bHdkS3M2bnMyVVBOT1lTRVBLbTdwZ0hlb3YxMlJwY00?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "FDL Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1aQ1lTLTVseWR6b25CQlRjMUFfUzRKaXdQUmxpQnBvaHA4blcyOWxXSzJDLXFBNXRVcXNMcmRsbUVqeXFQWF9JVFowRnZxT0JxLUNDNWFPZEV2UDQ1ZUdMaTQzOW0wdw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VSIAX Holdings - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yWmtkMU9uVFFDWllwUFQxNDNhSWQxQ2U1VVFURU44U0lZa0NtWGJFS2YwV0FabGpXMXByQlFIcGtKRDNjWEdtZmdSZ0E1N3h5aGlRSVNjMFljc0RoZi1FbDZwMXpHc0Z6?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Market angst is driving investors into low-volatility stocks as AI trade stumbles - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPXzdoSVNxancxZzNsSGRPZTBJZ1FNSktlSXotYkQzQldsOFprNzJ6MkZHZWotZmlSc1FzejRwV0lfQ24tU1hkS05xMUVIZUFTTXBrSWxDWm9YaW1XeHJHUDZIWDh1UEJCbVpfZ3Q2N3dsVzFfeW9iUDY5RkxIdTNSbkwzNm5uQVhMT2s5Umoxem55UjNiamZxS09zMDdnd2dVdTZjM01XT3dyUklRZnRRNDlQLU1JX2VMMldsVzlSR3hkZw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VUYA | Vanguard USD High Yield Corporate Bond UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5yVTVlYkxNOGxOTUhBbGVpQ2pxNjlacWQ2YmJDN1BhU1BiYXFZWTkxRC05Mzhsa3JDSHBVY3Jxamloel9BVkRVM19TN0dPWm11ZElkVnA4aVR4QmVSb013NXFWNTJFT3U0anRmVkNtVQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Large cryptocurrencies mixed as Solana increases - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZzBJMm1zUlJKRG8wOVFsdU0yZ05XNEdHZkVLaEUzRGVNYV9lTm1NMWhjOUR4N2h0VHZRZXhIQ1hSRTRGQzBQMGdYbkZyTldjVFBXRWE2MkdYZ3g5MHJUcGs1d1dTNXBhanN5MjI4bFNoLVVWZnF1d0pqTzR5OUU3RlRoY0IzaHVyMElMVEY1amhtZlQ3SjJiQ21wV1Itd25wNDRuMHh6NDRUUy1L?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VTUS11 | Nu FTSE Global All Cap USD Fundo de Indice ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5kZG5MY2JxVmw4WlM5Slg2SUNJd25LVWM1SFpsMXBPLVBGQzk0bE1wbkpWcjdKRlNOOFR1TkRPd0V2R0hGbTZDSVd3Z3g5OTNTZVlRYnJWUW5rVEZ6VnljNVYxZ0IxRTBadjU0ZnJhX1BLQQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QQQAN | UBS Nasdaq-100 UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5fNy1EanhiakRla1g3U0R0SmdMZlhPLWpUVHlrTXhmNDVWcmJkV0pZanJldGJoaUR5aW9oZVV0aHNDaGRZNU1DRmNsSWRodVpfcjZxQTNZeDFLUmplYnZUUGxFSlZZajF5MTA3SHUweWQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Large cryptocurrencies drop on Sui, Dogecoin decreases - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV0NNY2xENmRna3U2dGhacF9Dc0xwbWxxME1sSURxYml0a3pHQjE3TXhXbTZQQTBSWDNvSncydkVfQ3YyMDJmaE5paUhCRkFQZ290RmRNd3RiRHphQzlGLUxzMVR0WklYSVZxSUpTODg2UjBHMjhrS3hCSTZlUkJzekdnNFlVc3JhSFJaQm5fd093QUdUZ01XbzRsbVlyYWg4dW81QmlDUzRwNWxwTmM0Y1BpQQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VUYD | Vanguard USD High Yield Corporate Bond UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE04NTZMU2cwR05mdG1Cc0pDbkxZOC1kcWRFYndGSDFQUkpaQ2F6TjNaV3BvSWtGVDVHSzdGUVNhNFhIbWZpNFBmcnNueFpZNmVYd0tpR0dZQzdQRE5iOEpxU1U2MHdvalZCbl9VT2x2Yw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QQQI | HANetf Nasdaq 100 Daily Covered Call UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9jejBhSzZfYS1GTXIyYVJqczdrUjZFMlhraWd4ZnVTWDRGRjJFdkhFczlvTWFmcWdjUW00YklPUEFRUk9YOHBYZHFPNi1JSWE5LUlPcVdpZ0tZVi1xRnZLb1FEZk9faklMbkg5ZWZiYw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QRDM | Columbia Threadneedle QR Series Emerging Markets Equity Active UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBEdkFoeXZsZXRoSVdKRG5OUTlrSkFVWWlnVVdwRlQyajFtWEdGenhxSlMyUzBpNVpENVR1X3VaOWh5M3NPOFpjdTNvRjBYbjJNeEYxOTNCbVVEQkdSX1hwZk1xWVJYWWg1MXFVSUdLYw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Most large cryptocurrencies decline on Bitcoin, Ethereum drops - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYUdfX29ZdXR3c0hGZGV5WVdPUU5PbUNITHBkUVE1UFdqRm9WWTFQTU44dHotSXZBUEpDZGY5Ukt0N3VXMklYWXc2Mk9pSHhOTzBXVDJHNV9EWjJoeVotZElEY1RJUjd1V1RKZ0lKS3NKSzRfNUJ1bEwxcWtpenhULUhNdnJ6T2pMMGNUa2lkSTh1ZzlFRlE4YnJ6aEFFNTlnM2s3VEZyQ2dWeWNwem56U0xfSGlvekFTZXdFLUJB?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Avalanche leads drops as large cryptocurrencies start mixed - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNTNla3VCTkJOLTdLSTRaSmhIV3hHSnJ1SURTYjJMVUdKNXNBZFZTQW81SFNRTnNOZDdaeDh1YjQ0NEhITEp4T09XTl9kUy15YldabWE4cU13X05WektKcGt1b1BIbmZXa0tvT2YySG1NTXVseTR0MDdDdXV3Wld3Wk42aG9DYW55eGNSdllhV3VxWnZGRzExUF9OUjdhZjdBQldWX2d2cmp1OHZLWVRSd01qRmhqaThzS09r?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QTF | Waystone Quest Global Equity Cashflow Compounder UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8zS0VkR00tcVRXejd1bnBBcEtfVVEyZkpHN1c3YW1keXJ2QUJjai1vMm9laFMwNFRUMGppTzJya3hGTlk1Yi1QU3JEZGdra1htZlBzNWVLYVQ3WDVXSkVCOGlzWWFwV19SXzh2UFJ3?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QQQP | HANetf Nasdaq 100 Daily Covered Call UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Fc2xOVmUwbHdWbUt3LUkyRXBVaTY3S1A0eFBzd1NhZkxoZ3VHR3ljN0p1RlhmdmttOU9zLXJ5UmpHLUF1akJfc3htSnltRFd5OXc4a3BJM0VrSW0tV184NEpVTnI5SVBWbVVUcG5tYw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TSIE | Thrivent Securitized Income ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5IREc5WVdZTmNEUkxsUHN2MTAzTW01SEltQ0pQWkNfU3N5YVJTZS03ZFRBUkdpUUE2UFZuejU3cExJZ3hxRmgtZk9MNkp0NkVpV09WeG1wQ1FBUzQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "DRTD | WisdomTree Defensive Defined Return Autocallable EUR Active UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1rRXA2V3dSWTdGaTJMMGxwQTJoem1rWmgyUzhXcHBOYldrandFQ3pRdDVNVk9YY1pqWmxqOWNYMjFORjdPUHlRcU9Sckd4S1oybU9XQklyMUVxTXo3UjdXWnRFR0s2MkVoWXUyRi1XMkVNcUxnS3EwZzRfbw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QQDH | Tuttle Capital Innovation 100 Income & Hedge ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lb3hSWmNJNzNuZDN0bWZCWXpmZHBHZWdWY29rR0NaQW96YUY0NHJEWW1hTFFuSWtON09EWkxoZVBCd3hucjJSSnphVm5DM2JHb2xmTTJrRi04SEU?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "DIVY | Amundi S&P US High Dividend Yield UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PU05JSXdyTHE3VE5SeEtBWkpFdVRWU3c1Z2JZeG5tRGRtNm1LQzBxbWZPWldjSjRJdVdYN0RyTVdaaHFWTzZoM19fb1MtOXJ0WkE0SFM3NDMzMGhIbkNKaUdEX0hWNEo4cy12c3ExRQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "DUED | iShares Europe Equity Enhanced Active UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FblU0RWJYVS1meGE0U3U4UDVQbVVLNUpYT2QxM2c3N0lTTmktM0FKSnpxYjRpRS1HUDgtb3A3UWtFYjdUbGRyMFJSZ3lyNjFWTTZTQmFNYWs3N3dweHRVdUQ1U3BNcWQzQ2V2VHQ3SQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VGAWF | Vanguard FTSE All-World ex-US UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE15ZnJ3NTRsc2t6MnhEUzZUYWhkbC03cVVlS3V4dGx6NGJ0TEVTcHJBSGcydEJ3U281ZFJxNVdHTXI2STJqZnFaUUtERWxhdDRQS3dzZ0VOTmtmM3dK?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QRMD | Columbia Threadneedle QR Series Emerging Markets Equity Active UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXM1hMWmJrSzd6bjduTXZ4Wk1TUG5MR1VWdTV6UVhYc2Q2RW9vTDdFLUVUeUxzVGlQX004cDNtLUtMeVJWTzVyb3hMTllINXhnaVBHODZENWt3UmNBMUNtTHN5a3pUV19DVmtwejNFcw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VEMB | Vanguard Emerging Markets Bond Active ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xRDE3QzY3aHh0SlBnakJ6Tk9Nc2lrR3NSRzJHcklyOXcteUJkTExLTjdxS21VaDhLci1adEpGSDBCSFczUWpVRU0zVzdvVjZSMnVBYWx1UXVhNG8?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "DSAM | Dynamic Systematic U.S. Equity ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1VZHZCYWlxWWJuU0dRTjJTSWEzNnRHOW1lMmhXRGR1YjE1VC01alJPTkFTejluY0FJU3Y1SkVhWTRGUmZES3VQQmdlOGFhV2dLa05QN3lVdjFfMmpvRVRiX0NWQjBka0Q3Tk9fM1ctSQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VPNGF | Global X Data Center REITs & Digital Infrastructure UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXVklZUi1rNUpPZmR4cUNteFFFUURLOTQyUVg3c2hGNm05SDdqU0hydWE1RjZKTV80cUxlZWE1dEVCQ1I3SWtkYmhibHV2aTMxWERtWkxFZ0JEeVZL?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TRPU | T. Rowe Price Integrated U.S. Equity Enhanced Index UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Vbm1ueWlrdElHaUJTWmpWZE1fcHRMUlJIOGhPcndZd0FnZlBnUXkydWYtUTY1MGw1UkFCQTRCWU9kTDZqV1l0bHc1RGJfS1YyYTVGQ2lFeWdGM1JJcmFIZ21jSTNYNVFwMVM3YzU5RQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Anthropic wants everyday investors to be part of its IPO. Some are not buying it. - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPS2s2ZGVtanVlTUVuTXBZYnZzaXRITVppVzJIOEhFWEsxWi15cjQ3d1pYZDVXdU1sQzdZTXVWcVBEbWdUU2JxTEF2dzEwSzByY3NjS0tzMUp6anJUbFBrSVJ1WFVUemVSSVRRcE1Mb2tTYlJJZjhpN0ZoeDZlOHpTN2ZqMnZJLWVlOV9DNC1mU0t5VkZkRlJXR1F2ZGYzQnV3VGU4dkVBUnlNdi1aazRGNnBZZk1lci00amJVempuZw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QRED | Columbia Threadneedle European Equity Active UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qRHVNaGdJeHN3cVk0R2xuTE8xYXByaGlPM212dWV4U2E1cjAzUVJZMUJYLXFZMkMzTnJSVGpBVDZNUVQ2a2xnaWhBMHlRUjFvXzdVRzhnN3RReGF4ckJHQTA1WndvZW1ENkpDQUUtc0ZaSjYxcEtpMmZiaw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "VE4H | VanEck Israel ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8taVNmcW5nTWFpeEVXSlhUNkxSUzBlR2ZLc2xSOEo1eTZlWlNybTdxY0ZKUUZRQnk1ZEtPemlIOUpNbDlhaDFYTUdRQjBaRFI3czZPelNNR19QeXo1QktFb1EwT0NWd3ZNRjBrcWpCQmZjRkNOUkRzOEVpbw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QLYXF | Global X Nasdaq 100 Covered Call UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xV29rUWFBMW5sMnVCZVljSE1wYTVSWnZIZG10cWI3Mmw0enU1X0xqTDVtZThteDZSak9qZVRrZy0tbENMQlRyRFlva2tLbXpFcmV5dThGV2hUb0lD?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "QCLNUN | First Trust Nasdaq Clean Edge Green Energy UCITS ETF Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZM2FLT28tUWJLVlhMWGFGXzdpV3lyTjNvR21ZX3FEQVp0RUI1TmdSZjlnUFBvRzVQNDVWWU5nbkxzZ2V2TVRsRmhzYmtvMEJTTjVPbTNtcUJCN1ppRmI3djlzdk5xSTh4Zzg5MWlvSzZwQQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "HOOD Stock Price | Robinhood Markets Inc. Stock Quote (U.S.: Nasdaq) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9QX2RadUN0LXduMmViLXloVlRtdGR6a2NTYV93TFBzYUctdTkzMDgxUXVJQlB2YVdqT2NhQnpfWTIyZVFLRExZNFJhY0h5Tk5lM3dMVFY3UUl2QVNh?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "AMD\u2019s stock fades as investors weigh whether Nvidia\u2019s turmoil will mean lasting wins - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRjNQX1Ntbk1OMGFrQnRHTDh1S291MHRKa2ZIR3RrQUJHT2U1QVZQMC1kSUdOVmgwNVBwNlVlS0x3dUs2SHYyRzltRThVVTltNmVCcm1fTnNob1BTbEkzWWRjeDJCbi1BbDV0ZWoyUFA1Z1ZWSW5CN3VVSU5tX3o1cWYzSi14T2lVQ0FOWnRUejhvNm04aU8wV2VwZ3lnUVV4aUNCM2oxOWFJTExEM1BlWXZhSTQ5X3RqMlVYMHF0ZjhoYW8?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "PLTR Stock Price | Palantir Technologies Inc. Stock Quote (U.S.: Nasdaq) - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mbUUyOEN0XzYzTF9NZ000MEVVaHdQaERlYk9LeVRZcjhDenpCb3MzbzVVT0RyQ0N3YTJmekNBTUR0c3JwUUZDOGVxOEpvTmdUX3BqSmRZaXd2TmVH?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "TQQQ | ProShares UltraPro QQQ Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB3WTNsVm9xVUFjNjNEVVNFaGw3VDdXMlM2elZsUDlFZm55THYtRTd5SVJCTklmajNoczg5dzdqcXk1YktBZXRDeEFMd0hFQkVudEIzMnJMR2ZoRW8?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "Bitcoin Slides Past $70,000 as Risk-Off Mood Pressures Crypto - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQd1JKNjJuVzhabndRY1NTR0N4bDJUTWNjZW1JOG5ycU10UmNpX200UmFlbGJmY2hhdDJsZm9QRHBMMFgtblJYNDNIZlk5REFTcnJvVEhpeTViSk1kdF9VWllBSUo4XzFNRGoySFVSVk4teVhveGFLZTBYR1RHWGlFMkpUNzdOSno4NTlfSXBJQm5zbFpZUmYwX3lMUXUwVGxoRXYyLUJvcXVSYThtdmNZMFFKVVVGdw?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        },
+        {
+          "title": "CoreWeave just gave a shot in the arm to Micron, Lumentum and the rest of the AI trade - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWN5UXA1LTVfVFJTWEdEaHAtbnBGMmFzRXBDb3VuSDNmQU1DdmxwaUxBZUdqaW1OMnd0ZW0xbzVnc255VXlxaVlwMV9YMll1bWlUSU4zbDRpSzFTaV9qWVZHck9EQU16eGo4QmtqQ0MwamFyN3h3b2o1b2VkSzg1eGhLNVdwdnNoeWRYdXlFR3ctOEk3QWJ3NEJrZ2lPS1VwZmkybG5lUzYxaWFuWk9McVp2Z1ItRHhkZWxN?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Gold"
+        }
+      ],
+      "error": null
+    }
+  ]
+}
