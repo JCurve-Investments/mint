@@ -1,11 +1,162 @@
 {
-  "fingerprint": "97d170e1550eee4afc0af065b78cda302a97674c",
-  "time": "2026-11-09T16:25:50.740493+00:00",
-  "results": [],
-  "passed": 0,
-  "total": 0,
-  "direction_right": 0,
-  "rules_right": 0,
-  "ai_right": 0,
-  "ai_used": 0
+  "fingerprint": "73123accec41f30ed363d636d4d8a9cb2f4af378",
+  "time": "2026-11-17T17:11:17.941715+00:00",
+  "results": [
+    {
+      "n": 1,
+      "date": "2020-03-03",
+      "asset": "Gold",
+      "headline": "Fed makes emergency half-point interest rate cut as coronavirus spreads",
+      "expected_factor": "G2",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "alert": true,
+      "rules": "up",
+      "rules_reason": "no similar past events in the library yet; factor pattern: Interest rates coming down: gold has usually risen",
+      "similar_used": 0,
+      "ai": "up",
+      "ai_by": "AI (Groq)",
+      "ai_why": "Rate cuts usually boost gold because they lower the appeal of interest\u2011bearing assets. The emergency cut is likely a surprise, and surprises tend to move gold more strongly.",
+      "prediction": "up",
+      "rules_right": true,
+      "ai_right": true,
+      "real": {
+        "d1": 3.13,
+        "d7": 4.2
+      },
+      "real_direction": "up",
+      "checks": {
+        "alert_sent": true,
+        "right_asset_and_factor": true,
+        "right_direction_7_days": true
+      },
+      "passed": true
+    },
+    {
+      "n": 2,
+      "date": "2023-03-13",
+      "asset": "Gold",
+      "headline": "Bank failures raise bets the Fed will pause interest rate hikes",
+      "expected_factor": "G2",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "alert": true,
+      "rules": "down",
+      "rules_reason": "4 similar past event(s): gold rose after 2 and fell after 2 (average 1-day move -0.2%); factor pattern: Interest rates staying high or going up: gold has usually fallen (it pays no interest)",
+      "similar_used": 4,
+      "ai": "up",
+      "ai_by": "AI (Groq)",
+      "ai_why": "A dovish signal (pause) typically lifts gold. No past pause events contradict this expectation.",
+      "prediction": "up",
+      "rules_right": false,
+      "ai_right": true,
+      "real": {
+        "d1": 2.64,
+        "d7": 6.19
+      },
+      "real_direction": "up",
+      "checks": {
+        "alert_sent": true,
+        "right_asset_and_factor": true,
+        "right_direction_7_days": true
+      },
+      "passed": true
+    },
+    {
+      "n": 3,
+      "date": "2024-11-06",
+      "asset": "Gold",
+      "headline": "US dollar jumps after the US election result",
+      "expected_factor": "G1",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "alert": true,
+      "rules": "down",
+      "rules_reason": "1 similar past event(s): gold rose after 0 and fell after 1 (average 1-day move -2.8%); factor pattern: The dollar is rising: gold has usually fallen when the dollar gets stronger",
+      "similar_used": 1,
+      "ai": "down",
+      "ai_by": "AI (Groq)",
+      "ai_why": "A stronger dollar makes gold more expensive for buyers using other currencies, reducing demand. The move is driven by a surprise election result, which tends to magnify the dollar\u2011gold link.",
+      "prediction": "down",
+      "rules_right": true,
+      "ai_right": true,
+      "real": {
+        "d1": -2.67,
+        "d7": -5.94
+      },
+      "real_direction": "down",
+      "checks": {
+        "alert_sent": true,
+        "right_asset_and_factor": true,
+        "right_direction_7_days": true
+      },
+      "passed": true
+    },
+    {
+      "n": 4,
+      "date": "2022-06-13",
+      "asset": "Bitcoin",
+      "headline": "Crypto lender Celsius freezes all customer withdrawals",
+      "expected_factor": "B2",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "alert": true,
+      "rules": "down",
+      "rules_reason": "2 similar past event(s): bitcoin rose after 1 and fell after 1 (average 1-day move -4.8%); factor pattern: Exchange hacks and collapses: Bitcoin has usually fallen afterwards",
+      "similar_used": 2,
+      "ai": "down",
+      "ai_by": "AI (Groq)",
+      "ai_why": "Celsius is a large firm and a freeze looks like a collapse, which usually pushes prices lower The Terra collapse, a comparable failure, triggered a big drop",
+      "prediction": "down",
+      "rules_right": true,
+      "ai_right": true,
+      "real": {
+        "d1": -15.97,
+        "d7": -23.03
+      },
+      "real_direction": "down",
+      "checks": {
+        "alert_sent": true,
+        "right_asset_and_factor": true,
+        "right_direction_7_days": true
+      },
+      "passed": true
+    },
+    {
+      "n": 5,
+      "date": "2022-11-08",
+      "asset": "Bitcoin",
+      "headline": "Crypto exchange FTX halts customer withdrawals as crisis deepens",
+      "expected_factor": "B2",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "alert": true,
+      "rules": "down",
+      "rules_reason": "3 similar past event(s): bitcoin rose after 1 and fell after 2 (average 1-day move -8.5%); factor pattern: Exchange hacks and collapses: Bitcoin has usually fallen afterwards",
+      "similar_used": 3,
+      "ai": "down",
+      "ai_by": "AI (Groq)",
+      "ai_why": "A freeze at a major exchange hurts trust and often triggers selling Past large\u2011scale collapses led to double\u2011digit drops in Bitcoin",
+      "prediction": "down",
+      "rules_right": true,
+      "ai_right": true,
+      "real": {
+        "d1": -10.01,
+        "d7": -18.05
+      },
+      "real_direction": "down",
+      "checks": {
+        "alert_sent": true,
+        "right_asset_and_factor": true,
+        "right_direction_7_days": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "total": 5,
+  "direction_right": 5,
+  "rules_right": 4,
+  "ai_right": 5,
+  "ai_used": 5
 }

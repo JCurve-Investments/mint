@@ -248,7 +248,7 @@ footer.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;f
 // MINT website (v29). On GitHub Pages it is VIEW-ONLY and reads state.json; on the PC it talks to the MINT program.
 // ---------------------------------------------------------------------------
 const STATIC = !["localhost", "127.0.0.1"].includes(location.hostname);
-const UI_VERSION = "29";   // must match VERSION in app.py
+const UI_VERSION = "32";   // must match VERSION in app.py
 const PER_PAGE = 10;
 const UI = {tab:"today", asset:"Bitcoin", range:"7D", hover:null, open:null, page:1, efAsset:"all", efKind:"all", out:{}, lastJson:"", testOutput:""};
 let S = null;
@@ -488,13 +488,13 @@ function today(){
     <div class="rise d4" style="flex:1 1 320px;min-width:0">
       <div class="section-head"><h2>Track record</h2><button class="link" onclick="go('record')">Details →</button></div>
       <div class="panel" style="padding:24px">
-        ${A.hit_rate == null ? `<div class="big" style="font-size:44px">–</div><p class="small muted">Appears when the first prediction window ends.</p>` : `
-        <div style="display:flex;align-items:baseline;gap:10px"><span class="big" style="font-size:56px">${Math.round(A.hit_rate*100)}%</span><span class="small" style="color:var(--soft)">of predictions were a HIT</span></div>
+        ${(A.score ?? A.hit_rate) == null ? `<div class="big" style="font-size:44px">–</div><p class="small muted">Appears when the first prediction window ends.</p>` : `
+        <div style="display:flex;align-items:baseline;gap:10px"><span class="big" style="font-size:56px">${Math.round((A.score ?? A.hit_rate)*100)}%</span><span class="small" style="color:var(--soft)">accuracy score</span></div>
         <div class="bars" style="margin-top:20px">
-          <div><div class="barlab" style="color:var(--ink)"><span>MINT</span><b>${Math.round(A.hit_rate*100)}%</b></div><div class="track"><div class="grow" style="width:${Math.round(A.hit_rate*100)}%"></div></div></div>
+          <div><div class="barlab" style="color:var(--ink)"><span>MINT</span><b>${Math.round((A.score ?? A.hit_rate)*100)}%</b></div><div class="track"><div class="grow" style="width:${Math.round((A.score ?? A.hit_rate)*100)}%"></div></div></div>
           ${L.best != null ? `<div><div class="barlab"><span>Lazy guess (always ${esc(L.best_word)})</span><b>${Math.round(L.best*100)}%</b></div><div class="track"><div class="grow" style="width:${Math.round(L.best*100)}%;background:#C8C2B4;animation-delay:.6s"></div></div></div>` : ""}
         </div>
-        ${L.best != null ? `<p class="small" style="margin:16px 0 0;color:var(--soft)">${A.hit_rate > L.best ? "MINT is beating the lazy guess." : "MINT is not beating the lazy guess yet."}</p>` : ""}`}
+        ${L.best != null ? `<p class="small" style="margin:16px 0 0;color:var(--soft)">${(A.score ?? A.hit_rate) > L.best ? "MINT is beating the lazy guess." : "MINT is not beating the lazy guess yet."}</p>` : ""}`}
         <div style="display:flex;gap:24px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line2);font-size:13px;color:var(--soft)">
           <div><div style="font-size:18px;font-weight:600;color:var(--ink)">${D.median_hours == null ? "–" : D.median_hours.toFixed(1) + " h"}</div>typical delay</div>
           <div><div style="font-size:18px;font-weight:600;color:var(--ink)">${K.judged || 0}</div>market events judged</div>
@@ -786,27 +786,27 @@ function progressBlock(e){
 function record(){
   const A = S.accuracy || {}, M = A.moves || {}, L = A.lazy || {}, K = A.market || {}, C = A.calibration || [];
   const pct = v => v == null ? "–" : Math.round(v*100) + "%";
-  const beat = A.hit_rate != null && L.best != null ? A.hit_rate > L.best : null;
-  const headline = A.hit_rate == null ? "Not enough results yet." : beat ? "Is MINT better than guessing? Yes, so far." : "Is MINT better than guessing? Not yet.";
+  const beat = (A.score ?? A.hit_rate) != null && L.best != null ? (A.score ?? A.hit_rate) > L.best : null;
+  const headline = (A.score ?? A.hit_rate) == null ? "Not enough results yet." : beat ? "Is MINT better than guessing? Yes, so far." : "Is MINT better than guessing? Not yet.";
   const judged = S.events.filter(e => ["right","wrong","partial","no_clear_move"].includes((e.outcome||{}).effect));
   const top = C.length ? C[C.length-1] : null;
   return `<section class="rise" style="padding-top:44px"><div class="eyebrow">Track record</div><h1>${headline}</h1>
     <p class="lead">Every prediction is frozen before the price moves, then judged the same way. This is the honest score.</p></section>
   <section class="panel rise d1" style="margin-top:32px;padding:32px">
     <div class="three">
-      <div><div class="big" style="font-size:64px">${pct(A.hit_rate)}</div><div style="margin-top:6px;font-weight:600">HIT rate</div><div class="small" style="color:var(--soft)">${A.judged ? `${A.hit} HIT · ${A.partial} partial · ${A.miss} miss` : "of all judged predictions"}</div></div>
-      <div><div class="big" style="font-size:64px">${pct(M.hit_rate)}</div><div style="margin-top:6px;font-weight:600">Each price move once</div><div class="small" style="color:var(--soft)">stories about the same move counted once${M.total ? ` (${M.hit} of ${M.total})` : ""}</div></div>
+      <div><div class="big" style="font-size:64px">${pct((A.score ?? A.hit_rate))}</div><div style="margin-top:6px;font-weight:600">Accuracy score</div><div class="small" style="color:var(--soft)">${A.judged ? `${A.hit} HIT · ${A.partial} partial (counted as right) · ${A.miss} miss` : "HIT and partial count as right"}</div></div>
+      <div><div class="big" style="font-size:64px">${pct((M.score ?? M.hit_rate))}</div><div style="margin-top:6px;font-weight:600">Each price move once</div><div class="small" style="color:var(--soft)">stories about the same move counted once${M.total ? ` (${M.hit} of ${M.total})` : ""}</div></div>
       <div><div class="big" style="font-size:64px;color:#8A857A">${pct(L.best)}</div><div style="margin-top:6px;font-weight:600">Lazy guess to beat</div><div class="small" style="color:var(--soft)">${L.best_word ? `always saying "${esc(L.best_word)}"` : "always up, or always down"}</div></div>
     </div>
-    ${A.hit_rate != null && L.best != null ? `<div class="bars" style="margin-top:32px;gap:14px">
-      <div style="display:grid;grid-template-columns:200px minmax(0,1fr) 50px;gap:16px;align-items:center;font-size:14px"><b>MINT</b><div class="track" style="height:14px;border-radius:7px;margin:0"><div class="grow" style="width:${Math.round(A.hit_rate*100)}%;border-radius:7px"></div></div><b class="num">${pct(A.hit_rate)}</b></div>
+    ${(A.score ?? A.hit_rate) != null && L.best != null ? `<div class="bars" style="margin-top:32px;gap:14px">
+      <div style="display:grid;grid-template-columns:200px minmax(0,1fr) 50px;gap:16px;align-items:center;font-size:14px"><b>MINT</b><div class="track" style="height:14px;border-radius:7px;margin:0"><div class="grow" style="width:${Math.round((A.score ?? A.hit_rate)*100)}%;border-radius:7px"></div></div><b class="num">${pct((A.score ?? A.hit_rate))}</b></div>
       <div style="display:grid;grid-template-columns:200px minmax(0,1fr) 50px;gap:16px;align-items:center;font-size:14px"><span style="color:var(--soft)">Lazy guess (always ${esc(L.best_word)})</span><div class="track" style="height:14px;border-radius:7px;margin:0"><div class="grow" style="width:${Math.round(L.best*100)}%;background:#C8C2B4;border-radius:7px;animation-delay:.6s"></div></div><b class="num">${pct(L.best)}</b></div>
     </div>` : ""}
   </section>
   <section class="three" style="margin-top:24px">
-    <div class="panel rise d2" style="padding:24px"><div class="small muted">Started by news</div><div style="font-size:30px;font-weight:600;margin-top:6px">${A.hit_rate==null?"–":pct(A.hit_rate)+" HIT"}</div><div class="small" style="color:var(--soft)">${A.judged||0} judged</div></div>
-    <div class="panel rise d3" style="padding:24px"><div class="small muted">Started by market lenses</div><div style="font-size:30px;font-weight:600;margin-top:6px;${K.hit_rate==null?"color:var(--muted)":""}">${K.hit_rate==null?"Not judged yet":pct(K.hit_rate)+" HIT"}</div><div class="small" style="color:var(--soft)">${K.total ? `${K.total} so far${K.open?", "+K.open+" open":""} · counted on its own` : "counted on its own, from 17 Nov"}</div></div>
-    <div class="panel rise d4" style="padding:24px"><div class="small muted">When MINT was most sure${top ? " ("+esc(top.label)+")" : ""}</div><div style="font-size:30px;font-weight:600;margin-top:6px">${top ? `${top.hit} of ${top.n} right` : "–"}</div><div class="small" style="color:var(--soft)">${top ? (top.hit/top.n >= 0.7 ? "being sure meant being right" : "being sure did not make it more right") : "needs more results"}</div></div>
+    <div class="panel rise d2" style="padding:24px"><div class="small muted">Started by news</div><div style="font-size:30px;font-weight:600;margin-top:6px">${(A.score ?? A.hit_rate)==null?"–":pct((A.score ?? A.hit_rate))}</div><div class="small" style="color:var(--soft)">${A.judged||0} judged</div></div>
+    <div class="panel rise d3" style="padding:24px"><div class="small muted">Started by market lenses</div><div style="font-size:30px;font-weight:600;margin-top:6px;${(K.score ?? K.hit_rate)==null?"color:var(--muted)":""}">${(K.score ?? K.hit_rate)==null?"Not judged yet":pct((K.score ?? K.hit_rate))}</div><div class="small" style="color:var(--soft)">${K.total ? `${K.total} so far${K.open?", "+K.open+" open":""} · counted on its own` : "counted on its own, from 17 Nov"}</div></div>
+    <div class="panel rise d4" style="padding:24px"><div class="small muted">When MINT was most sure${top ? " ("+esc(top.label)+")" : ""}</div><div style="font-size:30px;font-weight:600;margin-top:6px">${top ? `${top.hit}${top.partial ? " + "+top.partial+" partial" : ""} of ${top.n}` : "–"}</div><div class="small" style="color:var(--soft)">${top ? ((top.score ?? top.hit/top.n) >= 0.7 ? "being sure meant being right" : "being sure did not make it more right") : "needs more results"}</div></div>
   </section>
   <section class="rise d5" style="margin-top:40px"><div class="section-head"><h2>Latest results</h2><button class="link" onclick="go('events',{page:1,efKind:'judged'})">All results →</button></div>
     <div class="list">${judged.slice(0,6).map(eventRow).join("") || `<div class="empty">No results yet. A result appears when a prediction's time window ends.</div>`}</div></section>
@@ -814,7 +814,7 @@ function record(){
     <div class="three">
       <div style="border-top:2px solid var(--ink);padding-top:14px"><div class="small" style="color:var(--goldtext);font-weight:600">1</div><div style="font-weight:600;margin-top:4px">Frozen forecast</div><div class="small" style="color:var(--soft)">Size, time window and how likely, saved before the price moves.</div></div>
       <div style="border-top:2px solid var(--ink);padding-top:14px"><div class="small" style="color:var(--goldtext);font-weight:600">2</div><div style="font-weight:600;margin-top:4px">The HIT line</div><div class="small" style="color:var(--soft)">Half the predicted size, and never smaller than a normal hour's move.</div></div>
-      <div style="border-top:2px solid var(--ink);padding-top:14px"><div class="small" style="color:var(--goldtext);font-weight:600">3</div><div style="font-weight:600;margin-top:4px">Hold for 2 hours</div><div class="small" style="color:var(--soft)">Past the line the right way for 2 hours: HIT. The wrong way first: MISS.</div></div>
+      <div style="border-top:2px solid var(--ink);padding-top:14px"><div class="small" style="color:var(--goldtext);font-weight:600">3</div><div style="font-weight:600;margin-top:4px">Hold for 2 hours</div><div class="small" style="color:var(--soft)">Past the line the right way for 2 hours: HIT. Right way but too small or too short: PARTIAL (also counts as right). The wrong way first: MISS.</div></div>
     </div></section>
   <section style="margin-top:48px"><h2 style="margin-bottom:6px">More detail</h2><p class="small muted" style="margin:0 0 10px">For checking the project's success criteria.</p>
     ${moreBlock("Is \"likely\" honest?", calibrationTable())}
@@ -832,8 +832,8 @@ const moreBlock = (title, html) => `<details class="more" style="padding:16px 0"
 function calibrationTable(){
   const C = (S.accuracy||{}).calibration || [];
   if (!C.length) return `<p class="small muted">Appears once predictions have been judged.</p>`;
-  return `<div class="bars">${C.map(c => `<div><div class="barlab"><span>Called ${esc(c.label)} likely</span><span><b>${c.hit} of ${c.n}</b> HIT (${Math.round(c.hit/c.n*100)}%)</span></div><div class="track"><div style="width:${Math.round(c.hit/c.n*100)}%"></div></div></div>`).join("")}</div>
-    <p class="small muted">If MINT is honest, the "75%+" group should be right about 3 times in 4. Partial and miss count as not HIT; no clear move is left out.</p>`;
+  return `<div class="bars">${C.map(c => `<div><div class="barlab"><span>Called ${esc(c.label)} likely</span><span><b>${c.hit} HIT${c.partial ? " + "+c.partial+" partial" : ""} of ${c.n}</b> (${Math.round((c.score ?? c.hit/c.n)*100)}%)</span></div><div class="track"><div style="width:${Math.round((c.score ?? c.hit/c.n)*100)}%"></div></div></div>`).join("")}</div>
+    <p class="small muted">If MINT is honest, the "75%+" group should score about 75%. HIT and partial count as right; no clear move is left out.</p>`;
 }
 function factorTable(){
   return `<div class="card" style="overflow-x:auto"><table class="htable"><thead><tr><th>Factor</th><th>Past pattern</th><th class="num">Events</th><th class="num">Right</th><th class="num">Wrong</th><th style="width:200px">Accuracy</th></tr></thead><tbody>
@@ -869,7 +869,7 @@ function how(){
   const steps = [["1 · FIND","Scouts","Bitcoin Scout, Gold Scout and Social Watcher read the news and approved accounts.",["Bitcoin Scout","Gold Scout","Social Watcher"]],
     ["2 · CHECK","Supervisor","Keeps approved sources only, drops old news and joins repeats into one event.",["Supervisor"]],
     ["3 · MEASURE","Price Tracker","Prices, trading volume and buyers vs sellers, from Kraken, Yahoo Finance and the CFTC.",["Price Tracker"]],
-    ["4 · DECIDE","Decision agent","Makes the forecast from similar past events, adjusted by the volume and buyers-vs-sellers lenses.",["Decision agent"]],
+    ["4 · DECIDE","Decision agent","Makes the forecast. The three lenses count equally: news (similar past events), volume, and buyers vs sellers.",["Decision agent"]],
     ["5 · TELL","Telegram bot","Sends short alerts straight away and one summary at 9 pm India time.",["Telegram bot"]]];
   const R = S.reliability, D = (S.accuracy||{}).delay || {};
   const p = S.progress || {};
@@ -1045,7 +1045,7 @@ function settings(){
       <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn small" ${S.running?"disabled":""} onclick="runNow(true)">Test run</button>
       ${S.test_mode?`<button class="btn small light" onclick="showReal()">Show real data</button>`:`<button class="btn small light" onclick="post('/api/view',{test:true}).then(()=>{UI.lastJson='';load()})">Show test data</button>`}
       <button class="btn small light" onclick="post('/api/reset-test').then(load)">Clear test data</button></div></div>
-    <div class="setting"><div class="txt"><b>Test the Supervisor</b><div>Runs 24 situations it must handle (the same event from 2 organisations, old event with a new article, off-topic headlines, first run, a social post alone, predictions from past events, the same story told twice...).</div></div>
+    <div class="setting"><div class="txt"><b>Test the Supervisor</b><div>Runs 27 situations it must handle (planted fake websites, sources that disagree, the same event from 2 organisations, old event with a new article, off-topic headlines, first run, a social post alone, predictions from past events, the same story told twice...).</div></div>
       <button class="btn small" onclick="runTests('supervisor')">Run the tests</button></div>
     <div class="setting"><div class="txt"><b>Test the Telegram bot</b><div>Runs 28 checks with a pretend Telegram server (nothing is really sent): sign-ups, choices, alerts, watches, watch updates, heads-ups, the weekly summary, never twice, never in test runs.</div></div>
       <button class="btn small" onclick="runTests('telegram')">Run the tests</button></div>
