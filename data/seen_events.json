@@ -20026,6 +20026,179 @@
         "first_sent_at": "2026-11-17T00:46:04.764103+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "BTC-20261117-01",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-17T01:16:09.528767+00:00",
+      "earliest_report": "2026-11-17T01:13:33+00:00",
+      "last_updated": "2026-11-17T01:16:09.528767+00:00",
+      "words": [
+        "credit-card",
+        "crypto-steal",
+        "hack",
+        "inject",
+        "major",
+        "maliciou",
+        "malware",
+        "script",
+        "websit"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts",
+          "link": "https://t.me/whale_alert_io/104929",
+          "published": "2026-11-17T01:13:33+00:00",
+          "found_at": "2026-11-17T01:16:09.528767+00:00",
+          "summary": "Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-17T01:16:09.528767+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-17T01:16:09.528767+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-17T01:16:09.528767+00:00",
+          "note": "confirmed -> alerted: New hack event that could negatively affect Bitcoin, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-17",
+        "date_evidence": "Headline published 2026-11-17 01:13 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Past hacks have caused Bitcoin price falls",
+        "alert_title": "Major Web Hack Targets Crypto Sites",
+        "alert_message": "Hackers added crypto\u2011stealing malware to 178 major websites, raising theft risk for Bitcoin users.",
+        "why_it_matters": [
+          "Increases risk of theft",
+          "Could hurt confidence in crypto"
+        ],
+        "reason": "New hack event that could negatively affect Bitcoin, so an alert is warranted.",
+        "time": "2026-11-17T01:16:09.528767+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nMajor Web Hack Targets Crypto Sites\n\nHackers added crypto\u2011stealing malware to 178 major websites, raising theft risk for Bitcoin users.\n\nMINT's prediction: Bitcoin DOWN - Similar hacks have produced mixed 1\u2011day moves \u2013 small gains of +1.4%, +1.9% and +0.1% in some cases, but declines of -2.2% and -0.8% in others, showing the market can react negatively when fear spreads.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 17 Nov 01:16 UTC",
+        "telegram_sent_at": "2026-11-17T01:16:09.528767+00:00"
+      },
+      "outcome": {
+        "start_price": 64554.36,
+        "start_time": "2026-11-17T00:29:40+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-17T00:29:40+00:00",
+          "hours": -0.7,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "first day not over yet - no clear move in any price check yet (0 of 9 checks done)",
+        "impact": null
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar hacks have produced mixed 1\u2011day moves \u2013 small gains of +1.4%, +1.9% and +0.1% in some cases, but declines of -2.2% and -0.8% in others, showing the market can react negatively when fear spreads.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "source": "starter library (check the date)",
+            "score": 0.88
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "source": "starter library (check the date)",
+            "score": 0.68
+          },
+          {
+            "id": "BTC-20261111-02",
+            "date": "2026-11-11",
+            "title": "Binance hack reveals crypto's uphill battle against hackers",
+            "d1": -0.76,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.61
+          },
+          {
+            "id": "BTC-20261110-07",
+            "date": "2026-11-10",
+            "title": "Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
+            "d1": 1.95,
+            "d7": null,
+            "source": "MINT",
+            "score": 0.59
+          },
+          {
+            "id": "BTC-20261109-02",
+            "date": "2026-11-09",
+            "title": "\ud83d\udcc9 \ud83d\udcc9 \ud83d\udcc9 ACryptoS exploit drains about $665,429 from 77 vaults across five chains, deposits halted but withdrawals remain open Read Analysis",
+            "d1": 0.13,
+            "d7": -13.34,
+            "source": "MINT",
+            "score": 0.56
+          }
+        ],
+        "votes": {
+          "up": 2.03,
+          "down": 3.35
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Hackers injected crypto\u2011stealing and credit\u2011card malware into 178 major websites, raising fears of widespread theft.",
+        "what_past_events_show": "Similar hacks have produced mixed 1\u2011day moves \u2013 small gains of +1.4%, +1.9% and +0.1% in some cases, but declines of -2.2% and -0.8% in others, showing the market can react negatively when fear spreads.",
+        "direction": "down",
+        "why": [
+          "Broad malware raises fear of widespread theft",
+          "Recent hacks have sometimes triggered short\u2011term sell pressure"
+        ],
+        "watch_next": "If major exchanges quickly confirm no user funds were compromised, the impact may be limited; confirmed losses would make the drop larger.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-17T01:16:09.528767+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-17T01:16:35.216003+00:00"
+      }
     }
   ],
   "counter": {
@@ -20050,26 +20223,27 @@
     "BTC-20261115": 2,
     "GOLD-20261114": 2,
     "BTC-20261116": 6,
-    "GOLD-20261116": 2
+    "GOLD-20261116": 2,
+    "BTC-20261117": 1
   },
   "last_run": {
-    "run_time": "2026-11-17T01:10:57.862490+00:00",
+    "run_time": "2026-11-17T01:16:09.528767+00:00",
     "test_mode": false,
-    "stories": 5,
-    "off_topic": 1,
+    "stories": 23,
+    "off_topic": 18,
     "repeats": 4,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -20077,6 +20251,7 @@
           "Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
           "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
           "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
+          "Being checked: Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts (approved social media account: Whale Alert (Telegram) (from social media))",
           "US stock market (Nasdaq) fell -2.49% on its last day"
         ]
       },
@@ -20099,7 +20274,8 @@
       "reasons": [
         "Alert: Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
         "Alert: JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
-        "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access"
+        "Alert: Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
+        "Alert: Hackers inject crypto-stealing and credit-card malware into 178 major websites via malicious scripts"
       ]
     },
     "Gold": {
