@@ -24530,9 +24530,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -24552,6 +24552,12 @@
           "final": false,
           "text": "still inside the 2.2 days window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 3837.75,
+          "move": -0.14,
+          "time": "2026-11-17T20:18:38+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -24925,11 +24931,11 @@
     "GOLD-20261117": 9
   },
   "last_run": {
-    "run_time": "2026-11-17T20:25:50.570200+00:00",
+    "run_time": "2026-11-17T20:31:28.707393+00:00",
     "test_mode": false,
-    "stories": 138,
-    "off_topic": 61,
-    "repeats": 77,
+    "stories": 101,
+    "off_topic": 49,
+    "repeats": 52,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
