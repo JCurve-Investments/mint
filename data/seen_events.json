@@ -25874,6 +25874,237 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-18T10:36:00.955580+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261118-02",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-18T14:41:08.736603+00:00",
+      "earliest_report": "2026-11-18T14:23:54+00:00",
+      "last_updated": "2026-11-18T14:41:08.736603+00:00",
+      "words": [
+        "african",
+        "bets",
+        "eight-month",
+        "fed",
+        "gold",
+        "hike",
+        "hits",
+        "low",
+        "rand",
+        "south"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUGcyOWlra1BNMTZQZUIyM29teUFnYW5IeWsyQ0ctMkd0RmVaMFJZbU9Jazc5OTk4UTdaa1FVczFkN0pKVDZrYVpwRmJRY25CQUU3bllRc3ZJamxOQjVtMUZQYm1BOTBZOW03UEpxVG1UdFZPc3JmZTJ4bHA5V2R2VE0zMWNSNk5MZUdRZGlxZXBEeFRtcWhRZ2huSmtiT0ZFR1VJOUs2SW9SeTB4YzBR?oc=5",
+          "published": "2026-11-18T14:23:54+00:00",
+          "found_at": "2026-11-18T14:41:08.736603+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T14:41:08.736603+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-18T14:41:08.736603+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-18T14:41:08.736603+00:00",
+          "note": "confirmed -> alerted: New Fed hike speculation could push gold lower, so we issue an alert."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-18",
+        "date_evidence": "Article published 2026-11-18 reports the rand hitting an eight\u2011month low now",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Fed hike bets usually raise rates, which tend to lower gold",
+        "alert_title": "Fed hike bets may pressure gold",
+        "alert_message": "Bets that the Fed will raise rates are growing, pushing the South African rand to an eight\u2011month low and could weigh on gold prices.",
+        "why_it_matters": [
+          "Higher rates can make gold less attractive",
+          "Currency weakness signals market stress"
+        ],
+        "reason": "New Fed hike speculation could push gold lower, so we issue an alert.",
+        "time": "2026-11-18T14:41:08.736603+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed hike bets may pressure gold\n\nBets that the Fed will raise rates are growing, pushing the South African rand to an eight\u2011month low and could weigh on gold prices.\n\nMINT's prediction: Gold DOWN - In similar recent cases where Fed\u2011hike expectations rose, gold fell the next day in three out of five events (\u20110.3%, \u20111.6%, \u20111.4%) and only rose or stayed flat in the other two.\n\nGold had already moved +0.0% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 18 Nov 14:41 UTC",
+        "telegram_sent_at": "2026-11-18T14:41:08.736603+00:00"
+      },
+      "outcome": {
+        "start_price": 3768.84,
+        "start_time": "2026-11-18T14:15:10+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.3,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-18T14:15:10+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4.7 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3768.84,
+          "start_time": "2026-11-18T14:41:08.736603+00:00",
+          "threshold": 0.68,
+          "window_hours": 112.2,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4.7 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar recent cases where Fed\u2011hike expectations rose, gold fell the next day in three out of five events (\u20110.3%, \u20111.6%, \u20111.4%) and only rose or stayed flat in the other two.",
+        "similar": [
+          {
+            "id": "GOLD-20261116-06",
+            "date": "2026-11-16",
+            "title": "Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
+            "d1": -0.35,
+            "d7": null,
+            "peak_hours": 46.0,
+            "source": "MINT",
+            "score": 0.75
+          },
+          {
+            "id": "GOLD-20261109-07",
+            "date": "2026-11-09",
+            "title": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
+            "d1": -1.65,
+            "d7": -6.04,
+            "peak_hours": 122.7,
+            "source": "MINT",
+            "score": 0.72
+          },
+          {
+            "id": "GOLD-20261106-02",
+            "date": "2026-11-06",
+            "title": "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case - Kitco AM Report",
+            "d1": 0.75,
+            "d7": -3.98,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "GOLD-20261112-07",
+            "date": "2026-11-12",
+            "title": "Gold, silver slide as Treasury yields surge, Fed hike concerns intensify - Kitco PM Report",
+            "d1": 0.02,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "GOLD-20261113-05",
+            "date": "2026-11-13",
+            "title": "Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis",
+            "d1": -1.36,
+            "d7": null,
+            "peak_hours": 112.2,
+            "source": "MINT",
+            "score": 0.64
+          }
+        ],
+        "votes": {
+          "up": 1.27,
+          "down": 3.61
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-18T14:41:20.399478+00:00",
+          "low": -0.82,
+          "mid": -1.36,
+          "high": -1.9,
+          "window_hours": 112.2,
+          "probability": 0.52,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 1.4%)",
+          "window_basis": "similar past moves peaked after about 4.7 days",
+          "sigma": 1.16,
+          "threshold": 0.68,
+          "floor": 0.47,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price -1.9%",
+            "buy_sell": "33% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.27,
+            "down": 3.61
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The rand fell to an eight\u2011month low as bets that the Fed will keep rates high grew, which can weigh on gold because higher rates make gold less attractive.",
+        "what_past_events_show": "In similar recent cases where Fed\u2011hike expectations rose, gold fell the next day in three out of five events (\u20110.3%, \u20111.6%, \u20111.4%) and only rose or stayed flat in the other two.",
+        "direction": "down",
+        "why": [
+          "Higher or expected\u2011higher rates make gold less appealing versus interest\u2011bearing assets",
+          "The market sees the Fed\u2019s hawkish stance as a surprise or reinforcement, which usually pushes gold lower"
+        ],
+        "watch_next": "If the Fed later signals a pause or a cut, the downward pressure on gold could ease.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-18T14:41:08.736603+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-18T14:41:24.204576+00:00"
+      }
     }
   ],
   "counter": {
@@ -25902,26 +26133,26 @@
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
     "BTC-20261118": 3,
-    "GOLD-20261118": 1
+    "GOLD-20261118": 2
   },
   "last_run": {
-    "run_time": "2026-11-18T14:35:44.926128+00:00",
+    "run_time": "2026-11-18T14:41:08.736603+00:00",
     "test_mode": false,
-    "stories": 123,
+    "stories": 124,
     "off_topic": 54,
     "repeats": 69,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Calm",
@@ -25940,7 +26171,8 @@
           "Alert: India gold market update: Gold demand gets festive boost",
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
           "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
-          "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets"
+          "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
+          "Being checked: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets (reliable source: Bloomberg)"
         ]
       }
     }
@@ -25963,7 +26195,8 @@
         "Alert: India gold market update: Gold demand gets festive boost",
         "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
         "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
-        "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets"
+        "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
+        "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets"
       ]
     }
   },
