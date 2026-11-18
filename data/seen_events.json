@@ -24789,8 +24789,8 @@
           "hours": 12.4,
           "verdict": "wrong"
         },
-        "effect": "tracking",
-        "effect_reason": "still inside the 12 hours window (biggest move so far +0.7%)",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 12 hours (biggest +0.7%)",
         "impact": {
           "peak": 1.06,
           "peak_hours": 4.5,
@@ -24809,10 +24809,11 @@
           "peak_hours": 4.4,
           "held_hours": 0.0,
           "checked_until": 11.4,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 12 hours window (biggest move so far +0.7%)",
-          "size": null
+          "verdict": "no_clear_move",
+          "final": true,
+          "text": "no clear move either way within 12 hours (biggest +0.7%)",
+          "size": null,
+          "opposite": "partial"
         },
         "checks": {
           "done": 3,
@@ -24904,7 +24905,8 @@
       },
       "telegram": {
         "first_sent_at": "2026-11-18T03:35:58.103910+00:00",
-        "sent_state": "context"
+        "sent_state": "context",
+        "verdict_sent": "2026-11-18T16:20:58.283886+00:00"
       }
     },
     {
@@ -26427,11 +26429,11 @@
     "GOLD-20261118": 3
   },
   "last_run": {
-    "run_time": "2026-11-18T16:15:55.565599+00:00",
+    "run_time": "2026-11-18T16:20:58.283886+00:00",
     "test_mode": false,
-    "stories": 123,
-    "off_topic": 57,
-    "repeats": 66,
+    "stories": 120,
+    "off_topic": 55,
+    "repeats": 65,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
