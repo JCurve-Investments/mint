@@ -22947,8 +22947,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 1,
+          "done": 6,
+          "right": 2,
           "wrong": 2,
           "total": 9
         },
@@ -22985,11 +22985,17 @@
           "time": "2026-11-17T19:27:14+00:00",
           "verdict": "flat"
         },
-        "old_effect": "wrong",
+        "old_effect": "no_clear_move",
         "h36": {
           "price": 3766.08,
           "move": -1.98,
           "time": "2026-11-18T07:27:14+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3721.47,
+          "move": -3.14,
+          "time": "2026-11-18T19:27:14+00:00",
           "verdict": "right"
         }
       },
@@ -26246,7 +26252,7 @@
       "proof_reason": "reliable source: Reuters",
       "first_seen": "2026-11-18T15:31:21.386036+00:00",
       "earliest_report": "2026-11-18T03:10:00+00:00",
-      "last_updated": "2026-11-18T15:31:21.386036+00:00",
+      "last_updated": "2026-11-18T19:40:57.590249+00:00",
       "words": [
         "14-month",
         "boost",
@@ -26257,6 +26263,7 @@
         "hawkish",
         "low",
         "rhetoric",
+        "rise",
         "yield"
       ],
       "amounts": [],
@@ -26272,6 +26279,17 @@
           "found_at": "2026-11-18T15:31:21.386036+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Gold drops to 14-month low as dollar, yields rise on hawkish Fed rhetoric",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTXRXUlc4TVVGam9kXzJabE84a2tVS2g4dEUyUE9KbUhaNnVlU1VDaGdZX0RkZHJYaDhKdzVnVkdzVS1TOGF3RjlrVnBUOW5yUVpWa3p3dGR6XzNKZWp6R2c5VXdSR1BmQjJrUlFLZXNkWjNQS2lvcFQyX3RTWHJjQlFOX3dtRlhzSDU2Q01oZWtfVFpIbUF0X0V3WkZreTZGLVHSAacBQVVfeXFMT1BQel9WZ3VlTGtfVFBmR1V6OTRMWEhjQVVYejNzYUFZaWpGRU4xTUxVbjJmQnZSZHVmamI1VGVhekpQYkdIdEI1anpqLS1QM0lBM2x2eXMtbGVjSi1vYmN3em1tRjQ0ZVVyNFN5RVNJaFhGRG5rSlloT3FHOXZyQndBNEVzUTVMOWNDWDZpN3pHa3EtWkdMRWVRTGg1bUlRN0liMVkxNVE?oc=5",
+          "published": "2026-11-18T03:21:00+00:00",
+          "found_at": "2026-11-18T19:40:57.590249+00:00",
+          "summary": "",
+          "factor": "G1"
         }
       ],
       "history": [
@@ -26286,6 +26304,10 @@
         {
           "time": "2026-11-18T15:31:21.386036+00:00",
           "note": "confirmed -> alerted: A fresh Fed\u2011related event caused a noticeable gold drop, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-18T19:40:57.590249+00:00",
+          "note": "another report from CNBC - same event, no new alert"
         }
       ],
       "decision": {
@@ -26972,14 +26994,14 @@
     "GOLD-20261118": 5
   },
   "last_run": {
-    "run_time": "2026-11-18T19:35:41.538506+00:00",
+    "run_time": "2026-11-18T19:40:57.590249+00:00",
     "test_mode": false,
     "stories": 128,
     "off_topic": 61,
-    "repeats": 67,
+    "repeats": 66,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
