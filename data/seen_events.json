@@ -25559,6 +25559,239 @@
         "first_sent_at": "2026-11-18T08:46:07.944717+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261118-01",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Wall Street Journal",
+      "first_seen": "2026-11-18T10:35:44.567526+00:00",
+      "earliest_report": "2026-11-18T09:09:00+00:00",
+      "last_updated": "2026-11-18T10:35:44.567526+00:00",
+      "words": [
+        "2.5",
+        "bets",
+        "dollar",
+        "firmer",
+        "gold",
+        "rate-hike"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOX1ZVcTNOb2gtUFpBRXIzbDNyaGpyVzJMZ2FTZ1FwbE1KR0dmTjNuNzYxVnNPVFNYaTlKeFhBMllWX3FNVi1zbzNSejNrSXFNMjNGSjkxeWtzVWlDUjFEMG5MU19VQmNWbzNMX0tsTDZSQnJkVWZWZDdGWlJLRm40NVJHQ2p1SWNsbmM1LUpLMDZnbHExRW8wbUsyc0hRLW5oaVRCLQ?oc=5",
+          "published": "2026-11-18T09:09:00+00:00",
+          "found_at": "2026-11-18T10:35:44.567526+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T10:35:44.567526+00:00",
+          "note": "new event, first report by Wall Street Journal"
+        },
+        {
+          "time": "2026-11-18T10:35:44.567526+00:00",
+          "note": "new -> confirmed: reliable source: Wall Street Journal - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-18T10:35:44.567526+00:00",
+          "note": "confirmed -> alerted: The article reports a fresh, sizable gold decline linked to a stronger dollar, a pattern that usually signals further downside risk."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-18",
+        "date_evidence": "Article published 2026-11-18",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Firmer dollar historically pushes gold lower",
+        "alert_title": "Gold drops as dollar strengthens",
+        "alert_message": "Gold fell 2.5% after the dollar rose and rate\u2011hike bets grew, which could keep pressure on gold.",
+        "why_it_matters": [
+          "Dollar strength hurts gold",
+          "Rate\u2011hike expectations can lower gold"
+        ],
+        "reason": "The article reports a fresh, sizable gold decline linked to a stronger dollar, a pattern that usually signals further downside risk.",
+        "time": "2026-11-18T10:35:44.567526+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold drops as dollar strengthens\n\nGold fell 2.5% after the dollar rose and rate\u2011hike bets grew, which could keep pressure on gold.\n\nMINT's prediction: Gold DOWN - In similar cases when the dollar rose, gold fell about 1\u20131.6% the next day (three down vs. two small up moves).\n\nGold had already moved +0.4% since the first report.\nSources: Wall Street Journal\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 18 Nov 10:35 UTC",
+        "telegram_sent_at": "2026-11-18T10:35:44.567526+00:00"
+      },
+      "outcome": {
+        "start_price": 3760.39,
+        "start_time": "2026-11-18T09:00:00+00:00",
+        "moved_before_mint": 0.36,
+        "delay_hours": 1.4,
+        "h1": {
+          "price": 3773.91,
+          "move": 0.36,
+          "time": "2026-11-18T10:09:00+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 0.36,
+          "time": "2026-11-18T09:54:30+00:00",
+          "hours": 0.8,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 3.8 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3773.91,
+          "start_time": "2026-11-18T10:35:44.567526+00:00",
+          "threshold": 0.71,
+          "window_hours": 90.3,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 3.8 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar cases when the dollar rose, gold fell about 1\u20131.6% the next day (three down vs. two small up moves).",
+        "similar": [
+          {
+            "id": "GOLD-20261116-01",
+            "date": "2026-11-16",
+            "title": "Gold hits over one-year low on resilient dollar as hawkish Fed bets build",
+            "d1": -1.12,
+            "d7": null,
+            "peak_hours": 55.6,
+            "source": "MINT",
+            "score": 0.68
+          },
+          {
+            "id": "GOLD-20261104-06",
+            "date": "2026-11-04",
+            "title": "The dollar decides: What the midterm rally in gold and silver says about the next turn",
+            "d1": 0.46,
+            "d7": -2.1,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261106-06",
+            "date": "2026-11-06",
+            "title": "Dems' spending plans \u2018would crush the U.S. dollar\u2019 and \u2018that gives gold a floor\u2019 \u2013 Phoenix Futures\u2019 Grady",
+            "d1": 0.25,
+            "d7": -4.42,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261110-04",
+            "date": "2026-11-10",
+            "title": "Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
+            "d1": -1.43,
+            "d7": -5.76,
+            "peak_hours": 114.5,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261111-04",
+            "date": "2026-11-11",
+            "title": "Gold falls as hot inflation figures, higher dollar weigh",
+            "d1": -1.56,
+            "d7": -6.23,
+            "peak_hours": 90.3,
+            "source": "MINT",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 1.0,
+          "down": 2.16
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-18T10:35:57.472908+00:00",
+          "low": -0.86,
+          "mid": -1.43,
+          "high": -2.0,
+          "window_hours": 90.3,
+          "probability": 0.52,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 1.4%)",
+          "window_basis": "similar past moves peaked after about 3.8 days",
+          "sigma": 1.15,
+          "threshold": 0.71,
+          "floor": 0.47,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price -1.9%",
+            "buy_sell": "37% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.0,
+            "down": 2.16
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold dropped about 2.5% because the US dollar got stronger and markets expect more rate hikes, which makes gold less attractive.",
+        "what_past_events_show": "In similar cases when the dollar rose, gold fell about 1\u20131.6% the next day (three down vs. two small up moves).",
+        "direction": "down",
+        "why": [
+          "A stronger dollar raises the price of gold for non\u2011USD buyers, cutting demand.",
+          "Rate\u2011hike expectations boost the dollar and make gold less appealing as an alternative."
+        ],
+        "watch_next": "If upcoming inflation or Fed data weaken the dollar, the drop could be smaller; stronger hawkish signals would likely push gold even lower.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-18T10:35:44.567526+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-18T10:36:00.955580+00:00"
+      }
     }
   ],
   "counter": {
@@ -25586,26 +25819,27 @@
     "GOLD-20261116": 8,
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
-    "BTC-20261118": 3
+    "BTC-20261118": 3,
+    "GOLD-20261118": 1
   },
   "last_run": {
-    "run_time": "2026-11-18T10:31:18.189572+00:00",
+    "run_time": "2026-11-18T10:35:44.567526+00:00",
     "test_mode": false,
-    "stories": 129,
-    "off_topic": 54,
-    "repeats": 75,
-    "new_events": 0,
+    "stories": 137,
+    "off_topic": 58,
+    "repeats": 78,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Calm",
@@ -25623,7 +25857,8 @@
           "Alert: Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
           "Alert: India gold market update: Gold demand gets festive boost",
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
-          "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report"
+          "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
+          "Being checked: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets (reliable source: Wall Street Journal)"
         ]
       }
     }
@@ -25645,7 +25880,8 @@
         "Alert: Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
         "Alert: India gold market update: Gold demand gets festive boost",
         "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
-        "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report"
+        "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
+        "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets"
       ]
     }
   },
