@@ -26119,6 +26119,263 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-18T14:41:24.204576+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261118-03",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Reuters",
+      "first_seen": "2026-11-18T15:31:21.386036+00:00",
+      "earliest_report": "2026-11-18T03:10:00+00:00",
+      "last_updated": "2026-11-18T15:31:21.386036+00:00",
+      "words": [
+        "14-month",
+        "boost",
+        "dollar",
+        "fall",
+        "fed",
+        "gold",
+        "hawkish",
+        "low",
+        "rhetoric",
+        "yield"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVlk2MG4xbDV2emVoNk9vRVhTcTlRbkZLMDgwMjBMTEdVeXFDV21zX0NVdmF0YzQzRDZ4TkowaDJQQlZlTDBsbm9BWHFXNXpYZzVVejAtTGRZTTFHRjV4dllJV0ZxVzVvbVJCN1lxdk50NXVaNkRxTGJQbDYyZjhNNElTUElOWVU0eW0ySnBRMndSU1ZrTGE4ZlNMdDk0UXVmUjZLSEVfQlc?oc=5",
+          "published": "2026-11-18T03:10:00+00:00",
+          "found_at": "2026-11-18T15:31:21.386036+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T15:31:21.386036+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-18T15:31:21.386036+00:00",
+          "note": "new -> confirmed: reliable source: Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-18T15:31:21.386036+00:00",
+          "note": "confirmed -> alerted: A fresh Fed\u2011related event caused a noticeable gold drop, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-18",
+        "date_evidence": "Reuters article dated 2026-11-18 reports the drop",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of further drop",
+        "expected_direction": "down",
+        "direction_reason": "Hawkish Fed rhetoric usually pushes gold lower",
+        "alert_title": "Fed Rhetoric Sends Gold to 14\u2011Month Low",
+        "alert_message": "Gold fell to a 14\u2011month low after the Fed signaled higher rates, boosting the dollar and yields. The move already caused a 1.1% drop, indicating pressure on gold.",
+        "why_it_matters": [
+          "Fed signals directly affect gold price",
+          "Higher rates make gold less attractive"
+        ],
+        "reason": "A fresh Fed\u2011related event caused a noticeable gold drop, so an alert is warranted.",
+        "time": "2026-11-18T15:31:21.386036+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed Rhetoric Sends Gold to 14\u2011Month Low\n\nGold fell to a 14\u2011month low after the Fed signaled higher rates, boosting the dollar and yields. The move already caused a 1.1% drop, indicating pressure on gold.\n\nMINT's prediction: Gold DOWN - In similar cases, gold usually fell the next day (\u20110.3% to \u20112.6%), though one event saw a modest rise and another was flat.\n\nGold had already moved -1.1% since the first report.\nSources: Reuters\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 18 Nov 15:31 UTC",
+        "telegram_sent_at": "2026-11-18T15:31:21.386036+00:00"
+      },
+      "outcome": {
+        "start_price": 3789.2,
+        "start_time": "2026-11-18T03:00:00+00:00",
+        "moved_before_mint": -1.08,
+        "delay_hours": 12.4,
+        "h1": {
+          "price": 3780.48,
+          "move": -0.23,
+          "time": "2026-11-18T04:10:00+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 3766.02,
+          "move": -0.61,
+          "time": "2026-11-18T08:10:00+00:00",
+          "verdict": "right"
+        },
+        "h10": {
+          "price": 3737.18,
+          "move": -1.37,
+          "time": "2026-11-18T13:10:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -1.08,
+          "time": "2026-11-18T15:10:00+00:00",
+          "hours": 12.0,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 3,
+          "right": 3,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 3.9 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -1.37,
+          "peak_hours": 9.8,
+          "faded_hours": null,
+          "against": -0.22,
+          "against_hours": 2.8,
+          "until_hours": 12.0,
+          "text": "Clear impact: Gold fell up to 1.4% (after 10 h). Still in the predicted direction after 12 h (-1.1%)."
+        },
+        "result": {
+          "start_price": 3748.18,
+          "start_time": "2026-11-18T15:31:21.386036+00:00",
+          "threshold": 0.48,
+          "window_hours": 92.8,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 3.9 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar cases, gold usually fell the next day (\u20110.3% to \u20112.6%), though one event saw a modest rise and another was flat.",
+        "similar": [
+          {
+            "id": "GOLD-20261114-02",
+            "date": "2026-11-14",
+            "title": "Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
+            "d1": -0.32,
+            "d7": null,
+            "peak_hours": 92.8,
+            "source": "MINT",
+            "score": 0.65
+          },
+          {
+            "id": "GOLD-20261106-02",
+            "date": "2026-11-06",
+            "title": "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case - Kitco AM Report",
+            "d1": 0.75,
+            "d7": -3.98,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "GOLD-20261112-07",
+            "date": "2026-11-12",
+            "title": "Gold, silver slide as Treasury yields surge, Fed hike concerns intensify - Kitco PM Report",
+            "d1": 0.02,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "GOLD-20261116-06",
+            "date": "2026-11-16",
+            "title": "Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
+            "d1": -0.35,
+            "d7": null,
+            "peak_hours": 46.0,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "GOLD-20261112-01",
+            "date": "2026-11-12",
+            "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+            "d1": -2.61,
+            "d7": null,
+            "peak_hours": 156.2,
+            "source": "MINT",
+            "score": 0.57
+          }
+        ],
+        "votes": {
+          "up": 1.17,
+          "down": 3.36
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-18T15:31:35.168249+00:00",
+          "low": -0.21,
+          "mid": -0.35,
+          "high": -0.49,
+          "window_hours": 92.8,
+          "probability": 0.52,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 0.3%)",
+          "window_basis": "similar past moves peaked after about 3.9 days",
+          "sigma": 1.17,
+          "threshold": 0.48,
+          "floor": 0.48,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price -2.8%",
+            "buy_sell": "23% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.17,
+            "down": 3.36
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold slid to a 14\u2011month low after the Fed\u2019s hawkish comments lifted the dollar and Treasury yields, making gold less attractive.",
+        "what_past_events_show": "In similar cases, gold usually fell the next day (\u20110.3% to \u20112.6%), though one event saw a modest rise and another was flat.",
+        "direction": "down",
+        "why": [
+          "Hawkish Fed signals push investors toward interest\u2011bearing assets.",
+          "Higher yields and a stronger dollar make gold less appealing."
+        ],
+        "watch_next": "If the Fed later signals a rate cut or a more dovish stance, the pressure on gold could ease.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-18T15:31:21.386036+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-18T15:31:38.987912+00:00"
+      }
     }
   ],
   "counter": {
@@ -26147,26 +26404,26 @@
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
     "BTC-20261118": 3,
-    "GOLD-20261118": 2
+    "GOLD-20261118": 3
   },
   "last_run": {
-    "run_time": "2026-11-18T15:25:45.294619+00:00",
+    "run_time": "2026-11-18T15:31:21.386036+00:00",
     "test_mode": false,
-    "stories": 125,
-    "off_topic": 58,
-    "repeats": 67,
-    "new_events": 0,
+    "stories": 119,
+    "off_topic": 53,
+    "repeats": 65,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Calm",
@@ -26186,7 +26443,8 @@
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
           "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
           "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
-          "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets"
+          "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
+          "Being checked: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields (reliable source: Reuters)"
         ]
       }
     }
@@ -26210,7 +26468,8 @@
         "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
         "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
         "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
-        "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets"
+        "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
+        "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields"
       ]
     }
   },
