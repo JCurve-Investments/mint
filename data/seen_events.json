@@ -22036,8 +22036,8 @@
           "hours": 36.5,
           "verdict": "right"
         },
-        "effect": "tracking",
-        "effect_reason": "still inside the 15 hours window (biggest move so far -1.1%)",
+        "effect": "partial",
+        "effect_reason": "the right way (up to -1.1%), but it did not stay past -0.5% for 2 hours",
         "impact": {
           "peak": -1.35,
           "peak_hours": 36.5,
@@ -22063,10 +22063,11 @@
           "peak_hours": 15.1,
           "held_hours": 1.0,
           "checked_until": 15.1,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 15 hours window (biggest move so far -1.1%)",
-          "size": null
+          "verdict": "partial",
+          "final": true,
+          "text": "the right way (up to -1.1%), but it did not stay past -0.5% for 2 hours",
+          "size": "inside the predicted range",
+          "opposite": "partial"
         },
         "d1": {
           "price": 3833.4,
@@ -22136,7 +22137,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-17T10:56:14.692578+00:00"
+        "first_sent_at": "2026-11-17T10:56:14.692578+00:00",
+        "verdict_sent": "2026-11-18T02:40:54.860898+00:00"
       }
     },
     {
@@ -23136,8 +23138,8 @@
           "hours": 24.2,
           "verdict": "right"
         },
-        "effect": "tracking",
-        "effect_reason": "still inside the 15 hours window (biggest move so far -1.1%)",
+        "effect": "partial",
+        "effect_reason": "the right way (up to -1.1%), but it did not stay past -0.5% for 2 hours",
         "impact": {
           "peak": -1.31,
           "peak_hours": 24.2,
@@ -23163,10 +23165,11 @@
           "peak_hours": 15.1,
           "held_hours": 1.0,
           "checked_until": 15.1,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 15 hours window (biggest move so far -1.1%)",
-          "size": null
+          "verdict": "partial",
+          "final": true,
+          "text": "the right way (up to -1.1%), but it did not stay past -0.5% for 2 hours",
+          "size": "inside the predicted range",
+          "opposite": "partial"
         },
         "h10": {
           "price": 3855.38,
@@ -23236,7 +23239,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-17T10:56:21.046053+00:00"
+        "first_sent_at": "2026-11-17T10:56:21.046053+00:00",
+        "verdict_sent": "2026-11-18T02:40:54.860898+00:00"
       }
     },
     {
@@ -25103,10 +25107,10 @@
     "GOLD-20261117": 9
   },
   "last_run": {
-    "run_time": "2026-11-18T02:35:37.256125+00:00",
+    "run_time": "2026-11-18T02:40:54.860898+00:00",
     "test_mode": false,
-    "stories": 137,
-    "off_topic": 65,
+    "stories": 138,
+    "off_topic": 66,
     "repeats": 72,
     "new_events": 0,
     "joined": 0,
