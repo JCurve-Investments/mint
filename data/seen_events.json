@@ -20363,7 +20363,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 1,
           "wrong": 0,
           "total": 9
@@ -20412,7 +20412,13 @@
           "time": "2026-11-17T14:32:01+00:00",
           "verdict": "flat"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "h36": {
+          "price": 64258.88,
+          "move": -1.36,
+          "time": "2026-11-18T02:32:01+00:00",
+          "verdict": "flat"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -25107,7 +25113,7 @@
     "GOLD-20261117": 9
   },
   "last_run": {
-    "run_time": "2026-11-18T02:40:54.860898+00:00",
+    "run_time": "2026-11-18T02:45:51.397103+00:00",
     "test_mode": false,
     "stories": 138,
     "off_topic": 66,
