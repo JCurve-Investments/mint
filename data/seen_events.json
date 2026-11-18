@@ -22366,8 +22366,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 2,
+          "done": 5,
+          "right": 3,
           "wrong": 1,
           "total": 9
         },
@@ -22403,7 +22403,13 @@
           "time": "2026-11-17T13:59:30+00:00",
           "verdict": "right"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "h36": {
+          "price": 3800.57,
+          "move": -1.35,
+          "time": "2026-11-18T01:59:30+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -25071,11 +25077,11 @@
     "GOLD-20261117": 9
   },
   "last_run": {
-    "run_time": "2026-11-18T02:05:39.754143+00:00",
+    "run_time": "2026-11-18T02:10:53.932147+00:00",
     "test_mode": false,
-    "stories": 134,
-    "off_topic": 64,
-    "repeats": 70,
+    "stories": 125,
+    "off_topic": 60,
+    "repeats": 65,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -25098,7 +25104,6 @@
       "Gold": {
         "state": "Alert",
         "reasons": [
-          "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
           "Alert: Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
           "Alert: Gold hits over one-year low on resilient dollar as hawkish Fed bets build",
           "Alert: Weekly Markets Monitor - Waller the Dollar",
@@ -25123,7 +25128,6 @@
     "Gold": {
       "state": "Alert",
       "reasons": [
-        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Democrats consider raising taxes on Americans to fund multitrillion-dollar spending agenda in 2027. @WatcherGuru",
         "Alert: Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
         "Alert: Gold hits over one-year low on resilient dollar as hawkish Fed bets build",
         "Alert: Weekly Markets Monitor - Waller the Dollar",
