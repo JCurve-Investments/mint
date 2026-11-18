@@ -3226,14 +3226,18 @@
     "s": 150.162
    },
    "1794960000": {
-    "b": 20.5167,
-    "s": 49.2076
+    "b": 21.4552,
+    "s": 58.7517
+   },
+   "1794963600": {
+    "b": 2.0422,
+    "s": 4.0879
    }
   },
-  "trades_cursor": "1794963355368385376",
+  "trades_cursor": "1794963713395226136",
   "flow_source": "Kraken",
-  "book_bid_share": 0.469,
-  "book_time": "2026-11-18T00:55:40.792615+00:00"
+  "book_bid_share": 0.523,
+  "book_time": "2026-11-18T01:01:41.651373+00:00"
  },
  "Gold": {
   "bars": [
@@ -6334,39 +6338,39 @@
   ],
   "cot_time": "2026-11-17T23:55:38.802689+00:00"
  },
- "time": "2026-11-18T00:55:40.792615+00:00",
+ "time": "2026-11-18T01:01:41.651373+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.15,
-    "change_24h": 0.42,
-    "text": "normal: 1.2x a normal day, price +0.4%",
+    "ratio": 1.1,
+    "change_24h": 0.23,
+    "text": "normal: 1.1x a normal day, price +0.2%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "taker_buy_share": 0.482,
-    "book_bid_share": 0.469,
-    "up_volume_share": 0.524,
-    "text": "buyers started 48% of trades (24 h); 47% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.48,
+    "book_bid_share": 0.523,
+    "up_volume_share": 0.479,
+    "text": "buyers started 48% of trades (24 h); 52% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 0.89,
-    "change_24h": -0.29,
-    "text": "normal: 0.9x a normal day, price -0.3%",
+    "ratio": 0.88,
+    "change_24h": -0.65,
+    "text": "normal: 0.9x a normal day, price -0.6%",
     "ok": true
    },
    "buy_sell": {
     "vote": 1,
-    "up_volume_share": 0.536,
+    "up_volume_share": 0.512,
     "cot_vote": 1,
-    "text": "54% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
+    "text": "51% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
     "ok": true
    }
   }
