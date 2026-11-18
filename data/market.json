@@ -3266,14 +3266,18 @@
     "s": 45.1655
    },
    "1794996000": {
-    "b": 50.7864,
-    "s": 30.7097
+    "b": 52.2616,
+    "s": 35.2474
+   },
+   "1794999600": {
+    "b": 0.1225,
+    "s": 1.3102
    }
   },
-  "trades_cursor": "1794999361702386308",
+  "trades_cursor": "1794999704841170816",
   "flow_source": "Kraken",
-  "book_bid_share": 0.531,
-  "book_time": "2026-11-18T10:55:43.267929+00:00"
+  "book_bid_share": 0.537,
+  "book_time": "2026-11-18T11:01:34.524555+00:00"
  },
  "Gold": {
   "bars": [
@@ -6434,39 +6438,39 @@
   ],
   "cot_time": "2026-11-17T23:55:38.802689+00:00"
  },
- "time": "2026-11-18T10:55:43.267929+00:00",
+ "time": "2026-11-18T11:01:34.524555+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.11,
-    "change_24h": 0.27,
-    "text": "normal: 1.1x a normal day, price +0.3%",
+    "ratio": 1.12,
+    "change_24h": -1.1,
+    "text": "normal: 1.1x a normal day, price -1.1%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "taker_buy_share": 0.473,
-    "book_bid_share": 0.531,
-    "up_volume_share": 0.481,
-    "text": "buyers started 47% of trades (24 h); 53% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.472,
+    "book_bid_share": 0.537,
+    "up_volume_share": 0.465,
+    "text": "buyers started 47% of trades (24 h); 54% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 1.16,
-    "change_24h": -2.19,
-    "text": "normal: 1.2x a normal day, price -2.2%",
+    "ratio": 1.18,
+    "change_24h": -2.57,
+    "text": "normal: 1.2x a normal day, price -2.6%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.351,
+    "up_volume_share": 0.333,
     "cot_vote": 1,
-    "text": "35% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
+    "text": "33% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
     "ok": true
    }
   }
