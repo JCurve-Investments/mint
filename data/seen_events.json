@@ -25978,8 +25978,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 0,
-          "right": 0,
+          "done": 1,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -26000,6 +26000,12 @@
           "final": false,
           "text": "still inside the 4.7 days window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 3748.18,
+          "move": -0.55,
+          "time": "2026-11-18T15:23:54+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -26407,23 +26413,23 @@
     "GOLD-20261118": 3
   },
   "last_run": {
-    "run_time": "2026-11-18T15:31:21.386036+00:00",
+    "run_time": "2026-11-18T15:35:41.409236+00:00",
     "test_mode": false,
-    "stories": 119,
-    "off_topic": 53,
+    "stories": 120,
+    "off_topic": 55,
     "repeats": 65,
-    "new_events": 1,
+    "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Calm",
@@ -26444,7 +26450,7 @@
           "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
           "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
           "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
-          "Being checked: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields (reliable source: Reuters)"
+          "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields"
         ]
       }
     }
