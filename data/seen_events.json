@@ -26739,6 +26739,224 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-18T20:36:00.375850+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261118-07",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-18T21:25:44.182029+00:00",
+      "earliest_report": "2026-11-18T19:43:05+00:00",
+      "last_updated": "2026-11-18T21:25:44.182029+00:00",
+      "words": [
+        "bank",
+        "central",
+        "committ",
+        "cool",
+        "fed",
+        "gold",
+        "inflation",
+        "minut",
+        "pressure",
+        "pric",
+        "remain",
+        "show",
+        "under"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNE43b3JrcGdsOTVjUndOSjM0NWdzWmQyQ3dibWNBM1h4NVA5N0FlTzBTWGFXMURsUTR5RzVqbktoRVJlM2IzZEd3NVMzV0xFWnlCYU1IVDB1bkcxTzVaYW1ZYzYtem9lQUdmaVF5U0dlcXRicW93c0F3TXJiWHBsbkQtT19kTTg0d3d4aTNIdGJqd3FBUXVQb1ZZNmNOTFNINmJjaDlzUUZKZWdMdWhDYWdLT0lCMDVGNnFz?oc=5",
+          "published": "2026-11-18T19:43:05+00:00",
+          "found_at": "2026-11-18T21:25:44.182029+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T21:25:44.182029+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-18T21:25:44.182029+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-18T21:25:44.182029+00:00",
+          "note": "confirmed -> alerted: Fed minutes are a fresh event that can affect gold, so we alert."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-18",
+        "date_evidence": "Article published 2026-11-18 19:43 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Fed minutes signal continued tight policy, which historically pushes gold lower",
+        "alert_title": "Fed minutes keep gold under pressure",
+        "alert_message": "Fed minutes show the Fed stays focused on cooling inflation, keeping rates high. This can keep gold under pressure and may lead to lower prices. Price already rose 0.1% before notice.",
+        "why_it_matters": [
+          "Fed stance influences interest rates",
+          "Higher rates usually weigh on gold"
+        ],
+        "reason": "Fed minutes are a fresh event that can affect gold, so we alert.",
+        "time": "2026-11-18T21:25:44.182029+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed minutes keep gold under pressure\n\nFed minutes show the Fed stays focused on cooling inflation, keeping rates high. This can keep gold under pressure and may lead to lower prices. Price already rose 0.1% before notice.\n\nMINT's prediction: Gold DOWN - In two recent similar cases, gold fell the next day \u2013 about 2.4% and 0.8% \u2013 after hawkish Fed comments.\n\nGold had already moved +0.1% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 18 Nov 21:25 UTC",
+        "telegram_sent_at": "2026-11-18T21:25:44.182029+00:00"
+      },
+      "outcome": {
+        "start_price": 3715.65,
+        "start_time": "2026-11-18T20:00:00+00:00",
+        "moved_before_mint": 0.06,
+        "delay_hours": 1.7,
+        "h1": {
+          "price": 3718.21,
+          "move": 0.07,
+          "time": "2026-11-18T20:43:05+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": 0.06,
+          "time": "2026-11-18T21:14:50+00:00",
+          "hours": 1.5,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 1.8 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": 0.0,
+          "peak_hours": 0.3,
+          "faded_hours": 1.3,
+          "against": 0.07,
+          "against_hours": 1.3,
+          "until_hours": 1.5,
+          "text": "Never moved the predicted way. It rose up to 0.1% (after 1 h)."
+        },
+        "result": {
+          "start_price": 3718.01,
+          "start_time": "2026-11-18T21:25:44.182029+00:00",
+          "threshold": 0.8,
+          "window_hours": 43.8,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 1.8 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In two recent similar cases, gold fell the next day \u2013 about 2.4% and 0.8% \u2013 after hawkish Fed comments.",
+        "similar": [
+          {
+            "id": "GOLD-20261111-02",
+            "date": "2026-11-11",
+            "title": "Gold Holds Loss Near $4,000 on Hot US Inflation, Fed Remarks",
+            "d1": -2.37,
+            "d7": -6.99,
+            "peak_hours": 167.7,
+            "source": "MINT",
+            "score": 0.49
+          },
+          {
+            "id": "GOLD-20261110-05",
+            "date": "2026-11-10",
+            "title": "Gold reserve repatriations don\u2019t mean central banks are de-dollarizing \u2013 Fed\u2019s Weiss",
+            "d1": -0.82,
+            "d7": -4.36,
+            "peak_hours": 101.9,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.94
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-18T21:25:56.911059+00:00",
+          "low": -0.96,
+          "mid": -1.59,
+          "high": -2.23,
+          "window_hours": 43.8,
+          "probability": 0.67,
+          "agree": 2,
+          "similar": 2,
+          "basis": "2 of 2 similar past events moved this way (typical move 1.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.18,
+          "threshold": 0.8,
+          "floor": 0.48,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.3x a normal day, price -3.3% - real selling",
+            "buy_sell": "22% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.75,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0.94
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Fed minutes showed the central bank is staying firm on cooling inflation, keeping interest\u2011rate pressure on gold.",
+        "what_past_events_show": "In two recent similar cases, gold fell the next day \u2013 about 2.4% and 0.8% \u2013 after hawkish Fed comments.",
+        "direction": "down",
+        "why": [
+          "Hawkish Fed signals keep rates high, making gold less attractive.",
+          "Higher\u2011rate expectations usually push gold lower."
+        ],
+        "watch_next": "A surprise dovish comment or a rate\u2011cut hint from the Fed would lessen the downside, while a stronger hawkish tone would deepen it.",
+        "confidence": "medium",
+        "confidence_reason": "2 of 2 similar past events moved this way",
+        "time": "2026-11-18T21:25:44.182029+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-18T21:26:00.653779+00:00"
+      }
     }
   ],
   "counter": {
@@ -26767,26 +26985,26 @@
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
     "BTC-20261118": 4,
-    "GOLD-20261118": 6
+    "GOLD-20261118": 7
   },
   "last_run": {
-    "run_time": "2026-11-18T21:20:58.082520+00:00",
+    "run_time": "2026-11-18T21:25:44.182029+00:00",
     "test_mode": false,
-    "stories": 130,
-    "off_topic": 60,
-    "repeats": 70,
-    "new_events": 0,
+    "stories": 133,
+    "off_topic": 61,
+    "repeats": 71,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -26806,7 +27024,8 @@
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
           "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
           "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
-          "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru"
+          "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
+          "Being checked: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation (reliable source: Kitco News)"
         ]
       }
     }
@@ -26830,7 +27049,8 @@
         "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
         "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
         "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
-        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru"
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
+        "Alert: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation"
       ]
     }
   },
