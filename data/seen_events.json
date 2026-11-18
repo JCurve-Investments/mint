@@ -26969,6 +26969,193 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-18T19:06:03.755858+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261118-06",
+      "asset": "Gold",
+      "factor": "G5",
+      "factor_name": "ETF and investor flows",
+      "title": "Gold and silver weather a perfect storm as demand holds firm",
+      "state": "context",
+      "state_reason": "ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: Kitco News)",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-18T20:21:05.387821+00:00",
+      "earliest_report": "2026-11-18T18:22:49+00:00",
+      "last_updated": "2026-11-18T20:21:05.387821+00:00",
+      "words": [
+        "demand",
+        "firm",
+        "gold",
+        "holds",
+        "perfect",
+        "silver",
+        "storm",
+        "weather"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold and silver weather a perfect storm as demand holds firm",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYXBiSnI5YkVSWEZJZTJlV3A2ZnR0azV0NTNGY3c3WlN2Y2o4NFlPUUFQeldxdTFMYlVzNDNTSWh6bVFzRXhqVEd5cjAwMlpMTXowOGhFUEpDbVdKcnZmb0gtUXBPREJFclFxTVJCT0RIYng4amRxNUxlRV9vSjY0RFBFdXE5RWFnSVVFWHR5QWZQVS12MklMejlzSkQ?oc=5",
+          "published": "2026-11-18T18:22:49+00:00",
+          "found_at": "2026-11-18T20:21:05.387821+00:00",
+          "summary": "",
+          "factor": "G5"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T20:21:05.387821+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-18T20:21:05.387821+00:00",
+          "note": "new -> context: ETF and investor flows is a moderate factor - shown for context, never an alert (reliable source: Kitco News)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3726.87,
+        "start_time": "2026-11-18T18:00:00+00:00",
+        "moved_before_mint": -0.14,
+        "delay_hours": 2.0,
+        "h1": {
+          "price": 3721.47,
+          "move": -0.14,
+          "time": "2026-11-18T19:22:49+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": -0.14,
+          "time": "2026-11-18T19:30:20+00:00",
+          "hours": 1.1,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far +0.0%)",
+        "impact": {
+          "peak": 0.11,
+          "peak_hours": 0.6,
+          "faded_hours": 1.1,
+          "against": -0.14,
+          "against_hours": 1.1,
+          "until_hours": 1.1,
+          "text": "Clear impact: Gold rose up to 0.1% (after 1 h). The effect lasted about 1 h, then faded."
+        },
+        "result": {
+          "start_price": 3721.47,
+          "start_time": "2026-11-18T20:21:05.387821+00:00",
+          "threshold": 0.88,
+          "window_hours": 54.0,
+          "peak": 0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far +0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "Recent similar demand\u2011focused news saw gold rise, +3.2% on one day and +0.7% the next.",
+        "similar": [
+          {
+            "id": "GOLD-20261103-08",
+            "date": "2026-11-03",
+            "title": "Gold Demand Trends: India Focus Q3 2026",
+            "d1": 3.25,
+            "d7": 3.86,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "GOLD-20261106-03",
+            "date": "2026-11-06",
+            "title": "India's gold demand picks up as Diwali coincides with price dip",
+            "d1": 0.67,
+            "d7": -4.05,
+            "peak_hours": 78.4,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.0,
+          "down": 0
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-18T20:21:19.346915+00:00",
+          "low": 1.18,
+          "mid": 1.75,
+          "high": 2.34,
+          "window_hours": 54.0,
+          "probability": 0.5,
+          "agree": 2,
+          "similar": 2,
+          "basis": "2 of 2 similar past events moved this way (typical move 2.0%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.17,
+          "threshold": 0.88,
+          "floor": 0.48,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.3x a normal day, price -3.1% - real selling",
+            "buy_sell": "20% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "disagrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.75,
+            "volume": 0.25,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.0,
+            "down": 0
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold and silver are holding up despite a tough market because demand stays strong.",
+        "what_past_events_show": "Recent similar demand\u2011focused news saw gold rise, +3.2% on one day and +0.7% the next.",
+        "direction": "up",
+        "why": [
+          "Steady demand usually supports gold prices",
+          "ETF and investor flows are moderate but not negative"
+        ],
+        "watch_next": "If new ETF flow data shows large outflows or a major economic shock, the price move could be weaker.",
+        "confidence": "medium",
+        "confidence_reason": "2 of 2 similar past events moved this way",
+        "time": "2026-11-18T20:21:05.387821+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-18T20:21:20.901884+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -26997,20 +27184,20 @@
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
     "BTC-20261118": 3,
-    "GOLD-20261118": 5
+    "GOLD-20261118": 6
   },
   "last_run": {
-    "run_time": "2026-11-18T20:15:59.573572+00:00",
+    "run_time": "2026-11-18T20:21:05.387821+00:00",
     "test_mode": false,
-    "stories": 97,
-    "off_topic": 48,
-    "repeats": 49,
-    "new_events": 0,
+    "stories": 126,
+    "off_topic": 59,
+    "repeats": 66,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
