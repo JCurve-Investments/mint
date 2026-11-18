@@ -22126,7 +22126,7 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-17T10:55:45.304753+00:00",
       "earliest_report": "2026-11-16T13:59:30+00:00",
-      "last_updated": "2026-11-17T18:01:30.656800+00:00",
+      "last_updated": "2026-11-18T01:05:39.818928+00:00",
       "words": [
         "1-year",
         "19-month",
@@ -22154,6 +22154,7 @@
         "new",
         "one-year",
         "over",
+        "persist",
         "preciou",
         "pressure",
         "reach",
@@ -22165,6 +22166,8 @@
         "set",
         "silver",
         "since",
+        "slide",
+        "stock",
         "struggl",
         "tech",
         "treasury",
@@ -22241,6 +22244,17 @@
           "found_at": "2026-11-17T18:01:30.656800+00:00",
           "summary": "",
           "factor": "G1"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPV1BJTVFELVMzTzdSNWZydElEbzRtUDFsQ2RET0dab0lTM3VNZDVSVHgxeVdDbDhENmktSk5IbVlXVHkwSjZaOURlTUkza0dVSXBISTV4eTFUbmZyR3JwcU9aTE9jbDFKdnphSkdLbkdndjg0eUctNUI4MGczTEJEV1I4ZUduWWVIY1FZeEpfMVB2SzJILXJqcGFvazVLY29ZU2JSLWJKWWdCRGp1OUZ0QlBGSHhQSlM5?oc=5",
+          "published": "2026-11-17T22:06:24+00:00",
+          "found_at": "2026-11-18T01:05:39.818928+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -22271,6 +22285,10 @@
         {
           "time": "2026-11-17T18:01:30.656800+00:00",
           "note": "another report from Reuters - same event, no new alert"
+        },
+        {
+          "time": "2026-11-18T01:05:39.818928+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -25021,14 +25039,14 @@
     "GOLD-20261117": 9
   },
   "last_run": {
-    "run_time": "2026-11-18T01:01:41.651373+00:00",
+    "run_time": "2026-11-18T01:05:39.818928+00:00",
     "test_mode": false,
-    "stories": 131,
-    "off_topic": 63,
-    "repeats": 68,
+    "stories": 132,
+    "off_topic": 62,
+    "repeats": 69,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
