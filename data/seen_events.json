@@ -13006,12 +13006,6 @@
           "time": "2026-11-11T23:33:41+00:00",
           "verdict": "wrong"
         },
-        "now": {
-          "move": -6.45,
-          "time": "2026-11-18T13:27:00+00:00",
-          "hours": 167.9,
-          "verdict": "wrong"
-        },
         "effect": "wrong",
         "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 3 hours",
         "impact": {
@@ -13024,12 +13018,12 @@
           "text": "Never moved the predicted way. It fell up to 6.7% (after 6.9 days)."
         },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 0,
-          "wrong": 8,
+          "wrong": 9,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "d1": {
           "price": 3904.05,
           "move": -3.02,
@@ -13075,7 +13069,13 @@
           "size": null,
           "opposite": "hit"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "d7": {
+          "price": 3765.87,
+          "move": -6.45,
+          "time": "2026-11-18T13:33:41+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "up",
@@ -20064,7 +20064,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 0,
           "wrong": 2,
           "total": 9
@@ -20124,6 +20124,12 @@
           "price": 64574.53,
           "move": 0.62,
           "time": "2026-11-18T01:34:00+00:00",
+          "verdict": "flat"
+        },
+        "d2": {
+          "price": 63977.66,
+          "move": -0.31,
+          "time": "2026-11-18T13:34:00+00:00",
           "verdict": "flat"
         }
       },
@@ -22406,8 +22412,8 @@
           "text": "Clear impact: Gold fell up to 2.5% (after 46 h). Still in the predicted direction after 48 h (-2.3%)."
         },
         "checks": {
-          "done": 5,
-          "right": 3,
+          "done": 6,
+          "right": 4,
           "wrong": 1,
           "total": 9
         },
@@ -22438,6 +22444,12 @@
           "price": 3813.62,
           "move": -1.01,
           "time": "2026-11-18T01:32:26+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3765.87,
+          "move": -2.25,
+          "time": "2026-11-18T13:32:26+00:00",
           "verdict": "right"
         }
       },
@@ -23525,8 +23537,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 0,
+          "done": 4,
+          "right": 1,
           "wrong": 2,
           "total": 9
         },
@@ -23574,7 +23586,14 @@
           "move": 0.29,
           "time": "2026-11-17T23:34:10+00:00",
           "verdict": "flat"
-        }
+        },
+        "d1": {
+          "price": 3765.87,
+          "move": -1.76,
+          "time": "2026-11-18T13:34:10+00:00",
+          "verdict": "right"
+        },
+        "old_effect": "wrong"
       },
       "prediction": {
         "direction": "down",
@@ -24772,7 +24791,7 @@
           "size": null
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 2,
           "wrong": 0,
           "total": 9
@@ -24789,6 +24808,12 @@
           "move": 0.91,
           "time": "2026-11-18T08:32:50+00:00",
           "verdict": "right"
+        },
+        "h10": {
+          "price": 63977.66,
+          "move": -0.26,
+          "time": "2026-11-18T13:32:50+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -25868,11 +25893,11 @@
     "GOLD-20261118": 1
   },
   "last_run": {
-    "run_time": "2026-11-18T13:40:59.649546+00:00",
+    "run_time": "2026-11-18T13:46:09.059070+00:00",
     "test_mode": false,
-    "stories": 115,
-    "off_topic": 47,
-    "repeats": 68,
+    "stories": 110,
+    "off_topic": 46,
+    "repeats": 64,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
