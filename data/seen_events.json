@@ -20614,7 +20614,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 1,
           "wrong": 0,
           "total": 9
@@ -20668,6 +20668,12 @@
           "price": 64258.88,
           "move": -1.36,
           "time": "2026-11-18T02:32:01+00:00",
+          "verdict": "flat"
+        },
+        "d2": {
+          "price": 63844.3,
+          "move": -1.99,
+          "time": "2026-11-18T14:32:01+00:00",
           "verdict": "flat"
         }
       },
@@ -26136,23 +26142,23 @@
     "GOLD-20261118": 2
   },
   "last_run": {
-    "run_time": "2026-11-18T14:41:08.736603+00:00",
+    "run_time": "2026-11-18T14:45:57.614802+00:00",
     "test_mode": false,
-    "stories": 124,
-    "off_topic": 54,
-    "repeats": 69,
-    "new_events": 1,
+    "stories": 78,
+    "off_topic": 31,
+    "repeats": 47,
+    "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Calm",
@@ -26172,7 +26178,7 @@
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
           "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
           "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
-          "Being checked: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets (reliable source: Bloomberg)"
+          "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets"
         ]
       }
     }
