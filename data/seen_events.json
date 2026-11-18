@@ -26566,17 +26566,22 @@
       "proof": "news",
       "proof_reason": "reliable source: Bloomberg",
       "first_seen": "2026-11-18T20:35:44.350818+00:00",
-      "earliest_report": "2026-11-18T20:22:20+00:00",
-      "last_updated": "2026-11-18T20:35:44.350818+00:00",
+      "earliest_report": "2026-11-18T19:40:00+00:00",
+      "last_updated": "2026-11-18T23:41:00.753420+00:00",
       "words": [
         "6.5",
         "abu",
+        "bid",
         "billion",
         "binance",
         "court",
+        "crypto",
         "dhabi",
         "freez",
+        "hack",
+        "obtain",
         "order",
+        "recover",
         "secur"
       ],
       "amounts": [
@@ -26594,6 +26599,17 @@
           "found_at": "2026-11-18T20:35:44.350818+00:00",
           "summary": "",
           "factor": "B1"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Binance obtains $6.5 billion freezing order from Abu Dhabi court in bid to recover stolen crypto",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRzBmQVdRaU45bFROUVFMa296Qkx1MWFQbm5CVFQyNmhmQ1d3T2pjdDExdFY4V3FvV2xiaUtneXJNUHJNaTRxLVF4VXJ6cF8wVEI0MmwxSy11X1ppeWVEUExWNjhLM0p1R1J2Tkhna25nSkdCaEc5UDQ3al96blJzME9Md3pOSTRWcUVTUldvakpLcUJpNi02OFdHNEZTc0xRbWVVZGJkYnFSaFJ2UkE?oc=5",
+          "published": "2026-11-18T19:40:00+00:00",
+          "found_at": "2026-11-18T23:41:00.753420+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -26608,6 +26624,10 @@
         {
           "time": "2026-11-18T20:35:44.350818+00:00",
           "note": "confirmed -> alerted: The freezing order is a fresh legal crackdown on Binance, a key crypto platform, which historically triggers price drops."
+        },
+        {
+          "time": "2026-11-18T23:41:00.753420+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": {
@@ -26641,8 +26661,8 @@
         "now": {
           "move": -0.5,
           "time": "2026-11-18T23:00:20+00:00",
-          "hours": 2.6,
-          "verdict": "right"
+          "hours": 3.3,
+          "verdict": "flat"
         },
         "checks": {
           "done": 1,
@@ -26655,12 +26675,12 @@
         "effect_reason": "still inside the 2.2 days window (biggest move so far -0.5%)",
         "impact": {
           "peak": -0.5,
-          "peak_hours": 2.6,
+          "peak_hours": 3.3,
           "faded_hours": null,
-          "against": -0.03,
-          "against_hours": 0.6,
-          "until_hours": 2.6,
-          "text": "Clear impact: Bitcoin fell up to 0.5% (after 3 h). Still in the predicted direction after 3 h (-0.5%)."
+          "against": 0.27,
+          "against_hours": 0.3,
+          "until_hours": 3.3,
+          "text": "Small impact: Bitcoin fell up to 0.5% (after 3 h). Still in the predicted direction after 3 h (-0.5%)."
         },
         "result": {
           "start_price": 62503.28,
@@ -27049,11 +27069,11 @@
     "GOLD-20261118": 7
   },
   "last_run": {
-    "run_time": "2026-11-18T23:35:57.462467+00:00",
+    "run_time": "2026-11-18T23:41:00.753420+00:00",
     "test_mode": false,
-    "stories": 138,
-    "off_topic": 62,
-    "repeats": 75,
+    "stories": 140,
+    "off_topic": 63,
+    "repeats": 76,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 1,
