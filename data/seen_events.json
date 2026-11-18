@@ -26441,6 +26441,208 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-18T15:31:38.987912+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261118-04",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-18T18:55:42.035949+00:00",
+      "earliest_report": "2026-11-18T18:10:14+00:00",
+      "last_updated": "2026-11-18T18:55:42.035949+00:00",
+      "words": [
+        "dollar",
+        "follow",
+        "gold",
+        "haul",
+        "heraeu",
+        "long",
+        "over",
+        "price",
+        "real",
+        "short-term",
+        "yield"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNnVBVHhjV2JQWDVXRHB1RE53eU5tU1hOeV85c3pxUWtRNGQxdEtQWXRod0EwcWM5MkhVdU5Td3VZaTJtUEl4ZEpZSDcxek54cWFjelBiaFFsa0lBTWo3WnhFS0dyVTRmSGNkamNnZldrbTN3UmsxRkFPQ1YwNy1wbkc2bnFpNlgtQ0pabkhCUklEdktJd1I1VjVsVEFWSVRGY0xfb1lISTU3U1JBSU1rQzczaDJBLVFt?oc=5",
+          "published": "2026-11-18T18:10:14+00:00",
+          "found_at": "2026-11-18T18:55:42.035949+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T18:55:42.035949+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-18T18:55:42.035949+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-18T18:55:42.035949+00:00",
+          "note": "confirmed -> alerted: New report links gold price to dollar movement; price already moved slightly, indicating a potential short\u2011term trend."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-18",
+        "date_evidence": "Article published 2026-11-18 18:10 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of further gold movement",
+        "expected_direction": "up",
+        "direction_reason": "article says gold follows the dollar short\u2011term and price rose 0.2%",
+        "alert_title": "Gold moves with US dollar",
+        "alert_message": "Gold rose 0.2% as the US dollar shifted, matching short\u2011term patterns that gold follows the dollar.",
+        "why_it_matters": [
+          "Dollar moves can quickly affect gold price",
+          "Short\u2011term correlation may continue"
+        ],
+        "reason": "New report links gold price to dollar movement; price already moved slightly, indicating a potential short\u2011term trend.",
+        "time": "2026-11-18T18:55:42.035949+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold moves with US dollar\n\nGold rose 0.2% as the US dollar shifted, matching short\u2011term patterns that gold follows the dollar.\n\nMINT's prediction: Gold DOWN - In two recent cases when the dollar rose, gold fell the next day (\u20111.4% and \u20110.1%).\n\nGold had already moved +0.2% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 18 Nov 18:55 UTC",
+        "telegram_sent_at": "2026-11-18T18:55:42.035949+00:00"
+      },
+      "outcome": {
+        "start_price": 3726.87,
+        "start_time": "2026-11-18T18:00:00+00:00",
+        "moved_before_mint": 0.18,
+        "delay_hours": 0.8,
+        "now": {
+          "move": 0.18,
+          "time": "2026-11-18T18:39:50+00:00",
+          "hours": 0.5,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 10 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3733.69,
+          "start_time": "2026-11-18T18:55:42.035949+00:00",
+          "threshold": 0.48,
+          "window_hours": 10.4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 10 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In two recent cases when the dollar rose, gold fell the next day (\u20111.4% and \u20110.1%).",
+        "similar": [
+          {
+            "id": "GOLD-20261110-04",
+            "date": "2026-11-10",
+            "title": "Gold falls nearly 3% as CPI tops forecasts, lifting dollar and yields",
+            "d1": -1.43,
+            "d7": -5.76,
+            "peak_hours": 114.5,
+            "source": "MINT",
+            "score": 0.53
+          },
+          {
+            "id": "GOLD-20261116-03",
+            "date": "2026-11-16",
+            "title": "Weekly Markets Monitor - Waller the Dollar",
+            "d1": -0.11,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.48
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 1.01
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-18T18:55:56.162645+00:00",
+          "low": -0.46,
+          "mid": -0.77,
+          "high": -1.08,
+          "window_hours": 10.4,
+          "probability": 0.67,
+          "agree": 2,
+          "similar": 2,
+          "basis": "2 of 2 similar past events moved this way (typical move 0.8%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.17,
+          "threshold": 0.48,
+          "floor": 0.48,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.3x a normal day, price -2.9% - real selling",
+            "buy_sell": "22% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.75,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 1.01
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold tends to move with the US dollar in the short term \u2013 a stronger dollar usually pushes gold lower.",
+        "what_past_events_show": "In two recent cases when the dollar rose, gold fell the next day (\u20111.4% and \u20110.1%).",
+        "direction": "down",
+        "why": [
+          "Dollar strength makes gold more expensive for non\u2011dollar buyers, lowering demand",
+          "Recent similar moves saw gold drop after the dollar rose"
+        ],
+        "watch_next": "If the dollar moves unexpectedly or another strong factor (like central\u2011bank buying) appears, the impact on gold could be bigger or smaller.",
+        "confidence": "medium",
+        "confidence_reason": "2 of 2 similar past events moved this way",
+        "time": "2026-11-18T18:55:42.035949+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-18T18:56:00.561355+00:00"
+      }
     }
   ],
   "counter": {
@@ -26469,26 +26671,26 @@
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
     "BTC-20261118": 3,
-    "GOLD-20261118": 3
+    "GOLD-20261118": 4
   },
   "last_run": {
-    "run_time": "2026-11-18T18:50:58.672415+00:00",
+    "run_time": "2026-11-18T18:55:42.035949+00:00",
     "test_mode": false,
-    "stories": 127,
+    "stories": 128,
     "off_topic": 60,
     "repeats": 67,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Calm",
@@ -26509,7 +26711,8 @@
           "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
           "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
           "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
-          "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields"
+          "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields",
+          "Being checked: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus (reliable source: Kitco News)"
         ]
       }
     }
@@ -26534,7 +26737,8 @@
         "Alert: Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
         "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
         "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
-        "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields"
+        "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields",
+        "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus"
       ]
     }
   },
