@@ -3254,14 +3254,18 @@
     "s": 33.6422
    },
    "1794985200": {
-    "b": 24.7829,
-    "s": 22.6251
+    "b": 32.2646,
+    "s": 24.499
+   },
+   "1794988800": {
+    "b": 0.7844,
+    "s": 0.8546
    }
   },
-  "trades_cursor": "1794988549500291844",
+  "trades_cursor": "1794988898723054944",
   "flow_source": "Kraken",
-  "book_bid_share": 0.45,
-  "book_time": "2026-11-18T07:55:38.772836+00:00"
+  "book_bid_share": 0.445,
+  "book_time": "2026-11-18T08:01:28.490327+00:00"
  },
  "Gold": {
   "bars": [
@@ -6404,39 +6408,39 @@
   ],
   "cot_time": "2026-11-17T23:55:38.802689+00:00"
  },
- "time": "2026-11-18T07:55:38.772836+00:00",
+ "time": "2026-11-18T08:01:28.490327+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.09,
-    "change_24h": 0.08,
-    "text": "normal: 1.1x a normal day, price +0.1%",
+    "ratio": 1.12,
+    "change_24h": 0.7,
+    "text": "normal: 1.1x a normal day, price +0.7%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "taker_buy_share": 0.472,
-    "book_bid_share": 0.45,
-    "up_volume_share": 0.496,
-    "text": "buyers started 47% of trades (24 h); 45% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.473,
+    "book_bid_share": 0.445,
+    "up_volume_share": 0.505,
+    "text": "buyers started 47% of trades (24 h); 44% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 1.03,
-    "change_24h": -2.59,
+    "ratio": 1.05,
+    "change_24h": -2.56,
     "text": "normal: 1.0x a normal day, price -2.6%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.351,
+    "up_volume_share": 0.361,
     "cot_vote": 1,
-    "text": "35% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
+    "text": "36% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
     "ok": true
    }
   }
