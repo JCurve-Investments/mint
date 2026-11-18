@@ -26643,6 +26643,241 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-18T18:56:00.561355+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261118-05",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-18T19:05:45.996745+00:00",
+      "earliest_report": "2026-11-18T19:05:01+00:00",
+      "last_updated": "2026-11-18T19:05:45.996745+00:00",
+      "words": [
+        "could",
+        "drive",
+        "expect",
+        "federal",
+        "higher",
+        "hike",
+        "inflation",
+        "interest",
+        "just",
+        "official",
+        "rate",
+        "reserve",
+        "warn",
+        "watcherguru"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/16144",
+          "published": "2026-11-18T19:05:01+00:00",
+          "found_at": "2026-11-18T19:05:45.996745+00:00",
+          "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-18T19:05:45.996745+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-18T19:05:45.996745+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-18T19:05:45.996745+00:00",
+          "note": "confirmed -> alerted: New Fed expectation of rate hikes is a fresh event that can affect gold price."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-18",
+        "date_evidence": "Report published 2026-11-18 19:05 says officials expect more hikes",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "higher rates usually push gold lower",
+        "alert_title": "Fed signals more rate hikes",
+        "alert_message": "Federal Reserve officials say they expect further interest\u2011rate hikes and warn AI could raise inflation, which may pressure gold lower.",
+        "why_it_matters": [
+          "Higher rates can make gold less attractive",
+          "Inflation worries may shift investor focus"
+        ],
+        "reason": "New Fed expectation of rate hikes is a fresh event that can affect gold price.",
+        "time": "2026-11-18T19:05:45.996745+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed signals more rate hikes\n\nFederal Reserve officials say they expect further interest\u2011rate hikes and warn AI could raise inflation, which may pressure gold lower.\n\nMINT's prediction: Gold DOWN - In similar hawkish moments gold fell the next day, ranging from about -0.4% to -1.4% (only one case rose 0.3% after a big hike).\n\nGold had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 18 Nov 19:05 UTC",
+        "telegram_sent_at": "2026-11-18T19:05:45.996745+00:00"
+      },
+      "outcome": {
+        "start_price": 3733.69,
+        "start_time": "2026-11-18T18:39:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-18T18:39:50+00:00",
+          "hours": -0.4,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 15 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3733.69,
+          "start_time": "2026-11-18T19:05:45.996745+00:00",
+          "threshold": 0.48,
+          "window_hours": 15.3,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 15 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar hawkish moments gold fell the next day, ranging from about -0.4% to -1.4% (only one case rose 0.3% after a big hike).",
+        "similar": [
+          {
+            "id": "GOLD-20261110-03",
+            "date": "2026-11-10",
+            "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
+            "d1": -0.54,
+            "d7": -5.22,
+            "peak_hours": 103.9,
+            "source": "MINT",
+            "score": 0.98
+          },
+          {
+            "id": "START-20220913-G",
+            "date": "2022-09-13",
+            "title": "US inflation hotter than expected",
+            "d1": -1.33,
+            "d7": -3.99,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.87
+          },
+          {
+            "id": "GOLD-20261113-05",
+            "date": "2026-11-13",
+            "title": "Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis",
+            "d1": -1.36,
+            "d7": null,
+            "peak_hours": 117.2,
+            "source": "MINT",
+            "score": 0.84
+          },
+          {
+            "id": "START-20221214-G",
+            "date": "2022-12-14",
+            "title": "Fed slows to a half-point hike but says rates will stay higher for longer",
+            "d1": -0.37,
+            "d7": -0.01,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.8
+          },
+          {
+            "id": "START-20220615-G",
+            "date": "2022-06-15",
+            "title": "Fed raises rates by 0.75 point, biggest hike since 1994",
+            "d1": 0.34,
+            "d7": 1.37,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.72
+          }
+        ],
+        "votes": {
+          "up": 1.44,
+          "down": 4.99
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-18T19:05:59.970142+00:00",
+          "low": -0.41,
+          "mid": -0.94,
+          "high": -1.35,
+          "window_hours": 15.3,
+          "probability": 0.65,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 0.9%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.17,
+          "threshold": 0.48,
+          "floor": 0.48,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.3x a normal day, price -2.7% - real selling",
+            "buy_sell": "23% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.44,
+            "down": 4.99
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Fed officials said they expect more interest\u2011rate hikes and warned that AI could push inflation higher, keeping rates high and hurting gold.",
+        "what_past_events_show": "In similar hawkish moments gold fell the next day, ranging from about -0.4% to -1.4% (only one case rose 0.3% after a big hike).",
+        "direction": "down",
+        "why": [
+          "Higher or longer\u2011high rates make gold less attractive than interest\u2011bearing assets",
+          "The news reinforces a hawkish outlook, which usually pushes gold lower"
+        ],
+        "watch_next": "A surprise Fed rate hike or a shift to a more dovish tone would make the move bigger or smaller respectively.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-18T19:05:45.996745+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-18T19:06:03.755858+00:00"
+      }
     }
   ],
   "counter": {
@@ -26671,26 +26906,26 @@
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
     "BTC-20261118": 3,
-    "GOLD-20261118": 4
+    "GOLD-20261118": 5
   },
   "last_run": {
-    "run_time": "2026-11-18T19:01:32.248177+00:00",
+    "run_time": "2026-11-18T19:05:45.996745+00:00",
     "test_mode": false,
-    "stories": 129,
-    "off_topic": 61,
-    "repeats": 68,
-    "new_events": 0,
+    "stories": 119,
+    "off_topic": 52,
+    "repeats": 66,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Calm",
@@ -26712,7 +26947,8 @@
           "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
           "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
           "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields",
-          "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus"
+          "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
+          "Being checked: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru (approved social media account: Watcher.Guru (Telegram) (from social media))"
         ]
       }
     }
@@ -26738,7 +26974,8 @@
         "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
         "Alert: South African Rand Hits Eight-Month Low on Gold, Fed Hike Bets",
         "Alert: Gold drops to 14-month low as hawkish Fed rhetoric boosts dollar, yields",
-        "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus"
+        "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru"
       ]
     }
   },
