@@ -24060,7 +24060,7 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-17T17:01:34.317885+00:00",
       "earliest_report": "2026-11-17T16:22:43+00:00",
-      "last_updated": "2026-11-18T21:10:58.686934+00:00",
+      "last_updated": "2026-11-18T23:35:57.462467+00:00",
       "words": [
         "14-month",
         "african",
@@ -24097,9 +24097,11 @@
         "rhetoric",
         "rise",
         "sachs",
+        "signal",
         "silver",
         "slide",
         "south",
+        "steadi",
         "stock",
         "struggl",
         "western",
@@ -24174,6 +24176,17 @@
           "found_at": "2026-11-18T21:10:58.686934+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Gold Steadies Near 14-Month Low as Fed Signals More Rate Hikes",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQXdmV3hhblFoX2xZNXU1UVFXemNQdDJXUlpqV3o3bmxiNUVxNTFWRkVRektBa1o0d1N2LWhFcWJYZ0VYWWUydHhnVjFrQ3VYOUI1Z25abXdHV0JucmhFcTFBZTNKSjR6WXB1MnFVanVTekJxY2cyNG9HdzB4NlkyTUtaM3N5bFQwSVd5UGQwaHJNNlRNUU5KU2tCOU5uaEVoRXY5cUhEMHBtZEtxY1B2VkRtRQ?oc=5",
+          "published": "2026-11-18T23:24:06+00:00",
+          "found_at": "2026-11-18T23:35:57.462467+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -24196,6 +24209,10 @@
         {
           "time": "2026-11-18T21:10:58.686934+00:00",
           "note": "joined with GOLD-20261117-10 (same factor, same day and shared key words) - the same story"
+        },
+        {
+          "time": "2026-11-18T23:35:57.462467+00:00",
+          "note": "another report from Bloomberg - same event, no new alert"
         }
       ],
       "decision": {
@@ -26412,9 +26429,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 0,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
@@ -26442,6 +26459,12 @@
           "final": false,
           "text": "still inside the 2.2 days window (biggest move so far +0.1%)",
           "size": null
+        },
+        "h5": {
+          "price": 3717.57,
+          "move": -0.25,
+          "time": "2026-11-18T23:22:49+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -27026,14 +27049,14 @@
     "GOLD-20261118": 7
   },
   "last_run": {
-    "run_time": "2026-11-18T23:31:15.944277+00:00",
+    "run_time": "2026-11-18T23:35:57.462467+00:00",
     "test_mode": false,
-    "stories": 130,
-    "off_topic": 61,
-    "repeats": 69,
+    "stories": 138,
+    "off_topic": 62,
+    "repeats": 75,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
