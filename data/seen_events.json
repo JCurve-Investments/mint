@@ -29241,7 +29241,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -29263,6 +29263,12 @@
           "final": false,
           "text": "still inside the 35 hours window (biggest move so far -0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 3703.04,
+          "move": -0.09,
+          "time": "2026-11-19T15:04:03+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -29385,11 +29391,11 @@
     "GOLD-20261119": 4
   },
   "last_run": {
-    "run_time": "2026-11-19T15:11:00.700485+00:00",
+    "run_time": "2026-11-19T15:16:04.384750+00:00",
     "test_mode": false,
-    "stories": 169,
-    "off_topic": 72,
-    "repeats": 97,
+    "stories": 167,
+    "off_topic": 73,
+    "repeats": 94,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
