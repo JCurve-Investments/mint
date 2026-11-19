@@ -1,20 +1,5 @@
 [
   {
-    "time": "2026-11-19T01:06:24.896716+00:00",
-    "test_mode": false,
-    "reason": "cloud (GitHub Actions)",
-    "seconds": 28,
-    "results": {
-      "Bitcoin Scout": "19 news stories to read, 0 data warning(s), 0 error(s).",
-      "Gold Scout": "0 calendar warning(s), 0 event(s) in the next 7 days, 107 news stories to read, 0 problem(s).",
-      "Social Watcher": "6 account(s) checked, 4 post(s) kept (a post can only start a Watch), 0 error(s).",
-      "Supervisor": "130 stories (53 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 77 repeat(s). 0 event(s) passed to the Decision agent.",
-      "Price Tracker": "prices saved, 0 new outcome check(s), 0 error(s).",
-      "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
-      "Telegram bot": "0 message(s) delivered, 0 subscriber(s), posting to the channel."
-    }
-  },
-  {
     "time": "2026-11-19T01:12:03.154723+00:00",
     "test_mode": false,
     "reason": "cloud (GitHub Actions)",
@@ -2997,6 +2982,21 @@
       "Price Tracker": "prices saved, 0 new outcome check(s), 0 error(s).",
       "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
       "Telegram bot": "0 message(s) delivered, 0 subscriber(s), posting to the channel."
+    }
+  },
+  {
+    "time": "2026-11-19T17:44:42.679233+00:00",
+    "test_mode": false,
+    "reason": "cloud (GitHub Actions)",
+    "seconds": 16,
+    "results": {
+      "Bitcoin Scout": "29 news stories to read, 0 data warning(s), 0 error(s).",
+      "Gold Scout": "0 calendar warning(s), 0 event(s) in the next 7 days, 120 news stories to read, 0 problem(s).",
+      "Social Watcher": "6 account(s) checked, 4 post(s) kept (a post can only start a Watch), 0 error(s).",
+      "Supervisor": "153 stories (66 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 87 repeat(s). 0 event(s) passed to the Decision agent.",
+      "Price Tracker": "prices saved, 0 new outcome check(s), 0 error(s).",
+      "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
+      "Telegram bot": "1 message(s) delivered, 0 subscriber(s), posting to the channel."
     }
   }
 ]
