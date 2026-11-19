@@ -24166,7 +24166,7 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-17T17:01:34.317885+00:00",
       "earliest_report": "2026-11-17T04:18:00+00:00",
-      "last_updated": "2026-11-19T09:01:35.508135+00:00",
+      "last_updated": "2026-11-19T23:25:43.422880+00:00",
       "words": [
         "14-month",
         "african",
@@ -24176,6 +24176,7 @@
         "bets",
         "boost",
         "bring",
+        "concern",
         "cut",
         "dollar",
         "edges",
@@ -24348,6 +24349,17 @@
           "found_at": "2026-11-19T09:01:35.508135+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold falls below $3,650, silver tumbles as Fed rate concerns pressure metals - Kitco PM Report",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRlpVQ2czMnU5WnpBbm5Nc0VXMlRlMmU3ZnROX2UzXy1mTVlSSGZVcG01NWl6al94MzY3UFl4WGdyNEZocmdibEZtcm9lSU14NURNZnFQakJOaGoxQ0dSSVEyT0REU0pLc0VkZHAzQ1lWMkVPazhXRlZwQkVpNHFINS1GOWZ2dlBZTlMwNkZrdi12YzFOVnJEU0RRRDZqU2hsSFE0NnlDXy1pd1dmWTV1d3p6NVJxSzA?oc=5",
+          "published": "2026-11-19T21:55:28+00:00",
+          "found_at": "2026-11-19T23:25:43.422880+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -24390,6 +24402,10 @@
         {
           "time": "2026-11-19T09:01:35.508135+00:00",
           "note": "another report from CNBC - same event, no new alert"
+        },
+        {
+          "time": "2026-11-19T23:25:43.422880+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -31127,14 +31143,14 @@
     "GOLD-20261119": 8
   },
   "last_run": {
-    "run_time": "2026-11-19T23:21:06.963087+00:00",
+    "run_time": "2026-11-19T23:25:43.422880+00:00",
     "test_mode": false,
-    "stories": 110,
-    "off_topic": 40,
-    "repeats": 70,
+    "stories": 152,
+    "off_topic": 64,
+    "repeats": 87,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
