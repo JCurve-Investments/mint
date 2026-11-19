@@ -14247,12 +14247,6 @@
         "start_time": "2026-11-12T12:39:40+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
-        "now": {
-          "move": -5.45,
-          "time": "2026-11-19T13:00:40+00:00",
-          "hours": 167.9,
-          "verdict": "right"
-        },
         "effect": "right",
         "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 49 min (biggest move -1.7%)",
         "impact": {
@@ -14265,12 +14259,12 @@
           "text": "Clear impact: Gold fell up to 5.7% (after 6.6 days). Still in the predicted direction after 7.0 days (-5.4%)."
         },
         "checks": {
-          "done": 8,
-          "right": 8,
+          "done": 9,
+          "right": 9,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "h1": {
           "price": 3904.05,
           "move": -0.63,
@@ -14333,6 +14327,12 @@
           "price": 3848.26,
           "move": -2.05,
           "time": "2026-11-17T13:07:34+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 3714.83,
+          "move": -5.45,
+          "time": "2026-11-19T13:07:34+00:00",
           "verdict": "right"
         }
       },
@@ -28630,8 +28630,8 @@
       "proof": "news",
       "proof_reason": "reliable source: Reuters",
       "first_seen": "2026-11-19T10:10:59.824312+00:00",
-      "earliest_report": "2026-11-19T06:53:00+00:00",
-      "last_updated": "2026-11-19T10:10:59.824312+00:00",
+      "earliest_report": "2026-11-19T03:28:00+00:00",
+      "last_updated": "2026-11-19T13:21:00.298955+00:00",
       "words": [
         "14-month",
         "caps",
@@ -28656,6 +28656,17 @@
           "found_at": "2026-11-19T10:10:59.824312+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Gold recoups from 14-month low, tighter Fed outlook caps gains",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBzSmhHOXhFdnBjdTJSSHQ5eENObngzd3UwdF9SOFNkV1NlSlRONkEzSzJXaGZZNTlxV3VlXzVNV2E5MV9hb3RKREJfS0VCM213X1VZTUpTRGNFanc2dHBHLVZzRk9qVkFIVlZwcVBtOUhaMHNmUkRBNGF30gF_QVVfeXFMTVdQV0Z4T1c2TlFoWi00UVZPbFJxdTVlVUwtcHRiX1NvWDQ3X09FcnhzbmRhdnBTRnVYUURCcDZaWEZJYWpSdzVfVGRoQ2NrNWFSdjNVMjREYUtGNGU5U1p5dWhONUVJVTJTYWhqSURFbGVSSGhTNVdaOUctczVUcw?oc=5",
+          "published": "2026-11-19T03:28:00+00:00",
+          "found_at": "2026-11-19T13:21:00.298955+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -28670,6 +28681,10 @@
         {
           "time": "2026-11-19T10:10:59.824312+00:00",
           "note": "confirmed -> alerted: New Fed outlook reported, could pressure gold further, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-19T13:21:00.298955+00:00",
+          "note": "another report from CNBC - same event, no new alert"
         }
       ],
       "decision": {
@@ -28709,19 +28724,19 @@
         "now": {
           "move": -0.24,
           "time": "2026-11-19T13:00:40+00:00",
-          "hours": 6.1,
+          "hours": 9.5,
           "verdict": "flat"
         },
         "effect": "tracking",
         "effect_reason": "still inside the 11 hours window (biggest move so far -0.1%)",
         "impact": {
-          "peak": -0.3,
-          "peak_hours": 5.1,
-          "faded_hours": null,
-          "against": 0.05,
-          "against_hours": 1.1,
-          "until_hours": 6.1,
-          "text": "Clear impact: Gold fell up to 0.3% (after 5 h). Still in the predicted direction after 6 h (-0.2%)."
+          "peak": -0.33,
+          "peak_hours": 0.5,
+          "faded_hours": 2.5,
+          "against": 0.17,
+          "against_hours": 2.5,
+          "until_hours": 9.5,
+          "text": "Clear impact: Gold fell up to 0.3% (after 0 h). The effect lasted about 2 h, then faded."
         },
         "result": {
           "start_price": 3717.74,
@@ -29096,14 +29111,14 @@
     "GOLD-20261119": 2
   },
   "last_run": {
-    "run_time": "2026-11-19T13:15:58.706373+00:00",
+    "run_time": "2026-11-19T13:21:00.298955+00:00",
     "test_mode": false,
-    "stories": 156,
-    "off_topic": 65,
-    "repeats": 91,
+    "stories": 138,
+    "off_topic": 48,
+    "repeats": 89,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
@@ -29120,7 +29135,8 @@
           "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
           "Alert: Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
           "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
-          "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk"
+          "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+          "1 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
