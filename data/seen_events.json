@@ -29526,8 +29526,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 2,
-          "right": 1,
+          "done": 3,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -29556,6 +29556,12 @@
           "final": false,
           "text": "still inside the 15 hours window (biggest move so far +0.1%)",
           "size": null
+        },
+        "h10": {
+          "price": 3669.42,
+          "move": -1.46,
+          "time": "2026-11-19T16:53:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -29938,7 +29944,7 @@
     "GOLD-20261119": 5
   },
   "last_run": {
-    "run_time": "2026-11-19T17:01:38.620947+00:00",
+    "run_time": "2026-11-19T17:05:44.606766+00:00",
     "test_mode": false,
     "stories": 155,
     "off_topic": 66,
