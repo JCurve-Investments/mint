@@ -26307,7 +26307,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 1,
           "wrong": 0,
           "total": 9
@@ -26348,6 +26348,12 @@
           "price": 3731.82,
           "move": -0.05,
           "time": "2026-11-19T00:05:01+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 3723.67,
+          "move": -0.27,
+          "time": "2026-11-19T05:05:01+00:00",
           "verdict": "flat"
         }
       },
@@ -27689,11 +27695,11 @@
     "BTC-20261119": 1
   },
   "last_run": {
-    "run_time": "2026-11-19T05:11:04.285698+00:00",
+    "run_time": "2026-11-19T05:15:54.560672+00:00",
     "test_mode": false,
-    "stories": 111,
-    "off_topic": 51,
-    "repeats": 60,
+    "stories": 149,
+    "off_topic": 63,
+    "repeats": 86,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
