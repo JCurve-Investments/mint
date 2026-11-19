@@ -24937,9 +24937,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 0,
-          "wrong": 4,
+          "wrong": 5,
           "total": 9
         },
         "final": false,
@@ -24992,6 +24992,12 @@
           "price": 3720.86,
           "move": -3.19,
           "time": "2026-11-19T07:07:00+00:00",
+          "verdict": "wrong"
+        },
+        "d2": {
+          "price": 3664.7,
+          "move": -4.65,
+          "time": "2026-11-19T19:07:00+00:00",
           "verdict": "wrong"
         }
       },
@@ -26116,17 +26122,21 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-18T18:55:42.035949+00:00",
       "earliest_report": "2026-11-18T18:10:14+00:00",
-      "last_updated": "2026-11-18T18:55:42.035949+00:00",
+      "last_updated": "2026-11-19T19:20:56.731949+00:00",
       "words": [
         "dollar",
         "follow",
         "gold",
         "haul",
         "heraeu",
+        "last",
         "long",
         "over",
+        "period",
         "price",
         "real",
+        "same",
+        "session",
         "short-term",
         "yield"
       ],
@@ -26143,6 +26153,17 @@
           "found_at": "2026-11-18T18:55:42.035949+00:00",
           "summary": "",
           "factor": "G1"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "US dollar up 2% over last 7 sessions, gold down by 10% in the same period",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV0J3ZUduVkptNUFSMVI3VzFGR2RvZVlBWElpMjVNdXNFVHVNcWlDVzROVE5Xc1lHYnhkWFpUWjJDOHpMNGF4a3EwSHUyY1BDNWc1RVpFS2F3aGliMUZMNDd1UDhQdW9PQ0FCaTRSMzQ3cTVNbDhyV0FCWXZkajBnbVBwOWRhY0xoTW8zYndORk1yR0ZFWFMtc3RmVzN5R00?oc=5",
+          "published": "2026-11-19T03:29:10+00:00",
+          "found_at": "2026-11-19T19:20:56.731949+00:00",
+          "summary": "",
+          "factor": "G1"
         }
       ],
       "history": [
@@ -26157,6 +26178,10 @@
         {
           "time": "2026-11-18T18:55:42.035949+00:00",
           "note": "confirmed -> alerted: New report links gold price to dollar movement; price already moved slightly, indicating a potential short\u2011term trend."
+        },
+        {
+          "time": "2026-11-19T19:20:56.731949+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -30300,7 +30325,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -30322,6 +30347,12 @@
           "final": false,
           "text": "still inside the 2.2 days window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 62709.94,
+          "move": 0.06,
+          "time": "2026-11-19T19:10:05+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -30705,23 +30736,23 @@
     "GOLD-20261119": 7
   },
   "last_run": {
-    "run_time": "2026-11-19T19:15:55.980524+00:00",
+    "run_time": "2026-11-19T19:20:56.731949+00:00",
     "test_mode": false,
-    "stories": 155,
-    "off_topic": 66,
-    "repeats": 88,
-    "new_events": 1,
+    "stories": 112,
+    "off_topic": 55,
+    "repeats": 56,
+    "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -30749,7 +30780,7 @@
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
           "Alert: Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report",
           "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
-          "Being checked: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada (reliable source: Kitco News)"
+          "Alert: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada"
         ]
       }
     }
