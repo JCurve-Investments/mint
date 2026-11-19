@@ -14951,19 +14951,13 @@
         "start_time": "2026-11-12T16:09:20+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
-        "now": {
-          "move": -12.44,
-          "time": "2026-11-19T16:29:40+00:00",
-          "hours": 167.7,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 6,
+          "done": 9,
+          "right": 7,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
         "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 10 hours (biggest move -10.2%)",
         "impact": {
@@ -15037,6 +15031,12 @@
           "price": 64052.55,
           "move": -11.01,
           "time": "2026-11-17T16:45:52+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 63021.84,
+          "move": -12.44,
+          "time": "2026-11-19T16:45:52+00:00",
           "verdict": "right"
         }
       },
@@ -27813,7 +27813,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -27854,6 +27854,12 @@
           "price": 63698.52,
           "move": 0.22,
           "time": "2026-11-19T11:51:19+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 63021.84,
+          "move": -0.85,
+          "time": "2026-11-19T16:51:19+00:00",
           "verdict": "flat"
         }
       },
@@ -29932,7 +29938,7 @@
     "GOLD-20261119": 5
   },
   "last_run": {
-    "run_time": "2026-11-19T16:55:42.620133+00:00",
+    "run_time": "2026-11-19T17:01:38.620947+00:00",
     "test_mode": false,
     "stories": 155,
     "off_topic": 66,
