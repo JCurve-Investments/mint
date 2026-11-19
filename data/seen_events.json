@@ -26790,13 +26790,16 @@
       "proof_reason": "reliable source: Bloomberg",
       "first_seen": "2026-11-18T20:35:44.350818+00:00",
       "earliest_report": "2026-11-18T19:40:00+00:00",
-      "last_updated": "2026-11-19T03:31:36.788882+00:00",
+      "last_updated": "2026-11-19T14:35:44.122355+00:00",
       "words": [
         "6.5",
+        "6.5b",
         "abu",
         "bid",
         "billion",
         "binance",
+        "blockchain",
+        "can",
         "court",
         "crypto",
         "dhabi",
@@ -26805,11 +26808,14 @@
         "hack",
         "obtain",
         "order",
+        "over",
         "recover",
         "secur",
+        "serv",
         "token",
         "uae",
-        "wallet"
+        "wallet",
+        "wins"
       ],
       "amounts": [
         6500.0
@@ -26848,6 +26854,17 @@
           "found_at": "2026-11-19T03:31:36.788882+00:00",
           "summary": "",
           "factor": "B1"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Binance Wins $6.5B Freezing Order Over Hack That Can Be Served via the Blockchain",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQS0IxUFhtb0VGV1FZZm5VMVZKdHdPZWxWaDl2SU1rZG1CLXpHWWtyOEs3Z2RMaFA5R0VCN0JfUXEtWkhHR3p4Skt0OTNET0NzRG5ubVFXUHg1eWRRRTFiSHhOa0t0MXVOc2Q3elRkT0VIeGNaelpSZUVDWDVqVFRwSU1hVXBpTEcwS1RrVGpWQ3RRMk1LRS1jemxWbk1ZLXI4VFVWVzRqbW1kUDdjNkM5RHhn?oc=5",
+          "published": "2026-11-19T12:59:14+00:00",
+          "found_at": "2026-11-19T14:35:44.122355+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -26870,6 +26887,10 @@
         {
           "time": "2026-11-19T03:31:36.788882+00:00",
           "note": "another report from Reuters - same event, no new alert"
+        },
+        {
+          "time": "2026-11-19T14:35:44.122355+00:00",
+          "note": "another report from Decrypt - same event, no new alert"
         }
       ],
       "decision": {
@@ -29162,14 +29183,14 @@
     "GOLD-20261119": 2
   },
   "last_run": {
-    "run_time": "2026-11-19T14:31:21.365487+00:00",
+    "run_time": "2026-11-19T14:35:44.122355+00:00",
     "test_mode": false,
-    "stories": 150,
-    "off_topic": 62,
+    "stories": 158,
+    "off_topic": 69,
     "repeats": 88,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
