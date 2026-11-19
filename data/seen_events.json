@@ -18892,8 +18892,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 6,
-          "right": 3,
+          "done": 7,
+          "right": 4,
           "wrong": 0,
           "total": 9
         },
@@ -18960,6 +18960,12 @@
           "move": -0.35,
           "time": "2026-11-18T07:57:03+00:00",
           "verdict": "flat"
+        },
+        "h84": {
+          "price": 62258.69,
+          "move": -4.16,
+          "time": "2026-11-19T19:57:03+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -31204,17 +31210,17 @@
     "GOLD-20261119": 8
   },
   "last_run": {
-    "run_time": "2026-11-19T20:05:49.688010+00:00",
+    "run_time": "2026-11-19T20:10:57.227495+00:00",
     "test_mode": false,
     "stories": 155,
-    "off_topic": 66,
+    "off_topic": 67,
     "repeats": 88,
-    "new_events": 1,
+    "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 1,
+      "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
@@ -31229,7 +31235,7 @@
           "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
           "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
           "Alert: SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
-          "US stock market (Nasdaq) fell -2.26% on its last day"
+          "US stock market (Nasdaq) fell -2.14% on its last day"
         ]
       },
       "Gold": {
