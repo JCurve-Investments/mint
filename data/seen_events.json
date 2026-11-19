@@ -26790,28 +26790,39 @@
       "proof_reason": "reliable source: Bloomberg",
       "first_seen": "2026-11-18T20:35:44.350818+00:00",
       "earliest_report": "2026-11-18T19:40:00+00:00",
-      "last_updated": "2026-11-19T14:35:44.122355+00:00",
+      "last_updated": "2026-11-19T14:41:02.831476+00:00",
       "words": [
         "6.5",
         "6.5b",
         "abu",
+        "asia",
+        "berlin",
+        "beyond",
         "bid",
         "billion",
         "binance",
+        "bitcoin",
         "blockchain",
         "can",
+        "confirm",
         "court",
         "crypto",
         "dhabi",
         "freez",
         "freeze",
         "hack",
+        "implant",
+        "ledger",
         "obtain",
         "order",
         "over",
+        "probe",
         "recover",
         "secur",
         "serv",
+        "spread",
+        "spy",
+        "tamper",
         "token",
         "uae",
         "wallet",
@@ -26865,6 +26876,17 @@
           "found_at": "2026-11-19T14:35:44.122355+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSF80X3NSQnpUS3ZFMzRjeXJNNmtlUmUxVjNReUNBWmtXOV9DbUpPajVucV9rMU9xQTN3dHIxbHkxSlVVdnNUZXZCaFNZWXZXNU1rOUJIREFDWVBLR3pCUGNJRllzTGRldzJJZVg4WjFFLVdIcUlORi0wU2NtV21qeFVrdDVRVHotUHRicmdoa1VWek11cEp3OA?oc=5",
+          "published": "2026-11-18T22:16:02+00:00",
+          "found_at": "2026-11-19T14:41:02.831476+00:00",
+          "summary": "",
+          "factor": "B1"
         }
       ],
       "history": [
@@ -26891,6 +26913,10 @@
         {
           "time": "2026-11-19T14:35:44.122355+00:00",
           "note": "another report from Decrypt - same event, no new alert"
+        },
+        {
+          "time": "2026-11-19T14:41:02.831476+00:00",
+          "note": "joined with BTC-20261118-05 (same organisation, same factor and same day) - the same story"
         }
       ],
       "decision": {
@@ -27606,265 +27632,6 @@
         "first_sent_at": "2026-11-19T00:25:59.952890+00:00",
         "sent_state": "context",
         "verdict_sent": "2026-11-19T09:31:23.862238+00:00"
-      }
-    },
-    {
-      "id": "BTC-20261118-05",
-      "asset": "Bitcoin",
-      "factor": "B1",
-      "factor_name": "Bans, crackdowns and lawsuits",
-      "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
-      "state": "alerted",
-      "state_reason": "stamped by the Decision agent - alert ready",
-      "proof": "news",
-      "proof_reason": "reliable source: Decrypt",
-      "first_seen": "2026-11-19T01:11:30.479776+00:00",
-      "earliest_report": "2026-11-18T22:16:02+00:00",
-      "last_updated": "2026-11-19T01:11:30.479776+00:00",
-      "words": [
-        "asia",
-        "berlin",
-        "beyond",
-        "bitcoin",
-        "confirm",
-        "implant",
-        "ledger",
-        "probe",
-        "spread",
-        "spy",
-        "tamper",
-        "wallet"
-      ],
-      "amounts": [],
-      "old_clues": [],
-      "sources": [
-        {
-          "organisation": "Decrypt",
-          "kind": "news",
-          "site": "decrypt.co",
-          "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSF80X3NSQnpUS3ZFMzRjeXJNNmtlUmUxVjNReUNBWmtXOV9DbUpPajVucV9rMU9xQTN3dHIxbHkxSlVVdnNUZXZCaFNZWXZXNU1rOUJIREFDWVBLR3pCUGNJRllzTGRldzJJZVg4WjFFLVdIcUlORi0wU2NtV21qeFVrdDVRVHotUHRicmdoa1VWek11cEp3OA?oc=5",
-          "published": "2026-11-18T22:16:02+00:00",
-          "found_at": "2026-11-19T01:11:30.479776+00:00",
-          "summary": "",
-          "factor": "B1"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-19T01:11:30.479776+00:00",
-          "note": "new event, first report by Decrypt"
-        },
-        {
-          "time": "2026-11-19T01:11:30.479776+00:00",
-          "note": "new -> confirmed: reliable source: Decrypt - passed to the Decision agent"
-        },
-        {
-          "time": "2026-11-19T01:11:30.479776+00:00",
-          "note": "confirmed -> alerted: New security breach report fits a pattern of negative events that can affect Bitcoin price."
-        }
-      ],
-      "decision": {
-        "is_new_event": true,
-        "event_date": "2026-11-18",
-        "date_evidence": "Article published 2026-11-18 22:16 UTC",
-        "send_alert": true,
-        "impact": "high",
-        "possible_effect": "risk of a drop",
-        "expected_direction": "down",
-        "direction_reason": "Similar security crackdowns have previously pushed Bitcoin down",
-        "alert_title": "Security breach hits Bitcoin wallets",
-        "alert_message": "Ledger confirmed tampered Bitcoin wallets in Berlin, linked to a spy implant probe spreading beyond Asia. Such security issues can shake user trust and may pressure Bitcoin price.",
-        "why_it_matters": [
-          "Erodes confidence in Bitcoin security",
-          "May trigger regulatory or legal actions"
-        ],
-        "reason": "New security breach report fits a pattern of negative events that can affect Bitcoin price.",
-        "time": "2026-11-19T01:11:30.479776+00:00",
-        "mode": "AI",
-        "model": "Groq openai/gpt-oss-120b",
-        "telegram_message": "MINT alert \u00b7 Bitcoin\nSecurity breach hits Bitcoin wallets\n\nLedger confirmed tampered Bitcoin wallets in Berlin, linked to a spy implant probe spreading beyond Asia. Such security issues can shake user trust and may pressure Bitcoin price.\n\nMINT's prediction: Bitcoin DOWN - Similar negative legal or security shocks (e.g., a big lawsuit on 2026\u201111\u201114 and the Binance guilty plea on 2023\u201111\u201121) pushed Bitcoin down about 3\u20115% after one day.\n\nBitcoin had already moved +1.3% since the first report.\nSources: Decrypt\nRisk information only, not financial advice.",
-        "telegram_status": "sent to 0 at 19 Nov 01:11 UTC",
-        "telegram_sent_at": "2026-11-19T01:11:30.479776+00:00"
-      },
-      "outcome": {
-        "start_price": 62269.91,
-        "start_time": "2026-11-18T22:00:00+00:00",
-        "moved_before_mint": 1.31,
-        "delay_hours": 2.9,
-        "h1": {
-          "price": 62181.04,
-          "move": -0.14,
-          "time": "2026-11-18T23:16:02+00:00",
-          "verdict": "flat"
-        },
-        "now": {
-          "move": 2.59,
-          "time": "2026-11-19T13:54:20+00:00",
-          "hours": 15.6,
-          "verdict": "wrong"
-        },
-        "checks": {
-          "done": 3,
-          "right": 0,
-          "wrong": 2,
-          "total": 9
-        },
-        "final": false,
-        "effect": "tracking",
-        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.9%)",
-        "impact": {
-          "peak": -0.14,
-          "peak_hours": 0.7,
-          "faded_hours": 1.7,
-          "against": 2.61,
-          "against_hours": 13.7,
-          "until_hours": 15.6,
-          "text": "Small impact: Bitcoin fell up to 0.1% (after 1 h). The effect lasted about 2 h, then faded - later it rose up to 2.6% (after 14 h)."
-        },
-        "result": {
-          "start_price": 63135.45,
-          "start_time": "2026-11-19T01:11:30.479776+00:00",
-          "threshold": 1.69,
-          "window_hours": 54.0,
-          "peak": -0.92,
-          "peak_hours": 1.8,
-          "held_hours": 0.0,
-          "checked_until": 12.7,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 2.2 days window (biggest move so far -0.9%)",
-          "size": null
-        },
-        "h5": {
-          "price": 62739.44,
-          "move": 0.75,
-          "time": "2026-11-19T03:16:02+00:00",
-          "verdict": "wrong"
-        },
-        "h10": {
-          "price": 63552.86,
-          "move": 2.06,
-          "time": "2026-11-19T08:16:02+00:00",
-          "verdict": "wrong"
-        }
-      },
-      "prediction": {
-        "direction": "down",
-        "by": "AI + past events",
-        "reason": "Similar negative legal or security shocks (e.g., a big lawsuit on 2026\u201111\u201114 and the Binance guilty plea on 2023\u201111\u201121) pushed Bitcoin down about 3\u20115% after one day.",
-        "similar": [
-          {
-            "id": "BTC-20261114-02",
-            "date": "2026-11-14",
-            "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
-            "d1": -3.36,
-            "d7": null,
-            "peak_hours": 114.5,
-            "source": "MINT",
-            "score": 0.57
-          },
-          {
-            "id": "START-20210924-B",
-            "date": "2021-09-24",
-            "title": "China's central bank bans all crypto transactions",
-            "d1": -4.58,
-            "d7": 7.18,
-            "peak_hours": null,
-            "source": "starter library (check the date)",
-            "score": 0.45
-          },
-          {
-            "id": "START-20230605-B",
-            "date": "2023-06-05",
-            "title": "SEC sues Binance and founder Changpeng Zhao",
-            "d1": -5.01,
-            "d7": -4.49,
-            "peak_hours": null,
-            "source": "starter library (check the date)",
-            "score": 0.45
-          },
-          {
-            "id": "START-20230606-B",
-            "date": "2023-06-06",
-            "title": "SEC sues Coinbase for operating an unregistered exchange",
-            "d1": 5.74,
-            "d7": 0.62,
-            "peak_hours": null,
-            "source": "starter library (check the date)",
-            "score": 0.45
-          },
-          {
-            "id": "START-20231121-B",
-            "date": "2023-11-21",
-            "title": "Binance pleads guilty and CZ steps down in $4.3bn settlement",
-            "d1": -4.44,
-            "d7": 0.94,
-            "peak_hours": null,
-            "source": "starter library (check the date)",
-            "score": 0.45
-          }
-        ],
-        "votes": {
-          "up": 0.9,
-          "down": 3.42
-        },
-        "forecast": {
-          "version": 2,
-          "made": "2026-11-19T01:11:44.000489+00:00",
-          "low": -2.7,
-          "mid": -3.38,
-          "high": -4.5,
-          "window_hours": 54.0,
-          "probability": 0.74,
-          "agree": 4,
-          "similar": 5,
-          "basis": "4 of 5 similar past events moved this way (typical move 4.5%)",
-          "window_basis": "time the market normally needs to move this much",
-          "sigma": 2.25,
-          "threshold": 1.69,
-          "floor": 0.92,
-          "lenses": {
-            "volume": -1,
-            "buy_sell": -1
-          },
-          "lens_text": {
-            "volume": "busy: 1.3x a normal day, price -1.7% - real selling",
-            "buy_sell": "buyers started 40% of trades (24 h); 54% of waiting orders near the price are buy orders"
-          },
-          "lens_notes": [
-            "agrees: volume",
-            "agrees: buy/sell"
-          ],
-          "lens_scores": {
-            "news": 0.71,
-            "volume": 0.75,
-            "buy_sell": 0.75
-          },
-          "rule_votes": {
-            "up": 0.9,
-            "down": 3.42
-          },
-          "lenses_used": true
-        }
-      },
-      "analysis": {
-        "by": "AI (Groq)",
-        "summary": "Ledger said some Bitcoin hardware wallets in Berlin were tampered with as a spy\u2011implant investigation spreads beyond Asia, raising security concerns.",
-        "what_past_events_show": "Similar negative legal or security shocks (e.g., a big lawsuit on 2026\u201111\u201114 and the Binance guilty plea on 2023\u201111\u201121) pushed Bitcoin down about 3\u20115% after one day.",
-        "direction": "down",
-        "why": [
-          "Security breach scares users and may trigger selling",
-          "Past comparable shocks have caused a short\u2011term price drop"
-        ],
-        "watch_next": "If more wallets are found compromised or regulators step in, the drop could deepen; if the issue is contained to a few devices, the impact may fade quickly.",
-        "confidence": "high",
-        "confidence_reason": "4 of 5 similar past events moved this way",
-        "time": "2026-11-19T01:11:30.479776+00:00"
-      },
-      "telegram": {
-        "sent_state": "alerted",
-        "first_sent_at": "2026-11-19T01:12:03.127747+00:00"
       }
     },
     {
@@ -29150,6 +28917,238 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-19T12:01:53.106520+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261119-03",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-19T14:41:02.831476+00:00",
+      "earliest_report": "2026-11-19T14:35:32+00:00",
+      "last_updated": "2026-11-19T14:41:02.831476+00:00",
+      "words": [
+        "except",
+        "fed",
+        "interest",
+        "jpmorgan",
+        "just",
+        "meeting",
+        "next",
+        "raise",
+        "rate",
+        "three",
+        "watcherguru"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/16161",
+          "published": "2026-11-19T14:35:32+00:00",
+          "found_at": "2026-11-19T14:41:02.831476+00:00",
+          "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T14:41:02.831476+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-19T14:41:02.831476+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-19T14:41:02.831476+00:00",
+          "note": "confirmed -> alerted: New forecast of rate hikes could affect gold, so an alert is warranted"
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-19",
+        "date_evidence": "First report published 2026-11-19 14:35 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Higher rates usually push gold lower",
+        "alert_title": "Fed rate hike expectations may pressure gold",
+        "alert_message": "JPMorgan expects the Fed to raise rates in the next three meetings, which could weigh on gold prices.",
+        "why_it_matters": [
+          "Rate hikes often lower gold",
+          "Market may price in higher rates"
+        ],
+        "reason": "New forecast of rate hikes could affect gold, so an alert is warranted",
+        "time": "2026-11-19T14:41:02.831476+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed rate hike expectations may pressure gold\n\nJPMorgan expects the Fed to raise rates in the next three meetings, which could weigh on gold prices.\n\nMINT's prediction: Gold DOWN - When markets heard warnings of more hikes, gold fell about 0.5% the next day, while actual rate hikes have given mixed but small moves.\n\nGold had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 19 Nov 14:41 UTC",
+        "telegram_sent_at": "2026-11-19T14:41:02.831476+00:00"
+      },
+      "outcome": {
+        "start_price": 3706.13,
+        "start_time": "2026-11-19T13:54:30+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-19T13:54:30+00:00",
+          "hours": -0.7,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3706.13,
+          "start_time": "2026-11-19T14:41:02.831476+00:00",
+          "threshold": 0.49,
+          "window_hours": 4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "When markets heard warnings of more hikes, gold fell about 0.5% the next day, while actual rate hikes have given mixed but small moves.",
+        "similar": [
+          {
+            "id": "GOLD-20261110-03",
+            "date": "2026-11-10",
+            "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
+            "d1": -0.54,
+            "d7": -5.22,
+            "peak_hours": 103.9,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "START-20241218-G",
+            "date": "2024-12-18",
+            "title": "Fed cuts rates but signals fewer cuts next year",
+            "d1": -0.33,
+            "d7": -0.3,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.52
+          },
+          {
+            "id": "START-20230313-G",
+            "date": "2023-03-13",
+            "title": "Bank failures raise bets the Fed will pause rate hikes",
+            "d1": 2.64,
+            "d7": 6.19,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20230726-G",
+            "date": "2023-07-26",
+            "title": "Fed raises rates by a quarter point",
+            "d1": 0.33,
+            "d7": 0.58,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20240918-G",
+            "date": "2024-09-18",
+            "title": "Fed cuts rates by half a point",
+            "d1": 0.24,
+            "d7": 3.56,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.8,
+          "down": 1.16
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T14:41:21.332001+00:00",
+          "low": -0.26,
+          "mid": -0.44,
+          "high": -0.61,
+          "window_hours": 4,
+          "probability": 0.48,
+          "agree": 2,
+          "similar": 5,
+          "basis": "2 of 5 similar past events moved this way (typical move 0.4%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.19,
+          "threshold": 0.49,
+          "floor": 0.49,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 0.9x a normal day, price -1.5%",
+            "buy_sell": "41% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.43,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.8,
+            "down": 1.16
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "JPMorgan says the Fed will raise rates at its next three meetings, reinforcing a hawkish outlook that can hurt gold.",
+        "what_past_events_show": "When markets heard warnings of more hikes, gold fell about 0.5% the next day, while actual rate hikes have given mixed but small moves.",
+        "direction": "down",
+        "why": [
+          "Higher or expected higher rates make gold less attractive compared to interest\u2011bearing assets",
+          "The news adds to a hawkish narrative, even if it was largely expected"
+        ],
+        "watch_next": "A surprise larger hike or a change in Fed guidance would make the move bigger, while a pause or cut would lessen it.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-19T14:41:02.831476+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-19T14:41:22.093071+00:00"
+      }
     }
   ],
   "counter": {
@@ -29180,32 +29179,31 @@
     "BTC-20261118": 5,
     "GOLD-20261118": 7,
     "BTC-20261119": 4,
-    "GOLD-20261119": 2
+    "GOLD-20261119": 3
   },
   "last_run": {
-    "run_time": "2026-11-19T14:35:44.122355+00:00",
+    "run_time": "2026-11-19T14:41:02.831476+00:00",
     "test_mode": false,
-    "stories": 158,
-    "off_topic": 69,
-    "repeats": 88,
-    "new_events": 0,
+    "stories": 155,
+    "off_topic": 65,
+    "repeats": 89,
+    "new_events": 1,
     "joined": 0,
-    "updates_ignored": 1,
+    "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
-          "Alert: Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
           "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
           "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk"
         ]
@@ -29223,7 +29221,8 @@
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
           "Alert: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation",
           "Alert: Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat",
-          "Alert: Gold recoups from 14-month low, tighter Fed outlook caps gains"
+          "Alert: Gold recoups from 14-month low, tighter Fed outlook caps gains",
+          "Being checked: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru (approved social media account: Watcher.Guru (Telegram) (from social media))"
         ]
       }
     }
@@ -29233,7 +29232,6 @@
       "state": "Alert",
       "reasons": [
         "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
-        "Alert: Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
         "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
         "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk"
       ]
@@ -29251,7 +29249,8 @@
         "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
         "Alert: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation",
         "Alert: Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat",
-        "Alert: Gold recoups from 14-month low, tighter Fed outlook caps gains"
+        "Alert: Gold recoups from 14-month low, tighter Fed outlook caps gains",
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru"
       ]
     }
   },
@@ -29477,6 +29476,12 @@
       "title": "Gold struggles near one-year lows, silver rebounds as stocks slide, Fed hike bets persist - Kitco PM Report",
       "removed_at": "2026-11-18T21:10:58.686934+00:00",
       "reason": "the same story as GOLD-20261117-07 (same factor, same day and shared key words)"
+    },
+    {
+      "id": "BTC-20261118-05",
+      "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
+      "removed_at": "2026-11-19T14:41:02.831476+00:00",
+      "reason": "the same story as BTC-20261118-04 (same organisation, same factor and same day)"
     }
   ]
 }
