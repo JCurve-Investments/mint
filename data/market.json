@@ -3358,14 +3358,18 @@
     "s": 37.402
    },
    "1795078800": {
-    "b": 30.3263,
-    "s": 32.5314
+    "b": 33.8493,
+    "s": 33.6677
+   },
+   "1795082400": {
+    "b": 2.6289,
+    "s": 0.3663
    }
   },
-  "trades_cursor": "1795082155288676074",
+  "trades_cursor": "1795082506428957764",
   "flow_source": "Kraken",
-  "book_bid_share": 0.519,
-  "book_time": "2026-11-19T09:55:44.571875+00:00"
+  "book_bid_share": 0.501,
+  "book_time": "2026-11-19T10:01:33.446224+00:00"
  },
  "Gold": {
   "bars": [
@@ -6574,39 +6578,39 @@
   ],
   "cot_time": "2026-11-18T23:55:41.224776+00:00"
  },
- "time": "2026-11-19T09:55:44.571875+00:00",
+ "time": "2026-11-19T10:01:33.446224+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": -1,
-    "ratio": 1.4,
-    "change_24h": -1.38,
-    "text": "busy: 1.4x a normal day, price -1.4% - real selling",
+    "ratio": 1.43,
+    "change_24h": -0.96,
+    "text": "busy: 1.4x a normal day, price -1.0% - real selling",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.423,
-    "book_bid_share": 0.519,
-    "up_volume_share": 0.291,
-    "text": "buyers started 42% of trades (24 h); 52% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.42,
+    "book_bid_share": 0.501,
+    "up_volume_share": 0.297,
+    "text": "buyers started 42% of trades (24 h); 50% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 1.1,
-    "change_24h": -1.27,
-    "text": "normal: 1.1x a normal day, price -1.3%",
+    "ratio": 1.11,
+    "change_24h": -1.12,
+    "text": "normal: 1.1x a normal day, price -1.1%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.368,
+    "up_volume_share": 0.382,
     "cot_vote": 1,
-    "text": "37% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
+    "text": "38% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
     "ok": true
    }
   }
