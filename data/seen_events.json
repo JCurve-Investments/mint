@@ -26434,8 +26434,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 1,
+          "done": 4,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -26483,7 +26483,14 @@
           "move": -0.27,
           "time": "2026-11-19T05:05:01+00:00",
           "verdict": "flat"
-        }
+        },
+        "d1": {
+          "price": 3664.7,
+          "move": -1.85,
+          "time": "2026-11-19T19:05:01+00:00",
+          "verdict": "right"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "down",
@@ -28090,8 +28097,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 2,
-          "right": 0,
+          "done": 3,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -28133,6 +28140,12 @@
           "move": 0.41,
           "time": "2026-11-19T14:03:01+00:00",
           "verdict": "flat"
+        },
+        "h10": {
+          "price": 62709.94,
+          "move": -1.43,
+          "time": "2026-11-19T19:03:01+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -29340,8 +29353,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 1,
-          "right": 0,
+          "done": 2,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -29376,6 +29389,12 @@
           "move": -0.09,
           "time": "2026-11-19T15:04:03+00:00",
           "verdict": "flat"
+        },
+        "h5": {
+          "price": 3664.7,
+          "move": -1.12,
+          "time": "2026-11-19T19:04:03+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -30422,6 +30441,237 @@
         "first_sent_at": "2026-11-19T18:16:28.184894+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261119-07",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-19T19:15:55.980524+00:00",
+      "earliest_report": "2026-11-19T18:45:27+00:00",
+      "last_updated": "2026-11-19T19:15:55.980524+00:00",
+      "words": [
+        "another",
+        "could",
+        "fall",
+        "fears",
+        "fed",
+        "gold",
+        "grow",
+        "pric",
+        "razaqzada",
+        "tighten"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPb21Fc1g4Vm1ScFJ0ZFRiU0N2Mnktb2tyVWFZMFZPVlFyNm9UanhzR09CXzdteUxJdFdDemgwbXJBSjktUzBObDEzZHJTT1lhTF9PT2Z6U0lnNkhhTUNnT1ozaWt4WmdIWENSXzhYdTVRVXBGc2dwMU1LR0duVy00czM0dHlmQkxfNVplZWo3ZmFoanAyVXktTFZPVGRuOGc4R0d1S1hjNk5wTDlHZzQycVlDUHRhNktLMGxJ?oc=5",
+          "published": "2026-11-19T18:45:27+00:00",
+          "found_at": "2026-11-19T19:15:55.980524+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T19:15:55.980524+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-19T19:15:55.980524+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-19T19:15:55.980524+00:00",
+          "note": "confirmed -> alerted: New Fed\u2011related news that could significantly lower gold price, so an alert is needed."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-19",
+        "date_evidence": "published 2026-11-19",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Fed tightening typically pushes gold lower",
+        "alert_title": "Fed tightening fears may hit gold",
+        "alert_message": "Kitco reports fears of Fed tightening could push gold down 5% to $3,500, raising risk of price drop.",
+        "why_it_matters": [
+          "Fed policy influences gold",
+          "Potential 5% price fall"
+        ],
+        "reason": "New Fed\u2011related news that could significantly lower gold price, so an alert is needed.",
+        "time": "2026-11-19T19:15:55.980524+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed tightening fears may hit gold\n\nKitco reports fears of Fed tightening could push gold down 5% to $3,500, raising risk of price drop.\n\nMINT's prediction: Gold DOWN - In similar recent stories, gold fell the next day by 0.3%\u20112.6% (only one case rose 0.8%).\n\nGold had already moved +0.0% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 19 Nov 19:15 UTC",
+        "telegram_sent_at": "2026-11-19T19:15:55.980524+00:00"
+      },
+      "outcome": {
+        "start_price": 3664.7,
+        "start_time": "2026-11-19T19:09:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.5,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-19T19:09:50+00:00",
+          "hours": 0.4,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 5 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3664.7,
+          "start_time": "2026-11-19T19:15:55.980524+00:00",
+          "threshold": 0.58,
+          "window_hours": 120,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 5 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar recent stories, gold fell the next day by 0.3%\u20112.6% (only one case rose 0.8%).",
+        "similar": [
+          {
+            "id": "GOLD-20261116-06",
+            "date": "2026-11-16",
+            "title": "Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
+            "d1": -0.35,
+            "d7": null,
+            "peak_hours": 76.1,
+            "source": "MINT",
+            "score": 0.78
+          },
+          {
+            "id": "GOLD-20261106-02",
+            "date": "2026-11-06",
+            "title": "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case - Kitco AM Report",
+            "d1": 0.75,
+            "d7": -3.98,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.65
+          },
+          {
+            "id": "GOLD-20261113-04",
+            "date": "2026-11-13",
+            "title": "Gold's $4,000 support breaks as Fed fears grow; analysts eye $3,800",
+            "d1": -0.98,
+            "d7": null,
+            "peak_hours": 142.8,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "GOLD-20261112-01",
+            "date": "2026-11-12",
+            "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+            "d1": -2.61,
+            "d7": -6.06,
+            "peak_hours": 163.2,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "GOLD-20261113-05",
+            "date": "2026-11-13",
+            "title": "Price bounces may be traps as Fed rate hikes could drive gold down to $3,200/oz \u2013 StoneX\u2019s Pavilonis",
+            "d1": -1.36,
+            "d7": null,
+            "peak_hours": 142.4,
+            "source": "MINT",
+            "score": 0.56
+          }
+        ],
+        "votes": {
+          "up": 0.65,
+          "down": 4.05
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T19:16:10.862034+00:00",
+          "low": -0.51,
+          "mid": -1.17,
+          "high": -2.3,
+          "window_hours": 120,
+          "probability": 0.49,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 1.2%)",
+          "window_basis": "similar past moves peaked after about 5.9 days",
+          "sigma": 1.2,
+          "threshold": 0.58,
+          "floor": 0.49,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "normal: 1.0x a normal day, price -1.2%",
+            "buy_sell": "46% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "disagrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.5,
+            "buy_sell": 0.25
+          },
+          "rule_votes": {
+            "up": 0.65,
+            "down": 4.05
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold could slip toward $3,500 as worries grow that the Fed will keep tightening monetary policy.",
+        "what_past_events_show": "In similar recent stories, gold fell the next day by 0.3%\u20112.6% (only one case rose 0.8%).",
+        "direction": "down",
+        "why": [
+          "Most comparable past events saw gold drop the following day",
+          "Higher\u2011rate expectations make gold less attractive versus interest\u2011bearing assets"
+        ],
+        "watch_next": "A surprise Fed rate hike or a change in forward guidance would make the drop bigger; a fully expected decision would keep it smaller.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-19T19:15:55.980524+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-19T19:16:14.607666+00:00"
+      }
     }
   ],
   "counter": {
@@ -30452,26 +30702,26 @@
     "BTC-20261118": 5,
     "GOLD-20261118": 7,
     "BTC-20261119": 6,
-    "GOLD-20261119": 6
+    "GOLD-20261119": 7
   },
   "last_run": {
-    "run_time": "2026-11-19T19:10:58.062646+00:00",
+    "run_time": "2026-11-19T19:15:55.980524+00:00",
     "test_mode": false,
     "stories": 155,
-    "off_topic": 68,
-    "repeats": 87,
-    "new_events": 0,
+    "off_topic": 66,
+    "repeats": 88,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -30498,7 +30748,8 @@
           "Alert: Gold recoups from 14-month low, tighter Fed outlook caps gains",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
           "Alert: Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report",
-          "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low"
+          "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
+          "Being checked: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada (reliable source: Kitco News)"
         ]
       }
     }
@@ -30529,7 +30780,8 @@
         "Alert: Gold recoups from 14-month low, tighter Fed outlook caps gains",
         "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
         "Alert: Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report",
-        "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low"
+        "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
+        "Alert: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada"
       ]
     }
   },
