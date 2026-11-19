@@ -27288,6 +27288,253 @@
         "first_sent_at": "2026-11-19T00:25:59.952890+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261118-05",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Decrypt",
+      "first_seen": "2026-11-19T01:11:30.479776+00:00",
+      "earliest_report": "2026-11-18T22:16:02+00:00",
+      "last_updated": "2026-11-19T01:11:30.479776+00:00",
+      "words": [
+        "asia",
+        "berlin",
+        "beyond",
+        "bitcoin",
+        "confirm",
+        "implant",
+        "ledger",
+        "probe",
+        "spread",
+        "spy",
+        "tamper",
+        "wallet"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSF80X3NSQnpUS3ZFMzRjeXJNNmtlUmUxVjNReUNBWmtXOV9DbUpPajVucV9rMU9xQTN3dHIxbHkxSlVVdnNUZXZCaFNZWXZXNU1rOUJIREFDWVBLR3pCUGNJRllzTGRldzJJZVg4WjFFLVdIcUlORi0wU2NtV21qeFVrdDVRVHotUHRicmdoa1VWek11cEp3OA?oc=5",
+          "published": "2026-11-18T22:16:02+00:00",
+          "found_at": "2026-11-19T01:11:30.479776+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T01:11:30.479776+00:00",
+          "note": "new event, first report by Decrypt"
+        },
+        {
+          "time": "2026-11-19T01:11:30.479776+00:00",
+          "note": "new -> confirmed: reliable source: Decrypt - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-19T01:11:30.479776+00:00",
+          "note": "confirmed -> alerted: New security breach report fits a pattern of negative events that can affect Bitcoin price."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-18",
+        "date_evidence": "Article published 2026-11-18 22:16 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Similar security crackdowns have previously pushed Bitcoin down",
+        "alert_title": "Security breach hits Bitcoin wallets",
+        "alert_message": "Ledger confirmed tampered Bitcoin wallets in Berlin, linked to a spy implant probe spreading beyond Asia. Such security issues can shake user trust and may pressure Bitcoin price.",
+        "why_it_matters": [
+          "Erodes confidence in Bitcoin security",
+          "May trigger regulatory or legal actions"
+        ],
+        "reason": "New security breach report fits a pattern of negative events that can affect Bitcoin price.",
+        "time": "2026-11-19T01:11:30.479776+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nSecurity breach hits Bitcoin wallets\n\nLedger confirmed tampered Bitcoin wallets in Berlin, linked to a spy implant probe spreading beyond Asia. Such security issues can shake user trust and may pressure Bitcoin price.\n\nMINT's prediction: Bitcoin DOWN - Similar negative legal or security shocks (e.g., a big lawsuit on 2026\u201111\u201114 and the Binance guilty plea on 2023\u201111\u201121) pushed Bitcoin down about 3\u20115% after one day.\n\nBitcoin had already moved +1.3% since the first report.\nSources: Decrypt\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 0 at 19 Nov 01:11 UTC",
+        "telegram_sent_at": "2026-11-19T01:11:30.479776+00:00"
+      },
+      "outcome": {
+        "start_price": 62269.91,
+        "start_time": "2026-11-18T22:00:00+00:00",
+        "moved_before_mint": 1.31,
+        "delay_hours": 2.9,
+        "h1": {
+          "price": 62181.04,
+          "move": -0.14,
+          "time": "2026-11-18T23:16:02+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": 1.31,
+          "time": "2026-11-19T00:44:10+00:00",
+          "hours": 2.5,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -0.14,
+          "peak_hours": 0.7,
+          "faded_hours": 1.7,
+          "against": 1.31,
+          "against_hours": 2.5,
+          "until_hours": 2.5,
+          "text": "Small impact: Bitcoin fell up to 0.1% (after 1 h). The effect lasted about 2 h, then faded - later it rose up to 1.3% (after 2 h)."
+        },
+        "result": {
+          "start_price": 63088.1,
+          "start_time": "2026-11-19T01:11:30.479776+00:00",
+          "threshold": 1.69,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar negative legal or security shocks (e.g., a big lawsuit on 2026\u201111\u201114 and the Binance guilty plea on 2023\u201111\u201121) pushed Bitcoin down about 3\u20115% after one day.",
+        "similar": [
+          {
+            "id": "BTC-20261114-02",
+            "date": "2026-11-14",
+            "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
+            "d1": -3.36,
+            "d7": null,
+            "peak_hours": 114.5,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20231121-B",
+            "date": "2023-11-21",
+            "title": "Binance pleads guilty and CZ steps down in $4.3bn settlement",
+            "d1": -4.44,
+            "d7": 0.94,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.9,
+          "down": 3.42
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T01:11:44.000489+00:00",
+          "low": -2.7,
+          "mid": -3.38,
+          "high": -4.5,
+          "window_hours": 54.0,
+          "probability": 0.74,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 4.5%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.25,
+          "threshold": 1.69,
+          "floor": 0.92,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.3x a normal day, price -1.7% - real selling",
+            "buy_sell": "buyers started 40% of trades (24 h); 54% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0.9,
+            "down": 3.42
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Ledger said some Bitcoin hardware wallets in Berlin were tampered with as a spy\u2011implant investigation spreads beyond Asia, raising security concerns.",
+        "what_past_events_show": "Similar negative legal or security shocks (e.g., a big lawsuit on 2026\u201111\u201114 and the Binance guilty plea on 2023\u201111\u201121) pushed Bitcoin down about 3\u20115% after one day.",
+        "direction": "down",
+        "why": [
+          "Security breach scares users and may trigger selling",
+          "Past comparable shocks have caused a short\u2011term price drop"
+        ],
+        "watch_next": "If more wallets are found compromised or regulators step in, the drop could deepen; if the issue is contained to a few devices, the impact may fade quickly.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-19T01:11:30.479776+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-19T01:12:03.127747+00:00"
+      }
     }
   ],
   "counter": {
@@ -27315,33 +27562,34 @@
     "GOLD-20261116": 8,
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
-    "BTC-20261118": 4,
+    "BTC-20261118": 5,
     "GOLD-20261118": 7,
     "BTC-20261119": 1
   },
   "last_run": {
-    "run_time": "2026-11-19T01:05:56.510226+00:00",
+    "run_time": "2026-11-19T01:11:30.479776+00:00",
     "test_mode": false,
-    "stories": 130,
-    "off_topic": 53,
-    "repeats": 77,
-    "new_events": 0,
+    "stories": 142,
+    "off_topic": 61,
+    "repeats": 80,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
-          "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court"
+          "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
+          "Being checked: Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia (reliable source: Decrypt)"
         ]
       },
       "Gold": {
@@ -27366,7 +27614,8 @@
     "Bitcoin": {
       "state": "Alert",
       "reasons": [
-        "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court"
+        "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
+        "Alert: Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia"
       ]
     },
     "Gold": {
