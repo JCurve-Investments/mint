@@ -15718,19 +15718,13 @@
           "time": "2026-11-13T07:42:48+00:00",
           "verdict": "right"
         },
-        "now": {
-          "move": -6.63,
-          "time": "2026-11-19T21:44:40+00:00",
-          "hours": 168.0,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 2,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "no_clear_move",
         "effect_reason": "no clear move either way within 13 hours (biggest +0.1%)",
         "impact": {
@@ -15781,12 +15775,18 @@
           "size": null,
           "opposite": "no_clear_move"
         },
-        "old_effect": "right",
+        "old_effect": "no_clear_move",
         "d5": {
           "price": 3845.6,
           "move": -0.72,
           "time": "2026-11-17T21:42:48+00:00",
           "verdict": "flat"
+        },
+        "d7": {
+          "price": 3616.69,
+          "move": -6.63,
+          "time": "2026-11-19T21:42:48+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -29670,17 +29670,22 @@
       "proof_reason": "official source: US Securities and Exchange Commission",
       "first_seen": "2026-11-19T16:40:58.710895+00:00",
       "earliest_report": "2026-11-19T14:39:02+00:00",
-      "last_updated": "2026-11-19T16:40:58.710895+00:00",
+      "last_updated": "2026-11-19T21:55:56.339150+00:00",
       "words": [
         "asset",
+        "charge",
+        "colorado",
         "crypto",
         "eight",
         "entiti",
         "fake",
+        "firms",
         "hack",
         "investor",
         "million",
+        "over",
         "platform",
+        "scam",
         "sec",
         "trad",
         "u.s",
@@ -29701,6 +29706,17 @@
           "found_at": "2026-11-19T16:40:58.710895+00:00",
           "summary": "The Securities and Exchange Commission today charged eight Colorado-based entities, likely operated by individuals located overseas, for defrauding U.S. investors out of more than $37 million. The defendants allegedly lured investors to believe they were\u2026",
           "factor": "B1"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "SEC Charges Eight Colorado Firms Over $37 Million Fake Crypto Trading Platform Scam",
+          "link": "https://t.me/whale_alert_io/105078",
+          "published": "2026-11-19T21:51:07+00:00",
+          "found_at": "2026-11-19T21:55:56.339150+00:00",
+          "summary": "SEC Charges Eight Colorado Firms Over $37 Million Fake Crypto Trading Platform Scam",
+          "factor": "B1"
         }
       ],
       "history": [
@@ -29715,6 +29731,10 @@
         {
           "time": "2026-11-19T16:40:58.710895+00:00",
           "note": "confirmed -> alerted: The SEC action is a fresh crackdown event that can negatively affect Bitcoin sentiment."
+        },
+        {
+          "time": "2026-11-19T21:55:56.339150+00:00",
+          "note": "another report from Whale Alert (Telegram) - same event, no new alert"
         }
       ],
       "decision": {
@@ -31094,14 +31114,14 @@
     "GOLD-20261119": 8
   },
   "last_run": {
-    "run_time": "2026-11-19T21:50:57.625885+00:00",
+    "run_time": "2026-11-19T21:55:56.339150+00:00",
     "test_mode": false,
-    "stories": 147,
-    "off_topic": 63,
-    "repeats": 84,
+    "stories": 159,
+    "off_topic": 70,
+    "repeats": 88,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
