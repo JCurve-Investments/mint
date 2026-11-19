@@ -28661,7 +28661,7 @@
       "proof_reason": "reliable source: Reuters",
       "first_seen": "2026-11-19T10:10:59.824312+00:00",
       "earliest_report": "2026-11-19T03:28:00+00:00",
-      "last_updated": "2026-11-19T13:21:00.298955+00:00",
+      "last_updated": "2026-11-19T14:21:03.646878+00:00",
       "words": [
         "14-month",
         "caps",
@@ -28697,6 +28697,17 @@
           "found_at": "2026-11-19T13:21:00.298955+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold recoups from 14-month low, tighter Fed outlook caps gains",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbGZnaW9FeERVOVlVOUJYMjJlYUZqOTgxaDgyWHc5eWxrNVR6Z191a2NROGE2X0tGekxIcDdNZTFpc2tVU2RHSWhhVGYwVVRwSXNuRjg5aFF0UHY5cDVWZkJBV1NibGE5REpsZVBSSnpkeVppUENjQ1FtY2EyMFBqSVp6bFBxR3Z1OUl3OUtqcGxvX1ZlOENQenJ1NTZqbkhoaE1XY2VEQ2M5a1E?oc=5",
+          "published": "2026-11-19T14:02:35+00:00",
+          "found_at": "2026-11-19T14:21:03.646878+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -28715,6 +28726,10 @@
         {
           "time": "2026-11-19T13:21:00.298955+00:00",
           "note": "another report from CNBC - same event, no new alert"
+        },
+        {
+          "time": "2026-11-19T14:21:03.646878+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -29147,14 +29162,14 @@
     "GOLD-20261119": 2
   },
   "last_run": {
-    "run_time": "2026-11-19T14:15:56.928204+00:00",
+    "run_time": "2026-11-19T14:21:03.646878+00:00",
     "test_mode": false,
-    "stories": 156,
+    "stories": 152,
     "off_topic": 63,
-    "repeats": 93,
+    "repeats": 88,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
