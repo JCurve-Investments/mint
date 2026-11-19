@@ -27062,6 +27062,214 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-18T21:26:00.653779+00:00"
       }
+    },
+    {
+      "id": "BTC-20261119-01",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "BlackRock\u2019s IBIT Bitcoin ETF Sees $209.5 Million Outflow After Brief One-Day Inflow",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (approved social media account: Whale Alert (Telegram) (from social media))",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-19T00:25:44.176125+00:00",
+      "earliest_report": "2026-11-19T00:25:32+00:00",
+      "last_updated": "2026-11-19T00:25:44.176125+00:00",
+      "words": [
+        "209.5",
+        "bitcoin",
+        "blackrock",
+        "brief",
+        "etf",
+        "ibit",
+        "inflows",
+        "million",
+        "one-day",
+        "outflows",
+        "sees"
+      ],
+      "amounts": [
+        209.5
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "BlackRock\u2019s IBIT Bitcoin ETF Sees $209.5 Million Outflow After Brief One-Day Inflow",
+          "link": "https://t.me/whale_alert_io/105032",
+          "published": "2026-11-19T00:25:32+00:00",
+          "found_at": "2026-11-19T00:25:44.176125+00:00",
+          "summary": "BlackRock\u2019s IBIT Bitcoin ETF Sees $209.5 Million Outflow After Brief One-Day Inflow",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T00:25:44.176125+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-19T00:25:44.176125+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (approved social media account: Whale Alert (Telegram) (from social media))"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 63150.67,
+        "start_time": "2026-11-18T23:54:10+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-18T23:54:10+00:00",
+          "hours": -0.5,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 5 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 63150.67,
+          "start_time": "2026-11-19T00:25:44.176125+00:00",
+          "threshold": 0.92,
+          "window_hours": 120,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 5 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar past outflow events, Bitcoin fell the next day, with drops ranging from about \u20130.5% to \u20135.5%.",
+        "similar": [
+          {
+            "id": "BTC-20261111-04",
+            "date": "2026-11-11",
+            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+            "d1": -3.9,
+            "d7": -16.17,
+            "peak_hours": 167.2,
+            "source": "MINT",
+            "score": 0.77
+          },
+          {
+            "id": "BTC-20261112-04",
+            "date": "2026-11-12",
+            "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+            "d1": -5.49,
+            "d7": null,
+            "peak_hours": 155.5,
+            "source": "MINT",
+            "score": 0.7
+          },
+          {
+            "id": "BTC-20261116-01",
+            "date": "2026-11-16",
+            "title": "Bitcoin drops to a mid-July low as CZ cites ETF outflows, liquidity shifts, security incidents, inflation and regulation worries",
+            "d1": -0.48,
+            "d7": null,
+            "peak_hours": 63.0,
+            "source": "MINT",
+            "score": 0.67
+          },
+          {
+            "id": "BTC-20261111-01",
+            "date": "2026-11-11",
+            "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+            "d1": -1.43,
+            "d7": -13.18,
+            "peak_hours": 85.7,
+            "source": "MINT",
+            "score": 0.63
+          },
+          {
+            "id": "BTC-20261113-01",
+            "date": "2026-11-13",
+            "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
+            "d1": -1.74,
+            "d7": null,
+            "peak_hours": 137.2,
+            "source": "MINT",
+            "score": 0.62
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 5.47
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T00:25:58.170892+00:00",
+          "low": -0.95,
+          "mid": -1.74,
+          "high": -4.52,
+          "window_hours": 120,
+          "probability": 0.79,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 1.7%)",
+          "window_basis": "similar past moves peaked after about 5.7 days",
+          "sigma": 2.26,
+          "threshold": 0.92,
+          "floor": 0.92,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.3x a normal day, price -2.5% - real selling",
+            "buy_sell": "buyers started 40% of trades (24 h); 54% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 5.47
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "BlackRock\u2019s IBIT Bitcoin ETF had a $209.5\u202fmillion outflow after a short inflow, showing investors pulling money out of the fund.",
+        "what_past_events_show": "In similar past outflow events, Bitcoin fell the next day, with drops ranging from about \u20130.5% to \u20135.5%.",
+        "direction": "down",
+        "why": [
+          "Outflows signal selling pressure from big investors",
+          "Past outflows have consistently been followed by price declines"
+        ],
+        "watch_next": "If the outflow continues for several days or is quickly reversed by new inflows, the impact on price could change.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-19T00:25:44.176125+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-19T00:25:59.952890+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -27090,20 +27298,21 @@
     "BTC-20261117": 2,
     "GOLD-20261117": 10,
     "BTC-20261118": 4,
-    "GOLD-20261118": 7
+    "GOLD-20261118": 7,
+    "BTC-20261119": 1
   },
   "last_run": {
-    "run_time": "2026-11-19T00:21:00.125047+00:00",
+    "run_time": "2026-11-19T00:25:44.176125+00:00",
     "test_mode": false,
-    "stories": 133,
-    "off_topic": 62,
-    "repeats": 71,
-    "new_events": 0,
+    "stories": 135,
+    "off_topic": 60,
+    "repeats": 74,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
