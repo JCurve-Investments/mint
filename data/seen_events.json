@@ -27299,22 +27299,28 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-19T00:25:44.176125+00:00",
       "earliest_report": "2026-11-19T00:25:32+00:00",
-      "last_updated": "2026-11-19T00:25:44.176125+00:00",
+      "last_updated": "2026-11-19T10:35:46.600957+00:00",
       "words": [
+        "2.9b",
         "209.5",
         "bitcoin",
         "blackrock",
         "brief",
         "etf",
+        "hit",
+        "hold",
         "ibit",
         "inflows",
         "million",
+        "november",
         "one-day",
         "outflows",
-        "sees"
+        "sees",
+        "struggl"
       ],
       "amounts": [
-        209.5
+        209.5,
+        2900.0
       ],
       "old_clues": [],
       "sources": [
@@ -27328,6 +27334,17 @@
           "found_at": "2026-11-19T00:25:44.176125+00:00",
           "summary": "BlackRock\u2019s IBIT Bitcoin ETF Sees $209.5 Million Outflow After Brief One-Day Inflow",
           "factor": "B4"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Bitcoin Struggles to Hold $64,000 as ETF Outflows Hit $2.9B in November",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdjZLQWxwMjIzdHZ2Rnp6V24wdnhITmxNVVFnQUktd18tVEpiQmZUQmM2R3ZiNnZSVVotZmRpdkxNMHdNbTlYR1NZbHJqalRwT21XaGVOOEV5ek1GNnNzR0RhVk5rOF9VS015VmVmNmxaTlpLc0pLdHJnc2RJWkRXSjdoM0FIcXRZOUw1eUpQREhpazExYThodzhvaw?oc=5",
+          "published": "2026-11-19T10:25:05+00:00",
+          "found_at": "2026-11-19T10:35:46.600957+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -27338,6 +27355,10 @@
         {
           "time": "2026-11-19T00:25:44.176125+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (approved social media account: Whale Alert (Telegram) (from social media))"
+        },
+        {
+          "time": "2026-11-19T10:35:46.600957+00:00",
+          "note": "another report from Decrypt - same event, no new alert"
         }
       ],
       "decision": null,
@@ -27353,9 +27374,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 1,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -27396,6 +27417,12 @@
           "move": 0.6,
           "time": "2026-11-19T05:25:32+00:00",
           "verdict": "flat"
+        },
+        "h10": {
+          "price": 63806.2,
+          "move": 1.04,
+          "time": "2026-11-19T10:25:32+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -28778,14 +28805,14 @@
     "GOLD-20261119": 2
   },
   "last_run": {
-    "run_time": "2026-11-19T10:31:20.700148+00:00",
+    "run_time": "2026-11-19T10:35:46.600957+00:00",
     "test_mode": false,
-    "stories": 159,
+    "stories": 160,
     "off_topic": 68,
     "repeats": 91,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
