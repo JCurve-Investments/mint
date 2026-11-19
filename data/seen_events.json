@@ -27953,7 +27953,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -27988,6 +27988,12 @@
           "price": 63552.86,
           "move": -0.01,
           "time": "2026-11-19T07:51:19+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 63698.52,
+          "move": 0.22,
+          "time": "2026-11-19T11:51:19+00:00",
           "verdict": "flat"
         }
       },
@@ -28782,6 +28788,238 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-19T10:11:16.727938+00:00"
       }
+    },
+    {
+      "id": "BTC-20261119-04",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-19T12:01:33.623180+00:00",
+      "earliest_report": "2026-11-19T11:30:00+00:00",
+      "last_updated": "2026-11-19T12:01:33.623180+00:00",
+      "words": [
+        "billion",
+        "freeze",
+        "hack",
+        "korean",
+        "north",
+        "putt",
+        "risk",
+        "sky",
+        "stablecoin",
+        "system",
+        "used"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMERzczhFZ1V2ZXgwRWptQWVNV0xPWjdydl9EWGxJbUV2bTJGWXV6M24tcjdETnRSRk91ajBXRDZtSXhmX3hBbi1wSmRwV3Bhc21FZGctVkgwaWZRUE1Pa0pBNjkzMXNKMVQ3LXExVG5icTZlZ3pDcGtjZHFvMUZyVlRueUdLQlcyYTlucElwanF0RXd1bnYtZExaVU1LRE1GNk9BTk45c2J0OXNsUzhQaW1Qbi1JX0FYYnM5ZWQ3NmMxNVoy?oc=5",
+          "published": "2026-11-19T11:30:00+00:00",
+          "found_at": "2026-11-19T12:01:33.623180+00:00",
+          "summary": "",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T12:01:33.623180+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-19T12:01:33.623180+00:00",
+          "note": "new -> confirmed: reliable source: CoinDesk - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-19T12:01:33.623180+00:00",
+          "note": "confirmed -> alerted: New hack event poses a risk to Bitcoin, so we alert."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-19",
+        "date_evidence": "published 2026-11-19 11:30 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "similar hacks have previously pushed Bitcoin lower",
+        "alert_title": "North Korean Hack Threatens Crypto System",
+        "alert_message": "North Korean hackers accessed Sky's stablecoin system, freezing billions of dollars. This raises security concerns for the crypto market and could pressure Bitcoin price.",
+        "why_it_matters": [
+          "Security breach could hurt market confidence",
+          "Large frozen funds may affect liquidity"
+        ],
+        "reason": "New hack event poses a risk to Bitcoin, so we alert.",
+        "time": "2026-11-19T12:01:33.623180+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nNorth Korean Hack Threatens Crypto System\n\nNorth Korean hackers accessed Sky's stablecoin system, freezing billions of dollars. This raises security concerns for the crypto market and could pressure Bitcoin price.\n\nMINT's prediction: Bitcoin DOWN - Similar hacks usually caused price drops of around -1% to -2% the next day, and a massive stablecoin collapse caused an -11% fall; only one hack (Binance 2019) saw a small rise.\n\nBitcoin had already moved +0.0% since the first report.\nSources: CoinDesk\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 19 Nov 12:01 UTC",
+        "telegram_sent_at": "2026-11-19T12:01:33.623180+00:00"
+      },
+      "outcome": {
+        "start_price": 63698.52,
+        "start_time": "2026-11-19T11:14:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.5,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-19T11:14:50+00:00",
+          "hours": -0.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 20 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 63698.52,
+          "start_time": "2026-11-19T12:01:33.623180+00:00",
+          "threshold": 1.02,
+          "window_hours": 19.5,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 20 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar hacks usually caused price drops of around -1% to -2% the next day, and a massive stablecoin collapse caused an -11% fall; only one hack (Binance 2019) saw a small rise.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.88
+          },
+          {
+            "id": "BTC-20261118-03",
+            "date": "2026-11-18",
+            "title": "After $6.3 billion crypto heist, Binance plans foray into 5 Asian markets",
+            "d1": -1.82,
+            "d7": null,
+            "peak_hours": 15.3,
+            "source": "MINT",
+            "score": 0.71
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.68
+          },
+          {
+            "id": "BTC-20261111-02",
+            "date": "2026-11-11",
+            "title": "Binance hack reveals crypto's uphill battle against hackers",
+            "d1": -0.76,
+            "d7": -13.12,
+            "peak_hours": 86.6,
+            "source": "MINT",
+            "score": 0.61
+          },
+          {
+            "id": "START-20220509-B",
+            "date": "2022-05-09",
+            "title": "TerraUSD stablecoin loses its dollar peg as Terra collapses",
+            "d1": -11.05,
+            "d7": -12.32,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.59
+          }
+        ],
+        "votes": {
+          "up": 1.47,
+          "down": 4.09
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T12:01:48.219795+00:00",
+          "low": -1.03,
+          "mid": -2.04,
+          "high": -4.52,
+          "window_hours": 19.5,
+          "probability": 0.74,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 2.0%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.26,
+          "threshold": 1.02,
+          "floor": 0.92,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.4x a normal day, price -0.5% - real selling",
+            "buy_sell": "buyers started 43% of trades (24 h); 50% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.47,
+            "down": 4.09
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "North Korean hackers broke into Sky's stablecoin system, putting billions of dollars at risk of being frozen, which could shake confidence in crypto.",
+        "what_past_events_show": "Similar hacks usually caused price drops of around -1% to -2% the next day, and a massive stablecoin collapse caused an -11% fall; only one hack (Binance 2019) saw a small rise.",
+        "direction": "down",
+        "why": [
+          "Possible loss of funds and trust can trigger selling",
+          "Risk of contagion to other platforms if the freeze spreads"
+        ],
+        "watch_next": "If Sky quickly proves users' funds are safe, the impact may be smaller; further legal actions or larger freezes would make it bigger.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-19T12:01:33.623180+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-19T12:01:53.106520+00:00"
+      }
     }
   ],
   "counter": {
@@ -28811,34 +29049,35 @@
     "GOLD-20261117": 10,
     "BTC-20261118": 5,
     "GOLD-20261118": 7,
-    "BTC-20261119": 3,
+    "BTC-20261119": 4,
     "GOLD-20261119": 2
   },
   "last_run": {
-    "run_time": "2026-11-19T11:55:42.515522+00:00",
+    "run_time": "2026-11-19T12:01:33.623180+00:00",
     "test_mode": false,
-    "stories": 158,
-    "off_topic": 67,
-    "repeats": 91,
-    "new_events": 0,
+    "stories": 150,
+    "off_topic": 60,
+    "repeats": 89,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
           "Alert: Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
-          "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details"
+          "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "Being checked: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk (reliable source: CoinDesk)"
         ]
       },
       "Gold": {
@@ -28865,7 +29104,8 @@
       "reasons": [
         "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
         "Alert: Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
-        "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details"
+        "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+        "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk"
       ]
     },
     "Gold": {
