@@ -21991,8 +21991,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 3,
+          "done": 6,
+          "right": 4,
           "wrong": 0,
           "total": 9
         },
@@ -22052,6 +22052,12 @@
           "price": 63160.66,
           "move": -2.8,
           "time": "2026-11-18T17:37:23+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 63529.42,
+          "move": -2.24,
+          "time": "2026-11-19T05:37:23+00:00",
           "verdict": "right"
         }
       },
@@ -26082,8 +26088,8 @@
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "still inside the 10 hours window (biggest move so far -0.7%)",
+        "effect": "partial",
+        "effect_reason": "the right way (up to -0.7%), but it did not stay past -0.5% for 2 hours",
         "impact": {
           "peak": -0.59,
           "peak_hours": 8.8,
@@ -26102,10 +26108,11 @@
           "peak_hours": 8.1,
           "held_hours": 1.0,
           "checked_until": 10.2,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 10 hours window (biggest move so far -0.7%)",
-          "size": null
+          "verdict": "partial",
+          "final": true,
+          "text": "the right way (up to -0.7%), but it did not stay past -0.5% for 2 hours",
+          "size": "inside the predicted range",
+          "opposite": "no_clear_move"
         },
         "h1": {
           "price": 3733.69,
@@ -26211,7 +26218,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-18T18:56:00.561355+00:00"
+        "first_sent_at": "2026-11-18T18:56:00.561355+00:00",
+        "verdict_sent": "2026-11-19T05:51:00.386232+00:00"
       }
     },
     {
@@ -26803,9 +26811,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 0,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
@@ -26844,6 +26852,12 @@
           "price": 63088.1,
           "move": 0.91,
           "time": "2026-11-19T00:40:00+00:00",
+          "verdict": "wrong"
+        },
+        "h10": {
+          "price": 63529.42,
+          "move": 1.61,
+          "time": "2026-11-19T05:40:00+00:00",
           "verdict": "wrong"
         }
       },
@@ -27701,11 +27715,11 @@
     "BTC-20261119": 1
   },
   "last_run": {
-    "run_time": "2026-11-19T05:45:56.602795+00:00",
+    "run_time": "2026-11-19T05:51:00.386232+00:00",
     "test_mode": false,
-    "stories": 147,
+    "stories": 148,
     "off_topic": 64,
-    "repeats": 83,
+    "repeats": 84,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
