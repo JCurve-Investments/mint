@@ -68,8 +68,8 @@
           "time": "2026-11-04T06:06:00+00:00",
           "verdict": "wrong"
         },
-        "effect": "wrong",
-        "effect_reason": "moved +0.8% or more the OTHER way for 2+ hours, after 10 hours",
+        "effect": "right",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 26 hours (biggest move -2.7%)",
         "h5": {
           "price": 3909.68,
           "move": -0.24,
@@ -114,13 +114,13 @@
         },
         "final": true,
         "impact": {
-          "peak": -0.46,
-          "peak_hours": 2.9,
-          "faded_hours": 6.9,
-          "against": 5.37,
-          "against_hours": 46.9,
+          "peak": -0.34,
+          "peak_hours": 1.9,
+          "faded_hours": 5.9,
+          "against": 5.91,
+          "against_hours": 157.9,
           "until_hours": 167.9,
-          "text": "Clear impact: Gold fell up to 0.5% (after 3 h). The effect lasted about 7 h, then faded - later it rose up to 5.4% (after 47 h)."
+          "text": "Clear impact: Gold fell up to 0.3% (after 2 h). The effect lasted about 6 h, then faded - later it rose up to 5.9% (after 6.6 days)."
         },
         "d7": {
           "price": 4106.78,
@@ -129,19 +129,19 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4084.49,
+          "start_price": 4117.7,
           "start_time": "2026-11-09T10:36:10.420140+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -2.14,
+          "peak": -2.66,
           "peak_hours": 53.4,
-          "held_hours": 26.0,
+          "held_hours": 27.0,
           "checked_until": 53.4,
-          "verdict": "miss",
+          "verdict": "hit",
           "final": true,
-          "text": "moved +0.8% or more the OTHER way for 2+ hours, after 10 hours",
-          "size": null,
-          "opposite": "hit"
+          "text": "moved -0.8% or more and held it for 2+ hours, after 26 hours (biggest move -2.7%)",
+          "size": "bigger than predicted",
+          "opposite": "miss"
         },
         "old_effect": "wrong"
       },
@@ -340,7 +340,7 @@
           "verdict": "right"
         },
         "effect": "right",
-        "effect_reason": "moved +0.5% or more and held it for 2+ hours, after 2 hours (biggest move +1.0%)",
+        "effect_reason": "moved +0.5% or more and held it for 2+ hours, after 8 hours (biggest move +0.8%)",
         "h5": {
           "price": 3931.36,
           "move": 0.54,
@@ -385,13 +385,13 @@
         },
         "final": true,
         "impact": {
-          "peak": 5.61,
-          "peak_hours": 41.0,
+          "peak": 6.16,
+          "peak_hours": 152.1,
           "faded_hours": null,
-          "against": 0.0,
-          "against_hours": 0.1,
+          "against": 0.53,
+          "against_hours": 7.0,
           "until_hours": 167.1,
-          "text": "Clear impact: Gold rose up to 5.6% (after 41 h). Still in the predicted direction after 7.0 days (+3.9%)."
+          "text": "Clear impact: Gold rose up to 6.2% (after 6.3 days). Still in the predicted direction after 7.0 days (+4.4%)."
         },
         "d7": {
           "price": 4060.96,
@@ -400,17 +400,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4084.49,
+          "start_price": 4117.7,
           "start_time": "2026-11-09T10:36:10.420140+00:00",
           "threshold": 0.46,
           "window_hours": 12.9,
-          "peak": 0.96,
-          "peak_hours": 10.4,
-          "held_hours": 3.0,
+          "peak": 0.81,
+          "peak_hours": 9.4,
+          "held_hours": 4.0,
           "checked_until": 12.4,
           "verdict": "hit",
           "final": true,
-          "text": "moved +0.5% or more and held it for 2+ hours, after 2 hours (biggest move +1.0%)",
+          "text": "moved +0.5% or more and held it for 2+ hours, after 8 hours (biggest move +0.8%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -742,13 +742,13 @@
         },
         "final": true,
         "impact": {
-          "peak": -6.63,
-          "peak_hours": 152.2,
+          "peak": -4.41,
+          "peak_hours": 96.2,
           "faded_hours": null,
-          "against": 1.75,
-          "against_hours": 31.2,
-          "until_hours": 167.2,
-          "text": "Clear impact: Gold fell up to 6.6% (after 6.3 days). Still in the predicted direction after 7.0 days (-5.6%)."
+          "against": 2.42,
+          "against_hours": 30.2,
+          "until_hours": 127.2,
+          "text": "Clear impact: Gold fell up to 4.4% (after 4.0 days). Still in the predicted direction after 5.3 days (-4.1%)."
         },
         "h36": {
           "price": 4109.52,
@@ -781,13 +781,13 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4084.49,
+          "start_price": 4117.7,
           "start_time": "2026-11-09T10:42:59.469113+00:00",
           "threshold": 0.71,
           "window_hours": 37.9,
-          "peak": -1.81,
-          "peak_hours": 31.3,
-          "held_hours": 10.0,
+          "peak": -2.22,
+          "peak_hours": 30.3,
+          "held_hours": 14.0,
           "checked_until": 37.3,
           "verdict": "miss",
           "final": true,
@@ -947,8 +947,8 @@
           "time": "2026-11-09T11:00:00+00:00",
           "verdict": "flat"
         },
-        "effect": "partial",
-        "effect_reason": "the right way (up to +1.9%), but it did not stay past +1.6% for 2 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 2.2 days (biggest +1.6%)",
         "checks": {
           "done": 9,
           "right": 1,
@@ -957,13 +957,13 @@
         },
         "final": true,
         "impact": {
-          "peak": 1.68,
-          "peak_hours": 6.0,
-          "faded_hours": 25.0,
-          "against": -15.64,
-          "against_hours": 136.0,
+          "peak": 1.64,
+          "peak_hours": 5.0,
+          "faded_hours": 24.0,
+          "against": -15.69,
+          "against_hours": 135.0,
           "until_hours": 168.0,
-          "text": "Clear impact: Bitcoin rose up to 1.7% (after 6 h). The effect lasted about 25 h, then faded - later it fell up to 15.6% (after 5.7 days)."
+          "text": "Clear impact: Bitcoin rose up to 1.6% (after 5 h). The effect lasted about 24 h, then faded - later it fell up to 15.7% (after 5.6 days)."
         },
         "h5": {
           "price": 74500.87,
@@ -1014,18 +1014,18 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 74093.56,
+          "start_price": 74267.77,
           "start_time": "2026-11-09T11:27:28.307598+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": 1.85,
-          "peak_hours": 4.5,
+          "peak": 1.57,
+          "peak_hours": 3.5,
           "held_hours": 0.0,
           "checked_until": 53.5,
-          "verdict": "partial",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "the right way (up to +1.9%), but it did not stay past +1.6% for 2 hours",
-          "size": "smaller than predicted",
+          "text": "no clear move either way within 2.2 days (biggest +1.6%)",
+          "size": null,
           "opposite": "partial"
         },
         "old_effect": "wrong"
@@ -1421,7 +1421,7 @@
           "verdict": "flat"
         },
         "effect": "partial",
-        "effect_reason": "the right way (up to -1.7%), but it did not stay past -1.6% for 2 hours",
+        "effect_reason": "the right way (up to -2.0%), but it did not stay past -1.6% for 2 hours",
         "checks": {
           "done": 9,
           "right": 3,
@@ -1430,13 +1430,13 @@
         },
         "final": true,
         "impact": {
-          "peak": -15.64,
-          "peak_hours": 135.9,
+          "peak": -15.69,
+          "peak_hours": 134.9,
           "faded_hours": null,
-          "against": 1.68,
-          "against_hours": 5.9,
+          "against": 1.64,
+          "against_hours": 4.9,
           "until_hours": 167.9,
-          "text": "Clear impact: Bitcoin fell up to 15.6% (after 5.7 days). Still in the predicted direction after 7.0 days (-13.4%)."
+          "text": "Clear impact: Bitcoin fell up to 15.7% (after 5.6 days). Still in the predicted direction after 7.0 days (-13.1%)."
         },
         "h5": {
           "price": 74500.87,
@@ -1487,19 +1487,19 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 74093.56,
+          "start_price": 74267.77,
           "start_time": "2026-11-09T11:27:28.307598+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -1.69,
-          "peak_hours": 29.5,
+          "peak": -1.96,
+          "peak_hours": 28.5,
           "held_hours": 0.0,
           "checked_until": 53.5,
           "verdict": "partial",
           "final": true,
-          "text": "the right way (up to -1.7%), but it did not stay past -1.6% for 2 hours",
+          "text": "the right way (up to -2.0%), but it did not stay past -1.6% for 2 hours",
           "size": "smaller than predicted",
-          "opposite": "partial"
+          "opposite": "no_clear_move"
         },
         "old_effect": "right"
       },
@@ -1812,7 +1812,7 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.3,
         "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 13 hours (biggest -0.3%)",
+        "effect_reason": "no clear move either way within 13 hours (biggest -0.0%)",
         "h1": {
           "price": 74846.7,
           "move": 0.14,
@@ -1827,13 +1827,13 @@
         },
         "final": true,
         "impact": {
-          "peak": -16.23,
-          "peak_hours": 133.5,
+          "peak": -16.28,
+          "peak_hours": 132.5,
           "faded_hours": null,
-          "against": 0.97,
-          "against_hours": 3.5,
+          "against": 0.92,
+          "against_hours": 2.5,
           "until_hours": 167.5,
-          "text": "Clear impact: Bitcoin fell up to 16.2% (after 5.6 days). Still in the predicted direction after 7.0 days (-13.8%)."
+          "text": "Clear impact: Bitcoin fell up to 16.3% (after 5.5 days). Still in the predicted direction after 7.0 days (-14.2%)."
         },
         "h5": {
           "price": 74821.01,
@@ -1884,19 +1884,19 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 74846.7,
+          "start_price": 74615.47,
           "start_time": "2026-11-09T12:45:12.168724+00:00",
           "threshold": 0.89,
           "window_hours": 12.6,
-          "peak": -0.32,
-          "peak_hours": 6.2,
+          "peak": -0.03,
+          "peak_hours": 5.2,
           "held_hours": 0.0,
           "checked_until": 12.2,
           "verdict": "no_clear_move",
           "final": true,
-          "text": "no clear move either way within 13 hours (biggest -0.3%)",
+          "text": "no clear move either way within 13 hours (biggest -0.0%)",
           "size": null,
-          "opposite": "no_clear_move"
+          "opposite": "partial"
         },
         "old_effect": "right"
       },
@@ -2018,8 +2018,8 @@
         "start_time": "2026-11-09T14:00:00+00:00",
         "moved_before_mint": -0.21,
         "delay_hours": 0.6,
-        "effect": "partial",
-        "effect_reason": "the right way (up to +0.9%), but it did not stay past +0.9% for 2 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 13 hours (biggest +0.0%)",
         "checks": {
           "done": 9,
           "right": 0,
@@ -2028,13 +2028,13 @@
         },
         "final": true,
         "impact": {
-          "peak": 1.08,
-          "peak_hours": 2.0,
-          "faded_hours": 5.0,
-          "against": -16.14,
-          "against_hours": 132.0,
+          "peak": 1.03,
+          "peak_hours": 1.0,
+          "faded_hours": 4.0,
+          "against": -16.19,
+          "against_hours": 131.0,
           "until_hours": 167.0,
-          "text": "Clear impact: Bitcoin rose up to 1.1% (after 2 h). The effect lasted about 5 h, then faded - later it fell up to 16.1% (after 5.5 days)."
+          "text": "Clear impact: Bitcoin rose up to 1.0% (after 1 h). The effect lasted about 4 h, then faded - later it fell up to 16.2% (after 5.5 days)."
         },
         "h1": {
           "price": 74500.87,
@@ -2091,19 +2091,19 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 74798.14,
+          "start_price": 75431.23,
           "start_time": "2026-11-09T14:33:24.177676+00:00",
           "threshold": 0.89,
           "window_hours": 12.6,
-          "peak": 0.89,
-          "peak_hours": 1.4,
+          "peak": 0.0,
+          "peak_hours": 0.4,
           "held_hours": 0.0,
           "checked_until": 12.4,
-          "verdict": "partial",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "the right way (up to +0.9%), but it did not stay past +0.9% for 2 hours",
-          "size": "inside the predicted range",
-          "opposite": "no_clear_move"
+          "text": "no clear move either way within 13 hours (biggest +0.0%)",
+          "size": null,
+          "opposite": "partial"
         },
         "old_effect": "wrong"
       },
@@ -2258,15 +2258,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 10 hours (biggest move -2.5%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 9 hours (biggest move -2.3%)",
         "impact": {
-          "peak": -16.24,
-          "peak_hours": 116.4,
+          "peak": -16.29,
+          "peak_hours": 115.4,
           "faded_hours": null,
-          "against": 0.03,
-          "against_hours": 2.4,
+          "against": -0.01,
+          "against_hours": 1.4,
           "until_hours": 167.4,
-          "text": "Clear impact: Bitcoin fell up to 16.2% (after 4.9 days). Still in the predicted direction after 7.0 days (-13.0%)."
+          "text": "Clear impact: Bitcoin fell up to 16.3% (after 4.8 days). Still in the predicted direction after 7.0 days (-13.4%)."
         },
         "h1": {
           "price": 74580.36,
@@ -2323,17 +2323,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 74740.47,
+          "start_price": 74558.58,
           "start_time": "2026-11-10T05:40:55.344594+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -2.54,
-          "peak_hours": 11.3,
-          "held_hours": 4.0,
+          "peak": -2.34,
+          "peak_hours": 10.3,
+          "held_hours": 2.0,
           "checked_until": 53.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 10 hours (biggest move -2.5%)",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 9 hours (biggest move -2.3%)",
           "size": "smaller than predicted",
           "opposite": "miss"
         },
@@ -2690,15 +2690,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
         "impact": {
-          "peak": 5.61,
-          "peak_hours": 40.9,
+          "peak": 6.16,
+          "peak_hours": 151.9,
           "faded_hours": null,
-          "against": 0.38,
-          "against_hours": 8.9,
+          "against": 0.53,
+          "against_hours": 6.9,
           "until_hours": 167.9,
-          "text": "Clear impact: Gold rose up to 5.6% (after 41 h). Still in the predicted direction after 7.0 days (+3.8%)."
+          "text": "Clear impact: Gold rose up to 6.2% (after 6.3 days). Still in the predicted direction after 7.0 days (+4.5%)."
         },
         "d7": {
           "price": 4060.96,
@@ -2707,17 +2707,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 53.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -3076,15 +3076,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
         "impact": {
-          "peak": 4.88,
-          "peak_hours": 25.4,
+          "peak": 5.42,
+          "peak_hours": 136.4,
           "faded_hours": null,
-          "against": 0.0,
+          "against": 0.74,
           "against_hours": 0.4,
           "until_hours": 167.4,
-          "text": "Clear impact: Gold rose up to 4.9% (after 25 h). Still in the predicted direction after 7.0 days (+2.5%)."
+          "text": "Clear impact: Gold rose up to 5.4% (after 5.7 days). Still in the predicted direction after 7.0 days (+2.9%)."
         },
         "d7": {
           "price": 4039.59,
@@ -3093,17 +3093,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 12.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 12.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -3400,15 +3400,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.7% or more the OTHER way for 2+ hours, after 4 hours",
+        "effect_reason": "moved -0.7% or more the OTHER way for 2+ hours, after 3 hours",
         "impact": {
-          "peak": 4.39,
-          "peak_hours": 23.9,
+          "peak": 4.93,
+          "peak_hours": 134.9,
           "faded_hours": null,
-          "against": 1.05,
-          "against_hours": 0.9,
+          "against": 1.77,
+          "against_hours": 155.9,
           "until_hours": 167.9,
-          "text": "Clear impact: Gold rose up to 4.4% (after 24 h). Still in the predicted direction after 7.0 days (+2.0%)."
+          "text": "Clear impact: Gold rose up to 4.9% (after 5.6 days). Still in the predicted direction after 7.0 days (+2.8%)."
         },
         "d7": {
           "price": 4037.61,
@@ -3417,17 +3417,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.71,
           "window_hours": 37.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 37.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.7% or more the OTHER way for 2+ hours, after 4 hours",
+          "text": "moved -0.7% or more the OTHER way for 2+ hours, after 3 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -3913,15 +3913,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 6 hours (biggest move -4.8%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -5.1%)",
         "impact": {
-          "peak": -2.01,
-          "peak_hours": 164.1,
+          "peak": -1.87,
+          "peak_hours": 167.1,
           "faded_hours": null,
-          "against": 1.73,
-          "against_hours": 5.1,
+          "against": 2.25,
+          "against_hours": 116.1,
           "until_hours": 167.1,
-          "text": "Clear impact: Gold fell up to 2.0% (after 6.8 days). Still in the predicted direction after 7.0 days (-1.9%)."
+          "text": "Clear impact: Gold fell up to 1.9% (after 7.0 days). Still in the predicted direction after 7.0 days (-1.9%)."
         },
         "d7": {
           "price": 3974.23,
@@ -3930,17 +3930,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -4.82,
-          "peak_hours": 53.3,
-          "held_hours": 26.0,
+          "peak": -5.1,
+          "peak_hours": 51.3,
+          "held_hours": 27.0,
           "checked_until": 53.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 6 hours (biggest move -4.8%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -5.1%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -4173,15 +4173,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.7% or more the OTHER way for 2+ hours, after 4 hours",
+        "effect_reason": "moved -0.7% or more the OTHER way for 2+ hours, after 3 hours",
         "impact": {
-          "peak": -0.14,
-          "peak_hours": 111.9,
-          "faded_hours": 112.9,
-          "against": -3.91,
-          "against_hours": 167.9,
+          "peak": 0.52,
+          "peak_hours": 110.9,
+          "faded_hours": 116.9,
+          "against": -3.61,
+          "against_hours": 166.9,
           "until_hours": 167.9,
-          "text": "Never moved the predicted way. It fell up to 3.9% (after 7.0 days)."
+          "text": "Small impact: Gold rose up to 0.5% (after 4.6 days). The effect lasted about 4.9 days, then faded - later it fell up to 3.6% (after 7.0 days)."
         },
         "d7": {
           "price": 3967.35,
@@ -4190,17 +4190,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.71,
           "window_hours": 37.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 37.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.7% or more the OTHER way for 2+ hours, after 4 hours",
+          "text": "moved -0.7% or more the OTHER way for 2+ hours, after 3 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -4556,13 +4556,13 @@
         "effect": "no_clear_move",
         "effect_reason": "no clear move either way within 4 hours (biggest +0.1%)",
         "impact": {
-          "peak": 0.01,
-          "peak_hours": 104.8,
-          "faded_hours": 105.8,
-          "against": -4.89,
-          "against_hours": 164.8,
+          "peak": 0.67,
+          "peak_hours": 103.8,
+          "faded_hours": 109.8,
+          "against": -4.6,
+          "against_hours": 163.8,
           "until_hours": 167.8,
-          "text": "Small impact: Gold rose up to 0.0% (after 4.4 days). The effect lasted about 4.4 days, then faded - later it fell up to 4.9% (after 6.9 days)."
+          "text": "Small impact: Gold rose up to 0.7% (after 4.3 days). The effect lasted about 4.6 days, then faded - later it fell up to 4.6% (after 6.8 days)."
         },
         "d5": {
           "price": 4066.63,
@@ -4577,12 +4577,12 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 4,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 3.3,
           "verdict": "no_clear_move",
@@ -4799,15 +4799,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
         "impact": {
-          "peak": 1.8,
-          "peak_hours": 80.3,
+          "peak": 2.47,
+          "peak_hours": 79.3,
           "faded_hours": 97.3,
-          "against": -4.56,
-          "against_hours": 147.3,
+          "against": -4.36,
+          "against_hours": 145.3,
           "until_hours": 167.3,
-          "text": "Clear impact: Gold rose up to 1.8% (after 3.3 days). The effect lasted about 4.1 days, then faded - later it fell up to 4.6% (after 6.1 days)."
+          "text": "Clear impact: Gold rose up to 2.5% (after 3.3 days). The effect lasted about 4.1 days, then faded - later it fell up to 4.4% (after 6.1 days)."
         },
         "d5": {
           "price": 4029.79,
@@ -4822,17 +4822,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 12.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 12.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -5033,15 +5033,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.3%)",
+        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 2 hours (biggest move -1.4%)",
         "impact": {
-          "peak": -4.1,
-          "peak_hours": 146.1,
+          "peak": -3.9,
+          "peak_hours": 144.1,
           "faded_hours": null,
-          "against": 2.29,
-          "against_hours": 79.1,
+          "against": 2.96,
+          "against_hours": 78.1,
           "until_hours": 167.1,
-          "text": "Clear impact: Gold fell up to 4.1% (after 6.1 days). Still in the predicted direction after 7.0 days (-3.9%)."
+          "text": "Clear impact: Gold fell up to 3.9% (after 6.0 days). Still in the predicted direction after 7.0 days (-3.6%)."
         },
         "d5": {
           "price": 4022.7,
@@ -5056,17 +5056,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 9.6,
-          "peak": -1.26,
-          "peak_hours": 7.3,
-          "held_hours": 6.0,
+          "peak": -1.38,
+          "peak_hours": 6.3,
+          "held_hours": 7.0,
           "checked_until": 9.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.3%)",
+          "text": "moved -0.5% or more and held it for 2+ hours, after 2 hours (biggest move -1.4%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -5281,15 +5281,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
         "impact": {
-          "peak": 2.21,
-          "peak_hours": 78.4,
-          "faded_hours": 96.4,
-          "against": -4.17,
-          "against_hours": 145.4,
+          "peak": 2.88,
+          "peak_hours": 77.4,
+          "faded_hours": 97.4,
+          "against": -3.97,
+          "against_hours": 143.4,
           "until_hours": 167.4,
-          "text": "Clear impact: Gold rose up to 2.2% (after 3.3 days). The effect lasted about 4.0 days, then faded - later it fell up to 4.2% (after 6.1 days)."
+          "text": "Clear impact: Gold rose up to 2.9% (after 3.2 days). The effect lasted about 4.1 days, then faded - later it fell up to 4.0% (after 6.0 days)."
         },
         "d5": {
           "price": 4006.51,
@@ -5304,17 +5304,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 53.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -5521,15 +5521,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 6 hours (biggest move -4.8%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -5.1%)",
         "impact": {
-          "peak": -4.17,
-          "peak_hours": 145.0,
+          "peak": -3.97,
+          "peak_hours": 143.0,
           "faded_hours": null,
-          "against": 2.21,
-          "against_hours": 78.0,
+          "against": 2.88,
+          "against_hours": 77.0,
           "until_hours": 168.0,
-          "text": "Clear impact: Gold fell up to 4.2% (after 6.0 days). Still in the predicted direction after 7.0 days (-3.8%)."
+          "text": "Clear impact: Gold fell up to 4.0% (after 6.0 days). Still in the predicted direction after 7.0 days (-3.9%)."
         },
         "d5": {
           "price": 4006.51,
@@ -5544,17 +5544,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -4.82,
-          "peak_hours": 53.3,
-          "held_hours": 26.0,
+          "peak": -5.1,
+          "peak_hours": 51.3,
+          "held_hours": 27.0,
           "checked_until": 53.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 6 hours (biggest move -4.8%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -5.1%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -5911,15 +5911,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 6 hours (biggest move -4.8%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -5.1%)",
         "impact": {
-          "peak": -4.67,
-          "peak_hours": 162.8,
+          "peak": -4.39,
+          "peak_hours": 136.8,
           "faded_hours": null,
-          "against": 1.77,
-          "against_hours": 71.8,
+          "against": 2.44,
+          "against_hours": 70.8,
           "until_hours": 167.8,
-          "text": "Clear impact: Gold fell up to 4.7% (after 6.8 days). Still in the predicted direction after 7.0 days (-4.4%)."
+          "text": "Clear impact: Gold fell up to 4.4% (after 5.7 days). Still in the predicted direction after 7.0 days (-4.1%)."
         },
         "d5": {
           "price": 3979.31,
@@ -5934,17 +5934,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -4.82,
-          "peak_hours": 53.3,
-          "held_hours": 26.0,
+          "peak": -5.1,
+          "peak_hours": 51.3,
+          "held_hours": 27.0,
           "checked_until": 53.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 6 hours (biggest move -4.8%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -5.1%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -6273,15 +6273,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
         "impact": {
-          "peak": 1.4,
-          "peak_hours": 65.5,
-          "faded_hours": 79.5,
-          "against": -5.02,
-          "against_hours": 156.5,
-          "until_hours": 167.5,
-          "text": "Clear impact: Gold rose up to 1.4% (after 2.7 days). The effect lasted about 3.3 days, then faded - later it fell up to 5.0% (after 6.5 days)."
+          "peak": 2.07,
+          "peak_hours": 64.5,
+          "faded_hours": 81.5,
+          "against": -4.74,
+          "against_hours": 130.5,
+          "until_hours": 161.5,
+          "text": "Clear impact: Gold rose up to 2.1% (after 2.7 days). The effect lasted about 3.4 days, then faded - later it fell up to 4.7% (after 5.4 days)."
         },
         "h84": {
           "price": 4029.95,
@@ -6302,17 +6302,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 12.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 12.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -6573,15 +6573,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
         "impact": {
-          "peak": 0.41,
-          "peak_hours": 18.0,
-          "faded_hours": 22.0,
-          "against": -7.86,
-          "against_hours": 139.0,
+          "peak": 1.07,
+          "peak_hours": 17.0,
+          "faded_hours": 30.0,
+          "against": -5.72,
+          "against_hours": 166.0,
           "until_hours": 168.0,
-          "text": "Small impact: Gold rose up to 0.4% (after 18 h). The effect lasted about 22 h, then faded - later it fell up to 7.9% (after 5.8 days)."
+          "text": "Clear impact: Gold rose up to 1.1% (after 17 h). The effect lasted about 30 h, then faded - later it fell up to 5.7% (after 6.9 days)."
         },
         "h36": {
           "price": 4029.95,
@@ -6614,17 +6614,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 53.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -7008,15 +7008,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.7% or more the OTHER way for 2+ hours, after 4 hours",
+        "effect_reason": "moved -0.7% or more the OTHER way for 2+ hours, after 3 hours",
         "impact": {
-          "peak": 0.34,
-          "peak_hours": 7.4,
-          "faded_hours": 11.4,
-          "against": -7.92,
-          "against_hours": 128.4,
+          "peak": 1.0,
+          "peak_hours": 6.4,
+          "faded_hours": 19.4,
+          "against": -6.56,
+          "against_hours": 159.4,
           "until_hours": 167.4,
-          "text": "Clear impact: Gold rose up to 0.3% (after 7 h). The effect lasted about 11 h, then faded - later it fell up to 7.9% (after 5.4 days)."
+          "text": "Clear impact: Gold rose up to 1.0% (after 6 h). The effect lasted about 19 h, then faded - later it fell up to 6.6% (after 6.6 days)."
         },
         "d1": {
           "price": 4064.33,
@@ -7055,17 +7055,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.71,
           "window_hours": 37.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 37.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.7% or more the OTHER way for 2+ hours, after 4 hours",
+          "text": "moved -0.7% or more the OTHER way for 2+ hours, after 3 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -7295,15 +7295,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
         "impact": {
-          "peak": 0.34,
-          "peak_hours": 6.8,
-          "faded_hours": 10.8,
-          "against": -7.92,
-          "against_hours": 127.8,
+          "peak": 1.0,
+          "peak_hours": 5.8,
+          "faded_hours": 18.8,
+          "against": -6.56,
+          "against_hours": 158.8,
           "until_hours": 167.8,
-          "text": "Clear impact: Gold rose up to 0.3% (after 7 h). The effect lasted about 11 h, then faded - later it fell up to 7.9% (after 5.3 days)."
+          "text": "Clear impact: Gold rose up to 1.0% (after 6 h). The effect lasted about 19 h, then faded - later it fell up to 6.6% (after 6.6 days)."
         },
         "d1": {
           "price": 4044.71,
@@ -7342,17 +7342,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 12.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 12.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -7550,15 +7550,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.3%)",
+        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 2 hours (biggest move -1.4%)",
         "impact": {
-          "peak": -7.47,
-          "peak_hours": 122.7,
+          "peak": -6.1,
+          "peak_hours": 153.7,
           "faded_hours": null,
-          "against": 0.84,
-          "against_hours": 1.7,
+          "against": 1.5,
+          "against_hours": 0.7,
           "until_hours": 167.7,
-          "text": "Clear impact: Gold fell up to 7.5% (after 5.1 days). Still in the predicted direction after 7.0 days (-6.1%)."
+          "text": "Clear impact: Gold fell up to 6.1% (after 6.4 days). Still in the predicted direction after 7.0 days (-5.4%)."
         },
         "d1": {
           "price": 4022.26,
@@ -7597,17 +7597,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 9.6,
-          "peak": -1.26,
-          "peak_hours": 7.3,
-          "held_hours": 6.0,
+          "peak": -1.38,
+          "peak_hours": 6.3,
+          "held_hours": 7.0,
           "checked_until": 9.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.3%)",
+          "text": "moved -0.5% or more and held it for 2+ hours, after 2 hours (biggest move -1.4%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -7815,15 +7815,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 4 hours (biggest move -2.0%)",
+        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 3 hours (biggest move -2.2%)",
         "impact": {
-          "peak": -7.83,
-          "peak_hours": 117.4,
+          "peak": -6.47,
+          "peak_hours": 148.4,
           "faded_hours": null,
-          "against": 0.15,
-          "against_hours": 1.4,
+          "against": 0.78,
+          "against_hours": 0.4,
           "until_hours": 167.4,
-          "text": "Clear impact: Gold fell up to 7.8% (after 4.9 days). Still in the predicted direction after 7.0 days (-6.3%)."
+          "text": "Clear impact: Gold fell up to 6.5% (after 6.2 days). Still in the predicted direction after 7.0 days (-6.1%)."
         },
         "h10": {
           "price": 4063.08,
@@ -7868,17 +7868,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.67,
           "window_hours": 33.2,
-          "peak": -2.0,
+          "peak": -2.18,
           "peak_hours": 32.3,
-          "held_hours": 10.0,
+          "held_hours": 14.0,
           "checked_until": 32.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.7% or more and held it for 2+ hours, after 4 hours (biggest move -2.0%)",
+          "text": "moved -0.7% or more and held it for 2+ hours, after 3 hours (biggest move -2.2%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -8104,15 +8104,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+        "effect_reason": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
         "impact": {
-          "peak": 0.3,
-          "peak_hours": 1.7,
-          "faded_hours": 5.7,
-          "against": -7.6,
-          "against_hours": 113.7,
+          "peak": 0.89,
+          "peak_hours": 0.7,
+          "faded_hours": 4.7,
+          "against": -6.24,
+          "against_hours": 144.7,
           "until_hours": 167.7,
-          "text": "Clear impact: Gold rose up to 0.3% (after 2 h). The effect lasted about 6 h, then faded - later it fell up to 7.6% (after 4.7 days)."
+          "text": "Clear impact: Gold rose up to 0.9% (after 1 h). The effect lasted about 5 h, then faded - later it fell up to 6.2% (after 6.0 days)."
         },
         "h10": {
           "price": 4044.71,
@@ -8157,17 +8157,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4061.94,
+          "start_price": 4082.5,
           "start_time": "2026-11-10T10:41:00.999961+00:00",
           "threshold": 0.46,
           "window_hours": 12.9,
-          "peak": 0.12,
-          "peak_hours": 2.3,
+          "peak": 0.11,
+          "peak_hours": 1.3,
           "held_hours": 0.0,
           "checked_until": 12.3,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 3 hours",
+          "text": "moved -0.5% or more the OTHER way for 2+ hours, after 2 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -8351,13 +8351,13 @@
         "effect": "right",
         "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 2 days (biggest move -3.7%)",
         "impact": {
-          "peak": -15.67,
-          "peak_hours": 110.4,
+          "peak": -15.72,
+          "peak_hours": 109.4,
           "faded_hours": null,
-          "against": 0.5,
-          "against_hours": 33.4,
+          "against": 0.45,
+          "against_hours": 32.4,
           "until_hours": 167.4,
-          "text": "Clear impact: Bitcoin fell up to 15.7% (after 4.6 days). Still in the predicted direction after 7.0 days (-13.7%)."
+          "text": "Clear impact: Bitcoin fell up to 15.7% (after 4.6 days). Still in the predicted direction after 7.0 days (-12.5%)."
         },
         "h1": {
           "price": 74281.91,
@@ -8414,13 +8414,13 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 74338.05,
+          "start_price": 74305.92,
           "start_time": "2026-11-10T11:40:54.415167+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -3.74,
-          "peak_hours": 51.3,
-          "held_hours": 5.0,
+          "peak": -3.71,
+          "peak_hours": 50.3,
+          "held_hours": 6.0,
           "checked_until": 53.3,
           "verdict": "hit",
           "final": true,
@@ -8637,15 +8637,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -1.5% or more the OTHER way for 2+ hours, after 4 hours",
+        "effect_reason": "moved -1.5% or more the OTHER way for 2+ hours, after 3 hours",
         "impact": {
-          "peak": 0.05,
-          "peak_hours": 1.7,
-          "faded_hours": 2.7,
-          "against": -16.23,
-          "against_hours": 115.7,
+          "peak": 0.01,
+          "peak_hours": 0.7,
+          "faded_hours": 1.7,
+          "against": -16.28,
+          "against_hours": 114.7,
           "until_hours": 167.7,
-          "text": "Small impact: Bitcoin rose up to 0.0% (after 2 h). The effect lasted about 3 h, then faded - later it fell up to 16.2% (after 4.8 days)."
+          "text": "Small impact: Bitcoin rose up to 0.0% (after 1 h). The effect lasted about 2 h, then faded - later it fell up to 16.3% (after 4.8 days)."
         },
         "h10": {
           "price": 73198.32,
@@ -8690,17 +8690,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 74338.05,
+          "start_price": 74305.92,
           "start_time": "2026-11-10T12:01:27.017056+00:00",
           "threshold": 1.47,
           "window_hours": 43.1,
-          "peak": 0.37,
-          "peak_hours": 33.0,
+          "peak": 0.36,
+          "peak_hours": 32.0,
           "held_hours": 0.0,
           "checked_until": 43.0,
           "verdict": "miss",
           "final": true,
-          "text": "moved -1.5% or more the OTHER way for 2+ hours, after 4 hours",
+          "text": "moved -1.5% or more the OTHER way for 2+ hours, after 3 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -8996,15 +8996,15 @@
         },
         "final": true,
         "effect": "partial",
-        "effect_reason": "the right way (up to -0.7%), but it did not stay past -0.5% for 2 hours",
+        "effect_reason": "the right way (up to -0.5%), but it did not stay past -0.5% for 2 hours",
         "impact": {
-          "peak": -6.44,
-          "peak_hours": 103.9,
+          "peak": -5.06,
+          "peak_hours": 134.9,
           "faded_hours": null,
-          "against": 0.1,
-          "against_hours": 16.9,
+          "against": 0.57,
+          "against_hours": 15.9,
           "until_hours": 167.9,
-          "text": "Clear impact: Gold fell up to 6.4% (after 4.3 days). Still in the predicted direction after 7.0 days (-5.1%)."
+          "text": "Clear impact: Gold fell up to 5.1% (after 5.6 days). Still in the predicted direction after 7.0 days (-4.5%)."
         },
         "h1": {
           "price": 4029.95,
@@ -9055,17 +9055,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4039.99,
+          "start_price": 4047.0,
           "start_time": "2026-11-10T14:10:56.799019+00:00",
           "threshold": 0.46,
           "window_hours": 4,
-          "peak": -0.73,
-          "peak_hours": 3.8,
-          "held_hours": 1.0,
+          "peak": -0.52,
+          "peak_hours": 2.8,
+          "held_hours": 0.0,
           "checked_until": 3.8,
           "verdict": "partial",
           "final": true,
-          "text": "the right way (up to -0.7%), but it did not stay past -0.5% for 2 hours",
+          "text": "the right way (up to -0.5%), but it did not stay past -0.5% for 2 hours",
           "size": "bigger than predicted",
           "opposite": "no_clear_move"
         },
@@ -9269,15 +9269,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 1.8 days (biggest move -3.4%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 1.7 days (biggest move -4.8%)",
         "impact": {
-          "peak": -14.74,
-          "peak_hours": 101.8,
+          "peak": -14.79,
+          "peak_hours": 100.8,
           "faded_hours": null,
-          "against": 1.6,
-          "against_hours": 24.8,
+          "against": 1.55,
+          "against_hours": 23.8,
           "until_hours": 167.8,
-          "text": "Clear impact: Bitcoin fell up to 14.7% (after 4.2 days). Still in the predicted direction after 7.0 days (-13.3%)."
+          "text": "Clear impact: Bitcoin fell up to 14.8% (after 4.2 days). Still in the predicted direction after 7.0 days (-13.0%)."
         },
         "h1": {
           "price": 73921.67,
@@ -9328,18 +9328,18 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 73389.89,
+          "start_price": 73677.57,
           "start_time": "2026-11-10T20:15:49.173713+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -3.41,
+          "peak": -4.76,
           "peak_hours": 53.7,
-          "held_hours": 11.0,
+          "held_hours": 13.0,
           "checked_until": 53.7,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 1.8 days (biggest move -3.4%)",
-          "size": "inside the predicted range",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 1.7 days (biggest move -4.8%)",
+          "size": "bigger than predicted",
           "opposite": "miss"
         },
         "old_effect": "right",
@@ -9557,15 +9557,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 1.7 days (biggest move -6.4%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 1.6 days (biggest move -7.0%)",
         "impact": {
-          "peak": -14.04,
-          "peak_hours": 104.9,
+          "peak": -14.09,
+          "peak_hours": 103.9,
           "faded_hours": null,
-          "against": 2.43,
-          "against_hours": 27.9,
+          "against": 2.38,
+          "against_hours": 26.9,
           "until_hours": 167.9,
-          "text": "Clear impact: Bitcoin fell up to 14.0% (after 4.4 days). Still in the predicted direction after 7.0 days (-12.5%)."
+          "text": "Clear impact: Bitcoin fell up to 14.1% (after 4.3 days). Still in the predicted direction after 7.0 days (-12.5%)."
         },
         "h10": {
           "price": 73743.56,
@@ -9604,17 +9604,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 73625.15,
+          "start_price": 73697.88,
           "start_time": "2026-11-10T22:55:37.318883+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -6.43,
+          "peak": -7.04,
           "peak_hours": 53.1,
-          "held_hours": 13.0,
+          "held_hours": 15.0,
           "checked_until": 53.1,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 1.7 days (biggest move -6.4%)",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 1.6 days (biggest move -7.0%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -9958,15 +9958,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -4.3%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 4 hours (biggest move -4.4%)",
         "impact": {
-          "peak": -7.6,
-          "peak_hours": 114.5,
+          "peak": -6.24,
+          "peak_hours": 145.5,
           "faded_hours": null,
-          "against": 0.3,
-          "against_hours": 2.5,
+          "against": 0.89,
+          "against_hours": 1.5,
           "until_hours": 167.5,
-          "text": "Clear impact: Gold fell up to 7.6% (after 4.8 days). Still in the predicted direction after 7.0 days (-5.9%)."
+          "text": "Clear impact: Gold fell up to 6.2% (after 6.1 days). Still in the predicted direction after 7.0 days (-5.4%)."
         },
         "h36": {
           "price": 3997.75,
@@ -9999,17 +9999,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4037.7,
+          "start_price": 4052.5,
           "start_time": "2026-11-11T10:45:50.419421+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -4.33,
-          "peak_hours": 53.2,
-          "held_hours": 48.0,
+          "peak": -4.4,
+          "peak_hours": 27.2,
+          "held_hours": 49.0,
           "checked_until": 53.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -4.3%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 4 hours (biggest move -4.4%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -10205,15 +10205,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 4 hours (biggest move -1.6%)",
+        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.7%)",
         "impact": {
-          "peak": -6.12,
-          "peak_hours": 101.9,
+          "peak": -4.73,
+          "peak_hours": 132.9,
           "faded_hours": null,
-          "against": 0.45,
-          "against_hours": 14.9,
+          "against": 0.92,
+          "against_hours": 13.9,
           "until_hours": 167.9,
-          "text": "Clear impact: Gold fell up to 6.1% (after 4.2 days). Still in the predicted direction after 7.0 days (-4.1%)."
+          "text": "Clear impact: Gold fell up to 4.7% (after 5.5 days). Still in the predicted direction after 7.0 days (-4.0%)."
         },
         "d1": {
           "price": 3997.75,
@@ -10246,17 +10246,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4037.7,
+          "start_price": 4052.5,
           "start_time": "2026-11-11T10:45:50.419421+00:00",
           "threshold": 0.46,
           "window_hours": 15.2,
-          "peak": -1.63,
-          "peak_hours": 13.2,
-          "held_hours": 10.0,
+          "peak": -1.7,
+          "peak_hours": 12.2,
+          "held_hours": 11.0,
           "checked_until": 14.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.5% or more and held it for 2+ hours, after 4 hours (biggest move -1.6%)",
+          "text": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.7%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -10443,15 +10443,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 4 hours (biggest move -1.6%)",
+        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.7%)",
         "impact": {
-          "peak": -5.69,
-          "peak_hours": 101.2,
+          "peak": -4.3,
+          "peak_hours": 132.2,
           "faded_hours": null,
-          "against": 0.91,
-          "against_hours": 14.2,
+          "against": 1.38,
+          "against_hours": 13.2,
           "until_hours": 167.2,
-          "text": "Clear impact: Gold fell up to 5.7% (after 4.2 days). Still in the predicted direction after 7.0 days (-3.7%)."
+          "text": "Clear impact: Gold fell up to 4.3% (after 5.5 days). Still in the predicted direction after 7.0 days (-3.6%)."
         },
         "d1": {
           "price": 3996.71,
@@ -10484,17 +10484,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4037.7,
+          "start_price": 4052.5,
           "start_time": "2026-11-11T10:45:50.419421+00:00",
           "threshold": 0.46,
           "window_hours": 15.1,
-          "peak": -1.63,
-          "peak_hours": 13.2,
-          "held_hours": 10.0,
+          "peak": -1.7,
+          "peak_hours": 12.2,
+          "held_hours": 11.0,
           "checked_until": 14.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.5% or more and held it for 2+ hours, after 4 hours (biggest move -1.6%)",
+          "text": "moved -0.5% or more and held it for 2+ hours, after 3 hours (biggest move -1.7%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -10679,15 +10679,15 @@
         },
         "final": true,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 4 hours",
         "impact": {
-          "peak": 0.0,
+          "peak": 0.44,
           "peak_hours": 0.1,
-          "faded_hours": 1.1,
-          "against": -6.68,
-          "against_hours": 166.1,
+          "faded_hours": 6.1,
+          "against": -6.66,
+          "against_hours": 167.1,
           "until_hours": 167.1,
-          "text": "Never moved the predicted way. It fell up to 6.7% (after 6.9 days)."
+          "text": "Clear impact: Gold rose up to 0.4% (after 0 h). The effect lasted about 6 h, then faded - later it fell up to 6.7% (after 7.0 days)."
         },
         "h5": {
           "price": 4033.19,
@@ -10732,7 +10732,7 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 4037.7,
+          "start_price": 4052.5,
           "start_time": "2026-11-11T10:45:50.419421+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
@@ -10742,7 +10742,7 @@
           "checked_until": 53.2,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 5 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 4 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -10964,15 +10964,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -4.3%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 4 hours (biggest move -4.4%)",
         "impact": {
-          "peak": -6.89,
+          "peak": -6.74,
           "peak_hours": 167.7,
           "faded_hours": null,
-          "against": -0.08,
+          "against": 0.44,
           "against_hours": 0.7,
           "until_hours": 167.7,
-          "text": "Clear impact: Gold fell up to 6.9% (after 7.0 days). Still in the predicted direction after 7.0 days (-6.9%)."
+          "text": "Clear impact: Gold fell up to 6.7% (after 7.0 days). Still in the predicted direction after 7.0 days (-6.7%)."
         },
         "h5": {
           "price": 4033.19,
@@ -11017,17 +11017,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 4037.7,
+          "start_price": 4052.5,
           "start_time": "2026-11-11T10:45:50.419421+00:00",
           "threshold": 0.84,
           "window_hours": 53.4,
-          "peak": -4.33,
-          "peak_hours": 53.2,
-          "held_hours": 48.0,
+          "peak": -4.4,
+          "peak_hours": 27.2,
+          "held_hours": 49.0,
           "checked_until": 53.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 5 hours (biggest move -4.3%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 4 hours (biggest move -4.4%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -11188,15 +11188,15 @@
         },
         "final": true,
         "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 4 hours (biggest -0.6%)",
+        "effect_reason": "no clear move either way within 4 hours (biggest -0.5%)",
         "impact": {
-          "peak": -15.32,
-          "peak_hours": 85.7,
+          "peak": -15.37,
+          "peak_hours": 84.7,
           "faded_hours": null,
-          "against": 0.91,
-          "against_hours": 8.7,
+          "against": 0.86,
+          "against_hours": 7.7,
           "until_hours": 167.7,
-          "text": "Clear impact: Bitcoin fell up to 15.3% (after 3.6 days). Still in the predicted direction after 7.0 days (-13.2%)."
+          "text": "Clear impact: Bitcoin fell up to 15.4% (after 3.5 days). Still in the predicted direction after 7.0 days (-13.4%)."
         },
         "h1": {
           "price": 73930.12,
@@ -11247,17 +11247,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 73948.66,
+          "start_price": 73818.17,
           "start_time": "2026-11-11T12:25:41.982821+00:00",
           "threshold": 0.89,
           "window_hours": 4,
-          "peak": -0.61,
-          "peak_hours": 2.6,
+          "peak": -0.46,
+          "peak_hours": 1.6,
           "held_hours": 0.0,
           "checked_until": 3.6,
           "verdict": "no_clear_move",
           "final": true,
-          "text": "no clear move either way within 4 hours (biggest -0.6%)",
+          "text": "no clear move either way within 4 hours (biggest -0.5%)",
           "size": null,
           "opposite": "no_clear_move"
         },
@@ -11451,16 +11451,16 @@
           "total": 9
         },
         "final": true,
-        "effect": "wrong",
-        "effect_reason": "moved +1.1% or more the OTHER way for 2+ hours, after 3 hours",
+        "effect": "right",
+        "effect_reason": "moved -1.1% or more and held it for 2+ hours, after 20 hours (biggest move -3.2%)",
         "impact": {
-          "peak": -15.33,
-          "peak_hours": 86.6,
+          "peak": -15.38,
+          "peak_hours": 85.6,
           "faded_hours": null,
-          "against": 0.9,
-          "against_hours": 9.6,
+          "against": 0.85,
+          "against_hours": 8.6,
           "until_hours": 167.6,
-          "text": "Clear impact: Bitcoin fell up to 15.3% (after 3.6 days). Still in the predicted direction after 7.0 days (-13.0%)."
+          "text": "Clear impact: Bitcoin fell up to 15.4% (after 3.6 days). Still in the predicted direction after 7.0 days (-13.2%)."
         },
         "h5": {
           "price": 74221.53,
@@ -11505,19 +11505,19 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 73500.2,
+          "start_price": 73910.15,
           "start_time": "2026-11-11T15:20:55.761368+00:00",
           "threshold": 1.12,
           "window_hours": 25.3,
-          "peak": -2.64,
-          "peak_hours": 23.7,
-          "held_hours": 2.0,
+          "peak": -3.2,
+          "peak_hours": 22.7,
+          "held_hours": 5.0,
           "checked_until": 24.7,
-          "verdict": "miss",
+          "verdict": "hit",
           "final": true,
-          "text": "moved +1.1% or more the OTHER way for 2+ hours, after 3 hours",
-          "size": null,
-          "opposite": "hit"
+          "text": "moved -1.1% or more and held it for 2+ hours, after 20 hours (biggest move -3.2%)",
+          "size": "inside the predicted range",
+          "opposite": "miss"
         },
         "old_effect": "right",
         "d7": {
@@ -11727,13 +11727,13 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 14 hours (biggest move -3.2%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 15 hours (biggest move -3.1%)",
         "impact": {
-          "peak": -6.43,
+          "peak": -6.36,
           "peak_hours": 167.7,
           "faded_hours": null,
-          "against": -0.17,
-          "against_hours": 7.7,
+          "against": 0.18,
+          "against_hours": 6.7,
           "until_hours": 167.7,
           "text": "Clear impact: Gold fell up to 6.4% (after 7.0 days). Still in the predicted direction after 7.0 days (-6.4%)."
         },
@@ -11786,17 +11786,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 3992.12,
+          "start_price": 4000.2,
           "start_time": "2026-11-11T17:20:54.856703+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -3.24,
-          "peak_hours": 46.7,
-          "held_hours": 40.0,
-          "checked_until": 53.7,
+          "peak": -3.15,
+          "peak_hours": 20.7,
+          "held_hours": 37.0,
+          "checked_until": 51.7,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 14 hours (biggest move -3.2%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 15 hours (biggest move -3.1%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -11987,16 +11987,16 @@
           "total": 9
         },
         "final": true,
-        "effect": "wrong",
-        "effect_reason": "moved -0.9% or more the OTHER way for 2+ hours, after 5 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 9 hours (biggest -0.4%)",
         "impact": {
-          "peak": -0.42,
-          "peak_hours": 1.0,
-          "faded_hours": 2.0,
-          "against": -16.26,
+          "peak": -0.86,
+          "peak_hours": 3.0,
+          "faded_hours": 4.0,
+          "against": -16.59,
           "against_hours": 168.0,
           "until_hours": 168.0,
-          "text": "Never moved the predicted way. It fell up to 16.3% (after 7.0 days)."
+          "text": "Never moved the predicted way. It fell up to 16.6% (after 7.0 days)."
         },
         "h1": {
           "price": 74418.31,
@@ -12047,19 +12047,19 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 74611.63,
+          "start_price": 74303.57,
           "start_time": "2026-11-11T21:01:30.072067+00:00",
           "threshold": 0.89,
           "window_hours": 8.9,
-          "peak": -0.38,
-          "peak_hours": 1.0,
+          "peak": -0.42,
+          "peak_hours": 3.0,
           "held_hours": 0.0,
           "checked_until": 8.0,
-          "verdict": "miss",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "moved -0.9% or more the OTHER way for 2+ hours, after 5 hours",
+          "text": "no clear move either way within 9 hours (biggest -0.4%)",
           "size": null,
-          "opposite": "hit"
+          "opposite": "partial"
         },
         "old_effect": "wrong",
         "d7": {
@@ -12236,15 +12236,15 @@
         },
         "final": true,
         "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 4 hours (biggest -0.6%)",
+        "effect_reason": "no clear move either way within 4 hours (biggest -0.3%)",
         "impact": {
-          "peak": -16.01,
+          "peak": -16.34,
           "peak_hours": 167.2,
           "faded_hours": null,
-          "against": -0.13,
-          "against_hours": 0.2,
+          "against": -0.57,
+          "against_hours": 2.2,
           "until_hours": 167.2,
-          "text": "Clear impact: Bitcoin fell up to 16.0% (after 7.0 days). Still in the predicted direction after 7.0 days (-16.0%)."
+          "text": "Clear impact: Bitcoin fell up to 16.3% (after 7.0 days). Still in the predicted direction after 7.0 days (-16.3%)."
         },
         "h1": {
           "price": 74110.03,
@@ -12295,17 +12295,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 74324.69,
+          "start_price": 73849.99,
           "start_time": "2026-11-11T21:55:43.735267+00:00",
           "threshold": 0.89,
           "window_hours": 4,
-          "peak": -0.64,
-          "peak_hours": 1.1,
+          "peak": -0.31,
+          "peak_hours": 3.1,
           "held_hours": 0.0,
           "checked_until": 3.1,
           "verdict": "no_clear_move",
           "final": true,
-          "text": "no clear move either way within 4 hours (biggest -0.6%)",
+          "text": "no clear move either way within 4 hours (biggest -0.3%)",
           "size": null,
           "opposite": "no_clear_move"
         },
@@ -12472,9 +12472,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -13.55,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 165.5,
+          "move": -13.75,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 166.3,
           "verdict": "right"
         },
         "checks": {
@@ -12485,15 +12485,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 7 hours (biggest move -9.3%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 6 hours (biggest move -9.3%)",
         "impact": {
-          "peak": -15.38,
-          "peak_hours": 159.3,
+          "peak": -15.4,
+          "peak_hours": 158.3,
           "faded_hours": null,
-          "against": 0.11,
+          "against": 0.02,
           "against_hours": 0.3,
-          "until_hours": 165.5,
-          "text": "Clear impact: Bitcoin fell up to 15.4% (after 6.6 days). Still in the predicted direction after 6.9 days (-13.5%)."
+          "until_hours": 166.3,
+          "text": "Clear impact: Bitcoin fell up to 15.4% (after 6.6 days). Still in the predicted direction after 6.9 days (-13.8%)."
         },
         "h1": {
           "price": 73543.27,
@@ -12544,17 +12544,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 73568.09,
+          "start_price": 73502.06,
           "start_time": "2026-11-12T07:45:52.369425+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -9.35,
-          "peak_hours": 44.2,
-          "held_hours": 46.0,
+          "peak": -9.29,
+          "peak_hours": 43.2,
+          "held_hours": 47.0,
           "checked_until": 53.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 7 hours (biggest move -9.3%)",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 6 hours (biggest move -9.3%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -12777,15 +12777,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 3 hours (biggest move -2.1%)",
+        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 2 hours (biggest move -1.9%)",
         "impact": {
-          "peak": -6.26,
-          "peak_hours": 90.3,
+          "peak": -6.12,
+          "peak_hours": 167.3,
           "faded_hours": null,
-          "against": 0.29,
-          "against_hours": 3.4,
+          "against": 0.76,
+          "against_hours": 2.4,
           "until_hours": 167.3,
-          "text": "Clear impact: Gold fell up to 6.3% (after 3.8 days). Still in the predicted direction after 7.0 days (-6.1%)."
+          "text": "Clear impact: Gold fell up to 6.1% (after 7.0 days). Still in the predicted direction after 7.0 days (-6.1%)."
         },
         "h36": {
           "price": 3852.87,
@@ -12812,17 +12812,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 3945.1,
+          "start_price": 3949.5,
           "start_time": "2026-11-12T10:45:50.472999+00:00",
           "threshold": 0.71,
           "window_hours": 38.4,
-          "peak": -2.09,
-          "peak_hours": 29.2,
-          "held_hours": 35.0,
-          "checked_until": 38.2,
+          "peak": -1.9,
+          "peak_hours": 3.2,
+          "held_hours": 17.0,
+          "checked_until": 34.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.7% or more and held it for 2+ hours, after 3 hours (biggest move -2.1%)",
+          "text": "moved -0.7% or more and held it for 2+ hours, after 2 hours (biggest move -1.9%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -13007,15 +13007,15 @@
           "verdict": "wrong"
         },
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 3 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 2 hours",
         "impact": {
-          "peak": 0.0,
+          "peak": -0.08,
           "peak_hours": 0.4,
           "faded_hours": 1.4,
-          "against": -7.17,
-          "against_hours": 167.4,
+          "against": -6.96,
+          "against_hours": 166.4,
           "until_hours": 167.4,
-          "text": "Never moved the predicted way. It fell up to 7.2% (after 7.0 days)."
+          "text": "Never moved the predicted way. It fell up to 7.0% (after 6.9 days)."
         },
         "checks": {
           "done": 9,
@@ -13055,17 +13055,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 3945.1,
+          "start_price": 3949.5,
           "start_time": "2026-11-12T10:45:50.472999+00:00",
           "threshold": 0.79,
           "window_hours": 46.3,
           "peak": 0.0,
           "peak_hours": 0.2,
           "held_hours": 0.0,
-          "checked_until": 46.2,
+          "checked_until": 34.2,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 3 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 2 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -13232,15 +13232,15 @@
         },
         "final": true,
         "effect": "right",
-        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 3 hours (biggest move -2.1%)",
+        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 2 hours (biggest move -1.9%)",
         "impact": {
-          "peak": -6.78,
-          "peak_hours": 163.2,
+          "peak": -6.55,
+          "peak_hours": 162.2,
           "faded_hours": null,
-          "against": 0.0,
+          "against": 0.13,
           "against_hours": 0.2,
           "until_hours": 167.2,
-          "text": "Clear impact: Gold fell up to 6.8% (after 6.8 days). Still in the predicted direction after 7.0 days (-6.4%)."
+          "text": "Clear impact: Gold fell up to 6.6% (after 6.8 days). Still in the predicted direction after 7.0 days (-5.8%)."
         },
         "h10": {
           "price": 3945.76,
@@ -13279,18 +13279,18 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 3945.1,
+          "start_price": 3949.5,
           "start_time": "2026-11-12T10:45:50.472999+00:00",
           "threshold": 0.7,
           "window_hours": 36.3,
-          "peak": -2.09,
-          "peak_hours": 29.2,
-          "held_hours": 33.0,
-          "checked_until": 36.2,
+          "peak": -1.9,
+          "peak_hours": 3.2,
+          "held_hours": 17.0,
+          "checked_until": 34.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.7% or more and held it for 2+ hours, after 3 hours (biggest move -2.1%)",
-          "size": "bigger than predicted",
+          "text": "moved -0.7% or more and held it for 2+ hours, after 2 hours (biggest move -1.9%)",
+          "size": "inside the predicted range",
           "opposite": "miss"
         },
         "old_effect": "right",
@@ -13464,21 +13464,21 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -13.43,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 161.8,
+          "move": -13.64,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 162.6,
           "verdict": "right"
         },
         "effect": "right",
-        "effect_reason": "moved -0.9% or more and held it for 2+ hours, after 3 hours (biggest move -2.1%)",
+        "effect_reason": "moved -0.9% or more and held it for 2+ hours, after 2 hours (biggest move -2.4%)",
         "impact": {
-          "peak": -15.27,
-          "peak_hours": 155.6,
+          "peak": -15.28,
+          "peak_hours": 154.6,
           "faded_hours": null,
-          "against": -0.72,
+          "against": -0.78,
           "against_hours": 0.6,
-          "until_hours": 161.8,
-          "text": "Clear impact: Bitcoin fell up to 15.3% (after 6.5 days). Still in the predicted direction after 6.7 days (-13.4%)."
+          "until_hours": 162.6,
+          "text": "Clear impact: Bitcoin fell up to 15.3% (after 6.4 days). Still in the predicted direction after 6.8 days (-13.7%)."
         },
         "checks": {
           "done": 8,
@@ -13536,17 +13536,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 72856.43,
+          "start_price": 72810.0,
           "start_time": "2026-11-12T11:31:13.786624+00:00",
           "threshold": 0.89,
           "window_hours": 12.6,
-          "peak": -2.08,
-          "peak_hours": 11.5,
-          "held_hours": 9.0,
+          "peak": -2.39,
+          "peak_hours": 12.5,
+          "held_hours": 10.0,
           "checked_until": 12.5,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.9% or more and held it for 2+ hours, after 3 hours (biggest move -2.1%)",
+          "text": "moved -0.9% or more and held it for 2+ hours, after 2 hours (biggest move -2.4%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -13668,9 +13668,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -13.43,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 161.7,
+          "move": -13.64,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 162.5,
           "verdict": "right"
         },
         "checks": {
@@ -13681,15 +13681,15 @@
         },
         "final": false,
         "effect": "partial",
-        "effect_reason": "the right way (up to -1.8%), but it did not stay past -0.9% for 2 hours",
+        "effect_reason": "the right way (up to -1.7%), but it did not stay past -0.9% for 2 hours",
         "impact": {
-          "peak": -15.27,
-          "peak_hours": 155.5,
+          "peak": -15.28,
+          "peak_hours": 154.5,
           "faded_hours": null,
-          "against": -0.72,
+          "against": -0.78,
           "against_hours": 0.5,
-          "until_hours": 161.7,
-          "text": "Clear impact: Bitcoin fell up to 15.3% (after 6.5 days). Still in the predicted direction after 6.7 days (-13.4%)."
+          "until_hours": 162.5,
+          "text": "Clear impact: Bitcoin fell up to 15.3% (after 6.4 days). Still in the predicted direction after 6.8 days (-13.7%)."
         },
         "h1": {
           "price": 72884.88,
@@ -13740,17 +13740,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 72856.43,
+          "start_price": 72810.0,
           "start_time": "2026-11-12T11:35:40.576108+00:00",
           "threshold": 0.89,
           "window_hours": 4,
-          "peak": -1.78,
-          "peak_hours": 3.4,
-          "held_hours": 0.0,
+          "peak": -1.73,
+          "peak_hours": 2.4,
+          "held_hours": 1.0,
           "checked_until": 3.4,
           "verdict": "partial",
           "final": true,
-          "text": "the right way (up to -1.8%), but it did not stay past -0.9% for 2 hours",
+          "text": "the right way (up to -1.7%), but it did not stay past -0.9% for 2 hours",
           "size": "bigger than predicted",
           "opposite": "no_clear_move"
         },
@@ -13918,9 +13918,9 @@
           "verdict": "flat"
         },
         "now": {
-          "move": -13.47,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 163.0,
+          "move": -13.68,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 163.8,
           "verdict": "right"
         },
         "checks": {
@@ -13931,15 +13931,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.5% or more and held it for 2+ hours, after 7 hours (biggest move -8.5%)",
+        "effect_reason": "moved -1.5% or more and held it for 2+ hours, after 2 hours (biggest move -8.4%)",
         "impact": {
-          "peak": -15.31,
-          "peak_hours": 156.8,
+          "peak": -15.32,
+          "peak_hours": 155.8,
           "faded_hours": null,
-          "against": -0.04,
+          "against": -0.77,
           "against_hours": 0.8,
-          "until_hours": 163.0,
-          "text": "Clear impact: Bitcoin fell up to 15.3% (after 6.5 days). Still in the predicted direction after 6.8 days (-13.5%)."
+          "until_hours": 163.8,
+          "text": "Clear impact: Bitcoin fell up to 15.3% (after 6.5 days). Still in the predicted direction after 6.8 days (-13.7%)."
         },
         "h5": {
           "price": 71335.91,
@@ -13984,17 +13984,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 72856.43,
+          "start_price": 72810.0,
           "start_time": "2026-11-12T12:20:55.447718+00:00",
           "threshold": 1.52,
           "window_hours": 45.9,
-          "peak": -8.46,
-          "peak_hours": 39.7,
-          "held_hours": 39.0,
+          "peak": -8.43,
+          "peak_hours": 38.7,
+          "held_hours": 40.0,
           "checked_until": 45.7,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.5% or more and held it for 2+ hours, after 7 hours (biggest move -8.5%)",
+          "text": "moved -1.5% or more and held it for 2+ hours, after 2 hours (biggest move -8.4%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -14248,21 +14248,21 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -5.22,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 160.0,
+          "move": -4.81,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 160.7,
           "verdict": "right"
         },
-        "effect": "right",
-        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 49 min (biggest move -1.7%)",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 1.6 days (biggest -0.5%)",
         "impact": {
-          "peak": -5.7,
-          "peak_hours": 157.9,
+          "peak": -5.19,
+          "peak_hours": 149.9,
           "faded_hours": null,
-          "against": -0.44,
-          "against_hours": 14.9,
-          "until_hours": 160.0,
-          "text": "Clear impact: Gold fell up to 5.7% (after 6.6 days). Still in the predicted direction after 6.7 days (-5.2%)."
+          "against": -0.11,
+          "against_hours": 13.9,
+          "until_hours": 160.7,
+          "text": "Clear impact: Gold fell up to 5.2% (after 6.2 days). Still in the predicted direction after 6.7 days (-4.8%)."
         },
         "checks": {
           "done": 8,
@@ -14314,19 +14314,19 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 3929.99,
+          "start_price": 3894.9,
           "start_time": "2026-11-12T13:10:54.784157+00:00",
           "threshold": 0.71,
           "window_hours": 37.9,
-          "peak": -1.71,
-          "peak_hours": 26.8,
-          "held_hours": 21.0,
-          "checked_until": 37.8,
-          "verdict": "hit",
+          "peak": -0.53,
+          "peak_hours": 0.8,
+          "held_hours": 0.0,
+          "checked_until": 31.8,
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "moved -0.7% or more and held it for 2+ hours, after 49 min (biggest move -1.7%)",
-          "size": "inside the predicted range",
-          "opposite": "miss"
+          "text": "no clear move either way within 1.6 days (biggest -0.5%)",
+          "size": null,
+          "opposite": "partial"
         },
         "old_effect": "right",
         "d5": {
@@ -14631,9 +14631,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 1.1,
         "now": {
-          "move": -11.62,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 159.4,
+          "move": -11.84,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 160.3,
           "verdict": "right"
         },
         "checks": {
@@ -14644,15 +14644,15 @@
         },
         "final": false,
         "effect": "partial",
-        "effect_reason": "the right way (up to -0.9%), but it did not stay past -0.9% for 2 hours",
+        "effect_reason": "the right way (up to -2.0%), but it did not stay past -0.9% for 2 hours",
         "impact": {
-          "peak": -13.5,
-          "peak_hours": 153.3,
+          "peak": -13.52,
+          "peak_hours": 152.3,
           "faded_hours": null,
-          "against": 0.76,
-          "against_hours": 0.3,
-          "until_hours": 159.4,
-          "text": "Clear impact: Bitcoin fell up to 13.5% (after 6.4 days). Still in the predicted direction after 6.6 days (-11.6%)."
+          "against": -0.08,
+          "against_hours": 3.3,
+          "until_hours": 160.3,
+          "text": "Clear impact: Bitcoin fell up to 13.5% (after 6.3 days). Still in the predicted direction after 6.7 days (-11.9%)."
         },
         "h1": {
           "price": 71886.17,
@@ -14697,17 +14697,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 71556.5,
+          "start_price": 71610.0,
           "start_time": "2026-11-12T14:50:59.402699+00:00",
           "threshold": 0.89,
           "window_hours": 11.3,
-          "peak": -0.94,
+          "peak": -2.01,
           "peak_hours": 11.2,
-          "held_hours": 0.0,
+          "held_hours": 1.0,
           "checked_until": 11.2,
           "verdict": "partial",
           "final": true,
-          "text": "the right way (up to -0.9%), but it did not stay past -0.9% for 2 hours",
+          "text": "the right way (up to -2.0%), but it did not stay past -0.9% for 2 hours",
           "size": "inside the predicted range",
           "opposite": "no_clear_move"
         },
@@ -14952,9 +14952,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -11.74,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 156.4,
+          "move": -11.95,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 157.3,
           "verdict": "right"
         },
         "checks": {
@@ -14965,15 +14965,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 10 hours (biggest move -10.2%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 9 hours (biggest move -11.6%)",
         "impact": {
-          "peak": -13.61,
-          "peak_hours": 150.2,
+          "peak": -13.63,
+          "peak_hours": 149.2,
           "faded_hours": null,
-          "against": -0.18,
-          "against_hours": 1.2,
-          "until_hours": 156.4,
-          "text": "Clear impact: Bitcoin fell up to 13.6% (after 6.3 days). Still in the predicted direction after 6.5 days (-11.7%)."
+          "against": -0.21,
+          "against_hours": 0.2,
+          "until_hours": 157.2,
+          "text": "Clear impact: Bitcoin fell up to 13.6% (after 6.2 days). Still in the predicted direction after 6.5 days (-12.0%)."
         },
         "h1": {
           "price": 71881.05,
@@ -15018,17 +15018,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 71695.05,
+          "start_price": 71826.42,
           "start_time": "2026-11-12T16:51:06.266981+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -10.21,
+          "peak": -11.6,
           "peak_hours": 53.1,
-          "held_hours": 43.0,
+          "held_hours": 44.0,
           "checked_until": 53.1,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 10 hours (biggest move -10.2%)",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 9 hours (biggest move -11.6%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -15203,9 +15203,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.5,
         "now": {
-          "move": -6.81,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 143.4,
+          "move": -7.03,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 144.3,
           "verdict": "right"
         },
         "checks": {
@@ -15215,16 +15215,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "wrong",
-        "effect_reason": "moved +0.9% or more the OTHER way for 2+ hours, after 4 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 10 hours (biggest -0.7%)",
         "impact": {
-          "peak": -8.78,
-          "peak_hours": 137.2,
+          "peak": -8.8,
+          "peak_hours": 136.2,
           "faded_hours": null,
-          "against": 1.96,
-          "against_hours": 8.2,
-          "until_hours": 143.4,
-          "text": "Clear impact: Bitcoin fell up to 8.8% (after 5.7 days). Still in the predicted direction after 6.0 days (-6.8%)."
+          "against": 1.93,
+          "against_hours": 7.2,
+          "until_hours": 144.2,
+          "text": "Clear impact: Bitcoin fell up to 8.8% (after 5.7 days). Still in the predicted direction after 6.0 days (-7.0%)."
         },
         "h1": {
           "price": 68168.37,
@@ -15269,19 +15269,19 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 68061.87,
+          "start_price": 69005.14,
           "start_time": "2026-11-13T06:15:47.465346+00:00",
           "threshold": 0.89,
           "window_hours": 10.2,
-          "peak": 0.7,
-          "peak_hours": 1.7,
+          "peak": -0.71,
+          "peak_hours": 0.7,
           "held_hours": 0.0,
           "checked_until": 9.7,
-          "verdict": "miss",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "moved +0.9% or more the OTHER way for 2+ hours, after 4 hours",
+          "text": "no clear move either way within 10 hours (biggest -0.7%)",
           "size": null,
-          "opposite": "hit"
+          "opposite": "no_clear_move"
         },
         "old_effect": "right",
         "d5": {
@@ -15483,16 +15483,16 @@
           "total": 9
         },
         "final": true,
-        "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 29 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 2.2 days (biggest +0.0%)",
         "impact": {
-          "peak": 0.0,
-          "peak_hours": 0.3,
-          "faded_hours": 1.3,
-          "against": -6.77,
-          "against_hours": 167.3,
-          "until_hours": 167.3,
-          "text": "Never moved the predicted way. It fell up to 6.8% (after 7.0 days)."
+          "peak": 0.32,
+          "peak_hours": 1.3,
+          "faded_hours": 2.3,
+          "against": -6.27,
+          "against_hours": 159.3,
+          "until_hours": 165.3,
+          "text": "Clear impact: Gold rose up to 0.3% (after 1 h). The effect lasted about 2 h, then faded - later it fell up to 6.3% (after 6.6 days)."
         },
         "h36": {
           "price": 3865.4,
@@ -15519,19 +15519,19 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 3880.13,
+          "start_price": 3897.2,
           "start_time": "2026-11-13T10:45:51.195805+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.06,
-          "peak_hours": 4.2,
+          "peak": 0.03,
+          "peak_hours": 3.2,
           "held_hours": 0.0,
-          "checked_until": 53.2,
-          "verdict": "miss",
+          "checked_until": 10.2,
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 29 hours",
+          "text": "no clear move either way within 2.2 days (biggest +0.0%)",
           "size": null,
-          "opposite": "hit"
+          "opposite": "no_clear_move"
         },
         "old_effect": "wrong",
         "d7": {
@@ -15719,9 +15719,9 @@
           "verdict": "right"
         },
         "now": {
-          "move": -3.87,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 151.5,
+          "move": -3.45,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 152.2,
           "verdict": "wrong"
         },
         "checks": {
@@ -15732,15 +15732,15 @@
         },
         "final": false,
         "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 13 hours (biggest +0.1%)",
+        "effect_reason": "no clear move either way within 13 hours (biggest +0.0%)",
         "impact": {
-          "peak": 0.98,
-          "peak_hours": 6.3,
-          "faded_hours": 16.3,
-          "against": -4.35,
-          "against_hours": 149.3,
-          "until_hours": 151.5,
-          "text": "Clear impact: Gold rose up to 1.0% (after 6 h). The effect lasted about 16 h, then faded - later it fell up to 4.4% (after 6.2 days)."
+          "peak": 1.32,
+          "peak_hours": 5.3,
+          "faded_hours": 75.3,
+          "against": -3.84,
+          "against_hours": 141.3,
+          "until_hours": 152.2,
+          "text": "Clear impact: Gold rose up to 1.3% (after 5 h). The effect lasted about 3.1 days, then faded - later it fell up to 3.8% (after 5.9 days)."
         },
         "d1": {
           "price": 3874.32,
@@ -15767,19 +15767,19 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3880.13,
+          "start_price": 3897.2,
           "start_time": "2026-11-13T10:45:51.195805+00:00",
           "threshold": 0.46,
           "window_hours": 12.9,
-          "peak": 0.06,
-          "peak_hours": 4.2,
+          "peak": 0.03,
+          "peak_hours": 3.2,
           "held_hours": 0.0,
-          "checked_until": 12.2,
+          "checked_until": 10.2,
           "verdict": "no_clear_move",
           "final": true,
-          "text": "no clear move either way within 13 hours (biggest +0.1%)",
+          "text": "no clear move either way within 13 hours (biggest +0.0%)",
           "size": null,
-          "opposite": "no_clear_move"
+          "opposite": "partial"
         },
         "old_effect": "right",
         "d5": {
@@ -16094,9 +16094,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -3.87,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 150.9,
+          "move": -3.45,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 151.6,
           "verdict": "right"
         },
         "checks": {
@@ -16106,16 +16106,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 19 hours (biggest -0.5%)",
+        "effect": "partial",
+        "effect_reason": "the right way (up to -0.5%), but it did not stay past -0.5% for 2 hours",
         "impact": {
-          "peak": -4.35,
-          "peak_hours": 148.7,
+          "peak": -3.84,
+          "peak_hours": 140.7,
           "faded_hours": null,
-          "against": 0.98,
-          "against_hours": 5.7,
-          "until_hours": 150.9,
-          "text": "Clear impact: Gold fell up to 4.4% (after 6.2 days). Still in the predicted direction after 6.3 days (-3.9%)."
+          "against": 1.32,
+          "against_hours": 4.7,
+          "until_hours": 151.6,
+          "text": "Clear impact: Gold fell up to 3.8% (after 5.9 days). Still in the predicted direction after 6.3 days (-3.5%)."
         },
         "d1": {
           "price": 3874.32,
@@ -16142,18 +16142,18 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3880.13,
+          "start_price": 3897.2,
           "start_time": "2026-11-13T10:45:51.195805+00:00",
           "threshold": 0.51,
           "window_hours": 19.2,
-          "peak": -0.5,
-          "peak_hours": 17.2,
+          "peak": -0.52,
+          "peak_hours": 4.2,
           "held_hours": 0.0,
-          "checked_until": 18.2,
-          "verdict": "no_clear_move",
+          "checked_until": 10.2,
+          "verdict": "partial",
           "final": true,
-          "text": "no clear move either way within 19 hours (biggest -0.5%)",
-          "size": null,
+          "text": "the right way (up to -0.5%), but it did not stay past -0.5% for 2 hours",
+          "size": "smaller than predicted",
           "opposite": "no_clear_move"
         },
         "old_effect": "wrong",
@@ -16377,9 +16377,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": -3.85,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 127.8,
+          "move": -3.43,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 128.5,
           "verdict": "right"
         },
         "checks": {
@@ -16390,15 +16390,15 @@
         },
         "final": false,
         "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 6 hours (biggest +0.0%)",
+        "effect_reason": "no clear move either way within 6 hours (biggest -0.0%)",
         "impact": {
-          "peak": -4.33,
-          "peak_hours": 125.6,
+          "peak": -3.82,
+          "peak_hours": 117.6,
           "faded_hours": null,
-          "against": 0.32,
-          "against_hours": 50.6,
-          "until_hours": 127.8,
-          "text": "Clear impact: Gold fell up to 4.3% (after 5.2 days). Still in the predicted direction after 5.3 days (-3.8%)."
+          "against": 0.79,
+          "against_hours": 49.6,
+          "until_hours": 128.5,
+          "text": "Clear impact: Gold fell up to 3.8% (after 4.9 days). Still in the predicted direction after 5.4 days (-3.4%)."
         },
         "h1": {
           "price": 3874.32,
@@ -16443,17 +16443,17 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3872.27,
+          "start_price": 3886.3,
           "start_time": "2026-11-13T21:25:52.824150+00:00",
           "threshold": 0.46,
           "window_hours": 5.5,
-          "peak": 0.03,
-          "peak_hours": 1.6,
+          "peak": -0.0,
+          "peak_hours": null,
           "held_hours": 0.0,
-          "checked_until": 4.6,
+          "checked_until": 0,
           "verdict": "no_clear_move",
           "final": true,
-          "text": "no clear move either way within 6 hours (biggest +0.0%)",
+          "text": "no clear move either way within 6 hours (biggest -0.0%)",
           "size": null,
           "opposite": "no_clear_move"
         },
@@ -16633,9 +16633,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -5.96,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 121.2,
+          "move": -6.18,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 122.1,
           "verdict": "wrong"
         },
         "checks": {
@@ -16645,15 +16645,15 @@
           "total": 9
         },
         "final": false,
-        "effect": "partial",
-        "effect_reason": "the right way (up to +1.0%), but it did not stay past +0.9% for 2 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 10 hours (biggest +0.5%)",
         "impact": {
-          "peak": -0.28,
-          "peak_hours": 6.1,
-          "faded_hours": 7.1,
-          "against": -7.95,
-          "against_hours": 115.1,
-          "until_hours": 121.2,
+          "peak": -0.31,
+          "peak_hours": 5.1,
+          "faded_hours": 6.1,
+          "against": -7.97,
+          "against_hours": 114.1,
+          "until_hours": 122.1,
           "text": "Never moved the predicted way. It fell up to 8.0% (after 4.8 days)."
         },
         "h1": {
@@ -16693,19 +16693,19 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 66690.7,
+          "start_price": 67018.47,
           "start_time": "2026-11-14T04:01:19.696931+00:00",
           "threshold": 0.89,
           "window_hours": 10.4,
-          "peak": 1.01,
-          "peak_hours": 6.0,
+          "peak": 0.49,
+          "peak_hours": 5.0,
           "held_hours": 0.0,
           "checked_until": 10.0,
-          "verdict": "partial",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "the right way (up to +1.0%), but it did not stay past +0.9% for 2 hours",
-          "size": "inside the predicted range",
-          "opposite": "no_clear_move"
+          "text": "no clear move either way within 10 hours (biggest +0.5%)",
+          "size": null,
+          "opposite": "partial"
         },
         "old_effect": "wrong",
         "h84": {
@@ -16918,9 +16918,9 @@
           "verdict": "flat"
         },
         "now": {
-          "move": -5.21,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 120.7,
+          "move": -5.44,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 121.5,
           "verdict": "right"
         },
         "checks": {
@@ -16931,15 +16931,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 9 hours (biggest move -6.8%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 8 hours (biggest move -7.0%)",
         "impact": {
-          "peak": -7.22,
-          "peak_hours": 114.5,
+          "peak": -7.24,
+          "peak_hours": 113.5,
           "faded_hours": null,
-          "against": 0.51,
-          "against_hours": 5.5,
-          "until_hours": 120.7,
-          "text": "Clear impact: Bitcoin fell up to 7.2% (after 4.8 days). Still in the predicted direction after 5.0 days (-5.2%)."
+          "against": 0.48,
+          "against_hours": 4.5,
+          "until_hours": 121.5,
+          "text": "Clear impact: Bitcoin fell up to 7.2% (after 4.7 days). Still in the predicted direction after 5.1 days (-5.5%)."
         },
         "h5": {
           "price": 67066.75,
@@ -16972,17 +16972,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 67160.27,
+          "start_price": 67307.21,
           "start_time": "2026-11-14T05:45:52.256962+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -6.77,
-          "peak_hours": 20.2,
-          "held_hours": 44.0,
+          "peak": -7.03,
+          "peak_hours": 19.2,
+          "held_hours": 45.0,
           "checked_until": 53.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 9 hours (biggest move -6.8%)",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 8 hours (biggest move -7.0%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -17204,21 +17204,21 @@
           "verdict": "flat"
         },
         "now": {
-          "move": -3.74,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 128.8,
+          "move": -3.32,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 129.5,
           "verdict": "right"
         },
-        "effect": "right",
-        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 5 hours (biggest move -2.1%)",
+        "effect": "no_price",
+        "effect_reason": "no price found for the time MINT made the prediction",
         "impact": {
-          "peak": -4.22,
-          "peak_hours": 126.6,
+          "peak": -3.71,
+          "peak_hours": 118.6,
           "faded_hours": null,
-          "against": 0.44,
-          "against_hours": 51.6,
-          "until_hours": 128.8,
-          "text": "Clear impact: Gold fell up to 4.2% (after 5.3 days). Still in the predicted direction after 5.4 days (-3.7%)."
+          "against": 0.91,
+          "against_hours": 50.6,
+          "until_hours": 129.5,
+          "text": "Clear impact: Gold fell up to 3.7% (after 4.9 days). Still in the predicted direction after 5.4 days (-3.3%)."
         },
         "checks": {
           "done": 8,
@@ -17252,19 +17252,9 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3865.58,
-          "start_time": "2026-11-14T10:50:54.119059+00:00",
-          "threshold": 0.46,
-          "window_hours": 15.2,
-          "peak": -2.1,
-          "peak_hours": 11.2,
-          "held_hours": 10.0,
-          "checked_until": 15.2,
-          "verdict": "hit",
-          "final": true,
-          "text": "moved -0.5% or more and held it for 2+ hours, after 5 hours (biggest move -2.1%)",
-          "size": "bigger than predicted",
-          "opposite": "miss"
+          "verdict": "no_price",
+          "final": false,
+          "text": "no price found for the time MINT made the prediction"
         },
         "old_effect": "right",
         "d5": {
@@ -17436,9 +17426,9 @@
           "verdict": "flat"
         },
         "now": {
-          "move": -3.84,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 128.4,
+          "move": -3.42,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 129.1,
           "verdict": "right"
         },
         "checks": {
@@ -17448,16 +17438,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "right",
-        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 5 hours (biggest move -2.1%)",
+        "effect": "no_price",
+        "effect_reason": "no price found for the time MINT made the prediction",
         "impact": {
-          "peak": -4.32,
-          "peak_hours": 126.2,
+          "peak": -3.81,
+          "peak_hours": 118.2,
           "faded_hours": null,
-          "against": 0.34,
-          "against_hours": 51.2,
-          "until_hours": 128.4,
-          "text": "Clear impact: Gold fell up to 4.3% (after 5.3 days). Still in the predicted direction after 5.4 days (-3.8%)."
+          "against": 0.8,
+          "against_hours": 50.2,
+          "until_hours": 129.1,
+          "text": "Clear impact: Gold fell up to 3.8% (after 4.9 days). Still in the predicted direction after 5.4 days (-3.4%)."
         },
         "d1": {
           "price": 3819.7,
@@ -17484,19 +17474,9 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3865.58,
-          "start_time": "2026-11-14T10:50:54.119059+00:00",
-          "threshold": 0.69,
-          "window_hours": 35.5,
-          "peak": -2.1,
-          "peak_hours": 11.2,
-          "held_hours": 27.0,
-          "checked_until": 35.2,
-          "verdict": "hit",
-          "final": true,
-          "text": "moved -0.7% or more and held it for 2+ hours, after 5 hours (biggest move -2.1%)",
-          "size": "bigger than predicted",
-          "opposite": "miss"
+          "verdict": "no_price",
+          "final": false,
+          "text": "no price found for the time MINT made the prediction"
         },
         "old_effect": "right",
         "d5": {
@@ -17684,9 +17664,9 @@
           "verdict": "right"
         },
         "now": {
-          "move": -3.95,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 127.5,
+          "move": -3.53,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 128.2,
           "verdict": "right"
         },
         "checks": {
@@ -17696,16 +17676,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "right",
-        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 5 hours (biggest move -2.1%)",
+        "effect": "no_price",
+        "effect_reason": "no price found for the time MINT made the prediction",
         "impact": {
-          "peak": -4.44,
-          "peak_hours": 125.3,
+          "peak": -3.92,
+          "peak_hours": 117.3,
           "faded_hours": null,
-          "against": 0.22,
-          "against_hours": 50.3,
-          "until_hours": 127.5,
-          "text": "Clear impact: Gold fell up to 4.4% (after 5.2 days). Still in the predicted direction after 5.3 days (-4.0%)."
+          "against": 0.68,
+          "against_hours": 49.3,
+          "until_hours": 128.2,
+          "text": "Clear impact: Gold fell up to 3.9% (after 4.9 days). Still in the predicted direction after 5.3 days (-3.5%)."
         },
         "d1": {
           "price": 3775.39,
@@ -17732,19 +17712,9 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3865.58,
-          "start_time": "2026-11-14T10:50:54.119059+00:00",
-          "threshold": 0.65,
-          "window_hours": 31.3,
-          "peak": -2.1,
-          "peak_hours": 11.2,
-          "held_hours": 26.0,
-          "checked_until": 31.2,
-          "verdict": "hit",
-          "final": true,
-          "text": "moved -0.7% or more and held it for 2+ hours, after 5 hours (biggest move -2.1%)",
-          "size": "bigger than predicted",
-          "opposite": "miss"
+          "verdict": "no_price",
+          "final": false,
+          "text": "no price found for the time MINT made the prediction"
         },
         "old_effect": "right",
         "d5": {
@@ -17894,9 +17864,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -2.49,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 107.3,
+          "move": -2.72,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 108.2,
           "verdict": "flat"
         },
         "checks": {
@@ -17907,15 +17877,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.9% or more and held it for 2+ hours, after 3 hours (biggest move -4.9%)",
+        "effect_reason": "moved -0.9% or more and held it for 2+ hours, after 2 hours (biggest move -4.5%)",
         "impact": {
-          "peak": -4.56,
-          "peak_hours": 101.2,
+          "peak": -4.57,
+          "peak_hours": 100.2,
           "faded_hours": null,
-          "against": 1.07,
-          "against_hours": 0.2,
-          "until_hours": 107.3,
-          "text": "Clear impact: Bitcoin fell up to 4.6% (after 4.2 days). Still in the predicted direction after 4.5 days (-2.5%)."
+          "against": 0.81,
+          "against_hours": 1.2,
+          "until_hours": 108.2,
+          "text": "Clear impact: Bitcoin fell up to 4.6% (after 4.2 days). Still in the predicted direction after 4.5 days (-2.7%)."
         },
         "h1": {
           "price": 65515.52,
@@ -17954,17 +17924,17 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 65845.01,
+          "start_price": 65494.33,
           "start_time": "2026-11-14T17:55:35.537305+00:00",
           "threshold": 0.89,
           "window_hours": 15.2,
-          "peak": -4.91,
-          "peak_hours": 8.1,
-          "held_hours": 12.0,
+          "peak": -4.46,
+          "peak_hours": 7.1,
+          "held_hours": 11.0,
           "checked_until": 15.1,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.9% or more and held it for 2+ hours, after 3 hours (biggest move -4.9%)",
+          "text": "moved -0.9% or more and held it for 2+ hours, after 2 hours (biggest move -4.5%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -18152,9 +18122,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -2.19,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 100.3,
+          "move": -1.77,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 101.0,
           "verdict": "right"
         },
         "checks": {
@@ -18164,16 +18134,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "wrong",
-        "effect_reason": "moved +0.8% or more the OTHER way for 2+ hours, after 19 hours",
+        "effect": "no_price",
+        "effect_reason": "no price found for the time MINT made the prediction",
         "impact": {
-          "peak": -2.69,
-          "peak_hours": 98.2,
+          "peak": -2.17,
+          "peak_hours": 90.2,
           "faded_hours": null,
-          "against": 2.05,
-          "against_hours": 23.2,
-          "until_hours": 100.3,
-          "text": "Clear impact: Gold fell up to 2.7% (after 4.1 days). Still in the predicted direction after 4.2 days (-2.2%)."
+          "against": 2.52,
+          "against_hours": 22.2,
+          "until_hours": 101.0,
+          "text": "Clear impact: Gold fell up to 2.2% (after 3.8 days). Still in the predicted direction after 4.2 days (-1.8%)."
         },
         "h1": {
           "price": 3800.26,
@@ -18212,19 +18182,9 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 3806.41,
-          "start_time": "2026-11-15T00:55:39.313798+00:00",
-          "threshold": 0.85,
-          "window_hours": 54.0,
-          "peak": -0.17,
-          "peak_hours": 1.1,
-          "held_hours": 0.0,
-          "checked_until": 53.1,
-          "verdict": "miss",
-          "final": true,
-          "text": "moved +0.8% or more the OTHER way for 2+ hours, after 19 hours",
-          "size": null,
-          "opposite": "hit"
+          "verdict": "no_price",
+          "final": false,
+          "text": "no price found for the time MINT made the prediction"
         },
         "old_effect": "wrong",
         "h84": {
@@ -18405,21 +18365,21 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": -2.02,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 99.1,
+          "move": -1.59,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 99.8,
           "verdict": "right"
         },
-        "effect": "wrong",
-        "effect_reason": "moved +0.7% or more the OTHER way for 2+ hours, after 15 hours",
+        "effect": "no_price",
+        "effect_reason": "no price found for the time MINT made the prediction",
         "impact": {
-          "peak": -2.51,
-          "peak_hours": 96.9,
+          "peak": -1.99,
+          "peak_hours": 88.9,
           "faded_hours": null,
-          "against": 2.24,
-          "against_hours": 21.9,
-          "until_hours": 99.1,
-          "text": "Clear impact: Gold fell up to 2.5% (after 4.0 days). Still in the predicted direction after 4.1 days (-2.0%)."
+          "against": 2.71,
+          "against_hours": 20.9,
+          "until_hours": 99.8,
+          "text": "Clear impact: Gold fell up to 2.0% (after 3.7 days). Still in the predicted direction after 4.2 days (-1.6%)."
         },
         "checks": {
           "done": 7,
@@ -18465,19 +18425,9 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 3800.0,
-          "start_time": "2026-11-15T02:05:40.305863+00:00",
-          "threshold": 0.71,
-          "window_hours": 37.9,
-          "peak": 0.44,
-          "peak_hours": 4.9,
-          "held_hours": 0.0,
-          "checked_until": 36.9,
-          "verdict": "miss",
-          "final": true,
-          "text": "moved +0.7% or more the OTHER way for 2+ hours, after 15 hours",
-          "size": null,
-          "opposite": "hit"
+          "verdict": "no_price",
+          "final": false,
+          "text": "no price found for the time MINT made the prediction"
         },
         "old_effect": "wrong",
         "h84": {
@@ -18606,9 +18556,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.2,
         "now": {
-          "move": -3.08,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 87.1,
+          "move": -3.31,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 88.0,
           "verdict": "right"
         },
         "checks": {
@@ -18618,16 +18568,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 1.8 days (biggest move -2.6%)",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 2.2 days (biggest -1.6%)",
         "impact": {
-          "peak": -5.14,
-          "peak_hours": 81.0,
+          "peak": -5.16,
+          "peak_hours": 80.0,
           "faded_hours": null,
-          "against": -0.37,
-          "against_hours": 10.0,
-          "until_hours": 87.1,
-          "text": "Clear impact: Bitcoin fell up to 5.1% (after 3.4 days). Still in the predicted direction after 3.6 days (-3.1%)."
+          "against": -0.36,
+          "against_hours": 9.0,
+          "until_hours": 88.0,
+          "text": "Clear impact: Bitcoin fell up to 5.2% (after 3.3 days). Still in the predicted direction after 3.7 days (-3.3%)."
         },
         "h1": {
           "price": 64764.0,
@@ -18660,19 +18610,19 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 65425.22,
+          "start_price": 64720.93,
           "start_time": "2026-11-15T14:10:51.196402+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -2.65,
-          "peak_hours": 53.8,
-          "held_hours": 4.0,
+          "peak": -1.62,
+          "peak_hours": 49.8,
+          "held_hours": 0.0,
           "checked_until": 53.8,
-          "verdict": "hit",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 1.8 days (biggest move -2.6%)",
-          "size": "inside the predicted range",
-          "opposite": "miss"
+          "text": "no clear move either way within 2.2 days (biggest -1.6%)",
+          "size": null,
+          "opposite": "no_clear_move"
         },
         "old_effect": "right",
         "d2": {
@@ -18880,9 +18830,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -2.2,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 69.2,
+          "move": -2.44,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 70.1,
           "verdict": "flat"
         },
         "checks": {
@@ -18892,16 +18842,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "right",
-        "effect_reason": "moved -1.4% or more and held it for 2+ hours, after 33 hours (biggest move -1.9%)",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 1.7 days (biggest -1.1%)",
         "impact": {
-          "peak": -4.28,
-          "peak_hours": 63.0,
+          "peak": -4.3,
+          "peak_hours": 62.0,
           "faded_hours": null,
-          "against": 0.5,
+          "against": 0.46,
           "against_hours": 14.0,
-          "until_hours": 69.2,
-          "text": "Clear impact: Bitcoin fell up to 4.3% (after 2.6 days). Still in the predicted direction after 2.9 days (-2.2%)."
+          "until_hours": 70.0,
+          "text": "Clear impact: Bitcoin fell up to 4.3% (after 2.6 days). Still in the predicted direction after 2.9 days (-2.5%)."
         },
         "h1": {
           "price": 64538.48,
@@ -18928,19 +18878,19 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 64956.59,
+          "start_price": 64401.17,
           "start_time": "2026-11-16T08:01:31.102877+00:00",
           "threshold": 1.43,
           "window_hours": 40.6,
-          "peak": -1.94,
-          "peak_hours": 36.0,
-          "held_hours": 4.0,
+          "peak": -1.14,
+          "peak_hours": 32.0,
+          "held_hours": 0.0,
           "checked_until": 40.0,
-          "verdict": "hit",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "moved -1.4% or more and held it for 2+ hours, after 33 hours (biggest move -1.9%)",
-          "size": "inside the predicted range",
-          "opposite": "miss"
+          "text": "no clear move either way within 1.7 days (biggest -1.1%)",
+          "size": null,
+          "opposite": "no_clear_move"
         },
         "old_effect": "right",
         "h36": {
@@ -19356,9 +19306,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -2.86,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 109.0,
+          "move": -2.44,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 109.7,
           "verdict": "right"
         },
         "checks": {
@@ -19369,15 +19319,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 1.6 days (biggest move -3.1%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 1.5 days (biggest move -3.4%)",
         "impact": {
-          "peak": -3.35,
-          "peak_hours": 106.8,
+          "peak": -2.83,
+          "peak_hours": 98.8,
           "faded_hours": null,
-          "against": 1.36,
-          "against_hours": 31.8,
-          "until_hours": 109.0,
-          "text": "Clear impact: Gold fell up to 3.3% (after 4.5 days). Still in the predicted direction after 4.5 days (-2.9%)."
+          "against": 1.83,
+          "against_hours": 30.8,
+          "until_hours": 109.7,
+          "text": "Clear impact: Gold fell up to 2.8% (after 4.1 days). Still in the predicted direction after 4.6 days (-2.4%)."
         },
         "d2": {
           "price": 3851.19,
@@ -19386,17 +19336,17 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3857.43,
+          "start_price": 3877.4,
           "start_time": "2026-11-16T10:55:39.732842+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -3.12,
-          "peak_hours": 50.1,
-          "held_hours": 15.0,
+          "peak": -3.41,
+          "peak_hours": 49.1,
+          "held_hours": 16.0,
           "checked_until": 53.1,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 1.6 days (biggest move -3.1%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 1.5 days (biggest move -3.4%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -19588,9 +19538,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -2.61,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 88.7,
+          "move": -2.19,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 89.4,
           "verdict": "right"
         },
         "checks": {
@@ -19600,16 +19550,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 33 hours (biggest -0.6%)",
+        "effect": "partial",
+        "effect_reason": "the right way (up to -0.7%), but it did not stay past -0.7% for 2 hours",
         "impact": {
-          "peak": -3.1,
-          "peak_hours": 86.5,
+          "peak": -2.58,
+          "peak_hours": 78.5,
           "faded_hours": null,
-          "against": 1.62,
-          "against_hours": 11.5,
-          "until_hours": 88.7,
-          "text": "Clear impact: Gold fell up to 3.1% (after 3.6 days). Still in the predicted direction after 3.7 days (-2.6%)."
+          "against": 2.09,
+          "against_hours": 10.5,
+          "until_hours": 89.4,
+          "text": "Clear impact: Gold fell up to 2.6% (after 3.3 days). Still in the predicted direction after 3.7 days (-2.2%)."
         },
         "d1": {
           "price": 3854.88,
@@ -19624,18 +19574,18 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 3857.43,
+          "start_price": 3877.4,
           "start_time": "2026-11-16T10:55:39.732842+00:00",
           "threshold": 0.67,
           "window_hours": 33.2,
-          "peak": -0.55,
-          "peak_hours": 33.1,
-          "held_hours": 0.0,
+          "peak": -0.71,
+          "peak_hours": 32.1,
+          "held_hours": 1.0,
           "checked_until": 33.1,
-          "verdict": "no_clear_move",
+          "verdict": "partial",
           "final": true,
-          "text": "no clear move either way within 33 hours (biggest -0.6%)",
-          "size": null,
+          "text": "the right way (up to -0.7%), but it did not stay past -0.7% for 2 hours",
+          "size": "smaller than predicted",
           "opposite": "no_clear_move"
         },
         "old_effect": "wrong",
@@ -19887,9 +19837,9 @@
           "verdict": "right"
         },
         "now": {
-          "move": -3.92,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 75.8,
+          "move": -3.5,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 76.4,
           "verdict": "right"
         },
         "checks": {
@@ -19900,15 +19850,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 1.6 days (biggest move -3.1%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 1.5 days (biggest move -3.4%)",
         "impact": {
-          "peak": -4.4,
-          "peak_hours": 73.6,
+          "peak": -3.89,
+          "peak_hours": 65.6,
           "faded_hours": null,
-          "against": -0.21,
-          "against_hours": 28.6,
-          "until_hours": 75.8,
-          "text": "Clear impact: Gold fell up to 4.4% (after 3.1 days). Still in the predicted direction after 3.2 days (-3.9%)."
+          "against": 0.21,
+          "against_hours": 27.6,
+          "until_hours": 76.4,
+          "text": "Clear impact: Gold fell up to 3.9% (after 2.7 days). Still in the predicted direction after 3.2 days (-3.5%)."
         },
         "h10": {
           "price": 3860.15,
@@ -19923,17 +19873,17 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 3857.43,
+          "start_price": 3877.4,
           "start_time": "2026-11-16T10:55:39.732842+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -3.12,
-          "peak_hours": 50.1,
-          "held_hours": 15.0,
+          "peak": -3.41,
+          "peak_hours": 49.1,
+          "held_hours": 16.0,
           "checked_until": 53.1,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 1.6 days (biggest move -3.1%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 1.5 days (biggest move -3.4%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -20112,9 +20062,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -1.0,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 63.6,
+          "move": -1.24,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 64.5,
           "verdict": "flat"
         },
         "checks": {
@@ -20125,15 +20075,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 2.1 days (biggest move -2.3%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 26 hours (biggest move -3.7%)",
         "impact": {
-          "peak": -3.11,
-          "peak_hours": 57.4,
+          "peak": -3.12,
+          "peak_hours": 56.4,
           "faded_hours": null,
-          "against": 1.73,
+          "against": 1.69,
           "against_hours": 8.4,
-          "until_hours": 63.6,
-          "text": "Clear impact: Bitcoin fell up to 3.1% (after 2.4 days). Still in the predicted direction after 2.6 days (-1.0%)."
+          "until_hours": 64.4,
+          "text": "Clear impact: Bitcoin fell up to 3.1% (after 2.4 days). Still in the predicted direction after 2.7 days (-1.3%)."
         },
         "h1": {
           "price": 64130.56,
@@ -20154,18 +20104,18 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 64130.56,
+          "start_price": 65099.3,
           "start_time": "2026-11-16T13:41:00.344681+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -2.3,
-          "peak_hours": 51.3,
-          "held_hours": 2.0,
+          "peak": -3.75,
+          "peak_hours": 53.3,
+          "held_hours": 7.0,
           "checked_until": 53.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 2.1 days (biggest move -2.3%)",
-          "size": "smaller than predicted",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 26 hours (biggest move -3.7%)",
+          "size": "inside the predicted range",
           "opposite": "miss"
         },
         "d1": {
@@ -20397,9 +20347,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": -1.24,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 61.4,
+          "move": -1.48,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 62.3,
           "verdict": "flat"
         },
         "checks": {
@@ -20410,15 +20360,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 2 days (biggest move -3.4%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 24 hours (biggest move -4.2%)",
         "impact": {
-          "peak": -3.34,
-          "peak_hours": 55.3,
+          "peak": -3.36,
+          "peak_hours": 54.3,
           "faded_hours": null,
-          "against": 1.48,
+          "against": 1.44,
           "against_hours": 6.3,
-          "until_hours": 61.4,
-          "text": "Clear impact: Bitcoin fell up to 3.3% (after 2.3 days). Still in the predicted direction after 2.6 days (-1.2%)."
+          "until_hours": 62.3,
+          "text": "Clear impact: Bitcoin fell up to 3.4% (after 2.3 days). Still in the predicted direction after 2.6 days (-1.5%)."
         },
         "h1": {
           "price": 64562.38,
@@ -20439,17 +20389,17 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 64435.51,
+          "start_price": 64867.82,
           "start_time": "2026-11-16T16:05:41.485662+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -3.36,
+          "peak": -4.16,
           "peak_hours": 53.9,
-          "held_hours": 6.0,
+          "held_hours": 8.0,
           "checked_until": 53.9,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 2 days (biggest move -3.4%)",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 24 hours (biggest move -4.2%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -20666,9 +20616,9 @@
           "verdict": "right"
         },
         "now": {
-          "move": -2.48,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 62.6,
+          "move": -2.71,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 63.5,
           "verdict": "right"
         },
         "checks": {
@@ -20679,15 +20629,15 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 2 days (biggest move -3.4%)",
+        "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 24 hours (biggest move -4.2%)",
         "impact": {
-          "peak": -4.55,
-          "peak_hours": 56.5,
+          "peak": -4.56,
+          "peak_hours": 55.5,
           "faded_hours": null,
-          "against": 0.22,
+          "against": 0.18,
           "against_hours": 7.5,
-          "until_hours": 62.6,
-          "text": "Clear impact: Bitcoin fell up to 4.5% (after 2.4 days). Still in the predicted direction after 2.6 days (-2.5%)."
+          "until_hours": 63.5,
+          "text": "Clear impact: Bitcoin fell up to 4.6% (after 2.3 days). Still in the predicted direction after 2.6 days (-2.7%)."
         },
         "h5": {
           "price": 64862.88,
@@ -20702,17 +20652,17 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 64435.51,
+          "start_price": 64867.82,
           "start_time": "2026-11-16T16:10:56.405781+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": -3.36,
+          "peak": -4.16,
           "peak_hours": 53.8,
-          "held_hours": 6.0,
+          "held_hours": 8.0,
           "checked_until": 53.8,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.6% or more and held it for 2+ hours, after 2 days (biggest move -3.4%)",
+          "text": "moved -1.6% or more and held it for 2+ hours, after 24 hours (biggest move -4.2%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -20943,21 +20893,21 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -3.11,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 60.1,
+          "move": -2.69,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 60.8,
           "verdict": "right"
         },
         "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 15 hours (biggest -0.3%)",
+        "effect_reason": "no clear move either way within 15 hours (biggest -0.1%)",
         "impact": {
-          "peak": -3.6,
-          "peak_hours": 58.0,
+          "peak": -3.09,
+          "peak_hours": 50.0,
           "faded_hours": null,
-          "against": 0.62,
-          "against_hours": 13.0,
-          "until_hours": 60.1,
-          "text": "Clear impact: Gold fell up to 3.6% (after 2.4 days). Still in the predicted direction after 2.5 days (-3.1%)."
+          "against": 1.05,
+          "against_hours": 12.0,
+          "until_hours": 60.8,
+          "text": "Clear impact: Gold fell up to 3.1% (after 2.1 days). Still in the predicted direction after 2.5 days (-2.7%)."
         },
         "checks": {
           "done": 6,
@@ -20985,17 +20935,17 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 3849.49,
+          "start_price": 3859.0,
           "start_time": "2026-11-16T17:06:01.746026+00:00",
           "threshold": 0.46,
           "window_hours": 15.2,
-          "peak": -0.27,
-          "peak_hours": 7.9,
+          "peak": -0.11,
+          "peak_hours": 2.9,
           "held_hours": 0.0,
           "checked_until": 14.9,
           "verdict": "no_clear_move",
           "final": true,
-          "text": "no clear move either way within 15 hours (biggest -0.3%)",
+          "text": "no clear move either way within 15 hours (biggest -0.1%)",
           "size": null,
           "opposite": "partial"
         },
@@ -21181,9 +21131,9 @@
           "verdict": "flat"
         },
         "now": {
-          "move": -2.69,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 55.0,
+          "move": -2.92,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 55.9,
           "verdict": "wrong"
         },
         "checks": {
@@ -21196,13 +21146,13 @@
         "effect": "wrong",
         "effect_reason": "moved -1.6% or more the OTHER way for 2+ hours, after 1.6 days",
         "impact": {
-          "peak": -0.02,
-          "peak_hours": 0.8,
-          "faded_hours": 1.8,
-          "against": -4.75,
-          "against_hours": 48.8,
-          "until_hours": 55.0,
-          "text": "Never moved the predicted way. It fell up to 4.8% (after 2.0 days)."
+          "peak": -0.32,
+          "peak_hours": 14.8,
+          "faded_hours": 15.8,
+          "against": -4.77,
+          "against_hours": 47.8,
+          "until_hours": 55.8,
+          "text": "Never moved the predicted way. It fell up to 4.8% (after 48 h)."
         },
         "h5": {
           "price": 64622.53,
@@ -21217,14 +21167,14 @@
           "verdict": "wrong"
         },
         "result": {
-          "start_price": 64583.29,
+          "start_price": 64693.19,
           "start_time": "2026-11-17T00:45:50.213943+00:00",
           "threshold": 1.64,
           "window_hours": 54.0,
-          "peak": 0.77,
-          "peak_hours": 13.2,
+          "peak": 0.59,
+          "peak_hours": 12.2,
           "held_hours": 0.0,
-          "checked_until": 52.4,
+          "checked_until": 53.2,
           "verdict": "miss",
           "final": true,
           "text": "moved -1.6% or more the OTHER way for 2+ hours, after 1.6 days",
@@ -21678,9 +21628,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": -1.59,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 51.9,
+          "move": -1.82,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 52.8,
           "verdict": "flat"
         },
         "checks": {
@@ -21690,16 +21640,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 11 hours (biggest -0.8%)",
+        "effect": "partial",
+        "effect_reason": "the right way (up to -1.0%), but it did not stay past -0.9% for 2 hours",
         "impact": {
-          "peak": -3.68,
-          "peak_hours": 45.8,
+          "peak": -3.7,
+          "peak_hours": 44.8,
           "faded_hours": null,
           "against": 0.81,
-          "against_hours": 12.8,
-          "until_hours": 51.9,
-          "text": "Clear impact: Bitcoin fell up to 3.7% (after 46 h). Still in the predicted direction after 2.2 days (-1.6%)."
+          "against_hours": 11.8,
+          "until_hours": 52.8,
+          "text": "Clear impact: Bitcoin fell up to 3.7% (after 45 h). Still in the predicted direction after 2.2 days (-1.8%)."
         },
         "h1": {
           "price": 64699.09,
@@ -21720,18 +21670,18 @@
           "verdict": "flat"
         },
         "result": {
-          "start_price": 64583.29,
+          "start_price": 64693.19,
           "start_time": "2026-11-17T01:16:09.528767+00:00",
           "threshold": 0.89,
           "window_hours": 11.3,
-          "peak": -0.83,
-          "peak_hours": 9.7,
+          "peak": -1.02,
+          "peak_hours": 8.7,
           "held_hours": 0.0,
           "checked_until": 10.7,
-          "verdict": "no_clear_move",
+          "verdict": "partial",
           "final": true,
-          "text": "no clear move either way within 11 hours (biggest -0.8%)",
-          "size": null,
+          "text": "the right way (up to -1.0%), but it did not stay past -0.9% for 2 hours",
+          "size": "inside the predicted range",
           "opposite": "no_clear_move"
         },
         "d1": {
@@ -21985,9 +21935,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -2.24,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 47.5,
+          "move": -2.47,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 48.4,
           "verdict": "right"
         },
         "checks": {
@@ -21997,16 +21947,16 @@
           "total": 9
         },
         "final": false,
-        "effect": "partial",
-        "effect_reason": "the right way (up to -1.1%), but it did not stay past -0.9% for 2 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 9 hours (biggest -0.7%)",
         "impact": {
-          "peak": -4.31,
-          "peak_hours": 41.4,
+          "peak": -4.33,
+          "peak_hours": 40.4,
           "faded_hours": null,
-          "against": 0.15,
-          "against_hours": 8.4,
-          "until_hours": 47.5,
-          "text": "Clear impact: Bitcoin fell up to 4.3% (after 41 h). Still in the predicted direction after 48 h (-2.2%)."
+          "against": 0.14,
+          "against_hours": 7.4,
+          "until_hours": 48.4,
+          "text": "Clear impact: Bitcoin fell up to 4.3% (after 40 h). Still in the predicted direction after 2.0 days (-2.5%)."
         },
         "h1": {
           "price": 64271.83,
@@ -22021,19 +21971,19 @@
           "verdict": "right"
         },
         "result": {
-          "start_price": 64784.51,
+          "start_price": 64488.19,
           "start_time": "2026-11-17T05:41:00.423823+00:00",
           "threshold": 0.89,
           "window_hours": 9.0,
-          "peak": -1.14,
-          "peak_hours": 5.3,
+          "peak": -0.71,
+          "peak_hours": 4.3,
           "held_hours": 0.0,
           "checked_until": 8.3,
-          "verdict": "partial",
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "the right way (up to -1.1%), but it did not stay past -0.9% for 2 hours",
-          "size": "inside the predicted range",
-          "opposite": "no_clear_move"
+          "text": "no clear move either way within 9 hours (biggest -0.7%)",
+          "size": null,
+          "opposite": "partial"
         },
         "h10": {
           "price": 64970.95,
@@ -22258,9 +22208,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -3.53,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 65.1,
+          "move": -3.11,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 65.7,
           "verdict": "wrong"
         },
         "checks": {
@@ -22271,28 +22221,28 @@
         },
         "final": false,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 14 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 13 hours",
         "impact": {
-          "peak": 0.19,
-          "peak_hours": 17.9,
-          "faded_hours": 18.9,
-          "against": -4.01,
-          "against_hours": 62.9,
-          "until_hours": 65.1,
-          "text": "Small impact: Gold rose up to 0.2% (after 18 h). The effect lasted about 19 h, then faded - later it fell up to 4.0% (after 2.6 days)."
+          "peak": 0.62,
+          "peak_hours": 16.9,
+          "faded_hours": 21.9,
+          "against": -3.5,
+          "against_hours": 54.9,
+          "until_hours": 65.7,
+          "text": "Clear impact: Gold rose up to 0.6% (after 17 h). The effect lasted about 22 h, then faded - later it fell up to 3.5% (after 2.3 days)."
         },
         "result": {
-          "start_price": 3841.93,
+          "start_price": 3870.8,
           "start_time": "2026-11-17T10:55:45.304753+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.57,
-          "peak_hours": 5.1,
+          "peak": 0.2,
+          "peak_hours": 4.1,
           "held_hours": 0.0,
-          "checked_until": 42.2,
+          "checked_until": 42.9,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 14 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 13 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -22519,21 +22469,21 @@
           "verdict": "flat"
         },
         "now": {
-          "move": -3.35,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 63.6,
+          "move": -2.93,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 64.3,
           "verdict": "right"
         },
-        "effect": "partial",
-        "effect_reason": "the right way (up to -1.1%), but it did not stay past -0.5% for 2 hours",
+        "effect": "right",
+        "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 8 hours (biggest move -1.8%)",
         "impact": {
-          "peak": -3.83,
-          "peak_hours": 61.5,
+          "peak": -3.32,
+          "peak_hours": 53.5,
           "faded_hours": null,
-          "against": 0.38,
-          "against_hours": 16.5,
-          "until_hours": 63.6,
-          "text": "Clear impact: Gold fell up to 3.8% (after 2.6 days). Still in the predicted direction after 2.6 days (-3.3%)."
+          "against": 0.8,
+          "against_hours": 15.5,
+          "until_hours": 64.3,
+          "text": "Clear impact: Gold fell up to 3.3% (after 2.2 days). Still in the predicted direction after 2.7 days (-2.9%)."
         },
         "checks": {
           "done": 6,
@@ -22543,19 +22493,19 @@
         },
         "final": false,
         "result": {
-          "start_price": 3841.93,
+          "start_price": 3870.8,
           "start_time": "2026-11-17T10:55:45.304753+00:00",
           "threshold": 0.46,
           "window_hours": 15.2,
-          "peak": -1.08,
+          "peak": -1.84,
           "peak_hours": 15.1,
-          "held_hours": 1.0,
+          "held_hours": 7.0,
           "checked_until": 15.1,
-          "verdict": "partial",
+          "verdict": "hit",
           "final": true,
-          "text": "the right way (up to -1.1%), but it did not stay past -0.5% for 2 hours",
-          "size": "inside the predicted range",
-          "opposite": "partial"
+          "text": "moved -0.5% or more and held it for 2+ hours, after 8 hours (biggest move -1.8%)",
+          "size": "bigger than predicted",
+          "opposite": "miss"
         },
         "d1": {
           "price": 3833.4,
@@ -22739,9 +22689,9 @@
           "verdict": "right"
         },
         "now": {
-          "move": -3.65,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 62.1,
+          "move": -3.23,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 62.8,
           "verdict": "right"
         },
         "checks": {
@@ -22752,28 +22702,28 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 14 hours (biggest move -3.6%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 13 hours (biggest move -3.8%)",
         "impact": {
-          "peak": -4.14,
-          "peak_hours": 60.0,
+          "peak": -3.63,
+          "peak_hours": 52.0,
           "faded_hours": null,
-          "against": 0.06,
-          "against_hours": 15.0,
-          "until_hours": 62.1,
-          "text": "Clear impact: Gold fell up to 4.1% (after 2.5 days). Still in the predicted direction after 2.6 days (-3.7%)."
+          "against": 0.49,
+          "against_hours": 14.0,
+          "until_hours": 62.8,
+          "text": "Clear impact: Gold fell up to 3.6% (after 2.2 days). Still in the predicted direction after 2.6 days (-3.2%)."
         },
         "result": {
-          "start_price": 3841.93,
+          "start_price": 3870.8,
           "start_time": "2026-11-17T10:55:45.304753+00:00",
           "threshold": 0.75,
           "window_hours": 42.6,
-          "peak": -3.57,
-          "peak_hours": 40.1,
-          "held_hours": 28.2,
-          "checked_until": 42.2,
+          "peak": -3.77,
+          "peak_hours": 32.1,
+          "held_hours": 29.0,
+          "checked_until": 42.1,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 14 hours (biggest move -3.6%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 13 hours (biggest move -3.8%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -23027,9 +22977,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -3.08,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 57.7,
+          "move": -2.66,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 58.4,
           "verdict": "right"
         },
         "checks": {
@@ -23040,28 +22990,28 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 14 hours (biggest move -3.6%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 13 hours (biggest move -3.8%)",
         "impact": {
-          "peak": -3.57,
-          "peak_hours": 55.5,
+          "peak": -3.06,
+          "peak_hours": 47.5,
           "faded_hours": null,
-          "against": 0.65,
-          "against_hours": 10.5,
-          "until_hours": 57.7,
-          "text": "Clear impact: Gold fell up to 3.6% (after 2.3 days). Still in the predicted direction after 2.4 days (-3.1%)."
+          "against": 1.08,
+          "against_hours": 9.5,
+          "until_hours": 58.4,
+          "text": "Clear impact: Gold fell up to 3.1% (after 48 h). Still in the predicted direction after 2.4 days (-2.7%)."
         },
         "result": {
-          "start_price": 3841.93,
+          "start_price": 3870.8,
           "start_time": "2026-11-17T10:55:45.304753+00:00",
           "threshold": 0.78,
           "window_hours": 45.7,
-          "peak": -3.57,
-          "peak_hours": 40.1,
-          "held_hours": 28.2,
-          "checked_until": 42.2,
+          "peak": -3.77,
+          "peak_hours": 32.1,
+          "held_hours": 29.9,
+          "checked_until": 42.9,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 14 hours (biggest move -3.6%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 13 hours (biggest move -3.8%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -23273,9 +23223,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -3.5,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 44.3,
+          "move": -3.08,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 45.0,
           "verdict": "wrong"
         },
         "checks": {
@@ -23286,28 +23236,28 @@
         },
         "final": false,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 14 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 13 hours",
         "impact": {
-          "peak": 0.14,
-          "peak_hours": 7.1,
-          "faded_hours": 8.1,
-          "against": -3.98,
-          "against_hours": 42.1,
-          "until_hours": 44.3,
-          "text": "Small impact: Gold rose up to 0.1% (after 7 h). The effect lasted about 8 h, then faded - later it fell up to 4.0% (after 42 h)."
+          "peak": 0.52,
+          "peak_hours": 6.1,
+          "faded_hours": 9.1,
+          "against": -3.47,
+          "against_hours": 34.1,
+          "until_hours": 45.0,
+          "text": "Clear impact: Gold rose up to 0.5% (after 6 h). The effect lasted about 9 h, then faded - later it fell up to 3.5% (after 34 h)."
         },
         "result": {
-          "start_price": 3841.93,
+          "start_price": 3870.8,
           "start_time": "2026-11-17T10:55:45.304753+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.57,
-          "peak_hours": 5.1,
+          "peak": 0.2,
+          "peak_hours": 4.1,
           "held_hours": 0.0,
-          "checked_until": 42.2,
+          "checked_until": 42.9,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 14 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 13 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -23513,28 +23463,28 @@
         },
         "final": true,
         "effect": "no_clear_move",
-        "effect_reason": "no clear move either way within 6 hours (biggest -0.4%)",
+        "effect_reason": "no clear move either way within 6 hours (biggest -0.3%)",
         "impact": {
-          "peak": -6.87,
-          "peak_hours": 166.4,
+          "peak": -6.58,
+          "peak_hours": 165.4,
           "faded_hours": null,
-          "against": 0.0,
+          "against": 0.37,
           "against_hours": 0.4,
           "until_hours": 167.4,
-          "text": "Clear impact: Gold fell up to 6.9% (after 6.9 days). Still in the predicted direction after 7.0 days (-6.6%)."
+          "text": "Clear impact: Gold fell up to 6.6% (after 6.9 days). Still in the predicted direction after 7.0 days (-6.5%)."
         },
         "result": {
-          "start_price": 3856.9,
+          "start_price": 3863.9,
           "start_time": "2026-11-17T12:05:43.973510+00:00",
           "threshold": 0.46,
           "window_hours": 5.5,
-          "peak": -0.43,
-          "peak_hours": 1.9,
+          "peak": -0.27,
+          "peak_hours": 0.9,
           "held_hours": 0.0,
           "checked_until": 4.9,
           "verdict": "no_clear_move",
           "final": true,
-          "text": "no clear move either way within 6 hours (biggest -0.4%)",
+          "text": "no clear move either way within 6 hours (biggest -0.3%)",
           "size": null,
           "opposite": "no_clear_move"
         },
@@ -23673,9 +23623,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
         "now": {
-          "move": -2.86,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 39.6,
+          "move": -2.44,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 40.3,
           "verdict": "right"
         },
         "checks": {
@@ -23688,16 +23638,16 @@
         "effect": "no_clear_move",
         "effect_reason": "no clear move either way within 4 hours (biggest +0.0%)",
         "impact": {
-          "peak": -3.35,
-          "peak_hours": 37.4,
+          "peak": -2.84,
+          "peak_hours": 29.4,
           "faded_hours": null,
-          "against": 0.79,
-          "against_hours": 2.4,
-          "until_hours": 39.6,
-          "text": "Clear impact: Gold fell up to 3.4% (after 37 h). Still in the predicted direction after 40 h (-2.9%)."
+          "against": 1.18,
+          "against_hours": 1.4,
+          "until_hours": 40.3,
+          "text": "Clear impact: Gold fell up to 2.8% (after 29 h). Still in the predicted direction after 40 h (-2.4%)."
         },
         "result": {
-          "start_price": 3840.44,
+          "start_price": 3861.8,
           "start_time": "2026-11-17T13:40:58.204702+00:00",
           "threshold": 0.47,
           "window_hours": 4,
@@ -23709,7 +23659,7 @@
           "final": true,
           "text": "no clear move either way within 4 hours (biggest +0.0%)",
           "size": null,
-          "opposite": "partial"
+          "opposite": "no_clear_move"
         },
         "h1": {
           "price": 3851.39,
@@ -23919,9 +23869,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -3.04,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 39.7,
+          "move": -2.62,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 40.4,
           "verdict": "right"
         },
         "checks": {
@@ -23932,28 +23882,28 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 10 hours (biggest move -3.8%)",
+        "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 9 hours (biggest move -4.0%)",
         "impact": {
-          "peak": -3.53,
-          "peak_hours": 37.5,
+          "peak": -3.01,
+          "peak_hours": 29.5,
           "faded_hours": null,
-          "against": 0.61,
-          "against_hours": 2.5,
-          "until_hours": 39.7,
-          "text": "Clear impact: Gold fell up to 3.5% (after 38 h). Still in the predicted direction after 40 h (-3.0%)."
+          "against": 1.0,
+          "against_hours": 1.5,
+          "until_hours": 40.4,
+          "text": "Clear impact: Gold fell up to 3.0% (after 30 h). Still in the predicted direction after 40 h (-2.6%)."
         },
         "result": {
-          "start_price": 3850.16,
+          "start_price": 3878.7,
           "start_time": "2026-11-17T15:10:59.653205+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": -3.77,
-          "peak_hours": 35.8,
-          "held_hours": 28.2,
-          "checked_until": 38.0,
+          "peak": -3.97,
+          "peak_hours": 27.8,
+          "held_hours": 29.9,
+          "checked_until": 38.7,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.8% or more and held it for 2+ hours, after 10 hours (biggest move -3.8%)",
+          "text": "moved -0.8% or more and held it for 2+ hours, after 9 hours (biggest move -4.0%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -24329,9 +24279,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.6,
         "now": {
-          "move": -3.45,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 36.8,
+          "move": -3.03,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 37.5,
           "verdict": "right"
         },
         "checks": {
@@ -24342,28 +24292,28 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.6% or more and held it for 2+ hours, after 8 hours (biggest move -3.5%)",
+        "effect_reason": "moved -0.6% or more and held it for 2+ hours, after 7 hours (biggest move -3.7%)",
         "impact": {
-          "peak": -3.93,
-          "peak_hours": 34.6,
+          "peak": -3.42,
+          "peak_hours": 26.6,
           "faded_hours": null,
-          "against": -0.13,
+          "against": 0.26,
           "against_hours": 0.6,
-          "until_hours": 36.8,
-          "text": "Clear impact: Gold fell up to 3.9% (after 35 h). Still in the predicted direction after 37 h (-3.4%)."
+          "until_hours": 37.5,
+          "text": "Clear impact: Gold fell up to 3.4% (after 27 h). Still in the predicted direction after 38 h (-3.0%)."
         },
         "result": {
-          "start_price": 3851.62,
+          "start_price": 3866.4,
           "start_time": "2026-11-17T17:01:34.317885+00:00",
           "threshold": 0.62,
           "window_hours": 28.6,
-          "peak": -3.53,
-          "peak_hours": 27.0,
-          "held_hours": 20.0,
+          "peak": -3.66,
+          "peak_hours": 26.0,
+          "held_hours": 21.0,
           "checked_until": 28.0,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.6% or more and held it for 2+ hours, after 8 hours (biggest move -3.5%)",
+          "text": "moved -0.6% or more and held it for 2+ hours, after 7 hours (biggest move -3.7%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -24572,9 +24522,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.5,
         "now": {
-          "move": -3.11,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 33.9,
+          "move": -2.69,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 34.6,
           "verdict": "wrong"
         },
         "checks": {
@@ -24585,28 +24535,28 @@
         },
         "final": false,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 4 hours",
         "impact": {
-          "peak": 0.02,
-          "peak_hours": 3.7,
+          "peak": 0.23,
+          "peak_hours": 1.7,
           "faded_hours": 4.7,
-          "against": -3.6,
-          "against_hours": 31.7,
-          "until_hours": 33.9,
-          "text": "Small impact: Gold rose up to 0.0% (after 4 h). The effect lasted about 5 h, then faded - later it fell up to 3.6% (after 32 h)."
+          "against": -3.08,
+          "against_hours": 23.7,
+          "until_hours": 34.6,
+          "text": "Clear impact: Gold rose up to 0.2% (after 2 h). The effect lasted about 5 h, then faded - later it fell up to 3.1% (after 24 h)."
         },
         "result": {
-          "start_price": 3836.15,
+          "start_price": 3850.2,
           "start_time": "2026-11-17T19:45:56.541597+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.2,
-          "peak_hours": 3.2,
+          "peak": 0.04,
+          "peak_hours": 1.2,
           "held_hours": 0.0,
-          "checked_until": 33.4,
+          "checked_until": 34.1,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 4 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -24852,9 +24802,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -3.12,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 34.1,
+          "move": -2.7,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 34.7,
           "verdict": "wrong"
         },
         "checks": {
@@ -24865,28 +24815,28 @@
         },
         "final": false,
         "effect": "wrong",
-        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+        "effect_reason": "moved -0.8% or more the OTHER way for 2+ hours, after 4 hours",
         "impact": {
-          "peak": 0.01,
-          "peak_hours": 3.9,
+          "peak": 0.22,
+          "peak_hours": 1.9,
           "faded_hours": 4.9,
-          "against": -3.61,
-          "against_hours": 31.9,
-          "until_hours": 34.1,
-          "text": "Small impact: Gold rose up to 0.0% (after 4 h). The effect lasted about 5 h, then faded - later it fell up to 3.6% (after 32 h)."
+          "against": -3.09,
+          "against_hours": 23.9,
+          "until_hours": 34.7,
+          "text": "Clear impact: Gold rose up to 0.2% (after 2 h). The effect lasted about 5 h, then faded - later it fell up to 3.1% (after 24 h)."
         },
         "result": {
-          "start_price": 3836.15,
+          "start_price": 3850.2,
           "start_time": "2026-11-17T20:20:55.571724+00:00",
           "threshold": 0.85,
           "window_hours": 54.0,
-          "peak": 0.2,
-          "peak_hours": 2.7,
+          "peak": 0.04,
+          "peak_hours": 0.7,
           "held_hours": 0.0,
-          "checked_until": 32.8,
+          "checked_until": 33.5,
           "verdict": "miss",
           "final": true,
-          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 6 hours",
+          "text": "moved -0.8% or more the OTHER way for 2+ hours, after 4 hours",
           "size": null,
           "opposite": "hit"
         },
@@ -25091,29 +25041,29 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": -0.96,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 25.6,
+          "move": -1.2,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 26.5,
           "verdict": "flat"
         },
         "effect": "no_clear_move",
         "effect_reason": "no clear move either way within 12 hours (biggest +0.7%)",
         "impact": {
-          "peak": 1.06,
-          "peak_hours": 4.5,
-          "faded_hours": 9.5,
-          "against": -3.06,
-          "against_hours": 19.5,
-          "until_hours": 25.6,
-          "text": "Clear impact: Bitcoin rose up to 1.1% (after 4 h). The effect lasted about 10 h, then faded - later it fell up to 3.1% (after 20 h)."
+          "peak": 1.03,
+          "peak_hours": 3.5,
+          "faded_hours": 8.5,
+          "against": -3.08,
+          "against_hours": 18.5,
+          "until_hours": 26.5,
+          "text": "Clear impact: Bitcoin rose up to 1.0% (after 4 h). The effect lasted about 8 h, then faded - later it fell up to 3.1% (after 18 h)."
         },
         "result": {
-          "start_price": 64395.7,
+          "start_price": 64356.75,
           "start_time": "2026-11-18T03:35:45.821032+00:00",
           "threshold": 0.91,
           "window_hours": 12.2,
-          "peak": 0.67,
-          "peak_hours": 4.4,
+          "peak": 0.71,
+          "peak_hours": 3.4,
           "held_hours": 0.0,
           "checked_until": 11.4,
           "verdict": "no_clear_move",
@@ -25284,9 +25234,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": -1.86,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 20.8,
+          "move": -2.09,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 21.7,
           "verdict": "right"
         },
         "checks": {
@@ -25297,28 +25247,28 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -4.1%)",
+        "effect_reason": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -3.8%)",
         "impact": {
-          "peak": -3.94,
-          "peak_hours": 14.7,
+          "peak": -3.96,
+          "peak_hours": 13.7,
           "faded_hours": null,
-          "against": -0.18,
+          "against": -0.26,
           "against_hours": 0.7,
-          "until_hours": 20.8,
-          "text": "Clear impact: Bitcoin fell up to 3.9% (after 15 h). Still in the predicted direction after 21 h (-1.9%)."
+          "until_hours": 21.7,
+          "text": "Clear impact: Bitcoin fell up to 4.0% (after 14 h). Still in the predicted direction after 22 h (-2.1%)."
         },
         "result": {
-          "start_price": 64827.57,
+          "start_price": 64609.93,
           "start_time": "2026-11-18T08:20:55.920142+00:00",
           "threshold": 1.08,
           "window_hours": 54.0,
-          "peak": -4.08,
-          "peak_hours": 14.7,
-          "held_hours": 16.2,
-          "checked_until": 20.8,
+          "peak": -3.78,
+          "peak_hours": 13.7,
+          "held_hours": 17.0,
+          "checked_until": 21.7,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -4.1%)",
+          "text": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -3.8%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -25561,9 +25511,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 1.1,
         "now": {
-          "move": -1.86,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 21.5,
+          "move": -2.09,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 22.4,
           "verdict": "right"
         },
         "checks": {
@@ -25574,28 +25524,28 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -3.8%)",
+        "effect_reason": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -3.7%)",
         "impact": {
-          "peak": -3.94,
-          "peak_hours": 15.3,
+          "peak": -3.96,
+          "peak_hours": 14.3,
           "faded_hours": null,
-          "against": 0.15,
+          "against": -0.19,
           "against_hours": 0.3,
-          "until_hours": 21.5,
-          "text": "Clear impact: Bitcoin fell up to 3.9% (after 15 h). Still in the predicted direction after 22 h (-1.9%)."
+          "until_hours": 22.3,
+          "text": "Clear impact: Bitcoin fell up to 4.0% (after 14 h). Still in the predicted direction after 22 h (-2.1%)."
         },
         "result": {
-          "start_price": 64619.33,
+          "start_price": 64565.36,
           "start_time": "2026-11-18T08:45:52.269306+00:00",
           "threshold": 1.12,
           "window_hours": 24.7,
-          "peak": -3.77,
-          "peak_hours": 14.2,
-          "held_hours": 15.2,
-          "checked_until": 20.4,
+          "peak": -3.71,
+          "peak_hours": 13.2,
+          "held_hours": 16.0,
+          "checked_until": 21.2,
           "verdict": "hit",
           "final": true,
-          "text": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -3.8%)",
+          "text": "moved -1.1% or more and held it for 2+ hours, after 5 hours (biggest move -3.7%)",
           "size": "bigger than predicted",
           "opposite": "miss"
         },
@@ -25822,9 +25772,9 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -0.98,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 20.0,
+          "move": -0.55,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 20.7,
           "verdict": "right"
         },
         "checks": {
@@ -25835,28 +25785,28 @@
         },
         "final": false,
         "effect": "right",
-        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 6 hours (biggest move -1.6%)",
+        "effect_reason": "moved -0.7% or more and held it for 2+ hours, after 8 hours (biggest move -1.1%)",
         "impact": {
-          "peak": -1.48,
-          "peak_hours": 17.9,
+          "peak": -0.95,
+          "peak_hours": 9.8,
           "faded_hours": null,
-          "against": 0.37,
-          "against_hours": 4.8,
-          "until_hours": 20.0,
-          "text": "Clear impact: Gold fell up to 1.5% (after 18 h). Still in the predicted direction after 20 h (-1.0%)."
+          "against": 0.64,
+          "against_hours": 3.9,
+          "until_hours": 20.7,
+          "text": "Clear impact: Gold fell up to 0.9% (after 10 h). Still in the predicted direction after 21 h (-0.5%)."
         },
         "result": {
-          "start_price": 3765.54,
+          "start_price": 3766.5,
           "start_time": "2026-11-18T10:35:44.567526+00:00",
           "threshold": 0.71,
           "window_hours": 90.3,
-          "peak": -1.61,
-          "peak_hours": 16.4,
-          "held_hours": 7.0,
-          "checked_until": 18.6,
+          "peak": -1.11,
+          "peak_hours": 8.4,
+          "held_hours": 2.0,
+          "checked_until": 19.3,
           "verdict": "hit",
           "final": true,
-          "text": "moved -0.7% or more and held it for 2+ hours, after 6 hours (biggest move -1.6%)",
+          "text": "moved -0.7% or more and held it for 2+ hours, after 8 hours (biggest move -1.1%)",
           "size": "inside the predicted range",
           "opposite": "miss"
         },
@@ -26076,10 +26026,10 @@
         "moved_before_mint": 0.18,
         "delay_hours": 0.8,
         "now": {
-          "move": -0.09,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 11.0,
-          "verdict": "flat"
+          "move": 0.35,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 11.7,
+          "verdict": "wrong"
         },
         "checks": {
           "done": 3,
@@ -26088,31 +26038,31 @@
           "total": 9
         },
         "final": false,
-        "effect": "partial",
-        "effect_reason": "the right way (up to -0.7%), but it did not stay past -0.5% for 2 hours",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 10 hours (biggest +0.0%)",
         "impact": {
-          "peak": -0.59,
-          "peak_hours": 8.8,
-          "faded_hours": null,
-          "against": 0.52,
-          "against_hours": 7.8,
-          "until_hours": 11.0,
-          "text": "Clear impact: Gold fell up to 0.6% (after 9 h). Still in the predicted direction after 11 h (-0.1%)."
+          "peak": -0.06,
+          "peak_hours": 0.8,
+          "faded_hours": 1.8,
+          "against": 0.74,
+          "against_hours": 6.8,
+          "until_hours": 11.7,
+          "text": "Small impact: Gold fell up to 0.1% (after 1 h). The effect lasted about 2 h, then faded - later it rose up to 0.7% (after 7 h)."
         },
         "result": {
-          "start_price": 3730.79,
+          "start_price": 3724.7,
           "start_time": "2026-11-18T18:55:42.035949+00:00",
           "threshold": 0.48,
           "window_hours": 10.4,
-          "peak": -0.69,
-          "peak_hours": 8.1,
-          "held_hours": 1.0,
-          "checked_until": 10.2,
-          "verdict": "partial",
+          "peak": 0.0,
+          "peak_hours": 0.1,
+          "held_hours": 0.0,
+          "checked_until": 10.1,
+          "verdict": "no_clear_move",
           "final": true,
-          "text": "the right way (up to -0.7%), but it did not stay past -0.5% for 2 hours",
-          "size": "inside the predicted range",
-          "opposite": "no_clear_move"
+          "text": "no clear move either way within 10 hours (biggest +0.0%)",
+          "size": null,
+          "opposite": "partial"
         },
         "h1": {
           "price": 3733.69,
@@ -26309,9 +26259,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": -0.27,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 10.1,
+          "move": 0.16,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 10.8,
           "verdict": "flat"
         },
         "checks": {
@@ -26322,28 +26272,28 @@
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "still inside the 15 hours window (biggest move so far -0.7%)",
+        "effect_reason": "still inside the 15 hours window (biggest move so far +0.1%)",
         "impact": {
-          "peak": -0.77,
-          "peak_hours": 7.9,
-          "faded_hours": null,
-          "against": 0.34,
-          "against_hours": 6.9,
-          "until_hours": 10.1,
-          "text": "Clear impact: Gold fell up to 0.8% (after 8 h). Still in the predicted direction after 10 h (-0.3%)."
+          "peak": -0.16,
+          "peak_hours": 1.9,
+          "faded_hours": 3.9,
+          "against": 0.56,
+          "against_hours": 5.9,
+          "until_hours": 10.8,
+          "text": "Clear impact: Gold fell up to 0.2% (after 2 h). The effect lasted about 4 h, then faded - later it rose up to 0.6% (after 6 h)."
         },
         "result": {
-          "start_price": 3730.79,
+          "start_price": 3724.7,
           "start_time": "2026-11-18T19:05:45.996745+00:00",
           "threshold": 0.48,
           "window_hours": 15.3,
-          "peak": -0.69,
-          "peak_hours": 7.9,
-          "held_hours": 1.0,
-          "checked_until": 10.1,
+          "peak": 0.08,
+          "peak_hours": 1.9,
+          "held_hours": 0.0,
+          "checked_until": 10.8,
           "verdict": "tracking",
           "final": false,
-          "text": "still inside the 15 hours window (biggest move so far -0.7%)",
+          "text": "still inside the 15 hours window (biggest move so far +0.1%)",
           "size": null
         },
         "h1": {
@@ -26544,10 +26494,10 @@
           "verdict": "wrong"
         },
         "now": {
-          "move": -0.09,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 10.8,
-          "verdict": "flat"
+          "move": 0.35,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 11.5,
+          "verdict": "right"
         },
         "checks": {
           "done": 3,
@@ -26557,28 +26507,28 @@
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "still inside the 2.2 days window (biggest move so far +0.8%)",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far +0.7%)",
         "impact": {
-          "peak": 0.52,
-          "peak_hours": 7.6,
-          "faded_hours": 8.6,
-          "against": -0.59,
-          "against_hours": 8.6,
-          "until_hours": 10.8,
-          "text": "Clear impact: Gold rose up to 0.5% (after 8 h). The effect lasted about 9 h, then faded."
+          "peak": 0.74,
+          "peak_hours": 6.6,
+          "faded_hours": null,
+          "against": -0.06,
+          "against_hours": 0.6,
+          "until_hours": 11.5,
+          "text": "Clear impact: Gold rose up to 0.7% (after 7 h). Still in the predicted direction after 12 h (+0.3%)."
         },
         "result": {
-          "start_price": 3715.65,
+          "start_price": 3728.0,
           "start_time": "2026-11-18T20:21:05.387821+00:00",
           "threshold": 0.88,
           "window_hours": 54.0,
-          "peak": 0.83,
-          "peak_hours": 5.6,
+          "peak": 0.71,
+          "peak_hours": 4.6,
           "held_hours": 0.0,
-          "checked_until": 8.8,
+          "checked_until": 9.5,
           "verdict": "tracking",
           "final": false,
-          "text": "still inside the 2.2 days window (biggest move so far +0.8%)",
+          "text": "still inside the 2.2 days window (biggest move so far +0.7%)",
           "size": null
         },
         "h5": {
@@ -26805,9 +26755,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.2,
         "now": {
-          "move": 1.61,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 9.5,
+          "move": 1.37,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 10.4,
           "verdict": "wrong"
         },
         "checks": {
@@ -26818,28 +26768,28 @@
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.5%)",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.1%)",
         "impact": {
-          "peak": -0.54,
-          "peak_hours": 3.3,
-          "faded_hours": 4.3,
-          "against": 1.61,
-          "against_hours": 9.5,
-          "until_hours": 9.5,
-          "text": "Small impact: Bitcoin fell up to 0.5% (after 3 h). The effect lasted about 4 h, then faded - later it rose up to 1.6% (after 10 h)."
+          "peak": -0.56,
+          "peak_hours": 2.3,
+          "faded_hours": 3.3,
+          "against": 1.59,
+          "against_hours": 8.3,
+          "until_hours": 10.3,
+          "text": "Clear impact: Bitcoin fell up to 0.6% (after 2 h). The effect lasted about 3 h, then faded - later it rose up to 1.6% (after 8 h)."
         },
         "result": {
-          "start_price": 62503.28,
+          "start_price": 62257.06,
           "start_time": "2026-11-18T20:35:44.350818+00:00",
           "threshold": 1.68,
           "window_hours": 54.0,
-          "peak": -0.52,
-          "peak_hours": 2.4,
+          "peak": -0.14,
+          "peak_hours": 1.4,
           "held_hours": 0.0,
-          "checked_until": 8.6,
+          "checked_until": 9.4,
           "verdict": "tracking",
           "final": false,
-          "text": "still inside the 2.2 days window (biggest move so far -0.5%)",
+          "text": "still inside the 2.2 days window (biggest move so far -0.1%)",
           "size": null
         },
         "h1": {
@@ -27071,10 +27021,10 @@
           "verdict": "flat"
         },
         "now": {
-          "move": 0.22,
-          "time": "2026-11-19T05:10:10+00:00",
-          "hours": 9.5,
-          "verdict": "flat"
+          "move": 0.65,
+          "time": "2026-11-19T05:51:49+00:00",
+          "hours": 10.1,
+          "verdict": "wrong"
         },
         "checks": {
           "done": 3,
@@ -27084,28 +27034,28 @@
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "still inside the 1.8 days window (biggest move so far -0.4%)",
+        "effect_reason": "still inside the 1.8 days window (biggest move so far +0.3%)",
         "impact": {
-          "peak": -0.29,
-          "peak_hours": 7.3,
-          "faded_hours": 9.5,
-          "against": 0.83,
-          "against_hours": 6.3,
-          "until_hours": 9.5,
-          "text": "Clear impact: Gold fell up to 0.3% (after 7 h). The effect lasted about 10 h, then faded."
+          "peak": 0.33,
+          "peak_hours": 1.3,
+          "faded_hours": 3.3,
+          "against": 1.05,
+          "against_hours": 5.3,
+          "until_hours": 10.1,
+          "text": "Never moved the predicted way. It rose up to 1.0% (after 5 h)."
         },
         "result": {
-          "start_price": 3718.21,
+          "start_price": 3727.8,
           "start_time": "2026-11-18T21:25:44.182029+00:00",
           "threshold": 0.8,
           "window_hours": 43.8,
-          "peak": -0.36,
-          "peak_hours": 5.6,
+          "peak": 0.32,
+          "peak_hours": 8.4,
           "held_hours": 0.0,
-          "checked_until": 7.7,
+          "checked_until": 8.4,
           "verdict": "tracking",
           "final": false,
-          "text": "still inside the 1.8 days window (biggest move so far -0.4%)",
+          "text": "still inside the 1.8 days window (biggest move so far +0.3%)",
           "size": null
         },
         "h5": {
@@ -27269,9 +27219,9 @@
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
         "now": {
-          "move": 0.6,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 4.7,
+          "move": 0.36,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 5.6,
           "verdict": "flat"
         },
         "checks": {
@@ -27282,28 +27232,28 @@
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "still inside the 5 days window (biggest move so far -0.7%)",
+        "effect_reason": "still inside the 5 days window (biggest move so far -0.9%)",
         "impact": {
-          "peak": -0.95,
-          "peak_hours": 2.6,
-          "faded_hours": 4.7,
-          "against": 0.6,
-          "against_hours": 4.7,
-          "until_hours": 4.7,
-          "text": "Clear impact: Bitcoin fell up to 0.9% (after 3 h). The effect lasted about 5 h, then faded."
+          "peak": -0.98,
+          "peak_hours": 1.6,
+          "faded_hours": 3.6,
+          "against": 0.57,
+          "against_hours": 3.6,
+          "until_hours": 5.6,
+          "text": "Clear impact: Bitcoin fell up to 1.0% (after 2 h). The effect lasted about 4 h, then faded."
         },
         "result": {
-          "start_price": 62996.68,
+          "start_price": 63114.98,
           "start_time": "2026-11-19T00:25:44.176125+00:00",
           "threshold": 0.92,
           "window_hours": 120,
-          "peak": -0.7,
-          "peak_hours": 2.6,
+          "peak": -0.92,
+          "peak_hours": 1.6,
           "held_hours": 0.0,
-          "checked_until": 4.7,
+          "checked_until": 5.6,
           "verdict": "tracking",
           "final": false,
-          "text": "still inside the 5 days window (biggest move so far -0.7%)",
+          "text": "still inside the 5 days window (biggest move so far -0.9%)",
           "size": null
         },
         "h1": {
@@ -27528,9 +27478,9 @@
           "verdict": "flat"
         },
         "now": {
-          "move": 2.02,
-          "time": "2026-11-19T05:09:50+00:00",
-          "hours": 6.9,
+          "move": 1.78,
+          "time": "2026-11-19T06:01:48+00:00",
+          "hours": 7.8,
           "verdict": "wrong"
         },
         "checks": {
@@ -27541,28 +27491,28 @@
         },
         "final": false,
         "effect": "tracking",
-        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.9%)",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.4%)",
         "impact": {
-          "peak": -0.14,
-          "peak_hours": 0.7,
-          "faded_hours": 1.7,
-          "against": 2.02,
-          "against_hours": 6.9,
-          "until_hours": 6.9,
-          "text": "Small impact: Bitcoin fell up to 0.1% (after 1 h). The effect lasted about 2 h, then faded - later it rose up to 2.0% (after 7 h)."
+          "peak": 0.42,
+          "peak_hours": 3.7,
+          "faded_hours": 4.7,
+          "against": 2.0,
+          "against_hours": 5.7,
+          "until_hours": 7.7,
+          "text": "Never moved the predicted way. It rose up to 2.0% (after 6 h)."
         },
         "result": {
-          "start_price": 63135.45,
+          "start_price": 62795.11,
           "start_time": "2026-11-19T01:11:30.479776+00:00",
           "threshold": 1.69,
           "window_hours": 54.0,
-          "peak": -0.92,
-          "peak_hours": 1.8,
+          "peak": -0.42,
+          "peak_hours": 0.8,
           "held_hours": 0.0,
-          "checked_until": 4.0,
+          "checked_until": 4.8,
           "verdict": "tracking",
           "final": false,
-          "text": "still inside the 2.2 days window (biggest move so far -0.9%)",
+          "text": "still inside the 2.2 days window (biggest move so far -0.4%)",
           "size": null
         },
         "h5": {
@@ -27721,11 +27671,11 @@
     "BTC-20261119": 1
   },
   "last_run": {
-    "run_time": "2026-11-19T05:55:40.624691+00:00",
+    "run_time": "2026-11-19T06:01:40.498490+00:00",
     "test_mode": false,
-    "stories": 147,
-    "off_topic": 63,
-    "repeats": 84,
+    "stories": 102,
+    "off_topic": 43,
+    "repeats": 59,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
