@@ -29913,6 +29913,228 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-19T16:41:21.010812+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261119-06",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Jito's JTO Drops 21% in a Week as Dollar-Denominated Fees Decline",
+      "state": "rejected",
+      "state_reason": "Decision agent: The report is about a crypto token drop, not about US dollar movement, so it does not constitute a new gold\u2011related event.",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-19T17:35:51.877305+00:00",
+      "earliest_report": "2026-11-19T17:35:50+00:00",
+      "last_updated": "2026-11-19T17:35:51.877305+00:00",
+      "words": [
+        "decline",
+        "dollar-denominat",
+        "fall",
+        "fees",
+        "jito",
+        "jto",
+        "week"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "Jito's JTO Drops 21% in a Week as Dollar-Denominated Fees Decline",
+          "link": "https://t.me/whale_alert_io/105070",
+          "published": "2026-11-19T17:35:50+00:00",
+          "found_at": "2026-11-19T17:35:51.877305+00:00",
+          "summary": "Jito's JTO Drops 21% in a Week as Dollar-Denominated Fees Decline",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T17:35:51.877305+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-19T17:35:51.877305+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-19T17:35:51.877305+00:00",
+          "note": "confirmed -> rejected: The report is about a crypto token drop, not about US dollar movement, so it does not constitute a new gold\u2011related event."
+        }
+      ],
+      "decision": {
+        "is_new_event": false,
+        "event_date": "2026-11-19",
+        "date_evidence": "Headline dated 2026-11-19 reports a 21% drop over the past week",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "none",
+        "expected_direction": "unclear",
+        "direction_reason": "no clear link to gold price",
+        "alert_title": "",
+        "alert_message": "",
+        "why_it_matters": [],
+        "reason": "The report is about a crypto token drop, not about US dollar movement, so it does not constitute a new gold\u2011related event.",
+        "time": "2026-11-19T17:35:51.877305+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 3679.2,
+        "start_time": "2026-11-19T17:24:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-19T17:24:50+00:00",
+          "hours": -0.2,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3679.2,
+          "start_time": "2026-11-19T17:35:51.877305+00:00",
+          "threshold": 0.9,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In the few similar cases, gold mostly fell the next day (four out of five events showed declines of 1\u20113%), with only one instance of a rise (+4.4%).",
+        "similar": [
+          {
+            "id": "START-20250403-G",
+            "date": "2025-04-03",
+            "title": "Dollar slides after sweeping US tariff announcement",
+            "d1": -1.41,
+            "d7": 0.36,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.65
+          },
+          {
+            "id": "GOLD-20261104-02",
+            "date": "2026-11-04",
+            "title": "Gold rises as dollar weakens ahead of U.S. midterm election results",
+            "d1": 4.39,
+            "d7": 2.06,
+            "peak_hours": 23.9,
+            "source": "MINT",
+            "score": 0.45
+          },
+          {
+            "id": "GOLD-20261105-02",
+            "date": "2026-11-05",
+            "title": "Gold at more than two-week high as dollar, yields weaken; U.S. payrolls data awaited",
+            "d1": -2.23,
+            "d7": -3.93,
+            "peak_hours": 111.9,
+            "source": "MINT",
+            "score": 0.45
+          },
+          {
+            "id": "GOLD-20261109-05",
+            "date": "2026-11-09",
+            "title": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report",
+            "d1": -1.11,
+            "d7": -6.17,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.45
+          },
+          {
+            "id": "GOLD-20261117-09",
+            "date": "2026-11-17",
+            "title": "Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
+            "d1": -2.86,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.95,
+          "down": 2.0
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T17:36:03.685877+00:00",
+          "low": -1.19,
+          "mid": -1.8,
+          "high": -2.4,
+          "window_hours": 54.0,
+          "probability": 0.49,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 1.8%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.2,
+          "threshold": 0.9,
+          "floor": 0.49,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "normal: 0.9x a normal day, price -1.7%",
+            "buy_sell": "46% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "disagrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.5,
+            "buy_sell": 0.25
+          },
+          "rule_votes": {
+            "up": 1.95,
+            "down": 2.0
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Jito's JTO token fell 21% as fees paid in dollars dropped, hinting at a weaker US dollar, which can affect gold prices.",
+        "what_past_events_show": "In the few similar cases, gold mostly fell the next day (four out of five events showed declines of 1\u20113%), with only one instance of a rise (+4.4%).",
+        "direction": "down",
+        "why": [
+          "Past data mostly shows gold dropping after a dollar\u2011weakening signal.",
+          "The token drop suggests a weaker dollar, but other market forces often outweigh the dollar effect."
+        ],
+        "watch_next": "If the dollar moves sharply stronger or a major gold\u2011specific driver (like central\u2011bank buying) appears, the impact could reverse.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-19T17:35:51.877305+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-19T17:36:07.690855+00:00",
+        "sent_state": "rejected"
+      }
     }
   ],
   "counter": {
@@ -29943,26 +30165,26 @@
     "BTC-20261118": 5,
     "GOLD-20261118": 7,
     "BTC-20261119": 5,
-    "GOLD-20261119": 5
+    "GOLD-20261119": 6
   },
   "last_run": {
-    "run_time": "2026-11-19T17:31:21.747992+00:00",
+    "run_time": "2026-11-19T17:35:51.877305+00:00",
     "test_mode": false,
     "stories": 154,
     "off_topic": 66,
-    "repeats": 88,
-    "new_events": 0,
+    "repeats": 87,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -29989,7 +30211,8 @@
           "Alert: Gold recoups from 14-month low, tighter Fed outlook caps gains",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
           "Alert: Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report",
-          "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low"
+          "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
+          "Being checked: Jito's JTO Drops 21% in a Week as Dollar-Denominated Fees Decline (approved social media account: Whale Alert (Telegram) (from social media))"
         ]
       }
     }
