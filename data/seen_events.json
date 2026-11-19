@@ -28304,6 +28304,242 @@
         "first_sent_at": "2026-11-19T09:05:58.117948+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261119-01",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Wall Street Journal",
+      "first_seen": "2026-11-19T09:35:43.908433+00:00",
+      "earliest_report": "2026-11-19T08:52:00+00:00",
+      "last_updated": "2026-11-19T09:35:43.908433+00:00",
+      "words": [
+        "bets",
+        "broader",
+        "commoditi",
+        "gold",
+        "pressur",
+        "rate-hike",
+        "retreat"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOENBZm11ODRpalZoVlRMSFFJZ2wyMWZUY2REV1QxZnMweGp1QnV3V3RBLUJYSnMta2toTmk0RVlpeWl4blE0dW5Qd0lHZ0dmLXdQb3RGMG9NNjVGYWNoaGwzSDBpcDBmT2F4TkhZM05vZ01QQnN2VnVWOWlxYUtMZkVXbERWcDVmbWtWcnViXzNldkJVUndEb005dktuWFI3ZHRVWmlyV3htR2Rk?oc=5",
+          "published": "2026-11-19T08:52:00+00:00",
+          "found_at": "2026-11-19T09:35:43.908433+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T09:35:43.908433+00:00",
+          "note": "new event, first report by Wall Street Journal"
+        },
+        {
+          "time": "2026-11-19T09:35:43.908433+00:00",
+          "note": "new -> confirmed: reliable source: Wall Street Journal - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-19T09:35:43.908433+00:00",
+          "note": "confirmed -> alerted: New report of rate\u2011hike expectations that can depress gold, with early price decline."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-19",
+        "date_evidence": "Article published 2026-11-19 08:52 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Higher rate expectations usually push gold lower",
+        "alert_title": "Rate\u2011Hike Bets Pressure Gold",
+        "alert_message": "Investors expect higher interest rates, which historically lower gold; price already fell 0.2%.",
+        "why_it_matters": [
+          "Rate expectations influence gold demand",
+          "Price already moved down"
+        ],
+        "reason": "New report of rate\u2011hike expectations that can depress gold, with early price decline.",
+        "time": "2026-11-19T09:35:43.908433+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nRate\u2011Hike Bets Pressure Gold\n\nInvestors expect higher interest rates, which historically lower gold; price already fell 0.2%.\n\nMINT's prediction: Gold DOWN - When similar rate\u2011hike expectations appeared, gold dropped 2.6%, 1.6% and 0.3% the next day, while only a few cases were flat or slightly up.\n\nGold had already moved -0.2% since the first report.\nSources: Wall Street Journal\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 19 Nov 09:35 UTC",
+        "telegram_sent_at": "2026-11-19T09:35:43.908433+00:00"
+      },
+      "outcome": {
+        "start_price": 3725.36,
+        "start_time": "2026-11-19T09:00:00+00:00",
+        "moved_before_mint": -0.2,
+        "delay_hours": 0.7,
+        "now": {
+          "move": -0.2,
+          "time": "2026-11-19T09:30:30+00:00",
+          "hours": 0.6,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 5 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -0.2,
+          "peak_hours": 0.6,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.1,
+          "until_hours": 0.6,
+          "text": "Clear impact: Gold fell up to 0.2% (after 1 h). Still in the predicted direction after 1 h (-0.2%)."
+        },
+        "result": {
+          "start_price": 3717.9,
+          "start_time": "2026-11-19T09:35:43.908433+00:00",
+          "threshold": 0.82,
+          "window_hours": 120,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 5 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "When similar rate\u2011hike expectations appeared, gold dropped 2.6%, 1.6% and 0.3% the next day, while only a few cases were flat or slightly up.",
+        "similar": [
+          {
+            "id": "GOLD-20261112-01",
+            "date": "2026-11-12",
+            "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+            "d1": -2.61,
+            "d7": -6.06,
+            "peak_hours": 163.2,
+            "source": "MINT",
+            "score": 0.72
+          },
+          {
+            "id": "GOLD-20261109-07",
+            "date": "2026-11-09",
+            "title": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
+            "d1": -1.65,
+            "d7": -6.04,
+            "peak_hours": 122.7,
+            "source": "MINT",
+            "score": 0.66
+          },
+          {
+            "id": "GOLD-20261116-06",
+            "date": "2026-11-16",
+            "title": "Gold price slides as Fed hike bets rise, silver bar and coin sales drop despite lower prices \u2013 Heraeus",
+            "d1": -0.35,
+            "d7": null,
+            "peak_hours": 60.0,
+            "source": "MINT",
+            "score": 0.66
+          },
+          {
+            "id": "GOLD-20261106-02",
+            "date": "2026-11-06",
+            "title": "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case - Kitco AM Report",
+            "d1": 0.75,
+            "d7": -3.98,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261112-07",
+            "date": "2026-11-12",
+            "title": "Gold, silver slide as Treasury yields surge, Fed hike concerns intensify - Kitco PM Report",
+            "d1": 0.02,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 0.5,
+          "down": 4.04
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T09:35:56.646136+00:00",
+          "low": -0.99,
+          "mid": -1.65,
+          "high": -2.31,
+          "window_hours": 120,
+          "probability": 0.52,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 1.6%)",
+          "window_basis": "similar past moves peaked after about 5.1 days",
+          "sigma": 1.19,
+          "threshold": 0.82,
+          "floor": 0.49,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price -1.3%",
+            "buy_sell": "37% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0.5,
+            "down": 4.04
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold fell as markets bet the Fed will keep raising rates, and other commodities also slipped.",
+        "what_past_events_show": "When similar rate\u2011hike expectations appeared, gold dropped 2.6%, 1.6% and 0.3% the next day, while only a few cases were flat or slightly up.",
+        "direction": "down",
+        "why": [
+          "Higher or expected\u2011higher rates make gold less attractive versus interest\u2011bearing assets.",
+          "Recent similar headlines have usually been followed by a short\u2011term decline."
+        ],
+        "watch_next": "A surprise dovish Fed statement or a rate cut would lessen the drop, while a more hawkish tone would deepen it.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-19T09:35:43.908433+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-19T09:36:00.185624+00:00"
+      }
     }
   ],
   "counter": {
@@ -28333,26 +28569,27 @@
     "GOLD-20261117": 10,
     "BTC-20261118": 5,
     "GOLD-20261118": 7,
-    "BTC-20261119": 3
+    "BTC-20261119": 3,
+    "GOLD-20261119": 1
   },
   "last_run": {
-    "run_time": "2026-11-19T09:31:23.862238+00:00",
+    "run_time": "2026-11-19T09:35:43.908433+00:00",
     "test_mode": false,
-    "stories": 160,
-    "off_topic": 71,
-    "repeats": 89,
-    "new_events": 0,
+    "stories": 161,
+    "off_topic": 69,
+    "repeats": 91,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -28375,7 +28612,8 @@
           "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
           "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
-          "Alert: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation"
+          "Alert: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation",
+          "Being checked: Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat (reliable source: Wall Street Journal)"
         ]
       }
     }
@@ -28402,7 +28640,8 @@
         "Alert: Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
         "Alert: Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
         "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
-        "Alert: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation"
+        "Alert: Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation",
+        "Alert: Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat"
       ]
     }
   },
