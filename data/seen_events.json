@@ -28793,8 +28793,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 1,
-          "right": 0,
+          "done": 2,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -28829,6 +28829,12 @@
           "move": 0.07,
           "time": "2026-11-19T12:30:00+00:00",
           "verdict": "flat"
+        },
+        "h5": {
+          "price": 63021.84,
+          "move": -1.06,
+          "time": "2026-11-19T16:30:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -29643,6 +29649,256 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-19T16:06:03.752417+00:00"
       }
+    },
+    {
+      "id": "BTC-20261119-05",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "official",
+      "proof_reason": "official source: US Securities and Exchange Commission",
+      "first_seen": "2026-11-19T16:40:58.710895+00:00",
+      "earliest_report": "2026-11-19T14:39:02+00:00",
+      "last_updated": "2026-11-19T16:40:58.710895+00:00",
+      "words": [
+        "asset",
+        "crypto",
+        "eight",
+        "entiti",
+        "fake",
+        "hack",
+        "investor",
+        "million",
+        "platform",
+        "sec",
+        "trad",
+        "u.s",
+        "used"
+      ],
+      "amounts": [
+        37.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "US Securities and Exchange Commission",
+          "kind": "official",
+          "site": "sec.gov",
+          "title": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
+          "link": "https://www.sec.gov/newsroom/press-releases/2026-115-sec-eight-entities-used-fake-crypto-asset-trading-platforms-steal-more-37-million-us-investors",
+          "published": "2026-11-19T14:39:02+00:00",
+          "found_at": "2026-11-19T16:40:58.710895+00:00",
+          "summary": "The Securities and Exchange Commission today charged eight Colorado-based entities, likely operated by individuals located overseas, for defrauding U.S. investors out of more than $37 million. The defendants allegedly lured investors to believe they were\u2026",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-19T16:40:58.710895+00:00",
+          "note": "new event, first report by US Securities and Exchange Commission"
+        },
+        {
+          "time": "2026-11-19T16:40:58.710895+00:00",
+          "note": "new -> confirmed: official source: US Securities and Exchange Commission - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-19T16:40:58.710895+00:00",
+          "note": "confirmed -> alerted: The SEC action is a fresh crackdown event that can negatively affect Bitcoin sentiment."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-19",
+        "date_evidence": "SEC report published 2026-11-19 14:39 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "crackdowns historically push Bitcoin lower",
+        "alert_title": "SEC charges fake crypto platforms",
+        "alert_message": "SEC charged eight entities for using fake crypto trading platforms to steal over $37\u202fmillion, highlighting fraud risk and regulatory crackdown that could hurt Bitcoin sentiment.",
+        "why_it_matters": [
+          "Shows increased fraud risk",
+          "Signals regulatory crackdown"
+        ],
+        "reason": "The SEC action is a fresh crackdown event that can negatively affect Bitcoin sentiment.",
+        "time": "2026-11-19T16:40:58.710895+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nSEC charges fake crypto platforms\n\nSEC charged eight entities for using fake crypto trading platforms to steal over $37\u202fmillion, highlighting fraud risk and regulatory crackdown that could hurt Bitcoin sentiment.\n\nMINT's prediction: Bitcoin DOWN - Similar regulator crackdowns (SEC suing Binance, Indian raids) dropped Bitcoin about 5\u20116% in one day, while a lone Coinbase lawsuit was an outlier that rose, so the usual pattern is a fall.\n\nBitcoin had already moved -0.8% since the first report.\nSources: US Securities and Exchange Commission\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 19 Nov 16:40 UTC",
+        "telegram_sent_at": "2026-11-19T16:40:58.710895+00:00"
+      },
+      "outcome": {
+        "start_price": 63500.3,
+        "start_time": "2026-11-19T15:00:00+00:00",
+        "moved_before_mint": -0.75,
+        "delay_hours": 2.0,
+        "h1": {
+          "price": 63031.38,
+          "move": -0.74,
+          "time": "2026-11-19T15:39:02+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -0.75,
+          "time": "2026-11-19T16:29:40+00:00",
+          "hours": 1.8,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 1,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -0.75,
+          "peak_hours": 1.8,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.3,
+          "until_hours": 1.8,
+          "text": "Clear impact: Bitcoin fell up to 0.8% (after 2 h). Still in the predicted direction after 2 h (-0.8%)."
+        },
+        "result": {
+          "start_price": 63021.84,
+          "start_time": "2026-11-19T16:40:58.710895+00:00",
+          "threshold": 1.69,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar regulator crackdowns (SEC suing Binance, Indian raids) dropped Bitcoin about 5\u20116% in one day, while a lone Coinbase lawsuit was an outlier that rose, so the usual pattern is a fall.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.63
+          },
+          {
+            "id": "BTC-20261109-01",
+            "date": "2026-11-09",
+            "title": "Coinbase gets full U.S. trust charter from federal banking regulator",
+            "d1": 0.13,
+            "d7": -13.34,
+            "peak_hours": 6.0,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          },
+          {
+            "id": "BTC-20261112-05",
+            "date": "2026-11-12",
+            "title": "India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+            "d1": -5.97,
+            "d7": -13.3,
+            "peak_hours": 156.8,
+            "source": "MINT",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 1.71,
+          "down": 3.02
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-19T16:41:16.804972+00:00",
+          "low": -2.7,
+          "mid": -3.38,
+          "high": -4.5,
+          "window_hours": 54.0,
+          "probability": 0.56,
+          "agree": 2,
+          "similar": 5,
+          "basis": "2 of 5 similar past events moved this way (typical move 5.5%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.25,
+          "threshold": 1.69,
+          "floor": 0.92,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price +0.5%",
+            "buy_sell": "buyers started 45% of trades (24 h); 57% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.43,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.71,
+            "down": 3.02
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The SEC announced that eight groups ran fake crypto trading sites and stole over $37\u202fmillion from U.S. investors, a crackdown that could scare traders.",
+        "what_past_events_show": "Similar regulator crackdowns (SEC suing Binance, Indian raids) dropped Bitcoin about 5\u20116% in one day, while a lone Coinbase lawsuit was an outlier that rose, so the usual pattern is a fall.",
+        "direction": "down",
+        "why": [
+          "Regulatory enforcement news usually triggers sell pressure.",
+          "Past comparable crackdowns caused 5\u20116% drops in a day."
+        ],
+        "watch_next": "If the SEC targets a major exchange or expands the action, the drop could be larger; if it limits the case to small players, the impact may be smaller.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-19T16:40:58.710895+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-19T16:41:21.010812+00:00"
+      }
     }
   ],
   "counter": {
@@ -29672,34 +29928,35 @@
     "GOLD-20261117": 10,
     "BTC-20261118": 5,
     "GOLD-20261118": 7,
-    "BTC-20261119": 4,
+    "BTC-20261119": 5,
     "GOLD-20261119": 5
   },
   "last_run": {
-    "run_time": "2026-11-19T16:35:46.183149+00:00",
+    "run_time": "2026-11-19T16:40:58.710895+00:00",
     "test_mode": false,
-    "stories": 155,
-    "off_topic": 66,
+    "stories": 159,
+    "off_topic": 69,
     "repeats": 89,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
           "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
-          "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk"
+          "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+          "Being checked: SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors (official source: US Securities and Exchange Commission)"
         ]
       },
       "Gold": {
@@ -29729,7 +29986,8 @@
       "reasons": [
         "Alert: Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
         "Alert: 12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
-        "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk"
+        "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+        "Alert: SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors"
       ]
     },
     "Gold": {
