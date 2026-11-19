@@ -3338,14 +3338,18 @@
     "s": 59.1508
    },
    "1795060800": {
-    "b": 84.2911,
-    "s": 67.2285
+    "b": 85.5016,
+    "s": 67.5434
+   },
+   "1795064400": {
+    "b": 1.4689,
+    "s": 0.3898
    }
   },
-  "trades_cursor": "1795064321349381386",
+  "trades_cursor": "1795064503412206710",
   "flow_source": "Kraken",
-  "book_bid_share": 0.492,
-  "book_time": "2026-11-19T04:56:07.219865+00:00"
+  "book_bid_share": 0.506,
+  "book_time": "2026-11-19T05:01:33.300178+00:00"
  },
  "Gold": {
   "bars": [
@@ -6554,39 +6558,39 @@
   ],
   "cot_time": "2026-11-18T23:55:41.224776+00:00"
  },
- "time": "2026-11-19T04:56:07.219865+00:00",
+ "time": "2026-11-19T05:01:33.300178+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": -1,
-    "ratio": 1.37,
-    "change_24h": -1.72,
-    "text": "busy: 1.4x a normal day, price -1.7% - real selling",
+    "ratio": 1.41,
+    "change_24h": -2.1,
+    "text": "busy: 1.4x a normal day, price -2.1% - real selling",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
     "taker_buy_share": 0.415,
-    "book_bid_share": 0.492,
-    "up_volume_share": 0.279,
-    "text": "buyers started 42% of trades (24 h); 49% of waiting orders near the price are buy orders",
+    "book_bid_share": 0.506,
+    "up_volume_share": 0.271,
+    "text": "buyers started 42% of trades (24 h); 51% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 1.22,
-    "change_24h": -1.61,
-    "text": "normal: 1.2x a normal day, price -1.6%",
+    "ratio": 1.24,
+    "change_24h": -1.67,
+    "text": "normal: 1.2x a normal day, price -1.7%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.358,
+    "up_volume_share": 0.34,
     "cot_vote": 1,
-    "text": "36% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
+    "text": "34% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
     "ok": true
    }
   }
