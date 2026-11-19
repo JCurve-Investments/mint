@@ -24090,10 +24090,11 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-17T17:01:34.317885+00:00",
       "earliest_report": "2026-11-17T16:22:43+00:00",
-      "last_updated": "2026-11-18T23:55:41.224776+00:00",
+      "last_updated": "2026-11-19T03:35:55.299951+00:00",
       "words": [
         "14-month",
         "african",
+        "asses",
         "back",
         "below",
         "bets",
@@ -24114,10 +24115,13 @@
         "kitco",
         "low",
         "lows",
+        "market",
         "metal",
         "minut",
         "near",
         "one-year",
+        "outlook",
+        "over",
         "persist",
         "plung",
         "preciou",
@@ -24126,6 +24130,7 @@
         "rate",
         "rebound",
         "reclaim",
+        "recover",
         "report",
         "rhetoric",
         "rise",
@@ -24142,7 +24147,9 @@
         "yield"
       ],
       "amounts": [],
-      "old_clues": [],
+      "old_clues": [
+        "recovers from"
+      ],
       "sources": [
         {
           "organisation": "Kitco News",
@@ -24231,6 +24238,17 @@
           "found_at": "2026-11-18T23:55:41.224776+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Gold recovers from over one-year low as markets assess Fed rate outlook",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBzSmhHOXhFdnBjdTJSSHQ5eENObngzd3UwdF9SOFNkV1NlSlRONkEzSzJXaGZZNTlxV3VlXzVNV2E5MV9hb3RKREJfS0VCM213X1VZTUpTRGNFanc2dHBHLVZzRk9qVkFIVlZwcVBtOUhaMHNmUkRBNGF30gF_QVVfeXFMTVdQV0Z4T1c2TlFoWi00UVZPbFJxdTVlVUwtcHRiX1NvWDQ3X09FcnhzbmRhdnBTRnVYUURCcDZaWEZJYWpSdzVfVGRoQ2NrNWFSdjNVMjREYUtGNGU5U1p5dWhONUVJVTJTYWhqSURFbGVSSGhTNVdaOUctczVUcw?oc=5",
+          "published": "2026-11-19T03:28:00+00:00",
+          "found_at": "2026-11-19T03:35:55.299951+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -24261,6 +24279,10 @@
         {
           "time": "2026-11-18T23:55:41.224776+00:00",
           "note": "another report from Kitco News - same event, no new alert"
+        },
+        {
+          "time": "2026-11-19T03:35:55.299951+00:00",
+          "note": "another report from CNBC - same event, no new alert"
         }
       ],
       "decision": {
@@ -27630,11 +27652,11 @@
     "BTC-20261119": 1
   },
   "last_run": {
-    "run_time": "2026-11-19T03:31:36.788882+00:00",
+    "run_time": "2026-11-19T03:35:55.299951+00:00",
     "test_mode": false,
-    "stories": 150,
-    "off_topic": 65,
-    "repeats": 84,
+    "stories": 152,
+    "off_topic": 66,
+    "repeats": 85,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 1,
