@@ -32925,6 +32925,239 @@
         "first_sent_at": "2026-11-20T12:11:10.382143+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261120-03",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-20T15:11:04.510507+00:00",
+      "earliest_report": "2026-11-20T14:54:07+00:00",
+      "last_updated": "2026-11-20T15:11:04.510507+00:00",
+      "words": [
+        "comes",
+        "currie",
+        "dollar",
+        "first",
+        "gold",
+        "jeff",
+        "later",
+        "real",
+        "says",
+        "sold",
+        "squeeze",
+        "test"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTVBiWGxOR25KTVE5WUQ0M3hLTTRsWTZONDVaenhLN2pYVDFncHZvdmZDMmQ2Qkx3V2dvMUhyZktvcFJhYVd4Y2JoSTZNN1RRZjFFYTQ1TURHYWdWdjlzOU5seGFwNlFnMEJNYnU4Z3dCei1nTjh2NFlwUnJiRXk0TXJ4MFdCX1gxdE5YR1RobXlNSjBDQlBHQXpFdW1RVEl1cVJLM1JaczlpRUkzRXptYjU4Rk5sQ3Y2WGpV?oc=5",
+          "published": "2026-11-20T14:54:07+00:00",
+          "found_at": "2026-11-20T15:11:04.510507+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-20T15:11:04.510507+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-20T15:11:04.510507+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-20T15:11:04.510507+00:00",
+          "note": "confirmed -> alerted: New dollar squeeze event could pressure gold price, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-20",
+        "date_evidence": "article published 2026-11-20 14:54",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "historically a stronger dollar pushes gold lower",
+        "alert_title": "Dollar squeeze hits gold",
+        "alert_message": "Gold is being sold first as a dollar squeeze hits, suggesting price pressure may follow.",
+        "why_it_matters": [
+          "Dollar strength usually lowers gold",
+          "Early selling may trigger a price decline"
+        ],
+        "reason": "New dollar squeeze event could pressure gold price, so an alert is warranted.",
+        "time": "2026-11-20T15:11:04.510507+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nDollar squeeze hits gold\n\nGold is being sold first as a dollar squeeze hits, suggesting price pressure may follow.\n\nMINT's prediction: Gold DOWN - In four out of five similar past cases gold fell the next day (from -0.1% to -2.9%), while only one case saw a small rise of +0.5%.\n\nGold had already moved +0.0% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 20 Nov 15:11 UTC",
+        "telegram_sent_at": "2026-11-20T15:11:04.510507+00:00"
+      },
+      "outcome": {
+        "start_price": 3569.96,
+        "start_time": "2026-11-20T14:24:40+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.3,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-20T14:24:40+00:00",
+          "hours": -0.5,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 1.8 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3569.96,
+          "start_time": "2026-11-20T15:11:04.510507+00:00",
+          "threshold": 0.64,
+          "window_hours": 43.9,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 1.8 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In four out of five similar past cases gold fell the next day (from -0.1% to -2.9%), while only one case saw a small rise of +0.5%.",
+        "similar": [
+          {
+            "id": "GOLD-20261104-06",
+            "date": "2026-11-04",
+            "title": "The dollar decides: What the midterm rally in gold and silver says about the next turn",
+            "d1": 0.46,
+            "d7": -2.1,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.53
+          },
+          {
+            "id": "GOLD-20261118-04",
+            "date": "2026-11-18",
+            "title": "Gold price follows the dollar in the short-term, but real yields over the long haul \u2013 Heraeus",
+            "d1": -1.6,
+            "d7": null,
+            "peak_hours": 34.8,
+            "source": "MINT",
+            "score": 0.51
+          },
+          {
+            "id": "GOLD-20261118-01",
+            "date": "2026-11-18",
+            "title": "Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
+            "d1": -0.95,
+            "d7": null,
+            "peak_hours": 43.9,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261116-03",
+            "date": "2026-11-16",
+            "title": "Weekly Markets Monitor - Waller the Dollar",
+            "d1": -0.11,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.48
+          },
+          {
+            "id": "GOLD-20261111-03",
+            "date": "2026-11-11",
+            "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 \ud83c\uddfb\ud83c\uddea President Donald Trump says US is taking billions of dollars worth of oil from Venezuela, expects hundreds of billions soon. @WatcherGuru",
+            "d1": -2.92,
+            "d7": -6.54,
+            "peak_hours": 167.7,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.53,
+          "down": 1.94
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-20T15:11:18.710665+00:00",
+          "low": -0.32,
+          "mid": -1.27,
+          "high": -2.5,
+          "window_hours": 43.9,
+          "probability": 0.65,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 1.3%)",
+          "window_basis": "similar past moves peaked after about 1.8 days",
+          "sigma": 1.25,
+          "threshold": 0.64,
+          "floor": 0.51,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.4x a normal day, price -2.6% - real selling",
+            "buy_sell": "41% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0.53,
+            "down": 1.94
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold is being sold because the US dollar is getting stronger, which can push gold prices lower.",
+        "what_past_events_show": "In four out of five similar past cases gold fell the next day (from -0.1% to -2.9%), while only one case saw a small rise of +0.5%.",
+        "direction": "down",
+        "why": [
+          "A stronger dollar makes gold more expensive for buyers using other currencies, lowering demand.",
+          "Historical examples with a firmer dollar mostly led to gold dropping the next day."
+        ],
+        "watch_next": "If the dollar keeps rising or a big surprise hits the market, the drop could be bigger; if gold gets its own strong driver (e.g., central\u2011bank buying), the effect may be smaller.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-20T15:11:04.510507+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-20T15:11:22.662279+00:00"
+      }
     }
   ],
   "counter": {
@@ -32956,27 +33189,27 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 2,
+    "GOLD-20261120": 3,
     "BTC-20261120": 3
   },
   "last_run": {
-    "run_time": "2026-11-20T15:05:40.250935+00:00",
+    "run_time": "2026-11-20T15:11:04.510507+00:00",
     "test_mode": false,
-    "stories": 163,
-    "off_topic": 62,
+    "stories": 161,
+    "off_topic": 59,
     "repeats": 101,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -33000,7 +33233,8 @@
           "Alert: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada",
           "Alert: Gold Set for Worst Week Since March on Hawkish Fed, AI Selloff",
           "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
-          "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh"
+          "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
+          "Being checked: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later (reliable source: Kitco News)"
         ]
       }
     }
@@ -33028,7 +33262,8 @@
         "Alert: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada",
         "Alert: Gold Set for Worst Week Since March on Hawkish Fed, AI Selloff",
         "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
-        "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh"
+        "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
+        "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later"
       ]
     }
   },
