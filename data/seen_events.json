@@ -28011,7 +28011,7 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-19T06:55:44.578949+00:00",
       "earliest_report": "2026-11-19T06:51:19+00:00",
-      "last_updated": "2026-11-20T08:20:58.844047+00:00",
+      "last_updated": "2026-11-20T08:25:42.491290+00:00",
       "words": [
         "binance",
         "detail",
@@ -28124,6 +28124,17 @@
           "found_at": "2026-11-20T08:20:58.844047+00:00",
           "summary": "12,000 $ETH (21,045,672 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
           "factor": "B2"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "12,000 $ETH (21,037,612 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "link": "https://t.me/whale_alert_io/105087",
+          "published": "2026-11-20T08:23:01+00:00",
+          "found_at": "2026-11-20T08:25:42.491290+00:00",
+          "summary": "12,000 $ETH (21,037,612 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -28169,6 +28180,10 @@
         },
         {
           "time": "2026-11-20T08:20:58.844047+00:00",
+          "note": "another report from Whale Alert (Telegram) - same event, no new alert"
+        },
+        {
+          "time": "2026-11-20T08:25:42.491290+00:00",
           "note": "another report from Whale Alert (Telegram) - same event, no new alert"
         }
       ],
@@ -32854,14 +32869,14 @@
     "BTC-20261120": 2
   },
   "last_run": {
-    "run_time": "2026-11-20T08:20:58.844047+00:00",
+    "run_time": "2026-11-20T08:25:42.491290+00:00",
     "test_mode": false,
-    "stories": 159,
-    "off_topic": 59,
-    "repeats": 98,
+    "stories": 168,
+    "off_topic": 63,
+    "repeats": 104,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 2,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
