@@ -31882,6 +31882,253 @@
         "first_sent_at": "2026-11-20T04:35:53.506670+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261120-02",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Reuters",
+      "first_seen": "2026-11-20T04:50:58.002351+00:00",
+      "earliest_report": "2026-11-20T03:25:43+00:00",
+      "last_updated": "2026-11-20T04:50:58.002351+00:00",
+      "words": [
+        "bets",
+        "dollar",
+        "eight",
+        "fed",
+        "firm",
+        "gold",
+        "hike",
+        "month",
+        "set",
+        "week",
+        "weigh",
+        "worst"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMFFjdnZJUDZiUXhKNUdPUWMtQ2tkd0ZKdmN4TTZ3bnQyb09SQ3cxSS1hNVYtcmF5WGpNSlJzS1dWYkdBUzBJZ2s5TnhLQ29mNWNIUy10MGJkN294UndsTmRmOF9GelkyVkdWRl8wcVJQNnRaRGp0a3NIMWNHT1dJSHhZRk1BT3FRV2pFcHVGa3ozS1ZCdjJXenJvSXlBOEdxLUp2MVVVTVBDY0NGX3ZRRUN3?oc=5",
+          "published": "2026-11-20T03:25:43+00:00",
+          "found_at": "2026-11-20T04:50:58.002351+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-20T04:50:58.002351+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-20T04:50:58.002351+00:00",
+          "note": "new -> confirmed: reliable source: Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-20T04:50:58.002351+00:00",
+          "note": "confirmed -> alerted: The report describes a new firm dollar and Fed hike expectations that historically drive gold lower, and the price already fell, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-20",
+        "date_evidence": "Article published 2026-11-20 reports a firm dollar weighing on gold",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of further drop",
+        "expected_direction": "down",
+        "direction_reason": "strong dollar historically pushes gold lower",
+        "alert_title": "Strong Dollar Pressures Gold",
+        "alert_message": "A firm US dollar and Fed hike bets are weighing on gold, setting up the worst week in eight months; the dollar rise usually pushes gold down.",
+        "why_it_matters": [
+          "Dollar strength typically lowers gold prices",
+          "Fed rate hike expectations add downward pressure"
+        ],
+        "reason": "The report describes a new firm dollar and Fed hike expectations that historically drive gold lower, and the price already fell, so an alert is warranted.",
+        "time": "2026-11-20T04:50:58.002351+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nStrong Dollar Pressures Gold\n\nA firm US dollar and Fed hike bets are weighing on gold, setting up the worst week in eight months; the dollar rise usually pushes gold down.\n\nMINT's prediction: Gold DOWN - In recent similar cases, gold fell the next day, ranging from about -0.1% to -4.9%, showing a consistent drop after a firm dollar and rate\u2011hike expectations.\n\nGold had already moved -0.4% since the first report.\nSources: Reuters\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 20 Nov 04:50 UTC",
+        "telegram_sent_at": "2026-11-20T04:50:58.002351+00:00"
+      },
+      "outcome": {
+        "start_price": 3543.43,
+        "start_time": "2026-11-20T03:00:00+00:00",
+        "moved_before_mint": -0.44,
+        "delay_hours": 1.4,
+        "h1": {
+          "price": 3527.7,
+          "move": -0.44,
+          "time": "2026-11-20T04:25:43+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -0.44,
+          "time": "2026-11-20T04:44:50+00:00",
+          "hours": 1.3,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 1,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.8 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -0.44,
+          "peak_hours": 1.3,
+          "faded_hours": null,
+          "against": 0.01,
+          "against_hours": 0.6,
+          "until_hours": 1.3,
+          "text": "Clear impact: Gold fell up to 0.4% (after 1 h). Still in the predicted direction after 1 h (-0.4%)."
+        },
+        "result": {
+          "start_price": 3527.7,
+          "start_time": "2026-11-20T04:50:58.002351+00:00",
+          "threshold": 0.56,
+          "window_hours": 67.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.8 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In recent similar cases, gold fell the next day, ranging from about -0.1% to -4.9%, showing a consistent drop after a firm dollar and rate\u2011hike expectations.",
+        "similar": [
+          {
+            "id": "GOLD-20261118-01",
+            "date": "2026-11-18",
+            "title": "Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
+            "d1": -0.95,
+            "d7": null,
+            "peak_hours": 43.6,
+            "source": "MINT",
+            "score": 0.68
+          },
+          {
+            "id": "GOLD-20261111-04",
+            "date": "2026-11-11",
+            "title": "Gold falls as hot inflation figures, higher dollar weigh",
+            "d1": -1.56,
+            "d7": -6.23,
+            "peak_hours": 90.3,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "GOLD-20261116-01",
+            "date": "2026-11-16",
+            "title": "Gold hits over one-year low on resilient dollar as hawkish Fed bets build",
+            "d1": -1.12,
+            "d7": null,
+            "peak_hours": 99.3,
+            "source": "MINT",
+            "score": 0.54
+          },
+          {
+            "id": "GOLD-20261119-05",
+            "date": "2026-11-19",
+            "title": "Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
+            "d1": -4.87,
+            "d7": null,
+            "peak_hours": 25.3,
+            "source": "MINT",
+            "score": 0.52
+          },
+          {
+            "id": "GOLD-20261116-03",
+            "date": "2026-11-16",
+            "title": "Weekly Markets Monitor - Waller the Dollar",
+            "d1": -0.11,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.48
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 2.79
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-20T04:51:15.394541+00:00",
+          "low": -0.53,
+          "mid": -1.12,
+          "high": -2.48,
+          "window_hours": 67.0,
+          "probability": 0.62,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 1.1%)",
+          "window_basis": "similar past moves peaked after about 2.8 days",
+          "sigma": 1.24,
+          "threshold": 0.56,
+          "floor": 0.51,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.2x a normal day, price -5.3%",
+            "buy_sell": "27% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 2.79
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold is expected to have a rough week because the US dollar is strong and investors are betting the Fed will raise rates.",
+        "what_past_events_show": "In recent similar cases, gold fell the next day, ranging from about -0.1% to -4.9%, showing a consistent drop after a firm dollar and rate\u2011hike expectations.",
+        "direction": "down",
+        "why": [
+          "A stronger dollar makes gold more expensive for non\u2011dollar buyers, lowering demand.",
+          "Higher\u2011rate expectations raise yields on bonds, making gold less attractive."
+        ],
+        "watch_next": "If the dollar weakens or new gold\u2011specific drivers (like central\u2011bank buying) appear, the downside could be lessened.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-20T04:50:58.002351+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-20T04:51:19.212698+00:00"
+      }
     }
   ],
   "counter": {
@@ -31913,27 +32160,27 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 1,
+    "GOLD-20261120": 2,
     "BTC-20261120": 1
   },
   "last_run": {
-    "run_time": "2026-11-20T04:45:56.007316+00:00",
+    "run_time": "2026-11-20T04:50:58.002351+00:00",
     "test_mode": false,
-    "stories": 167,
-    "off_topic": 68,
-    "repeats": 99,
-    "new_events": 0,
+    "stories": 162,
+    "off_topic": 65,
+    "repeats": 96,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -31962,7 +32209,8 @@
           "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
           "Alert: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada",
           "Alert: Gold Set for Worst Week Since March on Hawkish Fed, AI Selloff",
-          "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion"
+          "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
+          "Being checked: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh (reliable source: Reuters)"
         ]
       }
     }
@@ -31994,7 +32242,8 @@
         "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
         "Alert: Gold prices could fall another 5% to $3,500 as Fed tightening fears grow \u2013 Razaqzada",
         "Alert: Gold Set for Worst Week Since March on Hawkish Fed, AI Selloff",
-        "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion"
+        "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
+        "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh"
       ]
     }
   },
