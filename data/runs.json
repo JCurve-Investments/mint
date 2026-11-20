@@ -1,20 +1,5 @@
 [
   {
-    "time": "2026-11-19T13:21:14.495526+00:00",
-    "test_mode": false,
-    "reason": "cloud (GitHub Actions)",
-    "seconds": 14,
-    "results": {
-      "Bitcoin Scout": "12 news stories to read, 0 data warning(s), 1 error(s).",
-      "Gold Scout": "0 calendar warning(s), 0 event(s) in the next 7 days, 116 news stories to read, 0 problem(s).",
-      "Social Watcher": "6 account(s) checked, 10 post(s) kept (a post can only start a Watch), 0 error(s).",
-      "Supervisor": "138 stories (48 off-topic) -> 0 new event(s), 0 joined an event, 1 update(s) to old events (no new alert), 89 repeat(s). 0 event(s) passed to the Decision agent.",
-      "Price Tracker": "prices saved, 1 new outcome check(s), 0 error(s).",
-      "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
-      "Telegram bot": "0 message(s) delivered, 0 subscriber(s), posting to the channel."
-    }
-  },
-  {
     "time": "2026-11-19T13:25:56.364878+00:00",
     "test_mode": false,
     "reason": "cloud (GitHub Actions)",
@@ -2989,6 +2974,21 @@
     "test_mode": false,
     "reason": "cloud (GitHub Actions)",
     "seconds": 21,
+    "results": {
+      "Bitcoin Scout": "24 news stories to read, 1 data warning(s), 0 error(s).",
+      "Gold Scout": "0 calendar warning(s), 0 event(s) in the next 7 days, 132 news stories to read, 0 problem(s).",
+      "Social Watcher": "6 account(s) checked, 6 post(s) kept (a post can only start a Watch), 0 error(s).",
+      "Supervisor": "162 stories (64 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 98 repeat(s). 0 event(s) passed to the Decision agent.",
+      "Price Tracker": "prices saved, 1 new outcome check(s), 0 error(s).",
+      "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
+      "Telegram bot": "0 message(s) delivered, 0 subscriber(s), posting to the channel."
+    }
+  },
+  {
+    "time": "2026-11-20T05:55:57.641891+00:00",
+    "test_mode": false,
+    "reason": "cloud (GitHub Actions)",
+    "seconds": 14,
     "results": {
       "Bitcoin Scout": "24 news stories to read, 1 data warning(s), 0 error(s).",
       "Gold Scout": "0 calendar warning(s), 0 event(s) in the next 7 days, 132 news stories to read, 0 problem(s).",
