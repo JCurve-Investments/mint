@@ -31232,27 +31232,42 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-19T20:05:49.688010+00:00",
       "earliest_report": "2026-11-19T20:05:29+00:00",
-      "last_updated": "2026-11-20T06:50:55.353477+00:00",
+      "last_updated": "2026-11-20T12:05:39.682321+00:00",
       "words": [
         "2.89b",
+        "582m",
+        "62k",
         "basis",
         "below",
         "bitcoin",
         "blackrock",
+        "btc",
         "cost",
+        "custodian",
+        "day",
         "etfs",
+        "eth",
+        "ether",
+        "fall",
         "fund",
+        "gemini",
+        "news",
         "november",
         "outflows",
         "persist",
         "posts",
         "record",
         "selloff",
+        "shed",
+        "sol",
         "spot",
         "trad",
-        "u.s"
+        "u.s",
+        "vaneck"
       ],
       "amounts": [
+        0.1,
+        582.0,
         2890.0
       ],
       "old_clues": [],
@@ -31278,6 +31293,28 @@
           "found_at": "2026-11-20T06:50:55.353477+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONDJjd2tWUVBlMlVkMjBvWUdoWVJfRUV2RGE5WUg5WWNkRlJtYlhTYl9zaE8zdTEzSUtkTWJjTkNIdkZtNTUwbUpUQ2dfWUlIa3BiX3ZsUi1GR2ZoMkpWSEVVV0hUTko4VXN3QjgtYVRnY29mcEFxS3M2cF9IdEt2dDZIQi1Ma3k3aGhEVG5icjRJRHl2ZlVzN19tWVdHUVdyZUJ2R1pVcU1ib1g0OUgw?oc=5",
+          "published": "2026-11-20T04:28:00+00:00",
+          "found_at": "2026-11-20T12:05:39.682321+00:00",
+          "summary": "",
+          "factor": "B4"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Bitcoin ETFs Shed $582M in a Day as BTC Drops Below $62K",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQS0wbU9UbUZCWnZVRk5qampJSDliTzFsTEhDd1FiV3NwNTZPUnMteXBtS0tTWXFEaGhkRGpZODNxcC1qZUc5Mmx3Mm8wZEtqMy1aUENHclZqUlIyaDN5TmxuaE9KalJVWElOWHo1a2I1V2lGb0lMcFByaEkzV3hwMDgxb0pJQjA?oc=5",
+          "published": "2026-11-20T11:50:51+00:00",
+          "found_at": "2026-11-20T12:05:39.682321+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -31292,6 +31329,10 @@
         {
           "time": "2026-11-20T06:50:55.353477+00:00",
           "note": "another report from Bloomberg - same event, no new alert"
+        },
+        {
+          "time": "2026-11-20T12:05:39.682321+00:00",
+          "note": "joined with BTC-20261120-01 (same factor, same day and shared key words) - the same story"
         }
       ],
       "decision": null,
@@ -31987,204 +32028,6 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-20T02:21:20.421700+00:00",
         "verdict_sent": "2026-11-20T06:52:32.637211+00:00"
-      }
-    },
-    {
-      "id": "BTC-20261120-01",
-      "asset": "Bitcoin",
-      "factor": "B4",
-      "factor_name": "ETF flows",
-      "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
-      "state": "context",
-      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
-      "proof": "news",
-      "proof_reason": "reliable source: CoinDesk",
-      "first_seen": "2026-11-20T04:35:39.243460+00:00",
-      "earliest_report": "2026-11-20T04:28:00+00:00",
-      "last_updated": "2026-11-20T12:01:28.094689+00:00",
-      "words": [
-        "582m",
-        "62k",
-        "below",
-        "bitcoin",
-        "btc",
-        "custodian",
-        "day",
-        "etfs",
-        "eth",
-        "ether",
-        "fall",
-        "gemini",
-        "news",
-        "shed",
-        "sol",
-        "vaneck"
-      ],
-      "amounts": [
-        0.1,
-        582.0
-      ],
-      "old_clues": [],
-      "sources": [
-        {
-          "organisation": "CoinDesk",
-          "kind": "news",
-          "site": "coindesk.com",
-          "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONDJjd2tWUVBlMlVkMjBvWUdoWVJfRUV2RGE5WUg5WWNkRlJtYlhTYl9zaE8zdTEzSUtkTWJjTkNIdkZtNTUwbUpUQ2dfWUlIa3BiX3ZsUi1GR2ZoMkpWSEVVV0hUTko4VXN3QjgtYVRnY29mcEFxS3M2cF9IdEt2dDZIQi1Ma3k3aGhEVG5icjRJRHl2ZlVzN19tWVdHUVdyZUJ2R1pVcU1ib1g0OUgw?oc=5",
-          "published": "2026-11-20T04:28:00+00:00",
-          "found_at": "2026-11-20T04:35:39.243460+00:00",
-          "summary": "",
-          "factor": "B4"
-        },
-        {
-          "organisation": "Decrypt",
-          "kind": "news",
-          "site": "decrypt.co",
-          "title": "Bitcoin ETFs Shed $582M in a Day as BTC Drops Below $62K",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQS0wbU9UbUZCWnZVRk5qampJSDliTzFsTEhDd1FiV3NwNTZPUnMteXBtS0tTWXFEaGhkRGpZODNxcC1qZUc5Mmx3Mm8wZEtqMy1aUENHclZqUlIyaDN5TmxuaE9KalJVWElOWHo1a2I1V2lGb0lMcFByaEkzV3hwMDgxb0pJQjA?oc=5",
-          "published": "2026-11-20T11:50:51+00:00",
-          "found_at": "2026-11-20T12:01:28.094689+00:00",
-          "summary": "",
-          "factor": "B4"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-20T04:35:39.243460+00:00",
-          "note": "new event, first report by CoinDesk"
-        },
-        {
-          "time": "2026-11-20T04:35:39.243460+00:00",
-          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
-        },
-        {
-          "time": "2026-11-20T12:01:28.094689+00:00",
-          "note": "another report from Decrypt - same event, no new alert"
-        }
-      ],
-      "decision": null,
-      "outcome": {
-        "start_price": 62108.45,
-        "start_time": "2026-11-20T03:54:10+00:00",
-        "moved_before_mint": 0.0,
-        "delay_hours": 0.1,
-        "now": {
-          "move": -0.61,
-          "time": "2026-11-20T11:44:50+00:00",
-          "hours": 7.3,
-          "verdict": "flat"
-        },
-        "effect": "tracking",
-        "effect_reason": "still inside the 13 hours window (biggest move so far +0.0%)",
-        "impact": {
-          "peak": -1.04,
-          "peak_hours": 0.5,
-          "faded_hours": null,
-          "against": -0.17,
-          "against_hours": 2.5,
-          "until_hours": 7.3,
-          "text": "Clear impact: Bitcoin fell up to 1.0% (after 0 h). Still in the predicted direction after 7 h (-0.6%)."
-        },
-        "result": {
-          "start_price": 61463.64,
-          "start_time": "2026-11-20T04:35:39.243460+00:00",
-          "threshold": 0.93,
-          "window_hours": 13.0,
-          "peak": 0.0,
-          "peak_hours": 0.4,
-          "held_hours": 0.0,
-          "checked_until": 7.2,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 13 hours window (biggest move so far +0.0%)",
-          "size": null
-        },
-        "checks": {
-          "done": 2,
-          "right": 1,
-          "wrong": 0,
-          "total": 9
-        },
-        "final": false,
-        "h1": {
-          "price": 61593.9,
-          "move": -0.83,
-          "time": "2026-11-20T05:28:00+00:00",
-          "verdict": "right"
-        },
-        "h5": {
-          "price": 61744.81,
-          "move": -0.59,
-          "time": "2026-11-20T09:28:00+00:00",
-          "verdict": "flat"
-        }
-      },
-      "prediction": {
-        "direction": "down",
-        "by": "AI + past events",
-        "reason": "There are no past events of this exact kind to compare with.",
-        "similar": [],
-        "votes": {
-          "up": 0,
-          "down": 0
-        },
-        "forecast": {
-          "version": 2,
-          "made": "2026-11-20T04:35:52.864633+00:00",
-          "low": -0.87,
-          "mid": -1.68,
-          "high": -2.62,
-          "window_hours": 13.0,
-          "probability": 0.58,
-          "agree": 0,
-          "similar": 0,
-          "basis": "no similar past event moved this way; size from 14 past B4 events",
-          "window_basis": "time the market normally needs to move this much",
-          "sigma": 2.28,
-          "threshold": 0.93,
-          "floor": 0.93,
-          "lenses": {
-            "volume": -1,
-            "buy_sell": 0
-          },
-          "lens_text": {
-            "volume": "busy: 1.4x a normal day, price -2.2% - real selling",
-            "buy_sell": "buyers started 44% of trades (24 h); 60% of waiting orders near the price are buy orders"
-          },
-          "lens_notes": [
-            "agrees: volume",
-            "no signal: buy/sell"
-          ],
-          "lens_scores": {
-            "news": 0.5,
-            "volume": 0.75,
-            "buy_sell": 0.5
-          },
-          "rule_votes": {
-            "up": 0,
-            "down": 0
-          },
-          "lenses_used": true
-        }
-      },
-      "analysis": {
-        "by": "AI (Groq)",
-        "summary": "VanEck announced it will stop using Gemini as the custodian for its Bitcoin, Ether and SOL ETFs.",
-        "what_past_events_show": "There are no past events of this exact kind to compare with.",
-        "direction": "down",
-        "why": [
-          "A custodian change can create uncertainty and may temporarily slow inflows",
-          "Uncertainty could lead investors to hold off buying, putting slight pressure on price"
-        ],
-        "watch_next": "If ETF inflows stay strong or a new reputable custodian is named, the impact could be reduced.",
-        "confidence": "low",
-        "confidence_reason": "no similar past events yet - based on the factor pattern only",
-        "time": "2026-11-20T04:35:39.243460+00:00"
-      },
-      "telegram": {
-        "first_sent_at": "2026-11-20T04:35:53.506670+00:00",
-        "sent_state": "context"
       }
     },
     {
@@ -33032,14 +32875,14 @@
     "BTC-20261120": 2
   },
   "last_run": {
-    "run_time": "2026-11-20T12:01:28.094689+00:00",
+    "run_time": "2026-11-20T12:05:39.682321+00:00",
     "test_mode": false,
-    "stories": 151,
-    "off_topic": 49,
-    "repeats": 101,
+    "stories": 165,
+    "off_topic": 58,
+    "repeats": 107,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 1,
+    "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
       "context": 0,
@@ -33053,7 +32896,6 @@
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
-          "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
           "Alert: SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
           "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
           "US stock market (Nasdaq) fell -2.25% on its last day"
@@ -33083,7 +32925,6 @@
     "Bitcoin": {
       "state": "Alert",
       "reasons": [
-        "Alert: North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
         "Alert: SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
         "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack"
       ]
@@ -33341,6 +33182,12 @@
       "title": "Gold recoups from 14-month low, tighter Fed outlook caps gains",
       "removed_at": "2026-11-19T20:20:55.965232+00:00",
       "reason": "the same story as GOLD-20261118-07 (same factor, same day and shared key words)"
+    },
+    {
+      "id": "BTC-20261120-01",
+      "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
+      "removed_at": "2026-11-20T12:05:39.682321+00:00",
+      "reason": "the same story as BTC-20261119-07 (same factor, same day and shared key words)"
     }
   ]
 }
