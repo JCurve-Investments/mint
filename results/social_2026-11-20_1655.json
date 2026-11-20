@@ -1,6 +1,6 @@
 {
   "scout": "social",
-  "run_time": "2026-11-20T16:05:41.092202+00:00",
+  "run_time": "2026-11-20T16:55:41.360928+00:00",
   "test_mode": false,
   "news": [
     {
@@ -16,7 +16,7 @@
           "asset": "Bitcoin",
           "summary": "Bitcoin Falls to Around $61,500 as Tech Selloff, ETF Outflows, and Liquidations Hit Markets",
           "published": "2026-11-20T14:05:29+00:00",
-          "age_hours": 2.0
+          "age_hours": 2.8
         }
       ],
       "rejected": [],
@@ -35,7 +35,26 @@
           "asset": "Gold",
           "summary": "Be suspicious of unexpected emails claiming to be from the Federal Reserve. Scammers send fake fraud alerts and use scare tactics to steal your financial information. To learn about protecting yourself and your loved ones, visit www.federalreserve.gov",
           "published": "2026-11-19T19:40:00+00:00",
-          "age_hours": 20.4
+          "age_hours": 21.3
+        }
+      ],
+      "rejected": [],
+      "error": null
+    },
+    {
+      "id": "G1",
+      "name": "social media",
+      "kept": [
+        {
+          "title": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
+          "link": "https://t.me/WatcherGuru/16199",
+          "source_site": "WatcherGuru",
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "asset": "Gold",
+          "summary": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dollars in combined market value have been wiped out today. @WatcherGuru",
+          "published": "2026-11-20T16:19:14+00:00",
+          "age_hours": 0.6
         }
       ],
       "rejected": [],
@@ -75,8 +94,8 @@
     },
     {
       "name": "Watcher.Guru (Telegram)",
-      "read": 14,
-      "kept": 0,
+      "read": 10,
+      "kept": 1,
       "error": null
     }
   ]
