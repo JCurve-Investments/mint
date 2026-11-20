@@ -1,27 +1,8 @@
 {
   "scout": "social",
-  "run_time": "2026-11-20T15:55:44.170889+00:00",
+  "run_time": "2026-11-20T16:45:52.897805+00:00",
   "test_mode": false,
   "news": [
-    {
-      "id": "B2",
-      "name": "social media",
-      "kept": [
-        {
-          "title": "Hackers linked to the Binance breach move nearly $600 million in Ether through THORChain and Chainflip",
-          "link": "https://t.me/whale_alert_io/105089",
-          "source_site": "whale_alert_io",
-          "organisation": "Whale Alert (Telegram)",
-          "kind": "social",
-          "asset": "Bitcoin",
-          "summary": "Hackers linked to the Binance breach move nearly $600 million in Ether through THORChain and Chainflip",
-          "published": "2026-11-20T11:42:59+00:00",
-          "age_hours": 4.2
-        }
-      ],
-      "rejected": [],
-      "error": null
-    },
     {
       "id": "B4",
       "name": "social media",
@@ -35,7 +16,7 @@
           "asset": "Bitcoin",
           "summary": "Bitcoin Falls to Around $61,500 as Tech Selloff, ETF Outflows, and Liquidations Hit Markets",
           "published": "2026-11-20T14:05:29+00:00",
-          "age_hours": 1.8
+          "age_hours": 2.7
         }
       ],
       "rejected": [],
@@ -54,7 +35,26 @@
           "asset": "Gold",
           "summary": "Be suspicious of unexpected emails claiming to be from the Federal Reserve. Scammers send fake fraud alerts and use scare tactics to steal your financial information. To learn about protecting yourself and your loved ones, visit www.federalreserve.gov",
           "published": "2026-11-19T19:40:00+00:00",
-          "age_hours": 20.3
+          "age_hours": 21.1
+        }
+      ],
+      "rejected": [],
+      "error": null
+    },
+    {
+      "id": "G1",
+      "name": "social media",
+      "kept": [
+        {
+          "title": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
+          "link": "https://t.me/WatcherGuru/16199",
+          "source_site": "WatcherGuru",
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "asset": "Gold",
+          "summary": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dollars in combined market value have been wiped out today. @WatcherGuru",
+          "published": "2026-11-20T16:19:14+00:00",
+          "age_hours": 0.4
         }
       ],
       "rejected": [],
@@ -77,7 +77,7 @@
     {
       "name": "Whale Alert (Telegram)",
       "read": 20,
-      "kept": 2,
+      "kept": 1,
       "error": null
     },
     {
@@ -94,8 +94,8 @@
     },
     {
       "name": "Watcher.Guru (Telegram)",
-      "read": 13,
-      "kept": 0,
+      "read": 10,
+      "kept": 1,
       "error": null
     }
   ]
