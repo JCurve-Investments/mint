@@ -28381,8 +28381,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 1,
+          "done": 5,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -28437,7 +28437,13 @@
           "time": "2026-11-20T06:51:19+00:00",
           "verdict": "right"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "h36": {
+          "price": 58694.93,
+          "move": -7.65,
+          "time": "2026-11-20T18:51:19+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -33859,11 +33865,11 @@
     "BTC-20261120": 4
   },
   "last_run": {
-    "run_time": "2026-11-20T18:55:43.412859+00:00",
+    "run_time": "2026-11-20T19:01:25.459447+00:00",
     "test_mode": false,
-    "stories": 175,
-    "off_topic": 75,
-    "repeats": 100,
+    "stories": 113,
+    "off_topic": 43,
+    "repeats": 70,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -33881,7 +33887,7 @@
         "state": "Alert",
         "reasons": [
           "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
-          "US stock market (Nasdaq) fell -3.21% on its last day"
+          "US stock market (Nasdaq) fell -3.38% on its last day"
         ]
       },
       "Gold": {
