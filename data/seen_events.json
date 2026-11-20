@@ -32264,19 +32264,13 @@
           "time": "2026-11-18T16:08:28+00:00",
           "verdict": "wrong"
         },
-        "now": {
-          "move": -8.35,
-          "time": "2026-11-20T16:09:20+00:00",
-          "hours": 168.0,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 2,
-          "wrong": 4,
+          "wrong": 5,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
         "effect_reason": "moved +0.5% or more and held it for 2+ hours, after 2 hours (biggest move +1.1%)",
         "impact": {
@@ -32303,7 +32297,13 @@
           "size": "inside the predicted range",
           "opposite": "miss"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "d7": {
+          "price": 3540.17,
+          "move": -8.35,
+          "time": "2026-11-20T16:08:28+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "up",
@@ -33197,6 +33197,187 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-20T15:11:22.662279+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261120-04",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-20T16:20:55.533902+00:00",
+      "earliest_report": "2026-11-20T16:19:14+00:00",
+      "last_updated": "2026-11-20T16:20:55.533902+00:00",
+      "words": [
+        "bitcoin",
+        "crash",
+        "dol",
+        "fall",
+        "financial",
+        "gold",
+        "just",
+        "market",
+        "nasdaq",
+        "trillion",
+        "under"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
+          "link": "https://t.me/WatcherGuru/16199",
+          "published": "2026-11-20T16:19:14+00:00",
+          "found_at": "2026-11-20T16:20:55.533902+00:00",
+          "summary": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dollars in combined market value have been wiped out today. @WatcherGuru",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-20T16:20:55.533902+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-20T16:20:55.533902+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-20T16:20:55.533902+00:00",
+          "note": "confirmed -> alerted: The report describes a fresh market crash with gold falling below a key level, which is a new event that could significantly affect gold price."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-20",
+        "date_evidence": "The post says market losses happened today.",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Market crash claim and gold falling below $3,550 suggest lower gold price.",
+        "alert_title": "Gold may fall as markets crash",
+        "alert_message": "A social media alert says markets are crashing and gold slipped below $3,550 today. This could push gold lower if the sell\u2011off continues.",
+        "why_it_matters": [
+          "Potential broad market sell\u2011off",
+          "Gold often drops when dollar strength rises"
+        ],
+        "reason": "The report describes a fresh market crash with gold falling below a key level, which is a new event that could significantly affect gold price.",
+        "time": "2026-11-20T16:20:55.533902+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold may fall as markets crash\n\nA social media alert says markets are crashing and gold slipped below $3,550 today. This could push gold lower if the sell\u2011off continues.\n\nMINT's prediction: Gold DOWN - There are no recorded similar past events to compare.\n\nGold had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 20 Nov 16:20 UTC",
+        "telegram_sent_at": "2026-11-20T16:20:55.533902+00:00"
+      },
+      "outcome": {
+        "start_price": 3540.17,
+        "start_time": "2026-11-20T16:09:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-20T16:09:20+00:00",
+          "hours": -0.2,
+          "verdict": "flat"
+        },
+        "effect": "tracking",
+        "effect_reason": "still inside the 34 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3540.17,
+          "start_time": "2026-11-20T16:20:55.533902+00:00",
+          "threshold": 0.75,
+          "window_hours": 33.8,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 34 hours window (biggest move so far -0.0%)",
+          "size": null
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no recorded similar past events to compare.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-20T16:21:11.031816+00:00",
+          "low": -0.99,
+          "mid": -1.5,
+          "high": -2.46,
+          "window_hours": 33.8,
+          "probability": 0.58,
+          "agree": 0,
+          "similar": 0,
+          "basis": "no similar past event moved this way; size from 24 past G1 events",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.26,
+          "threshold": 0.75,
+          "floor": 0.51,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.5x a normal day, price -3.9% - real selling",
+            "buy_sell": "36% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.5,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Financial markets are crashing, with gold dropping below $3,550 as the US dollar strengthens.",
+        "what_past_events_show": "There are no recorded similar past events to compare.",
+        "direction": "down",
+        "why": [
+          "A stronger dollar usually pushes gold lower.",
+          "Broad market sell\u2011offs often boost the dollar as a safe\u2011haven, hurting gold demand."
+        ],
+        "watch_next": "If the dollar keeps rising or the market panic deepens, gold could fall further; a sudden dollar weakness would limit the drop.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-20T16:20:55.533902+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-20T16:21:11.608370+00:00"
+      }
     }
   ],
   "counter": {
@@ -33228,34 +33409,34 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 3,
+    "GOLD-20261120": 4,
     "BTC-20261120": 3
   },
   "last_run": {
-    "run_time": "2026-11-20T16:16:08.586751+00:00",
+    "run_time": "2026-11-20T16:20:55.533902+00:00",
     "test_mode": false,
-    "stories": 122,
-    "off_topic": 53,
-    "repeats": 69,
-    "new_events": 0,
+    "stories": 164,
+    "off_topic": 68,
+    "repeats": 95,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
           "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
-          "US stock market (Nasdaq) fell -2.28% on its last day"
+          "US stock market (Nasdaq) fell -2.49% on its last day"
         ]
       },
       "Gold": {
@@ -33274,7 +33455,8 @@
           "Alert: Gold Set for Worst Week Since March on Hawkish Fed, AI Selloff",
           "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
           "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
-          "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later"
+          "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
+          "Being checked: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol (approved social media account: Watcher.Guru (Telegram) (from social media))"
         ]
       }
     }
@@ -33303,7 +33485,8 @@
         "Alert: Gold Set for Worst Week Since March on Hawkish Fed, AI Selloff",
         "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
         "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
-        "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later"
+        "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
+        "Alert: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol"
       ]
     }
   },
