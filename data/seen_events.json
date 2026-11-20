@@ -17203,12 +17203,6 @@
           "time": "2026-11-14T06:24:26+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -9.33,
-          "time": "2026-11-20T20:30:20+00:00",
-          "hours": 168.1,
-          "verdict": "right"
-        },
         "effect": "right",
         "effect_reason": "moved -0.5% or more and held it for 2+ hours, after 5 hours (biggest move -2.1%)",
         "impact": {
@@ -17221,12 +17215,12 @@
           "text": "Clear impact: Gold fell up to 9.1% (after 7.0 days). Still in the predicted direction after 7.0 days (-9.1%)."
         },
         "checks": {
-          "done": 8,
-          "right": 3,
+          "done": 9,
+          "right": 4,
           "wrong": 1,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "d1": {
           "price": 3830.21,
           "move": -0.98,
@@ -17271,6 +17265,12 @@
           "price": 3717.95,
           "move": -3.88,
           "time": "2026-11-18T20:24:26+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 3507.19,
+          "move": -9.33,
+          "time": "2026-11-20T20:24:26+00:00",
           "verdict": "right"
         }
       },
@@ -34867,11 +34867,11 @@
     "BTC-20261120": 6
   },
   "last_run": {
-    "run_time": "2026-11-20T20:31:24.715436+00:00",
+    "run_time": "2026-11-20T20:35:40.278799+00:00",
     "test_mode": false,
-    "stories": 119,
-    "off_topic": 53,
-    "repeats": 66,
+    "stories": 175,
+    "off_topic": 76,
+    "repeats": 99,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -34891,8 +34891,7 @@
           "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
-          "US stock market (Nasdaq) fell -5.09% on its last day",
-          "1 check(s) failed in the last run (internet problem?) - see Agents"
+          "US stock market (Nasdaq) fell -5.37% on its last day"
         ]
       },
       "Gold": {
