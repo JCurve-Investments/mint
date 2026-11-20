@@ -3418,14 +3418,18 @@
     "s": 136.8396
    },
    "1795132800": {
-    "b": 25.2057,
-    "s": 85.6917
+    "b": 30.5653,
+    "s": 86.2123
+   },
+   "1795136400": {
+    "b": 0.4475,
+    "s": 1.3329
    }
   },
-  "trades_cursor": "1795136151689797074",
+  "trades_cursor": "1795136499072382236",
   "flow_source": "Kraken",
-  "book_bid_share": 0.509,
-  "book_time": "2026-11-20T00:55:42.235609+00:00"
+  "book_bid_share": 0.507,
+  "book_time": "2026-11-20T01:01:26.428024+00:00"
  },
  "Gold": {
   "bars": [
@@ -6634,22 +6638,22 @@
   ],
   "cot_time": "2026-11-20T00:01:31.868496+00:00"
  },
- "time": "2026-11-20T00:55:42.235609+00:00",
+ "time": "2026-11-20T01:01:26.428024+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": -1,
-    "ratio": 1.3,
-    "change_24h": -1.61,
-    "text": "busy: 1.3x a normal day, price -1.6% - real selling",
+    "ratio": 1.28,
+    "change_24h": -1.08,
+    "text": "busy: 1.3x a normal day, price -1.1% - real selling",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.447,
-    "book_bid_share": 0.509,
-    "up_volume_share": 0.253,
+    "taker_buy_share": 0.451,
+    "book_bid_share": 0.507,
+    "up_volume_share": 0.268,
     "text": "buyers started 45% of trades (24 h); 51% of waiting orders near the price are buy orders",
     "ok": true
    }
@@ -6658,15 +6662,15 @@
    "volume": {
     "vote": 0,
     "ratio": 1.04,
-    "change_24h": -3.44,
-    "text": "normal: 1.0x a normal day, price -3.4%",
+    "change_24h": -3.47,
+    "text": "normal: 1.0x a normal day, price -3.5%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.365,
+    "up_volume_share": 0.34,
     "cot_vote": 1,
-    "text": "36% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
+    "text": "34% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
     "ok": true
    }
   }
