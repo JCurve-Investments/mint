@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793253600,
-    "open": 80126.8,
-    "close": 79856.5,
-    "volume": 17.82694122
-   },
-   {
     "t": 1793257200,
     "open": 79856.5,
     "close": 79746.7,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795150800,
     "open": 61450.7,
-    "close": 61606.2,
-    "volume": 62.29905142
+    "close": 61863.2,
+    "volume": 145.75242091
+   },
+   {
+    "t": 1795154400,
+    "open": 61852.0,
+    "close": 61780.5,
+    "volume": 31.68248036
    }
   ],
-  "bars_time": "2026-11-20T05:40:56.464580+00:00",
+  "bars_time": "2026-11-20T06:31:20.266529+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -3442,23 +3442,17 @@
     "s": 41.9397
    },
    "1795154400": {
-    "b": 7.2025,
-    "s": 18.4688
+    "b": 10.2449,
+    "s": 21.4971
    }
   },
-  "trades_cursor": "1795155955191260934",
+  "trades_cursor": "1795156290375673208",
   "flow_source": "Kraken",
-  "book_bid_share": 0.543,
-  "book_time": "2026-11-20T06:25:43.498644+00:00"
+  "book_bid_share": 0.573,
+  "book_time": "2026-11-20T06:31:20.266529+00:00"
  },
  "Gold": {
   "bars": [
-   {
-    "t": 1792483200,
-    "open": 4143.0,
-    "close": 4138.7998046875,
-    "volume": 5621
-   },
    {
     "t": 1792486800,
     "open": 4138.7001953125,
@@ -6612,17 +6606,23 @@
    {
     "t": 1795150800,
     "open": 3533.699951171875,
-    "close": 3521.0,
-    "volume": 6772
+    "close": 3546.199951171875,
+    "volume": 15979
    },
    {
-    "t": 1795152672,
-    "open": 3519.199951171875,
-    "close": 3519.199951171875,
+    "t": 1795154400,
+    "open": 3546.699951171875,
+    "close": 3561.199951171875,
+    "volume": 7156
+   },
+   {
+    "t": 1795155692,
+    "open": 3560.699951171875,
+    "close": 3560.699951171875,
     "volume": 0
    }
   ],
-  "bars_time": "2026-11-20T05:40:56.464580+00:00",
+  "bars_time": "2026-11-20T06:31:20.266529+00:00",
   "bars_source": "Yahoo Finance (gold futures GC=F)",
   "cot": [
    {
@@ -6658,39 +6658,39 @@
   ],
   "cot_time": "2026-11-20T00:01:31.868496+00:00"
  },
- "time": "2026-11-20T06:25:43.498644+00:00",
+ "time": "2026-11-20T06:31:20.266529+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": -1,
-    "ratio": 1.42,
-    "change_24h": -3.25,
-    "text": "busy: 1.4x a normal day, price -3.2% - real selling",
+    "ratio": 1.4,
+    "change_24h": -2.97,
+    "text": "busy: 1.4x a normal day, price -3.0% - real selling",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
     "taker_buy_share": 0.448,
-    "book_bid_share": 0.543,
-    "up_volume_share": 0.236,
-    "text": "buyers started 45% of trades (24 h); 54% of waiting orders near the price are buy orders",
+    "book_bid_share": 0.573,
+    "up_volume_share": 0.248,
+    "text": "buyers started 45% of trades (24 h); 57% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 1.19,
-    "change_24h": -5.75,
-    "text": "normal: 1.2x a normal day, price -5.8%",
+    "ratio": 1.22,
+    "change_24h": -4.64,
+    "text": "normal: 1.2x a normal day, price -4.6%",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.197,
+    "up_volume_share": 0.284,
     "cot_vote": 1,
-    "text": "20% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
+    "text": "28% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)",
     "ok": true
    }
   }
