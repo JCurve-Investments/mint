@@ -25482,23 +25482,49 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-18T08:20:55.920142+00:00",
       "earliest_report": "2026-11-18T08:20:12+00:00",
-      "last_updated": "2026-11-18T08:20:55.920142+00:00",
+      "last_updated": "2026-11-20T12:10:55.061948+00:00",
       "words": [
+        "2.89b",
         "240m",
+        "582m",
+        "62k",
+        "basis",
         "bearish",
         "below",
         "bitcoin",
+        "blackrock",
+        "btc",
+        "cost",
         "cryptoquant",
+        "custodian",
+        "day",
         "etfs",
+        "eth",
+        "ether",
         "fall",
+        "fund",
+        "gemini",
+        "news",
+        "november",
         "outflows",
+        "persist",
         "phase",
+        "posts",
         "record",
+        "selloff",
+        "shed",
+        "sol",
         "spot",
+        "trad",
+        "u.s",
+        "vaneck",
         "warns"
       ],
       "amounts": [
-        240.0
+        0.1,
+        240.0,
+        582.0,
+        2890.0
       ],
       "old_clues": [],
       "sources": [
@@ -25512,6 +25538,50 @@
           "found_at": "2026-11-18T08:20:55.920142+00:00",
           "summary": "US spot Bitcoin ETFs record $240M in outflows as Bitcoin slips below $63,000 and CryptoQuant warns of a bearish phase",
           "factor": "B4"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "U.S. Spot Bitcoin ETFs Record $2.89B in November Outflows as Bitcoin Trades Below Fund Cost Basis",
+          "link": "https://t.me/whale_alert_io/105072",
+          "published": "2026-11-19T20:05:29+00:00",
+          "found_at": "2026-11-20T12:10:55.061948+00:00",
+          "summary": "U.S. Spot Bitcoin ETFs Record $2.89B in November Outflows as Bitcoin Trades Below Fund Cost Basis",
+          "factor": "B4"
+        },
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "BlackRock Bitcoin Fund Posts Record Outflow as Selloff Persists",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdFVkTDVBT0RxcG5nbzVhZEhjMlZRZzQtc2w4Z3dTOG5jQ204YkMtakd0OVF6Y0c0UlBfXzdVdF9PQ2NoMzhGVHJObkJMLVd3Y0hQQjNMcnQxTzlNQ3dHVkVFRVozQmRCWjhRVk5wWDRhOTF6X2FmZ2hkTE9uamZpbTlaM0VGa1Z6d3NOMnZsQ2dMVU94WjZBRi1lSEhWR0ZZRGRyMkQtYUp5WFdXMmduUA?oc=5",
+          "published": "2026-11-20T06:45:00+00:00",
+          "found_at": "2026-11-20T12:10:55.061948+00:00",
+          "summary": "",
+          "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONDJjd2tWUVBlMlVkMjBvWUdoWVJfRUV2RGE5WUg5WWNkRlJtYlhTYl9zaE8zdTEzSUtkTWJjTkNIdkZtNTUwbUpUQ2dfWUlIa3BiX3ZsUi1GR2ZoMkpWSEVVV0hUTko4VXN3QjgtYVRnY29mcEFxS3M2cF9IdEt2dDZIQi1Ma3k3aGhEVG5icjRJRHl2ZlVzN19tWVdHUVdyZUJ2R1pVcU1ib1g0OUgw?oc=5",
+          "published": "2026-11-20T04:28:00+00:00",
+          "found_at": "2026-11-20T12:10:55.061948+00:00",
+          "summary": "",
+          "factor": "B4"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Bitcoin ETFs Shed $582M in a Day as BTC Drops Below $62K",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQS0wbU9UbUZCWnZVRk5qampJSDliTzFsTEhDd1FiV3NwNTZPUnMteXBtS0tTWXFEaGhkRGpZODNxcC1qZUc5Mmx3Mm8wZEtqMy1aUENHclZqUlIyaDN5TmxuaE9KalJVWElOWHo1a2I1V2lGb0lMcFByaEkzV3hwMDgxb0pJQjA?oc=5",
+          "published": "2026-11-20T11:50:51+00:00",
+          "found_at": "2026-11-20T12:10:55.061948+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -25522,6 +25592,10 @@
         {
           "time": "2026-11-18T08:20:55.920142+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (approved social media account: Whale Alert (Telegram) (from social media))"
+        },
+        {
+          "time": "2026-11-20T12:10:55.061948+00:00",
+          "note": "joined with BTC-20261119-07 (headlines share key words (56% match)) - the same story"
         }
       ],
       "decision": null,
@@ -31221,302 +31295,6 @@
       }
     },
     {
-      "id": "BTC-20261119-07",
-      "asset": "Bitcoin",
-      "factor": "B4",
-      "factor_name": "ETF flows",
-      "title": "U.S. Spot Bitcoin ETFs Record $2.89B in November Outflows as Bitcoin Trades Below Fund Cost Basis",
-      "state": "context",
-      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (approved social media account: Whale Alert (Telegram) (from social media))",
-      "proof": "social",
-      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
-      "first_seen": "2026-11-19T20:05:49.688010+00:00",
-      "earliest_report": "2026-11-19T20:05:29+00:00",
-      "last_updated": "2026-11-20T12:05:39.682321+00:00",
-      "words": [
-        "2.89b",
-        "582m",
-        "62k",
-        "basis",
-        "below",
-        "bitcoin",
-        "blackrock",
-        "btc",
-        "cost",
-        "custodian",
-        "day",
-        "etfs",
-        "eth",
-        "ether",
-        "fall",
-        "fund",
-        "gemini",
-        "news",
-        "november",
-        "outflows",
-        "persist",
-        "posts",
-        "record",
-        "selloff",
-        "shed",
-        "sol",
-        "spot",
-        "trad",
-        "u.s",
-        "vaneck"
-      ],
-      "amounts": [
-        0.1,
-        582.0,
-        2890.0
-      ],
-      "old_clues": [],
-      "sources": [
-        {
-          "organisation": "Whale Alert (Telegram)",
-          "kind": "social",
-          "site": "whale_alert_io",
-          "title": "U.S. Spot Bitcoin ETFs Record $2.89B in November Outflows as Bitcoin Trades Below Fund Cost Basis",
-          "link": "https://t.me/whale_alert_io/105072",
-          "published": "2026-11-19T20:05:29+00:00",
-          "found_at": "2026-11-19T20:05:49.688010+00:00",
-          "summary": "U.S. Spot Bitcoin ETFs Record $2.89B in November Outflows as Bitcoin Trades Below Fund Cost Basis",
-          "factor": "B4"
-        },
-        {
-          "organisation": "Bloomberg",
-          "kind": "news",
-          "site": "bloomberg.com",
-          "title": "BlackRock Bitcoin Fund Posts Record Outflow as Selloff Persists",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdFVkTDVBT0RxcG5nbzVhZEhjMlZRZzQtc2w4Z3dTOG5jQ204YkMtakd0OVF6Y0c0UlBfXzdVdF9PQ2NoMzhGVHJObkJMLVd3Y0hQQjNMcnQxTzlNQ3dHVkVFRVozQmRCWjhRVk5wWDRhOTF6X2FmZ2hkTE9uamZpbTlaM0VGa1Z6d3NOMnZsQ2dMVU94WjZBRi1lSEhWR0ZZRGRyMkQtYUp5WFdXMmduUA?oc=5",
-          "published": "2026-11-20T06:45:00+00:00",
-          "found_at": "2026-11-20T06:50:55.353477+00:00",
-          "summary": "",
-          "factor": "B4"
-        },
-        {
-          "organisation": "CoinDesk",
-          "kind": "news",
-          "site": "coindesk.com",
-          "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONDJjd2tWUVBlMlVkMjBvWUdoWVJfRUV2RGE5WUg5WWNkRlJtYlhTYl9zaE8zdTEzSUtkTWJjTkNIdkZtNTUwbUpUQ2dfWUlIa3BiX3ZsUi1GR2ZoMkpWSEVVV0hUTko4VXN3QjgtYVRnY29mcEFxS3M2cF9IdEt2dDZIQi1Ma3k3aGhEVG5icjRJRHl2ZlVzN19tWVdHUVdyZUJ2R1pVcU1ib1g0OUgw?oc=5",
-          "published": "2026-11-20T04:28:00+00:00",
-          "found_at": "2026-11-20T12:05:39.682321+00:00",
-          "summary": "",
-          "factor": "B4"
-        },
-        {
-          "organisation": "Decrypt",
-          "kind": "news",
-          "site": "decrypt.co",
-          "title": "Bitcoin ETFs Shed $582M in a Day as BTC Drops Below $62K",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQS0wbU9UbUZCWnZVRk5qampJSDliTzFsTEhDd1FiV3NwNTZPUnMteXBtS0tTWXFEaGhkRGpZODNxcC1qZUc5Mmx3Mm8wZEtqMy1aUENHclZqUlIyaDN5TmxuaE9KalJVWElOWHo1a2I1V2lGb0lMcFByaEkzV3hwMDgxb0pJQjA?oc=5",
-          "published": "2026-11-20T11:50:51+00:00",
-          "found_at": "2026-11-20T12:05:39.682321+00:00",
-          "summary": "",
-          "factor": "B4"
-        }
-      ],
-      "history": [
-        {
-          "time": "2026-11-19T20:05:49.688010+00:00",
-          "note": "new event, first report by Whale Alert (Telegram)"
-        },
-        {
-          "time": "2026-11-19T20:05:49.688010+00:00",
-          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (approved social media account: Whale Alert (Telegram) (from social media))"
-        },
-        {
-          "time": "2026-11-20T06:50:55.353477+00:00",
-          "note": "another report from Bloomberg - same event, no new alert"
-        },
-        {
-          "time": "2026-11-20T12:05:39.682321+00:00",
-          "note": "joined with BTC-20261120-01 (same factor, same day and shared key words) - the same story"
-        }
-      ],
-      "decision": null,
-      "outcome": {
-        "start_price": 62258.69,
-        "start_time": "2026-11-19T20:00:10+00:00",
-        "moved_before_mint": 0.0,
-        "delay_hours": 0.0,
-        "now": {
-          "move": -0.85,
-          "time": "2026-11-20T11:44:50+00:00",
-          "hours": 15.7,
-          "verdict": "flat"
-        },
-        "checks": {
-          "done": 3,
-          "right": 1,
-          "wrong": 0,
-          "total": 9
-        },
-        "final": false,
-        "effect": "tracking",
-        "effect_reason": "still inside the 5 days window (biggest move so far -1.3%)",
-        "impact": {
-          "peak": -1.28,
-          "peak_hours": 8.9,
-          "faded_hours": null,
-          "against": -0.2,
-          "against_hours": 6.9,
-          "until_hours": 15.7,
-          "text": "Clear impact: Bitcoin fell up to 1.3% (after 9 h). Still in the predicted direction after 16 h (-0.8%)."
-        },
-        "result": {
-          "start_price": 62258.69,
-          "start_time": "2026-11-19T20:05:49.688010+00:00",
-          "threshold": 1.08,
-          "window_hours": 120,
-          "peak": -1.28,
-          "peak_hours": 8.9,
-          "held_hours": 0.0,
-          "checked_until": 15.7,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 5 days window (biggest move so far -1.3%)",
-          "size": null
-        },
-        "h1": {
-          "price": 62233.76,
-          "move": -0.04,
-          "time": "2026-11-19T21:05:29+00:00",
-          "verdict": "flat"
-        },
-        "h5": {
-          "price": 62313.11,
-          "move": 0.09,
-          "time": "2026-11-20T01:05:29+00:00",
-          "verdict": "flat"
-        },
-        "h10": {
-          "price": 61593.9,
-          "move": -1.07,
-          "time": "2026-11-20T06:05:29+00:00",
-          "verdict": "right"
-        }
-      },
-      "prediction": {
-        "direction": "down",
-        "by": "AI + past events",
-        "reason": "Recent similar outflow events (ranging from $240\u202fM to $2.1\u202fB) all led to Bitcoin falling about 1\u20115% the next day.",
-        "similar": [
-          {
-            "id": "BTC-20261118-02",
-            "date": "2026-11-18",
-            "title": "US spot Bitcoin ETFs record $240M in outflows as Bitcoin slips below $63,000 and CryptoQuant warns of a bearish phase",
-            "d1": -1.82,
-            "d7": null,
-            "peak_hours": 14.7,
-            "source": "MINT",
-            "score": 0.92
-          },
-          {
-            "id": "BTC-20261115-02",
-            "date": "2026-11-15",
-            "title": "Bitcoin ETFs Lose $2.1 Billion in November as Outflow Streak Hits Seven Days",
-            "d1": -2.17,
-            "d7": null,
-            "peak_hours": 81.0,
-            "source": "MINT",
-            "score": 0.77
-          },
-          {
-            "id": "BTC-20261113-01",
-            "date": "2026-11-13",
-            "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
-            "d1": -1.74,
-            "d7": null,
-            "peak_hours": 137.2,
-            "source": "MINT",
-            "score": 0.75
-          },
-          {
-            "id": "BTC-20261111-04",
-            "date": "2026-11-11",
-            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
-            "d1": -3.9,
-            "d7": -16.17,
-            "peak_hours": 167.2,
-            "source": "MINT",
-            "score": 0.63
-          },
-          {
-            "id": "BTC-20261112-03",
-            "date": "2026-11-12",
-            "title": "Bitcoin ETFs Bleed $1.4B in Five Days as Investors Cut Risk",
-            "d1": -5.49,
-            "d7": -13.2,
-            "peak_hours": 155.6,
-            "source": "MINT",
-            "score": 0.62
-          }
-        ],
-        "votes": {
-          "up": 0,
-          "down": 5.78
-        },
-        "forecast": {
-          "version": 2,
-          "made": "2026-11-19T20:06:08.839561+00:00",
-          "low": -1.74,
-          "mid": -2.17,
-          "high": -4.5,
-          "window_hours": 120,
-          "probability": 0.62,
-          "agree": 5,
-          "similar": 5,
-          "basis": "5 of 5 similar past events moved this way (typical move 2.2%)",
-          "window_basis": "similar past moves peaked after about 5.7 days",
-          "sigma": 2.25,
-          "threshold": 1.08,
-          "floor": 0.92,
-          "lenses": {
-            "volume": 0,
-            "buy_sell": 0
-          },
-          "lens_text": {
-            "volume": "normal: 1.1x a normal day, price -0.6%",
-            "buy_sell": "buyers started 45% of trades (24 h); 58% of waiting orders near the price are buy orders"
-          },
-          "lens_notes": [
-            "no signal: volume",
-            "no signal: buy/sell"
-          ],
-          "lens_scores": {
-            "news": 0.86,
-            "volume": 0.5,
-            "buy_sell": 0.5
-          },
-          "rule_votes": {
-            "up": 0,
-            "down": 5.78
-          },
-          "lenses_used": true
-        }
-      },
-      "analysis": {
-        "by": "AI (Groq)",
-        "summary": "U.S. spot Bitcoin ETFs saw $2.89\u202fbillion of outflows in November while Bitcoin traded below the funds' cost basis, signaling investors are pulling money out.",
-        "what_past_events_show": "Recent similar outflow events (ranging from $240\u202fM to $2.1\u202fB) all led to Bitcoin falling about 1\u20115% the next day.",
-        "direction": "down",
-        "why": [
-          "Large outflows suggest selling pressure on Bitcoin.",
-          "Price is already below the funds' cost basis, which can trigger more redemptions."
-        ],
-        "watch_next": "If outflows keep rising for several days, the drop could deepen; a reversal to inflows the next day would soften the impact.",
-        "confidence": "high",
-        "confidence_reason": "5 of 5 similar past events moved this way",
-        "time": "2026-11-19T20:05:49.688010+00:00"
-      },
-      "telegram": {
-        "first_sent_at": "2026-11-19T20:06:10.646940+00:00",
-        "sent_state": "context"
-      }
-    },
-    {
       "id": "GOLD-20261119-09",
       "asset": "Gold",
       "factor": "G2",
@@ -32840,6 +32618,173 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-20T06:31:38.902632+00:00"
       }
+    },
+    {
+      "id": "BTC-20261120-03",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin ETFs Shed $582M in a Day as BTC Drops Below $62K",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: Decrypt)",
+      "proof": "news",
+      "proof_reason": "reliable source: Decrypt",
+      "first_seen": "2026-11-20T12:10:55.061948+00:00",
+      "earliest_report": "2026-11-20T11:50:51+00:00",
+      "last_updated": "2026-11-20T12:10:55.061948+00:00",
+      "words": [
+        "582m",
+        "62k",
+        "below",
+        "bitcoin",
+        "btc",
+        "day",
+        "etfs",
+        "fall",
+        "shed"
+      ],
+      "amounts": [
+        0.1,
+        582.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Bitcoin ETFs Shed $582M in a Day as BTC Drops Below $62K",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQS0wbU9UbUZCWnZVRk5qampJSDliTzFsTEhDd1FiV3NwNTZPUnMteXBtS0tTWXFEaGhkRGpZODNxcC1qZUc5Mmx3Mm8wZEtqMy1aUENHclZqUlIyaDN5TmxuaE9KalJVWElOWHo1a2I1V2lGb0lMcFByaEkzV3hwMDgxb0pJQjA?oc=5",
+          "published": "2026-11-20T11:50:51+00:00",
+          "found_at": "2026-11-20T12:10:55.061948+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-20T12:10:55.061948+00:00",
+          "note": "new event, first report by Decrypt"
+        },
+        {
+          "time": "2026-11-20T12:10:55.061948+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: Decrypt)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 61732.13,
+        "start_time": "2026-11-20T11:44:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.3,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-20T11:44:50+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 15 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 61732.13,
+          "start_time": "2026-11-20T12:10:55.061948+00:00",
+          "threshold": 0.94,
+          "window_hours": 15.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 15 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "A similar outflow of $240\u202fmillion when Bitcoin slipped below $63\u202fk led to a 1\u2011day drop of about\u202f\u20111.8%.",
+        "similar": [
+          {
+            "id": "BTC-20261118-02",
+            "date": "2026-11-18",
+            "title": "US spot Bitcoin ETFs record $240M in outflows as Bitcoin slips below $63,000 and CryptoQuant warns of a bearish phase",
+            "d1": -1.82,
+            "d7": null,
+            "peak_hours": 44.7,
+            "source": "MINT",
+            "score": 0.63
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.63
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-20T12:11:08.799330+00:00",
+          "low": -1.09,
+          "mid": -1.82,
+          "high": -2.55,
+          "window_hours": 15.0,
+          "probability": 0.72,
+          "agree": 1,
+          "similar": 1,
+          "basis": "1 of 1 similar past events moved this way (typical move 1.8%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.3,
+          "threshold": 0.94,
+          "floor": 0.94,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.5x a normal day, price -3.2% - real selling",
+            "buy_sell": "buyers started 43% of trades (24 h); 56% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.67,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0.63
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin ETFs saw a huge $582\u202fmillion outflow in one day, and Bitcoin fell below $62\u202fk.",
+        "what_past_events_show": "A similar outflow of $240\u202fmillion when Bitcoin slipped below $63\u202fk led to a 1\u2011day drop of about\u202f\u20111.8%.",
+        "direction": "down",
+        "why": [
+          "Large outflows signal investors are selling, adding pressure on price.",
+          "The price is already falling, and outflows often reinforce a down move."
+        ],
+        "watch_next": "If the outflows keep coming the drop could deepen; a reversal to inflows would likely limit the fall.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-20T12:10:55.061948+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-20T12:11:10.382143+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -32872,20 +32817,20 @@
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
     "GOLD-20261120": 2,
-    "BTC-20261120": 2
+    "BTC-20261120": 3
   },
   "last_run": {
-    "run_time": "2026-11-20T12:05:39.682321+00:00",
+    "run_time": "2026-11-20T12:10:55.061948+00:00",
     "test_mode": false,
-    "stories": 165,
-    "off_topic": 58,
-    "repeats": 107,
-    "new_events": 0,
+    "stories": 172,
+    "off_topic": 61,
+    "repeats": 110,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
@@ -33188,6 +33133,12 @@
       "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
       "removed_at": "2026-11-20T12:05:39.682321+00:00",
       "reason": "the same story as BTC-20261119-07 (same factor, same day and shared key words)"
+    },
+    {
+      "id": "BTC-20261119-07",
+      "title": "U.S. Spot Bitcoin ETFs Record $2.89B in November Outflows as Bitcoin Trades Below Fund Cost Basis",
+      "removed_at": "2026-11-20T12:10:55.061948+00:00",
+      "reason": "the same story as BTC-20261118-02 (headlines share key words (56% match))"
     }
   ]
 }
