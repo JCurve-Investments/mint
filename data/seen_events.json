@@ -31480,7 +31480,7 @@
       "proof_reason": "reliable source: Bloomberg",
       "first_seen": "2026-11-20T00:25:40.286238+00:00",
       "earliest_report": "2026-11-19T23:56:03+00:00",
-      "last_updated": "2026-11-20T10:01:30.354532+00:00",
+      "last_updated": "2026-11-20T11:35:39.112058+00:00",
       "words": [
         "eight",
         "fall",
@@ -31521,6 +31521,17 @@
           "found_at": "2026-11-20T10:01:30.354532+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Gold slides toward worst week in eight months on hawkish Fed outlook",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSlpvRGxSc1NfT0l5cnd2STJ2d01EeUk4aDBIem9Jc1JXRm0yUEoxWWR6NG50b0N1MU5walEtWlk4eU9yeE9MeXIyNmF5YjlSRVhJaHR6STVNQXJhTlV1QzRoRXd3dXo1UlVaT0pYeTZCYjdIa1lMQkV5WktIQlpENW50QdIBiAFBVV95cUxNelZwb3pwWXdnZjNzVzR1UldsYTl0TUlSMHdTMjRrS2ZlX3BvM19HSVkzYlZmLUh4TFlhV2dEVXcyTmNNWV9rUXZIbmI4UnZ1cmUzX0NBTkNiMnliR3ZOU2RKbVFQSDJHbEJNbkdyTVN1bnN0Uy1WMHRrdnRxNHRKS1lPcHZ5Qm9I?oc=5",
+          "published": "2026-11-20T05:05:43+00:00",
+          "found_at": "2026-11-20T11:35:39.112058+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -31539,6 +31550,10 @@
         {
           "time": "2026-11-20T10:01:30.354532+00:00",
           "note": "another report from Reuters - same event, no new alert"
+        },
+        {
+          "time": "2026-11-20T11:35:39.112058+00:00",
+          "note": "another report from CNBC - same event, no new alert"
         }
       ],
       "decision": {
@@ -32964,14 +32979,14 @@
     "BTC-20261120": 2
   },
   "last_run": {
-    "run_time": "2026-11-20T11:31:15.819495+00:00",
+    "run_time": "2026-11-20T11:35:39.112058+00:00",
     "test_mode": false,
-    "stories": 149,
-    "off_topic": 48,
-    "repeats": 101,
+    "stories": 162,
+    "off_topic": 56,
+    "repeats": 105,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
