@@ -18434,8 +18434,8 @@
           "text": "Clear impact: Gold fell up to 6.8% (after 5.0 days). Still in the predicted direction after 5.0 days (-6.8%)."
         },
         "checks": {
-          "done": 7,
-          "right": 0,
+          "done": 8,
+          "right": 1,
           "wrong": 6,
           "total": 9
         },
@@ -18497,6 +18497,12 @@
           "move": -0.83,
           "time": "2026-11-18T14:04:33+00:00",
           "verdict": "flat"
+        },
+        "d5": {
+          "price": 3540.33,
+          "move": -6.84,
+          "time": "2026-11-20T02:04:33+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -31496,11 +31502,11 @@
     "GOLD-20261119": 9
   },
   "last_run": {
-    "run_time": "2026-11-20T02:10:56.556426+00:00",
+    "run_time": "2026-11-20T02:15:55.060603+00:00",
     "test_mode": false,
-    "stories": 157,
-    "off_topic": 67,
-    "repeats": 90,
+    "stories": 158,
+    "off_topic": 69,
+    "repeats": 89,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
