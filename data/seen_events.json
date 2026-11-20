@@ -32661,27 +32661,34 @@
       "proof_reason": "reliable source: Decrypt",
       "first_seen": "2026-11-20T12:10:55.061948+00:00",
       "earliest_report": "2026-11-20T11:50:51+00:00",
-      "last_updated": "2026-11-20T12:35:39.335431+00:00",
+      "last_updated": "2026-11-20T14:05:43.602996+00:00",
       "words": [
         "3.5",
         "582m",
         "62k",
+        "around",
         "below",
         "billion",
         "bitcoin",
         "btc",
         "daily",
         "day",
+        "etf",
         "etfs",
         "fall",
+        "hit",
+        "liquidation",
+        "market",
         "million",
         "nears",
         "net",
         "november",
         "outflows",
         "see",
+        "selloff",
         "shed",
         "spot",
+        "tech",
         "total"
       ],
       "amounts": [
@@ -32712,6 +32719,17 @@
           "found_at": "2026-11-20T12:35:39.335431+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "Bitcoin Falls to Around $61,500 as Tech Selloff, ETF Outflows, and Liquidations Hit Markets",
+          "link": "https://t.me/whale_alert_io/105099",
+          "published": "2026-11-20T14:05:29+00:00",
+          "found_at": "2026-11-20T14:05:43.602996+00:00",
+          "summary": "Bitcoin Falls to Around $61,500 as Tech Selloff, ETF Outflows, and Liquidations Hit Markets",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -32726,6 +32744,10 @@
         {
           "time": "2026-11-20T12:35:39.335431+00:00",
           "note": "another report from The Block - same event, no new alert"
+        },
+        {
+          "time": "2026-11-20T14:05:43.602996+00:00",
+          "note": "another report from Whale Alert (Telegram) - same event, no new alert"
         }
       ],
       "decision": null,
@@ -32891,14 +32913,14 @@
     "BTC-20261120": 3
   },
   "last_run": {
-    "run_time": "2026-11-20T14:01:33.389375+00:00",
+    "run_time": "2026-11-20T14:05:43.602996+00:00",
     "test_mode": false,
-    "stories": 106,
-    "off_topic": 39,
-    "repeats": 67,
+    "stories": 159,
+    "off_topic": 56,
+    "repeats": 102,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
