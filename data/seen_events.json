@@ -31725,6 +31725,161 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-20T02:21:20.421700+00:00"
       }
+    },
+    {
+      "id": "BTC-20261120-01",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-20T04:35:39.243460+00:00",
+      "earliest_report": "2026-11-20T04:28:00+00:00",
+      "last_updated": "2026-11-20T04:35:39.243460+00:00",
+      "words": [
+        "bitcoin",
+        "btc",
+        "custodian",
+        "etfs",
+        "eth",
+        "ether",
+        "fall",
+        "gemini",
+        "news",
+        "sol",
+        "vaneck"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "BTC, ETH, SOL news: VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONDJjd2tWUVBlMlVkMjBvWUdoWVJfRUV2RGE5WUg5WWNkRlJtYlhTYl9zaE8zdTEzSUtkTWJjTkNIdkZtNTUwbUpUQ2dfWUlIa3BiX3ZsUi1GR2ZoMkpWSEVVV0hUTko4VXN3QjgtYVRnY29mcEFxS3M2cF9IdEt2dDZIQi1Ma3k3aGhEVG5icjRJRHl2ZlVzN19tWVdHUVdyZUJ2R1pVcU1ib1g0OUgw?oc=5",
+          "published": "2026-11-20T04:28:00+00:00",
+          "found_at": "2026-11-20T04:35:39.243460+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-20T04:35:39.243460+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-20T04:35:39.243460+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 62108.45,
+        "start_time": "2026-11-20T03:54:10+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-20T03:54:10+00:00",
+          "hours": -0.6,
+          "verdict": "flat"
+        },
+        "effect": "tracking",
+        "effect_reason": "still inside the 13 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 62108.45,
+          "start_time": "2026-11-20T04:35:39.243460+00:00",
+          "threshold": 0.93,
+          "window_hours": 13.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 13 hours window (biggest move so far -0.0%)",
+          "size": null
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no past events of this exact kind to compare with.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-20T04:35:52.864633+00:00",
+          "low": -0.87,
+          "mid": -1.68,
+          "high": -2.62,
+          "window_hours": 13.0,
+          "probability": 0.58,
+          "agree": 0,
+          "similar": 0,
+          "basis": "no similar past event moved this way; size from 14 past B4 events",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.28,
+          "threshold": 0.93,
+          "floor": 0.93,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.4x a normal day, price -2.2% - real selling",
+            "buy_sell": "buyers started 44% of trades (24 h); 60% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.5,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "VanEck announced it will stop using Gemini as the custodian for its Bitcoin, Ether and SOL ETFs.",
+        "what_past_events_show": "There are no past events of this exact kind to compare with.",
+        "direction": "down",
+        "why": [
+          "A custodian change can create uncertainty and may temporarily slow inflows",
+          "Uncertainty could lead investors to hold off buying, putting slight pressure on price"
+        ],
+        "watch_next": "If ETF inflows stay strong or a new reputable custodian is named, the impact could be reduced.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-20T04:35:39.243460+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-20T04:35:53.506670+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -31756,20 +31911,21 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 1
+    "GOLD-20261120": 1,
+    "BTC-20261120": 1
   },
   "last_run": {
-    "run_time": "2026-11-20T04:31:17.126968+00:00",
+    "run_time": "2026-11-20T04:35:39.243460+00:00",
     "test_mode": false,
-    "stories": 159,
+    "stories": 161,
     "off_topic": 65,
-    "repeats": 94,
-    "new_events": 0,
+    "repeats": 95,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
