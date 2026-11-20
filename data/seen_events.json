@@ -24559,8 +24559,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 6,
-          "right": 5,
+          "done": 7,
+          "right": 6,
           "wrong": 0,
           "total": 9
         },
@@ -24626,6 +24626,12 @@
           "price": 3711.52,
           "move": -3.76,
           "time": "2026-11-19T04:18:00+00:00",
+          "verdict": "right"
+        },
+        "h84": {
+          "price": 3540.17,
+          "move": -8.2,
+          "time": "2026-11-20T16:18:00+00:00",
           "verdict": "right"
         }
       },
@@ -32539,8 +32545,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 2,
-          "right": 0,
+          "done": 3,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -32581,6 +32587,12 @@
           "move": 0.48,
           "time": "2026-11-20T11:17:55+00:00",
           "verdict": "flat"
+        },
+        "h10": {
+          "price": 59252.51,
+          "move": -4.06,
+          "time": "2026-11-20T16:17:55+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -33378,6 +33390,236 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-20T16:21:11.608370+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261120-05",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold under a hiking Fed: central-bank demand versus real rates",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-20T16:31:16.026994+00:00",
+      "earliest_report": "2026-11-20T16:13:05+00:00",
+      "last_updated": "2026-11-20T16:31:16.026994+00:00",
+      "words": [
+        "central-bank",
+        "demand",
+        "fed",
+        "gold",
+        "hik",
+        "rate",
+        "real",
+        "under",
+        "versu"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold under a hiking Fed: central-bank demand versus real rates",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZ1FnbGMtajVDa2FNWUQ5eGVERmkxaUNRcjNIMUNDNUprbGlCajZ6dE8zSEdubFNjY0hwYlhxTTlQdmd6UzNIUnVGbGtnVzBXOTZPbTQ4NnRIS1ROaE1oN09HbXl6OXYwZnF2M1AzZVktbmZyTDRGRkV0emw3b1pBSDItQkk5dXJmODRIbi1wYTBsZFVuOXllTWJEWTVibXJkdlE?oc=5",
+          "published": "2026-11-20T16:13:05+00:00",
+          "found_at": "2026-11-20T16:31:16.026994+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-20T16:31:16.026994+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-20T16:31:16.026994+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-20T16:31:16.026994+00:00",
+          "note": "confirmed -> alerted: New Fed rate\u2011hike news could impact gold price, so an alert is warranted"
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-20",
+        "date_evidence": "article published 2026-11-20 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "rates up historically push gold lower",
+        "alert_title": "Fed hikes may pressure gold",
+        "alert_message": "The Fed is expected to raise interest rates, which historically pushes gold lower. Watch for a possible price drop.",
+        "why_it_matters": [
+          "Higher rates reduce gold's appeal",
+          "Real rates affect gold demand"
+        ],
+        "reason": "New Fed rate\u2011hike news could impact gold price, so an alert is warranted",
+        "time": "2026-11-20T16:31:16.026994+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed hikes may pressure gold\n\nThe Fed is expected to raise interest rates, which historically pushes gold lower. Watch for a possible price drop.\n\nMINT's prediction: Gold DOWN - When the Fed signaled continued tightening (2026\u201111\u201118) gold fell 1.4% the next day, while a single rate hike in 2023 gave a small rise, showing mixed outcomes but a tendency to drop on tightening signals.\n\nGold had already moved +0.0% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 20 Nov 16:31 UTC",
+        "telegram_sent_at": "2026-11-20T16:31:16.026994+00:00"
+      },
+      "outcome": {
+        "start_price": 3540.17,
+        "start_time": "2026-11-20T16:09:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.3,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-20T16:09:20+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 9 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3540.17,
+          "start_time": "2026-11-20T16:31:16.026994+00:00",
+          "threshold": 0.51,
+          "window_hours": 9.3,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 9 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "When the Fed signaled continued tightening (2026\u201111\u201118) gold fell 1.4% the next day, while a single rate hike in 2023 gave a small rise, showing mixed outcomes but a tendency to drop on tightening signals.",
+        "similar": [
+          {
+            "id": "GOLD-20261118-07",
+            "date": "2026-11-18",
+            "title": "Gold prices remain under pressure as Fed minutes show central bank committed to cooling inflation",
+            "d1": -1.37,
+            "d7": null,
+            "peak_hours": 33.3,
+            "source": "MINT",
+            "score": 0.46
+          },
+          {
+            "id": "START-20230726-G",
+            "date": "2023-07-26",
+            "title": "Fed raises rates by a quarter point",
+            "d1": 0.33,
+            "d7": 0.58,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20240918-G",
+            "date": "2024-09-18",
+            "title": "Fed cuts rates by half a point",
+            "d1": 0.24,
+            "d7": 3.56,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20241107-G",
+            "date": "2024-11-07",
+            "title": "Fed cuts rates by a quarter point",
+            "d1": 1.1,
+            "d7": -3.86,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20250917-G",
+            "date": "2025-09-17",
+            "title": "Fed cuts rates by a quarter point",
+            "d1": -0.2,
+            "d7": 1.15,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 1.35,
+          "down": 0.91
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-20T16:31:31.374295+00:00",
+          "low": -0.47,
+          "mid": -0.79,
+          "high": -1.1,
+          "window_hours": 9.3,
+          "probability": 0.56,
+          "agree": 2,
+          "similar": 5,
+          "basis": "2 of 5 similar past events moved this way (typical move 0.8%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.26,
+          "threshold": 0.51,
+          "floor": 0.51,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.5x a normal day, price -3.9% - real selling",
+            "buy_sell": "36% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.43,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.35,
+            "down": 0.91
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The Fed is signaling higher or longer\u2011lasting interest rates, which can make gold less attractive because it yields no interest.",
+        "what_past_events_show": "When the Fed signaled continued tightening (2026\u201111\u201118) gold fell 1.4% the next day, while a single rate hike in 2023 gave a small rise, showing mixed outcomes but a tendency to drop on tightening signals.",
+        "direction": "down",
+        "why": [
+          "Higher or expected\u2011higher rates usually push gold lower",
+          "Recent Fed minutes that hinted at ongoing tightening caused a 1\u2011day drop"
+        ],
+        "watch_next": "If the Fed surprises the market with a bigger hike or a change in guidance, the move could be larger; if the message was fully expected, the impact may be smaller.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-20T16:31:16.026994+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-20T16:31:31.989524+00:00"
+      }
     }
   ],
   "counter": {
@@ -33409,34 +33651,34 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 4,
+    "GOLD-20261120": 5,
     "BTC-20261120": 3
   },
   "last_run": {
-    "run_time": "2026-11-20T16:25:54.265761+00:00",
+    "run_time": "2026-11-20T16:31:16.026994+00:00",
     "test_mode": false,
-    "stories": 165,
+    "stories": 166,
     "off_topic": 69,
     "repeats": 96,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
           "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
-          "US stock market (Nasdaq) fell -2.68% on its last day"
+          "US stock market (Nasdaq) fell -2.82% on its last day"
         ]
       },
       "Gold": {
@@ -33456,7 +33698,8 @@
           "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
           "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
           "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
-          "Alert: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol"
+          "Alert: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
+          "Being checked: Gold under a hiking Fed: central-bank demand versus real rates (reliable source: Kitco News)"
         ]
       }
     }
@@ -33486,7 +33729,8 @@
         "Alert: Gold futures sink below $3,700 as 5% yields pull money out of bullion",
         "Alert: Gold set for worst week in eight months as firm dollar, Fed hike bets weigh",
         "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
-        "Alert: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol"
+        "Alert: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
+        "Alert: Gold under a hiking Fed: central-bank demand versus real rates"
       ]
     }
   },
