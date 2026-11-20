@@ -32001,21 +32001,29 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-20T04:35:39.243460+00:00",
       "earliest_report": "2026-11-20T04:28:00+00:00",
-      "last_updated": "2026-11-20T04:35:39.243460+00:00",
+      "last_updated": "2026-11-20T12:01:28.094689+00:00",
       "words": [
+        "582m",
+        "62k",
+        "below",
         "bitcoin",
         "btc",
         "custodian",
+        "day",
         "etfs",
         "eth",
         "ether",
         "fall",
         "gemini",
         "news",
+        "shed",
         "sol",
         "vaneck"
       ],
-      "amounts": [],
+      "amounts": [
+        0.1,
+        582.0
+      ],
       "old_clues": [],
       "sources": [
         {
@@ -32028,6 +32036,17 @@
           "found_at": "2026-11-20T04:35:39.243460+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "Decrypt",
+          "kind": "news",
+          "site": "decrypt.co",
+          "title": "Bitcoin ETFs Shed $582M in a Day as BTC Drops Below $62K",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQS0wbU9UbUZCWnZVRk5qampJSDliTzFsTEhDd1FiV3NwNTZPUnMteXBtS0tTWXFEaGhkRGpZODNxcC1qZUc5Mmx3Mm8wZEtqMy1aUENHclZqUlIyaDN5TmxuaE9KalJVWElOWHo1a2I1V2lGb0lMcFByaEkzV3hwMDgxb0pJQjA?oc=5",
+          "published": "2026-11-20T11:50:51+00:00",
+          "found_at": "2026-11-20T12:01:28.094689+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -32038,6 +32057,10 @@
         {
           "time": "2026-11-20T04:35:39.243460+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        },
+        {
+          "time": "2026-11-20T12:01:28.094689+00:00",
+          "note": "another report from Decrypt - same event, no new alert"
         }
       ],
       "decision": null,
@@ -33009,14 +33032,14 @@
     "BTC-20261120": 2
   },
   "last_run": {
-    "run_time": "2026-11-20T11:55:39.241397+00:00",
+    "run_time": "2026-11-20T12:01:28.094689+00:00",
     "test_mode": false,
-    "stories": 120,
-    "off_topic": 45,
-    "repeats": 75,
+    "stories": 151,
+    "off_topic": 49,
+    "repeats": 101,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
