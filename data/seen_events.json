@@ -35350,6 +35350,208 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-20T21:25:55.896363+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261120-10",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Wall Street Journal",
+      "first_seen": "2026-11-20T22:31:19.333362+00:00",
+      "earliest_report": "2026-11-20T20:18:00+00:00",
+      "last_updated": "2026-11-20T22:31:19.333362+00:00",
+      "words": [
+        "15-month",
+        "expectation",
+        "fall",
+        "gold",
+        "interest-rate",
+        "low",
+        "nearly"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Wall Street Journal",
+          "kind": "news",
+          "site": "wsj.com",
+          "title": "Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcVRIcFBRS1k2cEF4M0NpS3duc2FFOXdhMFh4Q1NLdVY2aEZwTEpleEg1VHotWmtibTBWeFA5Y0lYd2tXaGVKRGl5dnhOS1F6dFVTeUszc0t0MERDMWNtdXJjejV4R0dXczA2SXhDNVk5XzBfbXpsZFZHU1ZOOXUtVXJqalBPOW5mX1hQRHdPZU1IZV9EVTdVdzdTc1dCSWZIcUhIYzM1UmEwOFJH?oc=5",
+          "published": "2026-11-20T20:18:00+00:00",
+          "found_at": "2026-11-20T22:31:19.333362+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-20T22:31:19.333362+00:00",
+          "note": "new event, first report by Wall Street Journal"
+        },
+        {
+          "time": "2026-11-20T22:31:19.333362+00:00",
+          "note": "new -> confirmed: reliable source: Wall Street Journal - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-20T22:31:19.333362+00:00",
+          "note": "confirmed -> alerted: New interest\u2011rate expectation event that historically pushes gold down, so an alert is needed."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-20",
+        "date_evidence": "Article published 2026-11-20 reports gold fell to a low",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of further drop",
+        "expected_direction": "down",
+        "direction_reason": "Higher rate expectations usually push gold lower",
+        "alert_title": "Gold drops on rate expectations",
+        "alert_message": "Gold fell to a 15\u2011month low as investors expect higher rates; price already moved before we saw it, and higher rates usually drive gold down.",
+        "why_it_matters": [
+          "Rate expectations strongly influence gold",
+          "Gold is already near a low, could fall more"
+        ],
+        "reason": "New interest\u2011rate expectation event that historically pushes gold down, so an alert is needed.",
+        "time": "2026-11-20T22:31:19.333362+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold drops on rate expectations\n\nGold fell to a 15\u2011month low as investors expect higher rates; price already moved before we saw it, and higher rates usually drive gold down.\n\nMINT's prediction: Gold DOWN - In the only close past case (Nov\u202f14\u202f2026), gold fell about 0.3% the next day when higher\u2011rate expectations lifted yields and the dollar.\n\nGold had already moved +0.4% since the first report.\nSources: Wall Street Journal\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 20 Nov 22:31 UTC",
+        "telegram_sent_at": "2026-11-20T22:31:19.333362+00:00"
+      },
+      "outcome": {
+        "start_price": 3515.98,
+        "start_time": "2026-11-20T20:00:00+00:00",
+        "moved_before_mint": 0.39,
+        "delay_hours": 2.2,
+        "h1": {
+          "price": 3513.45,
+          "move": -0.07,
+          "time": "2026-11-20T21:18:00+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": 0.39,
+          "time": "2026-11-20T22:14:50+00:00",
+          "hours": 1.9,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4 hours window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -0.07,
+          "peak_hours": 0.7,
+          "faded_hours": 1.9,
+          "against": 0.39,
+          "against_hours": 1.9,
+          "until_hours": 1.9,
+          "text": "Small impact: Gold fell up to 0.1% (after 1 h). The effect lasted about 2 h, then faded."
+        },
+        "result": {
+          "start_price": 3529.69,
+          "start_time": "2026-11-20T22:31:19.333362+00:00",
+          "threshold": 0.51,
+          "window_hours": 4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In the only close past case (Nov\u202f14\u202f2026), gold fell about 0.3% the next day when higher\u2011rate expectations lifted yields and the dollar.",
+        "similar": [
+          {
+            "id": "GOLD-20261114-02",
+            "date": "2026-11-14",
+            "title": "Gold Futures Fall as Yields, Dollar Rise on U.S. CPI Data",
+            "d1": -0.32,
+            "d7": null,
+            "peak_hours": 148.8,
+            "source": "MINT",
+            "score": 0.46
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.46
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-20T22:31:33.422987+00:00",
+          "low": -0.19,
+          "mid": -0.32,
+          "high": -0.45,
+          "window_hours": 4,
+          "probability": 0.64,
+          "agree": 1,
+          "similar": 1,
+          "basis": "1 of 1 similar past events moved this way (typical move 0.3%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.26,
+          "threshold": 0.51,
+          "floor": 0.51,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.7x a normal day, price -2.6% - real selling",
+            "buy_sell": "42% of futures volume in rising hours (24 h); big speculators added 10,559 contracts of bets on a rise (week to 2026-11-10)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.67,
+            "volume": 0.75,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0.46
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold dropped to its lowest level in about 15 months because investors expect interest rates to stay high or rise.",
+        "what_past_events_show": "In the only close past case (Nov\u202f14\u202f2026), gold fell about 0.3% the next day when higher\u2011rate expectations lifted yields and the dollar.",
+        "direction": "down",
+        "why": [
+          "Higher\u2011rate expectations make bonds and cash more attractive than gold, which yields nothing.",
+          "The market is reacting to a surprise or reinforced view that rates will stay high, which historically pushes gold lower."
+        ],
+        "watch_next": "If the Fed later signals a rate cut or softer stance, the drop could be less severe or reverse.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-20T22:31:19.333362+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-20T22:31:37.085475+00:00"
+      }
     }
   ],
   "counter": {
@@ -35381,27 +35583,27 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 9,
+    "GOLD-20261120": 10,
     "BTC-20261120": 6
   },
   "last_run": {
-    "run_time": "2026-11-20T22:25:40.153042+00:00",
+    "run_time": "2026-11-20T22:31:19.333362+00:00",
     "test_mode": false,
-    "stories": 178,
-    "off_topic": 83,
-    "repeats": 95,
-    "new_events": 0,
+    "stories": 173,
+    "off_topic": 79,
+    "repeats": 93,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -35432,7 +35634,8 @@
           "Alert: Gold under a hiking Fed: central-bank demand versus real rates",
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
           "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
-          "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine"
+          "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
+          "Being checked: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations (reliable source: Wall Street Journal)"
         ]
       }
     }
@@ -35466,7 +35669,8 @@
         "Alert: Gold under a hiking Fed: central-bank demand versus real rates",
         "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
         "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
-        "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine"
+        "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
+        "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations"
       ]
     }
   },
