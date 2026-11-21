@@ -35106,9 +35106,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 2,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -35149,7 +35149,14 @@
           "move": -5.74,
           "time": "2026-11-21T04:22:00+00:00",
           "verdict": "right"
-        }
+        },
+        "d1": {
+          "price": 60094.17,
+          "move": 1.69,
+          "time": "2026-11-21T18:22:00+00:00",
+          "verdict": "wrong"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "down",
@@ -36962,11 +36969,11 @@
     "BTC-20261121": 2
   },
   "last_run": {
-    "run_time": "2026-11-21T18:31:12.758179+00:00",
+    "run_time": "2026-11-21T18:35:43.329327+00:00",
     "test_mode": false,
-    "stories": 115,
-    "off_topic": 52,
-    "repeats": 63,
+    "stories": 162,
+    "off_topic": 68,
+    "repeats": 94,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -36986,7 +36993,8 @@
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
           "Alert: SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
-          "US stock market (Nasdaq) fell -5.28% on its last day"
+          "US stock market (Nasdaq) fell -5.28% on its last day",
+          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
         ]
       },
       "Gold": {
