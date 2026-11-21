@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793329200,
-    "open": 76947.4,
-    "close": 78052.1,
-    "volume": 179.59302475
-   },
-   {
     "t": 1793332800,
     "open": 78050.9,
     "close": 78070.4,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795226400,
     "open": 58910.0,
-    "close": 58572.3,
-    "volume": 85.40956637
+    "close": 58492.8,
+    "volume": 163.4655273
+   },
+   {
+    "t": 1795230000,
+    "open": 58492.8,
+    "close": 57808.9,
+    "volume": 221.60491174
    }
   ],
-  "bars_time": "2026-11-21T02:40:51.080302+00:00",
+  "bars_time": "2026-11-21T03:31:09.289754+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -3522,14 +3522,18 @@
     "s": 58.5259
    },
    "1795226400": {
-    "b": 60.3855,
-    "s": 101.8851
+    "b": 61.2047,
+    "s": 102.3258
+   },
+   "1795230000": {
+    "b": 5.9152,
+    "s": 24.023
    }
   },
-  "trades_cursor": "1795229907454534728",
+  "trades_cursor": "1795230305165318872",
   "flow_source": "Kraken",
-  "book_bid_share": 0.531,
-  "book_time": "2026-11-21T03:28:54.009770+00:00"
+  "book_bid_share": 0.551,
+  "book_time": "2026-11-21T03:31:09.289754+00:00"
  },
  "Gold": {
   "bars": [
@@ -3537,7 +3541,7 @@
     "t": 1792548000,
     "open": 4134.7998046875,
     "close": 4135.39990234375,
-    "volume": 3133
+    "volume": 0
    },
    {
     "t": 1792551600,
@@ -6702,7 +6706,7 @@
     "volume": 0
    }
   ],
-  "bars_time": "2026-11-21T02:40:51.080302+00:00",
+  "bars_time": "2026-11-21T03:31:09.289754+00:00",
   "bars_source": "Yahoo Finance (gold futures GC=F)",
   "cot": [
    {
@@ -6738,23 +6742,23 @@
   ],
   "cot_time": "2026-11-21T00:05:40.511146+00:00"
  },
- "time": "2026-11-21T03:28:54.009770+00:00",
+ "time": "2026-11-21T03:31:09.289754+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": -1,
-    "ratio": 2.6,
-    "change_24h": -5.67,
-    "text": "busy: 2.6x a normal day, price -5.7% - real selling",
+    "ratio": 2.58,
+    "change_24h": -6.89,
+    "text": "busy: 2.6x a normal day, price -6.9% - real selling",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.399,
-    "book_bid_share": 0.531,
-    "up_volume_share": 0.523,
-    "text": "buyers started 40% of trades (24 h); 53% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.398,
+    "book_bid_share": 0.551,
+    "up_volume_share": 0.505,
+    "text": "buyers started 40% of trades (24 h); 55% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
