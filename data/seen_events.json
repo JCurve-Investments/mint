@@ -16632,19 +16632,13 @@
         "start_time": "2026-11-14T03:14:10+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
-        "now": {
-          "move": -13.81,
-          "time": "2026-11-21T03:29:40+00:00",
-          "hours": 167.5,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 0,
-          "wrong": 7,
+          "wrong": 8,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "partial",
         "effect_reason": "the right way (up to +1.0%), but it did not stay past +0.9% for 2 hours",
         "impact": {
@@ -16718,6 +16712,12 @@
           "price": 62739.44,
           "move": -7.13,
           "time": "2026-11-19T03:56:41+00:00",
+          "verdict": "wrong"
+        },
+        "d7": {
+          "price": 58221.78,
+          "move": -13.81,
+          "time": "2026-11-21T03:56:41+00:00",
           "verdict": "wrong"
         }
       },
@@ -35726,11 +35726,11 @@
     "BTC-20261120": 6
   },
   "last_run": {
-    "run_time": "2026-11-21T04:05:46.741666+00:00",
+    "run_time": "2026-11-21T04:10:51.859520+00:00",
     "test_mode": false,
-    "stories": 176,
-    "off_topic": 85,
-    "repeats": 91,
+    "stories": 180,
+    "off_topic": 87,
+    "repeats": 93,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -35750,7 +35750,8 @@
           "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
-          "US stock market (Nasdaq) fell -5.28% on its last day"
+          "US stock market (Nasdaq) fell -5.28% on its last day",
+          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
         ]
       },
       "Gold": {
