@@ -20750,8 +20750,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 7,
-          "right": 2,
+          "done": 8,
+          "right": 3,
           "wrong": 0,
           "total": 9
         },
@@ -20817,6 +20817,12 @@
           "price": 61342.31,
           "move": -5.83,
           "time": "2026-11-20T02:32:01+00:00",
+          "verdict": "right"
+        },
+        "d5": {
+          "price": 60516.63,
+          "move": -7.1,
+          "time": "2026-11-21T14:32:01+00:00",
           "verdict": "right"
         }
       },
@@ -29570,8 +29576,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 5,
+          "done": 6,
+          "right": 6,
           "wrong": 0,
           "total": 9
         },
@@ -29631,6 +29637,12 @@
           "price": 3530.04,
           "move": -4.75,
           "time": "2026-11-21T02:35:32+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3550.03,
+          "move": -4.21,
+          "time": "2026-11-21T14:35:32+00:00",
           "verdict": "right"
         }
       },
@@ -36586,11 +36598,11 @@
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T14:40:53.792860+00:00",
+    "run_time": "2026-11-21T14:45:54.264683+00:00",
     "test_mode": false,
-    "stories": 167,
-    "off_topic": 75,
-    "repeats": 92,
+    "stories": 165,
+    "off_topic": 74,
+    "repeats": 91,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
