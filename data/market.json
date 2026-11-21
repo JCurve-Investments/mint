@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793390400,
-    "open": 76776.3,
-    "close": 76777.5,
-    "volume": 97.48871852
-   },
-   {
     "t": 1793394000,
     "open": 76777.5,
     "close": 76568.2,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795287600,
     "open": 60040.2,
-    "close": 60189.8,
-    "volume": 81.99983093
+    "close": 60238.2,
+    "volume": 176.69326793
+   },
+   {
+    "t": 1795291200,
+    "open": 60238.2,
+    "close": 60271.2,
+    "volume": 11.87957797
    }
   ],
-  "bars_time": "2026-11-21T19:15:48.068086+00:00",
+  "bars_time": "2026-11-21T20:10:53.496210+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -3594,14 +3594,14 @@
     "s": 38.0677
    },
    "1795291200": {
-    "b": 4.1798,
-    "s": 1.3034
+    "b": 8.5171,
+    "s": 3.3689
    }
   },
-  "trades_cursor": "1795291547935091226",
+  "trades_cursor": "1795291862994599124",
   "flow_source": "Kraken",
-  "book_bid_share": 0.505,
-  "book_time": "2026-11-21T20:05:38.251635+00:00"
+  "book_bid_share": 0.502,
+  "book_time": "2026-11-21T20:10:53.496210+00:00"
  },
  "Gold": {
   "bars": [
@@ -6756,7 +6756,7 @@
     "volume": 5185
    }
   ],
-  "bars_time": "2026-11-21T19:15:48.068086+00:00",
+  "bars_time": "2026-11-21T20:10:53.496210+00:00",
   "bars_source": "Yahoo Finance (gold futures GC=F)",
   "cot": [
    {
@@ -6792,22 +6792,22 @@
   ],
   "cot_time": "2026-11-21T12:05:41.085456+00:00"
  },
- "time": "2026-11-21T20:05:38.251635+00:00",
+ "time": "2026-11-21T20:10:53.496210+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 1,
-    "ratio": 2.06,
-    "change_24h": 3.12,
-    "text": "busy: 2.1x a normal day, price +3.1% - real buying",
+    "ratio": 2.01,
+    "change_24h": 3.26,
+    "text": "busy: 2.0x a normal day, price +3.3% - real buying",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
     "taker_buy_share": 0.505,
-    "book_bid_share": 0.505,
-    "up_volume_share": 0.526,
+    "book_bid_share": 0.502,
+    "up_volume_share": 0.533,
     "text": "buyers started 50% of trades (24 h); 50% of waiting orders near the price are buy orders",
     "ok": true
    }
