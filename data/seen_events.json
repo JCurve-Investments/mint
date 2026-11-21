@@ -35782,9 +35782,9 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -35796,6 +35796,12 @@
           "against_hours": 1.0,
           "until_hours": 1.1,
           "text": "Never moved the predicted way. It rose up to 0.1% (after 1 h)."
+        },
+        "h1": {
+          "price": 3504.2,
+          "move": 0.12,
+          "time": "2026-11-21T06:01:22.367680+00:00",
+          "verdict": "wrong"
         }
       },
       "history": [
@@ -35899,7 +35905,25 @@
           "size": null
         },
         "effect": "tracking",
-        "effect_reason": "still inside the 9 hours window (biggest move so far -0.0%)"
+        "effect_reason": "still inside the 9 hours window (biggest move so far -0.0%)",
+        "start_price": 55722.95,
+        "start_time": "2026-11-21T06:09:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-21T06:09:50+00:00",
+          "hours": -0.0,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "impact": null
       },
       "history": [
         {
@@ -35966,6 +35990,175 @@
         "first_sent_at": "2026-11-21T06:11:15.662668+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261120-11",
+      "asset": "Gold",
+      "factor": "G3",
+      "factor_name": "Surprise US data (jobs, inflation)",
+      "title": "Gold and silver could return to mid-2025 levels as inflation-hedge bid evaporates \u2013 SIA\u2019s Cieszynski",
+      "state": "context",
+      "state_reason": "Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Kitco News)",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-21T06:15:54.029084+00:00",
+      "earliest_report": "2026-11-20T21:26:44+00:00",
+      "last_updated": "2026-11-21T06:15:54.029084+00:00",
+      "words": [
+        "bid",
+        "cieszynski",
+        "could",
+        "evaporat",
+        "gold",
+        "inflation-hedge",
+        "level",
+        "mid-2025",
+        "return",
+        "sia",
+        "silver"
+      ],
+      "amounts": [],
+      "old_clues": [
+        "mentions 2025"
+      ],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold and silver could return to mid-2025 levels as inflation-hedge bid evaporates \u2013 SIA\u2019s Cieszynski",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ3ZMcmk4MjJQRmowMV9QcmJ2SVhYUkh1dkR5dl9wUnRUVHFhSzlMV3czMktCNjM3ck9wTVU4Yzg3Ri1hdjRGVlZTaENhZnM1R3JjZVRtSkVGNE5Ra1lZM3pSb1FpNVdIdVNqVmJTQUU0Z2dqZzU1TlphX0h3eTFVZVJFYjJUb3JfM0VZZ0ZtX2k0NjBWbFd6SWU0ME14ek5HZ0UxdmMyWkp4el9ybU15dDlqRWFObXYyUXIzVHJn?oc=5",
+          "published": "2026-11-20T21:26:44+00:00",
+          "found_at": "2026-11-21T06:15:54.029084+00:00",
+          "summary": "",
+          "factor": "G3"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-21T06:15:54.029084+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-21T06:15:54.029084+00:00",
+          "note": "new -> context: Surprise US data (jobs, inflation) is a moderate factor - shown for context, never an alert (reliable source: Kitco News)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 3513.45,
+        "start_time": "2026-11-20T21:00:00+00:00",
+        "moved_before_mint": -0.29,
+        "delay_hours": 8.8,
+        "h1": {
+          "price": 3529.73,
+          "move": 0.46,
+          "time": "2026-11-20T22:26:44+00:00",
+          "verdict": "wrong"
+        },
+        "h5": {
+          "price": 3526.87,
+          "move": 0.38,
+          "time": "2026-11-21T02:26:44+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": -0.29,
+          "time": "2026-11-21T06:09:50+00:00",
+          "hours": 8.7,
+          "verdict": "flat"
+        },
+        "effect": "tracking",
+        "effect_reason": "still inside the 1.7 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3503.19,
+          "start_time": "2026-11-21T06:15:54.029084+00:00",
+          "threshold": 0.83,
+          "window_hours": 41.7,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 1.7 days window (biggest move so far -0.0%)",
+          "size": null
+        },
+        "checks": {
+          "done": 2,
+          "right": 0,
+          "wrong": 2,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "No comparable past events are available to directly observe the 1\u2011day reaction.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-21T06:16:09.869100+00:00",
+          "low": -0.78,
+          "mid": -1.66,
+          "high": -2.45,
+          "window_hours": 41.7,
+          "probability": 0.67,
+          "agree": 0,
+          "similar": 0,
+          "basis": "no similar past event moved this way; size from 14 past G3 events",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.26,
+          "threshold": 0.83,
+          "floor": 0.51,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.7x a normal day, price -0.6% - real selling",
+            "buy_sell": "42% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.5,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A market analyst says gold and silver may slip back to 2025 levels because the appeal of gold as an inflation hedge is fading, likely due to strong US economic data.",
+        "what_past_events_show": "No comparable past events are available to directly observe the 1\u2011day reaction.",
+        "direction": "down",
+        "why": [
+          "Surprise strong US jobs or inflation data usually pushes rates higher, which hurts gold.",
+          "The headline itself points to a weakening demand for gold as an inflation hedge."
+        ],
+        "watch_next": "If upcoming US data comes in weaker than expected, the downward pressure on gold could ease.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-21T06:15:54.029084+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-21T06:16:10.493896+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -35997,23 +36190,23 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 10,
+    "GOLD-20261120": 11,
     "BTC-20261120": 6,
     "GOLD-20261121": 1,
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T06:10:58.736042+00:00",
+    "run_time": "2026-11-21T06:15:54.029084+00:00",
     "test_mode": false,
-    "stories": 79,
-    "off_topic": 48,
-    "repeats": 31,
-    "new_events": 0,
+    "stories": 178,
+    "off_topic": 85,
+    "repeats": 92,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
