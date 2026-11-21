@@ -21056,8 +21056,8 @@
           "text": "Clear impact: Gold fell up to 8.8% (after 4.5 days). Still in the predicted direction after 5.0 days (-7.8%)."
         },
         "checks": {
-          "done": 7,
-          "right": 3,
+          "done": 8,
+          "right": 4,
           "wrong": 2,
           "total": 9
         },
@@ -21118,6 +21118,12 @@
           "price": 3527.7,
           "move": -8.21,
           "time": "2026-11-20T05:02:00+00:00",
+          "verdict": "right"
+        },
+        "d5": {
+          "price": 3544.18,
+          "move": -7.78,
+          "time": "2026-11-21T17:02:00+00:00",
           "verdict": "right"
         }
       },
@@ -35345,7 +35351,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 0,
           "wrong": 3,
           "total": 9
@@ -35383,7 +35389,13 @@
           "time": "2026-11-21T05:05:43+00:00",
           "verdict": "flat"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "h36": {
+          "price": 3544.18,
+          "move": 0.46,
+          "time": "2026-11-21T17:05:43+00:00",
+          "verdict": "flat"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -36919,32 +36931,32 @@
     "BTC-20261121": 2
   },
   "last_run": {
-    "run_time": "2026-11-21T17:11:02.165312+00:00",
+    "run_time": "2026-11-21T17:15:53.680458+00:00",
     "test_mode": false,
-    "stories": 1,
-    "off_topic": 0,
-    "repeats": 0,
-    "new_events": 1,
+    "stories": 165,
+    "off_topic": 70,
+    "repeats": 95,
+    "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
-          "Being checked: SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors (approved social media account: Whale Alert (Telegram) (from social media))",
+          "Alert: SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
           "US stock market (Nasdaq) fell -5.28% on its last day",
-          "3 check(s) failed in the last run (internet problem?) - see Agents"
+          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
         ]
       },
       "Gold": {
@@ -36968,8 +36980,7 @@
           "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
           "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
           "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
-          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
-          "4 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk"
         ]
       }
     }
