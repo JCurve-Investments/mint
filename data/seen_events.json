@@ -36647,6 +36647,241 @@
         "first_sent_at": "2026-11-21T08:06:01.230136+00:00",
         "verdict_sent": "2026-11-21T16:40:57.733872+00:00"
       }
+    },
+    {
+      "id": "BTC-20261121-02",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-21T17:11:02.165312+00:00",
+      "earliest_report": "2026-11-21T17:07:01+00:00",
+      "last_updated": "2026-11-21T17:11:02.165312+00:00",
+      "words": [
+        "adviser",
+        "crypto",
+        "fake",
+        "investment",
+        "investor",
+        "million",
+        "platform",
+        "says",
+        "sec",
+        "stole",
+        "trad",
+        "u.s"
+      ],
+      "amounts": [
+        37.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
+          "link": "https://t.me/whale_alert_io/105171",
+          "published": "2026-11-21T17:07:01+00:00",
+          "found_at": "2026-11-21T17:11:02.165312+00:00",
+          "summary": "SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-21T17:11:02.165312+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-21T17:11:02.165312+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-21T17:11:02.165312+00:00",
+          "note": "confirmed -> alerted: The SEC announcement is a fresh crackdown event, which historically pushes Bitcoin down, so we alert."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-21",
+        "date_evidence": "Report published on 2026-11-21 mentions the SEC announcement",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Crackdowns historically cause price falls",
+        "alert_title": "SEC crackdown on fake crypto platforms",
+        "alert_message": "The SEC announced that fake crypto trading platforms and advisers stole over $37\u202fmillion, signaling a crackdown that could hurt Bitcoin\u2019s price.",
+        "why_it_matters": [
+          "Regulatory pressure can lower confidence",
+          "Potential for tighter rules on crypto services"
+        ],
+        "reason": "The SEC announcement is a fresh crackdown event, which historically pushes Bitcoin down, so we alert.",
+        "time": "2026-11-21T17:11:02.165312+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nSEC crackdown on fake crypto platforms\n\nThe SEC announced that fake crypto trading platforms and advisers stole over $37\u202fmillion, signaling a crackdown that could hurt Bitcoin\u2019s price.\n\nMINT's prediction: Bitcoin DOWN - Similar SEC crackdowns caused Bitcoin to drop 2.5% (Nov\u202f19\u202f2026) and 5% (June\u202f5\u202f2023) after one day, while only a rare case showed a small rise.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 21 Nov 17:11 UTC",
+        "telegram_sent_at": "2026-11-21T17:11:02.165312+00:00"
+      },
+      "outcome": {
+        "start_price": 59878.84,
+        "start_time": "2026-11-21T16:39:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-21T16:39:50+00:00",
+          "hours": -0.5,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 59878.84,
+          "start_time": "2026-11-21T17:11:02.165312+00:00",
+          "threshold": 1.99,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar SEC crackdowns caused Bitcoin to drop 2.5% (Nov\u202f19\u202f2026) and 5% (June\u202f5\u202f2023) after one day, while only a rare case showed a small rise.",
+        "similar": [
+          {
+            "id": "BTC-20261119-05",
+            "date": "2026-11-19",
+            "title": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
+            "d1": -2.5,
+            "d7": null,
+            "peak_hours": 39.3,
+            "source": "MINT",
+            "score": 1.02
+          },
+          {
+            "id": "BTC-20261109-01",
+            "date": "2026-11-09",
+            "title": "Coinbase gets full U.S. trust charter from federal banking regulator",
+            "d1": 0.13,
+            "d7": -13.34,
+            "peak_hours": 6.0,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "BTC-20261112-05",
+            "date": "2026-11-12",
+            "title": "India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+            "d1": -5.97,
+            "d7": -13.3,
+            "peak_hours": 156.8,
+            "source": "MINT",
+            "score": 0.52
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 1.08,
+          "down": 4.05
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-21T17:13:47.073134+00:00",
+          "low": -3.01,
+          "mid": -3.97,
+          "high": -5.3,
+          "window_hours": 54.0,
+          "probability": 0.52,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 5.0%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.65,
+          "threshold": 1.99,
+          "floor": 1.08,
+          "lenses": {
+            "volume": 1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 2.5x a normal day, price +1.3% - real buying",
+            "buy_sell": "buyers started 47% of trades (24 h); 47% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "disagrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.25,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.08,
+            "down": 4.05
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The SEC announced that fake crypto trading platforms and advisers stole over $37\u202fmillion from U.S. investors, highlighting a regulatory crackdown on fraud.",
+        "what_past_events_show": "Similar SEC crackdowns caused Bitcoin to drop 2.5% (Nov\u202f19\u202f2026) and 5% (June\u202f5\u202f2023) after one day, while only a rare case showed a small rise.",
+        "direction": "down",
+        "why": [
+          "Regulatory actions usually scare investors and trigger selling.",
+          "The event involves a major U.S. regulator and a large amount of stolen funds, increasing perceived risk."
+        ],
+        "watch_next": "If the SEC follows up with fines or bans on major exchanges, the price pressure could grow; a quick clarification that only a few small platforms are affected could soften the drop.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-21T17:11:02.165312+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-21T17:13:50.975366+00:00"
+      }
     }
   ],
   "counter": {
@@ -36681,34 +36916,35 @@
     "GOLD-20261120": 12,
     "BTC-20261120": 6,
     "GOLD-20261121": 1,
-    "BTC-20261121": 1
+    "BTC-20261121": 2
   },
   "last_run": {
-    "run_time": "2026-11-21T17:05:38.620288+00:00",
+    "run_time": "2026-11-21T17:11:02.165312+00:00",
     "test_mode": false,
-    "stories": 163,
-    "off_topic": 70,
-    "repeats": 93,
-    "new_events": 0,
+    "stories": 1,
+    "off_topic": 0,
+    "repeats": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
+          "Being checked: SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors (approved social media account: Whale Alert (Telegram) (from social media))",
           "US stock market (Nasdaq) fell -5.28% on its last day",
-          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
+          "3 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
@@ -36732,7 +36968,8 @@
           "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
           "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
           "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
-          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk"
+          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
+          "4 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       }
     }
@@ -36742,7 +36979,8 @@
       "state": "Alert",
       "reasons": [
         "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
-        "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic"
+        "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
+        "Alert: SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors"
       ]
     },
     "Gold": {
