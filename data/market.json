@@ -3518,14 +3518,14 @@
     "s": 48.7976
    },
    "1795222800": {
-    "b": 35.9453,
-    "s": 28.2267
+    "b": 44.6462,
+    "s": 56.8808
    }
   },
-  "trades_cursor": "1795225493029646624",
+  "trades_cursor": "1795226147516974846",
   "flow_source": "Kraken",
-  "book_bid_share": 0.538,
-  "book_time": "2026-11-21T02:55:43.705270+00:00"
+  "book_bid_share": 0.56,
+  "book_time": "2026-11-21T03:01:25.661428+00:00"
  },
  "Gold": {
   "bars": [
@@ -6734,39 +6734,39 @@
   ],
   "cot_time": "2026-11-21T00:05:40.511146+00:00"
  },
- "time": "2026-11-21T02:55:43.705270+00:00",
+ "time": "2026-11-21T03:01:25.661428+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": -1,
-    "ratio": 2.55,
-    "change_24h": -5.82,
-    "text": "busy: 2.6x a normal day, price -5.8% - real selling",
+    "ratio": 2.6,
+    "change_24h": -5.67,
+    "text": "busy: 2.6x a normal day, price -5.7% - real selling",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.404,
-    "book_bid_share": 0.538,
-    "up_volume_share": 0.512,
-    "text": "buyers started 40% of trades (24 h); 54% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.399,
+    "book_bid_share": 0.56,
+    "up_volume_share": 0.523,
+    "text": "buyers started 40% of trades (24 h); 56% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": -1,
-    "ratio": 1.63,
-    "change_24h": -0.29,
+    "ratio": 1.62,
+    "change_24h": -0.33,
     "text": "busy: 1.6x a normal day, price -0.3% - real selling",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "up_volume_share": 0.516,
+    "up_volume_share": 0.488,
     "cot_vote": -1,
-    "text": "52% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
+    "text": "49% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
     "ok": true
    }
   }

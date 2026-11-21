@@ -35567,8 +35567,8 @@
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "still inside the 4 hours window (biggest move so far -0.1%)",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 4 hours (biggest -0.1%)",
         "impact": {
           "peak": -0.07,
           "peak_hours": 0.7,
@@ -35587,10 +35587,11 @@
           "peak_hours": 3.5,
           "held_hours": 0.0,
           "checked_until": 3.5,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 4 hours window (biggest move so far -0.1%)",
-          "size": null
+          "verdict": "no_clear_move",
+          "final": true,
+          "text": "no clear move either way within 4 hours (biggest -0.1%)",
+          "size": null,
+          "opposite": "no_clear_move"
         },
         "h5": {
           "price": 3533.75,
@@ -35674,7 +35675,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-20T22:31:37.085475+00:00"
+        "first_sent_at": "2026-11-20T22:31:37.085475+00:00",
+        "verdict_sent": "2026-11-21T03:01:25.661428+00:00"
       }
     }
   ],
@@ -35711,11 +35713,11 @@
     "BTC-20261120": 6
   },
   "last_run": {
-    "run_time": "2026-11-21T02:55:43.705270+00:00",
+    "run_time": "2026-11-21T03:01:25.661428+00:00",
     "test_mode": false,
-    "stories": 184,
-    "off_topic": 90,
-    "repeats": 94,
+    "stories": 172,
+    "off_topic": 82,
+    "repeats": 90,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
