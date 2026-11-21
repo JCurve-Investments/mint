@@ -35888,13 +35888,14 @@
           "peak_hours": 1.0,
           "held_hours": 0.0,
           "checked_until": 8.0,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 9 hours window (biggest move so far -0.2%)",
-          "size": null
+          "verdict": "no_clear_move",
+          "final": true,
+          "text": "no clear move either way within 9 hours (biggest -0.2%)",
+          "size": null,
+          "opposite": "partial"
         },
-        "effect": "tracking",
-        "effect_reason": "still inside the 9 hours window (biggest move so far -0.2%)",
+        "effect": "no_clear_move",
+        "effect_reason": "no clear move either way within 9 hours (biggest -0.2%)",
         "start_price": 3500.15,
         "start_time": "2026-11-21T04:24:40+00:00",
         "moved_before_mint": 0.0,
@@ -35997,7 +35998,8 @@
       },
       "telegram": {
         "first_sent_at": "2026-11-21T05:01:36.539114+00:00",
-        "sent_state": "context"
+        "sent_state": "context",
+        "verdict_sent": "2026-11-21T14:10:53.565722+00:00"
       }
     },
     {
@@ -36572,11 +36574,11 @@
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T14:05:40.468860+00:00",
+    "run_time": "2026-11-21T14:10:53.565722+00:00",
     "test_mode": false,
-    "stories": 178,
-    "off_topic": 85,
-    "repeats": 93,
+    "stories": 172,
+    "off_topic": 80,
+    "repeats": 92,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -36595,7 +36597,8 @@
         "reasons": [
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
-          "US stock market (Nasdaq) fell -5.28% on its last day"
+          "US stock market (Nasdaq) fell -5.28% on its last day",
+          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
         ]
       },
       "Gold": {
