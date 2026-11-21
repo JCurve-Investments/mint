@@ -36458,9 +36458,9 @@
           "opposite": "hit"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
-          "wrong": 2,
+          "wrong": 3,
           "total": 9
         },
         "final": false,
@@ -36469,7 +36469,14 @@
           "move": 0.31,
           "time": "2026-11-21T07:26:44+00:00",
           "verdict": "flat"
-        }
+        },
+        "d1": {
+          "price": 3553.18,
+          "move": 1.13,
+          "time": "2026-11-21T21:26:44+00:00",
+          "verdict": "wrong"
+        },
+        "old_effect": "wrong"
       },
       "prediction": {
         "direction": "down",
@@ -37043,10 +37050,10 @@
     "BTC-20261121": 2
   },
   "last_run": {
-    "run_time": "2026-11-21T21:35:37.955530+00:00",
+    "run_time": "2026-11-21T21:40:50.383675+00:00",
     "test_mode": false,
-    "stories": 161,
-    "off_topic": 71,
+    "stories": 162,
+    "off_topic": 72,
     "repeats": 90,
     "new_events": 0,
     "joined": 0,
