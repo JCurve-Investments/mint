@@ -35311,12 +35311,18 @@
           "size": null
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 0,
-          "wrong": 2,
+          "wrong": 3,
           "total": 9
         },
-        "final": false
+        "final": false,
+        "h10": {
+          "price": 3533.75,
+          "move": -1.07,
+          "time": "2026-11-21T01:20:19+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "up",
@@ -35498,9 +35504,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 0,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -35528,6 +35534,12 @@
           "final": false,
           "text": "still inside the 4 hours window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h5": {
+          "price": 3533.75,
+          "move": 0.51,
+          "time": "2026-11-21T01:18:00+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -35642,11 +35654,11 @@
     "BTC-20261120": 6
   },
   "last_run": {
-    "run_time": "2026-11-21T01:25:38.055113+00:00",
+    "run_time": "2026-11-21T01:31:16.319039+00:00",
     "test_mode": false,
-    "stories": 182,
-    "off_topic": 89,
-    "repeats": 93,
+    "stories": 169,
+    "off_topic": 81,
+    "repeats": 88,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
