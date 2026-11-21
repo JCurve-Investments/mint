@@ -35953,13 +35953,19 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
-        "impact": null
+        "impact": null,
+        "h1": {
+          "price": 57934.84,
+          "move": 3.97,
+          "time": "2026-11-21T07:10:58.736042+00:00",
+          "verdict": "wrong"
+        }
       },
       "history": [
         {
@@ -36240,11 +36246,11 @@
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T07:20:53.001103+00:00",
+    "run_time": "2026-11-21T07:25:37.838977+00:00",
     "test_mode": false,
-    "stories": 177,
-    "off_topic": 85,
-    "repeats": 92,
+    "stories": 183,
+    "off_topic": 89,
+    "repeats": 94,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -36263,8 +36269,7 @@
         "reasons": [
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
-          "US stock market (Nasdaq) fell -5.28% on its last day",
-          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
+          "US stock market (Nasdaq) fell -5.28% on its last day"
         ]
       },
       "Gold": {
