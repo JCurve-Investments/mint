@@ -30862,8 +30862,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 2,
+          "done": 5,
+          "right": 3,
           "wrong": 0,
           "total": 9
         },
@@ -30918,7 +30918,13 @@
           "time": "2026-11-20T18:10:05+00:00",
           "verdict": "right"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "h36": {
+          "price": 55722.95,
+          "move": -11.08,
+          "time": "2026-11-21T06:10:05+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -36070,7 +36076,15 @@
         },
         "effect": "tracking",
         "effect_reason": "still inside the 1.7 days window (biggest move so far -0.0%)",
-        "impact": null,
+        "impact": {
+          "peak": -0.29,
+          "peak_hours": 8.7,
+          "faded_hours": null,
+          "against": 0.55,
+          "against_hours": 2.6,
+          "until_hours": 8.7,
+          "text": "Small impact: Gold fell up to 0.3% (after 9 h). Still in the predicted direction after 9 h (-0.3%)."
+        },
         "result": {
           "start_price": 3503.19,
           "start_time": "2026-11-21T06:15:54.029084+00:00",
@@ -36196,17 +36210,17 @@
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T06:15:54.029084+00:00",
+    "run_time": "2026-11-21T06:20:54.338123+00:00",
     "test_mode": false,
-    "stories": 178,
+    "stories": 177,
     "off_topic": 85,
     "repeats": 92,
-    "new_events": 1,
+    "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 1,
+      "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
