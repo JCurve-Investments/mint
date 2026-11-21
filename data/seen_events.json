@@ -32724,8 +32724,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 1,
+          "done": 4,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -32773,7 +32773,14 @@
           "move": -4.06,
           "time": "2026-11-20T16:17:55+00:00",
           "verdict": "right"
-        }
+        },
+        "d1": {
+          "price": 55722.95,
+          "move": -9.77,
+          "time": "2026-11-21T06:17:55+00:00",
+          "verdict": "right"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "down",
@@ -35623,8 +35630,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 2,
-          "right": 0,
+          "done": 3,
+          "right": 1,
           "wrong": 1,
           "total": 9
         },
@@ -35660,6 +35667,12 @@
           "move": 0.51,
           "time": "2026-11-21T01:18:00+00:00",
           "verdict": "wrong"
+        },
+        "h10": {
+          "price": 3503.19,
+          "move": -0.36,
+          "time": "2026-11-21T06:18:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -36210,11 +36223,11 @@
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T06:25:37.970830+00:00",
+    "run_time": "2026-11-21T06:31:09.498059+00:00",
     "test_mode": false,
-    "stories": 173,
-    "off_topic": 82,
-    "repeats": 91,
+    "stories": 172,
+    "off_topic": 83,
+    "repeats": 89,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -36234,7 +36247,8 @@
           "Alert: DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
-          "US stock market (Nasdaq) fell -5.28% on its last day"
+          "US stock market (Nasdaq) fell -5.28% on its last day",
+          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
         ]
       },
       "Gold": {
