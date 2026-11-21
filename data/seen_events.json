@@ -28988,8 +28988,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 5,
+          "done": 6,
+          "right": 6,
           "wrong": 0,
           "total": 9
         },
@@ -29049,6 +29049,12 @@
           "price": 3507.19,
           "move": -5.86,
           "time": "2026-11-20T20:52:00+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3518.01,
+          "move": -5.57,
+          "time": "2026-11-21T08:52:00+00:00",
           "verdict": "right"
         }
       },
@@ -36488,11 +36494,11 @@
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T09:01:25.456247+00:00",
+    "run_time": "2026-11-21T09:05:41.360402+00:00",
     "test_mode": false,
-    "stories": 151,
-    "off_topic": 71,
-    "repeats": 80,
+    "stories": 189,
+    "off_topic": 92,
+    "repeats": 97,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -36511,8 +36517,7 @@
         "reasons": [
           "Alert: SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
           "Alert: Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
-          "US stock market (Nasdaq) fell -5.28% on its last day",
-          "Interest in Bitcoin jumped (1.55x last week's Wikipedia views)"
+          "US stock market (Nasdaq) fell -5.28% on its last day"
         ]
       },
       "Gold": {
@@ -36537,8 +36542,7 @@
           "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
           "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
           "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
-          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
-          "1 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk"
         ]
       }
     }
