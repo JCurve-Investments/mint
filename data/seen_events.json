@@ -36235,6 +36235,208 @@
         "first_sent_at": "2026-11-21T06:16:10.493896+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261120-12",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-21T08:05:43.986201+00:00",
+      "earliest_report": "2026-11-20T20:12:13+00:00",
+      "last_updated": "2026-11-21T08:05:43.986201+00:00",
+      "words": [
+        "buyer",
+        "could",
+        "drop",
+        "fails",
+        "fed",
+        "gold",
+        "hold",
+        "lusk",
+        "might",
+        "off",
+        "price",
+        "trad",
+        "until",
+        "walsh"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY1gxakxUOS1VZGh6VUEwdDhhdDAySkdGT3JQU2pUMnVXN2RiNFRHV3g1MEtsaEtfQUVVNGNPRnJTSVJiSGdVTmRFVVVGLTZhcG1jenZPb2JKYWtweUltNi1fLWlFSXVlVWFPNEU2aHlPSkNkUFQyaDEyZlAwVy1waVFZY0dtSGtGTUVUOWw4eUFTRTJ5RENUVUw4Qk9nMFJKbGNTamNHU3F6NDEydHZHU3RLMUhXb2NGd2Jz?oc=5",
+          "published": "2026-11-20T20:12:13+00:00",
+          "found_at": "2026-11-21T08:05:43.986201+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-21T08:05:43.986201+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-21T08:05:43.986201+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-21T08:05:43.986201+00:00",
+          "note": "confirmed -> alerted: The report introduces a new Fed\u2011related risk that could cause gold to fall, so an alert is needed."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-20",
+        "date_evidence": "Article published 2026-11-20 20:12 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Higher rates or Fed tightening usually push gold lower",
+        "alert_title": "Fed decision could push gold down",
+        "alert_message": "A Kitco article warns gold may fall $300 if it stays below $3,500/oz and investors might wait for the Fed, raising drop risk.",
+        "why_it_matters": [
+          "Potential $300 price drop",
+          "Investor hesitation until Fed decision"
+        ],
+        "reason": "The report introduces a new Fed\u2011related risk that could cause gold to fall, so an alert is needed.",
+        "time": "2026-11-21T08:05:43.986201+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed decision could push gold down\n\nA Kitco article warns gold may fall $300 if it stays below $3,500/oz and investors might wait for the Fed, raising drop risk.\n\nMINT's prediction: Gold DOWN - There are no past events of this exact type to compare with.\n\nGold had already moved +0.0% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 21 Nov 08:05 UTC",
+        "telegram_sent_at": "2026-11-21T08:05:43.986201+00:00"
+      },
+      "outcome": {
+        "start_price": 3515.98,
+        "start_time": "2026-11-20T20:00:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 11.9,
+        "h1": {
+          "price": 3513.45,
+          "move": -0.07,
+          "time": "2026-11-20T21:12:13+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 3532.6,
+          "move": 0.47,
+          "time": "2026-11-21T01:12:13+00:00",
+          "verdict": "wrong"
+        },
+        "h10": {
+          "price": 3504.2,
+          "move": -0.34,
+          "time": "2026-11-21T06:12:13+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-21T07:54:40+00:00",
+          "hours": 11.7,
+          "verdict": "flat"
+        },
+        "effect": "tracking",
+        "effect_reason": "still inside the 18 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3515.99,
+          "start_time": "2026-11-21T08:05:43.986201+00:00",
+          "threshold": 0.55,
+          "window_hours": 18.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 18 hours window (biggest move so far -0.0%)",
+          "size": null
+        },
+        "checks": {
+          "done": 3,
+          "right": 1,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "There are no past events of this exact type to compare with.",
+        "similar": [],
+        "votes": {
+          "up": 0,
+          "down": 0
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-21T08:06:00.516505+00:00",
+          "low": -0.34,
+          "mid": -1.1,
+          "high": -2.54,
+          "window_hours": 18.0,
+          "probability": 0.67,
+          "agree": 0,
+          "similar": 0,
+          "basis": "no similar past event moved this way; size from 39 past G2 events",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.27,
+          "threshold": 0.55,
+          "floor": 0.52,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.8x a normal day, price -1.2% - real selling",
+            "buy_sell": "37% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.5,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold could fall sharply if it can't stay above $3,500/oz, because investors may wait for the Fed and avoid buying now.",
+        "what_past_events_show": "There are no past events of this exact type to compare with.",
+        "direction": "down",
+        "why": [
+          "Higher or unchanged interest rates make gold less attractive.",
+          "Traders are waiting for Fed guidance, so buying is delayed."
+        ],
+        "watch_next": "If the Fed announces a surprise rate cut or dovish guidance, the drop could be less severe.",
+        "confidence": "low",
+        "confidence_reason": "no similar past events yet - based on the factor pattern only",
+        "time": "2026-11-21T08:05:43.986201+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-21T08:06:01.230136+00:00"
+      }
     }
   ],
   "counter": {
@@ -36266,29 +36468,29 @@
     "GOLD-20261118": 7,
     "BTC-20261119": 7,
     "GOLD-20261119": 9,
-    "GOLD-20261120": 11,
+    "GOLD-20261120": 12,
     "BTC-20261120": 6,
     "GOLD-20261121": 1,
     "BTC-20261121": 1
   },
   "last_run": {
-    "run_time": "2026-11-21T08:01:32.209408+00:00",
+    "run_time": "2026-11-21T08:05:43.986201+00:00",
     "test_mode": false,
-    "stories": 156,
-    "off_topic": 67,
-    "repeats": 89,
-    "new_events": 0,
+    "stories": 180,
+    "off_topic": 86,
+    "repeats": 93,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -36320,7 +36522,8 @@
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
           "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
           "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
-          "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations"
+          "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
+          "Being checked: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk (reliable source: Kitco News)"
         ]
       }
     }
@@ -36354,7 +36557,8 @@
         "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
         "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
         "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
-        "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations"
+        "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
+        "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk"
       ]
     }
   },
