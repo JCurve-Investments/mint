@@ -33677,8 +33677,8 @@
           "total": 9
         },
         "final": false,
-        "effect": "tracking",
-        "effect_reason": "still inside the 9 hours window (biggest move so far -0.6%)",
+        "effect": "partial",
+        "effect_reason": "the right way (up to -0.6%), but it did not stay past -0.5% for 2 hours",
         "impact": {
           "peak": -0.75,
           "peak_hours": 4.8,
@@ -33697,10 +33697,11 @@
           "peak_hours": 4.5,
           "held_hours": 1.0,
           "checked_until": 9.2,
-          "verdict": "tracking",
-          "final": false,
-          "text": "still inside the 9 hours window (biggest move so far -0.6%)",
-          "size": null
+          "verdict": "partial",
+          "final": true,
+          "text": "the right way (up to -0.6%), but it did not stay past -0.5% for 2 hours",
+          "size": "inside the predicted range",
+          "opposite": "no_clear_move"
         },
         "h1": {
           "price": 3535.37,
@@ -33830,7 +33831,8 @@
       },
       "telegram": {
         "sent_state": "alerted",
-        "first_sent_at": "2026-11-20T16:31:31.989524+00:00"
+        "first_sent_at": "2026-11-20T16:31:31.989524+00:00",
+        "verdict_sent": "2026-11-21T02:20:55.074667+00:00"
       }
     },
     {
@@ -35685,11 +35687,11 @@
     "BTC-20261120": 6
   },
   "last_run": {
-    "run_time": "2026-11-21T02:15:54.011353+00:00",
+    "run_time": "2026-11-21T02:20:55.074667+00:00",
     "test_mode": false,
-    "stories": 158,
-    "off_topic": 72,
-    "repeats": 86,
+    "stories": 184,
+    "off_topic": 90,
+    "repeats": 94,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
