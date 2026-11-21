@@ -16917,19 +16917,13 @@
           "time": "2026-11-14T05:30:00+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -16.89,
-          "time": "2026-11-21T04:24:10+00:00",
-          "hours": 167.9,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 6,
+          "done": 9,
+          "right": 7,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
         "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 9 hours (biggest move -6.8%)",
         "impact": {
@@ -16997,6 +16991,12 @@
           "price": 63292.65,
           "move": -5.56,
           "time": "2026-11-19T04:30:00+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 55702.47,
+          "move": -16.89,
+          "time": "2026-11-21T04:30:00+00:00",
           "verdict": "right"
         }
       },
@@ -35738,7 +35738,7 @@
     "BTC-20261120": 6
   },
   "last_run": {
-    "run_time": "2026-11-21T04:35:39.658314+00:00",
+    "run_time": "2026-11-21T04:40:50.787490+00:00",
     "test_mode": false,
     "stories": 177,
     "off_topic": 86,
