@@ -1,20 +1,5 @@
 [
   {
-    "time": "2026-11-21T02:01:42.035250+00:00",
-    "test_mode": false,
-    "reason": "cloud (GitHub Actions)",
-    "seconds": 15,
-    "results": {
-      "Bitcoin Scout": "37 news stories to read, 2 data warning(s), 0 error(s).",
-      "Gold Scout": "0 calendar warning(s), 0 event(s) in the next 7 days, 100 news stories to read, 0 problem(s).",
-      "Social Watcher": "6 account(s) checked, 0 post(s) kept (a post can only start a Watch), 0 error(s).",
-      "Supervisor": "137 stories (63 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 74 repeat(s). 0 event(s) passed to the Decision agent.",
-      "Price Tracker": "prices saved, 0 new outcome check(s), 0 error(s).",
-      "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
-      "Telegram bot": "0 message(s) delivered, 0 subscriber(s), posting to the channel."
-    }
-  },
-  {
     "time": "2026-11-21T02:06:00.671606+00:00",
     "test_mode": false,
     "reason": "cloud (GitHub Actions)",
@@ -2995,6 +2980,21 @@
       "Social Watcher": "6 account(s) checked, 1 post(s) kept (a post can only start a Watch), 0 error(s).",
       "Supervisor": "161 stories (68 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 93 repeat(s). 0 event(s) passed to the Decision agent.",
       "Price Tracker": "prices saved, 2 new outcome check(s), 0 error(s).",
+      "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
+      "Telegram bot": "0 message(s) delivered, 0 subscriber(s), posting to the channel."
+    }
+  },
+  {
+    "time": "2026-11-21T18:25:51.437488+00:00",
+    "test_mode": false,
+    "reason": "cloud (GitHub Actions)",
+    "seconds": 14,
+    "results": {
+      "Bitcoin Scout": "9 news stories to read, 1 data warning(s), 0 error(s).",
+      "Gold Scout": "0 calendar warning(s), 0 event(s) in the next 7 days, 153 news stories to read, 0 problem(s).",
+      "Social Watcher": "6 account(s) checked, 1 post(s) kept (a post can only start a Watch), 0 error(s).",
+      "Supervisor": "163 stories (69 off-topic) -> 0 new event(s), 0 joined an event, 0 update(s) to old events (no new alert), 94 repeat(s). 0 event(s) passed to the Decision agent.",
+      "Price Tracker": "prices saved, 1 new outcome check(s), 0 error(s).",
       "Decision agent": "0 decided, 0 alert(s) stamped, 0 rejected, 0 AI problem(s).",
       "Telegram bot": "0 message(s) delivered, 0 subscriber(s), posting to the channel."
     }
