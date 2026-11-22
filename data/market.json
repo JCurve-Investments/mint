@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793487600,
-    "open": 77401.0,
-    "close": 77437.0,
-    "volume": 49.49684751
-   },
-   {
     "t": 1793491200,
     "open": 77437.1,
     "close": 77556.7,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795384800,
     "open": 60843.5,
-    "close": 60689.4,
-    "volume": 49.03850304
+    "close": 61005.3,
+    "volume": 100.70241453
+   },
+   {
+    "t": 1795388400,
+    "open": 61006.1,
+    "close": 60919.3,
+    "volume": 80.77180339
    }
   ],
-  "bars_time": "2026-11-22T22:25:36.618207+00:00",
+  "bars_time": "2026-11-22T23:15:49.217007+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -3702,14 +3702,14 @@
     "s": 42.7322
    },
    "1795388400": {
-    "b": 22.9119,
-    "s": 46.0829
+    "b": 30.6755,
+    "s": 50.0985
    }
   },
-  "trades_cursor": "1795389062856761262",
+  "trades_cursor": "1795389363480648564",
   "flow_source": "Kraken",
-  "book_bid_share": 0.5,
-  "book_time": "2026-11-22T23:10:54.151789+00:00"
+  "book_bid_share": 0.421,
+  "book_time": "2026-11-22T23:15:49.217007+00:00"
  },
  "Gold": {
   "bars": [
@@ -6624,13 +6624,13 @@
     "volume": 5189
    },
    {
-    "t": 1795211997,
+    "t": 1795388763,
     "open": 3515.39990234375,
     "close": 3515.39990234375,
     "volume": 0
    }
   ],
-  "bars_time": "2026-11-22T22:25:36.618207+00:00",
+  "bars_time": "2026-11-22T23:15:49.217007+00:00",
   "bars_source": "Yahoo Finance (gold futures GC=F)",
   "cot": [
    {
@@ -6666,23 +6666,23 @@
   ],
   "cot_time": "2026-11-22T12:15:50.303620+00:00"
  },
- "time": "2026-11-22T23:10:54.151789+00:00",
+ "time": "2026-11-22T23:15:49.217007+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 0.71,
-    "change_24h": 1.0,
+    "ratio": 0.72,
+    "change_24h": 1.38,
     "text": "quiet: 0.7x a normal day (moves are less reliable)",
     "ok": true
    },
    "buy_sell": {
     "vote": 1,
     "taker_buy_share": 0.539,
-    "book_bid_share": 0.5,
-    "up_volume_share": 0.424,
-    "text": "buyers started 54% of trades (24 h); 50% of waiting orders near the price are buy orders",
+    "book_bid_share": 0.421,
+    "up_volume_share": 0.44,
+    "text": "buyers started 54% of trades (24 h); 42% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
