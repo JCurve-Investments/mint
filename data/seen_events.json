@@ -36644,9 +36644,9 @@
           "opposite": "hit"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 0,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
         "final": false,
@@ -36662,7 +36662,13 @@
           "time": "2026-11-21T21:26:44+00:00",
           "verdict": "wrong"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "h36": {
+          "price": 3540.95,
+          "move": 0.78,
+          "time": "2026-11-22T09:26:44+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -37254,11 +37260,11 @@
     "BTC-20261121": 2
   },
   "last_run": {
-    "run_time": "2026-11-22T09:35:38.663611+00:00",
+    "run_time": "2026-11-22T09:40:52.835161+00:00",
     "test_mode": false,
-    "stories": 144,
-    "off_topic": 58,
-    "repeats": 86,
+    "stories": 140,
+    "off_topic": 55,
+    "repeats": 85,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -37283,7 +37289,6 @@
       "Gold": {
         "state": "Alert",
         "reasons": [
-          "Alert: Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
           "Alert: Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report",
           "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
@@ -37313,7 +37318,6 @@
     "Gold": {
       "state": "Alert",
       "reasons": [
-        "Alert: Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat",
         "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 JPMorgan excepts the Fed to raise interest rates at its next three meetings. @WatcherGuru",
         "Alert: Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report",
         "Alert: Strong dollar, tighter Fed policy bets leave gold to languish at 14-month low",
