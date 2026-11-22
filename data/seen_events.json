@@ -19629,19 +19629,13 @@
           "time": "2026-11-15T22:30:00+00:00",
           "verdict": "wrong"
         },
-        "now": {
-          "move": -7.1,
-          "time": "2026-11-22T11:53:50+00:00",
-          "hours": 167.4,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 2,
+          "done": 9,
+          "right": 3,
           "wrong": 3,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "no_clear_move",
         "effect_reason": "no clear move either way within 33 hours (biggest -0.6%)",
         "impact": {
@@ -19680,7 +19674,7 @@
           "size": null,
           "opposite": "no_clear_move"
         },
-        "old_effect": "wrong",
+        "old_effect": "no_clear_move",
         "d2": {
           "price": 3855.38,
           "move": 0.84,
@@ -19697,6 +19691,12 @@
           "price": 3563.57,
           "move": -6.79,
           "time": "2026-11-20T12:30:00+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 3551.79,
+          "move": -7.1,
+          "time": "2026-11-22T12:30:00+00:00",
           "verdict": "right"
         }
       },
@@ -37272,11 +37272,11 @@
     "BTC-20261121": 2
   },
   "last_run": {
-    "run_time": "2026-11-22T12:35:37.055692+00:00",
+    "run_time": "2026-11-22T12:40:49.901281+00:00",
     "test_mode": false,
-    "stories": 144,
-    "off_topic": 60,
-    "repeats": 84,
+    "stories": 148,
+    "off_topic": 63,
+    "repeats": 85,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
