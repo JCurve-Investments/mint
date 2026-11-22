@@ -36193,9 +36193,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 1,
-          "wrong": 2,
+          "wrong": 3,
           "total": 9
         },
         "final": false,
@@ -36249,6 +36249,12 @@
           "move": 0.54,
           "time": "2026-11-22T08:18:00+00:00",
           "verdict": "flat"
+        },
+        "d2": {
+          "price": 3543.35,
+          "move": 0.78,
+          "time": "2026-11-22T20:18:00+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -37602,7 +37608,7 @@
     "GOLD-20261122": 1
   },
   "last_run": {
-    "run_time": "2026-11-22T20:25:36.530338+00:00",
+    "run_time": "2026-11-22T20:31:13.377010+00:00",
     "test_mode": false,
     "stories": 146,
     "off_topic": 63,
@@ -37623,7 +37629,8 @@
       "Bitcoin": {
         "state": "Watch",
         "reasons": [
-          "US stock market (Nasdaq) fell -5.28% on its last day"
+          "US stock market (Nasdaq) fell -5.28% on its last day",
+          "Interest in Bitcoin jumped (1.56x last week's Wikipedia views)"
         ]
       },
       "Gold": {
