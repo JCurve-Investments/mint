@@ -37296,6 +37296,206 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-21T17:13:50.975366+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261122-01",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "The Market is down more than 6 Trillion Dollars since the Democrats\u2019 rather strange \u201cwin\u201d on November 3rd. NASDAQ, by itself, is down 20%. This is 100% due to t",
+      "state": "rejected",
+      "state_reason": "Decision agent: The post references an older political event and shows no price movement, so it is not a new event.",
+      "proof": "social",
+      "proof_reason": "approved social media account: Donald Trump (Truth Social) (from social media)",
+      "first_seen": "2026-11-22T17:25:39.283104+00:00",
+      "earliest_report": "2026-11-22T17:20:20+00:00",
+      "last_updated": "2026-11-22T17:25:39.283104+00:00",
+      "words": [
+        "3rd",
+        "democrat",
+        "dollar",
+        "due",
+        "itself",
+        "market",
+        "nasdaq",
+        "november",
+        "rather",
+        "since",
+        "strange",
+        "trillion",
+        "win"
+      ],
+      "amounts": [],
+      "old_clues": [
+        "since the"
+      ],
+      "sources": [
+        {
+          "organisation": "Donald Trump (Truth Social)",
+          "kind": "social",
+          "site": "Donald Trump (Truth Social)",
+          "title": "The Market is down more than 6 Trillion Dollars since the Democrats\u2019 rather strange \u201cwin\u201d on November 3rd. NASDAQ, by itself, is down 20%. This is 100% due to t",
+          "link": "https://www.trumpstruth.org/statuses/43701",
+          "published": "2026-11-22T17:20:20+00:00",
+          "found_at": "2026-11-22T17:25:39.283104+00:00",
+          "summary": "The Market is down more than 6 Trillion Dollars since the Democrats\u2019 rather strange \u201cwin\u201d on November 3rd. NASDAQ, by itself, is down 20%. This is 100% due to the fact that the Democrats are \u201cBAD\u201d due to their Anti Growth, and Retribution Only, Policies, and worse. If they don't change, FAST, it will only get worse. But fear not, our Country will soon be STRONG AGAIN \u2014 Lots of good things happening! President DONALD J. TRUMP",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-22T17:25:39.283104+00:00",
+          "note": "new event, first report by Donald Trump (Truth Social)"
+        },
+        {
+          "time": "2026-11-22T17:25:39.283104+00:00",
+          "note": "new -> confirmed: approved social media account: Donald Trump (Truth Social) (from social media) - passed to the Decision agent; the Decision agent must check the date (since the)"
+        },
+        {
+          "time": "2026-11-22T17:25:39.283104+00:00",
+          "note": "confirmed -> rejected: The post references an older political event and shows no price movement, so it is not a new event."
+        }
+      ],
+      "decision": {
+        "is_new_event": false,
+        "event_date": "unknown",
+        "date_evidence": "The post mentions the Democrats\u2019 win on November 3rd.",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "no impact",
+        "expected_direction": "unclear",
+        "direction_reason": "The post does not give clear info on dollar movement.",
+        "alert_title": "No new market event detected",
+        "alert_message": "The post refers to a past election win and does not indicate a new development affecting gold.",
+        "why_it_matters": [
+          "Event is not new",
+          "No price change observed"
+        ],
+        "reason": "The post references an older political event and shows no price movement, so it is not a new event.",
+        "time": "2026-11-22T17:25:39.283104+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 3555.9,
+        "start_time": "2026-11-22T17:09:30+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-22T17:09:30+00:00",
+          "hours": -0.2,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3555.9,
+          "start_time": "2026-11-22T17:25:39.283104+00:00",
+          "threshold": 0.51,
+          "window_hours": 4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In two recent similar cases, gold moved only a few tenths of a percent the next day (\u20110.1% and +0.2%), showing no strong pattern.",
+        "similar": [
+          {
+            "id": "GOLD-20261116-03",
+            "date": "2026-11-16",
+            "title": "Weekly Markets Monitor - Waller the Dollar",
+            "d1": -0.11,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "GOLD-20261120-04",
+            "date": "2026-11-20",
+            "title": "JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
+            "d1": 0.17,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 0.51,
+          "down": 0.55
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-22T17:25:53.341580+00:00",
+          "low": -0.07,
+          "mid": -0.11,
+          "high": -0.15,
+          "window_hours": 4,
+          "probability": 0.62,
+          "agree": 1,
+          "similar": 2,
+          "basis": "1 of 2 similar past events moved this way (typical move 0.1%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.24,
+          "threshold": 0.51,
+          "floor": 0.51,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "buy_sell": "big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0.51,
+            "down": 0.55
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Trump says the market fell sharply after the November 3 election, implying a big move in the US dollar that could affect gold.",
+        "what_past_events_show": "In two recent similar cases, gold moved only a few tenths of a percent the next day (\u20110.1% and +0.2%), showing no strong pattern.",
+        "direction": "down",
+        "why": [
+          "A market sell\u2011off often lifts the dollar, which usually pushes gold lower.",
+          "Past examples showed only tiny moves, so any effect is likely modest."
+        ],
+        "watch_next": "If the dollar actually spikes or other big gold drivers (like central\u2011bank buying) appear, the impact could become larger.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 2 similar past events moved this way",
+        "time": "2026-11-22T17:25:39.283104+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-22T17:25:57.089226+00:00",
+        "sent_state": "rejected"
+      }
     }
   ],
   "counter": {
@@ -37330,26 +37530,27 @@
     "GOLD-20261120": 12,
     "BTC-20261120": 6,
     "GOLD-20261121": 1,
-    "BTC-20261121": 2
+    "BTC-20261121": 2,
+    "GOLD-20261122": 1
   },
   "last_run": {
-    "run_time": "2026-11-22T17:20:55.245875+00:00",
+    "run_time": "2026-11-22T17:25:39.283104+00:00",
     "test_mode": false,
-    "stories": 107,
-    "off_topic": 51,
-    "repeats": 56,
-    "new_events": 0,
+    "stories": 147,
+    "off_topic": 63,
+    "repeats": 83,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Watch",
@@ -37372,7 +37573,8 @@
           "Alert: Gold's slide deepens as AI rout, rate hike bets hurt bullion",
           "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
           "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
-          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk"
+          "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
+          "Being checked: The Market is down more than 6 Trillion Dollars since the Democrats\u2019 rather strange \u201cwin\u201d on November 3rd. NASDAQ, by itself, is down 20%. This is 100% due to t (approved social media account: Donald Trump (Truth Social) (from social media))"
         ]
       }
     }
