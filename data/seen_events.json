@@ -27540,8 +27540,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 6,
-          "right": 1,
+          "done": 7,
+          "right": 2,
           "wrong": 2,
           "total": 9
         },
@@ -27596,7 +27596,7 @@
           "time": "2026-11-19T19:40:00+00:00",
           "verdict": "flat"
         },
-        "old_effect": "wrong",
+        "old_effect": "no_clear_move",
         "h36": {
           "price": 61772.89,
           "move": -1.2,
@@ -27607,6 +27607,12 @@
           "price": 58458.81,
           "move": -6.5,
           "time": "2026-11-20T19:40:00+00:00",
+          "verdict": "right"
+        },
+        "h84": {
+          "price": 59015.6,
+          "move": -5.61,
+          "time": "2026-11-22T07:40:00+00:00",
           "verdict": "right"
         }
       },
@@ -37224,11 +37230,11 @@
     "BTC-20261121": 2
   },
   "last_run": {
-    "run_time": "2026-11-22T07:45:49.199698+00:00",
+    "run_time": "2026-11-22T07:50:52.212559+00:00",
     "test_mode": false,
-    "stories": 140,
-    "off_topic": 55,
-    "repeats": 85,
+    "stories": 136,
+    "off_topic": 52,
+    "repeats": 84,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -37246,7 +37252,8 @@
         "state": "Alert",
         "reasons": [
           "Alert: SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
-          "US stock market (Nasdaq) fell -5.28% on its last day"
+          "US stock market (Nasdaq) fell -5.28% on its last day",
+          "Interest in Bitcoin jumped (1.56x last week's Wikipedia views)"
         ]
       },
       "Gold": {
