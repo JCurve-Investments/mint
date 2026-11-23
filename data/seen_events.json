@@ -20171,19 +20171,13 @@
         "start_time": "2026-11-16T13:09:30+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.1,
-        "now": {
-          "move": -4.55,
-          "time": "2026-11-23T13:14:20+00:00",
-          "hours": 167.7,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 2,
+          "done": 9,
+          "right": 3,
           "wrong": 2,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
         "effect_reason": "moved -1.6% or more and held it for 2+ hours, after 2.1 days (biggest move -2.3%)",
         "impact": {
@@ -20234,7 +20228,7 @@
           "time": "2026-11-17T13:34:00+00:00",
           "verdict": "flat"
         },
-        "old_effect": "no_clear_move",
+        "old_effect": "right",
         "h36": {
           "price": 64574.53,
           "move": 0.62,
@@ -20257,6 +20251,12 @@
           "price": 59217.31,
           "move": -7.72,
           "time": "2026-11-21T13:34:00+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 61254.29,
+          "move": -4.55,
+          "time": "2026-11-23T13:34:00+00:00",
           "verdict": "right"
         }
       },
@@ -22674,12 +22674,6 @@
           "time": "2026-11-16T23:32:26+00:00",
           "verdict": "flat"
         },
-        "now": {
-          "move": -6.27,
-          "time": "2026-11-23T13:14:40+00:00",
-          "hours": 167.7,
-          "verdict": "right"
-        },
         "effect": "partial",
         "effect_reason": "the right way (up to -1.1%), but it did not stay past -0.5% for 2 hours",
         "impact": {
@@ -22692,12 +22686,12 @@
           "text": "Clear impact: Gold fell up to 9.0% (after 4.7 days). Still in the predicted direction after 7.0 days (-6.3%)."
         },
         "checks": {
-          "done": 8,
-          "right": 6,
+          "done": 9,
+          "right": 7,
           "wrong": 1,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "result": {
           "start_price": 3841.93,
           "start_time": "2026-11-17T10:55:45.304753+00:00",
@@ -22742,6 +22736,12 @@
           "price": 3533.67,
           "move": -8.28,
           "time": "2026-11-21T13:32:26+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 3611.16,
+          "move": -6.27,
+          "time": "2026-11-23T13:32:26+00:00",
           "verdict": "right"
         }
       },
@@ -39315,7 +39315,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -39345,6 +39345,12 @@
           "final": false,
           "text": "still inside the 2.2 days window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 61254.29,
+          "move": 0.01,
+          "time": "2026-11-23T13:35:32+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -39745,11 +39751,11 @@
     "BTC-20261123": 4
   },
   "last_run": {
-    "run_time": "2026-11-23T13:41:01.150504+00:00",
+    "run_time": "2026-11-23T13:45:56.402159+00:00",
     "test_mode": false,
-    "stories": 4,
-    "off_topic": 0,
-    "repeats": 4,
+    "stories": 134,
+    "off_topic": 57,
+    "repeats": 77,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -39768,8 +39774,7 @@
         "reasons": [
           "Alert: Chainflip's losses climb to $12 million after protocol discloses 122.9 BTC theft, offers hacker bounty",
           "Alert: JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru",
-          "US stock market (Nasdaq) fell -5.28% on its last day",
-          "3 check(s) failed in the last run (internet problem?) - see Agents"
+          "US stock market (Nasdaq) fell -5.28% on its last day"
         ]
       },
       "Gold": {
@@ -39785,8 +39790,7 @@
           "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
           "Alert: Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
           "Alert: Gold climbs more than 2% as dollar rally pauses",
-          "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
-          "4 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets"
         ]
       }
     }
