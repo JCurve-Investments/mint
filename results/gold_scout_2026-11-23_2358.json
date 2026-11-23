@@ -1,0 +1,43 @@
+{
+  "scout": "gold",
+  "run_time": "2026-11-23T23:56:48.478029+00:00",
+  "test_mode": false,
+  "calendar": {
+    "notes": [
+      "Fed calendar read from official site (54 meetings found)",
+      "Jobs/inflation calendar read from official site (48 releases found)"
+    ],
+    "upcoming": [],
+    "warnings": []
+  },
+  "weekly_news": [
+    {
+      "id": "G1",
+      "name": "US dollar",
+      "kept": [],
+      "rejected": [],
+      "error": "could not read the news feed (<unknown>:2:252: not well-formed (invalid token))"
+    },
+    {
+      "id": "G2",
+      "name": "Interest rates and Fed decisions",
+      "kept": [],
+      "rejected": [],
+      "error": "could not read the news feed (<unknown>:2:252: not well-formed (invalid token))"
+    },
+    {
+      "id": "G4",
+      "name": "Central bank buying",
+      "kept": [],
+      "rejected": [],
+      "error": "could not read the news feed (<unknown>:2:252: not well-formed (invalid token))"
+    },
+    {
+      "id": "G5",
+      "name": "ETF and investor flows",
+      "kept": [],
+      "rejected": [],
+      "error": "could not read the news feed (<unknown>:2:252: not well-formed (invalid token))"
+    }
+  ]
+}
