@@ -40715,26 +40715,37 @@
       "proof": "social",
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-23T18:20:51.544021+00:00",
-      "earliest_report": "2026-11-23T17:57:42+00:00",
-      "last_updated": "2026-11-23T21:25:38.918448+00:00",
+      "earliest_report": "2026-11-23T15:29:01+00:00",
+      "last_updated": "2026-11-23T22:50:51.530980+00:00",
       "words": [
+        "2.35",
         "action",
         "billion",
         "binance",
+        "bitcoin",
         "cryptocurrency",
         "detail",
         "eth",
         "files",
         "funds",
         "hack",
+        "million",
+        "mixer",
         "over",
         "recover",
+        "route",
         "seeks",
+        "sits",
+        "through",
         "transferr",
-        "usd"
+        "unlaunder",
+        "usd",
+        "while"
       ],
       "amounts": [
-        1000.0
+        247.0,
+        1000.0,
+        2350.0
       ],
       "old_clues": [],
       "sources": [
@@ -40770,6 +40781,17 @@
           "found_at": "2026-11-23T21:25:38.918448+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Binance hackers route $247 million through bitcoin mixers while $2.35 billion sits unlaundered",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOU09RcS1pOWM0YURLelQ0VVhwZHlnZktIRHc0SUZHaFR5cjR4ZlYydHpZaHkyaUh5amRzU1RLV2FrMm1hNHVMS1Aza0t6WEp6MHNORkUwaWtkWW45bzlOZXdvMXRuRC1GSzdnTkdJVXJrUWJyQkZGN1cxVzBoMVBQUjV4QXJyMzNoeW93TmpyUVBsX3pfR19DbXFtRHRJMGh2Z3J2SUZLZ2N2Um9oN2FqbjZFN3AxbW5jUXJyaFI3MUxwTkRxa1dfcnJn?oc=5",
+          "published": "2026-11-23T15:29:01+00:00",
+          "found_at": "2026-11-23T22:50:51.530980+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -40792,6 +40814,10 @@
         {
           "time": "2026-11-23T21:25:38.918448+00:00",
           "note": "another report from Reuters - same event, no new alert"
+        },
+        {
+          "time": "2026-11-23T22:50:51.530980+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": {
@@ -40825,12 +40851,12 @@
         "now": {
           "move": -0.7,
           "time": "2026-11-23T22:00:10+00:00",
-          "hours": 4.0,
-          "verdict": "right"
+          "hours": 6.5,
+          "verdict": "flat"
         },
         "checks": {
-          "done": 1,
-          "right": 1,
+          "done": 2,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -40839,12 +40865,12 @@
         "effect_reason": "still inside the 3.3 days window (biggest move so far -0.7%)",
         "impact": {
           "peak": -0.82,
-          "peak_hours": 3.0,
+          "peak_hours": 5.5,
           "faded_hours": null,
-          "against": -0.13,
-          "against_hours": 0.0,
-          "until_hours": 4.0,
-          "text": "Clear impact: Bitcoin fell up to 0.8% (after 3 h). Still in the predicted direction after 4 h (-0.7%)."
+          "against": 1.83,
+          "against_hours": 0.5,
+          "until_hours": 6.5,
+          "text": "Clear impact: Bitcoin fell up to 0.8% (after 6 h). Still in the predicted direction after 6 h (-0.7%)."
         },
         "result": {
           "start_price": 61613.4,
@@ -40864,6 +40890,12 @@
           "price": 61449.84,
           "move": -0.4,
           "time": "2026-11-23T19:17:33+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 61201.22,
+          "move": -0.8,
+          "time": "2026-11-23T20:29:01+00:00",
           "verdict": "right"
         }
       },
@@ -41025,14 +41057,14 @@
     "BTC-20261123": 7
   },
   "last_run": {
-    "run_time": "2026-11-23T22:46:00.728077+00:00",
+    "run_time": "2026-11-23T22:50:51.530980+00:00",
     "test_mode": false,
-    "stories": 156,
-    "off_topic": 80,
-    "repeats": 76,
+    "stories": 147,
+    "off_topic": 73,
+    "repeats": 73,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
