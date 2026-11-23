@@ -38577,9 +38577,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 0,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
@@ -38619,6 +38619,12 @@
           "move": 0.04,
           "time": "2026-11-23T10:47:00+00:00",
           "verdict": "flat"
+        },
+        "h10": {
+          "price": 62799.59,
+          "move": 2.38,
+          "time": "2026-11-23T15:47:00+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -38830,9 +38836,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 0,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
@@ -38866,6 +38872,12 @@
           "move": 0.07,
           "time": "2026-11-23T10:49:00+00:00",
           "verdict": "flat"
+        },
+        "h10": {
+          "price": 3659.53,
+          "move": 1.5,
+          "time": "2026-11-23T15:49:00+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -39088,8 +39100,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 2,
-          "right": 1,
+          "done": 3,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -39125,6 +39137,12 @@
           "move": 0.07,
           "time": "2026-11-23T10:49:00+00:00",
           "verdict": "flat"
+        },
+        "h10": {
+          "price": 3659.53,
+          "move": 1.5,
+          "time": "2026-11-23T15:47:14+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -39947,11 +39965,11 @@
     "BTC-20261123": 5
   },
   "last_run": {
-    "run_time": "2026-11-23T15:55:40.534520+00:00",
+    "run_time": "2026-11-23T16:01:27.704712+00:00",
     "test_mode": false,
-    "stories": 137,
-    "off_topic": 67,
-    "repeats": 70,
+    "stories": 125,
+    "off_topic": 59,
+    "repeats": 66,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
