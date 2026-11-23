@@ -40344,6 +40344,211 @@
         "first_sent_at": "2026-11-23T16:31:42.883032+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261123-06",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-23T16:40:52.162684+00:00",
+      "earliest_report": "2026-11-23T14:18:04+00:00",
+      "last_updated": "2026-11-23T16:40:52.162684+00:00",
+      "words": [
+        "above",
+        "fed",
+        "gold",
+        "kitco",
+        "outlook",
+        "price",
+        "ralli",
+        "report",
+        "reshap",
+        "selloff"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPenF6LTV0TWdncXg5WDBQNS1Dc2lSVEUwNmpsRzR0UGg4a0VOM21NN2hTNnN1Mk1fZDhmcWs1WU41UW9qcUFieEJnemYyRTdhZy1hakhLbHRXemltSTFVTnBFaEhLdDR5LTYyeElnTjBKdEVNeUFXRnFEQlh5bWllNU1vOEw3eHlaRXZBZzV1WlNXUWd6R3BHdmlTajdyZUJueU5vNTlCUmhvclZtLVRlamJyel9USGM?oc=5",
+          "published": "2026-11-23T14:18:04+00:00",
+          "found_at": "2026-11-23T16:40:52.162684+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-23T16:40:52.162684+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-23T16:40:52.162684+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-23T16:40:52.162684+00:00",
+          "note": "confirmed -> alerted: New Fed\u2011related news caused a noticeable gold rally, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-23",
+        "date_evidence": "Article published 2026-11-23 14:18 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of further gold rise",
+        "expected_direction": "up",
+        "direction_reason": "Fed outlook shift may lower rates, which historically lifts gold",
+        "alert_title": "Gold rallies as Fed outlook changes",
+        "alert_message": "Gold rose above $3,600 after AI selloff changed expectations for Fed policy, hinting at lower rates that usually boost gold.",
+        "why_it_matters": [
+          "Gold price already up 0.4%",
+          "Fed outlook shift can affect future rates"
+        ],
+        "reason": "New Fed\u2011related news caused a noticeable gold rally, so an alert is warranted.",
+        "time": "2026-11-23T16:40:52.162684+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold rallies as Fed outlook changes\n\nGold rose above $3,600 after AI selloff changed expectations for Fed policy, hinting at lower rates that usually boost gold.\n\nMINT's prediction: Gold DOWN - The only comparable recent case (Nov\u202f19\u202f2026) saw gold fall about 4\u202f% the next day despite Fed\u2011related news.\n\nGold had already moved +0.4% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 23 Nov 16:40 UTC",
+        "telegram_sent_at": "2026-11-23T16:40:52.162684+00:00"
+      },
+      "outcome": {
+        "start_price": 3645.38,
+        "start_time": "2026-11-23T14:00:00+00:00",
+        "moved_before_mint": 0.39,
+        "delay_hours": 2.4,
+        "h1": {
+          "price": 3657.05,
+          "move": 0.32,
+          "time": "2026-11-23T15:18:04+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 0.39,
+          "time": "2026-11-23T15:54:40+00:00",
+          "hours": 1.6,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": 0.32,
+          "peak_hours": 0.7,
+          "faded_hours": 1.6,
+          "against": 0.39,
+          "against_hours": 1.6,
+          "until_hours": 1.6,
+          "text": "Never moved the predicted way. It rose up to 0.4% (after 2 h)."
+        },
+        "result": {
+          "start_price": 3659.53,
+          "start_time": "2026-11-23T16:40:52.162684+00:00",
+          "threshold": 0.96,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "The only comparable recent case (Nov\u202f19\u202f2026) saw gold fall about 4\u202f% the next day despite Fed\u2011related news.",
+        "similar": [
+          {
+            "id": "GOLD-20261119-04",
+            "date": "2026-11-19",
+            "title": "Gold struggles near $3,700 despite weaker Philly Fed, renewed Hormuz tensions - Kitco AM Report",
+            "d1": -4.12,
+            "d7": null,
+            "peak_hours": 39.9,
+            "source": "MINT",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.51
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-23T16:41:06.734053+00:00",
+          "low": -1.54,
+          "mid": -1.92,
+          "high": -2.56,
+          "window_hours": 54.0,
+          "probability": 0.56,
+          "agree": 1,
+          "similar": 1,
+          "basis": "1 of 1 similar past events moved this way (typical move 4.1%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.28,
+          "threshold": 0.96,
+          "floor": 0.52,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.2x a normal day, price +2.9%",
+            "buy_sell": "75% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.67,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0.51
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold jumped above $3,600 after an AI\u2011driven market sell\u2011off changed expectations about the Fed\u2019s future policy.",
+        "what_past_events_show": "The only comparable recent case (Nov\u202f19\u202f2026) saw gold fall about 4\u202f% the next day despite Fed\u2011related news.",
+        "direction": "down",
+        "why": [
+          "A similar Fed\u2011outlook headline previously preceded a price drop.",
+          "There is no clear surprise of rate cuts; markets may still expect rates to stay high."
+        ],
+        "watch_next": "If the Fed later signals a cut or a more dovish stance, the rally could keep going; a reaffirmation of hawkish policy would likely push gold lower.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-23T16:40:52.162684+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-23T16:41:10.803451+00:00"
+      }
     }
   ],
   "counter": {
@@ -40381,27 +40586,27 @@
     "BTC-20261121": 2,
     "GOLD-20261122": 1,
     "BTC-20261122": 1,
-    "GOLD-20261123": 5,
+    "GOLD-20261123": 6,
     "BTC-20261123": 6
   },
   "last_run": {
-    "run_time": "2026-11-23T16:35:41.749817+00:00",
+    "run_time": "2026-11-23T16:40:52.162684+00:00",
     "test_mode": false,
-    "stories": 148,
-    "off_topic": 72,
-    "repeats": 76,
-    "new_events": 0,
+    "stories": 102,
+    "off_topic": 52,
+    "repeats": 49,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -40420,7 +40625,8 @@
           "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
           "Alert: Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
           "Alert: Gold climbs more than 2% as dollar rally pauses",
-          "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets"
+          "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
+          "Being checked: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report (reliable source: Kitco News)"
         ]
       }
     }
@@ -40443,7 +40649,8 @@
         "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
         "Alert: Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
         "Alert: Gold climbs more than 2% as dollar rally pauses",
-        "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets"
+        "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
+        "Alert: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report"
       ]
     }
   },
