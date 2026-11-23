@@ -39710,6 +39710,171 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-23T13:01:50.979779+00:00"
       }
+    },
+    {
+      "id": "BTC-20261123-05",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Owning Crypto Directly Can Be Risky. In-Kind ETF Conversions Are a Better Way to Own It.",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: Barron's)",
+      "proof": "news",
+      "proof_reason": "reliable source: Barron's",
+      "first_seen": "2026-11-23T13:55:38.431926+00:00",
+      "earliest_report": "2026-11-23T13:50:00+00:00",
+      "last_updated": "2026-11-23T13:55:38.431926+00:00",
+      "words": [
+        "better",
+        "can",
+        "conversion",
+        "crypto",
+        "directly",
+        "etf",
+        "in-kind",
+        "own",
+        "risky",
+        "way"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Barron's",
+          "kind": "news",
+          "site": "barrons.com",
+          "title": "Owning Crypto Directly Can Be Risky. In-Kind ETF Conversions Are a Better Way to Own It.",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcmhPNTFXbTBKOHFORzdSWUdneUxzVndQZVZLX09CSFRmdG5haVNIM2NnS0J3bVRTbGRhYTNFQVdrZ0dFYW5mV2RaMnBmOGVuZ1FXRVZGUjNUMlRRN0JXTE13UFo0RDI4eHJqejBUdEl3cGxkNjhxcVJrdlQ3TmdiUGwtV1VxZw?oc=5",
+          "published": "2026-11-23T13:50:00+00:00",
+          "found_at": "2026-11-23T13:55:38.431926+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-23T13:55:38.431926+00:00",
+          "note": "new event, first report by Barron's"
+        },
+        {
+          "time": "2026-11-23T13:55:38.431926+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: Barron's)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 61254.29,
+        "start_time": "2026-11-23T13:14:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-23T13:14:20+00:00",
+          "hours": -0.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 61254.29,
+          "start_time": "2026-11-23T13:55:38.431926+00:00",
+          "threshold": 1.11,
+          "window_hours": 4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "The only close past case (Nov\u202f9\u202f2026) saw Bitcoin slip about 0.6% the next day after a similar ETF\u2011flow discussion.",
+        "similar": [
+          {
+            "id": "BTC-20261109-04",
+            "date": "2026-11-09",
+            "title": "Bitcoin bulls can't rely on ETF flows: Crypto Daily",
+            "d1": -0.62,
+            "d7": -14.39,
+            "peak_hours": 133.5,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.45
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-23T13:55:50.143819+00:00",
+          "low": -0.37,
+          "mid": -0.62,
+          "high": -0.87,
+          "window_hours": 4,
+          "probability": 0.47,
+          "agree": 1,
+          "similar": 1,
+          "basis": "1 of 1 similar past events moved this way (typical move 0.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.71,
+          "threshold": 1.11,
+          "floor": 1.11,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "quiet: 0.7x a normal day (moves are less reliable)",
+            "buy_sell": "buyers started 55% of trades (24 h); 60% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "disagrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.67,
+            "volume": 0.5,
+            "buy_sell": 0.25
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0.45
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A Barron's piece says buying Bitcoin directly can be risky and suggests using in\u2011kind ETF conversions instead, highlighting the role of Bitcoin ETFs.",
+        "what_past_events_show": "The only close past case (Nov\u202f9\u202f2026) saw Bitcoin slip about 0.6% the next day after a similar ETF\u2011flow discussion.",
+        "direction": "down",
+        "why": [
+          "Only one comparable event, which ended with a small drop",
+          "ETF flows are a moderate factor and often lag price moves"
+        ],
+        "watch_next": "If actual ETF flow data shows strong, multi\u2011day inflows, the price could bounce back; a quick reversal or outflows would push it lower.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-23T13:55:38.431926+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-23T13:55:52.155744+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -39748,20 +39913,20 @@
     "GOLD-20261122": 1,
     "BTC-20261122": 1,
     "GOLD-20261123": 4,
-    "BTC-20261123": 4
+    "BTC-20261123": 5
   },
   "last_run": {
-    "run_time": "2026-11-23T13:50:54.505446+00:00",
+    "run_time": "2026-11-23T13:55:38.431926+00:00",
     "test_mode": false,
-    "stories": 149,
+    "stories": 150,
     "off_topic": 70,
     "repeats": 79,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
