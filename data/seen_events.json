@@ -39221,6 +39221,237 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-23T09:11:09.197838+00:00"
       }
+    },
+    {
+      "id": "BTC-20261123-04",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-23T12:40:51.948573+00:00",
+      "earliest_report": "2026-11-23T12:35:32+00:00",
+      "last_updated": "2026-11-23T12:40:51.948573+00:00",
+      "words": [
+        "ban",
+        "crypto",
+        "exchang",
+        "just",
+        "october",
+        "own",
+        "platform",
+        "start",
+        "trad",
+        "watcherguru"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/16263",
+          "published": "2026-11-23T12:35:32+00:00",
+          "found_at": "2026-11-23T12:40:51.948573+00:00",
+          "summary": "JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-23T12:40:51.948573+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-23T12:40:51.948573+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-23T12:40:51.948573+00:00",
+          "note": "confirmed -> alerted: New regulatory ban announced, matching past pattern of price\u2011falling events."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2027-10-01",
+        "date_evidence": "text says the ban starts October 2027",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "bans have caused price falls before",
+        "alert_title": "UK to ban crypto exchanges in 2027",
+        "alert_message": "The UK said it will ban crypto exchanges from trading on their own platforms starting October 2027. This could limit trading and hurt Bitcoin demand.",
+        "why_it_matters": [
+          "Regulatory crackdown reduces market access",
+          "Investor confidence may fall"
+        ],
+        "reason": "New regulatory ban announced, matching past pattern of price\u2011falling events.",
+        "time": "2026-11-23T12:40:51.948573+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nUK to ban crypto exchanges in 2027\n\nThe UK said it will ban crypto exchanges from trading on their own platforms starting October 2027. This could limit trading and hurt Bitcoin demand.\n\nMINT's prediction: Bitcoin DOWN - Big crackdowns like India\u2019s raids and China\u2019s outright ban dropped Bitcoin 4\u20116% in one day, while a mere proposal in Germany only nudged it up a little.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 23 Nov 12:40 UTC",
+        "telegram_sent_at": "2026-11-23T12:40:51.948573+00:00"
+      },
+      "outcome": {
+        "start_price": 61246.34,
+        "start_time": "2026-11-23T12:24:10+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-23T12:24:10+00:00",
+          "hours": -0.2,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 61246.34,
+          "start_time": "2026-11-23T12:40:51.948573+00:00",
+          "threshold": 2.04,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Big crackdowns like India\u2019s raids and China\u2019s outright ban dropped Bitcoin 4\u20116% in one day, while a mere proposal in Germany only nudged it up a little.",
+        "similar": [
+          {
+            "id": "BTC-20261112-05",
+            "date": "2026-11-12",
+            "title": "India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+            "d1": -5.97,
+            "d7": -13.3,
+            "peak_hours": 156.8,
+            "source": "MINT",
+            "score": 0.75
+          },
+          {
+            "id": "BTC-20261116-03",
+            "date": "2026-11-16",
+            "title": "JUST IN: \ud83c\udde9\ud83c\uddea Germany proposes seizing cryptocurrency without criminal charges. @WatcherGuru",
+            "d1": 1.0,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.69
+          },
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.66
+          },
+          {
+            "id": "BTC-20261119-05",
+            "date": "2026-11-19",
+            "title": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
+            "d1": -2.5,
+            "d7": null,
+            "peak_hours": 39.3,
+            "source": "MINT",
+            "score": 0.64
+          },
+          {
+            "id": "BTC-20261121-02",
+            "date": "2026-11-21",
+            "title": "SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
+            "d1": 1.62,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.64
+          }
+        ],
+        "votes": {
+          "up": 1.33,
+          "down": 4.15
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-23T12:41:06.500813+00:00",
+          "low": -2.75,
+          "mid": -4.08,
+          "high": -5.44,
+          "window_hours": 54.0,
+          "probability": 0.44,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 4.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.72,
+          "threshold": 2.04,
+          "floor": 1.11,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 1
+          },
+          "lens_text": {
+            "volume": "quiet: 0.7x a normal day (moves are less reliable)",
+            "buy_sell": "buyers started 57% of trades (24 h); 48% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "disagrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.25
+          },
+          "rule_votes": {
+            "up": 1.33,
+            "down": 4.15
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The UK said it will stop crypto exchanges from trading on their own platforms starting in October 2027, which could limit how people buy and sell Bitcoin.",
+        "what_past_events_show": "Big crackdowns like India\u2019s raids and China\u2019s outright ban dropped Bitcoin 4\u20116% in one day, while a mere proposal in Germany only nudged it up a little.",
+        "direction": "down",
+        "why": [
+          "A large country announcing a ban scares investors and cuts demand",
+          "Past real bans and enforcement actions have caused sharp short\u2011term falls"
+        ],
+        "watch_next": "If the UK turns the announcement into a law quickly, the drop could be bigger; a delay or softening would make it smaller.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-23T12:40:51.948573+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-23T12:41:10.952297+00:00"
+      }
     }
   ],
   "counter": {
@@ -39259,31 +39490,32 @@
     "GOLD-20261122": 1,
     "BTC-20261122": 1,
     "GOLD-20261123": 3,
-    "BTC-20261123": 3
+    "BTC-20261123": 4
   },
   "last_run": {
-    "run_time": "2026-11-23T12:35:38.842167+00:00",
+    "run_time": "2026-11-23T12:40:51.948573+00:00",
     "test_mode": false,
     "stories": 155,
     "off_topic": 72,
-    "repeats": 83,
-    "new_events": 0,
+    "repeats": 82,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Chainflip's losses climb to $12 million after protocol discloses 122.9 BTC theft, offers hacker bounty",
+          "Being checked: JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru (approved social media account: Watcher.Guru (Telegram) (from social media))",
           "US stock market (Nasdaq) fell -5.28% on its last day"
         ]
       },
@@ -39308,7 +39540,8 @@
     "Bitcoin": {
       "state": "Alert",
       "reasons": [
-        "Alert: Chainflip's losses climb to $12 million after protocol discloses 122.9 BTC theft, offers hacker bounty"
+        "Alert: Chainflip's losses climb to $12 million after protocol discloses 122.9 BTC theft, offers hacker bounty",
+        "Alert: JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru"
       ]
     },
     "Gold": {
