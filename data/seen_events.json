@@ -40704,14 +40704,18 @@
       "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
       "first_seen": "2026-11-23T18:20:51.544021+00:00",
       "earliest_report": "2026-11-23T17:57:42+00:00",
-      "last_updated": "2026-11-23T21:10:56.211504+00:00",
+      "last_updated": "2026-11-23T21:25:38.918448+00:00",
       "words": [
+        "action",
         "billion",
         "binance",
+        "cryptocurrency",
         "detail",
         "eth",
+        "files",
         "funds",
         "hack",
+        "over",
         "recover",
         "seeks",
         "transferr",
@@ -40743,6 +40747,17 @@
           "found_at": "2026-11-23T21:10:56.211504+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "US files action to recover over $1 billion in cryptocurrency stolen in Binance hack",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORDVNMXVSLXVnN2RqNTM3Q09KcFk4MnhKNG9pN2FPd1ZJd2JURFNMRWRCMllWYm9Ia1dZYXh6bmhrWFdkM2k2WFNzNndJQXI5aDdoTXJXdzNwUGxUQzJhQWxwQ1JIcnRwaFVyVXJmbmV2STNnWGJPUldNelNRZmZyV1gweDFVeW1BVVhJMTV5WEtreVJnQ2xrQ0V2VzRfZUtHVWlsQzJja01fYUN1ZEw1ZUJwQU5zWExINXZqSGJGdEpYNjRR?oc=5",
+          "published": "2026-11-23T18:35:45+00:00",
+          "found_at": "2026-11-23T21:25:38.918448+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -40761,6 +40776,10 @@
         {
           "time": "2026-11-23T21:10:56.211504+00:00",
           "note": "another report from Bloomberg - same event, no new alert"
+        },
+        {
+          "time": "2026-11-23T21:25:38.918448+00:00",
+          "note": "another report from Reuters - same event, no new alert"
         }
       ],
       "decision": {
@@ -40994,14 +41013,14 @@
     "BTC-20261123": 7
   },
   "last_run": {
-    "run_time": "2026-11-23T21:20:52.605329+00:00",
+    "run_time": "2026-11-23T21:25:38.918448+00:00",
     "test_mode": false,
-    "stories": 157,
-    "off_topic": 81,
-    "repeats": 76,
+    "stories": 158,
+    "off_topic": 80,
+    "repeats": 77,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
@@ -41023,7 +41042,6 @@
       "Gold": {
         "state": "Alert",
         "reasons": [
-          "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
           "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
           "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
           "Alert: Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
@@ -41046,7 +41064,6 @@
     "Gold": {
       "state": "Alert",
       "reasons": [
-        "Alert: Tether Insiders Seek to Turn Gold Into a 4% Yield Machine",
         "Alert: Gold Falls to Nearly 15-Month Low On Interest-Rate Expectations",
         "Alert: Gold price could drop $300 if $3,500/oz fails, and buyers might hold off until the Fed \u2013 Walsh Trading\u2019s Lusk",
         "Alert: Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
