@@ -38552,7 +38552,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 0,
           "wrong": 1,
           "total": 9
@@ -38588,6 +38588,12 @@
           "move": 0.61,
           "time": "2026-11-23T06:47:00+00:00",
           "verdict": "wrong"
+        },
+        "h5": {
+          "price": 61363.75,
+          "move": 0.04,
+          "time": "2026-11-23T10:47:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -38799,7 +38805,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 0,
           "wrong": 1,
           "total": 9
@@ -38829,6 +38835,12 @@
           "final": false,
           "text": "still inside the 27 hours window (biggest move so far -0.3%)",
           "size": null
+        },
+        "h5": {
+          "price": 3608.01,
+          "move": 0.07,
+          "time": "2026-11-23T10:49:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -39036,7 +39048,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 1,
           "wrong": 0,
           "total": 9
@@ -39066,6 +39078,12 @@
           "final": false,
           "text": "still inside the 4 hours window (biggest move so far +0.2%)",
           "size": null
+        },
+        "h5": {
+          "price": 3608.01,
+          "move": 0.07,
+          "time": "2026-11-23T10:49:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -39223,11 +39241,11 @@
     "BTC-20261123": 3
   },
   "last_run": {
-    "run_time": "2026-11-23T10:55:38.586896+00:00",
+    "run_time": "2026-11-23T11:01:31.244145+00:00",
     "test_mode": false,
-    "stories": 148,
-    "off_topic": 65,
-    "repeats": 83,
+    "stories": 146,
+    "off_topic": 64,
+    "repeats": 82,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
