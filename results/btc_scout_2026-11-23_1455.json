@@ -1,6 +1,6 @@
 {
   "scout": "bitcoin",
-  "run_time": "2026-11-23T14:05:40.116768+00:00",
+  "run_time": "2026-11-23T14:55:41.560833+00:00",
   "test_mode": false,
   "news": [
     {
@@ -14,7 +14,7 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-23T11:06:11+00:00",
-          "age_hours": 3.0
+          "age_hours": 3.8
         },
         {
           "title": "Trump hosts third crypto gala for meme coin amid conflict of interest outcry - The Guardian",
@@ -23,7 +23,7 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2026-11-23T00:31:00+00:00",
-          "age_hours": 13.6
+          "age_hours": 14.4
         }
       ],
       "rejected": [
@@ -42,8 +42,8 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-16T15:44:59+00:00",
-          "age_hours": 166.3,
-          "reason": "too old (166 hours)"
+          "age_hours": 167.2,
+          "reason": "too old (167 hours)"
         },
         {
           "title": "CoinDesk: Bitcoin, Ethereum, XRP, Crypto News and Price Data - CoinDesk",
@@ -52,8 +52,8 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2013-10-21T19:13:22+00:00",
-          "age_hours": 114738.9,
-          "reason": "too old (114739 hours)"
+          "age_hours": 114739.7,
+          "reason": "too old (114740 hours)"
         },
         {
           "title": "Bitcoin falls below $60,000 level - Reuters",
@@ -62,7 +62,7 @@
           "source_name": "Reuters",
           "organisation": "Reuters",
           "published": "2026-11-20T16:26:27+00:00",
-          "age_hours": 69.7,
+          "age_hours": 70.5,
           "reason": "too old (70 hours)"
         },
         {
@@ -72,7 +72,7 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-21T04:34:00+00:00",
-          "age_hours": 57.5,
+          "age_hours": 58.4,
           "reason": "too old (58 hours)"
         },
         {
@@ -82,8 +82,8 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-20T14:38:30+00:00",
-          "age_hours": 71.5,
-          "reason": "too old (71 hours)"
+          "age_hours": 72.3,
+          "reason": "too old (72 hours)"
         },
         {
           "title": "Trump's Democratic SEC pick suggests tokenization policy deserves full rule process - CoinDesk",
@@ -110,6 +110,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Kalshi faces Monday hearing on New York order it says would shut down its exchange nationwide - The Block",
+          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdEY3TXFTZ3NrTTdwZEQyZmpUSGROcDR2eFF1NThHaEk4NTkyRmhRRFJHVUFBUHNqVkgyZnhwSVktM3AzbVR5X1lIQWpVTVdyMy16QzNiMmUycWZzUlRoMjdQR2x6dFBneml5YlZfRHpsY2s0cFIwY3RHVl91d2dxSXpGTzExNmVTVUZ3VmVOVXMwYVdUY3BiVGhUQl90UzJWbEliVGNGbk1VTS1hRDRwaGh4OGx4aEo5TlM3MTA0eGxxdVFnWkRCdmdxdm5lREVfZDRKRWFTQWREU045OWdiNEZtSjJ1QQ?oc=5",
+          "source_site": "theblock.co",
+          "source_name": "The Block",
+          "organisation": "The Block",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "EU Plans to Hit Former Russian Combatants with Visa Ban - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQVFwVmMwSXZQdWZqRkVNUmZjcTdvb281UHpIalgwR0pKWW5fYW9acjctWWRIZDhSSkRHazh4czN4ZXFGcG96cXh6Nm5ZZUhOc3EyVHhCRkNXbmtHZDd1Qnl2WEp6ZF85ZV9KM3A3OVUyMURySzAwWGpacWNVa0FUUjQwMjhXdDhhWk1fb1Z0eTJXOEtRYWI4Nk1oVUh4VzBwTWZZb0w2RXVldw?oc=5",
           "source_site": "bloomberg.com",
@@ -123,14 +131,6 @@
           "source_site": "reuters.com",
           "source_name": "Reuters",
           "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Kalshi faces Monday hearing on New York order it says would shut down its exchange nationwide - The Block",
-          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdEY3TXFTZ3NrTTdwZEQyZmpUSGROcDR2eFF1NThHaEk4NTkyRmhRRFJHVUFBUHNqVkgyZnhwSVktM3AzbVR5X1lIQWpVTVdyMy16QzNiMmUycWZzUlRoMjdQR2x6dFBneml5YlZfRHpsY2s0cFIwY3RHVl91d2dxSXpGTzExNmVTVUZ3VmVOVXMwYVdUY3BiVGhUQl90UzJWbEliVGNGbk1VTS1hRDRwaGh4OGx4aEo5TlM3MTA0eGxxdVFnWkRCdmdxdm5lREVfZDRKRWFTQWREU045OWdiNEZtSjJ1QQ?oc=5",
-          "source_site": "theblock.co",
-          "source_name": "The Block",
-          "organisation": "The Block",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -150,16 +150,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "published": "2026-11-16T22:38:46+00:00",
-          "age_hours": 159.4,
-          "reason": "too old (159 hours)"
-        },
-        {
           "title": "Thailand Plans to Ban Exports of Chemicals as It Tackles Pollution - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSDZ5NkNmRkJyVzQ3aWVBV2VSQTZNLVBReXVrZ1VLbmhDd18zN0cyY2NuVFhEX2JXUnN1QllwY3pDaTBOeGFqMER5TzVWOURKMmx3Y3c1YlJORTctTmszNnVRUzVUZE0ybnoydks2NDFnYmNzbnhMVzlZRTBvbjRSdU54cGRDLWp1LXhUR2ZLUkFlX0tUblRySXRmcTFKYXM3NjR3MzY2akVfRThlT0dPUHpyZHJIOUNs?oc=5",
           "source_site": "bloomberg.com",
@@ -168,12 +158,48 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Top Cobalt Producer Congo Will Ban Exports Again as Prices Slide - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhQSnRtSTVYN2lSZTd6MjJBeWZKSEp3U3YxTUhVVWJ2dExPeE92UGVWaVhSeEszT0NJQTlsVy1WRUV5Z2Eza3pGNEZGeDE0cWpScjRmNk5qSVRqOERjeGQxYXBSZmFJZ2NvQmlNNVNJTDlKaWVGYU16LVlRSkJKVXVXb0pGODRJRkdXNGE0LVlCLU4tNlc5OWpzLWsyZTFiak50bnVQTHRBUXZsM0VUc2hRWGw5dw?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "US judge clears MIT-educated brothers of $25 million cryptocurrency heist charges - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdW1pNlZXMVNNRXJtVGFiRUhPUm0tWGFqeGt4Q1VwallIOGtKTGFiTlZGZnZCd2F5RldrQ2E0b0V0emF1TkFkOTh0Q1FOa3phejllUmhxZGpGUkhlUFJqUlhoSkNFUWR6ZVhhbmxiUDRENXJXTEFZS3ZVUzQ1clVybUVIUFBzTWNhejhxSURKeUVEa2RSaWNGd3czU1B4WWxmZ1R6QURmVWJLWWJIMkVlck5UVnRxY1luMlFXVFBqMVVmeWQ2clpvOGhn?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "published": "2026-11-16T22:38:46+00:00",
+          "age_hours": 160.3,
+          "reason": "too old (160 hours)"
+        },
+        {
           "title": "Meta pauses plans to create non-voting share class after investor lawsuit - Financial Times",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTTBLRkFSZGlxVEtndFpScWRFck5nVXVLLXZiazBpMGxHQ1YwZG1FQVNvZXlVWEk2T0xhUWZNanhhSTN3aUF1WGZmbXFKU0xPQ3MtSUlPbkV5RlhYcFhVOFQ2WVhKMUo2ckNMeWs3TVVZa1FveEt4bTdLTVM5SDA4NU1URVU?oc=5",
           "source_site": "ft.com",
           "source_name": "Financial Times",
           "organisation": "Financial Times",
           "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "US Stock Futures Bounce After AI-Driven Correction: Markets Wrap - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFVRM2J2cTZ6eU02Qzk1TF83UmhsSEN3SlpHYjJuc2lDeXBVM0h6WkN2bEJCUlk5RnZNOFMta05FOXFqeTZQQWZnbFl2RG1WTWVNSXYwVWhZRFZxRkx6SDlhTWtUWk92UVBJa2FGWVk3ak9rOUVJYjZ6RDBqcUZCOEpiWmFVWGxvVmM1Y2prdDk2N19EZG0xWjU3aFV5QkJ6MjF4eExGSkd3TWxaWGRBVzhB?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Bitcoin miner MARA raises $185 million in debt after selling $1 billion BTC to repay loans - CoinDesk",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObHRielZrRXFaVk0tTlV6M1pmQVlhMWhacjJSeW5uLUd6cHllNGhTMTNpak9jblZlY3h4eXQzY1ZRMWtkZ29valdKakY1Nk9hM2lyOVlXV1FXRWpWVGE1R254UWFJYTJ2azNIMHpVTWNyeVo5ZmEzVTd1TXlnM0lER1FQMFJ3YkVqUFpqeGR6d3JwTnFnTHU0UUZXejA2TzFZYXB5eE40Y0ttbFA1TmljVTZUeWFLUE1IWkRBeWVYOHpIQ1ZoX3AwSm5faHFSaWNwN09pcw?oc=5",
+          "source_site": "coindesk.com",
+          "source_name": "CoinDesk",
+          "organisation": "CoinDesk",
+          "published": "2026-11-18T12:53:34+00:00",
+          "age_hours": 122.0,
+          "reason": "too old (122 hours)"
         },
         {
           "title": "Citi settles sex harassment case alleging threats to managing director - Financial Times",
@@ -200,22 +226,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Senate Passes Bill Banning Prediction Market Bets on War, Terrorism and Death - Decrypt",
-          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWGl2MmxUQ1JhbmVkMjgtc3o2U3RhbnEtS3Bubnl6UGc0MHFCT29SYkptMDJQNTV1SzlDQjVoRm5lNlJhNmRELUNRZUc5T01OR2RmQ2FZQmRxYk5wZC1fODhNUW80b1I5alVTbk9kU0M2MlhwNm1walF3SkhFQUJJb1AtYTlPWS1lTG1mQ3hoTi1qbHM4NUZCRG9OM1JNWlpCSGxRUg?oc=5",
-          "source_site": "decrypt.co",
-          "source_name": "Decrypt",
-          "organisation": "Decrypt",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "FDA must pay legal fees to group that won court fight over COVID vaccine records - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbjVzTk95eExPWWMxUlVZSU9sdUxwdVV5Sk5oT1lrS2R5b0dCS2NmRGE0eFlmeWcyMXhGMUF5bGRiVnlISi1LRGNDY01OZlZDazBnZXZtUjlyYmRkTFc2Vy11aGRLWXZfNmZrOGY1UV8xVGpjM1RLTVVPdlQ5bU9HOTY2Snd0dklXRUZLcU1DcGt5dmxKSHg1OFZxUkNWWHlRbUdmSDVRSWhnbzNINDFDUkJDZXJHb1F3M1ZYbzJFZVBlQW5HUkMzdkF3?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "H-1B Visa Workers Are Fed Up and Abandoning American Tech Jobs - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRm9XeVRwWXJ0ZzVzNmw3eklTY05RMWVLdFJ0U0RJb3lCSk14VDhVaFRKbGJlNDFuemRqRFJ4YnZ1WHl3MHM5YVNtaUJHYWxWTnVGOE85cUxKX1MtRnBIWWNuMjVFQkd1MXRZNjViclQ3VHN1bmF2Wl9Sd3ZLZVhjc1E5RzQ4M3ZmcHk3MTMyY3lGU05IMFp5Ny1hbWFvZjhNM3hzQVZqUV9jeVN3MVFaNG40SkU?oc=5",
           "source_site": "bloomberg.com",
@@ -229,6 +239,14 @@
           "source_site": "reuters.com",
           "source_name": "Reuters",
           "organisation": "Reuters",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Senate Passes Bill Banning Prediction Market Bets on War, Terrorism and Death - Decrypt",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWGl2MmxUQ1JhbmVkMjgtc3o2U3RhbnEtS3Bubnl6UGc0MHFCT29SYkptMDJQNTV1SzlDQjVoRm5lNlJhNmRELUNRZUc5T01OR2RmQ2FZQmRxYk5wZC1fODhNUW80b1I5alVTbk9kU0M2MlhwNm1walF3SkhFQUJJb1AtYTlPWS1lTG1mQ3hoTi1qbHM4NUZCRG9OM1JNWlpCSGxRUg?oc=5",
+          "source_site": "decrypt.co",
+          "source_name": "Decrypt",
+          "organisation": "Decrypt",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -248,14 +266,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Erdogan Widens Fund-Scandal Crackdown to Limit Political Fallout - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPalpNNWFGUGdkMzNfSnFTVVNIMURBeG9uMWJ2eXQ4dVFZYk9oSU51Z28tNnBoTU1PRzJJV0c3RHFxWXROVEpBUXhYM0thWVo1Z2ZhV3Z1ckJDcmExZklzM3phLVdYMXllRFR0WFVfLXFqRlAtTlFhb0F2b0Q5Smp4ZGZQVjA0WlFqd1BwMVlPdDhOLVNEYU5FdW0yMy1RdUtFWmN2LVBqUzRyRGRQNVJaZWpFZmNvQQ?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "S&P 500 Is Set for Longest Losing Run Since 2020: Markets Wrap - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
           "source_site": "bloomberg.com",
@@ -269,6 +279,30 @@
           "source_site": "ft.com",
           "source_name": "Financial Times",
           "organisation": "Financial Times",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "South Korea Says Market Measures Will Ease Investor Jitters - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNFM3MmtldGFubzdUaHgyalNTc21uMC1PdXJvWm1Hc01jemo2bXN1Sl9YXzM4ZW03TWUxSTQ4WVVRQUkzejhFQ2NWM3FPZnFzMFdrUVRxbTJQeG9mczhUUUVlbm1kdXdtandFTGdYRndvOWk1b3V2dF9IMnR1RFlLLTRJNi1XaEpSY2xUTFEzRVl3MVUwdjJnNllsdFRCd0RFakFTX0k3UzRZenUxeWtv?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Erdogan Widens Fund-Scandal Crackdown to Limit Political Fallout - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPalpNNWFGUGdkMzNfSnFTVVNIMURBeG9uMWJ2eXQ4dVFZYk9oSU51Z28tNnBoTU1PRzJJV0c3RHFxWXROVEpBUXhYM0thWVo1Z2ZhV3Z1ckJDcmExZklzM3phLVdYMXllRFR0WFVfLXFqRlAtTlFhb0F2b0Q5Smp4ZGZQVjA0WlFqd1BwMVlPdDhOLVNEYU5FdW0yMy1RdUtFWmN2LVBqUzRyRGRQNVJaZWpFZmNvQQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Arm CEO Snubs Nvidia Approach, Extending Contract Through 2033 - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQV2VIVEFDaFFQRTMzWl96NmhERll5Q2pINWw2T1Zqd3M0NUpKcHp1emdUdk9PellRWkg5b1o3UjBHeVBqdHZLMFhkOUc3RHFYcTRwY3BmZjh6aUlYdVRnM29vNjRzR0FYaUs4aWN3QkgzZUhjaHY4N3Q2c2xzMnYtNGcwQ2dSSGNWRjA0dzJfdXBsNUNfcGZjV1FTM3hOdHpFOEZ2Z1RfZzBVU2w5VlBN?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -296,16 +330,8 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Trump Suggests Iran Strikes Will Resume Next Year If Talks Fail - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOWR5UVNLNmF5UFhzNHBwcWdjdGgydlZEWE9ZOF9DS0kwT1k2TkM2SzRNZTcxOThLVUp6Zmd5czJHek51WDIxMXVwTXM4SE55eUphZmhsQmhKZTlsZnlVVGFHOXE3QUxOT09pRVlMSWdSRVNFMjVJbXF3V2JuWmtsdVU2TlNpWUhfczNLZnVIajFkVXRmT1BEX2pSOG5wNEh4enRKQWlmWnVGUDZEcTFoOGJ0eENyRFRIZGVmMGhGamJaMl9PSzI0?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Treasury Official Renews Warning on Wave of Tax-Saving Trades - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeWNhOTFMLUZHSFJnMDNrVkxBYnptcFFxRFFTVkFkVWVaNnF1NFBmREZYTDdBTEI3bU9DLUQ1ZG5uSU9XYXV4S2xNbTJORVh0NFpWaDZzckhBTTJkMjBqeWw0X01xSDJTVzFFTEtFRmM0MGhfaEVWOUxzVkROcGdDUkh5aVpEZ0dOb0lhc1FKVG9JZi0zRENHWkw2RTZOM3I3ZklkSG03X3lfZkppVjlXQ2tn?oc=5",
+          "title": "Nvidia-Backed AI Company Firmus Mulls $1.5 Billion Bond Offering - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOHRmWW5qdm1WVTJOY3dlQmd2bFMwZ016dUMzbG5pWDZKZzdvWHZvUXdpUlpLQXNxVlg4ZmJRNXZ2QVNTRGxzZGQteFVabXhIOVBFS3k5OElFUFZvcGxudzlRN2VTdTBGd3NvSm5pLWs3ZXE4VHFVODVwWUlUUlZQTTlxZHRTR2huZ1UwOF9maTh0NVFOOVAwSHFDZjFJUnRHa3I2MXluaDRRd2plV0k5TlNoRHk?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -344,8 +370,8 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "US Was Warned of Telecoms Risk Years Before Salt Typhoon Hack - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVWl1UG5YZ3dNUHdBR0lVcjhHdUxYQzN5T1pxU3N4V3hpRjlwcFpQVlRqYUZ4ejgzS3dkcGdpMXJleFlIQzdpWHBTMklmM3Y5eTBLMFVPY19pbzJNOWVSUEVjVTNVaVVtRS1FNy16bWJOV1pFeUlhNFJEaENOT2J6VjBMU2ZIRlc3TzhvcmNEbUNzVExwQ1F4TDBMT19rQ2lSXzJDSHpYc19UZkM0SlZBMTZB?oc=5",
+          "title": "German Business Activity Gauge Surges to Highest Since 2022 - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZ2JvclZfTnI3a3NETEYyTTRJNkZHZTcyODRERG5tel9OX3JNVjhSaTR0SVZ2N3JRbU9hQWw0WDNuVV96RjZjcDFjR19yZ1E1R1A0Tkw0MkxwMGNfeTZCQUFfTXNtNlFOUTctMmdvZlBkY3BFX2ZhQkhzZzRhN1g5Rm9PWkQzVnhvRHRNYWNEZEtpRUl2V3RrcVlueUZJaVNzOExSVExkTHJEcWJJTm9r?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -368,16 +394,16 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "ABB Buys German Cooling Firm Ziehl-Abegg for $2.2 Billion - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR3dUc0hDeTFpS2xiTEFVTzlwS1lPZFRvQ3FQSVlfUnhqVUQxMUlic25qa3kxUmZNeHFvQUI0S28tVFdYQmgwZGJjMHVzaVBlRi1XYU1iWlRLbzByM3hYS0ZZdV9LcGRsQlBLbklhYlNRZjZXMkNZUnd1b3N2SjRyMzJQSFBUS1BQY1g2bG1MX1I5cEJXZ0RWdlNHUjQydFNCc0hKQ19Sa1VRb2c?oc=5",
+          "title": "Bret Taylor\u2019s Sierra Finalizing More Than $1.75 Billion Round - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM1BneUJiNjdrRDZtLTJibnlJVmdERE1wQkwxdzctbHVZVkJWT1puMzhYa2g4bGNSemJRU2hRdUZMSkhLS3ByQUZQR3JkYXo0Umg2T3NHUFdKQm9DbXNRUktJd0hJNmtkQjVBN2hQYUVnOWZEM0N6Q2ZIVEd5M2V6ZFNSbkkwbHNMREotQ0tFZi00N0s5RXFJaGQ4Rzd1blltdUQxX0dvYUgtcWVodFJmYg?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Nvidia's Fallout Is a Gift to Billionaires Ambani and Adani - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOazFJdW0wS29hME50djdNU01rNkZQZDBlY0luMUVONTl1S0NBZ19DM3I5ZjJhMnpMWFFjMjRoQWpBS1ByNzVTSjMyUmN2TDFLdGI3eW9fVk0tOFNxOUNXYmlEVWtYUEhIQi0zWldYR2xBWktyRGpqeW5mNzgybURMMFl3S3N4cm9tc194ZFY3Q2N3cXU0VHpfdGJfai1CRkhrelZjWWRVRXZlcUVvb1hjdGdwajZwcGhHWVp5Ug?oc=5",
+          "title": "Arrests and Threats Open Way for Erdogan to Reclaim Control of Istanbul - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQd1VsTTdZb1laVlVtYXJnQjJ0aW5TNWE5ejJBdFJPaWpXbmF3WmFCY3k4TVRFM1o5dkk3TnRSOUVBRmJWU01KLWhzcXdmeThNNmlLSHhOWnlXTGdYbnVpZFFycU9qaEZNR0RJNFVBTFZhc1luYXFIV1BHTGhrVUdJUGJmNmRrMXpad28yLW5UUjVyU0g4dHlKcTM0aFpzczFDUkIxX1BCTFlZM09kcjlwWXB4dmx1VTMtQVRoZk1xV3NtYWc?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -386,6 +412,14 @@
         {
           "title": "Ex-Sequoia Boss Backs UK Defense Startup at $450 Million Value - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPN2VKZjJpVWZ3RVUwdVlSN0p4aHdRWURXN0Jwd3g1TVBqR1FhNm42bjEzbG1LNWtaTW9BMWc5ZEoySjZnWVUzYVBwT3lrNGgtb1BUa2JRRU96YTN2UjhEUDFOamFQYThpSVpqNmd6SlJIZ3RUUHdFMm1aQ01nSVZOOVhKcGJZOS0yNWZ3Nk1Ua3F4Z3J4S0FaVWZ4aXV1bjJTQmZkTzhNVWFmWGhJdXZ4ZnpJS0JncUprcGFVUmt0N3R1Q2VS?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "ICICI Prudential Seeks $800 Million as Alternatives Push Grows - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNUFOY1U0VmQ2OG5EcnlDVGEzZi1VRjlXM1huSnI3ZElIaURsSERqVHN3WmsxTDM4c05tbnkzU3FiYWlWZFpJcnYxNVkzZTg5eXdPOUxnUzFkbmNsempncGVJVHpfQlhUSkJTMnZTRlo2Q2xPbnp4d0xlSWs4MjBfenNiZXR3elRIcUVGRm5HVWVyeGRPMU92TTBYUzcybE5iYUJLMDZUSTRRaEdXSk1odnFB?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -408,6 +442,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Nvidia's Fallout Is a Gift to Billionaires Ambani and Adani - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOazFJdW0wS29hME50djdNU01rNkZQZDBlY0luMUVONTl1S0NBZ19DM3I5ZjJhMnpMWFFjMjRoQWpBS1ByNzVTSjMyUmN2TDFLdGI3eW9fVk0tOFNxOUNXYmlEVWtYUEhIQi0zWldYR2xBWktyRGpqeW5mNzgybURMMFl3S3N4cm9tc194ZFY3Q2N3cXU0VHpfdGJfai1CRkhrelZjWWRVRXZlcUVvb1hjdGdwajZwcGhHWVp5Ug?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Wall Street Surges Toward M&A Record as Megadeals Defy Selloff - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcmc0QjZVYzFQMVVNTEU5bjRqbVUzVm9XelNMNmN2aUNCdnRzM2hiS1JSX2ItdHBadzdvMzVLaEhuQ0lhcVJiMTNicHozVjJ3TXF0VjZaam5OVjFuQjdrR0xxQVBhNHhrX3RQVUU5YzFFalhrMU1kYUo1N09zbnhmVFI3Smx6cWpNQlU0TnNwTnQxbDlYZ2NiczRGM09nbkJxMFVvckNnZU1YeHlGR3gxVzBYWQ?oc=5",
           "source_site": "bloomberg.com",
@@ -416,8 +458,8 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "CrowdStrike Reaches $44 Billion Cyber Deal for Zscaler - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUkFJTko4elVPRkJqM1J5WWo1LXpSVFBaVEZ4UDRvb0g5Rkl3bGZ4emltR2dwd3B1TGlSTE9pUFlfeEZ0U3pVdnRKS3ZrNXVhckJLS0VxOFRFOXJKWFBqYXZjbFVJQUJodjd2VnRiZGJGMVAtdEtMT1ZvSmRMNkVtMmo5QTdOOUZhQ01pTXhRUjFGQXc3Yzc1aU5SOE5KWmw2enJzRmo1Z3lDdDNwdS1MUVNn?oc=5",
+          "title": "What a Town Full of Vibecoders Says About the Chinese Economy - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUFZ3ZzRsZUZ3M1JKMThFYTRVdktvT0o5RUt5dXc5T0R5azhtQ29mdmhibl9jZ2MzdGpleHFLQTd1RTBxdXVseklBVDZKWXZzQ2tZcnBmbVN4eEJ4Mm5kNjBNQlBzOUxOak1GdUhURzdlMkhWYjdKejJEd0JfdFBTWTZMQTN6SmJQd3VFZGRMS05lTzlkaDdZbGp3?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -448,8 +490,16 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "German Business Activity Gauge Surges to Highest Since 2022 - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZ2JvclZfTnI3a3NETEYyTTRJNkZHZTcyODRERG5tel9OX3JNVjhSaTR0SVZ2N3JRbU9hQWw0WDNuVV96RjZjcDFjR19yZ1E1R1A0Tkw0MkxwMGNfeTZCQUFfTXNtNlFOUTctMmdvZlBkY3BFX2ZhQkhzZzRhN1g5Rm9PWkQzVnhvRHRNYWNEZEtpRUl2V3RrcVlueUZJaVNzOExSVExkTHJEcWJJTm9r?oc=5",
+          "title": "India\u2019s Economic Activity Holds Steady as Manufacturing Picks Up - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeWQwN2ZzVzJhdC1KejRsbWN0ZUFqLXZ2SEZ3Tmstbm53WjFOekJrci1NWnkwUlkzMEl2bC04cnRjY2RSZDVYbkVqY0lmRjd5dGo4WHVYc0NaXzRhOV8xSC1hM00yR0RiOWdTemNrLTlrMFBVRmRiTVRXWkxJbG1seHlZaFNPUTliRzFSZ2NjQkxqVHlXUEpLLW9UR2hoQUtScEJyTUYtdUFYSDBVMTlSRGtHUVloYVF1V2JXZXhWOA?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "ABB Buys German Data Center Cooling Firm for $2.2 Billion - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR3dUc0hDeTFpS2xiTEFVTzlwS1lPZFRvQ3FQSVlfUnhqVUQxMUlic25qa3kxUmZNeHFvQUI0S28tVFdYQmgwZGJjMHVzaVBlRi1XYU1iWlRLbzByM3hYS0ZZdV9LcGRsQlBLbklhYlNRZjZXMkNZUnd1b3N2SjRyMzJQSFBUS1BQY1g2bG1MX1I5cEJXZ0RWdlNHUjQydFNCc0hKQ19Sa1VRb2c?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -464,6 +514,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Partners Group Shareholders Vote to Split Key Fund Into Two - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPX0hRaHRJSGtRSUt5a2NSTloyWXh4TjhFU1BLcHlDUFFIeVQxaUEyX2N2d3lCZjFkbkc1c0pfUnZuZWVxVG12cENvekdEc3BBbUtPQl9ra1p4RUJWMDFXLWxwQkFBNkVacnROa2x3eFV5ZDJUY29GWTdxVjlxVFEydjVYSzhQNWxWeEE4alZUSUVqamhDUXljaFVuam4xMjlSNXdfaUZQd1BkejNHSTV3?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Democrats Plan to Hold 12 Presidential Debates Starting in June - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbWp0bFl5dXFrV3N0QlRvN0phNlRjYWZLS051Zk9SU2JjZktuQWk5TDR1dndaQmZrdXhTdExDd0JYMXE0WEtWekxFd1ZjQnhqTldGNTIzUFFOZnBIVWRMWFVmcHdxVVY2S2hEdTJHUFNzSTMwTTNsRFZncVIxQkhINURQN19xZUZ6NXRIWHlxRVlfdC1HcXktdm93TUFFenQ4R1NJY1VXV1VFNmxic1Fn?oc=5",
           "source_site": "bloomberg.com",
@@ -472,7 +530,7 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Ant Group Bets on Simplexity to Thrive in China\u2019s Humanoid Race - Bloomberg.com",
+          "title": "Ant Group Bets on Simplexity in China\u2019s Humanoid Race - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWXh4U2VvY1cxMnk0QzdXUUxJNEtzSUd6MzNkSWNzU21PY3RsZjZRTUFPamJrLURCUHhfUDZyUEpDV19wSFdZX2xSSkhnQm4tdVRYVXBtV1JBM2duYVgwc0dHSTJNdi05Zy03M2VucWFpcE02MnVwMGNtbENKMkdwamhVOEJXZFdPbFJsQlR5RmdlYWRBU19jaFlNXzBlZHRVeWRmV2xXTEpPTjNWQ2pObWZqYno?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
@@ -480,8 +538,24 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "UK Minister to Tell Business Public Control in Its Interest - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMEF4NEtpZmJqeVFURjRfeXhNUldhRHJzdU5PT2pKaDBnV1pibzlBNGZCUnY1VHl5QmZINFpHWW16eWN0QVVZNG9xeldKUjc4Vm9CVFVkVkFEVklsN3BMNFJpcGd5dU1FdW9rank3aDdnVjZwb2NZNXI2N1RqZDFiREp5VHZZMlNhSEZ1LUJzamN6QkhHRTY4MzBZaWxCUE1ZX0NWelZpZkJxYXVfa0FCdjFONA?oc=5",
+          "title": "Mexican Economy Grows Faster as Optimism for US Deal Rises - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMDczejJ6Q3dYUjBUcjVEUHl1N0VvOGsyektUYVRkUEdUcEdmbFNIU0E2dGhTdUxjSTJyTnI4UmJJUWdVMlIzSmNQVU9JendPT0NZTzVZMC1pZ09leEdLTzREblhSY2YtclVjY2FoVnpuWDNMby12R1ZSbU5ZUGRodlhkd3dCQ2NhUktfWmhyVVhVcE5QeFQxSS1FLWs2Q2VsbFNUT0thY0dlR1FnSjNVa1VrLVc?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Ukraine Farm Failures Loom as War Drains Financial Buffers, Top Trader Says - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNjZTcUZnNVlkemlhMmVkZGpXVk5fck4tNDB2ZlVTTEVPajM5QnNKTmE4TEg4M0lzSVVjcVpwdmtrbWtKUVZnT3MtbUZWYmMzMXR4VU1iYmNoNlYwZTl5c3p0X25lMDMwWmJZaFFwYUkxbFo1VFRNR2J5eHcwMk5zVllOSHBlaGtsanljeTY4azRnOWJ1blNJNXNMNmRzNEp2cDlKU2ZxVXU3NW9nMG9GWWR6UDRSN0t3Sm5PQXBLQm9JLTA?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "OpenAI Chief Scientist Urges Industry Limits on AI Development - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMjVTYVIwT3huVU8teHdXRHdnWGxOUTI5d1J6elZhWktVMVpSZDhhRmk5eV82c0JuRDBSUWNHdl84Z253WDJDbmd6SXhiNlFsdkxhM2gxWTVoTnY2ZkdrZ0dVam1OVXNSZWIwUnBQaTU4bEhJNTZValFSQ1Naam1xb1FkTklSZXI2Ums4d19sUjVheGtLNGhUWjFPcEVyd0ZIRmJlX0FqNXF5cHpCR2pjczF5WQ?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -504,6 +578,22 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "CrowdStrike Reaches $44 Billion Cyber Deal for Zscaler - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUkFJTko4elVPRkJqM1J5WWo1LXpSVFBaVEZ4UDRvb0g5Rkl3bGZ4emltR2dwd3B1TGlSTE9pUFlfeEZ0U3pVdnRKS3ZrNXVhckJLS0VxOFRFOXJKWFBqYXZjbFVJQUJodjd2VnRiZGJGMVAtdEtMT1ZvSmRMNkVtMmo5QTdOOUZhQ01pTXhRUjFGQXc3Yzc1aU5SOE5KWmw2enJzRmo1Z3lDdDNwdS1MUVNn?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Capita Plunges 57% as CEO Quits Over Botched Pensions Contract - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRG0xUWNEd0w0aW9ZX3ZOYjdvUlBrWm1ZU05fZ1JJTHhwMTRaa3lMSG5FeHRSM1N3UlF1cXVSSjFXU19VdnVWTkRVR3BPWW1qd0RLZlJHZFNGcU5lX0ItNEY4cklqWG5HcmxXUXhKbmx4cDlVQWt0MFhta3Q1NzNrN2VBN2tDR1RtQkpYWllDdHZQbWtBM19JZy1qQlhYLW1ZWklmcXpaY0pUaklwazB1RTF3?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Var Energi Agrees to Buy ConocoPhillips Assets in Norway and UK - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa2ZKZno0ZTJ2VHFPQ1ByWERSTUJIMXNIQXI4RjRaSWNiT0xpR1lremdXTlprMW90V3JvNWN5Smxkdk9kMHJnb282UzA2VDk5MExjWERLLU0wdk9Gbkp1RFpWeEtBSVRlZ0Exc0E2a2xWUlVFN0xiMlZXYUkzMUt5NkQ3Q2YzWHZ1N3FqQWVyY3ZDVjRKSHFCdFZTYlVWcFpjemZWSTdFempUR1publlsbGpUTHY?oc=5",
           "source_site": "bloomberg.com",
@@ -512,16 +602,16 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Ex-Google Engineer May Face New Charges Over Bets on Gemini 3.0 - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUi1uVEdYb09LeE44VkpURTBhZDZGQlk0dmMxRTJTbjh6Z1d3NTdZTnpQLW1lVDNNTFA2eFlRbGVhNUVCYVJUWklkT0pEaGFWaGpKRjhZOG41d3o5NURPVlNEaXB3Z3VmRHJQQnFiYTJiRy0tZmJud0lieE1idkJWX2FRVmNiTUFvT3JMOWRTV1pRcTM2enlLMVZsU3hmU3Iwc1EwemFGTVhiVUg5blpwcE9jRTc?oc=5",
+          "title": "Strong Earnings Prove No Match for the Crumbling AI Trade - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSWdMSHNxSjRIMWY2c1JVckdnZFBHRG1XOThWbXFwQ25lT0ZaRTdTc1NKWkVrSHl2bTRPM241dkI2UHQtQWl5NHd3T3FHb3pnRXc4QmlLYzdQVEJRZmpNeDNUbldVU0dJSWppNXIyLVlwS0hJenlvY0VMQVBkbVdtcUlFcG9lWkFMUVd3M1QyYWdJbG9YX3cxWU5lNW0zbEdieWtydzFzVzdUbXls?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Partners Group Shareholders Vote to Split Key Fund Into Two - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPX0hRaHRJSGtRSUt5a2NSTloyWXh4TjhFU1BLcHlDUFFIeVQxaUEyX2N2d3lCZjFkbkc1c0pfUnZuZWVxVG12cENvekdEc3BBbUtPQl9ra1p4RUJWMDFXLWxwQkFBNkVacnROa2x3eFV5ZDJUY29GWTdxVjlxVFEydjVYSzhQNWxWeEE4alZUSUVqamhDUXljaFVuam4xMjlSNXdfaUZQd1BkejNHSTV3?oc=5",
+          "title": "Ex-Google Engineer May Face New Charges Over Bets on Gemini 3.0 - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUi1uVEdYb09LeE44VkpURTBhZDZGQlk0dmMxRTJTbjh6Z1d3NTdZTnpQLW1lVDNNTFA2eFlRbGVhNUVCYVJUWklkT0pEaGFWaGpKRjhZOG41d3o5NURPVlNEaXB3Z3VmRHJQQnFiYTJiRy0tZmJud0lieE1idkJWX2FRVmNiTUFvT3JMOWRTV1pRcTM2enlLMVZsU3hmU3Iwc1EwemFGTVhiVUg5blpwcE9jRTc?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -544,6 +634,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "UK Minister to Tell Business Public Control in Its Interest - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMEF4NEtpZmJqeVFURjRfeXhNUldhRHJzdU5PT2pKaDBnV1pibzlBNGZCUnY1VHl5QmZINFpHWW16eWN0QVVZNG9xeldKUjc4Vm9CVFVkVkFEVklsN3BMNFJpcGd5dU1FdW9rank3aDdnVjZwb2NZNXI2N1RqZDFiREp5VHZZMlNhSEZ1LUJzamN6QkhHRTY4MzBZaWxCUE1ZX0NWelZpZkJxYXVfa0FCdjFONA?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Trump Threatens to Tax Firms Building Data Centers Abroad - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPY0lBOFpCc3ZDVDVFN1gyaXVvLTYzaWcyZmZuMWp5VDNUdEY2Sm9RNG5nRy1BcjM4OFhJVTNNQ1RnaEYwTmhQS2tzX0k1dXBLTWhnVjBjMXk1djI2ZS1GaUJUcWlKOVFTYlFvVWc3NGVwYjd3N1NlTGZRZUFJcC05MkszQUJFdTMzdzVqS0VtcTgwaWNPZWVIaGRUa3FQdkZHSDljVFlZQWtXSTktazNaaXRR?oc=5",
           "source_site": "bloomberg.com",
@@ -554,22 +652,6 @@
         {
           "title": "Trump Backs Lutnick After Senator\u2019s Criticism of Chip Smuggling - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQXzhkOE5YeFFZSll2X2dZajNTMnZGWUpGWjZCdzF1cWQ4WGxhUXpydkxxMTk5b0VxQlhWQXAtTUVHb0VBQ1lfWTJaSkk4aEdqOVJ3SlB3T3BJUzFHMHI2VkJZUV9rYjNtcTU3VjQyM2lCZVktU3FKRVJPMzRiLUdmN3p6RkhfeE1KdDR6VzRuUUxIeW1KVzhUSk1GVnR6LVVIV2pSa2ZvVnd5MW1XcXMyNTJMSzY?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Strong Earnings Prove No Match for the Crumbling AI Trade - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSWdMSHNxSjRIMWY2c1JVckdnZFBHRG1XOThWbXFwQ25lT0ZaRTdTc1NKWkVrSHl2bTRPM241dkI2UHQtQWl5NHd3T3FHb3pnRXc4QmlLYzdQVEJRZmpNeDNUbldVU0dJSWppNXIyLVlwS0hJenlvY0VMQVBkbVdtcUlFcG9lWkFMUVd3M1QyYWdJbG9YX3cxWU5lNW0zbEdieWtydzFzVzdUbXls?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Apple Working on Own AI Agent to Rival OpenAI and Anthropic - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQzRPX3FrZlMybjdvY2FJVWhVOHU5M2lTTGNPazZYUW0zVlA3ZkVRcWxERk9XM2FvXzgzVDVUaTYwTzVzOXg0TGQtN25fOE9aeTRtUXhqTGE2Q01zQ21iTUg1dmFTNGZQRV9hTDVBV3BjWW4tUzYxXzBVTzA1UzkyOEtySVhfbWZlbmRXSFd1bVZLZElzSThUMmlQVnAyOHJIWUs0YTBNVTBIM29HV2ZieUtzQ1d0SDVIVTA2VTRTYk4?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -592,32 +674,8 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Trump\u2019s Camaraderie With Xi and Putin Draws Pushback at Home - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTDdBcnpCYmRuLWhmTXg2TXE5RDRscFVrWWEzU3U1SHNPN3lGWjhNcG1XdExfUU9aR2YzX1ptbm5RSEM4dmRzdVZjUzlYSy1MdjV4c2N5cnlLWXlCOVVFLXFPY3NEZ2NnN1Nkd0gzTGxjdjN2bkNoYUdqV2cwVmtJZ2t1TmlWNDY0Snc3MUctemU4ZkQzWnJrOHZCNDEwRmFIazVsdl83TjUwLTZNT19WeQ?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Dollar extends rally as risk appetite fades - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ0NIbEViM181TUJsZHFhV2J5d0lLbkVXVlBRYVJlb3YtMC1wVTlyc1NBV0RMQ0dBTXZlcHFvdnkzQm1SUWo3NFl3eGZ0SzgwTXhxTVQ3Y2VYSHg5LXZtRG9vUUp3eVlEQktJMk9JSllaQ1hRRjRuWmx0WGNJSFBLTHRpUS1tTVFoakw2dHlVRExKTU1jWE9McGswRWc5V05CYU4zR3JDdm9Jam4wTDlyNTlXRno0cXc4NVE?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Trump Is Squandering America\u2019s Brain-Gain Advantage - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdzRLQmxsbF9UYnBtYWgxdkw2SWVuUUNlZkFsc3JuTjhyTzIxY0ZjNWhKQldFc3RBekk1ZUhZWUdRZkx6VElFb2RjV05NbGdDT3pVcXhMVE9PMzVsbm1fR2dDOUJwQVRQZjlmMVplSG1LUm1uem4xZ1ZlcFNJTWx4MlV3OVp6QlNwLW5NNlMyR1VSVjBzN1BLVTIxSzFNYWpjbEdhaHJCYnpCdw?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "COP31 Collapse Shows Widening Fault Lines in Climate Diplomacy - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON21HdDk1MHE2TUpvMmJnWUxCNGY0NVk4cmV5YUMxQ0QtdlpESl9KSjRnc25WRkU3NjNkUUpxYnREOENFN1JaSFFlRnliMWtuT3cyRE9GOFJEanBmNnEzZUtOTDVvWHZBZEduNzFjbUlGYWtSTTF3TXFrV29Db2hvbmtIdEtjdEV3b3dpNl94cTlEVXU0dmJFNmJiQVhwYUgwbGN1Z1ZPQTU5VUNEbjQxR0gzUlY?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -680,6 +738,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Trump\u2019s Camaraderie With Xi and Putin Draws Pushback at Home - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTDdBcnpCYmRuLWhmTXg2TXE5RDRscFVrWWEzU3U1SHNPN3lGWjhNcG1XdExfUU9aR2YzX1ptbm5RSEM4dmRzdVZjUzlYSy1MdjV4c2N5cnlLWXlCOVVFLXFPY3NEZ2NnN1Nkd0gzTGxjdjN2bkNoYUdqV2cwVmtJZ2t1TmlWNDY0Snc3MUctemU4ZkQzWnJrOHZCNDEwRmFIazVsdl83TjUwLTZNT19WeQ?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Dollar steadies as traders take breather from AI wobbles - Reuters",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVA0aUFSMnFob3ZJdVFvbmlpN0JDRWFRNUJwZ1BIY19KU3RXZjJTRGdLaU00NGJ6dDRvX3VBUDdtcG9XQWRiRFhuUzhMZTNsN2lDSWVKMmI2Vi1EQ3dFUE5mM3dwZGNQWC1zZXhnZTJfVEVuYzVETlV1enJTN0dPZlQ3SlozeklDTzkwck16LW42eWt5aDJEY0w4M0Ytd0ZlRnBSZmZpN0Z5bkxTLXNXcWdtSW0?oc=5",
           "source_site": "reuters.com",
@@ -688,16 +754,16 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Republicans\u2019 Midterm Defeat Corners Vance as 2028 Field Widens - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSTN2cVBEdXljTXNmVEhCU0hKcVJpS3UxZWpIQnhHN0JvM1FUOXpwYXR0V1hHR2Z0aGFMZDY1RUdIZzZjYzl5U2pIV1V2NlVVZnF5QTliYkh1OTN0elZxbFp2ZVlhUUFMVlhkVHhfRFl1Wm1Bc1p5N0F3ZHBNa2VwNHpOZXNONUwxZUVtTjNlM2N1RHM2am9DY3NHblc3dHo1VHEtVXlZN2ZJVTkzSFBFX0JB?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
+          "title": "Dollar extends rally as risk appetite fades - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ0NIbEViM181TUJsZHFhV2J5d0lLbkVXVlBRYVJlb3YtMC1wVTlyc1NBV0RMQ0dBTXZlcHFvdnkzQm1SUWo3NFl3eGZ0SzgwTXhxTVQ3Y2VYSHg5LXZtRG9vUUp3eVlEQktJMk9JSllaQ1hRRjRuWmx0WGNJSFBLTHRpUS1tTVFoakw2dHlVRExKTU1jWE9McGswRWc5V05CYU4zR3JDdm9Jam4wTDlyNTlXRno0cXc4NVE?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Why Nations Failed to Secure a New Global Climate Change Agreement - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEZaeWtwOXBoWTBIVU00ZThzR1gycVhSLXJQcko2VnNkdWNKaWRJY2VReFJ5R3loTVRHbk5jLVBnd0pPeUJkNlpfeG5GbG04dmdQb3RoVUE0dTVPQUwtbTZpU1lKTHhleWROZXJYUlZiVzR0RElsbExCRlJ0Vk43MUswZzNOSUxNazhTWm5vbF9WbDlnV2R0NVp4cmJmWUNJanBMeUhtUFlFd090dXdkNXQ5OHRTeEVvY183Q2ZOS1RWQktQTXc?oc=5",
+          "title": "Rubio Looks Good Because of Who He\u2019s Standing Next To - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZnJNZUNqNXdYWEhacElCN1V3VHZkSmQxcDJZcng2RzdqZzU0OFVyd1c4ajl6THdjUEwzTW9jM0pwMHRSbV9udThOWC1IanFJYjlWSGs5ZWd4akcwRk00NEJmRzNzYVlDRlY0LVFVNVQ2Vk02SFRlbFZYZmoxZmh3NkF1aERMaXdjSFdPRWJhTWpIQ3hyalFiNTdTbzNWTFVSUE55YmN2UnhFNm8?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
@@ -744,14 +810,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Trump says more work to be done to achieve fair trade deal with Canada - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTmhITDNJWDN0aFIyMjg5dmx0bWFQS0RJcDZ4RDVUTEF4T3gzVUZ3VzZRVjRNMk1sdy0zaXdyWHBGdVBWQjI3V0FaRnhwbDJJQ2FqdjhIeFhMdEVDVWRadUs5M2tyM2RfTHNBVks3SVU0RkN2cXFwc2FPZWJfbHppVXhkVmZrbnVVOS14bVVaX1pRWG1yZEVvbm5GOVZDYWlQTEtvcmNyYUZWQQ?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Former Italian police chief found dead after mafia cover-up claims - Financial Times",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUjg2MEJnUUF0VUFRWnRCUW5TZy1XeHJzODRCLTNzVUtHWm83V1VCNmJSekxSekptd3B0a3RnaU4wR1NlVTViaTBEaHowYlY5YmtfNk5TUEM4OTVPV0FhU2JzYUd2d2RQek8xYjdNQzRXT1hMZ2tnQjVHVlNvczQtWGlGR0w?oc=5",
           "source_site": "ft.com",
@@ -773,62 +831,6 @@
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "As e-bike battery fires mount, New York weighs tougher restrictions - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUNxakhNeGhWWDF0QWZLYmtmRWd3R2g1WTdJVF9VVUdkWUFZNktJUUFTSHMxQTRNTFR4UWFTakdEVFJBWExldV9WMlpvYlFabklaY0lNMk5idl9iWlYtS2NBRVhaYUJhaVB1RC1JLWhYUXNyXzlWRE0zaVRxNktwc1BMakc2WHRydkZfbm9hSDNMMHUxd3JKMmhrcFI0Zy1IQW5JcVplbmRoeUpY?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "US Car Dealerships Are Low on EV Models - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWkxONjJNTnRKVXI4OFZlZWRfRjlqclJGYmFJY2gtNk4tNVlBSXlwaENfdHN0X0dncHU5TExTTm9UclhaVnJSZWQ2MXYxT0ZLT3RXT1ZjUlF3R3FfcnNIT3FzWGFhWnM4eEd6UHVFVDlwcnAzV3U5Tlg5UGZCaDVVM0JXZzBzbnN1SGRxb0VucnN1R3F5THJQTkRhUzJlOXJJU1lPSEFUUUxHaDJfdVhXR1hBUmk?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "How an American AI Company Uses Chinese Open-Weight Models - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUXl3YUcwbFhjWXJLcmlROXV3cEQtY09FWGhmcENtcUl3OERjdFc4bUthX3pBX09BdUNjdWdzbXpwTGJGZTZETGJGWG10Ny0zelRHcGsxNnNELXZhWFM4SDhsVXY3dHdZdkJnSUl1d3BEeEFmNW10STBkVEktdEM2Q2ZaNmU3QS12bVgtcGR3VmxoaXRMWloyeEJEMllEVG9yZEJIQ0xZbUtrT1dsa0E?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Why England\u2019s Centuries-Old Leasehold Property System Is Ending - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU0tkOWkzU0Z3N05LLTUxVm9Jc1lkYTRobkVMQmNkWTh2U2t5U0lwdUY1VVdxM1FLVDlKTzNvLUtWRy0xSmRHWVNkQW1fY0kwZ1pFYzVTRTBSaExmc2pzUG80b1RIcjA3c3UzampsclhZQW5kaURNS0h1WEZac1RuRkdGR2lNTWV0cWdHRFptUUVmM3M3VDhGWEkzUWF2Z0JZRkszdGt0Z0RPUEd2enpuQlMxZEpxZkRULTY3Vg?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Chinese Dramas Are Starting to Take Over the World - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZGxJZEl4UjFWMHdlRVZLaDA0VmdQUjA2cHE2QU9fcWRYWDZsdE5pb1l6a1drQjZpekVnM3UtR3MtZEhaa0JGVkN4VzNHQkd0RHk3QkNFaUlHWWZlRWE1RkFPVkJwSlNKMHpLZWZBcGYzUFBjcnhZQVZKVFFWZF9KejZlSUdnOVZNZW5vWTJiVGEyNHJwTXRrVFlkT1otMm1nUlg4U2FSWQ?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Russia Says Cargo Ship Attacked By Drones in Gulf of Finland - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRnlCOGxaOTZVblY3RTRxSV9Hd1pESWxqZ2hGaC1wdjZLMDhGN001S3pJQ3lpLVZSVTVtRk0tU1pnM3UtMEVZZWZIWFVKekV6T2EzTEpOM2RiMGR3MmVxUk90ZmtBMk5qalNvUjhqMXZOck9SN2tNbFpNREYwNGlWcTAzN28tVkE5OEFsaTU1MmdoSmRCOHNHY1h3NG95R2F4N0RvS2RIYm5xM1J1TjFqXw?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "The \u2018austere\u2019 conservative poised to lead Spain with the far right - Financial Times",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONVdKUzcyYW9iMWQ2Q091WW1rWW5iYlhDSndVdDkwWWJPZzV2dVJuaGFMbE1VSHA0SG41bVJrUDNNaUZYRHktOHBtYVlxS2JXRlV2ZGRjQVB4WFJTS2V2RmI2a2Q0blRXOTVlbGZISDF4Q1VQTFp4MlpiZkpjY1h4OWUxNHg?oc=5",
-          "source_site": "ft.com",
-          "source_name": "Financial Times",
-          "organisation": "Financial Times",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -864,14 +866,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "\u2018Hell dorm\u2019: Florida prisoners testify about 119F heat indexes and walls that sweat - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOXhxa2p2eXdMLWtyT2VkcEV0MVFoNUhfMDY3dHNxcWFnZFlTN3dib0pFQlM4RE1pM1hGNWtBM1dsRWJyaHN4UzJUeEVrVURhVnJSREp2bDQ5d3RySWtiNUNRNVQ0emZ0dFBpUElzcnhIMFdKbmRFYi14b3FSMlp2d1VJRXk0QmhVSTczTlB3?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Trump administration deported US citizen to Mexico, DoJ admits in court - The Guardian",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOd3BSN3dxZkVHUm5oWTVBYk9taGNRcGFFT1l5OExsWkxiWXNuc0prSG96VFo5dUpVZGx4eWRmNEszMHJWSlFCYmFHSFlTU3VGb0F2ZWZ4c0Y1ejNyOHRpSkNJRkxEdm1JNXNqWU92SFJ3QkVwMEtoQmM0R2ZfejRQTE1sN1pHelE1c3FtdFN0TUlFSHN4R2pV?oc=5",
           "source_site": "theguardian.com",
@@ -880,8 +874,16 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "\u2018Great coach, terrible streamer\u2019 \u2013 Erasmus gets thumbs-down for his weird watchalong - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQktoM21NTjl4ZHpMR3V5OGlucmpOZG5ZUEhxSXN2dzczaW9WV0lqcmRpNzNqbEJrckNlRkxlYjNKSnhWZUNIMldQNmk2UUM2X3FyNnNONmNUT2lwd2ZGWUxyWWpsdjFXS3VQNGN6cVJYbTNxbGNzOXlYRTdkUkJUdVhaaFQwQ3ZjcmhZbU5sQ2xTaEt0Zl81cFpkTHpzNngweGprWA?oc=5",
+          "title": "Germany taking seriously reports Russia may be planning to launch nuclear weapons into space - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOOUtWdVJPaUZZOXBmZ0VhUzJTaWNKQVNwUFhzMmVaRWY3MW9ITXVnbWpMd2h0cmdyTEtmaDloN2E1VmNQd056ZTMwSVFPazRtSWtLZ1NXa1NBMUkzQ3VwNjJUajFhZ3B3UXlGNnF3WWhNNUxHelhoZUkzWS1XZERMZ25lSDcxcHVYZHBUbmJlb0FHaGlNSFU1eXF3?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Cloned number plate victims in England and Wales to get new reporting tool - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQS0hMNzFwNjFEYWN6Y20yR2QzanliWkF2MzI0NHkwS21udGZkcFQxRzNyTGdZeGR1RW9YZXlnXzBuOWdzT0NqUUJncTNBT1ZyUkxUa2p2c1hnQjAwTDNQb0pLdzdPcTdhaDBqclNDVTFIaDBhX1JTOThNZVZoUnEtRnhHUllTLWMtYklyUElIS3JjZzJTTUlFMWp1UTRtbEVEX3FfTktoZ01BanhldWZJ?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
@@ -893,14 +895,6 @@
           "source_site": "cnbc.com",
           "source_name": "CNBC",
           "organisation": "CNBC",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "BYD\u2019s Shares Fall After Dutch Court Bars Sales of Ti7 SUV Model in EU - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVW9HY19CSXBqQnE4V1VidTlXYTdIclpGbktULVdYWTVYa1RDNDU4MUNweXlfbmtsdWNkSFdwNl9JTFY3T05kRzRLUUkxbU1walhaRGNkLWFiQlJaZ3VVZVREZVJ4OVhSdXVtZy04bDVMM0d3NVRkM3A5S296czl2SVBZc0R3dVJ6VmUzTVNyR3lqQnBESXFQYWlQRjUxTHFZVS16aG1tM29fS1F0STRwQlZR?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -936,8 +930,24 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Apple iPhone Duo review: the most novel and interesting iPhone in almost a decade - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUG4zRUY4aXRoOXB6YkpLbFhjQnN5aVJPVFlKSkhTbW5YRXFzWFN1TkJxMjNqNVppaERITXdQd1h5S21Vb0VpcHg0a2FZMzRVempyejFwX1RzWEo4Y0RJcFpyZ0x4WGo4bXlEQ2d5SVNPOXhpZWdOUzFfV1dWUXRhMWlPbVdoRHZxa2FrT1FxRXZsY3VLMDQ3RlU2SloybGMzaUZUWnQxd3huVklBQTg4WTNpLTAxZUtXV3doaDM3YWk?oc=5",
+          "title": "\u2018No doubt\u2019: AB de Villiers makes fresh Australian ball-tampering claim - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTkpTYUkzZkJLODQxN2JjZVA3bk5JTlJfWk52SUVtMTRCODFhUzlQNXk4U09YaWlkb3A2YU9BcXlLd0swYjB3Rk1ReHozbjBnSVVRcWlZQ0JRUWpNZWVFbmNRb19XeXRDZS1vam1Wd0dRa0RRaGtKUUNiSkowWmJVYVFTTVNhT0lnaXJuR014LUk0UU9fcVVCaWlTdlJzb1RPb3FyRnlQWk4yeXlEazdVZ0plUnAxVGtSZktDZnJKaFJkOTQ?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Capita boss exits and shares crash after civil service pensions failures - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQR0FkQVd6cWFHdE05bVQ3eE52b0h3V0dRaUFkeU1rRmxjaURoR1pYbDlZbHVTR2xxU25pNW1ZMzVTLUdFMGZnUXlvZGlqdTFnZXFPWUVjZFJZZnV6WGlYRXFQWmNBX1BScEk2dFNyVDJOVFQzMlBoeHBmdFR5dmRVajh6M3NNU2x4Y1dRUWhyRFJfaG1kcmNoYVRMNGRnWWIwRkFhQUx4UVRYNTlsU3BmcA?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Grieving families getting into debt and doing without memorials due to benefit freezes - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOFBDN1c4Z3RDdG53RGRfb1hlS19kQjlnaW9WMmlVV3l6Uklkc3poRW9VR2lWNGJpSGVYWjBPaHh6dTd4X0FDcVJZS1BDNDFQYm9GazA2c2dFYkZEbXhtYVMxVTUtUVhKLTVKbWZmTUZORGJQTWxFVVNvTmtTS0xyWXd6VFVxNElJUUxEUFplR3B6dkxjZnpCek5GcThDb2RzTU1jbXIyN0JWYW5uRUJtVGZITTFTQ2NWbTZGcHdwNVRnV20wYjhJRmRrRFU?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
@@ -952,24 +962,16 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Apple iPhone Duo review: the most novel and interesting iPhone in almost a decade - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUG4zRUY4aXRoOXB6YkpLbFhjQnN5aVJPVFlKSkhTbW5YRXFzWFN1TkJxMjNqNVppaERITXdQd1h5S21Vb0VpcHg0a2FZMzRVempyejFwX1RzWEo4Y0RJcFpyZ0x4WGo4bXlEQ2d5SVNPOXhpZWdOUzFfV1dWUXRhMWlPbVdoRHZxa2FrT1FxRXZsY3VLMDQ3RlU2SloybGMzaUZUWnQxd3huVklBQTg4WTNpLTAxZUtXV3doaDM3YWk?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Anthropic\u2019s IPO was great for the tech elite \u2013 and not so great for the rest of us | Steven Greenhouse - The Guardian",
           "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQb1BWeTVRdFVORDl1U1BBTTRHYXhPOFdsTW5fV29fa2s0Z0ViTzJhMng3QUJuWVdTeFN4aUhQSU1ZcTI3UFJLLVYxM185d0hxT3FrTXJkN1FtdkZkNlhUWHp1cl9aWnBvSUJPeElpaDk1eko4VEJjQWp6MTc4VzVNdlN4MzZQZGFtcEgwTmlrRzM2WHVIV0E?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Telegraph departures signal concerns over direction under Axel Springer\u2019s ownership - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN0Y0WFRHSDNmMUJ6cUYycHF2Q2dHZjB0Zkk2RXI4QXhWUVJsWHZJdlNtY2dRQ2tMRHdtLVU5ajVHUFVGZE50a2IyY1dBR2dJYm5Yd2Y1el9HZjAzaTdrVkdQQ3F6MGt2VXQ4aTY3NWNhYkRwbzIyOTNjM3FHT0txcDE0alFaSWt3aVNKejcwb3VwMlJkaHE2UEpGYklTTTlmckE?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Capita boss exits and shares crash after civil service pensions failures - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQR0FkQVd6cWFHdE05bVQ3eE52b0h3V0dRaUFkeU1rRmxjaURoR1pYbDlZbHVTR2xxU25pNW1ZMzVTLUdFMGZnUXlvZGlqdTFnZXFPWUVjZFJZZnV6WGlYRXFQWmNBX1BScEk2dFNyVDJOVFQzMlBoeHBmdFR5dmRVajh6M3NNU2x4Y1dRUWhyRFJfaG1kcmNoYVRMNGRnWWIwRkFhQUx4UVRYNTlsU3BmcA?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
@@ -992,19 +994,11 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Inside Fifa and US Soccer\u2019s plan for 2031 World Cup: \u2018the largest women\u2019s sporting event in history\u2019 - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX1ljUzZfMUVVZkFESlVUSlB5R2RPMklyMHhxbEwxSWg2XzgyV1B3M2tCb3BjYWpYWVhOMXBiaDRQM3J5b3hZSUtPdHJCa2ZPOGY1cUk4SFJKdm1WUWt3eDFsbHEtdmdOMzRScVdkVl9TYWx0VWd3d2JFRjRhSVdjMDd2bTZWazZnMmt5WmlXaUMzVzNOVUE?oc=5",
+          "title": "The ruling against Myanmar makes proving genocide more feasible | Kenneth Roth - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVl94VHFXRmxvdjNydktsSEhia2todlU5enZjY0tnaGNwVFp6ZE9DRGtXSTc1YjZFbXFWOFc2OXFTU3QzdFA1RnA5ZEJoaDJpc2xneFN5UUV0d3lPWFBTeFIyYTV6c09MWGFiNDhrdFNpN2d0Qkt5VmVqTnpDbGN2emxiNA?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Meet the Press \u2013 November 22, 2026 - NBC News",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSC13NmJpOTV6clYzOFVlVXRhUkgwZmpJM0VPS1lGUlBSZ2pyN3N2YnJYVWxQaG90ODE2SzEzNkRmWnJYcVYxTFpZcnc4UDJSMzdxcS1renFLWTY0YzlqeXVibW9vS013MGZFVGJMZkUyRVBQMjJud29LMWVQVlc3V0VzV0hmcjQzTzh1RUxFdWtWeEE?oc=5",
-          "source_site": "nbcnews.com",
-          "source_name": "NBC News",
-          "organisation": "NBC News",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1032,16 +1026,16 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "How Michigan\u2019s Abdul El-Sayed Helped Ignite a Challenge to Chuck Schumer | The 10-Point for November 23 - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdDJDTDZRbHdYS21mVFNxZ3Y1ZTlnT3VJQlhDVGZKRWdpYnI2M1AzTTNOYkx3S2N0SjB5UVRXb2dwbTQ0N2RKVjZKbkFQTDY1UFJqYUVNeHF4bjVnSGI3cmo3WXM2RGs1UmF2QnF1bW81Nm5Uai11MVVwdml2NGxmWFowWV9ROXNLZmZFY1c3OXVYYjMyT08wbXFrRlh3MG5JOTVhbE5zRHZGaWVJWWc?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
+          "title": "Meet the Press \u2013 November 22, 2026 - NBC News",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNSC13NmJpOTV6clYzOFVlVXRhUkgwZmpJM0VPS1lGUlBSZ2pyN3N2YnJYVWxQaG90ODE2SzEzNkRmWnJYcVYxTFpZcnc4UDJSMzdxcS1renFLWTY0YzlqeXVibW9vS013MGZFVGJMZkUyRVBQMjJud29LMWVQVlc3V0VzV0hmcjQzTzh1RUxFdWtWeEE?oc=5",
+          "source_site": "nbcnews.com",
+          "source_name": "NBC News",
+          "organisation": "NBC News",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "European Tech Stocks Rally as Traders Buy AI Dip - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZ1JGbGtCMWoyU3NBVzJ1Rjh3Sl95dkk5a2Fmc1RlMkJZU2R4Rk1WdDRobXk4eDFoOEFmQXdjdXc1RnUwbWdIN3dXQTZ3MUJUZlczSjlkSHlDLVVpOHVxMFM0V0dzY0d6UXU5TDhtTUh3dmlUVXF2NzRfLVVDdHlhYVpsaGVKRnVrT1MxWE9LWVFGTkN3c1BTLUd3M2lJZloxQUxkd3hkc2RPcDBrY2Y1WTJTWkNCdw?oc=5",
+          "title": "How Michigan\u2019s Abdul El-Sayed Helped Ignite a Challenge to Chuck Schumer | The 10-Point for November 23 - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdDJDTDZRbHdYS21mVFNxZ3Y1ZTlnT3VJQlhDVGZKRWdpYnI2M1AzTTNOYkx3S2N0SjB5UVRXb2dwbTQ0N2RKVjZKbkFQTDY1UFJqYUVNeHF4bjVnSGI3cmo3WXM2RGs1UmF2QnF1bW81Nm5Uai11MVVwdml2NGxmWFowWV9ROXNLZmZFY1c3OXVYYjMyT08wbXFrRlh3MG5JOTVhbE5zRHZGaWVJWWc?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
@@ -1072,16 +1066,24 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Opinion | The Real Reason Electric Bills Are Rising - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNENOUi1xdTVxYTlDWV9sdlVqeVVTVXIxTm1fU2h2QkM5V2dGTFQzWk90VVFHWWhUR3BvY3BPUDF5TGk1Mi1VZVpDc3pVYWg3NXNLWHViNVlEaEFSMW96RDdvOWpPM2JVYW15MWRLRmpqZ1N5Mlp6bWxNcHlFOVV3azBhekRibDU4Z2pUMWFn?oc=5",
+          "title": "Corrections and clarifications - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdVZvUFJLRHB1OGU2dnpxOUtuSzVaX2tGQnpyUHBzbG9QTElrR1BOYkVTWU0yZ1NxNUN6VEkwczZBa3dHV25kWFFjb25HbEdBbVRWRGgyOFlJMnRabkhiUW5PQW1IQ3JhTDByVmRsLVNwSm5kZmxPdHo2V0tzMGRlTw?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Tech, Media & Telecom Roundup: Market Talk - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdlRBbWE4UlB3ZTJJRXRxb3M0NUpWdURFRDlRX0s4NF9WcF9KbGhwOFEtRWJHNEpMcFRYRzl1a3VMalBzS25qQ0QzWnJlczlxMXBVZjFLMzFkZWhOT015RXlSN1RveE5jaWtSSDhZYnZCQkxVQUJqM1NqVjJHa3RWR1RB?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Corrections and clarifications - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdVZvUFJLRHB1OGU2dnpxOUtuSzVaX2tGQnpyUHBzbG9QTElrR1BOYkVTWU0yZ1NxNUN6VEkwczZBa3dHV25kWFFjb25HbEdBbVRWRGgyOFlJMnRabkhiUW5PQW1IQ3JhTDByVmRsLVNwSm5kZmxPdHo2V0tzMGRlTw?oc=5",
+          "title": "Jensen Huang reinstated as Nvidia CEO - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOFBBeGFicDBLX3Y4UThaWThONElNX3lyTkxwVlJHYmxlUU8ybzBYOG1UOWY2Sl9TY1h2bTczVkItZEJQQW04RXZPTTF0NnNJOVM2YmpUOXJndTZQSnpiTnJFN2ZzZ0xPeXBWVDN3Zkw4eTdsc1dfVEw3VXhiRnNtMkVPMGo3UzlKOFRoeWRSS242clN5SHB5OTJ6MkUxakE4T0E?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
@@ -1104,22 +1106,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Fugitive Criminals Are Looking for New Hideouts Since the UAE Started Extraditing - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdXd6NmxmUFkwUmJzZnRqQlNmbGdHb1JhSGNCQ1BISXB3RFlEX2ltb2F6eGE1YXF3bEU3aGE5ai1DeXQ2anp0U3VpQ2E2ZmhEMWQtaVBNYTBRVEs1bWlrMTdVNTh0V2tmOWxCQzNpRzlIRnR0OHNjZWNDRFVCazVKRV9ORUx6N0ZjVWFPcHpKSmp2cVFVUXF3Wm1JeE1qa0lZWk0zMmp0NXZ3MTJteEh0UC1oWWVPMjc5OFZsb29jOXViNDU4Y0lGaWMtbEhuMXM?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Domestic violence perpetrators are misusing smart car features to abuse, researchers warn - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLURyU2h6QmN3M3VLaXdxWU1tcVBoeV9YT3kweVlBLVM4LU1XV0NoclVweHdzWDVONHlsdXY4NzNGcmR4ZldoUXN6MUZCU183UDB2WEJ3WWRHUk82T05aUVNJZzlSdjF4ZWtpcWI3MnRhVkx3YWc1cUNpMndFTmItX1dDczVCbC1nQVU3OXRSV3hxSktSU05tM3oyX3g4all5RDVrdzdVclMwR3pseEJxNEdPcGw5Vzg?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Cyber-crime - BBC",
           "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB6U1l0bVAwTV9VN05zekVtQnQ0b0hjaHVReUJ4ckZTVjdQbUxiekR2Z3E2TlVUby1IYjlET0MyN3ZhQTdweksxV2xVYVNfZGtyREU1YXl1RQ?oc=5",
           "source_site": "bbc.com",
@@ -1136,35 +1122,19 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Opinion | Chicago Can\u2019t Keep a Chief Financial Officer - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZU1hMkJ5RHl2MXQzWFQwaGNHc2pDV3J6ZEl5SmN3UVRqdVFrNmRtNHhQN3U0ZlhiR2VCbUhWeHk5WEZJeFd4UWtXbjhpd0dZQ2FxdVlibVJuajlJa21jY0g4WFlKUlZiQTZOa1RIVmtDTHh6aGdfVFdYSEVuTEpveERQam1IWjJKWHc?oc=5",
+          "title": "Opinion | How to Kill a Bull Market - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1DZHh3bzd4M0V5bFczaFBpaC1tMWxsWDlodEVxOXZpWWVSbnJGNnRBVk1hVThhOFhfWmpEbG5pcGlHSUJGMVNGU2RhZUNnVHF2ekdDLUMwUllXV2pJcF95OHhTSjdUZVA0NF9XOGRHeXdTYVhuVUt0RFYtUWg?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Opinion | Give Thanks to Inverse Billionaires - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE50aW9lR09LVGp3eTVBTmJtd1dGZ3dERmpGcFVER1F5a0ZzXzFrLXhUaWV4NXFOd19TVnkwbTJkMkQtUTNKQVhwWTBoRzRKbDFSejdNVE1fbmFPWFNYYU44MU5rdzFjTTZadlcxMkd4eG9VRm9hdGw2U24zSGo?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Iran - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAydmJjUTFIU0ZmcHNnUmptSERNYmhyRC1rbzdNUDlNN0loNWpvSE1BZENZeHNNd3VQX0dGeFlFMlFhUE9YOWJfNW5mVEJIQQ?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Why Ken Chenault Is Calling for an AI \u2018Manifesto\u2019 - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMUExMUZiYmU1RmFpeGpuek9XbTYwbmdpNHdjNVBVTjNIbng1bE5rTWlOZzc5SDF6ZUFHU1V0TE56emtnUFBuOE50QXRXUzFaTzNGNW9NX2FXVXZBcFMtOXFGT2YwWG5OWkh1M3RyY0UtcWhQZWdzcXh3VXc0dnl4Wk5fejBIbWJQbXVuSURB?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
+          "title": "Wall Street's 'Fear Gauge' just flashed a buy sign - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdHJ1dk5xRXJfTXNnb1N0TmtjQWIzM25jalVRTV9PN1dMUTBvVzhKV1NCU3hGOU9SZDR1dHVONldZUzJvbmhBTnZqSmpLU0J5UzhzR0RVSnQwSk9HdlVBQ1piTTlHeWREMmhBejVwU2ZlOENtWEVaekxaR2JELUhVd1FJcXNyNmpvY2FXWNIBkgFBVV95cUxPV2tIdmJwNGNhdjVuTDFfbjd5SllOS015eUZsWDdIUmliVEhSc05mUzRUVlJUNnFHRXotNk5XNWlVVnhISENJTi1YR3pLQW1XSHhYWkJuUEhnYWNSMG9zNkNKLVhiMm9tengwbF9RdmgtY0Q5eFVFVEdfU3NhYVVSa21NYXNkN1FpNFhZMkJTLXdxdw?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1176,27 +1146,11 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Opinion | Welcome to the Stephen Miller Presidency - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUEZXaW12UmJSUENiZzlGamNhWHh6VVlIUi1TN1FzSUUxaDF2aTc2WlVSWmRSV09SdW5zT0d0LWU5TF9SWVdGbFZ4bHFiWnRSMU5zQXkxcUwyejJpVlU5b0R4MDZPMTdoaWw4OTVNQ3h3MTlnd2JXcW9MTnBmRzF4Z2REUQ?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "US news + Business - The Guardian",
           "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE45MkdkM3lRdmUwejNOSG54Snp4XzU1bUpoRFoyeW5xMm9URkJlUGpkdG9adzF5dWpiS1ZFQUFreV81TUF5MnMzOU5UZTBBLVFLd193ZjM3WTdNdUdzNl8tbmxoQQ?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Check out Alibaba Group Holding Limited's stock price (BABAF) in real time - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBjX3ZHQ09pUDgwdWpmUmFTN0tQeTVyUGhOZ3BoMU5YQzYxZjhETkc0WFBGOXAwQTdKbUdrUE1IQTJmVVZHY255Ug?oc=5",
-          "source_site": "cnbc.com",
-          "source_name": "CNBC",
-          "organisation": "CNBC",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1213,6 +1167,14 @@
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Banco Bilbao Vizcaya Argentaria S.A. - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1nVlFSampuMEFoOFVOWVNoalZDNE16dUsxTW5PdWE1b3czNFpmd1MzTnBXNkpwc2UxckE3S2RBQmZCREVvRk9ZcUloUUFMSjBRM0ZpSktlYWJTV25HVHhucnk4ZktJOE9wZEVKUERsTWF1Z0tNVnZ1OHkzVmc?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1293,16 +1255,16 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-23T11:06:11+00:00",
-          "age_hours": 3.0
+          "age_hours": 3.8
         },
         {
-          "title": "Chainflip's losses climb to $12 million after protocol discloses 122.9 BTC theft, offers hacker bounty - The Block",
-          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPcEpyX1B4V3F3UGVuQ2phR212SEx4QU4yNkVwRHVhQmN4UURsYnRvSFd0ZlJMR0FyU1pkZUdTNVhYUlRlNnUtcUp4WUJUNTd3VUpDWTNMU1UxTjIweVlZVmdKLTRvYVNFREk2MDdjM1F4ck56RUNSeXgtN1JCTEdjUTNXOGFELXo1Tk1rYnVxUmphUnh6ZmZXVXB3RGszU1JTbjE1S1ppVlFFaVAtbHUteEtKUU5icTZpSmZTbXQ3VjdIQUV6aWFCUVZib3ZfOTgzVEhEY3BidmpwNFI2enpOSjI5NUxRdw?oc=5",
-          "source_site": "theblock.co",
-          "source_name": "The Block",
-          "organisation": "The Block",
-          "published": "2026-11-22T18:58:00+00:00",
-          "age_hours": 19.1
+          "title": "Bitcoin's losing streak is second-longest ever, some observers see more downside: Crypto Daily - CoinDesk",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeVpzdnNfeV9wSHAxRExHZ1l6Skg3V3JxWlRzY25qM1lYNU5RTHc1WWo0MzZOQUc1dk8xOXhUcnJZYVo3clFGYk1CUjNWTVFyZ0Z5el9jX3p5bHBHcUNxZ2lrY2gwWVdLUWFjUVlfV2NDcnZ0cWxfUzZTRkpVM0IyVnpMbFVxZDZzRU55SjdfUHZvVkVoSm1nYkJIMGZObVBfNW5QVnROcVdsdGFSbjgtc1ZMdjJHdGh6bTd1Q25yQXdJMTJvY0xEcFhB?oc=5",
+          "source_site": "coindesk.com",
+          "source_name": "CoinDesk",
+          "organisation": "CoinDesk",
+          "published": "2026-11-23T12:30:25+00:00",
+          "age_hours": 2.4
         },
         {
           "title": "Owning Crypto Directly Can Be Risky. In-Kind ETF Conversions Are a Better Way to Own It. - Barron's",
@@ -1311,7 +1273,7 @@
           "source_name": "Barron's",
           "organisation": "Barron's",
           "published": "2026-11-23T13:50:00+00:00",
-          "age_hours": 0.3
+          "age_hours": 1.1
         }
       ],
       "rejected": [
@@ -1322,8 +1284,8 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-18T20:22:20+00:00",
-          "age_hours": 113.7,
-          "reason": "too old (114 hours)"
+          "age_hours": 114.6,
+          "reason": "too old (115 hours)"
         },
         {
           "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk - CoinDesk",
@@ -1332,7 +1294,7 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-19T11:30:00+00:00",
-          "age_hours": 98.6,
+          "age_hours": 99.4,
           "reason": "too old (99 hours)"
         },
         {
@@ -1342,18 +1304,8 @@
           "source_name": "The Block",
           "organisation": "The Block",
           "published": "2026-11-20T18:22:00+00:00",
-          "age_hours": 67.7,
-          "reason": "too old (68 hours)"
-        },
-        {
-          "title": "After $6.3 billion crypto heist, Binance plans Asia expansion - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbnZiblFkQkE2ci1kNUpEUVB1YnE1SFZmSmV1VzEyUVN2ZmZkVVlvZW1UbEIwOVFMUi03OUVUQlFZYlViSy03WlFWd2JwTlpDaHhiMXJzMXJ0NUd1c0o0bUpsMENLMFNlbnRGT0NfbmNNZXg5ci1ybXVHRjNrcjN2LTNGaHJLZGRqU3B3bUVaM3dyeTc4SWowSzRYbF9QNVh2eTVnNnRQc3p4ZUxRa3VEZGRvbGtLWnNSYVB3d2Fmeno?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "published": "2026-11-18T13:27:36+00:00",
-          "age_hours": 120.6,
-          "reason": "too old (121 hours)"
+          "age_hours": 68.6,
+          "reason": "too old (69 hours)"
         },
         {
           "title": "CoinDesk: Bitcoin, Ethereum, XRP, Crypto News and Price Data - CoinDesk",
@@ -1362,8 +1314,18 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2013-10-21T19:13:22+00:00",
-          "age_hours": 114738.9,
-          "reason": "too old (114739 hours)"
+          "age_hours": 114739.7,
+          "reason": "too old (114740 hours)"
+        },
+        {
+          "title": "After $6.3 billion crypto heist, Binance plans Asia expansion - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbnZiblFkQkE2ci1kNUpEUVB1YnE1SFZmSmV1VzEyUVN2ZmZkVVlvZW1UbEIwOVFMUi03OUVUQlFZYlViSy03WlFWd2JwTlpDaHhiMXJzMXJ0NUd1c0o0bUpsMENLMFNlbnRGT0NfbmNNZXg5ci1ybXVHRjNrcjN2LTNGaHJLZGRqU3B3bUVaM3dyeTc4SWowSzRYbF9QNVh2eTVnNnRQc3p4ZUxRa3VEZGRvbGtLWnNSYVB3d2Fmeno?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "published": "2026-11-18T13:27:36+00:00",
+          "age_hours": 121.5,
+          "reason": "too old (121 hours)"
         },
         {
           "title": "Binance obtains $6.5 billion freezing order from Abu Dhabi court in bid to recover stolen crypto - The Block",
@@ -1372,18 +1334,8 @@
           "source_name": "The Block",
           "organisation": "The Block",
           "published": "2026-11-18T19:40:00+00:00",
-          "age_hours": 114.4,
-          "reason": "too old (114 hours)"
-        },
-        {
-          "title": "UAE court orders freeze on crypto tokens stolen from Binance wallets - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVlN6ZktkUTBHWUpjSTdjUmFSZUVMZlBwb05IaVdWX1FzVGlHdnF4cUpYVkNTMHVnYTlLZ0w1M01xTnlVNDV4dWg4SDNtRDJIYjNzOFBiTDBOODhVcDFzY0tQa2d6YV9Oc3BDTXNYLTNSOTNtaEcxZTRESmxfcXdxS0VtZnRPdzBFNW1LYThBdlRsc0ZmYXZtQXRGMlFCdHk2ak1rRml1TUpobFdGNnJwY0pDUGl6dVBXUjBMYThwOA?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "published": "2026-11-20T08:41:40+00:00",
-          "age_hours": 77.4,
-          "reason": "too old (77 hours)"
+          "age_hours": 115.3,
+          "reason": "too old (115 hours)"
         },
         {
           "title": "Bitcoin Falls to More Than Two-Year Low as Global Markets Sink - Bloomberg.com",
@@ -1392,7 +1344,7 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-21T04:34:00+00:00",
-          "age_hours": 57.5,
+          "age_hours": 58.4,
           "reason": "too old (58 hours)"
         },
         {
@@ -1402,8 +1354,8 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-20T19:18:23+00:00",
-          "age_hours": 66.8,
-          "reason": "too old (67 hours)"
+          "age_hours": 67.6,
+          "reason": "too old (68 hours)"
         },
         {
           "title": "Binance hackers used fake job interview in $6.3 billion attack - Reuters",
@@ -1412,8 +1364,8 @@
           "source_name": "Reuters",
           "organisation": "Reuters",
           "published": "2026-11-04T08:00:00+00:00",
-          "age_hours": 462.1,
-          "reason": "too old (462 hours)"
+          "age_hours": 462.9,
+          "reason": "too old (463 hours)"
         },
         {
           "title": "Netflix\u2019s Sam Bankman-Fried Show Offers a Different Version of the Story - Bloomberg.com",
@@ -1424,14 +1376,24 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "UAE court orders freeze on crypto tokens stolen from Binance wallets - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVlN6ZktkUTBHWUpjSTdjUmFSZUVMZlBwb05IaVdWX1FzVGlHdnF4cUpYVkNTMHVnYTlLZ0w1M01xTnlVNDV4dWg4SDNtRDJIYjNzOFBiTDBOODhVcDFzY0tQa2d6YV9Oc3BDTXNYLTNSOTNtaEcxZTRESmxfcXdxS0VtZnRPdzBFNW1LYThBdlRsc0ZmYXZtQXRGMlFCdHk2ak1rRml1TUpobFdGNnJwY0pDUGl6dVBXUjBMYThwOA?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "published": "2026-11-20T08:41:40+00:00",
+          "age_hours": 78.2,
+          "reason": "too old (78 hours)"
+        },
+        {
           "title": "Sky's USDS stablecoin shrinks 35% as $1.5 billion exits reserves after illicit-finance report - CoinDesk",
           "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdzlJRHFySHFYYms0cW9YRWhlN2p4emQwaWx1VXNNQlFNNGZKanFOSllVZXFDY2MxQ1UzeF96VWVQWkY4MEFxZ21zT3VwQUdYQi16M0R4b2lRR3dCX2Z4bnVWQW5TRDFVQXp3U0YzWFFoRm5pX2tnN3pnOFJWSEt4R2Y0OWJBTGc3amQ2YzlUUXJnU0FEcW1sdXdJY1JPVGRyeTNPdC03UHFXU1dHREJFNzN0OWw2QVdwem84ZENlUlBSMExJbEdVVkE2aGc0MElKLUtod0d3?oc=5",
           "source_site": "coindesk.com",
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-19T19:53:42+00:00",
-          "age_hours": 90.2,
-          "reason": "too old (90 hours)"
+          "age_hours": 91.0,
+          "reason": "too old (91 hours)"
         },
         {
           "title": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack - Reuters",
@@ -1442,14 +1404,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Popular websites compromised in bid to steal crypto, target iPhone users - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTS1sYjJVSFJKSWN4SHY1S3g4aDJwdmd1SXp0YTY5aDJUNF9PS08zR29LWkVzVXk2d2tXZFh0dm9QRVNxc2xXYzczdWpXYmYwTmgwUDZfSFhBRE1XT3JHQnpNZERDdU5yMy16dDdVa1hYTVBqa0xGbTVPNkJBZTlIWmc4cldZaTI2QnpoaWo3NUxOb3FXQmZQck0yQzYzMVJ5MTROcFdTUGU4b0pmLUZ2Y3V3LVVJaEU?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "published": "2026-11-17T05:02:17+00:00",
-          "age_hours": 153.1,
-          "reason": "too old (153 hours)"
+          "title": "Stablecoin Market Shrinks Most Since Terra-Luna\u2019s 2022 Crash - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeC1mMVZYb1BIeXotMnN0MjR6ZlBvVWNZc2V2a0szMTk3WTdlSWNhbUhaRjZBY2J6RUpGV2Q0MkxMQXpxOC1hbnZuS0JsVTVnRjlnU2hHMmdZdW5NSWdtQWNUX01UTU9Vd0dkeXA2Ni1EcFdBVDRCRWFJTHRNYjctVXkwN1A4NDlFMUduODZHZWZmZVZRa2c4dEhhSDdpZkQ4cV9STm5sRTlYLWFNbmt2Ng?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
+          "published": "2026-11-16T17:18:18+00:00",
+          "age_hours": 165.6,
+          "reason": "too old (166 hours)"
         },
         {
           "title": "Bitcoin Erases Bessent Rally as Leverage and Liquidity Fade - Bloomberg.com",
@@ -1457,19 +1419,9 @@
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
-          "published": "2026-11-19T01:02:00+00:00",
-          "age_hours": 109.1,
-          "reason": "too old (109 hours)"
-        },
-        {
-          "title": "Stablecoin Market Shrinks Most Since Terra-Luna\u2019s 2022 Crash - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeC1mMVZYb1BIeXotMnN0MjR6ZlBvVWNZc2V2a0szMTk3WTdlSWNhbUhaRjZBY2J6RUpGV2Q0MkxMQXpxOC1hbnZuS0JsVTVnRjlnU2hHMmdZdW5NSWdtQWNUX01UTU9Vd0dkeXA2Ni1EcFdBVDRCRWFJTHRNYjctVXkwN1A4NDlFMUduODZHZWZmZVZRa2c4dEhhSDdpZkQ4cV9STm5sRTlYLWFNbmt2Ng?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "published": "2026-11-16T17:18:18+00:00",
-          "age_hours": 164.8,
-          "reason": "too old (165 hours)"
+          "published": "2026-11-19T01:02:10+00:00",
+          "age_hours": 109.9,
+          "reason": "too old (110 hours)"
         },
         {
           "title": "Crypto Payments Firm MoonPay Applies for Bank Charter - Bloomberg.com",
@@ -1478,8 +1430,8 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-19T15:55:27+00:00",
-          "age_hours": 94.2,
-          "reason": "too old (94 hours)"
+          "age_hours": 95.0,
+          "reason": "too old (95 hours)"
         },
         {
           "title": "Chainflip's FLIP drops 34% after attacker drains $12 million from vaults with suspected key compromise - The Block",
@@ -1490,22 +1442,22 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Multiple tech systems have been crashing. Here is how to protect yourself - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSWVUT0djTW55S2JCaEt4aWVaWjlNR2JwUkFJVzAzYk1ZRUNudmR4NU1SNVBpV3FnNVhFc1BQZW02UWpEX3Y2ZGhNUWR6RnExV3NkTDJyTjBmNzkxT0hpb1BOd3FvbldURWduYWVNN0o4NGxGVV8xdEpqWVZGbGhQSGpqWVlqeXpaMHg2dHVfZGhjRmhwWkJIcFFkWl93cUU0OGZjcEJwY3BlcEZFRzExREhSVkFkU2ZObmduTXUtSQ?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Crypto Treasury Stocks Fall Anew as Ex-Citadel Securities Trader Nets Gains - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdEF0cHcxTXZoRWhBQ1dadm9HdFgyVENGQmNqWUJxSnJCV2lUQmlRblhYOGNPU1UzT2kwSlROSUxoRmE5UXFwN3djc3kwQlFRdW55STBFZlJhX21Day01OFEtSjhzNjhiODg5bkhxTFYtMXI3TFFtMk4zVlVFay1VekNuWWx2QnItSFBZbXFrMGZWOW9Kc1MyZlB3RW5xNjFxU29mM3l0OXNGaXhBYWJvWFlBaHBpNUJyX181RzRSZnYyQTFT?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-17T19:37:25+00:00",
-          "age_hours": 138.5,
-          "reason": "too old (138 hours)"
+          "age_hours": 139.3,
+          "reason": "too old (139 hours)"
+        },
+        {
+          "title": "Multiple tech systems have been crashing. Here is how to protect yourself - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSWVUT0djTW55S2JCaEt4aWVaWjlNR2JwUkFJVzAzYk1ZRUNudmR4NU1SNVBpV3FnNVhFc1BQZW02UWpEX3Y2ZGhNUWR6RnExV3NkTDJyTjBmNzkxT0hpb1BOd3FvbldURWduYWVNN0o4NGxGVV8xdEpqWVZGbGhQSGpqWVlqeXpaMHg2dHVfZGhjRmhwWkJIcFFkWl93cUU0OGZjcEJwY3BlcEZFRzExREhSVkFkU2ZObmduTXUtSQ?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Bitcoin"
         },
         {
           "title": "FBI's criminal information database hacked, CNN reports - Reuters",
@@ -1548,19 +1500,19 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "US futures climb and world shares are mixed as big tech stocks fall in Asia - AP News",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNF9ZLU84V2VPZHBHcGx0V3p5TVVoV21zbUYyQWFOWU96ZjBmcExvQ1lpVmtFRzl5RVpXdFg3TGhUM3ZHM282MkdnMVgxZ2lwUTRkcm9KaWlHMEcyZ3R6amZIM25vMFRRM0l1OXNxMFFSQVVnR3hzY3BNb1NyUWwxa2hLMndRMkpVZ2l2X0N2Z3JFcmRVMzRMZldCbzlEZkpGZjNmTVJZdw?oc=5",
-          "source_site": "apnews.com",
-          "source_name": "AP News",
-          "organisation": "Associated Press",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Israeli strike on vehicle in Gaza kills three, Gaza Health Ministry says - Reuters",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNER6Q2NPRk9TUmtuX1hhQ21MdEdsc05rT0FxZzE4RTczVDJqbjN1My04Zm4tUkd1aUJ4cDdXSTM3ZVl6UVg0S0hLTWs1d1pjLTRDcVgtM1dVeVNvWFZHd1g3NEZCdm5HMlR1U09Cd1JfWUg1cEQ0aUZSU19uSHowSWhEUERvNE5OM1NxTDR1T3VYV21rb25pX1NSOFdFcHlOd3VzYkpMT2VzMlYwRVVSMmFuc2J3SkZ5dUM3Z0M0YXEyZw?oc=5",
           "source_site": "reuters.com",
           "source_name": "Reuters",
           "organisation": "Reuters",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Rising Demand Means It\u2019s Hard to Find an EV in the US - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdGVJYTFEbkdkZ2dJaTZBVVZ1RGUzQ2R4REdnZDQwNkN1M0hfY0N3alF5WFlhWmFLOXZWRmRZVWxmTFZaajNMLXZSbl8zQVJmYTRTN05iX1l0ZmJJUjdXQXRJR3VSVl9FWW81TWpzdUNFRU5XUXNRZ1FsdnNKUVNFWHRWMEdpZW0zZlNmcVppQXBoTFV5RHhGalhzeWpQUnVRR3JuVnRvODVtUmc?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1636,14 +1588,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "How China\u2019s Export Machine Shocked the World - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLTY3X0s5cV9Ma1d0S2ZEV3I0X1RzVFVTZ0R4c3djenU3aGZpMUxCeGRiN3BFQWdrSnJLTENBZ1E0SktPSTZNck5PVFpSYkpIVjdoWVNuY1FMLVJVT29VZTFNN0k0UnNOSHZucHdCekxhdGxKQ3drMjJCcXRNcjljMlF4R0RuRzR3UkJVRU5aMHA3Vm5veVhlSnRfUTlTeXdIVmRsWnFWNUhPbUI2Q21NOE9ZUnJ4S3g2WXhXVDM4TQ?oc=5",
-          "source_site": "bloomberg.com",
-          "source_name": "Bloomberg.com",
-          "organisation": "Bloomberg",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "S&P 500 sinks 3.7% and Nasdaq composite goes negative for the year as tech sell-off worsens - AP News",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQY09GMmxTYlpRMnQ3YVJ4Q3BUdmg3NEFJWG5lVlh4TC0zZGxxZVcydTkwSkpiZUZfS3BXdlRab05HSW5TS0h5TDY5NFRKajBDSWdFbUdhNFIxMzUxc3pLRnEtMXVNblBwZmgteFlUWVhuS0lRU3diRGpWQnkyeWtDMGJiS3hzd2xCdUtDVHIxc0hOWGkwTHdPZ1FfenUwQQ?oc=5",
           "source_site": "apnews.com",
@@ -1668,11 +1612,19 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "SK Hynix to Convert Kioxia Bond and Become Top Shareholder - Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT0JxaEtGTjlBbDFrR2ZJT0lYMm0zRmVXUHFYRjhLTmczMjJOQ09fTjVraUYycDRFVVMtajVGUEt6UEtrb1RHeDc0TWJEaWNuT0NYQnVPSXk3ODZDYVFNNDNkZ0UwSGtVeExlSm55NVc5dDl1c3hyaS1fQmlsRGdrYWFrZXpTNVNYS0tXOEV3dUcySjExX191Wl9pT0gxNEpuWlVaYVV4NTV3NGxsaEMtdDJB?oc=5",
+          "title": "How China\u2019s Export Machine Shocked the World - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLTY3X0s5cV9Ma1d0S2ZEV3I0X1RzVFVTZ0R4c3djenU3aGZpMUxCeGRiN3BFQWdrSnJLTENBZ1E0SktPSTZNck5PVFpSYkpIVjdoWVNuY1FMLVJVT29VZTFNN0k0UnNOSHZucHdCekxhdGxKQ3drMjJCcXRNcjljMlF4R0RuRzR3UkJVRU5aMHA3Vm5veVhlSnRfUTlTeXdIVmRsWnFWNUhPbUI2Q21NOE9ZUnJ4S3g2WXhXVDM4TQ?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Nvidia's Huang turns to Paul Weiss, law firm that inked deal with Trump - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOGw1N002MEg5dkpaaGZfeDVtSEd0dWswbERkbFZ3TEQtclVqNDNiTUdnZmUzSFF2Yms4TXctSmZTYXB1NGUwbUxXMmtKaDJhbTNsLW5DUmRiNFkwOEEtT1FwejgybEs5TF8tOHJoY2swRGVUOU12MzhJTGd0cFZraVFnamFRTzVLRE9WU21NZ01zRnJtSXNJOHgwU0JBQ1drVDhjSVF6bzBoQlpjTGsyeFVWejhXTDNkQkg4TFJfOA?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1724,11 +1676,11 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Australia's jobless rate hits 5-year high, markets ramp up rate-cut bets for 2027 - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNU3dpNFJtc0tFUDZhWEtPcWlWbWpoM3ZyalVqaHBwTWFPRlBITExaRmN2dERFR1hYMG9RNkVMWTR4cDM0U0FBMzBpNXBta3lVMXNuMDBfTHB5R1FwMFVtZHRLRDdqVzJ1Z2hZU1pNTnItZEpfa3dKTXJPd2FaRzk5YXBheTFyM2RPb29UOWxNbTZLX1lTa0pjTHdpT1Zxd1dNTXgzSGVhX2VYTWJrbjdnTnhHU255WWwxTnU1UmZlWWdzUFVWSF9fTmdR?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
+          "title": "SK Hynix to Convert Kioxia Bond and Become Top Shareholder - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT0JxaEtGTjlBbDFrR2ZJT0lYMm0zRmVXUHFYRjhLTmczMjJOQ09fTjVraUYycDRFVVMtajVGUEt6UEtrb1RHeDc0TWJEaWNuT0NYQnVPSXk3ODZDYVFNNDNkZ0UwSGtVeExlSm55NVc5dDl1c3hyaS1fQmlsRGdrYWFrZXpTNVNYS0tXOEV3dUcySjExX191Wl9pT0gxNEpuWlVaYVV4NTV3NGxsaEMtdDJB?oc=5",
+          "source_site": "bloomberg.com",
+          "source_name": "Bloomberg.com",
+          "organisation": "Bloomberg",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1740,19 +1692,19 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "EXCLUSIVE: Kenya picks US consortium to develop Mrima Hill critical minerals project - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOFJFYUhWNHl6emd0SEVyRG5tX3dEU2dSTWtMdGljVTFwZ1NNT2JXNDczX2tYS3BMWjV0a0ptWlMzSzd0amxOeXl6c0Vqbk5lTTVaenhpNFVuM2hSLWZjYnBuak5xWUt3TlY3Y0t2VkFyUGE0bEZfd0paRU5mSHp4SFhncmZ5NHN3bkROUDNLRkx6V0N6NWxvVTBCaUZmcE9uWW1KU2o3bU1zTUFkcXBBM0NLcW5obHlVNFplNVp3QTZQdw?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Chipdollars Will Be a Force to Reckon With - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV1dZYzJVdlpESlptYWlPbjVaTjEzR0hxOHhfQzRFdG9JVHR0UXpiWF85UW93VjBmT1hnNllHRm1kZEU0dGU5SnlKRXVVOER4WHZHRFlUSE1fVjU1alQ3aEttd1lkdTVmRlpwbFh4UjI1U1NnRGVaOUE3SDM4TDRlQ2JkR1ZVNW44Ymp5bWRlQWwtSzNhWldr?oc=5",
           "source_site": "bloomberg.com",
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "EXCLUSIVE: Kenya picks US consortium to develop Mrima Hill critical minerals project - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOFJFYUhWNHl6emd0SEVyRG5tX3dEU2dSTWtMdGljVTFwZ1NNT2JXNDczX2tYS3BMWjV0a0ptWlMzSzd0amxOeXl6c0Vqbk5lTTVaenhpNFVuM2hSLWZjYnBuak5xWUt3TlY3Y0t2VkFyUGE0bEZfd0paRU5mSHp4SFhncmZ5NHN3bkROUDNLRkx6V0N6NWxvVTBCaUZmcE9uWW1KU2o3bU1zTUFkcXBBM0NLcW5obHlVNFplNVp3QTZQdw?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1780,8 +1732,8 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Gold drops to 14-month low as dollar, yields rise on hawkish Fed rhetoric - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVlk2MG4xbDV2emVoNk9vRVhTcTlRbkZLMDgwMjBMTEdVeXFDV21zX0NVdmF0YzQzRDZ4TkowaDJQQlZlTDBsbm9BWHFXNXpYZzVVejAtTGRZTTFHRjV4dllJV0ZxVzVvbVJCN1lxdk50NXVaNkRxTGJQbDYyZjhNNElTUElOWVU0eW0ySnBRMndSU1ZrTGE4ZlNMdDk0UXVmUjZLSEVfQlc?oc=5",
+          "title": "Australia's jobless rate hits 5-year high, markets ramp up rate-cut bets for 2027 - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNU3dpNFJtc0tFUDZhWEtPcWlWbWpoM3ZyalVqaHBwTWFPRlBITExaRmN2dERFR1hYMG9RNkVMWTR4cDM0U0FBMzBpNXBta3lVMXNuMDBfTHB5R1FwMFVtZHRLRDdqVzJ1Z2hZU1pNTnItZEpfa3dKTXJPd2FaRzk5YXBheTFyM2RPb29UOWxNbTZLX1lTa0pjTHdpT1Zxd1dNTXgzSGVhX2VYTWJrbjdnTnhHU255WWwxTnU1UmZlWWdzUFVWSF9fTmdR?oc=5",
           "source_site": "reuters.com",
           "source_name": "Reuters",
           "organisation": "Reuters",
@@ -1804,6 +1756,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "UK says ministers urgently working with India on tariff dispute for Scotch whisky imports - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOY1hmb256SjVmcVJudTZkZ0ZEbWtFZF8zamktckplMjBFUjVUMVVQUzRnaXFpSXJzdFZyVlJUcFlybkNvcXlQc3ZTTzgySXpybDZBb051Y0hEWjhnbVJybklIMUNVRDlCOGpLSXU3NU9YV0dmV21hS3otUlFQbTdjc3kzNG1EajhOX3k1NzVFd042d3AybDNFdkMxUUtfVVc5OEtNMjU2THprSGFkNjJPZm9yUUY0R3YxRGkw?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Lynch yacht crew unaware of wind risk before fatal sinking, UK report finds - Reuters",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQX3p5RGx3OWRJNHIwc0w5Q0hjQjFOQngxMmpjMjM5RTI4aUV5MmJYZ19Bc2UyajhsX1hYSnhSa1NSeFVQWW4tMDRWaV9EQWJLanJkM3hpeHRRQ3l6Rkx3Z0dCT3EyVExCR0xROVdDWE1SWHZuenQxUlJQT3ZWR2kxejVpckxEN2NmWmYzdVB5cHFZeW9VWGl4bHBGdTQ0Zm1VNTFTYTlyMHhCUm1LOFlVeGluWndNVlE?oc=5",
           "source_site": "reuters.com",
@@ -1812,8 +1772,8 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "UK says ministers urgently working with India on tariff dispute for Scotch whisky imports - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOY1hmb256SjVmcVJudTZkZ0ZEbWtFZF8zamktckplMjBFUjVUMVVQUzRnaXFpSXJzdFZyVlJUcFlybkNvcXlQc3ZTTzgySXpybDZBb051Y0hEWjhnbVJybklIMUNVRDlCOGpLSXU3NU9YV0dmV21hS3otUlFQbTdjc3kzNG1EajhOX3k1NzVFd042d3AybDNFdkMxUUtfVVc5OEtNMjU2THprSGFkNjJPZm9yUUY0R3YxRGkw?oc=5",
+          "title": "Russian prosecutors warn Wikimedia could be labelled undesirable - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMXNjTEJ5dlQ3eEdDRnZzMG85R25qRi1lSUwxS3ZXaVZYaGNZR3FPODlKY0pIejllc2M1c1pNcklCVmlGQk5YWXg4djdDeUZuTGFhajMwb2ZCMnliNXFpWmtFajR2TkUyMEExVFQyUTdVNUs2TjRJNFA1QjZDRHJQNWtmZzVwanhHcEdpNi1nY2ZDRHRyVURxVlhfMldTdEF6ZmJ3YV95aHlrQQ?oc=5",
           "source_site": "reuters.com",
           "source_name": "Reuters",
           "organisation": "Reuters",
@@ -1826,16 +1786,8 @@
           "source_name": "The Block",
           "organisation": "The Block",
           "published": "2026-11-19T14:00:00+00:00",
-          "age_hours": 96.1,
-          "reason": "too old (96 hours)"
-        },
-        {
-          "title": "Russian prosecutors warn Wikimedia could be labelled undesirable - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMXNjTEJ5dlQ3eEdDRnZzMG85R25qRi1lSUwxS3ZXaVZYaGNZR3FPODlKY0pIejllc2M1c1pNcklCVmlGQk5YWXg4djdDeUZuTGFhajMwb2ZCMnliNXFpWmtFajR2TkUyMEExVFQyUTdVNUs2TjRJNFA1QjZDRHJQNWtmZzVwanhHcEdpNi1nY2ZDRHRyVURxVlhfMldTdEF6ZmJ3YV95aHlrQQ?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
+          "age_hours": 96.9,
+          "reason": "too old (97 hours)"
         },
         {
           "title": "Wagyu\u2019s XMR1 wrapped Monero plunges 99% after $13 million hack as founder promises refunds - The Block",
@@ -1848,6 +1800,14 @@
         {
           "title": "Citi Says Customers Are Responsible When AI Banking Agents Go Rogue\u2014Even After a Hack - Decrypt",
           "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSTBHR1JBYlplaFFHVnFXczM4U29iMHVXWU9OVXdNeUhmYnotQ3p2SVlnOHZCWFVDUGZNOFhOQ1BxeUJlTmxIZV9zZkNNdi1wRWVScHV5ejI5LXFhZ0xDNUxpNFdSc1VDVDZsNHFJaG9GWFlMN0RuNzRsN2hsUlY4VGNwU1lSN0hn?oc=5",
+          "source_site": "decrypt.co",
+          "source_name": "Decrypt",
+          "organisation": "Decrypt",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Google Gives Gemini Control of Mac Apps, But Its New AI Agent Comes With Risks - Decrypt",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBxZVJ1NVM2bnpUZUFJaW9fR0tLbi05ZEQ0M2R0SWNwMmtYbzNlUG1RY292a2tEaHlSdkJwZzE5cEpGaHhxTWNDdXFSZ2pNTEc3NWZtcmd4YnRjOHVENW04ZHZZUHphTWdKYmZDNWUzVjVqMkk4al8xVEEzUQ?oc=5",
           "source_site": "decrypt.co",
           "source_name": "Decrypt",
           "organisation": "Decrypt",
@@ -1867,22 +1827,6 @@
           "source_site": "reuters.com",
           "source_name": "Reuters",
           "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "US sanctions Hezbollah-linked charity in push against Iran's proxies, Treasury says - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYTM2TVZTRTVjaWp6c2VodVYwVm5MeEFVMXZ0eFctVzZVaU94eGxScWNRMHlQb1ZJRzZ0YXpFekJ6SmJkR2RWcU4wVUNTWkJMU3J0NTFaSmw5clBIYWhFQklMM3NiSzZtV3dWYThROEZIRWlJWmpKWUhaM2w4cGIzMjhjVk5IREJRaHBnVjhpZVRjcWdoMF9MeUhRQXRqUi1RSWJ1LWxVcFVwNUxOVGc1WmQ1N2tKWEhrd2ZpQmxLY0dQdFFUS0p4ZGR5dEY?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Google Gives Gemini Control of Mac Apps, But Its New AI Agent Comes With Risks - Decrypt",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBxZVJ1NVM2bnpUZUFJaW9fR0tLbi05ZEQ0M2R0SWNwMmtYbzNlUG1RY292a2tEaHlSdkJwZzE5cEpGaHhxTWNDdXFSZ2pNTEc3NWZtcmd4YnRjOHVENW04ZHZZUHphTWdKYmZDNWUzVjVqMkk4al8xVEEzUQ?oc=5",
-          "source_site": "decrypt.co",
-          "source_name": "Decrypt",
-          "organisation": "Decrypt",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -1940,8 +1884,8 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-18T12:15:00+00:00",
-          "age_hours": 121.8,
-          "reason": "too old (122 hours)"
+          "age_hours": 122.7,
+          "reason": "too old (123 hours)"
         },
         {
           "title": "Kazakhstan expects FAA blessing for direct US flights ahead of Trump-hosted G20 meeting - Reuters",
@@ -2038,8 +1982,8 @@
           "source_name": "AP News",
           "organisation": "Associated Press",
           "published": "2026-07-01T07:00:00+00:00",
-          "age_hours": 3487.1,
-          "reason": "too old (3487 hours)"
+          "age_hours": 3487.9,
+          "reason": "too old (3488 hours)"
         },
         {
           "title": "KFC Franchisee Blames Bankruptcy on Rising Costs, Falling Sales - Bloomberg.com",
@@ -2082,14 +2026,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Stocks fall but Nvidia rebound lifts sentiment - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbHY5U3ZMUmhWeEViMkJTbW9ObHlQYWRWbmdxWDhXMUdaWFRvLVdRY01oaTJJb3lmOFBiaWpQMEFlTFk5R2ttRnBaT18zaF9Jbk9od2Rza0cyMXJ6Z3JlalJDdG9neTVhQ3pJRG05SE9NQUYxZkFvQmQ5bnVfTi13amFNOA?oc=5",
-          "source_site": "reuters.com",
-          "source_name": "Reuters",
-          "organisation": "Reuters",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Soros Joined Family Offices Selling Nvidia Before CEO Exit - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdFdvSGNrN0NhN3lvQ3N1c004b0NmeXhqa1JPYkVpUDZpVzdZd3RPQ3BTQVA0bXRVYk84UHNfQ2o3M0pOTEU4X0J5UHB1U190VzB2X3JEOUtyXzlfV1ZPYmxuNmNNaXVvb0ZNamkwZFdqLUNKVE9kYnZEX1IzWF9uTjhDSEFWNzFvLVRQeDFscUtTaEV6TWxuOXhmcHdQQWc4aHRiT3NCLVFJZTFlTHI3R3pyUHE?oc=5",
           "source_site": "bloomberg.com",
@@ -2112,8 +2048,8 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-16T22:09:57+00:00",
-          "age_hours": 159.9,
-          "reason": "too old (160 hours)"
+          "age_hours": 160.8,
+          "reason": "too old (161 hours)"
         },
         {
           "title": "Nvidia Shares Rise After Earnings Beat in First Report Since Jensen Huang's Exit - Decrypt",
@@ -2140,14 +2076,66 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Nigeria says US intelligence support helping target militants, secure 2027 election - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcXdLN3dvYlMwVUpIOF80bEVmVXdtTXMyRTFsMlRZNXk3U1BTZ3NzREtJMXhWcnNZTkNvZ3I3eVBZS0d4anFtSDZqaDFJMEQ4Mm83X25Fc3gzcF92RFdndTNxR3RRWWIweDJUajdMWUotVUx3a2FURW0yS0t4SXY0SFE2bHlBWC1naG9PX1phODVfbkFOcjd6UncxTVhYSTJUdnNSSUwyeXVqMm1Lekx0MU02MFQ3ZkJ5S0VISWV5UQ?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Five EU countries unveil plans for Rwanda deportation hub - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRVpJQWlwdjFDa3FpbGZ3aDVFdE5fREVGZTBnNGY4Rm9jeDJXWng3SU5uOGZOSG1FT3JDZG1jd3VUVVYwNFBtcTZTXzR4Z01OTVJrYVRPTndoRGc4Yk9uVXFickRTYzIxMXc4VWxvcXMzNDVOLU9JcGVFeE1jcEVjNkhFb3VmaVV2YkExbEJ1VTc0aGtfZC1xMThkOUw2WnM?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Zelenskiy says Ukraine held new talks with US, European officials on peace prospects - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQR2U4T3ZBY2hQRnZGS2NTMFVZM3FwRVFJSUtIUjNWSG5URWlXNUNac3ZoQ0pla3BIRFNOTF94Mm5NNmZUekEzQjV2dUhtSWNtZ3gwcURrRWxQLXJIejBjXzNvTmNuZUVwVFY3YjdDLVZkSlctbnFxVy1HVDJneW43QVpVb29hdXZVSGVON29aRTRpS2JabDh4bS1MMEh4bUcwaW5NYWhYX3NTVEE1bHY3N09yMXEzaTFuWHliSW1BZnZFU0k4?oc=5",
+          "source_site": "reuters.com",
+          "source_name": "Reuters",
+          "organisation": "Reuters",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "How Sam Bankman-Fried Lost Out on a $35 Billion Jackpot From Anthropic - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNmQ2UENEQ05IbkRrX01ER2xvVTNnR3Bwc3ZUd3JKaVg0MkRUbk9ob2JVYXZzdmJLQnpabXBXUG9JT1RGaWxvYzdNOElpRzJYMi1jLURUVU5MSGR1NjB1ekZJN0paTWNaQXRHSWJBRmg1LWs2S2hHOWhsMW5rczllb1JwYlc?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks - CNBC",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE02OVNPeVBBRWFNM0RxSndNZ2NPQnE3amxmMEpmenlKMm9COUdneHlXbUNTaXFwdjVsQnFQbGg1dTctVXZ0cDd4VTZTY1ZWYThiMFZrTGtuY0hSSWlNS1B2b1FlUFJENkZkQzkzTzZGdzFMUXlxTmhr0gF8QVVfeXFMTkVKRDJKTmVUSkU3SW1TejV5aUFtVzA1N0JKSkY0NWNDZmprbnBycGJJOXg0SzV1UjBoNWM4RWwxUDZ6OHV1X0tfY0VMbzlIMmZlVnZLcjdYeUNTWjg1UWxZOW0xTTNHZ25GejJ0SmRIQ1pGREtjbDVKUUJ3Ng?oc=5",
           "source_site": "cnbc.com",
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2026-11-20T15:03:25+00:00",
-          "age_hours": 71.0,
-          "reason": "too old (71 hours)"
+          "age_hours": 71.9,
+          "reason": "too old (72 hours)"
+        },
+        {
+          "title": "Bitcoin's regulation bull case is played out. What could drive crypto gains moving forward - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWmZadko1d2NDa3h3cVJUNGZTbHZjcUZGd1ZNYkxOWlBwLWd3Rk9KcHFuVWdVcUVWMUVNQW5iSklCZkEtaC13bGZWZlpKQl9JUmNzSlFBdjViaGZENDBGdWU2Z3FPQk5hZGRNUlVmckQ2aUtOWkIxQlhVa1AwVXFkd2JkYVVva2czQk1NUtIBkgFBVV95cUxPWHg0Ym8yVHNqV2lITW81aDhBSzZyN2M4ekMzelRIQ003YVVGZWkxRjhHMGl1TXBoVWEwUnF0aG9zZ0JFTnFjWWxjQWFnWVhiS2Y3R3ZfallHd2RwczdSQWFoaDYtdmxKSVRiX2ZNeHJqcGVTdldlcjQ3RHpqQWlOVFpjOHU3NHNCWjEzaGZmbFdkdw?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "published": "2026-11-20T14:29:45+00:00",
+          "age_hours": 72.4,
+          "reason": "too old (72 hours)"
+        },
+        {
+          "title": "Bitcoin slides to $62,000 following liquidation cascade, then rebounds slightly - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQlo2VlBtaV9NV21sUjRUYjVQek5hc0ppTjFySzhnQmxpZzlUcXZOa0wzQlZ3X3FMWkNLTHptMDN0TV9Jd1p4N1V4ZFdvdTUxeDJZY3B4Nm5jRE5TbEw5UER0akkya1lqbGlEeUFFVWhxTS1GakhOX01BaElXQnlEX214S3NGQnRkR1NLMFVhMnBMb285UzJRLTZlMV9PT25janpzSVBYbjR6Vkd6ZjZIMHZZY9IBuAFBVV95cUxOZEZpNy1nOG9RUVVHbFJGaWE4dGpqNDFHSWxLZmJUVXM4WHZRVjFqMmJVUTFyUEhGRkZFY1FuU0dxZ1NUR29MdFUybThHOUNOakdpc2RmN2R1VmdTQkZ4ZFBuVk5hMFp1RDk4VW4wQnl6NkQ4ZU1JbFF6M0RKTVUyWnpOMTVqRjdsX3FRY0VvLXE3VlhsVHowMldpTDNCeTFyODdwQjZqNVl3NWp4eEtYYllpaWM5QjRT?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "published": "2026-11-16T14:29:09+00:00",
+          "age_hours": 168.4,
+          "reason": "too old (168 hours)"
         },
         {
           "title": "Hacks, AI and conspiracy theories: why are we having so many outages? | Technology - The Guardian",
@@ -2158,55 +2146,19 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Bitcoin slides to $62,000 following liquidation cascade, then rebounds slightly - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQlo2VlBtaV9NV21sUjRUYjVQek5hc0ppTjFySzhnQmxpZzlUcXZOa0wzQlZ3X3FMWkNLTHptMDN0TV9Jd1p4N1V4ZFdvdTUxeDJZY3B4Nm5jRE5TbEw5UER0akkya1lqbGlEeUFFVWhxTS1GakhOX01BaElXQnlEX214S3NGQnRkR1NLMFVhMnBMb285UzJRLTZlMV9PT25janpzSVBYbjR6Vkd6ZjZIMHZZY9IBuAFBVV95cUxOZEZpNy1nOG9RUVVHbFJGaWE4dGpqNDFHSWxLZmJUVXM4WHZRVjFqMmJVUTFyUEhGRkZFY1FuU0dxZ1NUR29MdFUybThHOUNOakdpc2RmN2R1VmdTQkZ4ZFBuVk5hMFp1RDk4VW4wQnl6NkQ4ZU1JbFF6M0RKTVUyWnpOMTVqRjdsX3FRY0VvLXE3VlhsVHowMldpTDNCeTFyODdwQjZqNVl3NWp4eEtYYllpaWM5QjRT?oc=5",
-          "source_site": "cnbc.com",
-          "source_name": "CNBC",
-          "organisation": "CNBC",
-          "published": "2026-11-16T14:29:09+00:00",
-          "age_hours": 167.6,
-          "reason": "too old (168 hours)"
-        },
-        {
-          "title": "Bitcoin's regulation bull case is played out. What could drive crypto gains moving forward - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWmZadko1d2NDa3h3cVJUNGZTbHZjcUZGd1ZNYkxOWlBwLWd3Rk9KcHFuVWdVcUVWMUVNQW5iSklCZkEtaC13bGZWZlpKQl9JUmNzSlFBdjViaGZENDBGdWU2Z3FPQk5hZGRNUlVmckQ2aUtOWkIxQlhVa1AwVXFkd2JkYVVva2czQk1NUtIBkgFBVV95cUxPWHg0Ym8yVHNqV2lITW81aDhBSzZyN2M4ekMzelRIQ003YVVGZWkxRjhHMGl1TXBoVWEwUnF0aG9zZ0JFTnFjWWxjQWFnWVhiS2Y3R3ZfallHd2RwczdSQWFoaDYtdmxKSVRiX2ZNeHJqcGVTdldlcjQ3RHpqQWlOVFpjOHU3NHNCWjEzaGZmbFdkdw?oc=5",
-          "source_site": "cnbc.com",
-          "source_name": "CNBC",
-          "organisation": "CNBC",
-          "published": "2026-11-20T14:29:45+00:00",
-          "age_hours": 71.6,
-          "reason": "too old (72 hours)"
-        },
-        {
-          "title": "The $26 Million Cyber Heist Rocking a Small New Jersey Town - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSUZxOGpRUHJMdzFuRVBjaTFucU91aTJEZ19LWTBGeHIxY0dXYUJtdHg2X3VPbC1pU2lSSlNuV3NBN1Z0VVRiSEdET0plWGhuemxwcWkxZ2JrbXg0VjZZcWVfeG9scVpMT0o4TWRfLTBNQ19CdkR0RkJZQXV4QmM1SEs0RlFwaGlVMFJVY195OUdVTXZZc2tVNE93?oc=5",
+          "title": "\u2018The Altruists\u2019 Review: The FTX Scandal, Now on Netflix - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQODF6T3FuN1FJaGhhbGVsdnl0N0hsZGhQRi1vLTFSVnRHUk43VDVNeTRfVnhWXzRVY0VyNHYzd3FZZ05ZckZYRkNYSm5QN1o4RUNGSU8teG9ybkppX3U1dHhlSHNWLURNQjg5cE41TERrYm5reVA3cE5wYkNsVS1KLXlCYnNLWDZoTzF3aGlSa1UtNzhXSGF5UnBzT1ZrMUE4ZUhKYy01VQ?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Let's weigh the cons \u2014 and pros \u2014 of this brutal market to find a way forward - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWDNDcno4NDRpS2J2R2s4eWVCNTJlZE9DcUZhSHR2M2ZhNjliWkUyc1hMSGJQZjJEUFcxYUg5QlFKQWI0LWxzUzhRX040UmJ4TFluTGhDNmI0eWhCNWw0aEN5Q3Rqd29fT1A4RFZycWhDVXNOd0wwcHU1cEtxWXQwM3g2MXQxczFvR2RXOXQ1cVMyb1dqYS1EWjU1cmVFZGlfVWx0ZTE3ckMwZXNWZmJLemRsaHFDcnc?oc=5",
-          "source_site": "cnbc.com",
-          "source_name": "CNBC",
-          "organisation": "CNBC",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Dapper Liam and Noel, experimental Bj\u00f6rk, and Bowie \u2018cuddling himself\u2019: Rankin reveals his never-before-seen shots of the stars - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSThMNGdGR0tUaFdrYlNob2MwX1BNQl9OcE1kbHBYRF9lRjVjbXc1QnpPRG0tMm15V21WOC1ENVVjbUltVFBUdTFBMlI2TUc5d1FXSzRiR2hzQ3luTHpQUU1VWWo0enVfRllYNzNwYTZhdGNCaTZISUlKbUpjQTFibl81clpIOThjZHQ0TF9Gb09nMlVvTGMwZllVdkgwckZvWmpEM1dmdnRMN2dY?oc=5",
+          "title": "Will AI break the internet? | Garrison Lovely - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORk1nWEJkTEhSeWhYWXVpWFUtWmZIMmZRZmlmQzZkcTNFWDltVmhuaVdUbzU1R1pmUHNYVTB6dXlDVkZBUXR2TS1IdmhrWTk0RmZKUTNJQWU0bXR4enViNXhaV2dpRVVQWE1iY3o4alBCc2ZRVlBmcFRKaEVXZVVFZF9TSmxjUTBFeDlpeg?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "\u2018Money Beyond Borders\u2019 and \u2018The Almighty Dollar\u2019: A Currency\u2019s Long Reign - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNkFfQkNfS2ZTTWZRR29uOHlncHlZMzJmZFcxbnZuRUZkQzZ0Q3haWUFCcnRpS24wUFdGdXcxSVkteUFwdEJnNktjRDcwalBDTF8zTmNOeGJGcEZ4VW5PM2xKOHZoQ2VCRnZibHFleUNpT1JmLUpQaHRheTRzdmgtTzRiUnNXZDVmUWs3VmpnMUcyaTRUckVQSG1SbjJXQnN6TmRfcnRibkc4UWZsdzA5ZThvajZrZw?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -2226,11 +2178,19 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "\u2018I was shaking, crying, having trouble breathing\u2019: the uncharted trauma of breaking up with AI companions - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMHBvcGRNRkJZTDBhSGlMRi1BeXN2Um1nOXVjSjdSR1BSZDY2RnN6SE9McEprQmpyVnUyZldBTlFBd3B3eS0yNEd6Zy16djJRN1ZaODktU0pZaHFsV2hWbWlMTmVncF9pYTVZajA5S3dpWlA2VUFkdVh5eWpjbkRIMnJWeXluaEJkYTY1dDdoWXBndjVSbDNhYlBQSVY5RHNQdVVzTVdpNmZMZXNyUC1GZm1rQmhjdHR4NnNncG5tOENwUDR5c3h3Sw?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
+          "title": "\u2018Money Beyond Borders\u2019 and \u2018The Almighty Dollar\u2019: A Currency\u2019s Long Reign - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNkFfQkNfS2ZTTWZRR29uOHlncHlZMzJmZFcxbnZuRUZkQzZ0Q3haWUFCcnRpS24wUFdGdXcxSVkteUFwdEJnNktjRDcwalBDTF8zTmNOeGJGcEZ4VW5PM2xKOHZoQ2VCRnZibHFleUNpT1JmLUpQaHRheTRzdmgtTzRiUnNXZDVmUWs3VmpnMUcyaTRUckVQSG1SbjJXQnN6TmRfcnRibkc4UWZsdzA5ZThvajZrZw?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Let's weigh the cons \u2014 and pros \u2014 of this brutal market to find a way forward - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWDNDcno4NDRpS2J2R2s4eWVCNTJlZE9DcUZhSHR2M2ZhNjliWkUyc1hMSGJQZjJEUFcxYUg5QlFKQWI0LWxzUzhRX040UmJ4TFluTGhDNmI0eWhCNWw0aEN5Q3Rqd29fT1A4RFZycWhDVXNOd0wwcHU1cEtxWXQwM3g2MXQxczFvR2RXOXQ1cVMyb1dqYS1EWjU1cmVFZGlfVWx0ZTE3ckMwZXNWZmJLemRsaHFDcnc?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -2258,24 +2218,8 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Trump says there could be a 'positive spin' from the latest FBI database hack - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBNcW5MWnF1RjFOeU5fdlBvUGltSmZkdG9fa0J4ckkyVEhPRjczOXdnLWtCV1E4eGZrY21tZlVhaTJjbm16UERmVVY2WE1MZUpKT2pHTk8wWjNkTDRFcE4wRlBqMmk2RkpPWTVjadIBckFVX3lxTE9VRDBXRkdQa2ZyWGhYb0k5RFpFVkFZU1lOMDJDQTdjdmJmVks4MDA1VzF6c2l6Ry1mTmt2NnhJejhtSjRIX2lNT21BUW5KQ1hnbFc4Q1hRSlhWOXh4YVgyU0xwOVlmYWFRaWdUbl9BaDU3QQ?oc=5",
-          "source_site": "cnbc.com",
-          "source_name": "CNBC",
-          "organisation": "CNBC",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Will AI break the internet? | Garrison Lovely - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORk1nWEJkTEhSeWhYWXVpWFUtWmZIMmZRZmlmQzZkcTNFWDltVmhuaVdUbzU1R1pmUHNYVTB6dXlDVkZBUXR2TS1IdmhrWTk0RmZKUTNJQWU0bXR4enViNXhaV2dpRVVQWE1iY3o4alBCc2ZRVlBmcFRKaEVXZVVFZF9TSmxjUTBFeDlpeg?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "\u2018Nothing they said made sense\u2019: down the rabbit hole with Britain\u2019s sovereign citizens - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMUpxMklLZC11Y2JkdUVGeWtXQlFEcVVqUWkxUzlCNW55dXBieHc2andYekdWTGZxcV9DVzhkQ09KZHhCaDNBSXBxOEdjYUlTUlJ1Vy1QVWdpSHlIOHhrYjAwcjZSSU5DcE5FdU5tMEhKcVZ2OUo2a0hLS1YtQ0szT0VWdjNHZ3hNanlXWXBhWHA2R3pzZjBaeVN4bFh2NTFNSF9OeTdKTGE3UEFkMFFVOTdncDNOc21fUC1ZblUtXzF1a3FMUHc?oc=5",
+          "title": "\u2018I was shaking, crying, having trouble breathing\u2019: the uncharted trauma of breaking up with AI companions - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMHBvcGRNRkJZTDBhSGlMRi1BeXN2Um1nOXVjSjdSR1BSZDY2RnN6SE9McEprQmpyVnUyZldBTlFBd3B3eS0yNEd6Zy16djJRN1ZaODktU0pZaHFsV2hWbWlMTmVncF9pYTVZajA5S3dpWlA2VUFkdVh5eWpjbkRIMnJWeXluaEJkYTY1dDdoWXBndjVSbDNhYlBQSVY5RHNQdVVzTVdpNmZMZXNyUC1GZm1rQmhjdHR4NnNncG5tOENwUDR5c3h3Sw?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
@@ -2290,8 +2234,24 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "\u2018Nothing they said made sense\u2019: down the rabbit hole with Britain\u2019s sovereign citizens - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMUpxMklLZC11Y2JkdUVGeWtXQlFEcVVqUWkxUzlCNW55dXBieHc2andYekdWTGZxcV9DVzhkQ09KZHhCaDNBSXBxOEdjYUlTUlJ1Vy1QVWdpSHlIOHhrYjAwcjZSSU5DcE5FdU5tMEhKcVZ2OUo2a0hLS1YtQ0szT0VWdjNHZ3hNanlXWXBhWHA2R3pzZjBaeVN4bFh2NTFNSF9OeTdKTGE3UEFkMFFVOTdncDNOc21fUC1ZblUtXzF1a3FMUHc?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "Broad Price Pressures Firm Up Case for Fed Rate Increase in December - WSJ",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBTM0hlaW1Oc0FQRUY5YXRsYlgyQVZIMDhlUnpob3ZiZU9DbF9LdE5ocmRGaXNrXzhSU3BDVmhyalFqSXp0WU1WamlZcTAyWUR1U2FEN1h5N1hvNVR6a1ZpeVhVZFktVDRIYXdDSzh0UXRVRVc3RUZMdGZ3?oc=5",
+          "source_site": "wsj.com",
+          "source_name": "WSJ",
+          "organisation": "Wall Street Journal",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "PayPal Names New CFO Amid Push to Prove Standalone Growth - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdWpXRFZhdUp4ZV9HU215dzg0R0piLXlMS0ZfZlA2a3RubnBEYVpTeXlFcmlPOEx5LVFDNENmR3k2SkZRRUF5cDhQcEdhUkEtbUpmWVFqSE9Xd0YyMGtwcE9EZjJEeFZIQlpqczEzQ29GYWFkWFRaUTgzVS1mNGtsRE1SVEtfRElRRFFQTFhlYmlhcUtCd0hpbG5OUm1YWTk1Y09HellGSzQ5U1k?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
@@ -2311,14 +2271,6 @@
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "How Sam Bankman-Fried Lost Out on a $35 Billion Jackpot From Anthropic - The New York Times",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNmQ2UENEQ05IbkRrX01ER2xvVTNnR3Bwc3ZUd3JKaVg0MkRUbk9ob2JVYXZzdmJLQnpabXBXUG9JT1RGaWxvYzdNOElpRzJYMi1jLURUVU5MSGR1NjB1ekZJN0paTWNaQXRHSWJBRmg1LWs2S2hHOWhsMW5rczllb1JwYlc?oc=5",
-          "source_site": "nytimes.com",
-          "source_name": "The New York Times",
-          "organisation": "The New York Times",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -2343,6 +2295,14 @@
           "source_site": "bbc.com",
           "source_name": "BBC",
           "organisation": "BBC",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "News - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LRU5lQ2FfX1N2WkRDcm90dHBaemxDNHFEc3V4NXB1LXBwY0pfLWlPRHNneFllNjdEQ3BGbHM2LTFoR19LWTYtMmhvbHgtU2NIUmpKSEN3?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -2450,14 +2410,6 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "Hard Fork - The New York Times",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9iMVhLYVRMYzV1U3dKcjdzaFowdzd1eDBpcGZyYzI5VkJSY2tyOU5MWUFSendMMGVsUjFZUmJGZFVJUHA5Rjl2SWw4TzFUUEtMaWc?oc=5",
-          "source_site": "nytimes.com",
-          "source_name": "The New York Times",
-          "organisation": "The New York Times",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
           "title": "Squawk on the Street: Market News from the New York Stock Exchange - CNBC",
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZMjY2SlZ6cThzVUd1blRRb1dtN1Z6VTNsZXpCeFRRWkgzOU1jVkJ4SlFqVE84V2Q0TGRRMGpaVW9GMGgtUmNxRGpJdmdRQW5mU1NWVA?oc=5",
           "source_site": "cnbc.com",
@@ -2466,14 +2418,42 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "Hard Fork - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9iMVhLYVRMYzV1U3dKcjdzaFowdzd1eDBpcGZyYzI5VkJSY2tyOU5MWUFSendMMGVsUjFZUmJGZFVJUHA5Rjl2SWw4TzFUUEtMaWc?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0dTZDYlBKanhSU1hkU2pLdERyOWFrYVpETnBSMkV4N0VDZXlPNEFCT05YeFRNMExVNjJKVU1taW9JZFZyT1RJYlk4UldfZEpsRlBibHdKU0NmbVk?oc=5",
+          "source_site": "bbc.com",
+          "source_name": "BBC",
+          "organisation": "BBC",
+          "published": "2026-11-13T08:00:00+00:00",
+          "age_hours": 246.9,
+          "reason": "too old (247 hours)"
+        },
+        {
+          "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKOHA5R0ZGa0tFdEtTZElXN1Q3eDNQZndVeGw2aERqWjNSdEtZVjlacUVpZ0hWZFNDLUV2Zzk5OGRkemg3WGJxd0lwMEJxRXNfTU1aTlEzeXk4eTZJckl3Y1JNV2J4QTFEWVpaQVFvZHlNS0Ja0gF6QVVfeXFMT1ZJWGJJc3BxU2xqY1JBdmZDM3FELU1XWjNHVW9ubzFIQldoaFlXdzcyX2J0Q2txRGN5Q05xZEZjMS1VVDlhcWhpQ0s4VW1GWGhpWjdzQWtJU3hTLURZVlZiVXh2VERlOGtjR2l2MHFGUmVaOTJCTWNLQ0E?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "published": "2026-11-13T12:03:24+00:00",
+          "age_hours": 242.9,
+          "reason": "too old (243 hours)"
+        },
+        {
           "title": "Hackers behind $6.3bn Binance heist \u2018used malware and bogus job interviews\u2019 - The Guardian",
           "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaEV0bUVQaFRQSnQwSzNSX2JZc2dKckR3M1RGRE9aZ0hWUzBBVVpQMU9JWk90MVJRajJHV1dMaGptOGZ2NW1BQmpyNDhVLUgwTWFoS0JFRlhidDhhYU9BdWRpQWVsX1J6ZFRndG8xaTlIWWRPaXc0ODg1SV9JSG9Rb0c5OUI3S3Nhd19uTTVlQ3htblFDTk81cU1ORS1tQmkwaXpMSnVOdEZqbkxjbnQzSS1NdDJnZzZDT05z?oc=5",
           "source_site": "theguardian.com",
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2026-11-03T08:00:00+00:00",
-          "age_hours": 486.1,
-          "reason": "too old (486 hours)"
+          "age_hours": 486.9,
+          "reason": "too old (487 hours)"
         },
         {
           "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history - BBC",
@@ -2482,8 +2462,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2026-10-30T07:00:00+00:00",
-          "age_hours": 583.1,
-          "reason": "too old (583 hours)"
+          "age_hours": 583.9,
+          "reason": "too old (584 hours)"
         },
         {
           "title": "Binance Says Hackers Plotted $6.3 Billion Crypto Heist for Months - The New York Times",
@@ -2492,8 +2472,8 @@
           "source_name": "The New York Times",
           "organisation": "The New York Times",
           "published": "2026-11-03T08:00:00+00:00",
-          "age_hours": 486.1,
-          "reason": "too old (486 hours)"
+          "age_hours": 486.9,
+          "reason": "too old (487 hours)"
         },
         {
           "title": "Binance hack - who is behind it, is my money safe and what we know so far - BBC",
@@ -2502,8 +2482,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2026-10-30T07:00:00+00:00",
-          "age_hours": 583.1,
-          "reason": "too old (583 hours)"
+          "age_hours": 583.9,
+          "reason": "too old (584 hours)"
         },
         {
           "title": "How Binance\u2019s $6.3 Billion Hack Went Down - The New York Times",
@@ -2512,8 +2492,8 @@
           "source_name": "The New York Times",
           "organisation": "The New York Times",
           "published": "2026-10-31T07:00:00+00:00",
-          "age_hours": 559.1,
-          "reason": "too old (559 hours)"
+          "age_hours": 559.9,
+          "reason": "too old (560 hours)"
         },
         {
           "title": "Binance, crypto and hacks: What to know about keeping coin safe as cyber criminals advance - CNBC",
@@ -2522,8 +2502,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2026-10-31T07:00:00+00:00",
-          "age_hours": 559.1,
-          "reason": "too old (559 hours)"
+          "age_hours": 559.9,
+          "reason": "too old (560 hours)"
         },
         {
           "title": "Binance resumes customer withdrawals after record $6.3bn hack - The Guardian",
@@ -2532,8 +2512,8 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2026-10-31T07:00:00+00:00",
-          "age_hours": 559.1,
-          "reason": "too old (559 hours)"
+          "age_hours": 559.9,
+          "reason": "too old (560 hours)"
         },
         {
           "title": "Binance Suspends Withdrawals After Crypto Hackers Steal $6.3 Billion - The New York Times",
@@ -2542,8 +2522,8 @@
           "source_name": "The New York Times",
           "organisation": "The New York Times",
           "published": "2026-10-29T07:00:00+00:00",
-          "age_hours": 607.1,
-          "reason": "too old (607 hours)"
+          "age_hours": 607.9,
+          "reason": "too old (608 hours)"
         },
         {
           "title": "Binance hack: Users withdraw $3.6bn after record crypto heist - BBC",
@@ -2552,8 +2532,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2026-11-02T08:00:00+00:00",
-          "age_hours": 510.1,
-          "reason": "too old (510 hours)"
+          "age_hours": 510.9,
+          "reason": "too old (511 hours)"
         },
         {
           "title": "North Korea denies being behind record $6.3bn Binance hack - BBC",
@@ -2562,8 +2542,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2026-11-03T08:00:00+00:00",
-          "age_hours": 486.1,
-          "reason": "too old (486 hours)"
+          "age_hours": 486.9,
+          "reason": "too old (487 hours)"
         },
         {
           "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack - BBC",
@@ -2572,8 +2552,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2026-11-01T07:00:00+00:00",
-          "age_hours": 535.1,
-          "reason": "too old (535 hours)"
+          "age_hours": 535.9,
+          "reason": "too old (536 hours)"
         },
         {
           "title": "Binance Suspends Transactions After It Is Targeted in Biggest-Ever Cyber Heist - WSJ",
@@ -2582,8 +2562,18 @@
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
           "published": "2026-10-30T07:00:00+00:00",
-          "age_hours": 583.1,
-          "reason": "too old (583 hours)"
+          "age_hours": 583.9,
+          "reason": "too old (584 hours)"
+        },
+        {
+          "title": "Six O'Clock News | World's biggest crypto exchange hacked - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JLVB0aUFFeXhTTHFVamJxX1FZYkRTdy1aSEhUOGRtZkNPeno2VmxuZy1Rd3YwbGxLNlpqOGhVaHNHWEpjaDRxNFRjVy1iMUlR?oc=5",
+          "source_site": "bbc.com",
+          "source_name": "BBC",
+          "organisation": "BBC",
+          "published": "2026-10-30T20:54:41+00:00",
+          "age_hours": 570.0,
+          "reason": "too old (570 hours)"
         },
         {
           "title": "Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto - CNBC",
@@ -2592,8 +2582,18 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2026-11-03T08:00:00+00:00",
-          "age_hours": 486.1,
-          "reason": "too old (486 hours)"
+          "age_hours": 486.9,
+          "reason": "too old (487 hours)"
+        },
+        {
+          "title": "Investors pull billions in funds from Binance after record $6.3bn hack - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaENiZkNSRGNUNkQ5SWhKRTE1dkhMVUVCM3dSVWY4X2EzWFl2WkN1SnhKb3g0S0pCOW1YNWU4Und2MDdPenZRdUJoTWpaNzUzRGZkNWRCeWlOU0xITHQ4WTlLR2Z6dGhCMlZzSDl3YWFWYURqX0RBWEtWVlNWMXhuMnllWk13ckMxTEFwMkVWY1J1dmR5V1otVGVTUnVjLVlCT2dwaE1ILWktVXJia1pSbEtiNE1FM0JFenp0SW5na1M?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "published": "2026-11-01T07:00:00+00:00",
+          "age_hours": 535.9,
+          "reason": "too old (536 hours)"
         },
         {
           "title": "Why bitcoin held up better after the record Binance hack - CNBC",
@@ -2602,8 +2602,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2026-10-30T07:00:00+00:00",
-          "age_hours": 583.1,
-          "reason": "too old (583 hours)"
+          "age_hours": 583.9,
+          "reason": "too old (584 hours)"
         },
         {
           "title": "Binance loses $6.3 billion in crypto heist\u2014what happens to your money when an exchange gets hacked - CNBC",
@@ -2612,8 +2612,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2026-10-30T07:00:00+00:00",
-          "age_hours": 583.1,
-          "reason": "too old (583 hours)"
+          "age_hours": 583.9,
+          "reason": "too old (584 hours)"
         },
         {
           "title": "North Korea is likely culprit behind $6.3bn crypto hack, \u2018largest heist in history\u2019 | Binance - The Guardian",
@@ -2622,8 +2622,8 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2026-10-29T07:00:00+00:00",
-          "age_hours": 607.1,
-          "reason": "too old (607 hours)"
+          "age_hours": 607.9,
+          "reason": "too old (608 hours)"
         },
         {
           "title": "Binance battles to save its brand after record $6.3bn crypto hack - The Guardian",
@@ -2632,8 +2632,8 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2026-11-03T08:00:00+00:00",
-          "age_hours": 486.1,
-          "reason": "too old (486 hours)"
+          "age_hours": 486.9,
+          "reason": "too old (487 hours)"
         },
         {
           "title": "$6.3 billion Binance hack is largest crypto theft on record - CNBC",
@@ -2642,8 +2642,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2026-10-29T07:00:00+00:00",
-          "age_hours": 607.1,
-          "reason": "too old (607 hours)"
+          "age_hours": 607.9,
+          "reason": "too old (608 hours)"
         },
         {
           "title": "Binance says fake job interviews used as part of $6.3bn crypto hack - BBC",
@@ -2652,8 +2652,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2026-11-03T08:00:00+00:00",
-          "age_hours": 486.1,
-          "reason": "too old (486 hours)"
+          "age_hours": 486.9,
+          "reason": "too old (487 hours)"
         },
         {
           "title": "Binance\u2019s $6.3 Billion Hack Is Just the Start of a Risky New Era - The New York Times",
@@ -2661,9 +2661,9 @@
           "source_site": "nytimes.com",
           "source_name": "The New York Times",
           "organisation": "The New York Times",
-          "published": "2026-10-30T07:00:00+00:00",
-          "age_hours": 583.1,
-          "reason": "too old (583 hours)"
+          "published": "2026-10-30T17:07:21+00:00",
+          "age_hours": 573.8,
+          "reason": "too old (574 hours)"
         },
         {
           "title": "What to Know About the Binance Hack - The New York Times",
@@ -2672,8 +2672,8 @@
           "source_name": "The New York Times",
           "organisation": "The New York Times",
           "published": "2026-10-31T07:00:00+00:00",
-          "age_hours": 559.1,
-          "reason": "too old (559 hours)"
+          "age_hours": 559.9,
+          "reason": "too old (560 hours)"
         },
         {
           "title": "How crypto hacking funds isolated North Korea\u2019s nuclear programme - The Guardian",
@@ -2682,8 +2682,8 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2026-10-30T07:00:00+00:00",
-          "age_hours": 583.1,
-          "reason": "too old (583 hours)"
+          "age_hours": 583.9,
+          "reason": "too old (584 hours)"
         },
         {
           "title": "Hackers steal over $40 million worth of bitcoin from one of the world's largest cryptocurrency exchanges - CNBC",
@@ -2692,8 +2692,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2019-05-07T07:00:00+00:00",
-          "age_hours": 66175.1,
-          "reason": "too old (66175 hours)"
+          "age_hours": 66175.9,
+          "reason": "too old (66176 hours)"
         },
         {
           "title": "Why Did FTX Collapse? Here\u2019s What to Know. (Published 2022) - The New York Times",
@@ -2710,8 +2710,8 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2022-10-07T07:00:00+00:00",
-          "age_hours": 36199.1,
-          "reason": "too old (36199 hours)"
+          "age_hours": 36199.9,
+          "reason": "too old (36200 hours)"
         },
         {
           "title": "Looking to get your funds out of a collapsed crypto platform? Don't get your hopes up - CNBC",
@@ -2720,8 +2720,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2022-07-19T07:00:00+00:00",
-          "age_hours": 38119.1,
-          "reason": "too old (38119 hours)"
+          "age_hours": 38119.9,
+          "reason": "too old (38120 hours)"
         },
         {
           "title": "More than $90 million in cryptocurrency stolen after a top Japanese exchange is hacked - CNBC",
@@ -2730,8 +2730,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2021-08-19T07:00:00+00:00",
-          "age_hours": 46135.1,
-          "reason": "too old (46135 hours)"
+          "age_hours": 46135.9,
+          "reason": "too old (46136 hours)"
         },
         {
           "title": "Crypto giant FTX collapses into bankruptcy - BBC",
@@ -2740,8 +2740,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2022-11-11T08:00:00+00:00",
-          "age_hours": 35358.1,
-          "reason": "too old (35358 hours)"
+          "age_hours": 35358.9,
+          "reason": "too old (35359 hours)"
         },
         {
           "title": "Crypto exchange Coinbase faces up to $400m hit from cyber attack - BBC",
@@ -2750,8 +2750,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2025-05-15T07:00:00+00:00",
-          "age_hours": 13375.1,
-          "reason": "too old (13375 hours)"
+          "age_hours": 13375.9,
+          "reason": "too old (13376 hours)"
         },
         {
           "title": "How the Biggest Crypto Heist in History Went Down (Published 2025) - The New York Times",
@@ -2760,8 +2760,8 @@
           "source_name": "The New York Times",
           "organisation": "The New York Times",
           "published": "2025-03-06T08:00:00+00:00",
-          "age_hours": 15054.1,
-          "reason": "too old (15054 hours)"
+          "age_hours": 15054.9,
+          "reason": "too old (15055 hours)"
         },
         {
           "title": "Embattled Crypto Exchange FTX Files for Bankruptcy (Published 2022) - The New York Times",
@@ -2770,8 +2770,8 @@
           "source_name": "The New York Times",
           "organisation": "The New York Times",
           "published": "2022-11-11T08:00:00+00:00",
-          "age_hours": 35358.1,
-          "reason": "too old (35358 hours)"
+          "age_hours": 35358.9,
+          "reason": "too old (35359 hours)"
         },
         {
           "title": "Hackers steal $1.5bn from crypto exchange in \u2018biggest digital heist ever\u2019 - The Guardian",
@@ -2780,8 +2780,8 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2025-02-23T08:00:00+00:00",
-          "age_hours": 15318.1,
-          "reason": "too old (15318 hours)"
+          "age_hours": 15318.9,
+          "reason": "too old (15319 hours)"
         },
         {
           "title": "FTX: Cryptocurrency market rocked by near-collapse of exchange - BBC",
@@ -2790,8 +2790,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2022-11-09T08:00:00+00:00",
-          "age_hours": 35406.1,
-          "reason": "too old (35406 hours)"
+          "age_hours": 35406.9,
+          "reason": "too old (35407 hours)"
         },
         {
           "title": "Crypto platform Bitget suspects North Korea is responsible for $352 million hack - CNBC",
@@ -2800,8 +2800,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2026-09-25T07:00:00+00:00",
-          "age_hours": 1423.1,
-          "reason": "too old (1423 hours)"
+          "age_hours": 1423.9,
+          "reason": "too old (1424 hours)"
         },
         {
           "title": "South Korean cryptocurrency exchange Bithumb says it was hacked and $30 million in coins was stolen - CNBC",
@@ -2810,8 +2810,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2018-06-19T07:00:00+00:00",
-          "age_hours": 73903.1,
-          "reason": "too old (73903 hours)"
+          "age_hours": 73903.9,
+          "reason": "too old (73904 hours)"
         },
         {
           "title": "The real victims of mass crypto-hacks that keep happening - BBC",
@@ -2820,8 +2820,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2021-08-25T07:00:00+00:00",
-          "age_hours": 45991.1,
-          "reason": "too old (45991 hours)"
+          "age_hours": 45991.9,
+          "reason": "too old (45992 hours)"
         },
         {
           "title": "Over a million are owed money by failed crypto exchange - BBC",
@@ -2830,8 +2830,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2022-11-16T08:00:00+00:00",
-          "age_hours": 35238.1,
-          "reason": "too old (35238 hours)"
+          "age_hours": 35238.9,
+          "reason": "too old (35239 hours)"
         },
         {
           "title": "Hackers steal $1.5 billion from exchange Bybit in biggest-ever crypto heist - CNBC",
@@ -2840,8 +2840,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2025-02-21T08:00:00+00:00",
-          "age_hours": 15366.1,
-          "reason": "too old (15366 hours)"
+          "age_hours": 15366.9,
+          "reason": "too old (15367 hours)"
         },
         {
           "title": "BitMart says it will compensate victims of $196 million hack and restore trading by Tuesday - CNBC",
@@ -2858,8 +2858,8 @@
           "source_name": "The New York Times",
           "organisation": "The New York Times",
           "published": "2022-11-14T08:00:00+00:00",
-          "age_hours": 35286.1,
-          "reason": "too old (35286 hours)"
+          "age_hours": 35286.9,
+          "reason": "too old (35287 hours)"
         },
         {
           "title": "North Korean hackers cash out hundreds of millions from $1.5bn ByBit hack - BBC",
@@ -2876,8 +2876,8 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2022-11-11T08:00:00+00:00",
-          "age_hours": 35358.1,
-          "reason": "too old (35358 hours)"
+          "age_hours": 35358.9,
+          "reason": "too old (35359 hours)"
         },
         {
           "title": "Twitter hack: Exchange 'blocked 1,000 Bitcoin transactions' - BBC",
@@ -2886,8 +2886,8 @@
           "source_name": "BBC",
           "organisation": "BBC",
           "published": "2020-07-21T07:00:00+00:00",
-          "age_hours": 55591.1,
-          "reason": "too old (55591 hours)"
+          "age_hours": 55591.9,
+          "reason": "too old (55592 hours)"
         },
         {
           "title": "Cryptocurrency Exchanges Are Getting Hacked Because It\u2019s Easy - WSJ",
@@ -2896,8 +2896,8 @@
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
           "published": "2018-07-09T07:00:00+00:00",
-          "age_hours": 73423.1,
-          "reason": "too old (73423 hours)"
+          "age_hours": 73423.9,
+          "reason": "too old (73424 hours)"
         },
         {
           "title": "Cryptocurrency exchange FTX files for bankruptcy protection in US - The Guardian",
@@ -2906,68 +2906,12 @@
           "source_name": "The Guardian",
           "organisation": "The Guardian",
           "published": "2022-11-11T08:00:00+00:00",
-          "age_hours": 35358.1,
-          "reason": "too old (35358 hours)"
+          "age_hours": 35358.9,
+          "reason": "too old (35359 hours)"
         },
         {
           "title": "How Mastercard\u2019s CEO Stays in Front of Change - WSJ",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcm9FRnIzLUpKYUx3Y3M5aHpfN2hBbkpMcHJiZnYzeVVsMy1BSl9HV01qcno1QmFiLTcwVmYtRlBoQ2lITG13d09DbkwzYmZFQllHQTQ3dnRDMmNaZXNaM29FVVNxa1VHd2IyVXlyV2RvMFAyck1paDJXazVGcFNyUEZJNVE1NmJpS0E?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Investors pull billions in funds from Binance after record $6.3bn hack - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaENiZkNSRGNUNkQ5SWhKRTE1dkhMVUVCM3dSVWY4X2EzWFl2WkN1SnhKb3g0S0pCOW1YNWU4Und2MDdPenZRdUJoTWpaNzUzRGZkNWRCeWlOU0xITHQ4WTlLR2Z6dGhCMlZzSDl3YWFWYURqX0RBWEtWVlNWMXhuMnllWk13ckMxTEFwMkVWY1J1dmR5V1otVGVTUnVjLVlCT2dwaE1ILWktVXJia1pSbEtiNE1FM0JFenp0SW5na1M?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
-          "published": "2026-11-01T07:00:00+00:00",
-          "age_hours": 535.1,
-          "reason": "too old (535 hours)"
-        },
-        {
-          "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI - BBC",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA0dTZDYlBKanhSU1hkU2pLdERyOWFrYVpETnBSMkV4N0VDZXlPNEFCT05YeFRNMExVNjJKVU1taW9JZFZyT1RJYlk4UldfZEpsRlBibHdKU0NmbVk?oc=5",
-          "source_site": "bbc.com",
-          "source_name": "BBC",
-          "organisation": "BBC",
-          "published": "2026-11-13T08:00:00+00:00",
-          "age_hours": 246.1,
-          "reason": "too old (246 hours)"
-        },
-        {
-          "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKOHA5R0ZGa0tFdEtTZElXN1Q3eDNQZndVeGw2aERqWjNSdEtZVjlacUVpZ0hWZFNDLUV2Zzk5OGRkemg3WGJxd0lwMEJxRXNfTU1aTlEzeXk4eTZJckl3Y1JNV2J4QTFEWVpaQVFvZHlNS0Ja0gF6QVVfeXFMT1ZJWGJJc3BxU2xqY1JBdmZDM3FELU1XWjNHVW9ubzFIQldoaFlXdzcyX2J0Q2txRGN5Q05xZEZjMS1VVDlhcWhpQ0s4VW1GWGhpWjdzQWtJU3hTLURZVlZiVXh2VERlOGtjR2l2MHFGUmVaOTJCTWNLQ0E?oc=5",
-          "source_site": "cnbc.com",
-          "source_name": "CNBC",
-          "organisation": "CNBC",
-          "published": "2026-11-13T12:03:24+00:00",
-          "age_hours": 242.0,
-          "reason": "too old (242 hours)"
-        },
-        {
-          "title": "U.S. Stocks Fall as Nvidia Drama Continues - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS3NsU18tTmdONnFEdnZIZzUyb3JXVFVpQjhhQ04tcG15MFpUclFpeTVUczh3X3RmRWZ4eWQ2Tk5SbUwtVlBvaGNSQ3N6MXRYa0tSVk43alVlMFZNTGZRdnNDWHlQcUwxMjNtR3lnVU5zbkJpQkpta0R5anRiQ01rVTZhNDdqbEtsMWFnWms2ZzFHVUJLSWlZdXhlZFlIWXk0dUVOS3M2elFGOFhuRFU3bk9MOVgtMnJ6azltUGktWXdhd2lRaUZMYkp5UQ?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Six O'Clock News | World's biggest crypto exchange hacked - BBC",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JLVB0aUFFeXhTTHFVamJxX1FZYkRTdy1aSEhUOGRtZkNPeno2VmxuZy1Rd3YwbGxLNlpqOGhVaHNHWEpjaDRxNFRjVy1iMUlR?oc=5",
-          "source_site": "bbc.com",
-          "source_name": "BBC",
-          "organisation": "BBC",
-          "published": "2026-10-30T20:54:41+00:00",
-          "age_hours": 569.2,
-          "reason": "too old (569 hours)"
-        },
-        {
-          "title": "The Chaos and Unexpected Joys of a 19-Hour Global Email Outage - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQM1k3NUhZNy1SeFNkMVB3THZEMGtZMnRObVVEUTZoQzNhX0VqRkRyQUo1Tnd5RjZfdzBsNVd6d3U4ZUtuRUxEZWxzZC1Da3RZa0doQ21RdmszOE5XM1NJZDdUQV83VnExcE5nZk93ZS1WYkYtNjNqVG9HZENmM2FxSjJ2MXd3Sm84X1E5UTZZUVVfYm1KTHlkZ25xOGFUR2Y3enB4a09faGlHWWZY?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
@@ -2982,19 +2926,11 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "\u2018Enough is enough\u2019: rising number of deadly ebike battery fires spark fear in New York City - The Guardian",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPc2NWRTZqWjYwN0ZMN2JDbmxvMVpHd2FwbUstVWVZTml4ZXJYWHhyb0RSUi1uZ0llRF8wUGlpRDgxaWVQRTRzZG9SSHVQZnBta1VYQ0s0d01sS0NNWW1zdTREa2Y2bV9rRGt6dVJZQkNuOEVXQWptQWM4aDhVcmxiM05qYVQwNjktNXJ0VTZESXNyQQ?oc=5",
-          "source_site": "theguardian.com",
-          "source_name": "The Guardian",
-          "organisation": "The Guardian",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "Greg Ip - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5BaW1MelJ6U29NcFVPbU9pTTcxMmlwQUZiLVQ5ajJZekMxcWFtUTR5TnRoeHYxc2doWFhtM3NBWHFtQ2MydWVTMGpCSUhYWXls?oc=5",
-          "source_site": "wsj.com",
-          "source_name": "WSJ",
-          "organisation": "Wall Street Journal",
+          "title": "Emails, Chat Logs, Code and a Notebook: The Mountain of FTX Evidence (Published 2023) - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaEhKS3l3cHppRXFpLWJ2TEZiV3J6NmpkQWJwbXgtSGJ3UFN0LTA4T0VvbVVUWHRLSzlmZzREX0w1OEFsZjFuNlk0Y19xNTFtUHNuMHI5d1FMeTNsbi1Xbm1NcmVHWk9NRnR3cHJpOUZHSXlac240VUFCYlFmMms5b2laTXFLd1Jj?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -3004,16 +2940,8 @@
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
           "published": "2026-11-03T08:00:00+00:00",
-          "age_hours": 486.1,
-          "reason": "too old (486 hours)"
-        },
-        {
-          "title": "Emails, Chat Logs, Code and a Notebook: The Mountain of FTX Evidence (Published 2023) - The New York Times",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaEhKS3l3cHppRXFpLWJ2TEZiV3J6NmpkQWJwbXgtSGJ3UFN0LTA4T0VvbVVUWHRLSzlmZzREX0w1OEFsZjFuNlk0Y19xNTFtUHNuMHI5d1FMeTNsbi1Xbm1NcmVHWk9NRnR3cHJpOUZHSXlac240VUFCYlFmMms5b2laTXFLd1Jj?oc=5",
-          "source_site": "nytimes.com",
-          "source_name": "The New York Times",
-          "organisation": "The New York Times",
-          "reason": "headline is not about Bitcoin"
+          "age_hours": 486.9,
+          "reason": "too old (487 hours)"
         },
         {
           "title": "FTX's Nishad Singh gets no jail time, 3 years supervised release for role in crypto fraud - CNBC",
@@ -3022,20 +2950,58 @@
           "source_name": "CNBC",
           "organisation": "CNBC",
           "published": "2024-10-30T07:00:00+00:00",
-          "age_hours": 18103.1,
-          "reason": "too old (18103 hours)"
+          "age_hours": 18103.9,
+          "reason": "too old (18104 hours)"
         },
         {
-          "title": "U.S. Stocks Mixed on Nvidia Fallout Fears - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbXo0WGszbS1hZnpTdTRYYjJ0MnNDYVo3c1paejV2WkowZl93UVNiamRIQ0xEWU9HZWp3Ui14aEhFUEZkbWNQTXhfUVNSVE5tQkhELWJEcmZxYVpEM2c0aGRwdWpQZWM5MmdETXFXMDd5TTR5cHNvZUdaWmp4MlBLMG5KTm9JTFVrRmpfVA?oc=5",
+          "title": "Former FTX crypto executive Caroline Ellison released from federal custody - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZDBNVjR3NHF2V01sSG1XcjBNbUlwUnFJdUxaOGg3UkhhVUdORHotMmhjX0ZqWlo3dDZraVFmOUtOQS1EZW95ZFpOVmlCbXRCa3hpNnVFVXlkNzcxUjktbi1wVW1MM1RJOEJ5c09EMkpSYVVsb2NmMmFob29kQ0NkR19JeXNQZm41NjluWkFBS1ZDTmVnOUUwRFlVOFpJNE9CSzgwQy1n?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "published": "2026-01-22T08:00:00+00:00",
+          "age_hours": 7326.9,
+          "reason": "too old (7327 hours)"
+        },
+        {
+          "title": "U.S. Stocks Fall as Nvidia Drama Continues - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS3NsU18tTmdONnFEdnZIZzUyb3JXVFVpQjhhQ04tcG15MFpUclFpeTVUczh3X3RmRWZ4eWQ2Tk5SbUwtVlBvaGNSQ3N6MXRYa0tSVk43alVlMFZNTGZRdnNDWHlQcUwxMjNtR3lnVU5zbkJpQkpta0R5anRiQ01rVTZhNDdqbEtsMWFnWms2ZzFHVUJLSWlZdXhlZFlIWXk0dUVOS3M2elFGOFhuRFU3bk9MOVgtMnJ6azltUGktWXdhd2lRaUZMYkp5UQ?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "China Looks to Shake Up Centuries-Old Business of Insuring Ships - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVF9MMFk5aGVhdlluOG02Y05WSkpJVGVhRlctT3BuazNQVGNGRkJDemFFOGZEc256RXdMYmJVY3V4dzVZUG1ZeTVyTkdNdkpOandVSHR2dUtfbjNWSTFpbE9WNEpBUlVjWkVGaHo0bGNuTi15WE5YcnhLV3lPdnlXSXdvNjVBWjV6OW03ZF96Qk4tNGhWVzBYaGtLaURHYXlOY0lTWmx0bjVvX0FZMGVZ?oc=5",
+          "title": "Sam Bankman-Fried\u2019s ex-deputy Nishad Singh spared prison time over crypto fraud | FTX - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOelNnVTBuR0VlMUZtSXNQa0dxNzN3cE1Za0FxQ0pEbm9YbUQyenVnNXFXWDQySlp4TnpNV3pLUklSV1doTlB0RGk1RG1tREJNQW5USG14aGxWMG90aVRUZWhrSlpjVEJ4VFZnNXVyN2ZqTW1UTGFpUFNHTEhPbTRSQTBRaXpTbHVWdFY4VDNGZmZwU1lwTlJFQkRSekpyTW5V?oc=5",
+          "source_site": "theguardian.com",
+          "source_name": "The Guardian",
+          "organisation": "The Guardian",
+          "published": "2024-10-30T07:00:00+00:00",
+          "age_hours": 18103.9,
+          "reason": "too old (18104 hours)"
+        },
+        {
+          "title": "Cyberwarfare - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBaQ0Y4SFI1U3JiclFTYlZ3eU91cWstRjkzMVJ0aVo3cVUweF9nZnQwSHRKV2FLNXBsNHRjQU5SOUJ4YUxOTlhCblFfRG1Ub3VPWEZHZ2FERVhIcWRZR0xn?oc=5",
+          "source_site": "nytimes.com",
+          "source_name": "The New York Times",
+          "organisation": "The New York Times",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Bitcoin - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5SWkg5X2ljbTljeFJpaXgzQzczQUlfb2t6bllQRzM2RHdwTkxZTHE0YldLaGpJYTVwZkc4d2Fhd2dDemNOcUtfZ0xhSjJwZnpNLXB2UF92Zw?oc=5",
+          "source_site": "bbc.com",
+          "source_name": "BBC",
+          "organisation": "BBC",
+          "published": "2018-06-06T19:15:27+00:00",
+          "age_hours": 74203.7,
+          "reason": "too old (74204 hours)"
+        },
+        {
+          "title": "The Chaos and Unexpected Joys of a 19-Hour Global Email Outage - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQM1k3NUhZNy1SeFNkMVB3THZEMGtZMnRObVVEUTZoQzNhX0VqRkRyQUo1Tnd5RjZfdzBsNVd6d3U4ZUtuRUxEZWxzZC1Da3RZa0doQ21RdmszOE5XM1NJZDdUQV83VnExcE5nZk93ZS1WYkYtNjNqVG9HZENmM2FxSjJ2MXd3Sm84X1E5UTZZUVVfYm1KTHlkZ25xOGFUR2Y3enB4a09faGlHWWZY?oc=5",
           "source_site": "wsj.com",
           "source_name": "WSJ",
           "organisation": "Wall Street Journal",
@@ -3050,7 +3016,7 @@
           "reason": "headline is not about Bitcoin"
         },
         {
-          "title": "The Stock Market Rebound Is Here for a Good Time\u2014Not a Long Time - MarketWatch",
+          "title": "Stock Market News - Bond Market - Currencies Markets - MarketWatch",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1WSk1SMEVJUWVGN1RIVTEtSThObVFxbkFHTE9ySmdyRUx4NjJMNWsta3lOaFBOVFF5eUEtN0lVaXc5QlFiTEdiQVZYSQ?oc=5",
           "source_site": "marketwatch.com",
           "source_name": "MarketWatch",
@@ -3082,6 +3048,22 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "GCZ27 | Gold Dec 2027 Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE84YXZLVmFOQjVYRmRyU1ZLZHM4dkFCRV9Ia0lyT0RjeE0yazJRWjhVU21jZEhMcGFNaHBOamJlZzBHZDZFNHhSRzAwWTd5VjkweHJQTHB2UXNaMmFieFJr?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "GC00 | Gold Continuous Contract Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBodjBUNHNlMnBNcTlTTG5TeFFPcWhoN3YxNWEzZFduNWZlYWkyZklxY3dVemhQWkdNN1ZLbVRZVHRmSTFOVXhuT2pVQk5JM2d3bXM0aWgxZFg0OGZuclE?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "RB.1 | RBOB Gasoline (NYM $/gal) Front Month Overview - MarketWatch",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5yTVpMOC03RkF1cjYtWWhBYTFPTkRUWmFOY2JuU0ZKT0dUc3oySDZTeGpjcWNUNElRWk53dWFUNlFtY2h3SS1WSHZXN3I4cFN1OXRfcXQ0RzBHeGhnb1E?oc=5",
           "source_site": "marketwatch.com",
@@ -3092,14 +3074,6 @@
         {
           "title": "Z74 Stock Price | Singapore Telecommunications Ltd. Stock Quote (Singapore: SGX) - MarketWatch",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1aNldHTkpTQ2VrcUFkS1VGZmFKR0hRN0VwMXFFeE9UUldESWhEMDlQUEk3R1hhVmRNemJlVG1Id2xuUEZWR01oTTZGc0xzY1RWbFRMNmtscnlIcy1PZVdVZGExaExMMG4yZkZsNl9Ccw?oc=5",
-          "source_site": "marketwatch.com",
-          "source_name": "MarketWatch",
-          "organisation": "MarketWatch",
-          "reason": "headline is not about Bitcoin"
-        },
-        {
-          "title": "WBS.1 | Crude Oil - WTI (IFEU $/bbl) Front Month Overview - MarketWatch",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ncVpKZEQyZmNFRTREWHB1NEZ2MzRTcGR6MC1Cc1psdG9xY0M4cURDTGhtY0NRTHBPUTI1THlQLW1QNm1qMGU2cy12dEZoRlZRTjM1TFY5QU5ibUVzRzZrVFlCelNwbnNBOFBvTWRfR015MjA?oc=5",
           "source_site": "marketwatch.com",
           "source_name": "MarketWatch",
           "organisation": "MarketWatch",
@@ -3124,6 +3098,14 @@
         {
           "title": "DX00 | U.S. Dollar Index Continuous Contract Overview - MarketWatch",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5laEhYQ2lxa3lXbHZkT3U3RjhsMFhLZzBXdmZQU0lvb3dQbW9vX1lkYW5XdEt2ZF81S1NscWVmaDQwMDRmbi1QbGZwR2NYRWhUaWZ6WW5XNXVZRTlBblE?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "TY.1 | 10-Year U.S. Treasury Note (CBT) Front Month Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9xbklaMVFnQjQzRVNVVUhPcU9CSDdLYzF0UHNQX21pYm01dWRzaXBnOG56dDM0R29KWldKdzN2X1U0YXFkUlR0ZVlvNDVXakxFMWVzT3RJb3haUkc5VVE?oc=5",
           "source_site": "marketwatch.com",
           "source_name": "MarketWatch",
           "organisation": "MarketWatch",
@@ -3167,7 +3149,7 @@
           "source_name": "Bloomberg.com",
           "organisation": "Bloomberg",
           "published": "2026-11-23T11:06:11+00:00",
-          "age_hours": 3.0
+          "age_hours": 3.8
         },
         {
           "title": "Spot bitcoin ETFs shed $1.8 billion in past week as outflows become 'structural': analysts - The Block",
@@ -3176,34 +3158,7 @@
           "source_name": "The Block",
           "organisation": "The Block",
           "published": "2026-11-23T05:47:00+00:00",
-          "age_hours": 8.3
-        },
-        {
-          "title": "South Korea to publish draft of comprehensive crypto legal framework this week - The Block",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWFhva0xWdTRUMnMxMlRIMWdYT2xFUEdLcU0wOEVmX280UmQxS3FYRmJXQUQtUmtrVnlkdWRzSEptaUdpLUl5cnNEM3luZFhBd0NlMTV5Mi1FemlnR1lVTjJNOUpLUE93UWpqS3FjVXAxendBR2QtcjhteENPcnVtQU94RmlYSlgwZFdvVU9pRDJSYWFOdkdzN0xQZkkzVnN3cW5UeFNGVkszb1o3bjlj?oc=5",
-          "source_site": "theblock.co",
-          "source_name": "The Block",
-          "organisation": "The Block",
-          "published": "2026-11-23T10:11:00+00:00",
-          "age_hours": 3.9
-        },
-        {
-          "title": "Bitcoin (BTC) news: Traders ditch 50bps December Fed rate hike bets - CoinDesk",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTGNZYzBZaFdPU2lmNHc1WE5wMG5HSVRnSUlyQnh4MVNhY1o3VFprT285SFJzZEtWNll6MmNBWW1jZW5nZkxSbDkxbVJ5Q3loXzJUWW5jN1B2eFBXS0VOWnFVeDJYTk5EZ3d3M0VMd0VMUmhpR1h6clJQOUpiQ19CX0ZjMzJFMWc4Y0phRnRoS193bDZpSHBSajlyb241Z3ZJWmR2THFRMlo?oc=5",
-          "source_site": "coindesk.com",
-          "source_name": "CoinDesk",
-          "organisation": "CoinDesk",
-          "published": "2026-11-23T08:58:32+00:00",
-          "age_hours": 5.1
-        },
-        {
-          "title": "Bitcoin Rebounds to $61K After Weekend Plunge to Two-Year Low - Decrypt",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQnVULVl0czJFX3htN3lzUWpkdVFVTi1ZeDlUYXBRQUJkSGVZbWRVNFMxQ0lXRURVbnplcWpVYXl2Ynk2MVVLajJMN3U4c21BTHpNNUFqSjFjUzkxTXdQOVN4enFFRVRXZ1NjMWNMZmxVN0FTQk84dGdpOU9UUkhuWS1qT1A1bW9nVXBERmxNMA?oc=5",
-          "source_site": "decrypt.co",
-          "source_name": "Decrypt",
-          "organisation": "Decrypt",
-          "published": "2026-11-23T11:14:22+00:00",
-          "age_hours": 2.9
+          "age_hours": 9.1
         },
         {
           "title": "Bitcoin's losing streak is second-longest ever, some observers see more downside: Crypto Daily - CoinDesk",
@@ -3212,16 +3167,7 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-23T12:30:25+00:00",
-          "age_hours": 1.6
-        },
-        {
-          "title": "Top Crypto Gainers Today: Biggest 24h Price Increases - The Block",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lVVdCQXRkMGV5M0lXS3ljZUl5ajZyODZGM25uczY4cmw5bFV6TEViRm03Z1VpV2hzb3RFV1pGaUpfcFdzaE1SUl80WmdGQQ?oc=5",
-          "source_site": "theblock.co",
-          "source_name": "The Block",
-          "organisation": "The Block",
-          "published": "2026-11-23T14:04:45+00:00",
-          "age_hours": 0.0
+          "age_hours": 2.4
         },
         {
           "title": "Bitcoin (BTC) price rebounds from 2-year low as Wall Street futures recover: Crypto Markets Today - CoinDesk",
@@ -3230,7 +3176,43 @@
           "source_name": "CoinDesk",
           "organisation": "CoinDesk",
           "published": "2026-11-23T11:51:09+00:00",
-          "age_hours": 2.2
+          "age_hours": 3.1
+        },
+        {
+          "title": "Bitcoin (BTC) news: Traders ditch 50bps December Fed rate hike bets - CoinDesk",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTGNZYzBZaFdPU2lmNHc1WE5wMG5HSVRnSUlyQnh4MVNhY1o3VFprT285SFJzZEtWNll6MmNBWW1jZW5nZkxSbDkxbVJ5Q3loXzJUWW5jN1B2eFBXS0VOWnFVeDJYTk5EZ3d3M0VMd0VMUmhpR1h6clJQOUpiQ19CX0ZjMzJFMWc4Y0phRnRoS193bDZpSHBSajlyb241Z3ZJWmR2THFRMlo?oc=5",
+          "source_site": "coindesk.com",
+          "source_name": "CoinDesk",
+          "organisation": "CoinDesk",
+          "published": "2026-11-23T08:58:32+00:00",
+          "age_hours": 6.0
+        },
+        {
+          "title": "Bitcoin Rebounds to $61K After Weekend Plunge to Two-Year Low - Decrypt",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQnVULVl0czJFX3htN3lzUWpkdVFVTi1ZeDlUYXBRQUJkSGVZbWRVNFMxQ0lXRURVbnplcWpVYXl2Ynk2MVVLajJMN3U4c21BTHpNNUFqSjFjUzkxTXdQOVN4enFFRVRXZ1NjMWNMZmxVN0FTQk84dGdpOU9UUkhuWS1qT1A1bW9nVXBERmxNMA?oc=5",
+          "source_site": "decrypt.co",
+          "source_name": "Decrypt",
+          "organisation": "Decrypt",
+          "published": "2026-11-23T11:14:22+00:00",
+          "age_hours": 3.7
+        },
+        {
+          "title": "Top Crypto Gainers Today: Biggest 24h Price Increases - The Block",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lVVdCQXRkMGV5M0lXS3ljZUl5ajZyODZGM25uczY4cmw5bFV6TEViRm03Z1VpV2hzb3RFV1pGaUpfcFdzaE1SUl80WmdGQQ?oc=5",
+          "source_site": "theblock.co",
+          "source_name": "The Block",
+          "organisation": "The Block",
+          "published": "2026-11-23T14:04:45+00:00",
+          "age_hours": 0.8
+        },
+        {
+          "title": "South Korea to publish draft of comprehensive crypto legal framework this week - The Block",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWFhva0xWdTRUMnMxMlRIMWdYT2xFUEdLcU0wOEVmX280UmQxS3FYRmJXQUQtUmtrVnlkdWRzSEptaUdpLUl5cnNEM3luZFhBd0NlMTV5Mi1FemlnR1lVTjJNOUpLUE93UWpqS3FjVXAxendBR2QtcjhteENPcnVtQU94RmlYSlgwZFdvVU9pRDJSYWFOdkdzN0xQZkkzVnN3cW5UeFNGVkszb1o3bjlj?oc=5",
+          "source_site": "theblock.co",
+          "source_name": "The Block",
+          "organisation": "The Block",
+          "published": "2026-11-23T10:11:00+00:00",
+          "age_hours": 4.7
         },
         {
           "title": "Singapore's OCBC, StraitsX launch pilot for cross-border business stablecoin payments - The Block",
@@ -3239,7 +3221,16 @@
           "source_name": "The Block",
           "organisation": "The Block",
           "published": "2026-11-23T10:04:00+00:00",
-          "age_hours": 4.0
+          "age_hours": 4.9
+        },
+        {
+          "title": "Trump hosts crypto gala as his meme coin falls below $1 - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5YVmxyWXZjRzQybjNMSzJYdlBydllNeEVzektWX3FiUTdmaXFWc0QtRlJmVjNzaWV1cjAtc0JWSTl4NTdfb0F6NGdqbExLRVc3MXF1Ty0yVU1aUGI3RV9mQno5RUdVME5D0gFuQVVfeXFMT2xKV0tQMHpNUThZOGUyYVpieHhBQ2JNdnU3aVdSeGtxWkJhVlEtWTgxeHkySk1yUkVCZnBFVnBBU1dWMUtSOUJaQXFjb1RBbmEydDN6NWthd0QwYThvcmx4dXdvZjdjOG9MM0JEelE?oc=5",
+          "source_site": "cnbc.com",
+          "source_name": "CNBC",
+          "organisation": "CNBC",
+          "published": "2026-11-23T14:15:42+00:00",
+          "age_hours": 0.7
         }
       ],
       "rejected": [
@@ -3257,6 +3248,14 @@
           "source_site": "theblock.co",
           "source_name": "The Block",
           "organisation": "The Block",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
+          "title": "Asian regulators rush to support sagging markets as AI trade falters - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUzBpWDFoVGV4Nmw0dUJEZXBfc2RuaFY1NVJzalFiT0FVNkJFNHpkTm96ZmROSmdDWGdzSVMyY1lKMFdPRkZVS045OXRXVUVUZnEwRXFMWU0yOWR4UnNncE1nS1Z0SDdvRllOYXFYZGpYRUk4NHdIeEZLVkRvRlZERTdJcko?oc=5",
+          "source_site": "ft.com",
+          "source_name": "Financial Times",
+          "organisation": "Financial Times",
           "reason": "headline is not about Bitcoin"
         },
         {
@@ -3324,6 +3323,14 @@
           "reason": "headline is not about Bitcoin"
         },
         {
+          "title": "SPY | State Street SPDR S&P 500 ETF Trust Overview - MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE45bF9yWVhBc0szV3NkUXRaeE1NRVhrS3lLZThOVHVRYm1UN0ZIRS1JUGFGTDFpSk16WXg0V18zZ1ppdlJ3Wjg0dlcyaHF5WDNVOVFvaWNTdEJNQQ?oc=5",
+          "source_site": "marketwatch.com",
+          "source_name": "MarketWatch",
+          "organisation": "MarketWatch",
+          "reason": "headline is not about Bitcoin"
+        },
+        {
           "title": "SI00 | Silver Continuous Contract Overview - MarketWatch",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9vR0tkS0k5c096TTJmdk1DdU1FM0ZYWWY4RkttQTc5VWZpeF8wTDFLMVd0bVB5anVXcVVWVkI0cjVVWEhZTUw0TFZGRFdWVU1CeHZGMzdEcDNIRW82MWc?oc=5",
           "source_site": "marketwatch.com",
@@ -3365,8 +3372,8 @@
           "feed": "SEC press releases",
           "summary": "The Securities and Exchange Commission today charged eight Colorado-based entities, likely operated by individuals located overseas, for defrauding U.S. investors out of more than $37 million. The defendants allegedly lured investors to believe they were\u2026",
           "published": "2026-11-19T14:39:02+00:00",
-          "age_hours": 95.4,
-          "reason": "too old (95 hours)"
+          "age_hours": 96.3,
+          "reason": "too old (96 hours)"
         },
         {
           "title": "SEC Proposes Executive and Director Compensation Disclosure Reforms",
@@ -3502,8 +3509,8 @@
           "feed": "SEC press releases",
           "summary": "The Securities and Exchange Commission today proposed new rules and amendments to provide a tailored framework for the custody of crypto assets for registered investment advisers and regulated funds, i.e. registered investment companies and business\u2026",
           "published": "2026-10-01T16:16:07+00:00",
-          "age_hours": 1269.8,
-          "reason": "too old (1270 hours)"
+          "age_hours": 1270.7,
+          "reason": "too old (1271 hours)"
         },
         {
           "title": "SEC\u2019s Division of Examinations Announces New Exam Handbook",
@@ -3594,8 +3601,8 @@
           "feed": "SEC litigation releases",
           "summary": "Advisor WeChat Capital, Tech Brokerage Asset Alliance Ltd., HB Wealth Advisors, IdeaCrypto Exchange LLC, Convergent Wealth Advisors Inc., RealSimple Crypto Exchange Inc., Associated Wealth Advisors Ltd., and Essential Crypto Exchange",
           "published": "2026-11-19T18:10:05+00:00",
-          "age_hours": 91.9,
-          "reason": "too old (92 hours)"
+          "age_hours": 92.8,
+          "reason": "too old (93 hours)"
         },
         {
           "title": "Carlos Sacanell",
@@ -4026,14 +4033,14 @@
   ],
   "data_checks": {
     "B3": {
-      "last_close": 22617.73,
-      "change_percent": -5.28,
-      "warning": true
+      "last_close": 24021.67,
+      "change_percent": 6.21,
+      "warning": false
     },
     "B5": {
-      "views_last_7_days": 29994,
-      "views_previous_7_days": 22686,
-      "ratio": 1.32,
+      "views_last_7_days": 28492,
+      "views_previous_7_days": 27662,
+      "ratio": 1.03,
       "warning": false
     }
   }
