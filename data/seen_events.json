@@ -22906,19 +22906,13 @@
           "time": "2026-11-17T01:01:33+00:00",
           "verdict": "right"
         },
-        "now": {
-          "move": -5.35,
-          "time": "2026-11-23T15:00:30+00:00",
-          "hours": 168.0,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 7,
+          "done": 9,
+          "right": 8,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "right",
         "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 14 hours (biggest move -3.6%)",
         "impact": {
@@ -22974,6 +22968,12 @@
           "price": 3545.33,
           "move": -8.27,
           "time": "2026-11-21T15:01:33+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 3658.0,
+          "move": -5.35,
+          "time": "2026-11-23T15:01:33+00:00",
           "verdict": "right"
         }
       },
@@ -39935,11 +39935,11 @@
     "BTC-20261123": 5
   },
   "last_run": {
-    "run_time": "2026-11-23T15:10:53.225344+00:00",
+    "run_time": "2026-11-23T15:15:53.707580+00:00",
     "test_mode": false,
-    "stories": 111,
-    "off_topic": 58,
-    "repeats": 53,
+    "stories": 149,
+    "off_topic": 72,
+    "repeats": 77,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -39963,7 +39963,6 @@
       "Gold": {
         "state": "Alert",
         "reasons": [
-          "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
           "Alert: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
           "Alert: Gold under a hiking Fed: central-bank demand versus real rates",
           "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
@@ -39989,7 +39988,6 @@
     "Gold": {
       "state": "Alert",
       "reasons": [
-        "Alert: Gold is sold first in a dollar squeeze, and Jeff Currie says the real test comes later",
         "Alert: JUST IN: Financial markets are crashing Gold falls under $3,550 S&P 500 falls under 7,100 Nasdaq falls under 25,800 Bitcoin falls under $59,000 Trillions of dol",
         "Alert: Gold under a hiking Fed: central-bank demand versus real rates",
         "Alert: Gold Futures Inch Higher As U.S. Yields, Dollar Slip",
