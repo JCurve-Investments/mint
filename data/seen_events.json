@@ -26737,8 +26737,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 7,
-          "right": 5,
+          "done": 8,
+          "right": 6,
           "wrong": 1,
           "total": 9
         },
@@ -26810,6 +26810,12 @@
           "price": 3525.56,
           "move": -5.4,
           "time": "2026-11-22T06:10:14+00:00",
+          "verdict": "right"
+        },
+        "d5": {
+          "price": 3651.5,
+          "move": -2.02,
+          "time": "2026-11-23T18:10:14+00:00",
           "verdict": "right"
         }
       },
@@ -40624,6 +40630,234 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-23T16:41:10.803451+00:00"
       }
+    },
+    {
+      "id": "BTC-20261123-07",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "9,293 $ETH (16,178,638 USD) of stolen funds transferred from Binance Hack 2026 to Binance Hack 2026 Details",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-23T18:20:51.544021+00:00",
+      "earliest_report": "2026-11-23T18:17:33+00:00",
+      "last_updated": "2026-11-23T18:20:51.544021+00:00",
+      "words": [
+        "binance",
+        "detail",
+        "eth",
+        "funds",
+        "hack",
+        "transferr",
+        "usd"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "9,293 $ETH (16,178,638 USD) of stolen funds transferred from Binance Hack 2026 to Binance Hack 2026 Details",
+          "link": "https://t.me/whale_alert_io/105232",
+          "published": "2026-11-23T18:17:33+00:00",
+          "found_at": "2026-11-23T18:20:51.544021+00:00",
+          "summary": "9,293 $ETH (16,178,638 USD) of stolen funds transferred from Binance Hack 2026 to Binance Hack 2026 Details",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-23T18:20:51.544021+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-23T18:20:51.544021+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-23T18:20:51.544021+00:00",
+          "note": "confirmed -> alerted: The transfer of stolen funds is a new development that could negatively impact Bitcoin price."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-23",
+        "date_evidence": "Report published on 2026-11-23 18:17 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "hacks have historically pushed prices lower",
+        "alert_title": "Binance hack funds moved",
+        "alert_message": "Large amount of stolen ETH was moved from a Binance hack, showing ongoing security issues that could hurt Bitcoin confidence.",
+        "why_it_matters": [
+          "Security concerns may lower trust in crypto",
+          "Potential market sell\u2011off after hack news"
+        ],
+        "reason": "The transfer of stolen funds is a new development that could negatively impact Bitcoin price.",
+        "time": "2026-11-23T18:20:51.544021+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nBinance hack funds moved\n\nLarge amount of stolen ETH was moved from a Binance hack, showing ongoing security issues that could hurt Bitcoin confidence.\n\nMINT's prediction: Bitcoin DOWN - In five similar hack\u2011related news items, four saw Bitcoin fall the next day (\u20110.8% to \u20119.8%) while only one showed a small rise (+1.7%).\n\nBitcoin had already moved +0.0% since the first report.\nSources: Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 23 Nov 18:20 UTC",
+        "telegram_sent_at": "2026-11-23T18:20:51.544021+00:00"
+      },
+      "outcome": {
+        "start_price": 61694.6,
+        "start_time": "2026-11-23T17:39:30+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-23T17:39:30+00:00",
+          "hours": -0.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 3.3 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 61694.6,
+          "start_time": "2026-11-23T18:20:51.544021+00:00",
+          "threshold": 1.4,
+          "window_hours": 78.4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 3.3 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In five similar hack\u2011related news items, four saw Bitcoin fall the next day (\u20110.8% to \u20119.8%) while only one showed a small rise (+1.7%).",
+        "similar": [
+          {
+            "id": "BTC-20261111-02",
+            "date": "2026-11-11",
+            "title": "Binance hack reveals crypto's uphill battle against hackers",
+            "d1": -0.76,
+            "d7": -13.12,
+            "peak_hours": 86.6,
+            "source": "MINT",
+            "score": 0.77
+          },
+          {
+            "id": "BTC-20261112-07",
+            "date": "2026-11-12",
+            "title": "Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
+            "d1": -3.78,
+            "d7": -11.13,
+            "peak_hours": 153.3,
+            "source": "MINT",
+            "score": 0.74
+          },
+          {
+            "id": "BTC-20261118-03",
+            "date": "2026-11-18",
+            "title": "After $6.3 billion crypto heist, Binance plans foray into 5 Asian markets",
+            "d1": -1.82,
+            "d7": null,
+            "peak_hours": 70.3,
+            "source": "MINT",
+            "score": 0.74
+          },
+          {
+            "id": "BTC-20261120-02",
+            "date": "2026-11-20",
+            "title": "DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
+            "d1": -9.77,
+            "d7": null,
+            "peak_hours": 23.7,
+            "source": "MINT",
+            "score": 0.74
+          },
+          {
+            "id": "BTC-20261120-06",
+            "date": "2026-11-20",
+            "title": "Binance hack laundering ramps up as $149 million in bitcoin mixed through coinjoins: Elliptic",
+            "d1": 1.69,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.74
+          }
+        ],
+        "votes": {
+          "up": 0.74,
+          "down": 5.17
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-23T18:21:05.789535+00:00",
+          "low": -1.03,
+          "mid": -2.8,
+          "high": -5.64,
+          "window_hours": 78.4,
+          "probability": 0.57,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 2.8%)",
+          "window_basis": "similar past moves peaked after about 3.3 days",
+          "sigma": 2.82,
+          "threshold": 1.4,
+          "floor": 1.15,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.2x a normal day, price +1.4%",
+            "buy_sell": "buyers started 51% of trades (24 h); 54% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 0.74,
+            "down": 5.17
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A large amount of stolen ETH from the Binance 2026 hack was moved, reminding the market of the ongoing hack fallout and potentially shaking confidence.",
+        "what_past_events_show": "In five similar hack\u2011related news items, four saw Bitcoin fall the next day (\u20110.8% to \u20119.8%) while only one showed a small rise (+1.7%).",
+        "direction": "down",
+        "why": [
+          "Most past hack\u2011related headlines caused a price drop.",
+          "Hack news usually hurts trust and can trigger selling."
+        ],
+        "watch_next": "If Binance announces a reimbursement plan or authorities recover the stolen funds, the negative impact could be lessened.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-23T18:20:51.544021+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-23T18:21:09.891235+00:00"
+      }
     }
   ],
   "counter": {
@@ -40662,32 +40896,33 @@
     "GOLD-20261122": 1,
     "BTC-20261122": 1,
     "GOLD-20261123": 6,
-    "BTC-20261123": 6
+    "BTC-20261123": 7
   },
   "last_run": {
-    "run_time": "2026-11-23T18:15:53.900943+00:00",
+    "run_time": "2026-11-23T18:20:51.544021+00:00",
     "test_mode": false,
-    "stories": 147,
-    "off_topic": 73,
-    "repeats": 74,
-    "new_events": 0,
+    "stories": 153,
+    "off_topic": 77,
+    "repeats": 75,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: Chainflip's losses climb to $12 million after protocol discloses 122.9 BTC theft, offers hacker bounty",
-          "Alert: JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru"
+          "Alert: JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru",
+          "Being checked: 9,293 $ETH (16,178,638 USD) of stolen funds transferred from Binance Hack 2026 to Binance Hack 2026 Details (approved social media account: Whale Alert (Telegram) (from social media))"
         ]
       },
       "Gold": {
@@ -40711,7 +40946,8 @@
       "state": "Alert",
       "reasons": [
         "Alert: Chainflip's losses climb to $12 million after protocol discloses 122.9 BTC theft, offers hacker bounty",
-        "Alert: JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru"
+        "Alert: JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru",
+        "Alert: 9,293 $ETH (16,178,638 USD) of stolen funds transferred from Binance Hack 2026 to Binance Hack 2026 Details"
       ]
     },
     "Gold": {
