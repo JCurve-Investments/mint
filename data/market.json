@@ -3702,14 +3702,18 @@
     "s": 42.7322
    },
    "1795388400": {
-    "b": 119.7053,
-    "s": 87.4924
+    "b": 124.7981,
+    "s": 89.2749
+   },
+   "1795392000": {
+    "b": 1.5535,
+    "s": 5.1048
    }
   },
-  "trades_cursor": "1795391747026467134",
+  "trades_cursor": "1795392096636253282",
   "flow_source": "Kraken",
-  "book_bid_share": 0.409,
-  "book_time": "2026-11-22T23:55:34.887619+00:00"
+  "book_bid_share": 0.423,
+  "book_time": "2026-11-23T00:01:26.572948+00:00"
  },
  "Gold": {
   "bars": [
@@ -6666,23 +6670,23 @@
   ],
   "cot_time": "2026-11-22T12:15:50.303620+00:00"
  },
- "time": "2026-11-22T23:55:34.887619+00:00",
+ "time": "2026-11-23T00:01:26.572948+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 0.72,
-    "change_24h": 1.38,
+    "ratio": 0.73,
+    "change_24h": 1.39,
     "text": "quiet: 0.7x a normal day (moves are less reliable)",
     "ok": true
    },
    "buy_sell": {
-    "vote": 0,
-    "taker_buy_share": 0.546,
-    "book_bid_share": 0.409,
-    "up_volume_share": 0.44,
-    "text": "buyers started 55% of trades (24 h); 41% of waiting orders near the price are buy orders",
+    "vote": 1,
+    "taker_buy_share": 0.547,
+    "book_bid_share": 0.423,
+    "up_volume_share": 0.448,
+    "text": "buyers started 55% of trades (24 h); 42% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
