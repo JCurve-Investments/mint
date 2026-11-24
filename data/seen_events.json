@@ -42266,6 +42266,234 @@
         "first_sent_at": "2026-11-24T12:46:09.522667+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261124-03",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "Behind Binance Hack, a Reckoning Over Who Controls Crypto",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-24T13:25:36.656466+00:00",
+      "earliest_report": "2026-11-24T13:00:07+00:00",
+      "last_updated": "2026-11-24T13:25:36.656466+00:00",
+      "words": [
+        "behind",
+        "binance",
+        "control",
+        "crypto",
+        "hack",
+        "over",
+        "reckon"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Behind Binance Hack, a Reckoning Over Who Controls Crypto",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSkZ0TG9ZRWFQUm1mcUI0MWRhN0JDdzVLYXlYOWhpQjdjdVloZlRZc3hET3I0LS13UndWWVI0ZHlWdHNJS0JFOTFMLVFlYXNWVlNMY3Q5MlhxdllrLUYtX3V5RmZmZ3RxdEVwSU12dzdGS2RUek5qeW1lbmd4bGhzVzQwY0JNMkp3d0VCQVVyNngwU3JOR2VYemt5V2xURGtuTkJSaC1mZ0NGNUE?oc=5",
+          "published": "2026-11-24T13:00:07+00:00",
+          "found_at": "2026-11-24T13:25:36.656466+00:00",
+          "summary": "",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-24T13:25:36.656466+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-24T13:25:36.656466+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-24T13:25:36.656466+00:00",
+          "note": "confirmed -> alerted: The hack is a fresh event that could negatively affect Bitcoin, so an alert is needed."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-24",
+        "date_evidence": "Article published 2026-11-24 13:00",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Exchange hacks have historically pushed Bitcoin lower",
+        "alert_title": "Binance hack raises Bitcoin risk",
+        "alert_message": "A hack at Binance was reported, showing security issues that could hurt confidence and push Bitcoin down.",
+        "why_it_matters": [
+          "Security breach may reduce trust",
+          "Potential sell\u2011off from users"
+        ],
+        "reason": "The hack is a fresh event that could negatively affect Bitcoin, so an alert is needed.",
+        "time": "2026-11-24T13:25:36.656466+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nBinance hack raises Bitcoin risk\n\nA hack at Binance was reported, showing security issues that could hurt confidence and push Bitcoin down.\n\nMINT's prediction: Bitcoin DOWN - Recent Binance\u2011related hacks all led to price drops the next day, ranging from about \u20130.8% to \u20139.8%.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 24 Nov 13:25 UTC",
+        "telegram_sent_at": "2026-11-24T13:25:36.656466+00:00"
+      },
+      "outcome": {
+        "start_price": 60407.66,
+        "start_time": "2026-11-24T12:54:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.4,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-24T12:54:20+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.9 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 60407.66,
+          "start_time": "2026-11-24T13:25:36.656466+00:00",
+          "threshold": 1.42,
+          "window_hours": 70.3,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.9 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Recent Binance\u2011related hacks all led to price drops the next day, ranging from about \u20130.8% to \u20139.8%.",
+        "similar": [
+          {
+            "id": "BTC-20261111-02",
+            "date": "2026-11-11",
+            "title": "Binance hack reveals crypto's uphill battle against hackers",
+            "d1": -0.76,
+            "d7": -13.12,
+            "peak_hours": 86.6,
+            "source": "MINT",
+            "score": 0.86
+          },
+          {
+            "id": "BTC-20261118-03",
+            "date": "2026-11-18",
+            "title": "After $6.3 billion crypto heist, Binance plans foray into 5 Asian markets",
+            "d1": -1.82,
+            "d7": null,
+            "peak_hours": 70.3,
+            "source": "MINT",
+            "score": 0.86
+          },
+          {
+            "id": "BTC-20261112-07",
+            "date": "2026-11-12",
+            "title": "Coinbase CEO Brian Armstrong talks Binance hack, Democrats' sweep",
+            "d1": -3.78,
+            "d7": -11.13,
+            "peak_hours": 153.3,
+            "source": "MINT",
+            "score": 0.81
+          },
+          {
+            "id": "BTC-20261119-02",
+            "date": "2026-11-19",
+            "title": "12,000 $ETH (21,634,987 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+            "d1": -2.83,
+            "d7": null,
+            "peak_hours": 47.1,
+            "source": "MINT",
+            "score": 0.81
+          },
+          {
+            "id": "BTC-20261120-02",
+            "date": "2026-11-20",
+            "title": "DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
+            "d1": -9.77,
+            "d7": null,
+            "peak_hours": 23.7,
+            "source": "MINT",
+            "score": 0.81
+          }
+        ],
+        "votes": {
+          "up": 0.81,
+          "down": 5.65
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-24T13:25:51.851710+00:00",
+          "low": -1.29,
+          "mid": -2.83,
+          "high": -5.7,
+          "window_hours": 70.3,
+          "probability": 0.79,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 2.8%)",
+          "window_basis": "similar past moves peaked after about 2.9 days",
+          "sigma": 2.85,
+          "threshold": 1.42,
+          "floor": 1.16,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.4x a normal day, price -5.3% - real selling",
+            "buy_sell": "buyers started 44% of trades (24 h); 50% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0.81,
+            "down": 5.65
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bloomberg reports a new hack at Binance, raising questions about who controls crypto and potentially shaking confidence in the exchange.",
+        "what_past_events_show": "Recent Binance\u2011related hacks all led to price drops the next day, ranging from about \u20130.8% to \u20139.8%.",
+        "direction": "down",
+        "why": [
+          "A hack on a major exchange erodes trust and can trigger panic withdrawals.",
+          "The market usually reacts negatively in the first 24\u202fhours after such news."
+        ],
+        "watch_next": "If Binance quickly confirms that user funds are safe or promises compensation, the impact could be lessened.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-24T13:25:36.656466+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-24T13:25:54.769116+00:00"
+      }
     }
   ],
   "counter": {
@@ -42306,31 +42534,31 @@
     "GOLD-20261123": 7,
     "BTC-20261123": 7,
     "GOLD-20261124": 2,
-    "BTC-20261124": 2
+    "BTC-20261124": 3
   },
   "last_run": {
-    "run_time": "2026-11-24T13:21:02.537142+00:00",
+    "run_time": "2026-11-24T13:25:36.656466+00:00",
     "test_mode": false,
-    "stories": 3,
-    "off_topic": 1,
-    "repeats": 2,
-    "new_events": 0,
+    "stories": 180,
+    "off_topic": 95,
+    "repeats": 84,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Watch",
         "reasons": [
-          "3 check(s) failed in the last run (internet problem?) - see Agents"
+          "Being checked: Behind Binance Hack, a Reckoning Over Who Controls Crypto (reliable source: Bloomberg)"
         ]
       },
       "Gold": {
@@ -42341,17 +42569,16 @@
           "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
           "Alert: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
           "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
-          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
-          "4 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha"
         ]
       }
     }
   },
   "last_states": {
     "Bitcoin": {
-      "state": "Calm",
+      "state": "Alert",
       "reasons": [
-        "Nothing important found."
+        "Alert: Behind Binance Hack, a Reckoning Over Who Controls Crypto"
       ]
     },
     "Gold": {
