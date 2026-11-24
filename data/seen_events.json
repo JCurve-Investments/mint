@@ -43312,6 +43312,243 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-24T15:01:46.129652+00:00"
       }
+    },
+    {
+      "id": "BTC-20261124-05",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: The Block",
+      "first_seen": "2026-11-24T16:55:39.520295+00:00",
+      "earliest_report": "2026-11-24T16:45:00+00:00",
+      "last_updated": "2026-11-24T16:55:39.520295+00:00",
+      "words": [
+        "28.5",
+        "ban",
+        "behind",
+        "binance",
+        "chainalysi",
+        "coinbase",
+        "crypto",
+        "europol",
+        "involv",
+        "million",
+        "operation",
+        "servic",
+        "stream",
+        "trac"
+      ],
+      "amounts": [
+        28.5
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
+          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQb2ZsUU9wU1k2MXdLeUpzbEpvaVRNaFo1VWw3ajBVbFBBUXNVWWNadHhCUGI0NlpvOS1YOEZTcEdfd1hSdzhGRlNQTEN3d1B6UFpPZjNHU1NPNnBDcnIzNHN1SU5LbDNYUG15SHlzMTdoanpuT05fdmdOSGZSWEd0aVVVSU10eWc3ZGVLUVhzSElPSXE5aThHa3FTUXJQLUNidFlTcllCSEpzaW0xTVdXTTBOV3VqLVFiZS1IdHZ0enNteGUzMTk1clBLOVYwNTNwUGw1b0QzQ0NITmNWcVh0eTEySEI2d0g2bGVsZF9Yaw?oc=5",
+          "published": "2026-11-24T16:45:00+00:00",
+          "found_at": "2026-11-24T16:55:39.520295+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-24T16:55:39.520295+00:00",
+          "note": "new event, first report by The Block"
+        },
+        {
+          "time": "2026-11-24T16:55:39.520295+00:00",
+          "note": "new -> confirmed: reliable source: The Block - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-24T16:55:39.520295+00:00",
+          "note": "confirmed -> alerted: The crackdown is a new regulatory event that could pressure Bitcoin price."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-24",
+        "date_evidence": "The article was published on 2026-11-24 and reports the Europol operation.",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a price drop",
+        "expected_direction": "down",
+        "direction_reason": "crackdowns have historically caused Bitcoin to fall",
+        "alert_title": "Europol crackdown hits major crypto platforms",
+        "alert_message": "Europol seized $28.5\u202fmillion linked to illegal streaming, targeting Binance, Coinbase and Chainalysis, raising regulatory pressure on Bitcoin.",
+        "why_it_matters": [
+          "Increased regulatory scrutiny on major exchanges",
+          "Potential for bans or lawsuits affecting market confidence"
+        ],
+        "reason": "The crackdown is a new regulatory event that could pressure Bitcoin price.",
+        "time": "2026-11-24T16:55:39.520295+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nEuropol crackdown hits major crypto platforms\n\nEuropol seized $28.5\u202fmillion linked to illegal streaming, targeting Binance, Coinbase and Chainalysis, raising regulatory pressure on Bitcoin.\n\nMINT's prediction: Bitcoin DOWN - Past crackdowns on major players (China probe\u202f\u20111.5%, China ban\u202f\u20114.6%, SEC suit vs Binance\u202f\u20115.0%) all pushed Bitcoin down the next day, while the only positive case (SEC suit vs Coinbase) was an outlier.\n\nBitcoin had already moved +0.0% since the first report.\nSources: The Block\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 24 Nov 16:55 UTC",
+        "telegram_sent_at": "2026-11-24T16:55:39.520295+00:00"
+      },
+      "outcome": {
+        "start_price": 59661.84,
+        "start_time": "2026-11-24T16:24:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.2,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-24T16:24:00+00:00",
+          "hours": -0.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 59661.84,
+          "start_time": "2026-11-24T16:55:39.520295+00:00",
+          "threshold": 2.15,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Past crackdowns on major players (China probe\u202f\u20111.5%, China ban\u202f\u20114.6%, SEC suit vs Binance\u202f\u20115.0%) all pushed Bitcoin down the next day, while the only positive case (SEC suit vs Coinbase) was an outlier.",
+        "similar": [
+          {
+            "id": "BTC-20261110-01",
+            "date": "2026-11-10",
+            "title": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+            "d1": -1.48,
+            "d7": -13.26,
+            "peak_hours": 116.4,
+            "source": "MINT",
+            "score": 0.67
+          },
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.66
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.64
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.64
+          },
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.63
+          }
+        ],
+        "votes": {
+          "up": 1.27,
+          "down": 4.09
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-24T16:55:51.932459+00:00",
+          "low": -2.75,
+          "mid": -4.29,
+          "high": -5.72,
+          "window_hours": 54.0,
+          "probability": 0.61,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 4.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.86,
+          "threshold": 2.15,
+          "floor": 1.17,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price -3.9%",
+            "buy_sell": "buyers started 44% of trades (24 h); 48% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.27,
+            "down": 4.09
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Europol busted a scheme that used Binance, Coinbase and Chainalysis to move $28.5\u202fmillion for illegal streaming, highlighting a law\u2011enforcement crackdown on big crypto platforms.",
+        "what_past_events_show": "Past crackdowns on major players (China probe\u202f\u20111.5%, China ban\u202f\u20114.6%, SEC suit vs Binance\u202f\u20115.0%) all pushed Bitcoin down the next day, while the only positive case (SEC suit vs Coinbase) was an outlier.",
+        "direction": "down",
+        "why": [
+          "Big exchanges are involved, raising regulatory risk",
+          "Similar past crackdowns caused price drops"
+        ],
+        "watch_next": "If authorities announce further actions or fines, the pressure could grow; a quick clarification or cooperation from the exchanges could soften the impact.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-24T16:55:39.520295+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-24T16:55:55.698157+00:00"
+      }
     }
   ],
   "counter": {
@@ -43352,26 +43589,26 @@
     "GOLD-20261123": 7,
     "BTC-20261123": 9,
     "GOLD-20261124": 2,
-    "BTC-20261124": 4
+    "BTC-20261124": 5
   },
   "last_run": {
-    "run_time": "2026-11-24T16:50:57.170316+00:00",
+    "run_time": "2026-11-24T16:55:39.520295+00:00",
     "test_mode": false,
-    "stories": 4,
-    "off_topic": 1,
-    "repeats": 3,
-    "new_events": 0,
+    "stories": 189,
+    "off_topic": 104,
+    "repeats": 84,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -43379,8 +43616,8 @@
           "Alert: Behind Binance Hack, a Reckoning Over Who Controls Crypto",
           "Alert: Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
           "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
-          "US stock market (Nasdaq) fell -2.11% on its last day",
-          "3 check(s) failed in the last run (internet problem?) - see Agents"
+          "Being checked: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services (reliable source: The Block)",
+          "US stock market (Nasdaq) fell -2.11% on its last day"
         ]
       },
       "Gold": {
@@ -43391,8 +43628,7 @@
           "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
           "Alert: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
           "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
-          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
-          "4 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha"
         ]
       }
     }
@@ -43403,7 +43639,8 @@
       "reasons": [
         "Alert: Behind Binance Hack, a Reckoning Over Who Controls Crypto",
         "Alert: Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
-        "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events"
+        "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
+        "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services"
       ]
     },
     "Gold": {
