@@ -39858,13 +39858,19 @@
       "proof_reason": "reliable source: Wall Street Journal",
       "first_seen": "2026-11-23T13:01:29.170894+00:00",
       "earliest_report": "2026-11-23T11:43:00+00:00",
-      "last_updated": "2026-11-23T13:01:29.170894+00:00",
+      "last_updated": "2026-11-24T17:01:26.788252+00:00",
       "words": [
         "bets",
+        "data",
+        "fed",
         "focus",
         "gold",
+        "hawkish",
+        "inflation",
+        "lower",
         "rate-hike",
-        "rise"
+        "rise",
+        "ticks"
       ],
       "amounts": [],
       "old_clues": [],
@@ -39877,6 +39883,17 @@
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUUp2UDBCTFlrSzhHd19iLU0zX3JqX1ByTHhkakJ5LVdoUGRzZzVkRTBLX0Q1SG9XQXZYQ0hmeTJocm1OdHlweFFtYkdWZzh5dHNTc185R3NYdTRpQkxMenowS2hGMFhKZVNwZG5ra0dEZmlUM1N3a1ZRUURFdHNwazI5YnEtSGxqUU4zVk9LWlpOTldramRYbXo3VQ?oc=5",
           "published": "2026-11-23T11:43:00+00:00",
           "found_at": "2026-11-23T13:01:29.170894+00:00",
+          "summary": "",
+          "factor": "G2"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Gold ticks lower on hawkish Fed bets, US inflation data in focus",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX2lLRXdXdmpCM0FsdHVpNkdYTWttMDRZd294U3VSZGtqczloSEN5N1VfTzBpbjJLZGYwWm55RDlXSmY0b2tod0tBUl9lbkl4TW13VDBuWEVDYjgxamc4anBNdGhtWTdvUUNiYUp5MDlJVU81Sl9qa283bUIzTUNCU0lZZ1VBdXo2UW5hQmoyT191dFpWODY2aldnOVJmRzVaaV9tZDF2U0hKbmRubUg0TllIendaRzg?oc=5",
+          "published": "2026-11-24T00:57:00+00:00",
+          "found_at": "2026-11-24T17:01:26.788252+00:00",
           "summary": "",
           "factor": "G2"
         }
@@ -39893,6 +39910,10 @@
         {
           "time": "2026-11-23T13:01:29.170894+00:00",
           "note": "confirmed -> alerted: New report about Fed rate\u2011hike expectations, a known driver for gold, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-24T17:01:26.788252+00:00",
+          "note": "another report from Reuters - same event, no new alert"
         }
       ],
       "decision": {
@@ -43592,23 +43613,23 @@
     "BTC-20261124": 5
   },
   "last_run": {
-    "run_time": "2026-11-24T16:55:39.520295+00:00",
+    "run_time": "2026-11-24T17:01:26.788252+00:00",
     "test_mode": false,
-    "stories": 189,
-    "off_topic": 104,
-    "repeats": 84,
-    "new_events": 1,
+    "stories": 136,
+    "off_topic": 76,
+    "repeats": 59,
+    "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -43616,8 +43637,8 @@
           "Alert: Behind Binance Hack, a Reckoning Over Who Controls Crypto",
           "Alert: Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
           "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
-          "Being checked: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services (reliable source: The Block)",
-          "US stock market (Nasdaq) fell -2.11% on its last day"
+          "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
+          "US stock market (Nasdaq) fell -2.25% on its last day"
         ]
       },
       "Gold": {
