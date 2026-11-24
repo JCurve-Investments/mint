@@ -36851,9 +36851,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 6,
+          "done": 7,
           "right": 0,
-          "wrong": 6,
+          "wrong": 7,
           "total": 9
         },
         "final": false,
@@ -36901,6 +36901,12 @@
           "price": 61713.83,
           "move": 10.75,
           "time": "2026-11-23T06:10:58.736042+00:00",
+          "verdict": "wrong"
+        },
+        "h84": {
+          "price": 60066.3,
+          "move": 7.79,
+          "time": "2026-11-24T18:10:58.736042+00:00",
           "verdict": "wrong"
         }
       },
@@ -43852,6 +43858,218 @@
         "first_sent_at": "2026-11-24T17:11:14.955683+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261124-04",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-24T18:25:49.621694+00:00",
+      "earliest_report": "2026-11-24T18:01:16+00:00",
+      "last_updated": "2026-11-24T18:25:49.621694+00:00",
+      "words": [
+        "bca",
+        "bullish",
+        "dollar",
+        "ends",
+        "fed",
+        "four-year",
+        "gold",
+        "research",
+        "take",
+        "toll",
+        "trade"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcjhPY25yQXRaRWxrZmlnVzJqcmxybUNuZnd0ZTRQN1FpbXk3ZWdnN1U3VzIxUWpERFRCczJGbjJLS2hJbjJqbXpJdmtlMmhVWmJNbkFkZDl2NW02a2tNZnFfZmVfZl9fbzIwYmdEWk84RGlSRTRhdU5HV0ZHeDhTaURIWVJSdTdKanZjSkhFSlRPYnR0akNYT1NoYm5fM3Y5REk5Z1VucVJZNVpPUkhqWFFpcEcweUhB?oc=5",
+          "published": "2026-11-24T18:01:16+00:00",
+          "found_at": "2026-11-24T18:25:49.621694+00:00",
+          "summary": "",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-24T18:25:49.621694+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-24T18:25:49.621694+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-24T18:25:49.621694+00:00",
+          "note": "confirmed -> alerted: New research downgrade linked to dollar strength, a known bearish factor for gold"
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-24",
+        "date_evidence": "Article published 2026-11-24 18:01",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Past pattern shows a stronger dollar pushes gold lower",
+        "alert_title": "Gold outlook turns bearish",
+        "alert_message": "BCA Research ends four\u2011year bullish gold trade, citing a strong US dollar and Fed actions, which could pressure gold lower.",
+        "why_it_matters": [
+          "Research downgrade signals shift in market sentiment",
+          "Strong dollar historically hurts gold prices"
+        ],
+        "reason": "New research downgrade linked to dollar strength, a known bearish factor for gold",
+        "time": "2026-11-24T18:25:49.621694+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nGold outlook turns bearish\n\nBCA Research ends four\u2011year bullish gold trade, citing a strong US dollar and Fed actions, which could pressure gold lower.\n\nMINT's prediction: Gold DOWN - When a firmer dollar hit gold, it fell 0.9% and 0.1% the next day, while a pause in the dollar rally saw a 0.5% rise.\n\nGold had already moved +0.0% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 24 Nov 18:25 UTC",
+        "telegram_sent_at": "2026-11-24T18:25:49.621694+00:00"
+      },
+      "outcome": {
+        "start_price": 3555.64,
+        "start_time": "2026-11-24T18:09:30+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.4,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-24T18:09:30+00:00",
+          "hours": 0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3555.64,
+          "start_time": "2026-11-24T18:25:49.621694+00:00",
+          "threshold": 0.55,
+          "window_hours": 4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "When a firmer dollar hit gold, it fell 0.9% and 0.1% the next day, while a pause in the dollar rally saw a 0.5% rise.",
+        "similar": [
+          {
+            "id": "GOLD-20261118-01",
+            "date": "2026-11-18",
+            "title": "Gold Down 2.5% on Firmer Dollar, Rate-Hike Bets",
+            "d1": -0.95,
+            "d7": null,
+            "peak_hours": 68.8,
+            "source": "MINT",
+            "score": 0.5
+          },
+          {
+            "id": "GOLD-20261116-03",
+            "date": "2026-11-16",
+            "title": "Weekly Markets Monitor - Waller the Dollar",
+            "d1": -0.11,
+            "d7": -6.51,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.48
+          },
+          {
+            "id": "GOLD-20261123-03",
+            "date": "2026-11-23",
+            "title": "Gold climbs more than 2% as dollar rally pauses",
+            "d1": 0.45,
+            "d7": null,
+            "peak_hours": 11.2,
+            "source": "MINT",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 0.45,
+          "down": 0.98
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-24T18:26:04.763724+00:00",
+          "low": -0.32,
+          "mid": -0.53,
+          "high": -0.74,
+          "window_hours": 4,
+          "probability": 0.62,
+          "agree": 2,
+          "similar": 3,
+          "basis": "2 of 3 similar past events moved this way (typical move 0.5%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.34,
+          "threshold": 0.55,
+          "floor": 0.55,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.0x a normal day, price -2.2%",
+            "buy_sell": "33% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.6,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0.45,
+            "down": 0.98
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "BCA Research says the recent strong US dollar and Fed tightening are ending the recent gold rally.",
+        "what_past_events_show": "When a firmer dollar hit gold, it fell 0.9% and 0.1% the next day, while a pause in the dollar rally saw a 0.5% rise.",
+        "direction": "down",
+        "why": [
+          "A stronger dollar makes gold more expensive for non\u2011dollar buyers, usually pulling price down.",
+          "Fed tightening adds pressure on gold by raising the appeal of higher\u2011yielding assets."
+        ],
+        "watch_next": "If the dollar keeps rising or the Fed signals more hikes, the downside could be stronger; a sudden safe\u2011haven shock could offset it.",
+        "confidence": "medium",
+        "confidence_reason": "2 of 3 similar past events moved this way",
+        "time": "2026-11-24T18:25:49.621694+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-24T18:26:08.295896+00:00"
+      }
     }
   ],
   "counter": {
@@ -43891,27 +44109,27 @@
     "BTC-20261122": 1,
     "GOLD-20261123": 7,
     "BTC-20261123": 9,
-    "GOLD-20261124": 3,
+    "GOLD-20261124": 4,
     "BTC-20261124": 5
   },
   "last_run": {
-    "run_time": "2026-11-24T18:20:56.830023+00:00",
+    "run_time": "2026-11-24T18:25:49.621694+00:00",
     "test_mode": false,
-    "stories": 179,
-    "off_topic": 98,
+    "stories": 184,
+    "off_topic": 102,
     "repeats": 81,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -43930,7 +44148,8 @@
           "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
           "Alert: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
           "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
-          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha"
+          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
+          "Being checked: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll (reliable source: Kitco News)"
         ]
       }
     }
@@ -43953,7 +44172,8 @@
         "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
         "Alert: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
         "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
-        "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha"
+        "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
+        "Alert: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll"
       ]
     }
   },
