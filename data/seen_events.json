@@ -40455,8 +40455,9 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-23T16:31:24.048855+00:00",
       "earliest_report": "2026-11-23T10:53:19+00:00",
-      "last_updated": "2026-11-24T06:45:50.951874+00:00",
+      "last_updated": "2026-11-24T11:20:53.828042+00:00",
       "words": [
+        "1.1",
         "1.17",
         "2.35",
         "account",
@@ -40476,6 +40477,7 @@
         "doj",
         "eth",
         "files",
+        "forfeit",
         "funds",
         "hack",
         "halt",
@@ -40487,6 +40489,7 @@
         "offshore",
         "over",
         "recover",
+        "remain",
         "replacement",
         "route",
         "rules",
@@ -40501,6 +40504,7 @@
         "transfer",
         "transferr",
         "unlaunder",
+        "unrecover",
         "usd",
         "usdc",
         "while"
@@ -40508,6 +40512,7 @@
       "amounts": [
         247.0,
         1000.0,
+        1100.0,
         1170.0,
         2350.0
       ],
@@ -40589,6 +40594,17 @@
           "found_at": "2026-11-24T06:45:50.951874+00:00",
           "summary": "",
           "factor": "B2"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "DOJ moves to forfeit $1.1 billion in frozen USDC from Binance hack as billions remain unrecovered",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYjI5MnZGSDN3TWFNUndOdWNXZXNDTVNBT2tuemZseGhXQXZmaWQ3OXR3dEZPM1E1QUt1ZE1EbUxqSkM0ZzkxX2xINmpDZzRxQlhjMTByRy1qSVhvS3N1MjZCQTgyR2JjRWtPOXdzUnZYMFY3LThsbjZnbFJhWnI4bzlta1N2MFp2dFpDM08tMEowVUN2amZ2Zmw2WFhPOW15cVNqN0U2SmJMcnV6MElPTjAweWlsenh4c0RJODdVb01SZw?oc=5",
+          "published": "2026-11-24T10:58:51+00:00",
+          "found_at": "2026-11-24T11:20:53.828042+00:00",
+          "summary": "",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -40615,6 +40631,10 @@
         {
           "time": "2026-11-24T06:45:50.951874+00:00",
           "note": "another report from The Block - same event, no new alert"
+        },
+        {
+          "time": "2026-11-24T11:20:53.828042+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": {
@@ -42035,14 +42055,14 @@
     "BTC-20261124": 1
   },
   "last_run": {
-    "run_time": "2026-11-24T11:16:02.743526+00:00",
+    "run_time": "2026-11-24T11:20:53.828042+00:00",
     "test_mode": false,
-    "stories": 136,
-    "off_topic": 74,
-    "repeats": 62,
+    "stories": 177,
+    "off_topic": 99,
+    "repeats": 77,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
