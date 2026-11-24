@@ -38240,16 +38240,22 @@
       "proof_reason": "reliable source: Bloomberg",
       "first_seen": "2026-11-23T02:01:30.152122+00:00",
       "earliest_report": "2026-11-23T00:28:00+00:00",
-      "last_updated": "2026-11-23T02:01:30.152122+00:00",
+      "last_updated": "2026-11-24T18:31:13.919934+00:00",
       "words": [
         "bets",
+        "extend",
         "fed",
         "gold",
         "hike",
+        "kitco",
         "near-term",
         "pare",
+        "pressure",
         "rate",
         "rebound",
+        "report",
+        "silver",
+        "struggl",
         "trader"
       ],
       "amounts": [],
@@ -38263,6 +38269,17 @@
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVy1Pa3puQ1RUS0xLT3pTdTBrdUc0Q0J4TkFqMW81cXpOdUpQSU9LV2wtNlJIS19wOG9uMEVEUlZkZUNIQXJBcXdNeWdaV0JiXzF4WGluNWtSaVU4T09reFVtYkc0dXJOZkFLXzFMUGNzOVl1SHRVaG5PR3dvVnpwR3VTbGJibEloRHVzcjQxYWc5UWxZdWR5OWdmdGE5UTh0c1NSRF9vc09YUk1aVHNFNmFVZw?oc=5",
           "published": "2026-11-23T00:28:00+00:00",
           "found_at": "2026-11-23T02:01:30.152122+00:00",
+          "summary": "",
+          "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold struggles to extend rebound as Fed rate hike bets pressure silver - Kitco AM Report",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRXZLTW5tSldXS2RtLTBnUXc0MFZ6QkRwYjNINlNUdThxVXNnMElPTE5ZUjE3T1hQdktPdUx2VTZPTjZFa0Y4NVlvamQxRGFJUWg0UEhVZnF5OTdtYkpYWURzSFpGNktoR2REcjJ5bkkteHEycG52Q0I2b3QtaDVOeFNKU0dFTmFGYnVLTmM3R21KVzlFeFJlejVXV3RfbTZSdHFiZFNGWFhUb01JZW1sU2xJdFpsa3Q4R1Br?oc=5",
+          "published": "2026-11-24T13:45:25+00:00",
+          "found_at": "2026-11-24T18:31:13.919934+00:00",
           "summary": "",
           "factor": "G2"
         }
@@ -38279,6 +38296,10 @@
         {
           "time": "2026-11-23T02:01:30.152122+00:00",
           "note": "confirmed -> alerted: New Fed\u2011rate expectation shift was just reported and already moved gold, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-24T18:31:13.919934+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -44113,23 +44134,23 @@
     "BTC-20261124": 5
   },
   "last_run": {
-    "run_time": "2026-11-24T18:25:49.621694+00:00",
+    "run_time": "2026-11-24T18:31:13.919934+00:00",
     "test_mode": false,
-    "stories": 184,
-    "off_topic": 102,
-    "repeats": 81,
-    "new_events": 1,
+    "stories": 160,
+    "off_topic": 86,
+    "repeats": 73,
+    "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -44149,7 +44170,7 @@
           "Alert: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
           "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
           "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
-          "Being checked: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll (reliable source: Kitco News)"
+          "Alert: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll"
         ]
       }
     }
