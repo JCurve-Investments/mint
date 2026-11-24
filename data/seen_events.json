@@ -31275,8 +31275,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 7,
-          "right": 4,
+          "done": 8,
+          "right": 5,
           "wrong": 0,
           "total": 9
         },
@@ -31349,6 +31349,12 @@
           "move": -1.53,
           "time": "2026-11-23T06:10:05+00:00",
           "verdict": "flat"
+        },
+        "d5": {
+          "price": 60066.3,
+          "move": -4.15,
+          "time": "2026-11-24T18:10:05+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -43767,12 +43773,18 @@
           "size": null
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
           "wrong": 0,
           "total": 9
         },
-        "final": false
+        "final": false,
+        "h1": {
+          "price": 3555.64,
+          "move": -0.03,
+          "time": "2026-11-24T18:07:00+00:00",
+          "verdict": "flat"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -43883,11 +43895,11 @@
     "BTC-20261124": 5
   },
   "last_run": {
-    "run_time": "2026-11-24T18:16:08.027468+00:00",
+    "run_time": "2026-11-24T18:20:56.830023+00:00",
     "test_mode": false,
-    "stories": 125,
-    "off_topic": 71,
-    "repeats": 54,
+    "stories": 179,
+    "off_topic": 98,
+    "repeats": 81,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -43918,8 +43930,7 @@
           "Alert: Gold Climbs 3%, Focus on Rate-Hike Bets",
           "Alert: Gold price rallies above $3,600 as AI selloff reshapes Fed outlook - Kitco AM Report",
           "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
-          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
-          "1 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha"
         ]
       }
     }
