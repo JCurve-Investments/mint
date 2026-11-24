@@ -39636,7 +39636,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
           "wrong": 1,
           "total": 9
@@ -39685,7 +39685,14 @@
           "move": 0.03,
           "time": "2026-11-23T22:35:32+00:00",
           "verdict": "flat"
-        }
+        },
+        "d1": {
+          "price": 60374.44,
+          "move": -1.42,
+          "time": "2026-11-24T12:35:32+00:00",
+          "verdict": "flat"
+        },
+        "old_effect": "wrong"
       },
       "prediction": {
         "direction": "down",
@@ -42037,6 +42044,213 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-24T09:01:42.212314+00:00"
       }
+    },
+    {
+      "id": "BTC-20261124-02",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-24T12:45:53.248227+00:00",
+      "earliest_report": "2026-11-24T12:36:28+00:00",
+      "last_updated": "2026-11-24T12:45:53.248227+00:00",
+      "words": [
+        "4.71",
+        "billion",
+        "bitcoin",
+        "etf",
+        "fall",
+        "increase",
+        "november",
+        "outflows",
+        "record",
+        "spot"
+      ],
+      "amounts": [
+        4710.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdXJVWUNETGtpeTZVSDE2QkRDSkJ2XzVwOHBTTjU3OWV0N0JmcDZpZFBaMnluRHp2eVBDcUFOa0hzVWJwd1dxUGZhMGszZG1nWnBJVjN0cEFSUzhISDkzaWRmUi1ObHBUT2dNbi0taDJTVUlJVDEzRWFYWWxteW14TC1mVnZIOFFfTWlDNy1XTkhWc3RXOVN3NTVMRW43ZFp0ZVBsaTZycFI1czdBcnVRQVREVlh1MVlHMnVmcG9na1hFSUE?oc=5",
+          "published": "2026-11-24T12:36:28+00:00",
+          "found_at": "2026-11-24T12:45:53.248227+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-24T12:45:53.248227+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-24T12:45:53.248227+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 60374.44,
+        "start_time": "2026-11-24T12:00:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.2,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-24T12:00:00+00:00",
+          "hours": -0.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4.9 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 60374.44,
+          "start_time": "2026-11-24T12:45:53.248227+00:00",
+          "threshold": 1.16,
+          "window_hours": 118.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4.9 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar past cases, outflows of a few hundred million to a couple of billion dollars led to 1\u2011day drops of \u20130.5% to \u20135.5% (e.g., \u20132.2% after a $2.1\u202fB outflow).",
+        "similar": [
+          {
+            "id": "BTC-20261118-02",
+            "date": "2026-11-18",
+            "title": "US spot Bitcoin ETFs record $240M in outflows as Bitcoin slips below $63,000 and CryptoQuant warns of a bearish phase",
+            "d1": -1.82,
+            "d7": null,
+            "peak_hours": 69.7,
+            "source": "MINT",
+            "score": 0.91
+          },
+          {
+            "id": "BTC-20261112-04",
+            "date": "2026-11-12",
+            "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+            "d1": -5.49,
+            "d7": -13.2,
+            "peak_hours": 155.5,
+            "source": "MINT",
+            "score": 0.8
+          },
+          {
+            "id": "BTC-20261115-02",
+            "date": "2026-11-15",
+            "title": "Bitcoin ETFs Lose $2.1 Billion in November as Outflow Streak Hits Seven Days",
+            "d1": -2.17,
+            "d7": -7.25,
+            "peak_hours": 136.0,
+            "source": "MINT",
+            "score": 0.8
+          },
+          {
+            "id": "BTC-20261116-01",
+            "date": "2026-11-16",
+            "title": "Bitcoin drops to a mid-July low as CZ cites ETF outflows, liquidity shifts, security incidents, inflation and regulation worries",
+            "d1": -0.48,
+            "d7": -5.51,
+            "peak_hours": 118.0,
+            "source": "MINT",
+            "score": 0.8
+          },
+          {
+            "id": "BTC-20261123-02",
+            "date": "2026-11-23",
+            "title": "Spot bitcoin ETFs shed $1.8 billion in past week as outflows become 'structural': analysts",
+            "d1": -1.24,
+            "d7": null,
+            "peak_hours": 29.2,
+            "source": "MINT",
+            "score": 0.8
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 6.38
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-24T12:46:07.510538+00:00",
+          "low": -0.86,
+          "mid": -1.82,
+          "high": -3.83,
+          "window_hours": 118.0,
+          "probability": 0.79,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 1.8%)",
+          "window_basis": "similar past moves peaked after about 4.9 days",
+          "sigma": 2.85,
+          "threshold": 1.16,
+          "floor": 1.16,
+          "lenses": {
+            "volume": -1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.5x a normal day, price -1.7% - real selling",
+            "buy_sell": "buyers started 45% of trades (24 h); 48% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "agrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "volume": 0.75,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 6.38
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin fell as spot Bitcoin ETFs recorded a record $4.71\u202fbillion of outflows, showing investors pulling money out of the market.",
+        "what_past_events_show": "In similar past cases, outflows of a few hundred million to a couple of billion dollars led to 1\u2011day drops of \u20130.5% to \u20135.5% (e.g., \u20132.2% after a $2.1\u202fB outflow).",
+        "direction": "down",
+        "why": [
+          "Large ETF outflows have historically been followed by price declines.",
+          "The current outflow is larger than any recent example, suggesting stronger downward pressure."
+        ],
+        "watch_next": "If the outflow streak continues for several days the drop could deepen; a quick reversal would lessen the impact.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-24T12:45:53.248227+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-24T12:46:09.522667+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -42077,20 +42291,20 @@
     "GOLD-20261123": 7,
     "BTC-20261123": 7,
     "GOLD-20261124": 2,
-    "BTC-20261124": 1
+    "BTC-20261124": 2
   },
   "last_run": {
-    "run_time": "2026-11-24T12:41:02.311805+00:00",
+    "run_time": "2026-11-24T12:45:53.248227+00:00",
     "test_mode": false,
-    "stories": 172,
-    "off_topic": 93,
-    "repeats": 79,
-    "new_events": 0,
+    "stories": 173,
+    "off_topic": 90,
+    "repeats": 82,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
