@@ -40066,8 +40066,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 1,
+          "done": 5,
+          "right": 2,
           "wrong": 2,
           "total": 9
         },
@@ -40116,7 +40116,13 @@
           "time": "2026-11-24T11:43:00+00:00",
           "verdict": "flat"
         },
-        "old_effect": "wrong"
+        "old_effect": "no_clear_move",
+        "h36": {
+          "price": 3552.36,
+          "move": -1.57,
+          "time": "2026-11-24T23:43:00+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -44453,6 +44459,261 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-24T23:46:07.945301+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261124-06",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-24T23:55:39.518596+00:00",
+      "earliest_report": "2026-11-24T00:00:00+00:00",
+      "last_updated": "2026-11-24T23:55:39.518596+00:00",
+      "words": [
+        "big",
+        "cycle",
+        "fed",
+        "goldman",
+        "hike",
+        "meter",
+        "rosner",
+        "watch"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOa0ZBV2c2TklsVzdfWDBEUlZkOFBLbWJPaWxzR3FlLW8ycHJUbXpYQkZua01tVUFreE1jOFF4LUdoWXFJSnVYQVQzSGZOLWtZRW9HU1VBS1phNmpPWEJOQ2NDSjB4Ui1VbmRXUnlsV1ZfM25RekRsTEE5MnlYVXJxSlZLQlIzbEFsTmIzeExVRkh0RlhpekxuZnBicThNM2FQcDdfb0pn?oc=5",
+          "published": "2026-11-24T00:00:00+00:00",
+          "found_at": "2026-11-24T23:55:39.518596+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-24T23:55:39.518596+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-24T23:55:39.518596+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-24T23:55:39.518596+00:00",
+          "note": "confirmed -> alerted: The Fed\u2019s measured hike outlook is a new event and already pushed gold down, so an alert is needed."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-24",
+        "date_evidence": "Bloomberg article published 2026-11-24 UTC",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Fed hikes usually push gold lower",
+        "alert_title": "Fed Hikes Signal Gold May Fall",
+        "alert_message": "Fed indicated future rate hikes will be measured, not a big cycle. Higher rates can pressure gold lower, and price already fell 1.9%.",
+        "why_it_matters": [
+          "Rate hikes tend to weaken gold",
+          "Price already dropped 1.9%"
+        ],
+        "reason": "The Fed\u2019s measured hike outlook is a new event and already pushed gold down, so an alert is needed.",
+        "time": "2026-11-24T23:55:39.518596+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed Hikes Signal Gold May Fall\n\nFed indicated future rate hikes will be measured, not a big cycle. Higher rates can pressure gold lower, and price already fell 1.9%.\n\nMINT's prediction: Gold UP - Similar Fed\u2011related news gave mixed results \u2013 a few hikes saw gold rise about +0.3% the next day, while other hawkish signals pushed it down around \u20130.4% to \u20130.5%.\n\nGold had already moved -1.9% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 24 Nov 23:55 UTC",
+        "telegram_sent_at": "2026-11-24T23:55:39.518596+00:00"
+      },
+      "outcome": {
+        "start_price": 3621.13,
+        "start_time": "2026-11-24T00:00:00+00:00",
+        "moved_before_mint": -1.9,
+        "delay_hours": 23.9,
+        "h1": {
+          "price": 3657.07,
+          "move": 0.99,
+          "time": "2026-11-24T01:00:00+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 3620.46,
+          "move": -0.02,
+          "time": "2026-11-24T05:00:00+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 3610.83,
+          "move": -0.28,
+          "time": "2026-11-24T10:00:00+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": -1.9,
+          "time": "2026-11-24T23:24:50+00:00",
+          "hours": 23.4,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 3,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4 hours window (biggest move so far +0.0%)",
+        "impact": {
+          "peak": -2.14,
+          "peak_hours": 21.0,
+          "faded_hours": null,
+          "against": 0.99,
+          "against_hours": 1.0,
+          "until_hours": 23.4,
+          "text": "Clear impact: Gold fell up to 2.1% (after 21 h). Still in the predicted direction after 23 h (-1.9%)."
+        },
+        "result": {
+          "start_price": 3552.36,
+          "start_time": "2026-11-24T23:55:39.518596+00:00",
+          "threshold": 0.55,
+          "window_hours": 4,
+          "peak": 0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4 hours window (biggest move so far +0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "Similar Fed\u2011related news gave mixed results \u2013 a few hikes saw gold rise about +0.3% the next day, while other hawkish signals pushed it down around \u20130.4% to \u20130.5%.",
+        "similar": [
+          {
+            "id": "GOLD-20261110-03",
+            "date": "2026-11-10",
+            "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
+            "d1": -0.54,
+            "d7": -5.22,
+            "peak_hours": 103.9,
+            "source": "MINT",
+            "score": 0.75
+          },
+          {
+            "id": "START-20220615-G",
+            "date": "2022-06-15",
+            "title": "Fed raises rates by 0.75 point, biggest hike since 1994",
+            "d1": 0.34,
+            "d7": 1.37,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.65
+          },
+          {
+            "id": "START-20220921-G",
+            "date": "2022-09-21",
+            "title": "Fed raises rates by 0.75 point again and signals more hikes",
+            "d1": 0.28,
+            "d7": -0.07,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.65
+          },
+          {
+            "id": "START-20221214-G",
+            "date": "2022-12-14",
+            "title": "Fed slows to a half-point hike but says rates will stay higher for longer",
+            "d1": -0.37,
+            "d7": -0.01,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.65
+          },
+          {
+            "id": "GOLD-20261106-02",
+            "date": "2026-11-06",
+            "title": "Gold falls as U.S. payrolls surge by 165,000, strengthening December Fed hike case - Kitco AM Report",
+            "d1": 0.75,
+            "d7": -3.98,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.65
+          }
+        ],
+        "votes": {
+          "up": 1.95,
+          "down": 2.9
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-24T23:55:59.065387+00:00",
+          "low": 0.2,
+          "mid": 0.34,
+          "high": 0.48,
+          "window_hours": 4,
+          "probability": 0.44,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 0.3%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.34,
+          "threshold": 0.55,
+          "floor": 0.55,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price -1.9%",
+            "buy_sell": "35% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "disagrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.25
+          },
+          "rule_votes": {
+            "up": 1.95,
+            "down": 2.9
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Goldman\u2019s Rosner says the Fed will keep hikes small and measured, not launch a big tightening cycle, which could make gold look more attractive.",
+        "what_past_events_show": "Similar Fed\u2011related news gave mixed results \u2013 a few hikes saw gold rise about +0.3% the next day, while other hawkish signals pushed it down around \u20130.4% to \u20130.5%.",
+        "direction": "up",
+        "why": [
+          "A metered\u2011hike outlook is less hawkish than a big\u2011cycle view, easing pressure on gold.",
+          "When the Fed\u2019s tone is milder than expected, gold has tended to edge higher in the short term."
+        ],
+        "watch_next": "A surprise larger hike or a clear shift to rate cuts would make the gold reaction stronger.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-24T23:55:39.518596+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-24T23:55:59.762707+00:00"
+      }
     }
   ],
   "counter": {
@@ -44492,27 +44753,27 @@
     "BTC-20261122": 1,
     "GOLD-20261123": 7,
     "BTC-20261123": 9,
-    "GOLD-20261124": 5,
+    "GOLD-20261124": 6,
     "BTC-20261124": 5
   },
   "last_run": {
-    "run_time": "2026-11-24T23:50:48.670911+00:00",
+    "run_time": "2026-11-24T23:55:39.518596+00:00",
     "test_mode": false,
-    "stories": 188,
-    "off_topic": 114,
-    "repeats": 74,
-    "new_events": 0,
+    "stories": 181,
+    "off_topic": 107,
+    "repeats": 73,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -44533,7 +44794,8 @@
           "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
           "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
           "Alert: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll",
-          "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report"
+          "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report",
+          "Being checked: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle (reliable source: Bloomberg)"
         ]
       }
     }
@@ -44558,7 +44820,8 @@
         "Alert: Goldman Says Dollar \u2018Has Some Fight\u2019 Left on Rates Path",
         "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
         "Alert: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll",
-        "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report"
+        "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report",
+        "Alert: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle"
       ]
     }
   },
