@@ -40709,18 +40709,27 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-23T16:40:52.162684+00:00",
       "earliest_report": "2026-11-23T14:18:04+00:00",
-      "last_updated": "2026-11-23T16:40:52.162684+00:00",
+      "last_updated": "2026-11-24T06:20:51.485432+00:00",
       "words": [
         "above",
         "fed",
         "gold",
         "kitco",
         "outlook",
+        "pric",
         "price",
         "ralli",
+        "rally",
+        "rebound",
+        "renew",
         "report",
         "reshap",
-        "selloff"
+        "see",
+        "selloff",
+        "shar",
+        "sharp",
+        "silver",
+        "uncertainty"
       ],
       "amounts": [],
       "old_clues": [],
@@ -40733,6 +40742,17 @@
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPenF6LTV0TWdncXg5WDBQNS1Dc2lSVEUwNmpsRzR0UGg4a0VOM21NN2hTNnN1Mk1fZDhmcWs1WU41UW9qcUFieEJnemYyRTdhZy1hakhLbHRXemltSTFVTnBFaEhLdDR5LTYyeElnTjBKdEVNeUFXRnFEQlh5bWllNU1vOEw3eHlaRXZBZzV1WlNXUWd6R3BHdmlTajdyZUJueU5vNTlCUmhvclZtLVRlamJyel9USGM?oc=5",
           "published": "2026-11-23T14:18:04+00:00",
           "found_at": "2026-11-23T16:40:52.162684+00:00",
+          "summary": "",
+          "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold, silver prices see sharp rebounds as AI shares rally, renewed Fed uncertainty - Kitco PM Report",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdEl6eDh4a0ZXaUNNYjlDSzNYOF9IMEd3bkEwWlRuaHdXeUFmZzlNY01ZVk4xQVdOcGdMYUxWTmlHdGZLcmxlaHU0OV9yZGdYczAyODQxOHV1dTRlc0xId1Bpc2c4NEdHUnFBXzZCcnlNQW5zVnhXT0NGeHA3Vkl3cnJoSkdrSjROS3kyZHBqTmg2QVRfYWJJM3RYa1ZUQ0tRR080b2NNeFFyRGRtX19KUg?oc=5",
+          "published": "2026-11-23T23:04:45+00:00",
+          "found_at": "2026-11-24T06:20:51.485432+00:00",
           "summary": "",
           "factor": "G2"
         }
@@ -40749,6 +40769,10 @@
         {
           "time": "2026-11-23T16:40:52.162684+00:00",
           "note": "confirmed -> alerted: New Fed\u2011related news caused a noticeable gold rally, so an alert is warranted."
+        },
+        {
+          "time": "2026-11-24T06:20:51.485432+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": {
@@ -41424,14 +41448,14 @@
     "GOLD-20261124": 1
   },
   "last_run": {
-    "run_time": "2026-11-24T06:15:49.644818+00:00",
+    "run_time": "2026-11-24T06:20:51.485432+00:00",
     "test_mode": false,
-    "stories": 171,
-    "off_topic": 96,
-    "repeats": 75,
+    "stories": 172,
+    "off_topic": 94,
+    "repeats": 77,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
