@@ -40152,8 +40152,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 0,
+          "done": 4,
+          "right": 1,
           "wrong": 1,
           "total": 9
         },
@@ -40201,7 +40201,14 @@
           "move": -0.2,
           "time": "2026-11-23T23:50:00+00:00",
           "verdict": "flat"
-        }
+        },
+        "d1": {
+          "price": 60083.31,
+          "move": -1.91,
+          "time": "2026-11-24T13:50:00+00:00",
+          "verdict": "right"
+        },
+        "old_effect": "no_clear_move"
       },
       "prediction": {
         "direction": "down",
@@ -42599,8 +42606,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 0,
-          "right": 0,
+          "done": 1,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -42629,6 +42636,12 @@
           "final": false,
           "text": "still inside the 24 hours window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 60083.31,
+          "move": -0.54,
+          "time": "2026-11-24T13:47:49+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -42971,11 +42984,11 @@
     "BTC-20261124": 4
   },
   "last_run": {
-    "run_time": "2026-11-24T13:55:40.907335+00:00",
+    "run_time": "2026-11-24T14:01:32.111318+00:00",
     "test_mode": false,
-    "stories": 180,
-    "off_topic": 95,
-    "repeats": 85,
+    "stories": 162,
+    "off_topic": 84,
+    "repeats": 78,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
