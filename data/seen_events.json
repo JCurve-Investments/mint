@@ -38727,7 +38727,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
           "wrong": 2,
           "total": 9
@@ -38776,7 +38776,14 @@
           "move": 2.38,
           "time": "2026-11-23T15:47:00+00:00",
           "verdict": "wrong"
-        }
+        },
+        "d1": {
+          "price": 60577.97,
+          "move": -1.24,
+          "time": "2026-11-24T05:47:00+00:00",
+          "verdict": "flat"
+        },
+        "old_effect": "wrong"
       },
       "prediction": {
         "direction": "down",
@@ -38988,7 +38995,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
           "wrong": 2,
           "total": 9
@@ -39031,7 +39038,14 @@
           "move": 1.5,
           "time": "2026-11-23T15:49:00+00:00",
           "verdict": "wrong"
-        }
+        },
+        "d1": {
+          "price": 3621.48,
+          "move": 0.45,
+          "time": "2026-11-24T05:49:00+00:00",
+          "verdict": "flat"
+        },
+        "old_effect": "wrong"
       },
       "prediction": {
         "direction": "down",
@@ -39254,7 +39268,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 2,
           "wrong": 0,
           "total": 9
@@ -39297,7 +39311,14 @@
           "move": 1.5,
           "time": "2026-11-23T15:47:14+00:00",
           "verdict": "right"
-        }
+        },
+        "d1": {
+          "price": 3621.48,
+          "move": 0.45,
+          "time": "2026-11-24T05:47:14+00:00",
+          "verdict": "flat"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "up",
@@ -41397,11 +41418,11 @@
     "GOLD-20261124": 1
   },
   "last_run": {
-    "run_time": "2026-11-24T05:55:38.915687+00:00",
+    "run_time": "2026-11-24T06:01:24.369571+00:00",
     "test_mode": false,
-    "stories": 171,
-    "off_topic": 95,
-    "repeats": 76,
+    "stories": 150,
+    "off_topic": 84,
+    "repeats": 66,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
