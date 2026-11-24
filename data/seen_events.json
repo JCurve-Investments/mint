@@ -42098,21 +42098,35 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-24T12:45:53.248227+00:00",
       "earliest_report": "2026-11-24T12:36:28+00:00",
-      "last_updated": "2026-11-24T12:45:53.248227+00:00",
+      "last_updated": "2026-11-24T14:35:48.961097+00:00",
       "words": [
         "4.71",
+        "60k",
+        "another",
+        "below",
         "billion",
         "bitcoin",
+        "btc",
+        "dips",
         "etf",
+        "etfs",
         "fall",
         "increase",
+        "million",
+        "nears",
+        "net",
         "november",
         "outflows",
         "record",
-        "spot"
+        "see",
+        "spot",
+        "total"
       ],
       "amounts": [
-        4710.0
+        0.1,
+        570.0,
+        4710.0,
+        5000.0
       ],
       "old_clues": [],
       "sources": [
@@ -42126,6 +42140,17 @@
           "found_at": "2026-11-24T12:45:53.248227+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Bitcoin ETFs see another $570 million in net outflows as November total nears $5 billion and BTC dips below $60K",
+          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVm5WQ2dUWWh3THZtbzFLWFRZYmRzbEk5RElVSndoM3hra1ZFVlBiY0RmYnZOazk3cjJqZFdfVjR5V3Bic0Z4RFRwSU95ODFvWkZFdm04Rm1XREJGX0N4RFZ4RF9jS2RuXzc2b3A3OUdiVVFDNWhoQmFzR3BNSU0zWUxuMURXV0Mtc0JhZU9weDlkWm1zaTEwYjc4T1FQUlRuMVJJanNUUElGb2h0TkVGNm9xMnl1NFNWdmk5dGlEZk00SDllRDc3ak5PamhBVV9NYWphYkl1R3UxeEFWNDdiNDh3ODA?oc=5",
+          "published": "2026-11-24T14:32:00+00:00",
+          "found_at": "2026-11-24T14:35:48.961097+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -42136,6 +42161,10 @@
         {
           "time": "2026-11-24T12:45:53.248227+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        },
+        {
+          "time": "2026-11-24T14:35:48.961097+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": null,
@@ -43009,14 +43038,14 @@
     "BTC-20261124": 4
   },
   "last_run": {
-    "run_time": "2026-11-24T14:31:15.343413+00:00",
+    "run_time": "2026-11-24T14:35:48.961097+00:00",
     "test_mode": false,
-    "stories": 148,
-    "off_topic": 78,
-    "repeats": 70,
+    "stories": 189,
+    "off_topic": 103,
+    "repeats": 85,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
