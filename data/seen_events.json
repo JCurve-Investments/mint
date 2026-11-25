@@ -37426,7 +37426,7 @@
           "opposite": "hit"
         },
         "checks": {
-          "done": 7,
+          "done": 8,
           "right": 1,
           "wrong": 4,
           "total": 9
@@ -37456,6 +37456,12 @@
           "move": 2.66,
           "time": "2026-11-24T08:12:13+00:00",
           "verdict": "wrong"
+        },
+        "d5": {
+          "price": 3543.24,
+          "move": 0.78,
+          "time": "2026-11-25T20:12:13+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -48779,11 +48785,11 @@
     "BTC-20261125": 4
   },
   "last_run": {
-    "run_time": "2026-11-25T20:20:53.527602+00:00",
+    "run_time": "2026-11-25T20:25:51.687173+00:00",
     "test_mode": false,
-    "stories": 151,
-    "off_topic": 89,
-    "repeats": 62,
+    "stories": 161,
+    "off_topic": 95,
+    "repeats": 66,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -48802,7 +48808,8 @@
         "reasons": [
           "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
           "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
-          "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks"
+          "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
+          "1 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
