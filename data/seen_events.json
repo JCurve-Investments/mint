@@ -48496,6 +48496,244 @@
         "first_sent_at": "2026-11-25T20:06:01.044515+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "BTC-20261125-04",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-25T20:15:49.177579+00:00",
+      "earliest_report": "2026-11-25T20:12:08+00:00",
+      "last_updated": "2026-11-25T20:15:49.177579+00:00",
+      "words": [
+        "artex",
+        "attack",
+        "banks",
+        "check",
+        "cia",
+        "crypto",
+        "exchange",
+        "hack",
+        "identity",
+        "korean",
+        "link",
+        "nsa",
+        "odni",
+        "south",
+        "system",
+        "tied",
+        "tool"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
+          "link": "https://t.me/whale_alert_io/105308",
+          "published": "2026-11-25T20:12:08+00:00",
+          "found_at": "2026-11-25T20:15:49.177579+00:00",
+          "summary": "AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-25T20:15:49.177579+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-25T20:15:49.177579+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-25T20:15:49.177579+00:00",
+          "note": "confirmed -> alerted: New hack news could negatively affect Bitcoin, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-25",
+        "date_evidence": "Report published 2026-11-25 20:12 mentions the breach",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "exchange hacks have historically pushed Bitcoin lower",
+        "alert_title": "Crypto Exchange Hack Threatens Bitcoin",
+        "alert_message": "AI tool Artex linked to attacks on South Korean banks and crypto exchange identity checks, raising security worries for Bitcoin.",
+        "why_it_matters": [
+          "Security breach could hurt confidence",
+          "Potential disruption to exchange services"
+        ],
+        "reason": "New hack news could negatively affect Bitcoin, so an alert is warranted.",
+        "time": "2026-11-25T20:15:49.177579+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nCrypto Exchange Hack Threatens Bitcoin\n\nAI tool Artex linked to attacks on South Korean banks and crypto exchange identity checks, raising security worries for Bitcoin.\n\nMINT's prediction: Bitcoin DOWN - Most similar hacks made Bitcoin fall the next day (down 0.8%\u20113%), with only one past case showing a small rise.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 25 Nov 20:15 UTC",
+        "telegram_sent_at": "2026-11-25T20:15:49.177579+00:00"
+      },
+      "outcome": {
+        "start_price": 60049.07,
+        "start_time": "2026-11-25T19:39:20+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-25T19:39:20+00:00",
+          "hours": -0.5,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 1.8 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 60049.07,
+          "start_time": "2026-11-25T20:15:49.177579+00:00",
+          "threshold": 1.21,
+          "window_hours": 42.5,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 1.8 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Most similar hacks made Bitcoin fall the next day (down 0.8%\u20113%), with only one past case showing a small rise.",
+        "similar": [
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.98
+          },
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.88
+          },
+          {
+            "id": "BTC-20261119-04",
+            "date": "2026-11-19",
+            "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+            "d1": -2.58,
+            "d7": null,
+            "peak_hours": 42.5,
+            "source": "MINT",
+            "score": 0.72
+          },
+          {
+            "id": "BTC-20261124-03",
+            "date": "2026-11-24",
+            "title": "Behind Binance Hack, a Reckoning Over Who Controls Crypto",
+            "d1": -2.97,
+            "d7": null,
+            "peak_hours": 25.0,
+            "source": "MINT",
+            "score": 0.68
+          },
+          {
+            "id": "BTC-20261111-02",
+            "date": "2026-11-11",
+            "title": "Binance hack reveals crypto's uphill battle against hackers",
+            "d1": -0.76,
+            "d7": -13.12,
+            "peak_hours": 86.6,
+            "source": "MINT",
+            "score": 0.66
+          }
+        ],
+        "votes": {
+          "up": 1.51,
+          "down": 4.54
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-25T20:16:04.192706+00:00",
+          "low": -1.13,
+          "mid": -2.42,
+          "high": -2.9,
+          "window_hours": 42.5,
+          "probability": 0.57,
+          "agree": 4,
+          "similar": 5,
+          "basis": "4 of 5 similar past events moved this way (typical move 2.4%)",
+          "window_basis": "similar past moves peaked after about 1.8 days",
+          "sigma": 2.9,
+          "threshold": 1.21,
+          "floor": 1.18,
+          "lenses": {
+            "volume": 1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.5x a normal day, price +0.6% - real buying",
+            "buy_sell": "buyers started 46% of trades (24 h); 50% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "disagrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.71,
+            "volume": 0.25,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.51,
+            "down": 4.54
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A new AI hacking tool called Artex is said to have breached US intelligence agency systems and attacked South Korean banks and crypto exchange identity checks, raising security worries.",
+        "what_past_events_show": "Most similar hacks made Bitcoin fall the next day (down 0.8%\u20113%), with only one past case showing a small rise.",
+        "direction": "down",
+        "why": [
+          "Security fears usually push traders to sell.",
+          "Past hacks have led to short\u2011term price drops."
+        ],
+        "watch_next": "If the targeted exchange quickly proves funds are safe or compensates users, the drop could be limited; more breach reports would make it bigger.",
+        "confidence": "high",
+        "confidence_reason": "4 of 5 similar past events moved this way",
+        "time": "2026-11-25T20:15:49.177579+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-25T20:16:08.420557+00:00"
+      }
     }
   ],
   "counter": {
@@ -48538,32 +48776,33 @@
     "GOLD-20261124": 7,
     "BTC-20261124": 6,
     "GOLD-20261125": 9,
-    "BTC-20261125": 3
+    "BTC-20261125": 4
   },
   "last_run": {
-    "run_time": "2026-11-25T20:10:53.522335+00:00",
+    "run_time": "2026-11-25T20:15:49.177579+00:00",
     "test_mode": false,
-    "stories": 152,
-    "off_topic": 88,
-    "repeats": 63,
-    "new_events": 0,
+    "stories": 120,
+    "off_topic": 73,
+    "repeats": 46,
+    "new_events": 1,
     "joined": 0,
-    "updates_ignored": 1,
+    "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
-          "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban"
+          "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
+          "Being checked: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks (approved social media account: Whale Alert (Telegram) (from social media))"
         ]
       },
       "Gold": {
@@ -48593,7 +48832,8 @@
       "state": "Alert",
       "reasons": [
         "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
-        "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban"
+        "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
+        "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks"
       ]
     },
     "Gold": {
