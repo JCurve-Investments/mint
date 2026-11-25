@@ -3898,14 +3898,18 @@
     "s": 45.0718
    },
    "1795564800": {
-    "b": 99.2418,
-    "s": 154.7077
+    "b": 108.5442,
+    "s": 194.6298
+   },
+   "1795568400": {
+    "b": 0.3822,
+    "s": 0.196
    }
   },
-  "trades_cursor": "1795568152361072554",
+  "trades_cursor": "1795568494592001882",
   "flow_source": "Kraken",
-  "book_bid_share": 0.553,
-  "book_time": "2026-11-25T00:55:39.587569+00:00"
+  "book_bid_share": 0.533,
+  "book_time": "2026-11-25T01:01:22.460967+00:00"
  },
  "Gold": {
   "bars": [
@@ -7012,23 +7016,23 @@
   ],
   "cot_time": "2026-11-25T00:35:36.620317+00:00"
  },
- "time": "2026-11-25T00:55:39.587569+00:00",
+ "time": "2026-11-25T01:01:22.460967+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
     "ratio": 1.08,
-    "change_24h": -2.99,
-    "text": "normal: 1.1x a normal day, price -3.0%",
+    "change_24h": -2.61,
+    "text": "normal: 1.1x a normal day, price -2.6%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.43,
-    "book_bid_share": 0.553,
-    "up_volume_share": 0.476,
-    "text": "buyers started 43% of trades (24 h); 55% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.429,
+    "book_bid_share": 0.533,
+    "up_volume_share": 0.497,
+    "text": "buyers started 43% of trades (24 h); 53% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
@@ -7036,15 +7040,15 @@
    "volume": {
     "vote": 0,
     "ratio": 1.04,
-    "change_24h": -3.14,
-    "text": "normal: 1.0x a normal day, price -3.1%",
+    "change_24h": -2.79,
+    "text": "normal: 1.0x a normal day, price -2.8%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "up_volume_share": 0.345,
+    "up_volume_share": 0.361,
     "cot_vote": -1,
-    "text": "34% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
+    "text": "36% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
     "ok": true
    }
   }
