@@ -41022,8 +41022,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 2,
+          "done": 6,
+          "right": 3,
           "wrong": 1,
           "total": 9
         },
@@ -41071,6 +41071,12 @@
           "price": 59934.35,
           "move": -2.34,
           "time": "2026-11-24T22:53:19+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 58903.23,
+          "move": -4.02,
+          "time": "2026-11-25T10:53:19+00:00",
           "verdict": "right"
         }
       },
@@ -46045,11 +46051,11 @@
     "BTC-20261125": 1
   },
   "last_run": {
-    "run_time": "2026-11-25T11:01:28.116595+00:00",
+    "run_time": "2026-11-25T11:05:53.109073+00:00",
     "test_mode": false,
-    "stories": 139,
-    "off_topic": 75,
-    "repeats": 64,
+    "stories": 182,
+    "off_topic": 105,
+    "repeats": 77,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -46070,8 +46076,7 @@
           "Alert: Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
           "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
           "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
-          "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
-          "1 check(s) failed in the last run (internet problem?) - see Agents"
+          "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases"
         ]
       },
       "Gold": {
