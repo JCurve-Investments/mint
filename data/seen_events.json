@@ -45327,25 +45327,36 @@
       "proof_reason": "approved social media account: Binance announcements (Telegram) (from social media)",
       "first_seen": "2026-11-25T03:45:50.009133+00:00",
       "earliest_report": "2026-11-25T03:42:49+00:00",
-      "last_updated": "2026-11-25T03:45:50.009133+00:00",
+      "last_updated": "2026-11-25T03:55:36.326530+00:00",
       "words": [
         "2026-11-25",
+        "add",
         "adds",
+        "asset",
         "binance",
         "bstock",
         "choic",
+        "collateral",
         "convert",
+        "cross",
         "exchange",
         "expand",
         "extend",
         "fee",
+        "five",
         "list",
         "maker",
+        "margin",
         "new",
         "pairs",
+        "portfolio",
+        "pro",
         "promotion",
+        "securiti",
         "spot",
+        "tokeniz",
         "trad",
+        "will",
         "zero"
       ],
       "amounts": [],
@@ -45361,6 +45372,17 @@
           "found_at": "2026-11-25T03:45:50.009133+00:00",
           "summary": "Binance Exchange Adds New bStocks Trading Pairs on Binance Spot/Convert and Extends Zero Maker Fee Promotion - 2026-11-25 To expand the list of trading choices offered on Binance Spot and enhance users' trading experience, Binance Exchange will open trading and Rebalancing Bots services for the bStocks iShares Future AI & Tech ETF (ARTYB), Freedom Holding Corp (FRHCB), iShares Bitcoin Trust (IBITB), iShares Expanded Tech-Software Sector ETF (IGVB), and iShares Semiconductor ETF (SOXXB) trading pairs at 2026-11-25 12:00 (UTC). \ud83d\udc49\ud83c\udffb Learn",
           "factor": "B4"
+        },
+        {
+          "organisation": "Binance announcements (Telegram)",
+          "kind": "social",
+          "site": "binance_announcements",
+          "title": "Binance Will Add 5 bStocks Tokenized Securities as Collateral Asset - 2026-11-25 Binance Cross Margin, Portfolio Margin, and Portfolio Margin Pro will add five",
+          "link": "https://t.me/binance_announcements/9163",
+          "published": "2026-11-25T03:51:12+00:00",
+          "found_at": "2026-11-25T03:55:36.326530+00:00",
+          "summary": "Binance Will Add 5 bStocks Tokenized Securities as Collateral Asset - 2026-11-25 Binance Cross Margin, Portfolio Margin, and Portfolio Margin Pro will add five (5) bStocks tokens \u2014 iShares Future AI & Tech ETF (ARTYB), Freedom Holding Corp (FRHCB), iShares Bitcoin Trust (IBITB), iShares Expanded Tech-Software Sector ETF (IGVB), and iShares Semiconductor ETF (SOXXB) \u2014 as eligible collateral assets at 2026-11-25 12:00 (UTC). \ud83d\udc49\ud83c\udffb Learn",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -45371,6 +45393,10 @@
         {
           "time": "2026-11-25T03:45:50.009133+00:00",
           "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (approved social media account: Binance announcements (Telegram) (from social media))"
+        },
+        {
+          "time": "2026-11-25T03:55:36.326530+00:00",
+          "note": "another report from Binance announcements (Telegram) - same event, no new alert"
         }
       ],
       "decision": null,
@@ -45532,14 +45558,14 @@
     "BTC-20261125": 1
   },
   "last_run": {
-    "run_time": "2026-11-25T03:50:52.832093+00:00",
+    "run_time": "2026-11-25T03:55:36.326530+00:00",
     "test_mode": false,
-    "stories": 181,
-    "off_topic": 109,
-    "repeats": 72,
+    "stories": 184,
+    "off_topic": 110,
+    "repeats": 73,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
