@@ -45030,6 +45030,249 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-25T01:21:07.950223+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261125-01",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-25T02:20:51.691552+00:00",
+      "earliest_report": "2026-11-25T00:33:00+00:00",
+      "last_updated": "2026-11-25T02:20:51.691552+00:00",
+      "words": [
+        "bets",
+        "decline",
+        "gold",
+        "holds",
+        "plans",
+        "rate-hike",
+        "reinforce",
+        "tariff"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORkQxbTNiWEs3QmZBV1ZoVV9Nb1kyM1dUSmRYT2RWYkQ0eTV6cktjakV3OXRjalVYSkJ2Q2FBdFhUbHl6V3VBTHFzbGJFU1RacTRrUGxFWHU2Y0R3OXZKXzlaQUVPc3Z3TjJ1MkRnVGNwMlpHYzhwbVkwRTFLbVc0ZTkxa3ExQU1iYTcxU3Q4czZTVVhDRE9iYTFCak1aZ3BnQ1ZGbldMSGdaQ2szYXNQX1FJTQ?oc=5",
+          "published": "2026-11-25T00:33:00+00:00",
+          "found_at": "2026-11-25T02:20:51.691552+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-25T02:20:51.691552+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-25T02:20:51.691552+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-25T02:20:51.691552+00:00",
+          "note": "confirmed -> alerted: The report is a fresh development that reinforces rate\u2011hike expectations, which historically push gold down, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-25",
+        "date_evidence": "article published 2026-11-25 00:33 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "rate\u2011hike expectations usually push gold lower",
+        "alert_title": "Rate\u2011Hike Bets Pressure Gold",
+        "alert_message": "US tariff plans raise expectations of higher interest rates, keeping gold on a decline. Higher rates typically weigh on gold prices.",
+        "why_it_matters": [
+          "Higher rates make gold less attractive",
+          "Tariff news may signal tighter monetary policy"
+        ],
+        "reason": "The report is a fresh development that reinforces rate\u2011hike expectations, which historically push gold down, so an alert is warranted.",
+        "time": "2026-11-25T02:20:51.691552+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nRate\u2011Hike Bets Pressure Gold\n\nUS tariff plans raise expectations of higher interest rates, keeping gold on a decline. Higher rates typically weigh on gold prices.\n\nMINT's prediction: Gold DOWN - In three out of five similar cases gold fell 1.6%\u20114.3% the next day, while only when rate\u2011hike bets eased did it rise modestly.\n\nGold had already moved -0.1% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 25 Nov 02:20 UTC",
+        "telegram_sent_at": "2026-11-25T02:20:51.691552+00:00"
+      },
+      "outcome": {
+        "start_price": 3541.92,
+        "start_time": "2026-11-25T01:00:00+00:00",
+        "moved_before_mint": -0.13,
+        "delay_hours": 1.8,
+        "h1": {
+          "price": 3537.28,
+          "move": -0.13,
+          "time": "2026-11-25T01:33:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -0.13,
+          "time": "2026-11-25T02:00:30+00:00",
+          "hours": 1.5,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 1,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 5 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -0.13,
+          "peak_hours": 1.5,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.5,
+          "until_hours": 1.5,
+          "text": "Clear impact: Gold fell up to 0.1% (after 2 h). Still in the predicted direction after 2 h (-0.1%)."
+        },
+        "result": {
+          "start_price": 3537.28,
+          "start_time": "2026-11-25T02:20:51.691552+00:00",
+          "threshold": 1.01,
+          "window_hours": 120,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 5 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In three out of five similar cases gold fell 1.6%\u20114.3% the next day, while only when rate\u2011hike bets eased did it rise modestly.",
+        "similar": [
+          {
+            "id": "GOLD-20261123-04",
+            "date": "2026-11-23",
+            "title": "Gold Climbs 3%, Focus on Rate-Hike Bets",
+            "d1": 0.2,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.98
+          },
+          {
+            "id": "GOLD-20261109-07",
+            "date": "2026-11-09",
+            "title": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
+            "d1": -1.65,
+            "d7": -6.04,
+            "peak_hours": 122.7,
+            "source": "MINT",
+            "score": 0.9
+          },
+          {
+            "id": "GOLD-20261119-01",
+            "date": "2026-11-19",
+            "title": "Gold Pressured by Rate-Hike Bets, Broader Commodities Retreat",
+            "d1": -4.31,
+            "d7": null,
+            "peak_hours": 45.1,
+            "source": "MINT",
+            "score": 0.82
+          },
+          {
+            "id": "GOLD-20261112-01",
+            "date": "2026-11-12",
+            "title": "Gold Dims Amid Rising Fed Rate-Hike Expectations",
+            "d1": -2.61,
+            "d7": -6.06,
+            "peak_hours": 163.2,
+            "source": "MINT",
+            "score": 0.72
+          },
+          {
+            "id": "GOLD-20261123-01",
+            "date": "2026-11-23",
+            "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
+            "d1": 2.04,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.64
+          }
+        ],
+        "votes": {
+          "up": 1.62,
+          "down": 4.57
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-25T02:21:05.683741+00:00",
+          "low": -1.57,
+          "mid": -2.01,
+          "high": -2.68,
+          "window_hours": 120,
+          "probability": 0.61,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 2.6%)",
+          "window_basis": "similar past moves peaked after about 5.1 days",
+          "sigma": 1.34,
+          "threshold": 1.01,
+          "floor": 0.55,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.0x a normal day, price -2.5%",
+            "buy_sell": "34% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.62,
+            "down": 4.57
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold stayed lower as new US tariff plans kept bets on higher interest rates alive, which can hurt gold because it earns no interest.",
+        "what_past_events_show": "In three out of five similar cases gold fell 1.6%\u20114.3% the next day, while only when rate\u2011hike bets eased did it rise modestly.",
+        "direction": "down",
+        "why": [
+          "Higher\u2011rate expectations make gold less attractive",
+          "Most past events with the same signal saw gold drop the next day"
+        ],
+        "watch_next": "If the Fed later signals a pause or cut, or tariff tensions ease, the downside pressure could lessen.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-25T02:20:51.691552+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-25T02:21:09.894034+00:00"
+      }
     }
   ],
   "counter": {
@@ -45070,26 +45313,27 @@
     "GOLD-20261123": 7,
     "BTC-20261123": 9,
     "GOLD-20261124": 6,
-    "BTC-20261124": 6
+    "BTC-20261124": 6,
+    "GOLD-20261125": 1
   },
   "last_run": {
-    "run_time": "2026-11-25T02:15:51.662265+00:00",
+    "run_time": "2026-11-25T02:20:51.691552+00:00",
     "test_mode": false,
-    "stories": 147,
-    "off_topic": 86,
-    "repeats": 61,
-    "new_events": 0,
+    "stories": 141,
+    "off_topic": 87,
+    "repeats": 53,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -45112,7 +45356,8 @@
           "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
           "Alert: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll",
           "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report",
-          "Alert: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle"
+          "Alert: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle",
+          "Being checked: Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets (reliable source: Bloomberg)"
         ]
       }
     }
@@ -45139,7 +45384,8 @@
         "Alert: The AI boom is driving huge investment. Stefania Secola speaks to John Williams, President of the Federal Reserve Bank of New York, about the impact AI could ha",
         "Alert: BCA Research ends four-year bullish gold trade as US dollar, Fed take their toll",
         "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report",
-        "Alert: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle"
+        "Alert: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle",
+        "Alert: Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets"
       ]
     }
   },
