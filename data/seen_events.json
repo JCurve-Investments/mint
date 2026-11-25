@@ -42370,7 +42370,7 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-24T12:45:53.248227+00:00",
       "earliest_report": "2026-11-24T12:36:28+00:00",
-      "last_updated": "2026-11-24T20:20:51.103980+00:00",
+      "last_updated": "2026-11-25T05:10:53.211783+00:00",
       "words": [
         "4.71",
         "60k",
@@ -42384,8 +42384,12 @@
         "etf",
         "etfs",
         "fall",
+        "funds",
+        "head",
         "increase",
         "million",
+        "month",
+        "near",
         "nears",
         "net",
         "november",
@@ -42394,7 +42398,8 @@
         "see",
         "spot",
         "total",
-        "watch"
+        "watch",
+        "worst"
       ],
       "amounts": [
         0.1,
@@ -42436,6 +42441,17 @@
           "found_at": "2026-11-24T20:20:51.103980+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Bitcoin Funds Head for Worst Month as Outflows Near $5 Billion",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVlZrR3hSRnRhN2p1U3ktUnBnZnc2LWJ4Zk1GdWdCaFpsY3Z5emp6LWJ4bXVEZVl6UVVRN1VZcm90cWQ3Vlo2SkthYTZGT3NxbEJ6ZlJSWWFpNFRvcGgyZ1hNYzhQQkV0UFdnUXhkUy1tZ1QwemJfUjVGbmVqQUZtTnRmaU5HY1JWXzZVY0JJeXdWRFRYNnRfVGRQLVV1QmRIMC15aW5ZWGhXM2pjUE80Mjhn?oc=5",
+          "published": "2026-11-25T05:01:00+00:00",
+          "found_at": "2026-11-25T05:10:53.211783+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -42453,6 +42469,10 @@
         },
         {
           "time": "2026-11-24T20:20:51.103980+00:00",
+          "note": "another report from Bloomberg - same event, no new alert"
+        },
+        {
+          "time": "2026-11-25T05:10:53.211783+00:00",
           "note": "another report from Bloomberg - same event, no new alert"
         }
       ],
@@ -45611,14 +45631,14 @@
     "BTC-20261125": 1
   },
   "last_run": {
-    "run_time": "2026-11-25T05:05:52.298657+00:00",
+    "run_time": "2026-11-25T05:10:53.211783+00:00",
     "test_mode": false,
-    "stories": 186,
-    "off_topic": 113,
-    "repeats": 73,
+    "stories": 187,
+    "off_topic": 112,
+    "repeats": 74,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
