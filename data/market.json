@@ -3970,14 +3970,14 @@
     "s": 348.7904
    },
    "1795629600": {
-    "b": 69.8305,
-    "s": 36.4688
+    "b": 93.4027,
+    "s": 44.6503
    }
   },
-  "trades_cursor": "1795630793750855010",
+  "trades_cursor": "1795631022410112164",
   "flow_source": "Kraken",
-  "book_bid_share": 0.507,
-  "book_time": "2026-11-25T19:55:41.092670+00:00"
+  "book_bid_share": 0.452,
+  "book_time": "2026-11-25T20:01:25.425993+00:00"
  },
  "Gold": {
   "bars": [
@@ -7186,39 +7186,39 @@
   ],
   "cot_time": "2026-11-25T12:35:40.614437+00:00"
  },
- "time": "2026-11-25T19:55:41.092670+00:00",
+ "time": "2026-11-25T20:01:25.425993+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 1,
-    "ratio": 1.53,
-    "change_24h": 0.74,
-    "text": "busy: 1.5x a normal day, price +0.7% - real buying",
+    "ratio": 1.49,
+    "change_24h": 0.58,
+    "text": "busy: 1.5x a normal day, price +0.6% - real buying",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.45,
-    "book_bid_share": 0.507,
-    "up_volume_share": 0.625,
-    "text": "buyers started 45% of trades (24 h); 51% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.461,
+    "book_bid_share": 0.452,
+    "up_volume_share": 0.598,
+    "text": "buyers started 46% of trades (24 h); 45% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 1.16,
-    "change_24h": 0.59,
-    "text": "normal: 1.2x a normal day, price +0.6%",
+    "ratio": 1.18,
+    "change_24h": 0.71,
+    "text": "normal: 1.2x a normal day, price +0.7%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "up_volume_share": 0.526,
+    "up_volume_share": 0.539,
     "cot_vote": -1,
-    "text": "53% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
+    "text": "54% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
     "ok": true
    }
   }
