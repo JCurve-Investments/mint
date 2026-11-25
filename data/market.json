@@ -3910,14 +3910,18 @@
     "s": 113.5597
    },
    "1795575600": {
-    "b": 30.7605,
-    "s": 28.6635
+    "b": 31.1457,
+    "s": 30.0824
+   },
+   "1795579200": {
+    "b": 0.2188,
+    "s": 1.3301
    }
   },
-  "trades_cursor": "1795578951260710766",
+  "trades_cursor": "1795579286266662372",
   "flow_source": "Kraken",
-  "book_bid_share": 0.55,
-  "book_time": "2026-11-25T03:55:36.326530+00:00"
+  "book_bid_share": 0.558,
+  "book_time": "2026-11-25T04:01:23.455098+00:00"
  },
  "Gold": {
   "bars": [
@@ -7042,39 +7046,39 @@
   ],
   "cot_time": "2026-11-25T00:35:36.620317+00:00"
  },
- "time": "2026-11-25T03:55:36.326530+00:00",
+ "time": "2026-11-25T04:01:23.455098+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.06,
-    "change_24h": -1.45,
-    "text": "normal: 1.1x a normal day, price -1.4%",
+    "ratio": 1.07,
+    "change_24h": -1.51,
+    "text": "normal: 1.1x a normal day, price -1.5%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.422,
-    "book_bid_share": 0.55,
-    "up_volume_share": 0.416,
-    "text": "buyers started 42% of trades (24 h); 55% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.413,
+    "book_bid_share": 0.558,
+    "up_volume_share": 0.395,
+    "text": "buyers started 41% of trades (24 h); 56% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 0.96,
-    "change_24h": -2.18,
+    "ratio": 0.98,
+    "change_24h": -2.19,
     "text": "normal: 1.0x a normal day, price -2.2%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "up_volume_share": 0.36,
+    "up_volume_share": 0.368,
     "cot_vote": -1,
-    "text": "36% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
+    "text": "37% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
     "ok": true
    }
   }
