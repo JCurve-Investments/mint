@@ -48173,8 +48173,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 0,
-          "right": 0,
+          "done": 1,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -48203,6 +48203,12 @@
           "final": false,
           "text": "still inside the 2.2 days window (biggest move so far +1.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 3577.99,
+          "move": 0.98,
+          "time": "2026-11-25T20:34:00+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -48817,11 +48823,11 @@
     "BTC-20261125": 4
   },
   "last_run": {
-    "run_time": "2026-11-25T20:40:52.370063+00:00",
+    "run_time": "2026-11-25T20:45:49.416839+00:00",
     "test_mode": false,
     "stories": 154,
-    "off_topic": 93,
-    "repeats": 61,
+    "off_topic": 92,
+    "repeats": 62,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
