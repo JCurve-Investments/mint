@@ -48297,19 +48297,25 @@
       "proof_reason": "approved social media account: Federal Reserve (Bluesky) (from social media)",
       "first_seen": "2026-11-25T20:05:43.213023+00:00",
       "earliest_report": "2026-11-25T20:02:00+00:00",
-      "last_updated": "2026-11-25T20:05:43.213023+00:00",
+      "last_updated": "2026-11-25T20:10:53.522335+00:00",
       "words": [
         "announce",
         "applicability",
         "bureau",
+        "comptroller",
         "consumer",
+        "currency",
         "dollar",
+        "exemptio",
         "federalreserve.gov",
         "financial",
         "leas",
         "lend",
+        "loan",
+        "office",
         "protection",
         "rules",
+        "smaller",
         "threshold",
         "truth"
       ],
@@ -48326,6 +48332,17 @@
           "found_at": "2026-11-25T20:05:43.213023+00:00",
           "summary": "federalreserve.gov and the Consumer Financial Protection Bureau announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions: https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm",
           "factor": "G1"
+        },
+        {
+          "organisation": "Federal Reserve (Bluesky)",
+          "kind": "social",
+          "site": "Federal Reserve (Bluesky)",
+          "title": "federalreserve.gov, Office of the Comptroller of the Currency, and the Consumer Financial Protection Bureau announce dollar thresholds for smaller loan exemptio",
+          "link": "https://bsky.app/profile/federalreserve.gov/post/3n35xmfjits2g",
+          "published": "2026-11-25T20:08:00+00:00",
+          "found_at": "2026-11-25T20:10:53.522335+00:00",
+          "summary": "federalreserve.gov, Office of the Comptroller of the Currency, and the Consumer Financial Protection Bureau announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans: https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm",
+          "factor": "G1"
         }
       ],
       "history": [
@@ -48340,6 +48357,10 @@
         {
           "time": "2026-11-25T20:05:43.213023+00:00",
           "note": "confirmed -> rejected: The event is new but the announcement does not directly affect the dollar, so the impact on gold is low and uncertain."
+        },
+        {
+          "time": "2026-11-25T20:10:53.522335+00:00",
+          "note": "another report from Federal Reserve (Bluesky) - same event, no new alert"
         }
       ],
       "decision": {
@@ -48520,23 +48541,23 @@
     "BTC-20261125": 3
   },
   "last_run": {
-    "run_time": "2026-11-25T20:05:43.213023+00:00",
+    "run_time": "2026-11-25T20:10:53.522335+00:00",
     "test_mode": false,
-    "stories": 151,
+    "stories": 152,
     "off_topic": 88,
-    "repeats": 62,
-    "new_events": 1,
+    "repeats": 63,
+    "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -48562,8 +48583,7 @@
           "Alert: JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions",
           "Alert: Gold, silver remain under pressure as strong GDP, sticky inflation reinforce Fed hike bets - Kitco AM Report",
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 93% chance the Fed hikes interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
-          "Alert: Gold Futures Settle Off Day\u2019s Lows as Yields, U.S. Dollar Slip",
-          "Being checked: federalreserve.gov and the Consumer Financial Protection Bureau announce dollar thresholds for applicability of truth in lending and consumer leasing rules for (approved social media account: Federal Reserve (Bluesky) (from social media))"
+          "Alert: Gold Futures Settle Off Day\u2019s Lows as Yields, U.S. Dollar Slip"
         ]
       }
     }
