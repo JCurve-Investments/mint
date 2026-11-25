@@ -42438,12 +42438,14 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-24T12:45:53.248227+00:00",
       "earliest_report": "2026-11-24T12:36:28+00:00",
-      "last_updated": "2026-11-25T05:10:53.211783+00:00",
+      "last_updated": "2026-11-25T07:31:11.236620+00:00",
       "words": [
         "4.71",
+        "6.8",
         "60k",
         "amid",
         "another",
+        "ark",
         "below",
         "billion",
         "bitcoin",
@@ -42462,8 +42464,10 @@
         "net",
         "november",
         "outflows",
+        "own",
         "record",
         "see",
+        "sells",
         "spot",
         "total",
         "watch",
@@ -42471,6 +42475,7 @@
       ],
       "amounts": [
         0.1,
+        6.8,
         570.0,
         4710.0,
         5000.0
@@ -42520,6 +42525,17 @@
           "found_at": "2026-11-25T05:10:53.211783+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Ark sells $6.8 million in its own bitcoin ETF as BTC dips below $59,000",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNWY2SFNHX2lVamVTTUI0N2lkeUMxZklNdFFaQVZvbW1MTGc5aGszMEZ0YVhpYXJncTdhVFJxakk4MjRDR2RDVDN5QXdrM2FWa3BUZ1VuU0s2cmtTTm80VTdPSkFsRE1fa3ZyckE5LVFFLTYwOHVmajR6R1pwQnhIZUQ5UkU5NDFaR1lRb25qQQ?oc=5",
+          "published": "2026-11-25T07:26:00+00:00",
+          "found_at": "2026-11-25T07:31:11.236620+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -42542,6 +42558,10 @@
         {
           "time": "2026-11-25T05:10:53.211783+00:00",
           "note": "another report from Bloomberg - same event, no new alert"
+        },
+        {
+          "time": "2026-11-25T07:31:11.236620+00:00",
+          "note": "another report from The Block - same event, no new alert"
         }
       ],
       "decision": null,
@@ -45711,14 +45731,14 @@
     "BTC-20261125": 1
   },
   "last_run": {
-    "run_time": "2026-11-25T07:25:37.326258+00:00",
+    "run_time": "2026-11-25T07:31:11.236620+00:00",
     "test_mode": false,
-    "stories": 196,
-    "off_topic": 119,
-    "repeats": 77,
+    "stories": 177,
+    "off_topic": 105,
+    "repeats": 71,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
