@@ -39153,13 +39153,14 @@
       "proof_reason": "reliable source: Reuters",
       "first_seen": "2026-11-23T07:10:50.740934+00:00",
       "earliest_report": "2026-11-23T05:49:00+00:00",
-      "last_updated": "2026-11-25T09:31:12.178059+00:00",
+      "last_updated": "2026-11-25T12:45:51.903539+00:00",
       "words": [
         "14-month",
         "ahead",
         "await",
         "close",
         "data",
+        "dollar",
         "fall",
         "focus",
         "gold",
@@ -39175,6 +39176,7 @@
         "rise",
         "spotlight",
         "steady",
+        "stronger",
         "troy",
         "u.s",
         "week"
@@ -39260,6 +39262,17 @@
           "found_at": "2026-11-25T09:31:12.178059+00:00",
           "summary": "",
           "factor": "G3"
+        },
+        {
+          "organisation": "CNBC",
+          "kind": "news",
+          "site": "cnbc.com",
+          "title": "Gold slips on stronger dollar, US inflation data in focus",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpcXRzdlI2OHBPUHRVRTFuTzVzYzc3N092aERUaG5YcW9BWTAzQUgxUEtaeVRJVlRBM1hVYUoxVEJ4bnVxbjFialMwSFZReUZZSnVlMm9nR0Q5ZjUteXVtMlIwVXpxTjhUSEtFUFYyekgybkhpWXdyZXRUTzRfem_SAYQBQVVfeXFMTjVXb2YzM0szVk81WmZKaTdDZUJhZ2lrUktxbjhFX2lZZGlCODNJLWdicEM3RU5YNDVrWUxNTHFPZlhubVdnUU14N3lZNjh1eEgybTVvSENYaVNveTJfZ2NMUVRjMjdJNXczMzlJWEdpV3pMRlI5OUVXaEg1bnBVZnM3NVdM?oc=5",
+          "published": "2026-11-25T05:08:05+00:00",
+          "found_at": "2026-11-25T12:45:51.903539+00:00",
+          "summary": "",
+          "factor": "G1"
         }
       ],
       "history": [
@@ -39294,6 +39307,10 @@
         {
           "time": "2026-11-25T09:31:12.178059+00:00",
           "note": "another report from Wall Street Journal - same event, no new alert"
+        },
+        {
+          "time": "2026-11-25T12:45:51.903539+00:00",
+          "note": "another report from CNBC - same event, no new alert"
         }
       ],
       "decision": null,
@@ -39869,8 +39886,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 1,
+          "done": 6,
+          "right": 2,
           "wrong": 1,
           "total": 9
         },
@@ -39925,11 +39942,17 @@
           "time": "2026-11-24T12:35:32+00:00",
           "verdict": "flat"
         },
-        "old_effect": "no_clear_move",
+        "old_effect": "right",
         "h36": {
           "price": 59487.89,
           "move": -2.87,
           "time": "2026-11-25T00:35:32+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 58610.99,
+          "move": -4.3,
+          "time": "2026-11-25T12:35:32+00:00",
           "verdict": "right"
         }
       },
@@ -46285,14 +46308,14 @@
     "BTC-20261125": 2
   },
   "last_run": {
-    "run_time": "2026-11-25T12:40:54.764870+00:00",
+    "run_time": "2026-11-25T12:45:51.903539+00:00",
     "test_mode": false,
-    "stories": 144,
-    "off_topic": 78,
-    "repeats": 66,
+    "stories": 169,
+    "off_topic": 94,
+    "repeats": 74,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
