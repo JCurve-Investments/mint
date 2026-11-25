@@ -46777,6 +46777,195 @@
         "first_sent_at": "2026-11-25T14:46:09.780331+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261125-03",
+      "asset": "Gold",
+      "factor": "G1",
+      "factor_name": "US dollar",
+      "title": "JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-25T14:55:39.012933+00:00",
+      "earliest_report": "2026-11-25T14:55:01+00:00",
+      "last_updated": "2026-11-25T14:55:39.012933+00:00",
+      "words": [
+        "again",
+        "bitcoin",
+        "crash",
+        "fall",
+        "financial",
+        "gold",
+        "just",
+        "market",
+        "nasdaq",
+        "trillion",
+        "under"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions",
+          "link": "https://t.me/WatcherGuru/16327",
+          "published": "2026-11-25T14:55:01+00:00",
+          "found_at": "2026-11-25T14:55:39.012933+00:00",
+          "summary": "JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions of dollars in combined market value have been wiped out today. @WatcherGuru",
+          "factor": "G1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-25T14:55:39.012933+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-25T14:55:39.012933+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-25T14:55:39.012933+00:00",
+          "note": "confirmed -> alerted: Rules mode: enough proof and no sign of an older event."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-25",
+        "date_evidence": "no date clue in the headlines, so the first report date is used",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "the price may move",
+        "alert_title": "JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 f",
+        "alert_message": "Watcher.Guru (Telegram) reports: JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions. In the past, events like this (us dollar) have often been followed by: dollar up, gold down.",
+        "why_it_matters": [
+          "Past pattern for this factor: Dollar up, gold down."
+        ],
+        "reason": "Rules mode: enough proof and no sign of an older event.",
+        "time": "2026-11-25T14:55:39.012933+00:00",
+        "mode": "rules (AI failed)",
+        "model": null,
+        "telegram_message": "MINT alert \u00b7 Gold\nJUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 f\n\nWatcher.Guru (Telegram) reports: JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions. In the past, events like this (us dollar) have often been followed by: dollar up, gold down.\n\nMINT's prediction: Gold DOWN - Only one comparable past event is listed, and it showed gold actually rose about 2.7% the next day, which conflicts with the usual dollar\u2011gold relationship.\n\nGold had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 25 Nov 14:55 UTC",
+        "telegram_sent_at": "2026-11-25T14:55:39.012933+00:00"
+      },
+      "outcome": {
+        "start_price": 3475.34,
+        "start_time": "2026-11-25T14:14:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-25T14:14:50+00:00",
+          "hours": -0.7,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 28 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3475.34,
+          "start_time": "2026-11-25T14:55:39.012933+00:00",
+          "threshold": 0.74,
+          "window_hours": 28.4,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 28 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Only one comparable past event is listed, and it showed gold actually rose about 2.7% the next day, which conflicts with the usual dollar\u2011gold relationship.",
+        "similar": [
+          {
+            "id": "GOLD-20261122-01",
+            "date": "2026-11-22",
+            "title": "The Market is down more than 6 Trillion Dollars since the Democrats\u2019 rather strange \u201cwin\u201d on November 3rd. NASDAQ, by itself, is down 20%. This is 100% due to t",
+            "d1": 2.71,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 0.51,
+          "down": 0
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-25T14:55:54.445982+00:00",
+          "low": -0.61,
+          "mid": -1.48,
+          "high": -2.4,
+          "window_hours": 28.4,
+          "probability": 0.53,
+          "agree": 0,
+          "similar": 1,
+          "basis": "no similar past event moved this way; size from 33 past G1 events",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.36,
+          "threshold": 0.74,
+          "floor": 0.56,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 0.9x a normal day, price -3.1%",
+            "buy_sell": "38% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.33,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0.51,
+            "down": 0
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Financial markets are tumbling, with gold slipping below $3,470 as the US dollar appears to be strengthening.",
+        "what_past_events_show": "Only one comparable past event is listed, and it showed gold actually rose about 2.7% the next day, which conflicts with the usual dollar\u2011gold relationship.",
+        "direction": "down",
+        "why": [
+          "A stronger dollar typically pushes gold lower.",
+          "The headline already shows gold falling, indicating dollar pressure is winning."
+        ],
+        "watch_next": "If the dollar keeps rallying or the market panic deepens, gold could fall even more; a sudden dollar drop would limit the downside.",
+        "confidence": "low",
+        "confidence_reason": "only 0 of 1 similar past events moved this way",
+        "time": "2026-11-25T14:55:39.012933+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-25T14:55:55.022348+00:00"
+      }
     }
   ],
   "counter": {
@@ -46818,27 +47007,27 @@
     "BTC-20261123": 9,
     "GOLD-20261124": 7,
     "BTC-20261124": 6,
-    "GOLD-20261125": 2,
+    "GOLD-20261125": 3,
     "BTC-20261125": 3
   },
   "last_run": {
-    "run_time": "2026-11-25T14:50:52.972129+00:00",
+    "run_time": "2026-11-25T14:55:39.012933+00:00",
     "test_mode": false,
-    "stories": 113,
-    "off_topic": 67,
-    "repeats": 46,
-    "new_events": 0,
+    "stories": 170,
+    "off_topic": 97,
+    "repeats": 72,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -46847,7 +47036,7 @@
           "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
           "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
           "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
-          "US stock market (Nasdaq) fell -4.25% on its last day"
+          "US stock market (Nasdaq) fell -3.65% on its last day"
         ]
       },
       "Gold": {
@@ -46863,7 +47052,8 @@
           "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report",
           "Alert: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle",
           "Alert: Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
-          "Alert: Gold and silver slide to key support as rate hike fears build"
+          "Alert: Gold and silver slide to key support as rate hike fears build",
+          "Being checked: JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions (approved social media account: Watcher.Guru (Telegram) (from social media))"
         ]
       }
     }
@@ -46891,7 +47081,8 @@
         "Alert: Gold, silver extend losses as tech stocks slide, Fed inflation test looms - Kitco PM Report",
         "Alert: Watch Goldman's Rosner: Fed Hikes \u2018Metered,\u2019 Not Big Cycle",
         "Alert: Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
-        "Alert: Gold and silver slide to key support as rate hike fears build"
+        "Alert: Gold and silver slide to key support as rate hike fears build",
+        "Alert: JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions"
       ]
     }
   },
