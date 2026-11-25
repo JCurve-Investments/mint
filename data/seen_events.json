@@ -41942,13 +41942,17 @@
       "proof_reason": "approved social media account: Binance announcements (Telegram) (from social media)",
       "first_seen": "2026-11-24T07:05:42.113144+00:00",
       "earliest_report": "2026-11-24T07:02:02+00:00",
-      "last_updated": "2026-11-24T07:05:42.113144+00:00",
+      "last_updated": "2026-11-25T07:05:40.847566+00:00",
       "words": [
         "2026-11-25",
+        "2026-11-26",
         "binance",
         "maintenance",
+        "network",
         "perform",
         "support",
+        "tron",
+        "trx",
         "utc",
         "wallet",
         "will",
@@ -41967,6 +41971,17 @@
           "found_at": "2026-11-24T07:05:42.113144+00:00",
           "summary": "Binance Performs Wallet Maintenance - 2026-11-25 Binance will perform wallet maintenance at 2026-11-25 06:00 (UTC). To support the wallet maintenance, withdrawals for all networks are suspended starting from 2026-11-25 06:00 (UTC). The recovery is estimated to take about 60 minutes. \ud83d\udc49\ud83c\udffb Learn",
           "factor": "B2"
+        },
+        {
+          "organisation": "Binance announcements (Telegram)",
+          "kind": "social",
+          "site": "binance_announcements",
+          "title": "Wallet Maintenance for Tron Network (TRX) - 2026-11-26 Binance will perform wallet maintenance for Tron Network (TRX) at 2026-11-26 06:00 (UTC). To support the",
+          "link": "https://t.me/binance_announcements/9166",
+          "published": "2026-11-25T07:01:36+00:00",
+          "found_at": "2026-11-25T07:05:40.847566+00:00",
+          "summary": "Wallet Maintenance for Tron Network (TRX) - 2026-11-26 Binance will perform wallet maintenance for Tron Network (TRX) at 2026-11-26 06:00 (UTC). To support the wallet maintenance, deposits and withdrawals on Tron Network (TRX) will be suspended starting from 2026-11-26 05:55 (UTC), and be resumed when the maintenance is complete. The maintenance will take about one hour. \ud83d\udc49\ud83c\udffb Learn",
+          "factor": "B2"
         }
       ],
       "history": [
@@ -41981,6 +41996,10 @@
         {
           "time": "2026-11-24T07:05:42.113144+00:00",
           "note": "confirmed -> rejected: The announcement is routine maintenance, not a collapse or hack, and price has not moved."
+        },
+        {
+          "time": "2026-11-25T07:05:40.847566+00:00",
+          "note": "another report from Binance announcements (Telegram) - same event, no new alert"
         }
       ],
       "decision": {
@@ -45685,14 +45704,14 @@
     "BTC-20261125": 1
   },
   "last_run": {
-    "run_time": "2026-11-25T07:01:36.706667+00:00",
+    "run_time": "2026-11-25T07:05:40.847566+00:00",
     "test_mode": false,
-    "stories": 134,
-    "off_topic": 82,
-    "repeats": 52,
+    "stories": 194,
+    "off_topic": 118,
+    "repeats": 75,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
