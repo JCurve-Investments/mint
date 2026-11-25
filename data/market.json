@@ -3938,14 +3938,18 @@
     "s": 57.3793
    },
    "1795600800": {
-    "b": 268.888,
-    "s": 81.0399
+    "b": 355.1823,
+    "s": 88.1594
+   },
+   "1795604400": {
+    "b": 0.2706,
+    "s": 6.0528
    }
   },
-  "trades_cursor": "1795604176703462560",
+  "trades_cursor": "1795604501693389986",
   "flow_source": "Kraken",
-  "book_bid_share": 0.447,
-  "book_time": "2026-11-25T10:55:45.576482+00:00"
+  "book_bid_share": 0.384,
+  "book_time": "2026-11-25T11:01:28.116595+00:00"
  },
  "Gold": {
   "bars": [
@@ -7112,39 +7116,39 @@
   ],
   "cot_time": "2026-11-25T00:35:36.620317+00:00"
  },
- "time": "2026-11-25T10:55:45.576482+00:00",
+ "time": "2026-11-25T11:01:28.116595+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.05,
-    "change_24h": -1.41,
-    "text": "normal: 1.0x a normal day, price -1.4%",
+    "ratio": 1.06,
+    "change_24h": -2.46,
+    "text": "normal: 1.1x a normal day, price -2.5%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.433,
-    "book_bid_share": 0.447,
-    "up_volume_share": 0.4,
-    "text": "buyers started 43% of trades (24 h); 45% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.439,
+    "book_bid_share": 0.384,
+    "up_volume_share": 0.381,
+    "text": "buyers started 44% of trades (24 h); 38% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 0,
-    "ratio": 0.94,
-    "change_24h": -2.0,
-    "text": "normal: 0.9x a normal day, price -2.0%",
+    "ratio": 0.93,
+    "change_24h": -2.18,
+    "text": "normal: 0.9x a normal day, price -2.2%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "up_volume_share": 0.433,
+    "up_volume_share": 0.406,
     "cot_vote": -1,
-    "text": "43% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
+    "text": "41% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
     "ok": true
    }
   }
