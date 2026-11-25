@@ -26994,19 +26994,13 @@
         "start_time": "2026-11-18T18:39:50+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
-        "now": {
-          "move": -5.44,
-          "time": "2026-11-25T18:44:30+00:00",
-          "hours": 167.7,
-          "verdict": "right"
-        },
         "checks": {
-          "done": 8,
-          "right": 6,
+          "done": 9,
+          "right": 7,
           "wrong": 0,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "effect": "partial",
         "effect_reason": "the right way (up to -0.7%), but it did not stay past -0.5% for 2 hours",
         "impact": {
@@ -27080,6 +27074,12 @@
           "price": 3639.82,
           "move": -2.51,
           "time": "2026-11-23T19:05:01+00:00",
+          "verdict": "right"
+        },
+        "d7": {
+          "price": 3530.73,
+          "move": -5.44,
+          "time": "2026-11-25T19:05:01+00:00",
           "verdict": "right"
         }
       },
@@ -42165,7 +42165,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 2,
           "wrong": 0,
           "total": 9
@@ -42221,7 +42221,13 @@
           "time": "2026-11-25T07:02:02+00:00",
           "verdict": "right"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "h36": {
+          "price": 59607.84,
+          "move": -1.39,
+          "time": "2026-11-25T19:02:02+00:00",
+          "verdict": "flat"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -47615,9 +47621,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 1,
+          "done": 2,
           "right": 1,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -47645,6 +47651,12 @@
           "final": false,
           "text": "still inside the 4 hours window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h5": {
+          "price": 3530.73,
+          "move": 1.79,
+          "time": "2026-11-25T19:01:45+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -48042,11 +48054,11 @@
     "BTC-20261125": 3
   },
   "last_run": {
-    "run_time": "2026-11-25T19:11:04.320073+00:00",
+    "run_time": "2026-11-25T19:15:51.849731+00:00",
     "test_mode": false,
-    "stories": 162,
-    "off_topic": 97,
-    "repeats": 65,
+    "stories": 140,
+    "off_topic": 80,
+    "repeats": 60,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
