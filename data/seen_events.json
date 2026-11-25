@@ -44862,13 +44862,13 @@
         "effect": "tracking",
         "effect_reason": "still inside the 25 hours window (biggest move so far +0.0%)",
         "impact": {
-          "peak": -1.14,
-          "peak_hours": 13.9,
-          "faded_hours": null,
-          "against": 0.82,
-          "against_hours": 2.9,
+          "peak": 0.82,
+          "peak_hours": 2.9,
+          "faded_hours": 6.9,
+          "against": -1.14,
+          "against_hours": 13.9,
           "until_hours": 22.1,
-          "text": "Small impact: Bitcoin fell up to 1.1% (after 14 h). Still in the predicted direction after 22 h (-1.1%)."
+          "text": "Clear impact: Bitcoin rose up to 0.8% (after 3 h). The effect lasted about 7 h, then faded - later it fell up to 1.1% (after 14 h)."
         },
         "result": {
           "start_price": 59413.94,
@@ -45045,23 +45045,23 @@
     "BTC-20261124": 6
   },
   "last_run": {
-    "run_time": "2026-11-25T01:20:48.408488+00:00",
+    "run_time": "2026-11-25T01:25:47.487926+00:00",
     "test_mode": false,
-    "stories": 173,
-    "off_topic": 102,
-    "repeats": 70,
-    "new_events": 1,
+    "stories": 186,
+    "off_topic": 112,
+    "repeats": 74,
+    "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 1,
+      "confirmed": 0,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 1,
+    "open_events": 0,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -45070,7 +45070,7 @@
           "Alert: Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
           "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
           "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
-          "Being checked: California court terminates lawsuit against Coinbase over TerraUSD purchases (reliable source: The Block)"
+          "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases"
         ]
       },
       "Gold": {
