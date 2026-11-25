@@ -44491,8 +44491,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 2,
+          "done": 4,
+          "right": 3,
           "wrong": 0,
           "total": 9
         },
@@ -44540,7 +44540,14 @@
           "move": -0.42,
           "time": "2026-11-25T04:01:16+00:00",
           "verdict": "right"
-        }
+        },
+        "d1": {
+          "price": 3508.2,
+          "move": -1.33,
+          "time": "2026-11-25T18:01:16+00:00",
+          "verdict": "right"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "down",
@@ -47739,6 +47746,239 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-25T17:51:12.847956+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261125-07",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 93% chance the Fed hikes interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Watcher.Guru (Telegram) (from social media)",
+      "first_seen": "2026-11-25T18:16:00.925927+00:00",
+      "earliest_report": "2026-11-25T18:14:23+00:00",
+      "last_updated": "2026-11-25T18:16:00.925927+00:00",
+      "words": [
+        "basis",
+        "chance",
+        "fed",
+        "fomc",
+        "hike",
+        "interest",
+        "just",
+        "meet",
+        "next",
+        "point",
+        "rate",
+        "watcherguru"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Watcher.Guru (Telegram)",
+          "kind": "social",
+          "site": "WatcherGuru",
+          "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 93% chance the Fed hikes interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
+          "link": "https://t.me/WatcherGuru/16342",
+          "published": "2026-11-25T18:14:23+00:00",
+          "found_at": "2026-11-25T18:16:00.925927+00:00",
+          "summary": "JUST IN: \ud83c\uddfa\ud83c\uddf8 93% chance the Fed hikes interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-25T18:16:00.925927+00:00",
+          "note": "new event, first report by Watcher.Guru (Telegram)"
+        },
+        {
+          "time": "2026-11-25T18:16:00.925927+00:00",
+          "note": "new -> confirmed: approved social media account: Watcher.Guru (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-25T18:16:00.925927+00:00",
+          "note": "confirmed -> alerted: New high\u2011probability Fed hike forecast that could affect gold price."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "unknown",
+        "date_evidence": "the report says 'next FOMC meeting' without a specific date",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "rate hikes usually push gold lower",
+        "alert_title": "Fed likely to hike rates soon",
+        "alert_message": "Watcher.Guru says there is a 93% chance the Fed will raise rates by 25 bps at the next meeting, which could pressure gold lower.",
+        "why_it_matters": [
+          "Higher rates make gold less attractive",
+          "Rate hike expectations can lower gold price"
+        ],
+        "reason": "New high\u2011probability Fed hike forecast that could affect gold price.",
+        "time": "2026-11-25T18:16:00.925927+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed likely to hike rates soon\n\nWatcher.Guru says there is a 93% chance the Fed will raise rates by 25 bps at the next meeting, which could pressure gold lower.\n\nMINT's prediction: Gold DOWN - Recent warnings of more rate hikes pushed gold down (\u20110.5% and \u20111.9%), while actual hikes in the past gave a tiny rise (+0.3%). The pattern is mixed, but hawkish news tends to pull gold lower.\n\nGold had already moved +0.0% since the first report.\nSources: Watcher.Guru (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 25 Nov 18:16 UTC",
+        "telegram_sent_at": "2026-11-25T18:16:00.925927+00:00"
+      },
+      "outcome": {
+        "start_price": 3508.2,
+        "start_time": "2026-11-25T17:54:50+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.0,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-25T17:54:50+00:00",
+          "hours": -0.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 17 hours window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 3508.2,
+          "start_time": "2026-11-25T18:16:00.925927+00:00",
+          "threshold": 0.6,
+          "window_hours": 17.2,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 17 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Recent warnings of more rate hikes pushed gold down (\u20110.5% and \u20111.9%), while actual hikes in the past gave a tiny rise (+0.3%). The pattern is mixed, but hawkish news tends to pull gold lower.",
+        "similar": [
+          {
+            "id": "START-20230726-G",
+            "date": "2023-07-26",
+            "title": "Fed raises rates by a quarter point",
+            "d1": 0.33,
+            "d7": 0.58,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.98
+          },
+          {
+            "id": "GOLD-20261110-03",
+            "date": "2026-11-10",
+            "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Goldman Sachs warns high inflation could lead to more interest rate hikes next year. @WatcherGuru",
+            "d1": -0.54,
+            "d7": -5.22,
+            "peak_hours": 103.9,
+            "source": "MINT",
+            "score": 0.98
+          },
+          {
+            "id": "START-20220615-G",
+            "date": "2022-06-15",
+            "title": "Fed raises rates by 0.75 point, biggest hike since 1994",
+            "d1": 0.34,
+            "d7": 1.37,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.9
+          },
+          {
+            "id": "START-20220921-G",
+            "date": "2022-09-21",
+            "title": "Fed raises rates by 0.75 point again and signals more hikes",
+            "d1": 0.28,
+            "d7": -0.07,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.9
+          },
+          {
+            "id": "GOLD-20261118-05",
+            "date": "2026-11-18",
+            "title": "JUST IN: \ud83c\uddfa\ud83c\uddf8 Federal Reserve officials expect more interest rate hikes and warn AI could drive inflation higher. @WatcherGuru",
+            "d1": -1.85,
+            "d7": null,
+            "peak_hours": 164.9,
+            "source": "MINT",
+            "score": 0.89
+          }
+        ],
+        "votes": {
+          "up": 2.78,
+          "down": 4.19
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-25T18:16:12.229041+00:00",
+          "low": -0.72,
+          "mid": -1.2,
+          "high": -1.67,
+          "window_hours": 17.2,
+          "probability": 0.56,
+          "agree": 2,
+          "similar": 5,
+          "basis": "2 of 5 similar past events moved this way (typical move 1.2%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.41,
+          "threshold": 0.6,
+          "floor": 0.58,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.1x a normal day, price -0.6%",
+            "buy_sell": "45% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.43,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 2.78,
+            "down": 4.19
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A 93% chance that the Fed will raise rates by 0.25% is being reported, which could make gold less attractive if investors think rates will stay higher.",
+        "what_past_events_show": "Recent warnings of more rate hikes pushed gold down (\u20110.5% and \u20111.9%), while actual hikes in the past gave a tiny rise (+0.3%). The pattern is mixed, but hawkish news tends to pull gold lower.",
+        "direction": "down",
+        "why": [
+          "Hawkish rate expectations usually hurt gold because higher yields make other assets more appealing.",
+          "The hike is largely expected (93% chance), so any reaction will be modest but still negative."
+        ],
+        "watch_next": "If the Fed surprises with a larger hike or changes its forward guidance, the move could become stronger.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-25T18:16:00.925927+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-25T18:16:16.688754+00:00"
+      }
     }
   ],
   "counter": {
@@ -47780,27 +48020,27 @@
     "BTC-20261123": 9,
     "GOLD-20261124": 7,
     "BTC-20261124": 6,
-    "GOLD-20261125": 6,
+    "GOLD-20261125": 7,
     "BTC-20261125": 3
   },
   "last_run": {
-    "run_time": "2026-11-25T18:11:11.638989+00:00",
+    "run_time": "2026-11-25T18:16:00.925927+00:00",
     "test_mode": false,
-    "stories": 156,
-    "off_topic": 91,
-    "repeats": 65,
-    "new_events": 0,
+    "stories": 121,
+    "off_topic": 69,
+    "repeats": 51,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -47824,7 +48064,8 @@
           "Alert: Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
           "Alert: Gold and silver slide to key support as rate hike fears build",
           "Alert: JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions",
-          "Alert: Gold, silver remain under pressure as strong GDP, sticky inflation reinforce Fed hike bets - Kitco AM Report"
+          "Alert: Gold, silver remain under pressure as strong GDP, sticky inflation reinforce Fed hike bets - Kitco AM Report",
+          "Being checked: JUST IN: \ud83c\uddfa\ud83c\uddf8 93% chance the Fed hikes interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru (approved social media account: Watcher.Guru (Telegram) (from social media))"
         ]
       }
     }
@@ -47852,7 +48093,8 @@
         "Alert: Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
         "Alert: Gold and silver slide to key support as rate hike fears build",
         "Alert: JUST IN: Financial markets are crashing again. Gold falls under $3,470 S&P 500 falls under 7,000 Nasdaq falls under 22,800 Bitcoin falls under $58,000 Trillions",
-        "Alert: Gold, silver remain under pressure as strong GDP, sticky inflation reinforce Fed hike bets - Kitco AM Report"
+        "Alert: Gold, silver remain under pressure as strong GDP, sticky inflation reinforce Fed hike bets - Kitco AM Report",
+        "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 93% chance the Fed hikes interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru"
       ]
     }
   },
