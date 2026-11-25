@@ -41568,8 +41568,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 4,
-          "right": 3,
+          "done": 5,
+          "right": 4,
           "wrong": 1,
           "total": 9
         },
@@ -41624,7 +41624,13 @@
           "time": "2026-11-25T00:57:00+00:00",
           "verdict": "right"
         },
-        "old_effect": "right"
+        "old_effect": "right",
+        "h36": {
+          "price": 3512.26,
+          "move": -3.67,
+          "time": "2026-11-25T12:57:00+00:00",
+          "verdict": "right"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -42912,8 +42918,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 1,
+          "done": 4,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -42961,7 +42967,14 @@
           "move": -0.78,
           "time": "2026-11-24T23:00:07+00:00",
           "verdict": "flat"
-        }
+        },
+        "d1": {
+          "price": 58610.99,
+          "move": -2.97,
+          "time": "2026-11-25T13:00:07+00:00",
+          "verdict": "right"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "down",
@@ -46128,7 +46141,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 0,
+          "done": 1,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -46158,6 +46171,12 @@
           "final": false,
           "text": "still inside the 4.9 days window (biggest move so far +0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 58610.99,
+          "move": 0.25,
+          "time": "2026-11-25T12:57:50+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -46322,11 +46341,11 @@
     "BTC-20261125": 2
   },
   "last_run": {
-    "run_time": "2026-11-25T13:05:41.172307+00:00",
+    "run_time": "2026-11-25T13:10:51.164976+00:00",
     "test_mode": false,
-    "stories": 160,
-    "off_topic": 93,
-    "repeats": 67,
+    "stories": 168,
+    "off_topic": 98,
+    "repeats": 70,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
