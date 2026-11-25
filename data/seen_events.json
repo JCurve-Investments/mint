@@ -46018,6 +46018,212 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-25T07:51:13.859010+00:00"
       }
+    },
+    {
+      "id": "BTC-20261125-02",
+      "asset": "Bitcoin",
+      "factor": "B4",
+      "factor_name": "ETF flows",
+      "title": "Bitcoin holds up better than ether as stocks slide, ETF outflows hit sixth day",
+      "state": "context",
+      "state_reason": "ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-25T12:05:40.486451+00:00",
+      "earliest_report": "2026-11-25T11:57:50+00:00",
+      "last_updated": "2026-11-25T12:05:40.486451+00:00",
+      "words": [
+        "better",
+        "bitcoin",
+        "day",
+        "etf",
+        "ether",
+        "hit",
+        "holds",
+        "outflows",
+        "sixth",
+        "slide",
+        "stock"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Bitcoin holds up better than ether as stocks slide, ETF outflows hit sixth day",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUFhzaDdWajNwYTlhWGl6LVlQazYyckdleTJWYU5KNW9XdmdHTkJWODhNM1FtUlFGMmU3eUtMZmprRS0yTlR1U3hmbFFLdUd1TEoybXBnSUhHeVhNRDI4Q2VtTUlFYkFXcTh1UzdiZjNXZFNZRnNOZVFObVM1TWFFVVNQbktpRmdzVzQ0YzBSVFA3XzNuQXJGQktWLWFyWHdXZTh5cjJNR0FBc3I0RndWeWpB?oc=5",
+          "published": "2026-11-25T11:57:50+00:00",
+          "found_at": "2026-11-25T12:05:40.486451+00:00",
+          "summary": "",
+          "factor": "B4"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-25T12:05:40.486451+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-25T12:05:40.486451+00:00",
+          "note": "new -> context: ETF flows is a moderate factor - shown for context, never an alert (reliable source: CoinDesk)"
+        }
+      ],
+      "decision": null,
+      "outcome": {
+        "start_price": 58467.41,
+        "start_time": "2026-11-25T11:39:10+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-25T11:39:10+00:00",
+          "hours": -0.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4.9 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 58467.41,
+          "start_time": "2026-11-25T12:05:40.486451+00:00",
+          "threshold": 1.18,
+          "window_hours": 118.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4.9 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "In similar streaks of ETF outflows, Bitcoin fell the next day, with drops ranging from about -0.5% to -5.5%.",
+        "similar": [
+          {
+            "id": "BTC-20261112-04",
+            "date": "2026-11-12",
+            "title": "Bitcoin slips with tech stocks as Nvidia CEO turmoil and ETF outflows weigh",
+            "d1": -5.49,
+            "d7": -13.2,
+            "peak_hours": 155.5,
+            "source": "MINT",
+            "score": 0.8
+          },
+          {
+            "id": "BTC-20261111-04",
+            "date": "2026-11-11",
+            "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+            "d1": -3.9,
+            "d7": -16.17,
+            "peak_hours": 167.2,
+            "source": "MINT",
+            "score": 0.77
+          },
+          {
+            "id": "BTC-20261116-01",
+            "date": "2026-11-16",
+            "title": "Bitcoin drops to a mid-July low as CZ cites ETF outflows, liquidity shifts, security incidents, inflation and regulation worries",
+            "d1": -0.48,
+            "d7": -5.51,
+            "peak_hours": 118.0,
+            "source": "MINT",
+            "score": 0.69
+          },
+          {
+            "id": "BTC-20261119-01",
+            "date": "2026-11-19",
+            "title": "BlackRock\u2019s IBIT Bitcoin ETF Sees $209.5 Million Outflow After Brief One-Day Inflow",
+            "d1": -1.62,
+            "d7": null,
+            "peak_hours": 53.6,
+            "source": "MINT",
+            "score": 0.69
+          },
+          {
+            "id": "BTC-20261111-01",
+            "date": "2026-11-11",
+            "title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
+            "d1": -1.43,
+            "d7": -13.18,
+            "peak_hours": 85.7,
+            "source": "MINT",
+            "score": 0.63
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 5.7
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-25T12:05:52.556474+00:00",
+          "low": -0.95,
+          "mid": -1.62,
+          "high": -4.7,
+          "window_hours": 118.0,
+          "probability": 0.7,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 1.6%)",
+          "window_basis": "similar past moves peaked after about 4.9 days",
+          "sigma": 2.88,
+          "threshold": 1.18,
+          "floor": 1.18,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.2x a normal day, price -3.2%",
+            "buy_sell": "buyers started 44% of trades (24 h); 52% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 5.7
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Bitcoin stayed steadier than ether while stocks fell, but ETF outflows have continued for a sixth straight day, which can push the price lower.",
+        "what_past_events_show": "In similar streaks of ETF outflows, Bitcoin fell the next day, with drops ranging from about -0.5% to -5.5%.",
+        "direction": "down",
+        "why": [
+          "Six days of outflows signal ongoing selling pressure.",
+          "Past comparable outflow periods all led to price declines."
+        ],
+        "watch_next": "If the outflows stop or reverse, the downside pressure could ease; if they keep going or grow larger, the price could fall more.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-25T12:05:40.486451+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-25T12:05:54.352638+00:00",
+        "sent_state": "context"
+      }
     }
   ],
   "counter": {
@@ -46060,20 +46266,20 @@
     "GOLD-20261124": 7,
     "BTC-20261124": 6,
     "GOLD-20261125": 1,
-    "BTC-20261125": 1
+    "BTC-20261125": 2
   },
   "last_run": {
-    "run_time": "2026-11-25T12:01:24.956343+00:00",
+    "run_time": "2026-11-25T12:05:40.486451+00:00",
     "test_mode": false,
-    "stories": 101,
-    "off_topic": 56,
-    "repeats": 45,
-    "new_events": 0,
+    "stories": 169,
+    "off_topic": 93,
+    "repeats": 75,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
       "confirmed": 0,
-      "context": 0,
+      "context": 1,
       "summary": 0,
       "old": 0,
       "expired": 0,
