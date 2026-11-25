@@ -46296,6 +46296,259 @@
         "first_sent_at": "2026-11-25T12:05:54.352638+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "BTC-20261125-03",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "South Korea unveils draft stablecoin rules, potential easing of ICO ban",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Reuters",
+      "first_seen": "2026-11-25T13:20:57.062525+00:00",
+      "earliest_report": "2026-11-25T02:08:00+00:00",
+      "last_updated": "2026-11-25T13:20:57.062525+00:00",
+      "words": [
+        "ban",
+        "draft",
+        "eas",
+        "ico",
+        "korea",
+        "potential",
+        "rules",
+        "south",
+        "stablecoin",
+        "unveil"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "South Korea unveils draft stablecoin rules, potential easing of ICO ban",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdzlVWnhiQjZLYTlGVlkzX0xxU2dGWlVqZTVTUGs5bWN0RTZfOVRUX1FZR3dwNU1FUFhoSW41VG1MRFJQY0ZtTXU3anVGcU5RaGhTUWZseWs0bGM3a2NMYkx6Tk1ZeFhuekx5cU1SaU1OVUhNMVA2ak1kN0EyWkI4cUlSUlNGT242OWl0aHZ0LS1iWEVOMjJHR3ZmRTRjNTdVS0FqY1Z6cHgxci02TE1nalFydUhZOEgwZ3NVdg?oc=5",
+          "published": "2026-11-25T02:08:00+00:00",
+          "found_at": "2026-11-25T13:20:57.062525+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-25T13:20:57.062525+00:00",
+          "note": "new event, first report by Reuters"
+        },
+        {
+          "time": "2026-11-25T13:20:57.062525+00:00",
+          "note": "new -> confirmed: reliable source: Reuters - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-25T13:20:57.062525+00:00",
+          "note": "confirmed -> alerted: Rules mode: enough proof and no sign of an older event."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-25",
+        "date_evidence": "no date clue in the headlines, so the first report date is used",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "alert_title": "South Korea unveils draft stablecoin rules, potential easing of ICO ban",
+        "alert_message": "Reuters reports: South Korea unveils draft stablecoin rules, potential easing of ICO ban. In the past, events like this (bans, crackdowns and lawsuits) have often been followed by: price falls.",
+        "why_it_matters": [
+          "Past pattern for this factor: Price falls."
+        ],
+        "reason": "Rules mode: enough proof and no sign of an older event.",
+        "time": "2026-11-25T13:20:57.062525+00:00",
+        "mode": "rules (AI failed)",
+        "model": null,
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nSouth Korea unveils draft stablecoin rules, potential easing of ICO ban\n\nReuters reports: South Korea unveils draft stablecoin rules, potential easing of ICO ban. In the past, events like this (bans, crackdowns and lawsuits) have often been followed by: price falls.\n\nMINT's prediction: Bitcoin DOWN - 6 similar past event(s): bitcoin rose after 0 and fell after 6 (average 1-day move -3.5%); factor pattern: Bans, crackdowns and lawsuits: Bitcoin has usually fallen afterwards\n\nBitcoin had already moved -1.0% since the first report.\nSources: Reuters\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 25 Nov 13:20 UTC",
+        "telegram_sent_at": "2026-11-25T13:20:57.062525+00:00"
+      },
+      "outcome": {
+        "start_price": 59216.48,
+        "start_time": "2026-11-25T02:00:00+00:00",
+        "moved_before_mint": -1.02,
+        "delay_hours": 11.2,
+        "h1": {
+          "price": 59165.86,
+          "move": -0.09,
+          "time": "2026-11-25T03:08:00+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 59164.33,
+          "move": -0.09,
+          "time": "2026-11-25T07:08:00+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 58591.1,
+          "move": -1.06,
+          "time": "2026-11-25T12:08:00+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": -1.02,
+          "time": "2026-11-25T12:29:40+00:00",
+          "hours": 10.4,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 3,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 3.4 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -1.06,
+          "peak_hours": 9.9,
+          "faded_hours": null,
+          "against": 0.23,
+          "against_hours": 6.9,
+          "until_hours": 10.4,
+          "text": "Clear impact: Bitcoin fell up to 1.1% (after 10 h). Still in the predicted direction after 10 h (-1.0%)."
+        },
+        "result": {
+          "start_price": 58610.99,
+          "start_time": "2026-11-25T13:20:57.062525+00:00",
+          "threshold": 1.18,
+          "window_hours": 82.8,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 3.4 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "past events + factor pattern",
+        "reason": "6 similar past event(s): bitcoin rose after 0 and fell after 6 (average 1-day move -3.5%); factor pattern: Bans, crackdowns and lawsuits: Bitcoin has usually fallen afterwards",
+        "similar": [
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.61
+          },
+          {
+            "id": "BTC-20261123-04",
+            "date": "2026-11-23",
+            "title": "JUST IN: \ud83c\uddec\ud83c\udde7 UK to ban crypto exchanges from trading on their own platforms starting October 2027. @WatcherGuru",
+            "d1": -1.42,
+            "d7": null,
+            "peak_hours": 47.4,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "BTC-20261110-01",
+            "date": "2026-11-10",
+            "title": "China\u2019s Central Bank Reportedly Probes Solana-Related Activities in Shanghai Over Illegal Crypto Services",
+            "d1": -1.48,
+            "d7": -13.26,
+            "peak_hours": 116.4,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "BTC-20261112-05",
+            "date": "2026-11-12",
+            "title": "India\u2019s financial crimes watchdog raids crypto exchanges CoinDCX and Delta over alleged illegal cross-border trades",
+            "d1": -5.97,
+            "d7": -13.3,
+            "peak_hours": 156.8,
+            "source": "MINT",
+            "score": 0.55
+          },
+          {
+            "id": "BTC-20261123-06",
+            "date": "2026-11-23",
+            "title": "South Korea seeks broader account freezes and tighter rules on offshore crypto transfers",
+            "d1": -2.28,
+            "d7": null,
+            "peak_hours": 49.1,
+            "source": "MINT",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 4.73
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-25T13:21:13.394210+00:00",
+          "low": -1.45,
+          "mid": -2.28,
+          "high": -5.28,
+          "window_hours": 82.8,
+          "probability": 0.7,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 2.3%)",
+          "window_basis": "similar past moves peaked after about 3.4 days",
+          "sigma": 2.88,
+          "threshold": 1.18,
+          "floor": 1.18,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "normal: 1.2x a normal day, price -2.2%",
+            "buy_sell": "buyers started 44% of trades (24 h); 51% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 4.73
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "rules",
+        "summary": "South Korea unveils draft stablecoin rules, potential easing of ICO ban.",
+        "what_past_events_show": "6 similar past event(s): bitcoin rose after 0 and fell after 6 (average 1-day move -3.5%); factor pattern: Bans, crackdowns and lawsuits: Bitcoin has usually fallen afterwards",
+        "direction": "down",
+        "why": [
+          "Usually a fall within hours to a day. Good legal news (a case dropped, a court win, an approval such as the US spot Bitcoin ETFs in January 2024) has usually pushed the price up."
+        ],
+        "watch_next": "Bigger if: The country or company is large (US, China, the biggest exchanges); the action is final (a ban or a guilty plea) rather than a proposal; the market was already nervous.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-25T13:20:57.062525+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-25T13:21:14.396092+00:00"
+      }
     }
   ],
   "counter": {
@@ -46338,26 +46591,26 @@
     "GOLD-20261124": 7,
     "BTC-20261124": 6,
     "GOLD-20261125": 1,
-    "BTC-20261125": 2
+    "BTC-20261125": 3
   },
   "last_run": {
-    "run_time": "2026-11-25T13:15:54.730877+00:00",
+    "run_time": "2026-11-25T13:20:57.062525+00:00",
     "test_mode": false,
-    "stories": 165,
+    "stories": 164,
     "off_topic": 95,
-    "repeats": 70,
-    "new_events": 0,
+    "repeats": 68,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -46366,7 +46619,8 @@
           "Alert: Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
           "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
           "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
-          "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases"
+          "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
+          "Being checked: South Korea unveils draft stablecoin rules, potential easing of ICO ban (reliable source: Reuters)"
         ]
       },
       "Gold": {
@@ -46395,7 +46649,8 @@
         "Alert: Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
         "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
         "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
-        "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases"
+        "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
+        "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban"
       ]
     },
     "Gold": {
