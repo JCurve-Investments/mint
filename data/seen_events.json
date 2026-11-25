@@ -41359,8 +41359,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 3,
+          "done": 6,
+          "right": 4,
           "wrong": 1,
           "total": 9
         },
@@ -41414,6 +41414,12 @@
           "price": 3537.28,
           "move": -2.97,
           "time": "2026-11-25T02:18:04+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3475.34,
+          "move": -4.66,
+          "time": "2026-11-25T14:18:04+00:00",
           "verdict": "right"
         }
       },
@@ -46610,11 +46616,11 @@
     "BTC-20261125": 3
   },
   "last_run": {
-    "run_time": "2026-11-25T14:25:41.852742+00:00",
+    "run_time": "2026-11-25T14:31:23.613625+00:00",
     "test_mode": false,
-    "stories": 162,
-    "off_topic": 93,
-    "repeats": 69,
+    "stories": 146,
+    "off_topic": 84,
+    "repeats": 62,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -46634,7 +46640,8 @@
           "Alert: EU proposes sweeping new Russia sanctions targeting banks, crypto and sports events",
           "Alert: Europol operation involving Binance, Coinbase and Chainalysis traces more than $28.5 million in crypto behind illegal streaming services",
           "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
-          "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban"
+          "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
+          "US stock market (Nasdaq) fell -3.55% on its last day"
         ]
       },
       "Gold": {
