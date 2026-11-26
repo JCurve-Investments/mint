@@ -45054,9 +45054,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 0,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
         "final": false,
@@ -45103,7 +45103,14 @@
           "move": 0.84,
           "time": "2026-11-26T06:02:00+00:00",
           "verdict": "wrong"
-        }
+        },
+        "d1": {
+          "price": 3561.31,
+          "move": 0.51,
+          "time": "2026-11-26T20:02:00+00:00",
+          "verdict": "wrong"
+        },
+        "old_effect": "wrong"
       },
       "prediction": {
         "direction": "down",
@@ -47674,7 +47681,7 @@
       "proof_reason": "reliable source: Kitco News",
       "first_seen": "2026-11-26T18:40:49.459176+00:00",
       "earliest_report": "2026-11-24T13:45:25+00:00",
-      "last_updated": "2026-11-26T18:50:51.451837+00:00",
+      "last_updated": "2026-11-26T20:15:53.570395+00:00",
       "words": [
         "bets",
         "data",
@@ -47825,6 +47832,17 @@
           "found_at": "2026-11-26T18:50:51.451837+00:00",
           "summary": "",
           "factor": "G2"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold drifts lower as Fed rate-hike fears loom",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaS01cTRpU3QtN3AzeHN4UHdHdFQ3UTVFUzNqenpXcWdiMUdOU2lpQVh1bk1uWklCRTZSUHpJMExkY2ZPaUh1VVFXMnJFWnB6TVhmNjV4Mm1jbU02X0hBcERnMm8xb204NE5QNTYtbkwwZVM2YUNpNl82NzlUTzRfUVZYelBVRXlRX0FtOUh6U3JYaEpIR2ZMNA?oc=5",
+          "published": "2026-11-26T13:03:19+00:00",
+          "found_at": "2026-11-26T20:15:53.570395+00:00",
+          "summary": "",
+          "factor": "G2"
         }
       ],
       "history": [
@@ -47851,6 +47869,10 @@
         {
           "time": "2026-11-26T18:50:51.451837+00:00",
           "note": "joined with GOLD-20261126-02 (same factor, same day and shared key words) - the same story"
+        },
+        {
+          "time": "2026-11-26T20:15:53.570395+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": null,
@@ -48340,14 +48362,14 @@
     "BTC-20261126": 4
   },
   "last_run": {
-    "run_time": "2026-11-26T20:10:54.325186+00:00",
+    "run_time": "2026-11-26T20:15:53.570395+00:00",
     "test_mode": false,
-    "stories": 137,
-    "off_topic": 82,
-    "repeats": 55,
+    "stories": 98,
+    "off_topic": 53,
+    "repeats": 44,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
@@ -48361,7 +48383,6 @@
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
-          "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
           "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
           "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
           "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
@@ -48387,7 +48408,6 @@
     "Bitcoin": {
       "state": "Alert",
       "reasons": [
-        "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
         "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
         "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
         "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
