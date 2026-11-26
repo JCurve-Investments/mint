@@ -44039,9 +44039,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 3,
+          "done": 4,
           "right": 1,
-          "wrong": 0,
+          "wrong": 1,
           "total": 9
         },
         "final": false,
@@ -44070,7 +44070,14 @@
           "text": "moved +1.2% or more the OTHER way for 2+ hours, after 5 hours",
           "size": null,
           "opposite": "hit"
-        }
+        },
+        "d1": {
+          "price": 60682.58,
+          "move": 2.48,
+          "time": "2026-11-26T02:08:00+00:00",
+          "verdict": "wrong"
+        },
+        "old_effect": "no_clear_move"
       },
       "prediction": {
         "direction": "down",
@@ -47157,11 +47164,11 @@
     "BTC-20261125": 6
   },
   "last_run": {
-    "run_time": "2026-11-26T02:15:48.531255+00:00",
+    "run_time": "2026-11-26T02:20:47.563592+00:00",
     "test_mode": false,
-    "stories": 148,
-    "off_topic": 92,
-    "repeats": 56,
+    "stories": 163,
+    "off_topic": 101,
+    "repeats": 62,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
