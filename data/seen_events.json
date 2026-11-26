@@ -43488,19 +43488,24 @@
       "proof_reason": "reliable source: Reuters",
       "first_seen": "2026-11-25T14:45:52.027536+00:00",
       "earliest_report": "2026-11-25T14:36:07+00:00",
-      "last_updated": "2026-11-25T14:45:52.027536+00:00",
+      "last_updated": "2026-11-26T19:31:10.433861+00:00",
       "words": [
+        "14.38",
+        "another",
         "bank",
         "central",
         "data",
         "domestically",
+        "fall",
         "gold",
         "held",
         "india",
         "rais",
+        "repatriat",
         "reserv",
         "share",
-        "shows"
+        "shows",
+        "tonn"
       ],
       "amounts": [],
       "old_clues": [],
@@ -43515,6 +43520,17 @@
           "found_at": "2026-11-25T14:45:52.027536+00:00",
           "summary": "",
           "factor": "G4"
+        },
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "India\u2019s central bank repatriates another 60 tonnes of gold in 2026 as share of FX reserves drops to 14.38%",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOGE0WUZ0UVRyeHV2dHBJRzFzTUdnQlVnT0NBQnVwSHpybk5hRV9PVHhWa1E4ak9TaGVFbFlLSVNGRERqbFQ0UVh4WldETUJkLWhnczlOSDBCcDdwMGx0dmJ0QTBvY2d6X3F6SXIxRUxDX0hRWi12ZGxmRms4VzRETlprVHVmaHFjZi1fQjVGRjltZXhCOUo5R3ZPTVNVbWN2NHdWdzc5SERVUndJdU45cXZ6QnU?oc=5",
+          "published": "2026-11-26T19:20:40+00:00",
+          "found_at": "2026-11-26T19:31:10.433861+00:00",
+          "summary": "",
+          "factor": "G4"
         }
       ],
       "history": [
@@ -43525,6 +43541,10 @@
         {
           "time": "2026-11-25T14:45:52.027536+00:00",
           "note": "new -> context: Central bank buying is a moderate factor - shown for context, never an alert (reliable source: Reuters)"
+        },
+        {
+          "time": "2026-11-26T19:31:10.433861+00:00",
+          "note": "another report from Kitco News - same event, no new alert"
         }
       ],
       "decision": null,
@@ -48062,14 +48082,14 @@
     "BTC-20261126": 4
   },
   "last_run": {
-    "run_time": "2026-11-26T19:25:43.899182+00:00",
+    "run_time": "2026-11-26T19:31:10.433861+00:00",
     "test_mode": false,
-    "stories": 136,
-    "off_topic": 79,
-    "repeats": 57,
+    "stories": 105,
+    "off_topic": 61,
+    "repeats": 43,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
