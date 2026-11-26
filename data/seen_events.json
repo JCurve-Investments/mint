@@ -40889,7 +40889,7 @@
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-24T12:45:53.248227+00:00",
       "earliest_report": "2026-11-24T12:36:28+00:00",
-      "last_updated": "2026-11-26T08:55:39.003300+00:00",
+      "last_updated": "2026-11-26T12:20:56.284657+00:00",
       "words": [
         "4.71",
         "6.8",
@@ -40899,6 +40899,7 @@
         "ark",
         "bear",
         "below",
+        "biggest",
         "billion",
         "bitcoin",
         "btc",
@@ -40913,6 +40914,7 @@
         "market",
         "million",
         "month",
+        "monthly",
         "near",
         "nears",
         "net",
@@ -41002,6 +41004,17 @@
           "found_at": "2026-11-26T08:55:39.003300+00:00",
           "summary": "",
           "factor": "B4"
+        },
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Spot bitcoin ETFs are on track for their biggest monthly outflow on record",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWFBld3hBWS0tVGRiRjJxdS1tRkVPbTV1c0Rzb2VfUGpXRVVpZlFMdUxEYXhQTUotQnVMbzc5X3dHVUVnZ2N6UmR2RGhHWWRJRG84WkFtaUktZDNRNzJCaDhLZ1dOU1U4S29yS2NIUHgwcVdjYklMMF9rMThsSVFPYTJnVG1kdjBTMVY5X0VkZi1FOU1vQUY1dTQ1cVY2SUkwZFdianZrLTJOekVSQUE?oc=5",
+          "published": "2026-11-26T12:14:46+00:00",
+          "found_at": "2026-11-26T12:20:56.284657+00:00",
+          "summary": "",
+          "factor": "B4"
         }
       ],
       "history": [
@@ -41032,6 +41045,10 @@
         {
           "time": "2026-11-26T08:55:39.003300+00:00",
           "note": "another report from The Block - same event, no new alert"
+        },
+        {
+          "time": "2026-11-26T12:20:56.284657+00:00",
+          "note": "another report from CoinDesk - same event, no new alert"
         }
       ],
       "decision": null,
@@ -48721,14 +48738,14 @@
     "BTC-20261126": 2
   },
   "last_run": {
-    "run_time": "2026-11-26T12:15:51.595393+00:00",
+    "run_time": "2026-11-26T12:20:56.284657+00:00",
     "test_mode": false,
-    "stories": 149,
-    "off_topic": 92,
-    "repeats": 57,
+    "stories": 159,
+    "off_topic": 99,
+    "repeats": 59,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
