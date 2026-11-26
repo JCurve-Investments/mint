@@ -4030,14 +4030,18 @@
     "s": 57.997
    },
    "1795683600": {
-    "b": 33.4556,
-    "s": 29.0559
+    "b": 33.955,
+    "s": 31.2874
+   },
+   "1795687200": {
+    "b": 0.4488,
+    "s": 0.7013
    }
   },
-  "trades_cursor": "1795686954348205850",
+  "trades_cursor": "1795687296368244758",
   "flow_source": "Kraken",
-  "book_bid_share": 0.533,
-  "book_time": "2026-11-26T09:55:42.129007+00:00"
+  "book_bid_share": 0.528,
+  "book_time": "2026-11-26T10:01:23.816277+00:00"
  },
  "Gold": {
   "bars": [
@@ -7246,39 +7250,39 @@
   ],
   "cot_time": "2026-11-26T00:35:49.386011+00:00"
  },
- "time": "2026-11-26T09:55:42.129007+00:00",
+ "time": "2026-11-26T10:01:23.816277+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 1,
-    "ratio": 1.67,
-    "change_24h": 3.11,
-    "text": "busy: 1.7x a normal day, price +3.1% - real buying",
+    "ratio": 1.63,
+    "change_24h": 3.44,
+    "text": "busy: 1.6x a normal day, price +3.4% - real buying",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "taker_buy_share": 0.511,
-    "book_bid_share": 0.533,
-    "up_volume_share": 0.686,
-    "text": "buyers started 51% of trades (24 h); 53% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.491,
+    "book_bid_share": 0.528,
+    "up_volume_share": 0.733,
+    "text": "buyers started 49% of trades (24 h); 53% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
   "Gold": {
    "volume": {
     "vote": 1,
-    "ratio": 1.54,
-    "change_24h": 1.78,
-    "text": "busy: 1.5x a normal day, price +1.8% - real buying",
+    "ratio": 1.59,
+    "change_24h": 1.71,
+    "text": "busy: 1.6x a normal day, price +1.7% - real buying",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.574,
+    "up_volume_share": 0.563,
     "cot_vote": -1,
-    "text": "57% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
+    "text": "56% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
     "ok": true
    }
   }
