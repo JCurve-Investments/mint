@@ -47718,9 +47718,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 1,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
         "final": false,
@@ -47754,6 +47754,12 @@
           "price": 3530.73,
           "move": 1.79,
           "time": "2026-11-25T19:01:45+00:00",
+          "verdict": "wrong"
+        },
+        "h10": {
+          "price": 3571.62,
+          "move": 2.97,
+          "time": "2026-11-26T00:01:45+00:00",
           "verdict": "wrong"
         }
       },
@@ -49101,6 +49107,259 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-25T23:25:53.674079+00:00"
       }
+    },
+    {
+      "id": "BTC-20261125-06",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: The Block",
+      "first_seen": "2026-11-26T00:15:46.641749+00:00",
+      "earliest_report": "2026-11-25T18:05:00+00:00",
+      "last_updated": "2026-11-26T00:15:46.641749+00:00",
+      "words": [
+        "aim",
+        "billion",
+        "crackdown",
+        "crypto",
+        "department",
+        "ever",
+        "fraud",
+        "historic",
+        "justice",
+        "largest",
+        "proceed",
+        "takes"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNam1OVFpUSFdnRjhrdUExcGNaRkZNY21jZFA1UWZ1R3hnRmtzYU9icXFDTmRXc2kzS3VGclhvdDZVX0hEU0RvaXNiZ3RlNC1Mc3Q2VEg3TzU5VkFTSTdBVnlxdGVwcm9VcVZRX3BXbE9qOWNSTS16V0RwYTZtY25ta3JpNEkzN3lMV1RjeDI1WThBci01M1FNaTJHSVl1emtXc3R6QzVJekVncW11a2puOGEwbW9GTmdDSHFaMk9wTTViaHlET0dDcXR6VlUzSU52QnRMaWUxRQ?oc=5",
+          "published": "2026-11-25T18:05:00+00:00",
+          "found_at": "2026-11-26T00:15:46.641749+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-26T00:15:46.641749+00:00",
+          "note": "new event, first report by The Block"
+        },
+        {
+          "time": "2026-11-26T00:15:46.641749+00:00",
+          "note": "new -> confirmed: reliable source: The Block - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-26T00:15:46.641749+00:00",
+          "note": "confirmed -> alerted: New government crackdown is a fresh event that could affect Bitcoin despite the recent price rise."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-25",
+        "date_evidence": "First report published 2026-11-25",
+        "send_alert": true,
+        "impact": "high",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Crackdowns have historically pushed Bitcoin lower",
+        "alert_title": "US crypto fraud crackdown",
+        "alert_message": "The Justice Department launched its biggest ever crypto fraud crackdown, targeting billions in proceeds. Such actions have historically pressured Bitcoin lower, creating risk of a price drop.",
+        "why_it_matters": [
+          "Regulatory pressure can hurt confidence",
+          "Large seizures may reduce market liquidity"
+        ],
+        "reason": "New government crackdown is a fresh event that could affect Bitcoin despite the recent price rise.",
+        "time": "2026-11-26T00:15:46.641749+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nUS crypto fraud crackdown\n\nThe Justice Department launched its biggest ever crypto fraud crackdown, targeting billions in proceeds. Such actions have historically pressured Bitcoin lower, creating risk of a price drop.\n\nMINT's prediction: Bitcoin DOWN - Similar legal crackdowns have usually pushed Bitcoin down \u2013 past lawsuits and bans caused drops of about 3\u20115% in one day, while only minor positive moves were seen in less severe cases.\n\nBitcoin had already moved +1.4% since the first report.\nSources: The Block\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 26 Nov 00:15 UTC",
+        "telegram_sent_at": "2026-11-26T00:15:46.641749+00:00"
+      },
+      "outcome": {
+        "start_price": 59547.64,
+        "start_time": "2026-11-25T18:00:00+00:00",
+        "moved_before_mint": 1.43,
+        "delay_hours": 6.2,
+        "h1": {
+          "price": 59708.75,
+          "move": 0.27,
+          "time": "2026-11-25T19:05:00+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 60047.36,
+          "move": 0.84,
+          "time": "2026-11-25T23:05:00+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 1.43,
+          "time": "2026-11-25T23:59:50+00:00",
+          "hours": 5.9,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 2,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": 0.27,
+          "peak_hours": 0.9,
+          "faded_hours": 1.9,
+          "against": 1.43,
+          "against_hours": 5.9,
+          "until_hours": 5.9,
+          "text": "Never moved the predicted way. It rose up to 1.4% (after 6 h)."
+        },
+        "result": {
+          "start_price": 60397.49,
+          "start_time": "2026-11-26T00:15:46.641749+00:00",
+          "threshold": 2.17,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar legal crackdowns have usually pushed Bitcoin down \u2013 past lawsuits and bans caused drops of about 3\u20115% in one day, while only minor positive moves were seen in less severe cases.",
+        "similar": [
+          {
+            "id": "BTC-20261114-02",
+            "date": "2026-11-14",
+            "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
+            "d1": -3.36,
+            "d7": -16.89,
+            "peak_hours": 167.5,
+            "source": "MINT",
+            "score": 0.57
+          },
+          {
+            "id": "BTC-20261118-04",
+            "date": "2026-11-18",
+            "title": "Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
+            "d1": 0.3,
+            "d7": -3.95,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.56
+          },
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          },
+          {
+            "id": "BTC-20261112-08",
+            "date": "2026-11-12",
+            "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
+            "d1": -4.57,
+            "d7": -12.44,
+            "peak_hours": 150.2,
+            "source": "MINT",
+            "score": 0.49
+          },
+          {
+            "id": "BTC-20261116-02",
+            "date": "2026-11-16",
+            "title": "Blue Wave Could Lead to Big Changes for Financial Enforcement, Especially Crypto",
+            "d1": 1.15,
+            "d7": -4.55,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.49
+          }
+        ],
+        "votes": {
+          "up": 1.05,
+          "down": 3.54
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-26T00:16:01.167937+00:00",
+          "low": -2.74,
+          "mid": -4.35,
+          "high": -5.8,
+          "window_hours": 54.0,
+          "probability": 0.52,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 4.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.9,
+          "threshold": 2.17,
+          "floor": 1.18,
+          "lenses": {
+            "volume": 1,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "busy: 1.6x a normal day, price +1.3% - real buying",
+            "buy_sell": "buyers started 48% of trades (24 h); 36% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "disagrees: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.25,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.05,
+            "down": 3.54
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The U.S. Justice Department announced its biggest ever crypto fraud crackdown, targeting billions in proceeds, which could scare investors and reduce demand for Bitcoin.",
+        "what_past_events_show": "Similar legal crackdowns have usually pushed Bitcoin down \u2013 past lawsuits and bans caused drops of about 3\u20115% in one day, while only minor positive moves were seen in less severe cases.",
+        "direction": "down",
+        "why": [
+          "Big, final legal action tends to trigger fear and selling",
+          "Most comparable past events led to noticeable price drops"
+        ],
+        "watch_next": "If the DOJ limits the crackdown to a few firms or announces a quick settlement, the impact could be smaller.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-26T00:15:46.641749+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-26T00:16:04.707772+00:00"
+      }
     }
   ],
   "counter": {
@@ -49143,26 +49402,26 @@
     "GOLD-20261124": 7,
     "BTC-20261124": 6,
     "GOLD-20261125": 9,
-    "BTC-20261125": 5
+    "BTC-20261125": 6
   },
   "last_run": {
-    "run_time": "2026-11-26T00:10:51.676708+00:00",
+    "run_time": "2026-11-26T00:15:46.641749+00:00",
     "test_mode": false,
-    "stories": 117,
-    "off_topic": 70,
-    "repeats": 47,
-    "new_events": 0,
+    "stories": 149,
+    "off_topic": 89,
+    "repeats": 59,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -49170,7 +49429,8 @@
           "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
           "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
           "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
-          "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit"
+          "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
+          "Being checked: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown' (reliable source: The Block)"
         ]
       },
       "Gold": {
@@ -49202,7 +49462,8 @@
         "Alert: California court terminates lawsuit against Coinbase over TerraUSD purchases",
         "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
         "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
-        "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit"
+        "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
+        "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'"
       ]
     },
     "Gold": {
