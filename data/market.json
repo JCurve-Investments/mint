@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793790000,
-    "open": 78498.4,
-    "close": 78372.3,
-    "volume": 32.0951218
-   },
-   {
     "t": 1793793600,
     "open": 78372.4,
     "close": 78195.8,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795687200,
     "open": 60855.2,
-    "close": 60760.4,
-    "volume": 32.35110782
+    "close": 60441.1,
+    "volume": 75.14187038
+   },
+   {
+    "t": 1795690800,
+    "open": 60441.1,
+    "close": 60614.0,
+    "volume": 39.75242956
    }
   ],
-  "bars_time": "2026-11-26T10:31:15.565840+00:00",
+  "bars_time": "2026-11-26T11:25:50.708936+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4038,14 +4038,14 @@
     "s": 38.232
    },
    "1795690800": {
-    "b": 11.1524,
-    "s": 15.7411
+    "b": 15.5326,
+    "s": 25.9035
    }
   },
-  "trades_cursor": "1795692057733975852",
+  "trades_cursor": "1795692357917302670",
   "flow_source": "Kraken",
-  "book_bid_share": 0.529,
-  "book_time": "2026-11-26T11:20:50.703375+00:00"
+  "book_bid_share": 0.521,
+  "book_time": "2026-11-26T11:25:50.708936+00:00"
  },
  "Gold": {
   "bars": [
@@ -7254,23 +7254,25 @@
   ],
   "cot_time": "2026-11-26T00:35:49.386011+00:00"
  },
- "time": "2026-11-26T11:20:50.703375+00:00",
- "errors": [],
+ "time": "2026-11-26T11:25:50.708936+00:00",
+ "errors": [
+  "Gold bars (Yahoo): HTTP Error 429: Too Many Requests"
+ ],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 1,
-    "ratio": 1.58,
-    "change_24h": 3.74,
-    "text": "busy: 1.6x a normal day, price +3.7% - real buying",
+    "ratio": 1.53,
+    "change_24h": 3.49,
+    "text": "busy: 1.5x a normal day, price +3.5% - real buying",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "taker_buy_share": 0.493,
-    "book_bid_share": 0.529,
-    "up_volume_share": 0.756,
-    "text": "buyers started 49% of trades (24 h); 53% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.492,
+    "book_bid_share": 0.521,
+    "up_volume_share": 0.753,
+    "text": "buyers started 49% of trades (24 h); 52% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
