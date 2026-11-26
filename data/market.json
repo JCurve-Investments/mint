@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793826000,
-    "open": 80056.7,
-    "close": 80162.6,
-    "volume": 83.12739596
-   },
-   {
     "t": 1793829600,
     "open": 80162.6,
     "close": 80645.5,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795723200,
     "open": 60638.5,
-    "close": 60667.7,
-    "volume": 7.43644066
+    "close": 60682.4,
+    "volume": 56.86221972
+   },
+   {
+    "t": 1795726800,
+    "open": 60682.4,
+    "close": 60738.6,
+    "volume": 0.93614294
    }
   ],
-  "bars_time": "2026-11-26T20:10:54.325186+00:00",
+  "bars_time": "2026-11-26T21:01:32.112719+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4074,14 +4074,18 @@
     "s": 22.3857
    },
    "1795723200": {
-    "b": 25.4161,
-    "s": 28.6063
+    "b": 26.0652,
+    "s": 30.8485
+   },
+   "1795726800": {
+    "b": 0.3549,
+    "s": 0.5812
    }
   },
-  "trades_cursor": "1795726553061351070",
+  "trades_cursor": "1795726900095144024",
   "flow_source": "Kraken",
-  "book_bid_share": 0.5,
-  "book_time": "2026-11-26T20:55:41.036850+00:00"
+  "book_bid_share": 0.494,
+  "book_time": "2026-11-26T21:01:32.112719+00:00"
  },
  "Gold": {
   "bars": [
@@ -7290,23 +7294,23 @@
   ],
   "cot_time": "2026-11-26T12:40:54.795681+00:00"
  },
- "time": "2026-11-26T20:55:41.036850+00:00",
+ "time": "2026-11-26T21:01:32.112719+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 0.8,
-    "change_24h": 0.79,
+    "ratio": 0.77,
+    "change_24h": 0.96,
     "text": "quiet: 0.8x a normal day (moves are less reliable)",
     "ok": true
    },
    "buy_sell": {
     "vote": 0,
-    "taker_buy_share": 0.495,
-    "book_bid_share": 0.5,
-    "up_volume_share": 0.503,
-    "text": "buyers started 50% of trades (24 h); 50% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.489,
+    "book_bid_share": 0.494,
+    "up_volume_share": 0.533,
+    "text": "buyers started 49% of trades (24 h); 49% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
@@ -7318,9 +7322,9 @@
    },
    "buy_sell": {
     "vote": 0,
-    "up_volume_share": 0.751,
+    "up_volume_share": 0.715,
     "cot_vote": -1,
-    "text": "75% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
+    "text": "72% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)",
     "ok": true
    }
   }
