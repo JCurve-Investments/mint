@@ -48778,6 +48778,248 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-26T11:35:58.764091+00:00"
       }
+    },
+    {
+      "id": "BTC-20261126-03",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "StanChart\u2019s Crypto Custody Unit Suffers Data Breach",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-26T14:05:43.447533+00:00",
+      "earliest_report": "2026-11-26T12:24:38+00:00",
+      "last_updated": "2026-11-26T14:05:43.447533+00:00",
+      "words": [
+        "crypto",
+        "custody",
+        "data",
+        "hack",
+        "stanchart",
+        "suffer",
+        "unit"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "StanChart\u2019s Crypto Custody Unit Suffers Data Breach",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPelp2M0xxeVgzWWkweXg0OWRHcllEdGluMFZmYjRpVnlvNERpVWNPNGJpc1liMEhOZFBKTldNOGI3b3A5aUdnWHktSTV3cTZiWThKZGJ0c1Z5Sk56amFQZmhEUEc3U041ODI2V2NCT3VmY2ppdFVjUWx2d0RRZHdtOUpIcEpTUzNfZWRLTmdwNUVINDFaUktROW9pRW9DbnVjS3dmUQ?oc=5",
+          "published": "2026-11-26T12:24:38+00:00",
+          "found_at": "2026-11-26T14:05:43.447533+00:00",
+          "summary": "",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-26T14:05:43.447533+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-26T14:05:43.447533+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-26T14:05:43.447533+00:00",
+          "note": "confirmed -> alerted: A new data breach at a major crypto custodian is a relevant security event, even though Bitcoin has risen slightly so far."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-26",
+        "date_evidence": "The Bloomberg article was published on 2026-11-26 12:24 UTC.",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Past hacks and breaches have pushed Bitcoin lower.",
+        "alert_title": "StanChart Custody Unit Data Breach",
+        "alert_message": "StanChart\u2019s crypto custody unit suffered a data breach, raising security concerns that could pressure Bitcoin\u2019s price.",
+        "why_it_matters": [
+          "Security breach may hurt confidence in crypto storage",
+          "Potential for further fallout or loss of funds"
+        ],
+        "reason": "A new data breach at a major crypto custodian is a relevant security event, even though Bitcoin has risen slightly so far.",
+        "time": "2026-11-26T14:05:43.447533+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nStanChart Custody Unit Data Breach\n\nStanChart\u2019s crypto custody unit suffered a data breach, raising security concerns that could pressure Bitcoin\u2019s price.\n\nMINT's prediction: Bitcoin DOWN - Similar hacks gave mixed results \u2013 two events saw Bitcoin fall (\u20112.2% and \u20113.0%) while three saw it rise (+1.4%, +1.2%, +1.9%) the next day.\n\nBitcoin had already moved +0.3% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 26 Nov 14:05 UTC",
+        "telegram_sent_at": "2026-11-26T14:05:43.447533+00:00"
+      },
+      "outcome": {
+        "start_price": 60645.73,
+        "start_time": "2026-11-26T12:00:00+00:00",
+        "moved_before_mint": 0.27,
+        "delay_hours": 1.7,
+        "h1": {
+          "price": 60776.23,
+          "move": 0.22,
+          "time": "2026-11-26T13:24:38+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": 0.27,
+          "time": "2026-11-26T14:00:00+00:00",
+          "hours": 1.6,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 19 hours window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": 0.22,
+          "peak_hours": 0.6,
+          "faded_hours": 1.6,
+          "against": 0.27,
+          "against_hours": 1.6,
+          "until_hours": 1.6,
+          "text": "Never moved the predicted way. It rose up to 0.3% (after 2 h)."
+        },
+        "result": {
+          "start_price": 60809.62,
+          "start_time": "2026-11-26T14:05:43.447533+00:00",
+          "threshold": 1.31,
+          "window_hours": 19.3,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 19 hours window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar hacks gave mixed results \u2013 two events saw Bitcoin fall (\u20112.2% and \u20113.0%) while three saw it rise (+1.4%, +1.2%, +1.9%) the next day.",
+        "similar": [
+          {
+            "id": "START-20190507-B",
+            "date": "2019-05-07",
+            "title": "Binance hacked, 7,000 bitcoin stolen",
+            "d1": 1.44,
+            "d7": 39.11,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.88
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.75
+          },
+          {
+            "id": "BTC-20261124-03",
+            "date": "2026-11-24",
+            "title": "Behind Binance Hack, a Reckoning Over Who Controls Crypto",
+            "d1": -2.97,
+            "d7": null,
+            "peak_hours": 25.0,
+            "source": "MINT",
+            "score": 0.68
+          },
+          {
+            "id": "BTC-20261110-06",
+            "date": "2026-11-10",
+            "title": "JUST IN: Crypto wallet company Ledger CEO says \"everybody will be hacked at some point.\" @WatcherGuru",
+            "d1": 1.23,
+            "d7": -13.23,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.66
+          },
+          {
+            "id": "BTC-20261110-07",
+            "date": "2026-11-10",
+            "title": "Cyber criminal orchestrated \u00a32m crypto theft bid from jail cell",
+            "d1": 1.95,
+            "d7": -12.37,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.66
+          }
+        ],
+        "votes": {
+          "up": 2.2,
+          "down": 3.59
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-26T14:05:56.386960+00:00",
+          "low": -1.57,
+          "mid": -2.61,
+          "high": -3.65,
+          "window_hours": 19.3,
+          "probability": 0.48,
+          "agree": 2,
+          "similar": 5,
+          "basis": "2 of 5 similar past events moved this way (typical move 2.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.91,
+          "threshold": 1.31,
+          "floor": 1.19,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "normal: 1.2x a normal day, price +4.5%",
+            "buy_sell": "buyers started 52% of trades (24 h); 51% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.43,
+            "volume": 0.5,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 2.2,
+            "down": 3.59
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "StanChart\u2019s crypto custody unit suffered a data breach, raising worries about security and trust in crypto holdings.",
+        "what_past_events_show": "Similar hacks gave mixed results \u2013 two events saw Bitcoin fall (\u20112.2% and \u20113.0%) while three saw it rise (+1.4%, +1.2%, +1.9%) the next day.",
+        "direction": "down",
+        "why": [
+          "A breach at a large, well\u2011known institution can shake confidence.",
+          "Past big\u2011exchange hacks have often triggered short\u2011term price drops."
+        ],
+        "watch_next": "If StanChart quickly assures users their funds are safe or offers compensation, the negative effect could be limited; further details of losses would make it bigger.",
+        "confidence": "low",
+        "confidence_reason": "only 2 of 5 similar past events moved this way",
+        "time": "2026-11-26T14:05:43.447533+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-26T14:06:00.219757+00:00"
+      }
     }
   ],
   "counter": {
@@ -48822,26 +49064,26 @@
     "GOLD-20261125": 9,
     "BTC-20261125": 6,
     "GOLD-20261126": 3,
-    "BTC-20261126": 2
+    "BTC-20261126": 3
   },
   "last_run": {
-    "run_time": "2026-11-26T14:01:23.140985+00:00",
+    "run_time": "2026-11-26T14:05:43.447533+00:00",
     "test_mode": false,
-    "stories": 107,
-    "off_topic": 66,
-    "repeats": 41,
-    "new_events": 0,
+    "stories": 145,
+    "off_topic": 90,
+    "repeats": 54,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -48849,7 +49091,8 @@
           "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
           "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
           "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
-          "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide"
+          "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
+          "Being checked: StanChart\u2019s Crypto Custody Unit Suffers Data Breach (reliable source: Bloomberg)"
         ]
       },
       "Gold": {
@@ -48877,7 +49120,8 @@
         "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
         "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
         "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
-        "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide"
+        "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
+        "Alert: StanChart\u2019s Crypto Custody Unit Suffers Data Breach"
       ]
     },
     "Gold": {
