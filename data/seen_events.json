@@ -48797,15 +48797,22 @@
       "proof_reason": "reliable source: Bloomberg",
       "first_seen": "2026-11-26T14:05:43.447533+00:00",
       "earliest_report": "2026-11-26T12:24:38+00:00",
-      "last_updated": "2026-11-26T14:05:43.447533+00:00",
+      "last_updated": "2026-11-26T14:41:09.969065+00:00",
       "words": [
+        "client",
         "crypto",
         "custody",
         "data",
+        "exclusive",
+        "expos",
         "hack",
+        "hit",
+        "security",
+        "some",
         "stanchart",
         "suffer",
-        "unit"
+        "unit",
+        "zodia"
       ],
       "amounts": [],
       "old_clues": [],
@@ -48818,6 +48825,17 @@
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPelp2M0xxeVgzWWkweXg0OWRHcllEdGluMFZmYjRpVnlvNERpVWNPNGJpc1liMEhOZFBKTldNOGI3b3A5aUdnWHktSTV3cTZiWThKZGJ0c1Z5Sk56amFQZmhEUEc3U041ODI2V2NCT3VmY2ppdFVjUWx2d0RRZHdtOUpIcEpTUzNfZWRLTmdwNUVINDFaUktROW9pRW9DbnVjS3dmUQ?oc=5",
           "published": "2026-11-26T12:24:38+00:00",
           "found_at": "2026-11-26T14:05:43.447533+00:00",
+          "summary": "",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "EXCLUSIVE: StanChart's crypto unit Zodia Custody hit by security breach, some client data exposed",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNGJWWkQ2MFZyZFRTMl9HcGFjU1V0WmZsNGt3MWpJZmNJdUlUNmRtNGpKR3pjRE1YeUx3ZkFKa1NPbFJlUWtOR19yV3FWOG1sY3RrdTFINnhwcnVnZUtrZy1VWmJWa0lQZ1Fla1NSY3dINllTT2FUOGs1MnAzSU03WWtQT2RtUkhrS1M1TFE3bHNKcXBXMXp5OWtxWWFiSGF5dlBOeHJHWGw5Z1ZwclNlSExxUUlNR0FHeTZ0VzhVSmoxQ1p5VUlkdXNydzFTUQ?oc=5",
+          "published": "2026-11-26T12:25:29+00:00",
+          "found_at": "2026-11-26T14:41:09.969065+00:00",
           "summary": "",
           "factor": "B2"
         }
@@ -48834,6 +48852,10 @@
         {
           "time": "2026-11-26T14:05:43.447533+00:00",
           "note": "confirmed -> alerted: A new data breach at a major crypto custodian is a relevant security event, even though Bitcoin has risen slightly so far."
+        },
+        {
+          "time": "2026-11-26T14:41:09.969065+00:00",
+          "note": "another report from Reuters - same event, no new alert"
         }
       ],
       "decision": {
@@ -49073,14 +49095,14 @@
     "BTC-20261126": 3
   },
   "last_run": {
-    "run_time": "2026-11-26T14:35:40.501618+00:00",
+    "run_time": "2026-11-26T14:41:09.969065+00:00",
     "test_mode": false,
-    "stories": 158,
-    "off_topic": 97,
-    "repeats": 61,
+    "stories": 146,
+    "off_topic": 90,
+    "repeats": 55,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
