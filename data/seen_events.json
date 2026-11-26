@@ -48421,6 +48421,244 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-26T10:01:40.318374+00:00"
       }
+    },
+    {
+      "id": "BTC-20261126-02",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "social",
+      "proof_reason": "approved social media account: Whale Alert (Telegram) (from social media)",
+      "first_seen": "2026-11-26T11:35:40.418849+00:00",
+      "earliest_report": "2026-11-26T11:32:08+00:00",
+      "last_updated": "2026-11-26T11:35:40.418849+00:00",
+      "words": [
+        "1.37b",
+        "court",
+        "crypto",
+        "defraud",
+        "find",
+        "founder",
+        "investor",
+        "new",
+        "novatech",
+        "order",
+        "pay",
+        "ponzi",
+        "scheme",
+        "worldwide",
+        "york"
+      ],
+      "amounts": [
+        1370.0
+      ],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Whale Alert (Telegram)",
+          "kind": "social",
+          "site": "whale_alert_io",
+          "title": "New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
+          "link": "https://t.me/whale_alert_io/105332",
+          "published": "2026-11-26T11:32:08+00:00",
+          "found_at": "2026-11-26T11:35:40.418849+00:00",
+          "summary": "New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-26T11:35:40.418849+00:00",
+          "note": "new event, first report by Whale Alert (Telegram)"
+        },
+        {
+          "time": "2026-11-26T11:35:40.418849+00:00",
+          "note": "new -> confirmed: approved social media account: Whale Alert (Telegram) (from social media) - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-26T11:35:40.418849+00:00",
+          "note": "confirmed -> alerted: The court order is a fresh lawsuit event, matching the crackdown factor, and no price move yet, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-26",
+        "date_evidence": "Report published on 2026-11-26 says court ordered payment",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "crackdowns and lawsuits have historically pushed Bitcoin lower",
+        "alert_title": "NY Court Orders NovaTech Founders to Pay $1.37B",
+        "alert_message": "A New York court ordered NovaTech founders to pay $1.37\u202fbillion after finding a crypto Ponzi scheme, marking a major legal crackdown that could weigh on Bitcoin\u2019s price.",
+        "why_it_matters": [
+          "Legal crackdown may hurt crypto confidence",
+          "Large settlement highlights fraud risk in the sector"
+        ],
+        "reason": "The court order is a fresh lawsuit event, matching the crackdown factor, and no price move yet, so an alert is warranted.",
+        "time": "2026-11-26T11:35:40.418849+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nNY Court Orders NovaTech Founders to Pay $1.37B\n\nA New York court ordered NovaTech founders to pay $1.37\u202fbillion after finding a crypto Ponzi scheme, marking a major legal crackdown that could weigh on Bitcoin\u2019s price.\n\nMINT's prediction: Bitcoin DOWN - Similar legal actions have produced mixed results, but the larger crackdown cases (e.g., SEC suing Binance) led to a 5% drop, while smaller freezing orders gave modest gains; overall, big lawsuits tend to push Bitcoin down.\n\nBitcoin had already moved +0.0% since the first report.\nSources: Whale Alert (Telegram)\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 26 Nov 11:35 UTC",
+        "telegram_sent_at": "2026-11-26T11:35:40.418849+00:00"
+      },
+      "outcome": {
+        "start_price": 60629.59,
+        "start_time": "2026-11-26T11:24:00+00:00",
+        "moved_before_mint": 0.0,
+        "delay_hours": 0.1,
+        "now": {
+          "move": 0.0,
+          "time": "2026-11-26T11:24:00+00:00",
+          "hours": -0.1,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 0,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 60629.59,
+          "start_time": "2026-11-26T11:35:40.418849+00:00",
+          "threshold": 2.18,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar legal actions have produced mixed results, but the larger crackdown cases (e.g., SEC suing Binance) led to a 5% drop, while smaller freezing orders gave modest gains; overall, big lawsuits tend to push Bitcoin down.",
+        "similar": [
+          {
+            "id": "BTC-20261120-05",
+            "date": "2026-11-20",
+            "title": "SEC, CFTC and Prosecutors Freeze Assets in $560 Million Crypto-Linked Ponzi Scheme",
+            "d1": 2.61,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.71
+          },
+          {
+            "id": "BTC-20261118-04",
+            "date": "2026-11-18",
+            "title": "Binance Secures $6.5 Billion Freezing Order From Abu Dhabi Court",
+            "d1": 0.3,
+            "d7": -3.95,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.67
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.64
+          },
+          {
+            "id": "BTC-20261112-08",
+            "date": "2026-11-12",
+            "title": "Illinois crypto tax is impossible to enforce as written, crypto industry tells court",
+            "d1": -4.57,
+            "d7": -12.44,
+            "peak_hours": 150.2,
+            "source": "MINT",
+            "score": 0.61
+          },
+          {
+            "id": "BTC-20261116-04",
+            "date": "2026-11-16",
+            "title": "Supreme Court Rejects Crypto Bank Custodia's Bid for Fed Payment Access",
+            "d1": -0.41,
+            "d7": -3.47,
+            "peak_hours": 111.5,
+            "source": "MINT",
+            "score": 0.6
+          }
+        ],
+        "votes": {
+          "up": 1.38,
+          "down": 3.92
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-26T11:35:54.394635+00:00",
+          "low": -2.74,
+          "mid": -4.37,
+          "high": -5.82,
+          "window_hours": 54.0,
+          "probability": 0.44,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 4.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.91,
+          "threshold": 2.18,
+          "floor": 1.19,
+          "lenses": {
+            "volume": 1,
+            "buy_sell": 0
+          },
+          "lens_text": {
+            "volume": "busy: 1.5x a normal day, price +3.5% - real buying",
+            "buy_sell": "buyers started 49% of trades (24 h); 50% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "disagrees: volume",
+            "no signal: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.25,
+            "buy_sell": 0.5
+          },
+          "rule_votes": {
+            "up": 1.38,
+            "down": 3.92
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "A New York court ordered the founders of NovaTech to pay $1.37\u202fbillion after finding they ran a worldwide crypto Ponzi scheme, a major legal blow to the crypto sector.",
+        "what_past_events_show": "Similar legal actions have produced mixed results, but the larger crackdown cases (e.g., SEC suing Binance) led to a 5% drop, while smaller freezing orders gave modest gains; overall, big lawsuits tend to push Bitcoin down.",
+        "direction": "down",
+        "why": [
+          "Large court judgment creates fear of tighter regulation and reduced demand",
+          "Past major lawsuits have caused noticeable price drops"
+        ],
+        "watch_next": "If the judgment is appealed or regulators announce new supportive measures, the impact could be lessened.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-26T11:35:40.418849+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-26T11:35:58.764091+00:00"
+      }
     }
   ],
   "counter": {
@@ -48465,26 +48703,26 @@
     "GOLD-20261125": 9,
     "BTC-20261125": 6,
     "GOLD-20261126": 3,
-    "BTC-20261126": 1
+    "BTC-20261126": 2
   },
   "last_run": {
-    "run_time": "2026-11-26T11:31:08.727986+00:00",
+    "run_time": "2026-11-26T11:35:40.418849+00:00",
     "test_mode": false,
-    "stories": 117,
-    "off_topic": 70,
-    "repeats": 47,
-    "new_events": 0,
+    "stories": 131,
+    "off_topic": 79,
+    "repeats": 51,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -48492,7 +48730,8 @@
           "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
           "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
           "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
-          "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'"
+          "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
+          "Being checked: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide (approved social media account: Whale Alert (Telegram) (from social media))"
         ]
       },
       "Gold": {
@@ -48520,7 +48759,8 @@
         "Alert: South Korea unveils draft stablecoin rules, potential easing of ICO ban",
         "Alert: AI hacking tool Artex linked to breach of systems tied to CIA, ODNI and NSA, and to attacks on South Korean banks and crypto exchange identity checks",
         "Alert: Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
-        "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'"
+        "Alert: Justice Department takes aim at billions in crypto fraud proceeds in historic 'largest ever crackdown'",
+        "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide"
       ]
     },
     "Gold": {
