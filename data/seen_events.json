@@ -45992,7 +45992,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 0,
           "wrong": 4,
           "total": 9
@@ -46041,6 +46041,12 @@
           "move": 3.57,
           "time": "2026-11-27T06:05:00+00:00",
           "verdict": "wrong"
+        },
+        "d2": {
+          "price": 59795.8,
+          "move": 0.42,
+          "time": "2026-11-27T18:05:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -49896,6 +49902,247 @@
         "first_sent_at": "2026-11-27T16:06:00.192355+00:00",
         "sent_state": "rejected"
       }
+    },
+    {
+      "id": "GOLD-20261127-04",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Bloomberg",
+      "first_seen": "2026-11-27T18:15:50.855506+00:00",
+      "earliest_report": "2026-11-27T16:51:36+00:00",
+      "last_updated": "2026-11-27T18:15:50.855506+00:00",
+      "words": [
+        "fed",
+        "frame",
+        "gold",
+        "path",
+        "rate",
+        "steadi",
+        "stock",
+        "volatile",
+        "week"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Bloomberg",
+          "kind": "news",
+          "site": "bloomberg.com",
+          "title": "Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdjBId0RKMFpkWFQ3R3VMeVV3T0VOMEI5dzRuWWZaMGNLVFBtRXZoWjJlWHhsdXVqdGNYT2NNc3ctSU9zdXpCR3ZaSXFENDhwQ1BQa1RqV01palJ3LWcxOWFnRXZFRm40NGRTaU9XYU9yOGF2WXAtV0lxOEdDcWZmSUxfYlZfZENjV3JUX0k5YmstSkk3V1ZWVWpkR1VjdDNzdkF6ZGxSNXpOZ1AxZmlGNThJTE0zUQ?oc=5",
+          "published": "2026-11-27T16:51:36+00:00",
+          "found_at": "2026-11-27T18:15:50.855506+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-27T18:15:50.855506+00:00",
+          "note": "new event, first report by Bloomberg"
+        },
+        {
+          "time": "2026-11-27T18:15:50.855506+00:00",
+          "note": "new -> confirmed: reliable source: Bloomberg - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-27T18:15:50.855506+00:00",
+          "note": "confirmed -> alerted: New Fed rate path news could influence gold, despite a small recent rise."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-27",
+        "date_evidence": "Article published 2026-11-27 16:51 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Higher rates have historically pushed gold lower",
+        "alert_title": "Fed Rate Path May Pressure Gold",
+        "alert_message": "Fed hints at possible rate hikes, which usually lower gold; gold steadied but rose 0.4% after the news.",
+        "why_it_matters": [
+          "Fed decisions affect gold prices",
+          "Rate expectations shape investor behavior"
+        ],
+        "reason": "New Fed rate path news could influence gold, despite a small recent rise.",
+        "time": "2026-11-27T18:15:50.855506+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed Rate Path May Pressure Gold\n\nFed hints at possible rate hikes, which usually lower gold; gold steadied but rose 0.4% after the news.\n\nMINT's prediction: Gold UP - Recent similar days with Fed rate news that weren\u2019t surprising saw gold rise modestly (e.g., +0.2% after a hike, +0.3% after a quarter\u2011point raise, +0.2% after a half\u2011point cut).\n\nGold had already moved +0.4% since the first report.\nSources: Bloomberg\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 0 at 27 Nov 18:15 UTC",
+        "telegram_sent_at": "2026-11-27T18:15:50.855506+00:00"
+      },
+      "outcome": {
+        "start_price": 3619.44,
+        "start_time": "2026-11-27T17:00:00+00:00",
+        "moved_before_mint": 0.41,
+        "delay_hours": 1.4,
+        "h1": {
+          "price": 3634.43,
+          "move": 0.41,
+          "time": "2026-11-27T17:51:36+00:00",
+          "verdict": "right"
+        },
+        "now": {
+          "move": 0.41,
+          "time": "2026-11-27T18:00:10+00:00",
+          "hours": 1.1,
+          "verdict": "right"
+        },
+        "checks": {
+          "done": 1,
+          "right": 1,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 4 hours window (biggest move so far +0.0%)",
+        "impact": {
+          "peak": 0.41,
+          "peak_hours": 1.1,
+          "faded_hours": null,
+          "against": 0.0,
+          "against_hours": 0.1,
+          "until_hours": 1.1,
+          "text": "Clear impact: Gold rose up to 0.4% (after 1 h). Still in the predicted direction after 1 h (+0.4%)."
+        },
+        "result": {
+          "start_price": 3634.43,
+          "start_time": "2026-11-27T18:15:50.855506+00:00",
+          "threshold": 0.6,
+          "window_hours": 4,
+          "peak": 0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 4 hours window (biggest move so far +0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "up",
+        "by": "AI + past events",
+        "reason": "Recent similar days with Fed rate news that weren\u2019t surprising saw gold rise modestly (e.g., +0.2% after a hike, +0.3% after a quarter\u2011point raise, +0.2% after a half\u2011point cut).",
+        "similar": [
+          {
+            "id": "GOLD-20261120-05",
+            "date": "2026-11-20",
+            "title": "Gold under a hiking Fed: central-bank demand versus real rates",
+            "d1": 0.17,
+            "d7": 1.91,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.48
+          },
+          {
+            "id": "GOLD-20261126-07",
+            "date": "2026-11-26",
+            "title": "Gold\u2019s rebound shows markets fear recession and doubt Fed rate follow-through \u2013 StoneX\u2019s Stanley",
+            "d1": 1.25,
+            "d7": null,
+            "peak_hours": 18.6,
+            "source": "MINT",
+            "score": 0.48
+          },
+          {
+            "id": "START-20230726-G",
+            "date": "2023-07-26",
+            "title": "Fed raises rates by a quarter point",
+            "d1": 0.33,
+            "d7": 0.58,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20240918-G",
+            "date": "2024-09-18",
+            "title": "Fed cuts rates by half a point",
+            "d1": 0.24,
+            "d7": 3.56,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          },
+          {
+            "id": "START-20241107-G",
+            "date": "2024-11-07",
+            "title": "Fed cuts rates by a quarter point",
+            "d1": 1.1,
+            "d7": -3.86,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.45
+          }
+        ],
+        "votes": {
+          "up": 2.31,
+          "down": 0.45
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-27T18:16:05.419859+00:00",
+          "low": 0.21,
+          "mid": 0.33,
+          "high": 1.18,
+          "window_hours": 4,
+          "probability": 0.55,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 0.3%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.46,
+          "threshold": 0.6,
+          "floor": 0.6,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "buy_sell": "38% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "disagrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "buy_sell": 0.25
+          },
+          "rule_votes": {
+            "up": 2.31,
+            "down": 0.45
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold held steady while the Fed\u2019s rate outlook and AI\u2011stock moves set up a choppy week, suggesting no new surprise from the central bank.",
+        "what_past_events_show": "Recent similar days with Fed rate news that weren\u2019t surprising saw gold rise modestly (e.g., +0.2% after a hike, +0.3% after a quarter\u2011point raise, +0.2% after a half\u2011point cut).",
+        "direction": "up",
+        "why": [
+          "The Fed\u2019s message was expected, so gold wasn\u2019t pressured by higher\u2011rate fears.",
+          "Past non\u2011surprise Fed announcements have led to small one\u2011day gains in gold."
+        ],
+        "watch_next": "A surprise hawkish comment or an unexpected rate cut would make gold move more sharply.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-27T18:15:50.855506+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-27T18:16:10.106984+00:00"
+      }
     }
   ],
   "counter": {
@@ -49942,26 +50189,26 @@
     "GOLD-20261126": 8,
     "BTC-20261126": 5,
     "BTC-20261127": 3,
-    "GOLD-20261127": 3
+    "GOLD-20261127": 4
   },
   "last_run": {
-    "run_time": "2026-11-27T18:10:52.595875+00:00",
+    "run_time": "2026-11-27T18:15:50.855506+00:00",
     "test_mode": false,
-    "stories": 127,
-    "off_topic": 75,
-    "repeats": 52,
-    "new_events": 0,
+    "stories": 134,
+    "off_topic": 79,
+    "repeats": 54,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -49979,7 +50226,8 @@
           "Alert: Gold Futures Settle Off Day\u2019s Lows as Yields, U.S. Dollar Slip",
           "Alert: Gold\u2019s rebound shows markets fear recession and doubt Fed rate follow-through \u2013 StoneX\u2019s Stanley",
           "Alert: Gold gains nearly 3% as dollar rally stalls, equities stabilise",
-          "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks"
+          "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks",
+          "Being checked: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week (reliable source: Bloomberg)"
         ]
       }
     }
@@ -50001,7 +50249,8 @@
         "Alert: Gold Futures Settle Off Day\u2019s Lows as Yields, U.S. Dollar Slip",
         "Alert: Gold\u2019s rebound shows markets fear recession and doubt Fed rate follow-through \u2013 StoneX\u2019s Stanley",
         "Alert: Gold gains nearly 3% as dollar rally stalls, equities stabilise",
-        "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks"
+        "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks",
+        "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week"
       ]
     }
   },
