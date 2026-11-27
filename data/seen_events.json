@@ -44335,8 +44335,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 2,
+          "done": 6,
+          "right": 3,
           "wrong": 2,
           "total": 9
         },
@@ -44373,11 +44373,17 @@
           "time": "2026-11-26T03:22:00+00:00",
           "verdict": "right"
         },
-        "old_effect": "no_clear_move",
+        "old_effect": "right",
         "h36": {
           "price": 3570.54,
           "move": 0.83,
           "time": "2026-11-26T15:22:00+00:00",
+          "verdict": "right"
+        },
+        "d2": {
+          "price": 3620.97,
+          "move": 2.25,
+          "time": "2026-11-27T03:22:00+00:00",
           "verdict": "right"
         }
       },
@@ -48519,11 +48525,11 @@
     "BTC-20261126": 4
   },
   "last_run": {
-    "run_time": "2026-11-27T03:31:07.595492+00:00",
+    "run_time": "2026-11-27T03:35:42.656530+00:00",
     "test_mode": false,
-    "stories": 94,
-    "off_topic": 52,
-    "repeats": 42,
+    "stories": 145,
+    "off_topic": 88,
+    "repeats": 57,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
