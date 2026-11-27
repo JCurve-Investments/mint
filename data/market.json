@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793901600,
-    "open": 75836.6,
-    "close": 75971.5,
-    "volume": 300.69273426
-   },
-   {
     "t": 1793905200,
     "open": 75971.5,
     "close": 76246.5,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795798800,
     "open": 59900.1,
-    "close": 59925.9,
-    "volume": 197.56517742
+    "close": 59878.6,
+    "volume": 378.22871563
+   },
+   {
+    "t": 1795802400,
+    "open": 59873.2,
+    "close": 59875.6,
+    "volume": 3.954563
    }
   ],
-  "bars_time": "2026-11-27T17:10:52.795402+00:00",
+  "bars_time": "2026-11-27T18:01:26.066097+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4154,14 +4154,14 @@
     "s": 325.5803
    },
    "1795795200": {
-    "b": 242.7978,
-    "s": 533.4525
+    "b": 252.6456,
+    "s": 542.1283
    }
   },
-  "trades_cursor": "1795797877392810888",
+  "trades_cursor": "1795798241686638930",
   "flow_source": "Kraken",
-  "book_bid_share": 0.494,
-  "book_time": "2026-11-27T17:55:40.019024+00:00"
+  "book_bid_share": 0.541,
+  "book_time": "2026-11-27T18:01:26.066097+00:00"
  },
  "Gold": {
   "bars": [
@@ -7202,23 +7202,23 @@
   ],
   "cot_time": "2026-11-27T12:50:50.620494+00:00"
  },
- "time": "2026-11-27T17:55:40.019024+00:00",
+ "time": "2026-11-27T18:01:26.066097+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.04,
-    "change_24h": -0.88,
-    "text": "normal: 1.0x a normal day, price -0.9%",
+    "ratio": 1.07,
+    "change_24h": -0.87,
+    "text": "normal: 1.1x a normal day, price -0.9%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.446,
-    "book_bid_share": 0.494,
-    "up_volume_share": 0.519,
-    "text": "buyers started 45% of trades (24 h); 49% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.449,
+    "book_bid_share": 0.541,
+    "up_volume_share": 0.464,
+    "text": "buyers started 45% of trades (24 h); 54% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
