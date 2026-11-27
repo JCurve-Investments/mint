@@ -48478,6 +48478,243 @@
         "first_sent_at": "2026-11-26T19:55:56.914341+00:00",
         "verdict_sent": "2026-11-27T00:31:07.134778+00:00"
       }
+    },
+    {
+      "id": "BTC-20261127-01",
+      "asset": "Bitcoin",
+      "factor": "B1",
+      "factor_name": "Bans, crackdowns and lawsuits",
+      "title": "JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: The Block",
+      "first_seen": "2026-11-27T03:40:49.125625+00:00",
+      "earliest_report": "2026-11-27T02:20:00+00:00",
+      "last_updated": "2026-11-27T03:40:49.125625+00:00",
+      "words": [
+        "back",
+        "bitcoin",
+        "capitulation",
+        "crypto",
+        "democrat",
+        "flags",
+        "jpmorgan",
+        "plans",
+        "push",
+        "sec"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "The Block",
+          "kind": "news",
+          "site": "theblock.co",
+          "title": "JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcmFYcDJuU0lVNDJKclpDRTMxelZWazdOVHVVTVpuMXFPbFVCRlZUdXZvVE1ZV0VsemdtR3RnZVZQNzBKRG1rdXdBQ2R6c1JMYWJMTTJ2cG12RTMxblNMMjVoYmtOeWExVWVfcXllejR2Z19iMmQ2eXF4YXN4LXUyZlJ6UzBLOXBlekdiNXd5MTVnaVg1YXY2Vks3UnRlVGhjNTFwTlQzbFdzUFNKQUpQYS1rSHVhTVpnOUhPYUloc3dTSVkzZVlsZ1hR?oc=5",
+          "published": "2026-11-27T02:20:00+00:00",
+          "found_at": "2026-11-27T03:40:49.125625+00:00",
+          "summary": "",
+          "factor": "B1"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-27T03:40:49.125625+00:00",
+          "note": "new event, first report by The Block"
+        },
+        {
+          "time": "2026-11-27T03:40:49.125625+00:00",
+          "note": "new -> confirmed: reliable source: The Block - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-27T03:40:49.125625+00:00",
+          "note": "confirmed -> alerted: The news is fresh and involves regulatory action, which historically hurts Bitcoin, so an alert is warranted despite the recent price rise."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-27",
+        "date_evidence": "First report published 2026-11-27 02:20",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Regulatory crackdowns usually push Bitcoin lower",
+        "alert_title": "Regulatory crackdown may hit Bitcoin",
+        "alert_message": "JPMorgan warns Bitcoin capitulation and Democrats push back on SEC crypto plans, signaling possible tighter regulation that could pressure Bitcoin price.",
+        "why_it_matters": [
+          "Regulatory pressure can affect investor confidence",
+          "Past crackdowns have led to price drops"
+        ],
+        "reason": "The news is fresh and involves regulatory action, which historically hurts Bitcoin, so an alert is warranted despite the recent price rise.",
+        "time": "2026-11-27T03:40:49.125625+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Bitcoin\nRegulatory crackdown may hit Bitcoin\n\nJPMorgan warns Bitcoin capitulation and Democrats push back on SEC crypto plans, signaling possible tighter regulation that could pressure Bitcoin price.\n\nMINT's prediction: Bitcoin DOWN - Recent similar regulatory crackdowns (SEC lawsuits, China ban) caused 1\u2011day drops of roughly 4\u20115%, though a few events saw a modest rebound.\n\nBitcoin had already moved +1.3% since the first report.\nSources: The Block\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 27 Nov 03:40 UTC",
+        "telegram_sent_at": "2026-11-27T03:40:49.125625+00:00"
+      },
+      "outcome": {
+        "start_price": 60657.35,
+        "start_time": "2026-11-27T02:00:00+00:00",
+        "moved_before_mint": 1.33,
+        "delay_hours": 1.3,
+        "h1": {
+          "price": 61463.89,
+          "move": 1.33,
+          "time": "2026-11-27T03:20:00+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 1.33,
+          "time": "2026-11-27T03:09:10+00:00",
+          "hours": 0.8,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.2 days window (biggest move so far -0.0%)",
+        "impact": null,
+        "result": {
+          "start_price": 61463.89,
+          "start_time": "2026-11-27T03:40:49.125625+00:00",
+          "threshold": 2.19,
+          "window_hours": 54.0,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.2 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Recent similar regulatory crackdowns (SEC lawsuits, China ban) caused 1\u2011day drops of roughly 4\u20115%, though a few events saw a modest rebound.",
+        "similar": [
+          {
+            "id": "BTC-20261119-05",
+            "date": "2026-11-19",
+            "title": "SEC: Eight Entities Used Fake Crypto Asset Trading Platforms to Steal More Than $37 Million From U.S. Investors",
+            "d1": -2.5,
+            "d7": -4.24,
+            "peak_hours": 39.3,
+            "source": "MINT",
+            "score": 0.53
+          },
+          {
+            "id": "BTC-20261121-02",
+            "date": "2026-11-21",
+            "title": "SEC Says Fake Crypto Trading Platforms and Investment Advisers Stole More Than $37 Million From U.S. Investors",
+            "d1": 1.62,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.53
+          },
+          {
+            "id": "START-20230605-B",
+            "date": "2023-06-05",
+            "title": "SEC sues Binance and founder Changpeng Zhao",
+            "d1": -5.01,
+            "d7": -4.49,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          },
+          {
+            "id": "START-20230606-B",
+            "date": "2023-06-06",
+            "title": "SEC sues Coinbase for operating an unregistered exchange",
+            "d1": 5.74,
+            "d7": 0.62,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          },
+          {
+            "id": "START-20210924-B",
+            "date": "2021-09-24",
+            "title": "China's central bank bans all crypto transactions",
+            "d1": -4.58,
+            "d7": 7.18,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.5
+          }
+        ],
+        "votes": {
+          "up": 1.04,
+          "down": 3.53
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-27T03:41:03.365899+00:00",
+          "low": -2.75,
+          "mid": -4.38,
+          "high": -5.84,
+          "window_hours": 54.0,
+          "probability": 0.61,
+          "agree": 3,
+          "similar": 5,
+          "basis": "3 of 5 similar past events moved this way (typical move 4.6%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 2.92,
+          "threshold": 2.19,
+          "floor": 1.19,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "quiet: 0.5x a normal day (moves are less reliable)",
+            "buy_sell": "buyers started 44% of trades (24 h); 54% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.57,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 1.04,
+            "down": 3.53
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "JPMorgan warned that Bitcoin may be capitulating while Democrats criticize the SEC's crypto plans, raising fears of tighter regulation.",
+        "what_past_events_show": "Recent similar regulatory crackdowns (SEC lawsuits, China ban) caused 1\u2011day drops of roughly 4\u20115%, though a few events saw a modest rebound.",
+        "direction": "down",
+        "why": [
+          "Regulatory pressure usually scares investors and pushes price lower",
+          "Most comparable past events led to a decline the next day"
+        ],
+        "watch_next": "A concrete ban or lawsuit from a major regulator would make the drop bigger; a clear softening of policy would limit the impact.",
+        "confidence": "medium",
+        "confidence_reason": "3 of 5 similar past events moved this way",
+        "time": "2026-11-27T03:40:49.125625+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-27T03:41:07.304244+00:00"
+      }
     }
   ],
   "counter": {
@@ -48522,33 +48759,35 @@
     "GOLD-20261125": 9,
     "BTC-20261125": 6,
     "GOLD-20261126": 7,
-    "BTC-20261126": 4
+    "BTC-20261126": 4,
+    "BTC-20261127": 1
   },
   "last_run": {
-    "run_time": "2026-11-27T03:35:42.656530+00:00",
+    "run_time": "2026-11-27T03:40:49.125625+00:00",
     "test_mode": false,
-    "stories": 145,
-    "off_topic": 88,
-    "repeats": 57,
-    "new_events": 0,
+    "stories": 104,
+    "off_topic": 58,
+    "repeats": 45,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
           "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
           "Alert: StanChart\u2019s Crypto Custody Unit Suffers Data Breach",
-          "Alert: Attacker linked to October Binance hack moves $35.52 million in ETH as $1.9 billion in crypto remains unfrozen"
+          "Alert: Attacker linked to October Binance hack moves $35.52 million in ETH as $1.9 billion in crypto remains unfrozen",
+          "Being checked: JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more (reliable source: The Block)"
         ]
       },
       "Gold": {
@@ -48570,7 +48809,8 @@
       "reasons": [
         "Alert: New York court orders NovaTech founders to pay $1.37B after finding crypto Ponzi scheme defrauded investors worldwide",
         "Alert: StanChart\u2019s Crypto Custody Unit Suffers Data Breach",
-        "Alert: Attacker linked to October Binance hack moves $35.52 million in ETH as $1.9 billion in crypto remains unfrozen"
+        "Alert: Attacker linked to October Binance hack moves $35.52 million in ETH as $1.9 billion in crypto remains unfrozen",
+        "Alert: JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more"
       ]
     },
     "Gold": {
