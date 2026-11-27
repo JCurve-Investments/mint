@@ -48979,6 +48979,257 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-27T04:55:54.507131+00:00"
       }
+    },
+    {
+      "id": "BTC-20261126-05",
+      "asset": "Bitcoin",
+      "factor": "B2",
+      "factor_name": "Exchange collapses and hacks",
+      "title": "Spain gives anti-laundering unit power to freeze crypto accounts without a judge",
+      "state": "rejected",
+      "state_reason": "Decision agent: The report concerns a regulatory change, not an exchange collapse or hack, so it does not match the specified factor for a new price\u2011impact event.",
+      "proof": "news",
+      "proof_reason": "reliable source: CoinDesk",
+      "first_seen": "2026-11-27T05:15:50.357734+00:00",
+      "earliest_report": "2026-11-26T14:05:58+00:00",
+      "last_updated": "2026-11-27T05:15:50.357734+00:00",
+      "words": [
+        "account",
+        "anti-launder",
+        "crypto",
+        "freeze",
+        "gives",
+        "judge",
+        "power",
+        "spain",
+        "unit",
+        "without"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "CoinDesk",
+          "kind": "news",
+          "site": "coindesk.com",
+          "title": "Spain gives anti-laundering unit power to freeze crypto accounts without a judge",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVXlwRzc2NUxXdGdrUnhZb1ptNnJYVG1IajljaG1aV0JveU1Zck1YNHBoajBXaWdzbkRmUVZYcl9maTRrOGJkNGl5cFIyMEFGN0tUYjcza1JZUzdxMjNNVFBvWlctTlVTc19LTDJSQW13dDg5VFdxcXYyNW5EWE01bDB0T0JDNElicHJlWXNHQjNoMmpZdm1NckI3ZU9ZVWlrT0xmWlZyV0dSMzNmQTdubnJHd0xiRFN3bjdKYUJ5Szh5NXM?oc=5",
+          "published": "2026-11-26T14:05:58+00:00",
+          "found_at": "2026-11-27T05:15:50.357734+00:00",
+          "summary": "",
+          "factor": "B2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-27T05:15:50.357734+00:00",
+          "note": "new event, first report by CoinDesk"
+        },
+        {
+          "time": "2026-11-27T05:15:50.357734+00:00",
+          "note": "new -> confirmed: reliable source: CoinDesk - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-27T05:15:50.357734+00:00",
+          "note": "confirmed -> rejected: The report concerns a regulatory change, not an exchange collapse or hack, so it does not match the specified factor for a new price\u2011impact event."
+        }
+      ],
+      "decision": {
+        "is_new_event": false,
+        "event_date": "2026-11-26",
+        "date_evidence": "Article published on 2026-11-26",
+        "send_alert": false,
+        "impact": "low",
+        "possible_effect": "regulatory risk",
+        "expected_direction": "unclear",
+        "direction_reason": "The news is about regulation, not an exchange collapse or hack",
+        "alert_title": "",
+        "alert_message": "",
+        "why_it_matters": [],
+        "reason": "The report concerns a regulatory change, not an exchange collapse or hack, so it does not match the specified factor for a new price\u2011impact event.",
+        "time": "2026-11-27T05:15:50.357734+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b"
+      },
+      "outcome": {
+        "start_price": 60809.62,
+        "start_time": "2026-11-26T14:00:00+00:00",
+        "moved_before_mint": 0.96,
+        "delay_hours": 15.2,
+        "h1": {
+          "price": 60692.58,
+          "move": -0.19,
+          "time": "2026-11-26T15:05:58+00:00",
+          "verdict": "flat"
+        },
+        "h5": {
+          "price": 60422.25,
+          "move": -0.64,
+          "time": "2026-11-26T19:05:58+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 60510.4,
+          "move": -0.49,
+          "time": "2026-11-27T00:05:58+00:00",
+          "verdict": "flat"
+        },
+        "now": {
+          "move": 0.96,
+          "time": "2026-11-27T04:54:10+00:00",
+          "hours": 14.8,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 3,
+          "right": 0,
+          "wrong": 0,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 1.8 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": -0.64,
+          "peak_hours": 4.9,
+          "faded_hours": 12.9,
+          "against": 0.96,
+          "against_hours": 14.8,
+          "until_hours": 14.8,
+          "text": "Small impact: Bitcoin fell up to 0.6% (after 5 h). The effect lasted about 13 h, then faded - later it rose up to 1.0% (after 15 h)."
+        },
+        "result": {
+          "start_price": 61392.99,
+          "start_time": "2026-11-27T05:15:50.357734+00:00",
+          "threshold": 1.29,
+          "window_hours": 42.5,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 1.8 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "Similar freezes or hacks in the past caused Bitcoin to fall the next day, with drops ranging from about\u202f\u20112% to\u202f\u201116%.",
+        "similar": [
+          {
+            "id": "BTC-20261123-06",
+            "date": "2026-11-23",
+            "title": "South Korea seeks broader account freezes and tighter rules on offshore crypto transfers",
+            "d1": -2.28,
+            "d7": null,
+            "peak_hours": 51.1,
+            "source": "MINT",
+            "score": 0.59
+          },
+          {
+            "id": "BTC-20261119-04",
+            "date": "2026-11-19",
+            "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+            "d1": -2.58,
+            "d7": -4.82,
+            "peak_hours": 42.5,
+            "source": "MINT",
+            "score": 0.56
+          },
+          {
+            "id": "BTC-20261120-02",
+            "date": "2026-11-20",
+            "title": "DOJ Says It Helped Freeze Nearly Half of More Than $6 Billion Stolen in North Korea\u2019s Binance Hack",
+            "d1": -9.77,
+            "d7": null,
+            "peak_hours": 23.7,
+            "source": "MINT",
+            "score": 0.56
+          },
+          {
+            "id": "START-20250221-B",
+            "date": "2025-02-21",
+            "title": "Crypto exchange Bybit hacked for $1.5bn",
+            "d1": -2.25,
+            "d7": -14.2,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.52
+          },
+          {
+            "id": "START-20220613-B",
+            "date": "2022-06-13",
+            "title": "Crypto lender Celsius freezes customer withdrawals",
+            "d1": -15.97,
+            "d7": -23.03,
+            "peak_hours": null,
+            "source": "starter library (check the date)",
+            "score": 0.51
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 4.74
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-27T05:16:04.500822+00:00",
+          "low": -2.06,
+          "mid": -2.58,
+          "high": -5.82,
+          "window_hours": 42.5,
+          "probability": 0.7,
+          "agree": 5,
+          "similar": 5,
+          "basis": "5 of 5 similar past events moved this way (typical move 2.6%)",
+          "window_basis": "similar past moves peaked after about 1.8 days",
+          "sigma": 2.91,
+          "threshold": 1.29,
+          "floor": 1.19,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "volume": "quiet: 0.6x a normal day (moves are less reliable)",
+            "buy_sell": "buyers started 44% of trades (24 h); 54% of waiting orders near the price are buy orders"
+          },
+          "lens_notes": [
+            "no signal: volume",
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.86,
+            "volume": 0.5,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 4.74
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Spain\u2019s anti\u2011laundering unit can now freeze crypto accounts without a judge, which could scare users and trigger withdrawals.",
+        "what_past_events_show": "Similar freezes or hacks in the past caused Bitcoin to fall the next day, with drops ranging from about\u202f\u20112% to\u202f\u201116%.",
+        "direction": "down",
+        "why": [
+          "Regulatory freeze raises fear that funds could be locked up",
+          "Investors may rush to move money, creating selling pressure"
+        ],
+        "watch_next": "If Spanish authorities limit the freeze power or exchanges reassure users that assets are safe, the impact could be smaller.",
+        "confidence": "high",
+        "confidence_reason": "5 of 5 similar past events moved this way",
+        "time": "2026-11-27T05:15:50.357734+00:00"
+      },
+      "telegram": {
+        "first_sent_at": "2026-11-27T05:16:07.846406+00:00",
+        "sent_state": "rejected"
+      }
     }
   ],
   "counter": {
@@ -49023,27 +49274,27 @@
     "GOLD-20261125": 9,
     "BTC-20261125": 6,
     "GOLD-20261126": 7,
-    "BTC-20261126": 4,
+    "BTC-20261126": 5,
     "BTC-20261127": 2
   },
   "last_run": {
-    "run_time": "2026-11-27T05:10:51.354489+00:00",
+    "run_time": "2026-11-27T05:15:50.357734+00:00",
     "test_mode": false,
-    "stories": 149,
+    "stories": 150,
     "off_topic": 90,
     "repeats": 59,
-    "new_events": 0,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -49052,7 +49303,8 @@
           "Alert: StanChart\u2019s Crypto Custody Unit Suffers Data Breach",
           "Alert: Attacker linked to October Binance hack moves $35.52 million in ETH as $1.9 billion in crypto remains unfrozen",
           "Alert: JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more",
-          "Alert: Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack"
+          "Alert: Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
+          "Being checked: Spain gives anti-laundering unit power to freeze crypto accounts without a judge (reliable source: CoinDesk)"
         ]
       },
       "Gold": {
