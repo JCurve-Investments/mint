@@ -38418,7 +38418,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 6,
+          "done": 7,
           "right": 3,
           "wrong": 1,
           "total": 9
@@ -38486,6 +38486,12 @@
           "move": -4.08,
           "time": "2026-11-25T13:50:00+00:00",
           "verdict": "right"
+        },
+        "h84": {
+          "price": 60652.93,
+          "move": -0.98,
+          "time": "2026-11-27T01:50:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -44063,9 +44069,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 1,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
         "final": false,
@@ -44113,7 +44119,13 @@
           "time": "2026-11-26T13:51:16+00:00",
           "verdict": "wrong"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "h36": {
+          "price": 3561.4,
+          "move": 2.67,
+          "time": "2026-11-27T01:51:16+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -47390,7 +47402,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 2,
+          "done": 3,
           "right": 0,
           "wrong": 0,
           "total": 9
@@ -47431,6 +47443,12 @@
           "price": 60702.33,
           "move": 0.51,
           "time": "2026-11-26T20:47:38+00:00",
+          "verdict": "flat"
+        },
+        "h10": {
+          "price": 60652.93,
+          "move": 0.43,
+          "time": "2026-11-27T01:47:38+00:00",
           "verdict": "flat"
         }
       },
@@ -48429,11 +48447,11 @@
     "BTC-20261126": 4
   },
   "last_run": {
-    "run_time": "2026-11-27T01:55:35.892017+00:00",
+    "run_time": "2026-11-27T02:01:30.950509+00:00",
     "test_mode": false,
-    "stories": 139,
-    "off_topic": 84,
-    "repeats": 55,
+    "stories": 96,
+    "off_topic": 54,
+    "repeats": 42,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
