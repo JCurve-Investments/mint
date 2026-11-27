@@ -33160,12 +33160,6 @@
         "start_time": "2026-11-20T16:09:20+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
-        "now": {
-          "move": 1.91,
-          "time": "2026-11-27T16:14:40+00:00",
-          "hours": 167.9,
-          "verdict": "wrong"
-        },
         "effect": "right",
         "effect_reason": "moved -0.8% or more and held it for 2+ hours, after 12 hours (biggest move -1.1%)",
         "impact": {
@@ -33193,12 +33187,12 @@
           "opposite": "miss"
         },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 3,
-          "wrong": 1,
+          "wrong": 2,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "h1": {
           "price": 3535.37,
           "move": -0.14,
@@ -33247,6 +33241,12 @@
           "move": -2.78,
           "time": "2026-11-25T16:19:14+00:00",
           "verdict": "right"
+        },
+        "d7": {
+          "price": 3607.94,
+          "move": 1.91,
+          "time": "2026-11-27T16:19:14+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -48275,8 +48275,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 3,
-          "right": 1,
+          "done": 4,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
@@ -48318,7 +48318,14 @@
           "move": 1.14,
           "time": "2026-11-27T02:21:03+00:00",
           "verdict": "right"
-        }
+        },
+        "d1": {
+          "price": 3607.94,
+          "move": 1.25,
+          "time": "2026-11-27T16:21:03+00:00",
+          "verdict": "right"
+        },
+        "old_effect": "right"
       },
       "prediction": {
         "direction": "up",
@@ -49918,10 +49925,10 @@
     "GOLD-20261127": 3
   },
   "last_run": {
-    "run_time": "2026-11-27T16:25:39.429281+00:00",
+    "run_time": "2026-11-27T16:31:10.743113+00:00",
     "test_mode": false,
-    "stories": 134,
-    "off_topic": 80,
+    "stories": 130,
+    "off_topic": 76,
     "repeats": 54,
     "new_events": 0,
     "joined": 0,
