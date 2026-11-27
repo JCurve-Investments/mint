@@ -50701,6 +50701,207 @@
         "sent_state": "alerted",
         "first_sent_at": "2026-11-27T22:56:01.948479+00:00"
       }
+    },
+    {
+      "id": "GOLD-20261127-06",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold and silver bounce from 15-month lows, but Fed risks loom large",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-27T23:50:49.845399+00:00",
+      "earliest_report": "2026-11-27T22:05:46+00:00",
+      "last_updated": "2026-11-27T23:50:49.845399+00:00",
+      "words": [
+        "15-month",
+        "bounce",
+        "fed",
+        "gold",
+        "large",
+        "loom",
+        "lows",
+        "risks",
+        "silver"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold and silver bounce from 15-month lows, but Fed risks loom large",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUHRKOGNNMzNLb2dYbFhxMi12UEpPOGRqSHI0XzRmVVZBZThlVjdOWGh0WHo1Sjh6U1NYdmI4eU9GVkNZeHZNQ3luTmkwRWxIQUJQbGZNa1hsTXpiSHJoVGtvNGFiNmNxZ0hNNmVOT1NBTUVrSXQ5clI4YUFkQjJpclhfWFg0eS1GSVFNMC12ZWtpQVUzM1NwelhzWDJqVnh4clJvcllB?oc=5",
+          "published": "2026-11-27T22:05:46+00:00",
+          "found_at": "2026-11-27T23:50:49.845399+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-27T23:50:49.845399+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-27T23:50:49.845399+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-27T23:50:49.845399+00:00",
+          "note": "confirmed -> alerted: New Fed\u2011related risk identified; despite a tiny price rise, it could lead to a future decline, so an alert is justified."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-27",
+        "date_evidence": "Article published 2026-11-27 22:05 UTC",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of a drop",
+        "expected_direction": "down",
+        "direction_reason": "Fed risk usually pushes rates up, which historically lowers gold",
+        "alert_title": "Fed risk may pressure gold",
+        "alert_message": "Gold rose 0.1% after bouncing from 15\u2011month lows, but looming Fed decisions could raise rates and weigh on gold.",
+        "why_it_matters": [
+          "Fed decisions strongly influence gold prices",
+          "Recent bounce may be short\u2011lived"
+        ],
+        "reason": "New Fed\u2011related risk identified; despite a tiny price rise, it could lead to a future decline, so an alert is justified.",
+        "time": "2026-11-27T23:50:49.845399+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed risk may pressure gold\n\nGold rose 0.1% after bouncing from 15\u2011month lows, but looming Fed decisions could raise rates and weigh on gold.\n\nMINT's prediction: Gold DOWN - A similar bounce with Fed uncertainty on 2026\u201111\u201123 was followed by a 2.1% drop the next day.\n\nGold had already moved +0.1% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 27 Nov 23:50 UTC",
+        "telegram_sent_at": "2026-11-27T23:50:49.845399+00:00"
+      },
+      "outcome": {
+        "start_price": 3643.28,
+        "start_time": "2026-11-27T22:00:00+00:00",
+        "moved_before_mint": 0.14,
+        "delay_hours": 1.8,
+        "h1": {
+          "price": 3649.09,
+          "move": 0.16,
+          "time": "2026-11-27T23:05:46+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 0.14,
+          "time": "2026-11-27T23:14:20+00:00",
+          "hours": 1.1,
+          "verdict": "wrong"
+        },
+        "checks": {
+          "done": 1,
+          "right": 0,
+          "wrong": 1,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.1 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": 0.14,
+          "peak_hours": 1.1,
+          "faded_hours": null,
+          "against": 0.16,
+          "against_hours": 0.9,
+          "until_hours": 1.1,
+          "text": "Never moved the predicted way. It rose up to 0.2% (after 1 h)."
+        },
+        "result": {
+          "start_price": 3648.49,
+          "start_time": "2026-11-27T23:50:49.845399+00:00",
+          "threshold": 1.04,
+          "window_hours": 49.9,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.1 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "A similar bounce with Fed uncertainty on 2026\u201111\u201123 was followed by a 2.1% drop the next day.",
+        "similar": [
+          {
+            "id": "GOLD-20261123-08",
+            "date": "2026-11-23",
+            "title": "Gold, silver prices see sharp rebounds as AI shares rally, renewed Fed uncertainty - Kitco PM Report",
+            "d1": -2.09,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.46
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.46
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-27T23:51:04.009975+00:00",
+          "low": -1.25,
+          "mid": -2.09,
+          "high": -2.9,
+          "window_hours": 49.9,
+          "probability": 0.71,
+          "agree": 1,
+          "similar": 1,
+          "basis": "1 of 1 similar past events moved this way (typical move 2.1%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.45,
+          "threshold": 1.04,
+          "floor": 0.59,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "buy_sell": "33% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.67,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0.46
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "Gold and silver jumped up after hitting 15\u2011month lows, but worries about the Fed keeping rates high are in the background.",
+        "what_past_events_show": "A similar bounce with Fed uncertainty on 2026\u201111\u201123 was followed by a 2.1% drop the next day.",
+        "direction": "down",
+        "why": [
+          "Higher or steady rates make gold less attractive than interest\u2011bearing assets.",
+          "The only comparable recent case saw the price fall after a short\u2011term rebound."
+        ],
+        "watch_next": "If the Fed later signals a dovish shift or a rate cut, the bounce could turn into a rise; a hawkish statement would likely push gold lower.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-27T23:50:49.845399+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-27T23:51:07.538671+00:00"
+      }
     }
   ],
   "counter": {
@@ -50747,26 +50948,26 @@
     "GOLD-20261126": 8,
     "BTC-20261126": 5,
     "BTC-20261127": 4,
-    "GOLD-20261127": 5
+    "GOLD-20261127": 6
   },
   "last_run": {
-    "run_time": "2026-11-27T23:45:47.551165+00:00",
+    "run_time": "2026-11-27T23:50:49.845399+00:00",
     "test_mode": false,
-    "stories": 121,
-    "off_topic": 69,
-    "repeats": 52,
-    "new_events": 0,
+    "stories": 120,
+    "off_topic": 68,
+    "repeats": 51,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -50785,7 +50986,8 @@
           "Alert: Gold gains nearly 3% as dollar rally stalls, equities stabilise",
           "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks",
           "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
-          "Alert: Gold rallies above $3,600, silver surges as dollar weakness supports metals - Kitco AM Report"
+          "Alert: Gold rallies above $3,600, silver surges as dollar weakness supports metals - Kitco AM Report",
+          "Being checked: Gold and silver bounce from 15-month lows, but Fed risks loom large (reliable source: Kitco News)"
         ]
       }
     }
@@ -50808,7 +51010,8 @@
         "Alert: Gold gains nearly 3% as dollar rally stalls, equities stabilise",
         "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks",
         "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
-        "Alert: Gold rallies above $3,600, silver surges as dollar weakness supports metals - Kitco AM Report"
+        "Alert: Gold rallies above $3,600, silver surges as dollar weakness supports metals - Kitco AM Report",
+        "Alert: Gold and silver bounce from 15-month lows, but Fed risks loom large"
       ]
     }
   },
