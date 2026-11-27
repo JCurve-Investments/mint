@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793894400,
-    "open": 75935.8,
-    "close": 76301.8,
-    "volume": 456.20764494
-   },
-   {
     "t": 1793898000,
     "open": 76301.7,
     "close": 75836.7,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795791600,
     "open": 59154.0,
-    "close": 59771.6,
-    "volume": 509.6531152
+    "close": 60057.7,
+    "volume": 883.24186556
+   },
+   {
+    "t": 1795795200,
+    "open": 60057.8,
+    "close": 59960.3,
+    "volume": 52.29338206
    }
   ],
-  "bars_time": "2026-11-27T15:25:38.932259+00:00",
+  "bars_time": "2026-11-27T16:15:50.415539+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4150,14 +4150,14 @@
     "s": 535.6133
    },
    "1795791600": {
-    "b": 208.6986,
-    "s": 181.0641
+    "b": 232.827,
+    "s": 216.1973
    }
   },
-  "trades_cursor": "1795792628981492522",
+  "trades_cursor": "1795792847054686502",
   "flow_source": "Kraken",
-  "book_bid_share": 0.455,
-  "book_time": "2026-11-27T16:11:00.978998+00:00"
+  "book_bid_share": 0.492,
+  "book_time": "2026-11-27T16:15:50.415539+00:00"
  },
  "Gold": {
   "bars": [
@@ -7198,23 +7198,23 @@
   ],
   "cot_time": "2026-11-27T12:50:50.620494+00:00"
  },
- "time": "2026-11-27T16:11:00.978998+00:00",
+ "time": "2026-11-27T16:15:50.415539+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 0.76,
-    "change_24h": -1.13,
-    "text": "quiet: 0.8x a normal day (moves are less reliable)",
+    "ratio": 0.83,
+    "change_24h": -0.81,
+    "text": "normal: 0.8x a normal day, price -0.8%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
     "taker_buy_share": 0.437,
-    "book_bid_share": 0.455,
-    "up_volume_share": 0.578,
-    "text": "buyers started 44% of trades (24 h); 46% of waiting orders near the price are buy orders",
+    "book_bid_share": 0.492,
+    "up_volume_share": 0.614,
+    "text": "buyers started 44% of trades (24 h); 49% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
