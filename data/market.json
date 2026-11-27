@@ -4106,23 +4106,21 @@
     "s": 76.3285
    },
    "1795752000": {
-    "b": 29.5998,
-    "s": 38.1556
+    "b": 30.4374,
+    "s": 39.8327
+   },
+   "1795755600": {
+    "b": 0.5786,
+    "s": 4.4478
    }
   },
-  "trades_cursor": "1795755348416335632",
+  "trades_cursor": "1795755695630414002",
   "flow_source": "Kraken",
-  "book_bid_share": 0.538,
-  "book_time": "2026-11-27T04:55:38.463663+00:00"
+  "book_bid_share": 0.509,
+  "book_time": "2026-11-27T05:01:23.309859+00:00"
  },
  "Gold": {
   "bars": [
-   {
-    "t": 1792998000,
-    "open": 4019.10009765625,
-    "close": 4022.800048828125,
-    "volume": 3085
-   },
    {
     "t": 1793001600,
     "open": 4022.60009765625,
@@ -7284,9 +7282,15 @@
     "open": 3602.10009765625,
     "close": 3620.39990234375,
     "volume": 4449
+   },
+   {
+    "t": 1795669140,
+    "open": 3664.199951171875,
+    "close": 3664.199951171875,
+    "volume": 0
    }
   ],
-  "bars_time": "2026-11-27T04:10:49.438315+00:00",
+  "bars_time": "2026-11-27T05:01:23.309859+00:00",
   "bars_source": "Yahoo Finance (gold futures GC=F)",
   "cot": [
    {
@@ -7322,23 +7326,23 @@
   ],
   "cot_time": "2026-11-27T00:45:56.623470+00:00"
  },
- "time": "2026-11-27T04:55:38.463663+00:00",
+ "time": "2026-11-27T05:01:23.309859+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 0.54,
-    "change_24h": 0.71,
-    "text": "quiet: 0.5x a normal day (moves are less reliable)",
+    "ratio": 0.55,
+    "change_24h": 0.99,
+    "text": "quiet: 0.6x a normal day (moves are less reliable)",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.435,
-    "book_bid_share": 0.538,
-    "up_volume_share": 0.583,
-    "text": "buyers started 44% of trades (24 h); 54% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.438,
+    "book_bid_share": 0.509,
+    "up_volume_share": 0.596,
+    "text": "buyers started 44% of trades (24 h); 51% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
