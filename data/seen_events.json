@@ -48755,18 +48755,21 @@
       "proof": "news",
       "proof_reason": "reliable source: CoinDesk",
       "first_seen": "2026-11-27T04:55:38.463663+00:00",
-      "earliest_report": "2026-11-27T04:45:00+00:00",
-      "last_updated": "2026-11-27T04:55:38.463663+00:00",
+      "earliest_report": "2026-11-26T19:05:00+00:00",
+      "last_updated": "2026-11-27T05:25:35.610597+00:00",
       "words": [
         "6.3",
         "billion",
         "binance",
+        "crypto",
         "customer",
         "four",
         "fully",
         "hack",
+        "lifts",
         "restor",
         "says",
+        "suspension",
         "weeks",
         "withdraw"
       ],
@@ -48774,6 +48777,7 @@
         6300.0
       ],
       "old_clues": [
+        "after $",
         "weeks after"
       ],
       "sources": [
@@ -48785,6 +48789,17 @@
           "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMWJEQmVLZ1AwWHRLQldDZlBSZUlULUpjV2lubmltWHc1WlZ3dnQzUnRUSzhMemh5OGkzckF5bzRIUXMyOXNhM3VoaFVkUHF5SXRiYlNTaWdaRXpKcGdrQ2lwbFA5LXRLT2VUOWhXcFYxcXQ5a0RDVzRoQ0RmQzgxSTlBa2xTNC1adi1zdEdBMFpJdlZ4RVhoekVxak5PTThTdmNUUUhkLUI4V2F2andyYVpFRjg1ZEhBSXctSVQ3alJKQnRmU0R6Zw?oc=5",
           "published": "2026-11-27T04:45:00+00:00",
           "found_at": "2026-11-27T04:55:38.463663+00:00",
+          "summary": "",
+          "factor": "B2"
+        },
+        {
+          "organisation": "Reuters",
+          "kind": "news",
+          "site": "reuters.com",
+          "title": "Binance lifts withdrawal suspension after $6.3 billion crypto heist",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWWdsaG9mQnI5WXhaeXN1ZEh2QmVzQnp4UVhhMFQ1U0RnazF0cTZJRWFpN2ZTUHFPeHM1RXBudWhPTjFlbDNGUTcxUFdzcHpKcm5vVG9jNG5nNmdTYzNKZXBJVkpWRkZFUWJ6Smgwcm9iUlpYY2V3dDhaX1BMYTRtXzRtb24wNXlERW4tUHZkcU8xdENRX3ZoR25ob3B6OVBqdERYUFQ4QU8yZ2loRDdFcm5B?oc=5",
+          "published": "2026-11-26T19:05:00+00:00",
+          "found_at": "2026-11-27T05:25:35.610597+00:00",
           "summary": "",
           "factor": "B2"
         }
@@ -48801,6 +48816,10 @@
         {
           "time": "2026-11-27T04:55:38.463663+00:00",
           "note": "confirmed -> alerted: The restoration is a new development after an older hack, and could influence Bitcoin sentiment."
+        },
+        {
+          "time": "2026-11-27T05:25:35.610597+00:00",
+          "note": "another report from Reuters - same event, no new alert"
         }
       ],
       "decision": {
@@ -48834,19 +48853,27 @@
         "now": {
           "move": 0.0,
           "time": "2026-11-27T04:54:10+00:00",
-          "hours": 0.2,
+          "hours": 9.8,
           "verdict": "flat"
         },
         "checks": {
-          "done": 0,
-          "right": 0,
+          "done": 3,
+          "right": 2,
           "wrong": 0,
           "total": 9
         },
         "final": false,
         "effect": "tracking",
         "effect_reason": "still inside the 25 hours window (biggest move so far -0.0%)",
-        "impact": null,
+        "impact": {
+          "peak": -1.49,
+          "peak_hours": 3.9,
+          "faded_hours": 9.8,
+          "against": 0.0,
+          "against_hours": 9.8,
+          "until_hours": 9.8,
+          "text": "Clear impact: Bitcoin fell up to 1.5% (after 4 h). The effect lasted about 10 h, then faded."
+        },
         "result": {
           "start_price": 61392.99,
           "start_time": "2026-11-27T04:55:38.463663+00:00",
@@ -48860,6 +48887,24 @@
           "final": false,
           "text": "still inside the 25 hours window (biggest move so far -0.0%)",
           "size": null
+        },
+        "h1": {
+          "price": 60662.34,
+          "move": -1.19,
+          "time": "2026-11-26T20:05:00+00:00",
+          "verdict": "right"
+        },
+        "h5": {
+          "price": 60510.4,
+          "move": -1.44,
+          "time": "2026-11-27T00:05:00+00:00",
+          "verdict": "right"
+        },
+        "h10": {
+          "price": 61392.99,
+          "move": 0.0,
+          "time": "2026-11-27T05:05:00+00:00",
+          "verdict": "flat"
         }
       },
       "prediction": {
@@ -49278,14 +49323,14 @@
     "BTC-20261127": 2
   },
   "last_run": {
-    "run_time": "2026-11-27T05:20:50.618809+00:00",
+    "run_time": "2026-11-27T05:25:35.610597+00:00",
     "test_mode": false,
-    "stories": 137,
-    "off_topic": 77,
+    "stories": 145,
+    "off_topic": 84,
     "repeats": 60,
     "new_events": 0,
     "joined": 0,
-    "updates_ignored": 0,
+    "updates_ignored": 1,
     "changes": {
       "confirmed": 0,
       "context": 0,
