@@ -45914,9 +45914,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 0,
-          "wrong": 3,
+          "wrong": 4,
           "total": 9
         },
         "final": false,
@@ -45957,7 +45957,13 @@
           "time": "2026-11-26T18:05:00+00:00",
           "verdict": "wrong"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "h36": {
+          "price": 61676.3,
+          "move": 3.57,
+          "time": "2026-11-27T06:05:00+00:00",
+          "verdict": "wrong"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -48627,7 +48633,7 @@
     "BTC-20261127": 2
   },
   "last_run": {
-    "run_time": "2026-11-27T06:10:52.378566+00:00",
+    "run_time": "2026-11-27T06:15:48.094178+00:00",
     "test_mode": false,
     "stories": 151,
     "off_topic": 90,
