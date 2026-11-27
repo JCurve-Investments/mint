@@ -47088,7 +47088,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 4,
+          "done": 5,
           "right": 0,
           "wrong": 1,
           "total": 9
@@ -47143,7 +47143,13 @@
           "time": "2026-11-27T10:40:33+00:00",
           "verdict": "wrong"
         },
-        "old_effect": "wrong"
+        "old_effect": "wrong",
+        "h36": {
+          "price": 59684.72,
+          "move": -1.56,
+          "time": "2026-11-27T22:40:33+00:00",
+          "verdict": "flat"
+        }
       },
       "prediction": {
         "direction": "down",
@@ -50495,11 +50501,11 @@
     "GOLD-20261127": 4
   },
   "last_run": {
-    "run_time": "2026-11-27T22:45:50.927254+00:00",
+    "run_time": "2026-11-27T22:50:59.223248+00:00",
     "test_mode": false,
-    "stories": 120,
-    "off_topic": 71,
-    "repeats": 49,
+    "stories": 1,
+    "off_topic": 0,
+    "repeats": 1,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -50517,7 +50523,8 @@
         "state": "Alert",
         "reasons": [
           "Alert: JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more",
-          "Alert: 11,989 $ETH (19,740,197 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details"
+          "Alert: 11,989 $ETH (19,740,197 USD) of stolen funds transferred from Binance Hack 2026 to unknown wallet Details",
+          "3 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
@@ -50529,7 +50536,8 @@
           "Alert: Gold\u2019s rebound shows markets fear recession and doubt Fed rate follow-through \u2013 StoneX\u2019s Stanley",
           "Alert: Gold gains nearly 3% as dollar rally stalls, equities stabilise",
           "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks",
-          "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week"
+          "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
+          "4 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       }
     }
