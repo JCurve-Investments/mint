@@ -42604,7 +42604,7 @@
           "verdict": "flat"
         },
         "checks": {
-          "done": 6,
+          "done": 7,
           "right": 1,
           "wrong": 2,
           "total": 9
@@ -42653,6 +42653,12 @@
           "price": 60810.34,
           "move": 1.25,
           "time": "2026-11-26T03:05:00+00:00",
+          "verdict": "flat"
+        },
+        "h84": {
+          "price": 61359.57,
+          "move": 2.17,
+          "time": "2026-11-27T15:05:00+00:00",
           "verdict": "flat"
         }
       },
@@ -49455,11 +49461,11 @@
     "GOLD-20261127": 1
   },
   "last_run": {
-    "run_time": "2026-11-27T15:11:07.798828+00:00",
+    "run_time": "2026-11-27T15:15:51.887263+00:00",
     "test_mode": false,
-    "stories": 141,
-    "off_topic": 87,
-    "repeats": 54,
+    "stories": 133,
+    "off_topic": 81,
+    "repeats": 52,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
