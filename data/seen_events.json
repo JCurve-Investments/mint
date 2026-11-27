@@ -44129,9 +44129,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 5,
+          "done": 6,
           "right": 1,
-          "wrong": 4,
+          "wrong": 5,
           "total": 9
         },
         "final": false,
@@ -44184,6 +44184,12 @@
           "price": 3561.4,
           "move": 2.67,
           "time": "2026-11-27T01:51:16+00:00",
+          "verdict": "wrong"
+        },
+        "d2": {
+          "price": 3631.94,
+          "move": 4.71,
+          "time": "2026-11-27T13:51:16+00:00",
           "verdict": "wrong"
         }
       },
@@ -49203,11 +49209,11 @@
     "GOLD-20261127": 1
   },
   "last_run": {
-    "run_time": "2026-11-27T13:55:38.793150+00:00",
+    "run_time": "2026-11-27T14:01:31.986496+00:00",
     "test_mode": false,
-    "stories": 150,
-    "off_topic": 95,
-    "repeats": 55,
+    "stories": 1,
+    "off_topic": 0,
+    "repeats": 1,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -49225,7 +49231,8 @@
         "state": "Alert",
         "reasons": [
           "Alert: StanChart\u2019s Crypto Custody Unit Suffers Data Breach",
-          "Alert: JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more"
+          "Alert: JPMorgan flags bitcoin 'capitulation,' Democrats push back on SEC's crypto plans, and more",
+          "4 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
@@ -49236,7 +49243,8 @@
           "Alert: JUST IN: \ud83c\uddfa\ud83c\uddf8 93% chance the Fed hikes interest rates by 25 basis points at the next FOMC meeting. @WatcherGuru",
           "Alert: Gold Futures Settle Off Day\u2019s Lows as Yields, U.S. Dollar Slip",
           "Alert: Gold\u2019s rebound shows markets fear recession and doubt Fed rate follow-through \u2013 StoneX\u2019s Stanley",
-          "Alert: Gold gains nearly 3% as dollar rally stalls, equities stabilise"
+          "Alert: Gold gains nearly 3% as dollar rally stalls, equities stabilise",
+          "4 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       }
     }
