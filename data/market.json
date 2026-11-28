@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793948400,
-    "open": 75600.2,
-    "close": 75517.4,
-    "volume": 68.49094221
-   },
-   {
     "t": 1793952000,
     "open": 75506.8,
     "close": 75575.5,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795845600,
     "open": 59675.6,
-    "close": 59709.4,
-    "volume": 18.27424963
+    "close": 59688.9,
+    "volume": 48.101763
+   },
+   {
+    "t": 1795849200,
+    "open": 59685.2,
+    "close": 59485.6,
+    "volume": 306.5862839
    }
   ],
-  "bars_time": "2026-11-28T06:15:49.853986+00:00",
+  "bars_time": "2026-11-28T07:10:50.157078+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4214,14 +4214,14 @@
     "s": 29.2799
    },
    "1795849200": {
-    "b": 29.2138,
-    "s": 9.2155
+    "b": 45.8498,
+    "s": 122.9274
    }
   },
-  "trades_cursor": "1795849549594535992",
+  "trades_cursor": "1795849680229963762",
   "flow_source": "Kraken",
-  "book_bid_share": 0.471,
-  "book_time": "2026-11-28T07:05:38.669966+00:00"
+  "book_bid_share": 0.554,
+  "book_time": "2026-11-28T07:10:50.157078+00:00"
  },
  "Gold": {
   "bars": [
@@ -7202,23 +7202,23 @@
   ],
   "cot_time": "2026-11-28T00:50:52.110363+00:00"
  },
- "time": "2026-11-28T07:05:38.669966+00:00",
+ "time": "2026-11-28T07:10:50.157078+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.16,
-    "change_24h": -3.03,
-    "text": "normal: 1.2x a normal day, price -3.0%",
+    "ratio": 1.19,
+    "change_24h": -3.4,
+    "text": "normal: 1.2x a normal day, price -3.4%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.457,
-    "book_bid_share": 0.471,
-    "up_volume_share": 0.31,
-    "text": "buyers started 46% of trades (24 h); 47% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.448,
+    "book_bid_share": 0.554,
+    "up_volume_share": 0.295,
+    "text": "buyers started 45% of trades (24 h); 55% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
