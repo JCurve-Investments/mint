@@ -41646,9 +41646,9 @@
           "verdict": "wrong"
         },
         "checks": {
-          "done": 7,
+          "done": 8,
           "right": 0,
-          "wrong": 6,
+          "wrong": 7,
           "total": 9
         },
         "final": false,
@@ -41702,6 +41702,12 @@
           "move": 0.1,
           "time": "2026-11-27T05:31:00+00:00",
           "verdict": "flat"
+        },
+        "d5": {
+          "price": 59458.61,
+          "move": -3.5,
+          "time": "2026-11-28T17:31:00+00:00",
+          "verdict": "wrong"
         }
       },
       "prediction": {
@@ -52435,11 +52441,11 @@
     "GOLD-20261128": 1
   },
   "last_run": {
-    "run_time": "2026-11-28T17:40:57.552963+00:00",
+    "run_time": "2026-11-28T17:45:50.161244+00:00",
     "test_mode": false,
-    "stories": 132,
-    "off_topic": 75,
-    "repeats": 57,
+    "stories": 130,
+    "off_topic": 72,
+    "repeats": 58,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
