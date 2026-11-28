@@ -51253,6 +51253,221 @@
         "first_sent_at": "2026-11-28T03:26:01.153567+00:00",
         "sent_state": "context"
       }
+    },
+    {
+      "id": "GOLD-20261127-08",
+      "asset": "Gold",
+      "factor": "G2",
+      "factor_name": "Interest rates and Fed decisions",
+      "title": "Gold may get a relief rally following the Fed, but Warsh\u2019s tone could still hammer prices lower \u2013 BubbleBubble Report\u2019s Colombo",
+      "state": "alerted",
+      "state_reason": "stamped by the Decision agent - alert ready",
+      "proof": "news",
+      "proof_reason": "reliable source: Kitco News",
+      "first_seen": "2026-11-28T05:40:54.499672+00:00",
+      "earliest_report": "2026-11-27T22:03:48+00:00",
+      "last_updated": "2026-11-28T05:40:54.499672+00:00",
+      "words": [
+        "bubblebubble",
+        "colombo",
+        "could",
+        "fed",
+        "follow",
+        "get",
+        "gold",
+        "hammer",
+        "lower",
+        "may",
+        "pric",
+        "rally",
+        "relief",
+        "report",
+        "still",
+        "tone",
+        "warsh"
+      ],
+      "amounts": [],
+      "old_clues": [],
+      "sources": [
+        {
+          "organisation": "Kitco News",
+          "kind": "news",
+          "site": "kitco.com",
+          "title": "Gold may get a relief rally following the Fed, but Warsh\u2019s tone could still hammer prices lower \u2013 BubbleBubble Report\u2019s Colombo",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQVJNeDA1dXJNNGlXVlNfbEg5aXBWZVlhNTRDVnFBSjllblA3c1NWY1JIMUxfY202RC1nMDhEdjRXa25xNGttVVVKWElVYXpKWXc1ZXVNaTVGYWFqZnBQZEpTR2V1T3VHRW1rN2NSTVZES3J3YndCbTFTYlY5N0g0MWc2MVZ2LURRbTM2Um5aOFpDak9taHVFWDJMNUJPb3g3TmJxWEJMalpwSjRpQ1hMUFJSNnBFMUE?oc=5",
+          "published": "2026-11-27T22:03:48+00:00",
+          "found_at": "2026-11-28T05:40:54.499672+00:00",
+          "summary": "",
+          "factor": "G2"
+        }
+      ],
+      "history": [
+        {
+          "time": "2026-11-28T05:40:54.499672+00:00",
+          "note": "new event, first report by Kitco News"
+        },
+        {
+          "time": "2026-11-28T05:40:54.499672+00:00",
+          "note": "new -> confirmed: reliable source: Kitco News - passed to the Decision agent"
+        },
+        {
+          "time": "2026-11-28T05:40:54.499672+00:00",
+          "note": "confirmed -> alerted: New Fed-related news could affect gold price, so an alert is warranted."
+        }
+      ],
+      "decision": {
+        "is_new_event": true,
+        "event_date": "2026-11-27",
+        "date_evidence": "article published 2026-11-27 mentions Fed action",
+        "send_alert": true,
+        "impact": "medium",
+        "possible_effect": "risk of price swing",
+        "expected_direction": "up",
+        "direction_reason": "relief rally expected after Fed action",
+        "alert_title": "Fed move may lift gold",
+        "alert_message": "The Fed just acted and analysts see a possible relief rally for gold, though a cautious tone could still weigh on prices.",
+        "why_it_matters": [
+          "Fed policy directly impacts gold demand",
+          "Market tone can quickly change price direction"
+        ],
+        "reason": "New Fed-related news could affect gold price, so an alert is warranted.",
+        "time": "2026-11-28T05:40:54.499672+00:00",
+        "mode": "AI",
+        "model": "Groq openai/gpt-oss-120b",
+        "telegram_message": "MINT alert \u00b7 Gold\nFed move may lift gold\n\nThe Fed just acted and analysts see a possible relief rally for gold, though a cautious tone could still weigh on prices.\n\nMINT's prediction: Gold DOWN - The only comparable case (Nov\u202f23\u202f2026) saw gold fall about 2\u202f% the next day despite talk of a rebound.\n\nGold had already moved +0.1% since the first report.\nSources: Kitco News\nRisk information only, not financial advice.",
+        "telegram_status": "sent to 1 at 28 Nov 05:40 UTC",
+        "telegram_sent_at": "2026-11-28T05:40:54.499672+00:00"
+      },
+      "outcome": {
+        "start_price": 3643.28,
+        "start_time": "2026-11-27T22:00:00+00:00",
+        "moved_before_mint": 0.12,
+        "delay_hours": 7.6,
+        "h1": {
+          "price": 3649.09,
+          "move": 0.16,
+          "time": "2026-11-27T23:03:48+00:00",
+          "verdict": "wrong"
+        },
+        "h5": {
+          "price": 3653.57,
+          "move": 0.28,
+          "time": "2026-11-28T03:03:48+00:00",
+          "verdict": "wrong"
+        },
+        "now": {
+          "move": 0.12,
+          "time": "2026-11-28T05:24:30+00:00",
+          "hours": 7.3,
+          "verdict": "flat"
+        },
+        "checks": {
+          "done": 2,
+          "right": 0,
+          "wrong": 2,
+          "total": 9
+        },
+        "final": false,
+        "effect": "tracking",
+        "effect_reason": "still inside the 2.1 days window (biggest move so far -0.0%)",
+        "impact": {
+          "peak": 0.12,
+          "peak_hours": 7.3,
+          "faded_hours": null,
+          "against": 0.28,
+          "against_hours": 4.9,
+          "until_hours": 7.3,
+          "text": "Never moved the predicted way. It rose up to 0.3% (after 5 h)."
+        },
+        "result": {
+          "start_price": 3647.65,
+          "start_time": "2026-11-28T05:40:54.499672+00:00",
+          "threshold": 1.04,
+          "window_hours": 49.9,
+          "peak": -0.0,
+          "peak_hours": null,
+          "held_hours": 0.0,
+          "checked_until": 0,
+          "verdict": "tracking",
+          "final": false,
+          "text": "still inside the 2.1 days window (biggest move so far -0.0%)",
+          "size": null
+        }
+      },
+      "prediction": {
+        "direction": "down",
+        "by": "AI + past events",
+        "reason": "The only comparable case (Nov\u202f23\u202f2026) saw gold fall about 2\u202f% the next day despite talk of a rebound.",
+        "similar": [
+          {
+            "id": "GOLD-20261123-08",
+            "date": "2026-11-23",
+            "title": "Gold, silver prices see sharp rebounds as AI shares rally, renewed Fed uncertainty - Kitco PM Report",
+            "d1": -2.09,
+            "d7": null,
+            "peak_hours": null,
+            "source": "MINT",
+            "score": 0.52
+          }
+        ],
+        "votes": {
+          "up": 0,
+          "down": 0.52
+        },
+        "forecast": {
+          "version": 2,
+          "made": "2026-11-28T05:41:08.589153+00:00",
+          "low": -1.25,
+          "mid": -2.09,
+          "high": -2.9,
+          "window_hours": 49.9,
+          "probability": 0.71,
+          "agree": 1,
+          "similar": 1,
+          "basis": "1 of 1 similar past events moved this way (typical move 2.1%)",
+          "window_basis": "time the market normally needs to move this much",
+          "sigma": 1.45,
+          "threshold": 1.04,
+          "floor": 0.59,
+          "lenses": {
+            "volume": 0,
+            "buy_sell": -1
+          },
+          "lens_text": {
+            "buy_sell": "42% of futures volume in rising hours (24 h); big speculators cut 23,975 contracts of bets on a rise (week to 2026-11-17)"
+          },
+          "lens_notes": [
+            "agrees: buy/sell"
+          ],
+          "lens_scores": {
+            "news": 0.67,
+            "buy_sell": 0.75
+          },
+          "rule_votes": {
+            "up": 0,
+            "down": 0.52
+          },
+          "lenses_used": true
+        }
+      },
+      "analysis": {
+        "by": "AI (Groq)",
+        "summary": "The Fed\u2019s latest move might give gold a brief lift, but a hawkish tone from officials could still push the price lower.",
+        "what_past_events_show": "The only comparable case (Nov\u202f23\u202f2026) saw gold fall about 2\u202f% the next day despite talk of a rebound.",
+        "direction": "down",
+        "why": [
+          "Fed signals of higher or unchanged rates usually hurt gold",
+          "Hawkish comments can outweigh any short\u2011term relief"
+        ],
+        "watch_next": "A surprise dovish decision or clear rate\u2011cut guidance would make the rally stronger; continued hawkish remarks would keep pressure down.",
+        "confidence": "low",
+        "confidence_reason": "only 1 of 1 similar past events moved this way",
+        "time": "2026-11-28T05:40:54.499672+00:00"
+      },
+      "telegram": {
+        "sent_state": "alerted",
+        "first_sent_at": "2026-11-28T05:41:12.353701+00:00"
+      }
     }
   ],
   "counter": {
@@ -51299,26 +51514,26 @@
     "GOLD-20261126": 8,
     "BTC-20261126": 5,
     "BTC-20261127": 4,
-    "GOLD-20261127": 7
+    "GOLD-20261127": 8
   },
   "last_run": {
-    "run_time": "2026-11-28T05:35:41.049266+00:00",
+    "run_time": "2026-11-28T05:40:54.499672+00:00",
     "test_mode": false,
-    "stories": 129,
-    "off_topic": 77,
-    "repeats": 52,
-    "new_events": 0,
+    "stories": 132,
+    "off_topic": 78,
+    "repeats": 53,
+    "new_events": 1,
     "joined": 0,
     "updates_ignored": 0,
     "changes": {
-      "confirmed": 0,
+      "confirmed": 1,
       "context": 0,
       "summary": 0,
       "old": 0,
       "expired": 0,
       "watch": 0
     },
-    "open_events": 0,
+    "open_events": 1,
     "asset_states": {
       "Bitcoin": {
         "state": "Alert",
@@ -51337,7 +51552,8 @@
           "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks",
           "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
           "Alert: Gold rallies above $3,600, silver surges as dollar weakness supports metals - Kitco AM Report",
-          "Alert: Gold and silver bounce from 15-month lows, but Fed risks loom large"
+          "Alert: Gold and silver bounce from 15-month lows, but Fed risks loom large",
+          "Being checked: Gold may get a relief rally following the Fed, but Warsh\u2019s tone could still hammer prices lower \u2013 BubbleBubble Report\u2019s Colombo (reliable source: Kitco News)"
         ]
       }
     }
@@ -51360,7 +51576,8 @@
         "Alert: Gold pares gains as Fed-hike risks linger, eyes first weekly rise in three weeks",
         "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
         "Alert: Gold rallies above $3,600, silver surges as dollar weakness supports metals - Kitco AM Report",
-        "Alert: Gold and silver bounce from 15-month lows, but Fed risks loom large"
+        "Alert: Gold and silver bounce from 15-month lows, but Fed risks loom large",
+        "Alert: Gold may get a relief rally following the Fed, but Warsh\u2019s tone could still hammer prices lower \u2013 BubbleBubble Report\u2019s Colombo"
       ]
     }
   },
