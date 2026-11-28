@@ -35221,19 +35221,13 @@
         "start_time": "2026-11-21T04:24:40+00:00",
         "moved_before_mint": 0.0,
         "delay_hours": 0.0,
-        "now": {
-          "move": 4.32,
-          "time": "2026-11-28T04:30:20+00:00",
-          "hours": 167.5,
-          "verdict": "wrong"
-        },
         "checks": {
-          "done": 8,
+          "done": 9,
           "right": 0,
-          "wrong": 8,
+          "wrong": 9,
           "total": 9
         },
-        "final": false,
+        "final": true,
         "impact": {
           "peak": -1.75,
           "peak_hours": 107.0,
@@ -35290,6 +35284,12 @@
           "price": 3584.88,
           "move": 2.42,
           "time": "2026-11-26T05:01:22.367680+00:00",
+          "verdict": "wrong"
+        },
+        "d7": {
+          "price": 3651.45,
+          "move": 4.32,
+          "time": "2026-11-28T05:01:22.367680+00:00",
           "verdict": "wrong"
         }
       },
@@ -51290,11 +51290,11 @@
     "GOLD-20261127": 7
   },
   "last_run": {
-    "run_time": "2026-11-28T05:10:53.457766+00:00",
+    "run_time": "2026-11-28T05:15:52.102717+00:00",
     "test_mode": false,
-    "stories": 130,
+    "stories": 131,
     "off_topic": 79,
-    "repeats": 51,
+    "repeats": 52,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
