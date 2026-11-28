@@ -52447,11 +52447,11 @@
     "GOLD-20261128": 1
   },
   "last_run": {
-    "run_time": "2026-11-28T18:21:00.818297+00:00",
+    "run_time": "2026-11-28T18:25:49.646633+00:00",
     "test_mode": false,
-    "stories": 132,
-    "off_topic": 75,
-    "repeats": 57,
+    "stories": 2,
+    "off_topic": 0,
+    "repeats": 2,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
@@ -52468,7 +52468,8 @@
       "Bitcoin": {
         "state": "Alert",
         "reasons": [
-          "Alert: Crypto exchange Bybit declines to publish full report into $1.4 billion hack"
+          "Alert: Crypto exchange Bybit declines to publish full report into $1.4 billion hack",
+          "3 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       },
       "Gold": {
@@ -52481,7 +52482,8 @@
           "Alert: Gold Steadies as Fed Rate Path and AI Stocks Frame Volatile Week",
           "Alert: Gold rallies above $3,600, silver surges as dollar weakness supports metals - Kitco AM Report",
           "Alert: Gold and silver bounce from 15-month lows, but Fed risks loom large",
-          "Alert: Gold may get a relief rally following the Fed, but Warsh\u2019s tone could still hammer prices lower \u2013 BubbleBubble Report\u2019s Colombo"
+          "Alert: Gold may get a relief rally following the Fed, but Warsh\u2019s tone could still hammer prices lower \u2013 BubbleBubble Report\u2019s Colombo",
+          "4 check(s) failed in the last run (internet problem?) - see Agents"
         ]
       }
     }
