@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793955600,
-    "open": 75575.6,
-    "close": 76083.4,
-    "volume": 63.10155854
-   },
-   {
     "t": 1793959200,
     "open": 76083.4,
     "close": 75960.6,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795852800,
     "open": 59781.4,
-    "close": 59494.4,
-    "volume": 60.00989839
+    "close": 59514.6,
+    "volume": 63.13676702
+   },
+   {
+    "t": 1795856400,
+    "open": 59518.4,
+    "close": 59495.6,
+    "volume": 25.68287506
    }
   ],
-  "bars_time": "2026-11-28T08:55:37.567964+00:00",
+  "bars_time": "2026-11-28T09:45:51.177370+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4222,14 +4222,14 @@
     "s": 49.6078
    },
    "1795856400": {
-    "b": 5.4805,
-    "s": 15.6088
+    "b": 5.745,
+    "s": 20.0234
    }
   },
-  "trades_cursor": "1795858868495766962",
+  "trades_cursor": "1795859166128258364",
   "flow_source": "Kraken",
-  "book_bid_share": 0.499,
-  "book_time": "2026-11-28T09:40:58.790262+00:00"
+  "book_bid_share": 0.496,
+  "book_time": "2026-11-28T09:45:51.177370+00:00"
  },
  "Gold": {
   "bars": [
@@ -7210,13 +7210,13 @@
   ],
   "cot_time": "2026-11-28T00:50:52.110363+00:00"
  },
- "time": "2026-11-28T09:40:58.790262+00:00",
+ "time": "2026-11-28T09:45:51.177370+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.22,
+    "ratio": 1.18,
     "change_24h": -3.36,
     "text": "normal: 1.2x a normal day, price -3.4%",
     "ok": true
@@ -7224,8 +7224,8 @@
    "buy_sell": {
     "vote": -1,
     "taker_buy_share": 0.434,
-    "book_bid_share": 0.499,
-    "up_volume_share": 0.352,
+    "book_bid_share": 0.496,
+    "up_volume_share": 0.35,
     "text": "buyers started 43% of trades (24 h); 50% of waiting orders near the price are buy orders",
     "ok": true
    }
