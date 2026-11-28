@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793941200,
-    "open": 75661.7,
-    "close": 75596.4,
-    "volume": 105.35224115
-   },
-   {
     "t": 1793944800,
     "open": 75592.8,
     "close": 75600.2,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795838400,
     "open": 59965.8,
-    "close": 59953.6,
-    "volume": 9.43604442
+    "close": 59938.3,
+    "volume": 20.501778
+   },
+   {
+    "t": 1795842000,
+    "open": 59938.2,
+    "close": 59770.5,
+    "volume": 55.76422884
    }
   ],
-  "bars_time": "2026-11-28T04:31:14.504929+00:00",
+  "bars_time": "2026-11-28T05:25:44.039412+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4206,14 +4206,14 @@
     "s": 16.9894
    },
    "1795842000": {
-    "b": 5.6735,
-    "s": 30.9435
+    "b": 21.6695,
+    "s": 34.1003
    }
   },
-  "trades_cursor": "1795843264585032750",
+  "trades_cursor": "1795843549099119404",
   "flow_source": "Kraken",
-  "book_bid_share": 0.619,
-  "book_time": "2026-11-28T05:20:53.636967+00:00"
+  "book_bid_share": 0.503,
+  "book_time": "2026-11-28T05:25:44.039412+00:00"
  },
  "Gold": {
   "bars": [
@@ -7194,23 +7194,23 @@
   ],
   "cot_time": "2026-11-28T00:50:52.110363+00:00"
  },
- "time": "2026-11-28T05:20:53.636967+00:00",
+ "time": "2026-11-28T05:25:44.039412+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.12,
-    "change_24h": -2.82,
-    "text": "normal: 1.1x a normal day, price -2.8%",
+    "ratio": 1.09,
+    "change_24h": -3.11,
+    "text": "normal: 1.1x a normal day, price -3.1%",
     "ok": true
    },
    "buy_sell": {
-    "vote": 1,
-    "taker_buy_share": 0.474,
-    "book_bid_share": 0.619,
-    "up_volume_share": 0.317,
-    "text": "buyers started 47% of trades (24 h); 62% of waiting orders near the price are buy orders",
+    "vote": 0,
+    "taker_buy_share": 0.475,
+    "book_bid_share": 0.503,
+    "up_volume_share": 0.313,
+    "text": "buyers started 48% of trades (24 h); 50% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
