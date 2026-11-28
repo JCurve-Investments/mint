@@ -4194,14 +4194,14 @@
     "s": 46.721
    },
    "1795831200": {
-    "b": 18.1791,
-    "s": 30.667
+    "b": 18.5064,
+    "s": 32.4403
    }
   },
-  "trades_cursor": "1795834253187485342",
+  "trades_cursor": "1795834548715492214",
   "flow_source": "Kraken",
-  "book_bid_share": 0.46,
-  "book_time": "2026-11-28T02:50:50.439899+00:00"
+  "book_bid_share": 0.444,
+  "book_time": "2026-11-28T02:55:37.956536+00:00"
  },
  "Gold": {
   "bars": [
@@ -7146,7 +7146,7 @@
     "volume": 0
    }
   ],
-  "bars_time": "2026-11-28T02:01:23.405533+00:00",
+  "bars_time": "2026-11-28T02:55:37.956536+00:00",
   "bars_source": "Yahoo Finance (gold futures GC=F)",
   "cot": [
    {
@@ -7182,7 +7182,7 @@
   ],
   "cot_time": "2026-11-28T00:50:52.110363+00:00"
  },
- "time": "2026-11-28T02:50:50.439899+00:00",
+ "time": "2026-11-28T02:55:37.956536+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
@@ -7196,9 +7196,9 @@
    "buy_sell": {
     "vote": 0,
     "taker_buy_share": 0.481,
-    "book_bid_share": 0.46,
+    "book_bid_share": 0.444,
     "up_volume_share": 0.362,
-    "text": "buyers started 48% of trades (24 h); 46% of waiting orders near the price are buy orders",
+    "text": "buyers started 48% of trades (24 h); 44% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
