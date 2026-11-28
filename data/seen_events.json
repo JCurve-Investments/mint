@@ -47553,8 +47553,8 @@
           "verdict": "right"
         },
         "checks": {
-          "done": 5,
-          "right": 0,
+          "done": 6,
+          "right": 1,
           "wrong": 0,
           "total": 9
         },
@@ -47603,12 +47603,18 @@
           "time": "2026-11-27T12:24:38+00:00",
           "verdict": "flat"
         },
-        "old_effect": "no_clear_move",
+        "old_effect": "right",
         "h36": {
           "price": 59941.72,
           "move": -1.16,
           "time": "2026-11-28T00:24:38+00:00",
           "verdict": "flat"
+        },
+        "d2": {
+          "price": 59238.01,
+          "move": -2.32,
+          "time": "2026-11-28T12:24:38+00:00",
+          "verdict": "right"
         }
       },
       "prediction": {
@@ -52066,11 +52072,11 @@
     "GOLD-20261128": 1
   },
   "last_run": {
-    "run_time": "2026-11-28T12:31:18.075953+00:00",
+    "run_time": "2026-11-28T12:35:37.753457+00:00",
     "test_mode": false,
-    "stories": 122,
-    "off_topic": 66,
-    "repeats": 56,
+    "stories": 132,
+    "off_topic": 75,
+    "repeats": 57,
     "new_events": 0,
     "joined": 0,
     "updates_ignored": 0,
