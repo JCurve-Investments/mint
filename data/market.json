@@ -2,12 +2,6 @@
  "Bitcoin": {
   "bars": [
    {
-    "t": 1793977200,
-    "open": 75428.2,
-    "close": 75767.3,
-    "volume": 357.55733775
-   },
-   {
     "t": 1793980800,
     "open": 75767.3,
     "close": 75916.6,
@@ -3166,11 +3160,17 @@
    {
     "t": 1795874400,
     "open": 59051.6,
-    "close": 59058.6,
-    "volume": 10.06609155
+    "close": 59269.3,
+    "volume": 68.83308834
+   },
+   {
+    "t": 1795878000,
+    "open": 59269.2,
+    "close": 59318.9,
+    "volume": 0.59992466
    }
   ],
-  "bars_time": "2026-11-28T14:10:52.030266+00:00",
+  "bars_time": "2026-11-28T15:01:31.359972+00:00",
   "bars_source": "Kraken",
   "flow": {
    "1794913200": {
@@ -4242,14 +4242,18 @@
     "s": 75.9838
    },
    "1795874400": {
-    "b": 50.4834,
-    "s": 15.7486
+    "b": 51.4053,
+    "s": 17.6737
+   },
+   "1795878000": {
+    "b": 0.2156,
+    "s": 0.3881
    }
   },
-  "trades_cursor": "1795877740533941404",
+  "trades_cursor": "1795878105219440798",
   "flow_source": "Kraken",
-  "book_bid_share": 0.52,
-  "book_time": "2026-11-28T14:55:39.510465+00:00"
+  "book_bid_share": 0.496,
+  "book_time": "2026-11-28T15:01:31.359972+00:00"
  },
  "Gold": {
   "bars": [
@@ -7230,23 +7234,23 @@
   ],
   "cot_time": "2026-11-28T12:50:52.867177+00:00"
  },
- "time": "2026-11-28T14:55:39.510465+00:00",
+ "time": "2026-11-28T15:01:31.359972+00:00",
  "errors": [],
  "lenses": {
   "Bitcoin": {
    "volume": {
     "vote": 0,
-    "ratio": 1.05,
-    "change_24h": -0.16,
-    "text": "normal: 1.1x a normal day, price -0.2%",
+    "ratio": 0.85,
+    "change_24h": -1.23,
+    "text": "normal: 0.9x a normal day, price -1.2%",
     "ok": true
    },
    "buy_sell": {
     "vote": -1,
-    "taker_buy_share": 0.459,
-    "book_bid_share": 0.52,
-    "up_volume_share": 0.386,
-    "text": "buyers started 46% of trades (24 h); 52% of waiting orders near the price are buy orders",
+    "taker_buy_share": 0.418,
+    "book_bid_share": 0.496,
+    "up_volume_share": 0.251,
+    "text": "buyers started 42% of trades (24 h); 50% of waiting orders near the price are buy orders",
     "ok": true
    }
   },
